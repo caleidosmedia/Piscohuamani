@@ -1,0 +1,27 @@
+#fold-blog {
+  background-size: cover;
+  .navbar-collapse {
+		ul {
+			li {
+				padding-left: 21px;
+				float: left;
+				a {
+					display: block;
+					color: white;
+					text-decoration: none;
+					text-align: center;
+					&:hover {
+						background-color: none;
+					}
+				}
+			}
+		}
+  }
+	.row {
+		.col-md-5 {
+			margin-top: 250px;
+			margin-left: 70px;
+			color: white;
+		}
+	}
+}

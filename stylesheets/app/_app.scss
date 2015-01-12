@@ -4,13 +4,40 @@
 
 // APP Includes
 @import 
-  "includes/utilities-custom",
+  // TYPE
+  "includes/fonts-custom",
   "includes/type-custom",
   "includes/icons",
-  "includes/fonts",
-  "includes/header",
-  "includes/footer";
+  "includes/demo",
+  "includes/tabs",
+  "includes/tabstyles",
+  "includes/normalize",
+  // LAYOUT
+  "includes/layout-global",
+  "includes/layout-header",
+  "includes/layout-footer",
+  // BUTTONS & LINKS
+  "includes/buttons-custom";
+  // FORMS
+  // "includes/forms-custom",
+  // "includes/forms-multiuser",
+  // NAVS
+  // "includes/nav-off-canvas",
 
 // APP Views
-// @import 
-//   "";
+@import 
+  // custom NAME
+  "custom/home",
+  "custom/about-us",
+  "custom/the-goods",
+  "custom/drinks",
+  "custom/events",
+  "custom/flexslider",
+  "custom/follow",
+  "custom/header";
+
+  @import 
+  // views NAME
+  "views/blog",
+  "views/faq";
+

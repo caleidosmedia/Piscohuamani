@@ -1,0 +1,52 @@
+#fold {
+	background-image: url(../assets/img/img.png);
+	height: 643px;
+  background-size: cover;
+	ul {
+		li {
+			padding-left: 21px;
+			float: left;
+			a {
+				display: block;
+				color: white;
+				text-decoration: none;
+				text-align: center;
+			}
+		}
+	}
+	.row {
+		.col-md-5 {
+			margin-top: 250px;
+			margin-left: 70px;
+		}
+	}
+}
+
+.text-white {
+	color: white;
+}
+
+.container-sm {
+	width: 965px;
+	padding-left: 14px;
+	padding-right: 14px;
+	margin: 0 auto;
+}
+
+.btn-home {
+	border: 1px solid gray;
+	padding: 9px 35px;
+}
+
+.terms-use {
+	.nav {
+		li {
+			a {
+				color: white;
+				&:hover {
+					background: none;
+				}
+			}
+		}
+	}
+}
