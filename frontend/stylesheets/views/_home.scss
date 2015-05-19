@@ -1,0 +1,29 @@
+@font-face{
+	font-family: MuseoSans;
+	src: url(../fonts/museo-sans/MuseoSans.otf);
+}
+footer{
+	color: #8d744a;
+	.footer-logo{
+		width: 70px;
+	}
+	.texto{
+		padding-left: 10%;
+	}
+	p{
+		font-size: 12px;
+		margin: 0;
+		margin-bottom: 3px;
+	}
+	.col-md-3 p{
+		margin-bottom: 10px; 
+		a{
+			border-bottom: 1px solid #8d744a;
+			text-decoration: none;
+			color: #8d744a;
+			&:hover{
+				color:#4e3227;
+			}
+		}
+	}
+}
