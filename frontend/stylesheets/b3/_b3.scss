@@ -1,5 +1,5 @@
 /*========================================
-=          Twitter Bootstrap 3.2      =
+=          Twitter Bootstrap 3.1.0      =
 ========================================*/
 // Core variables and mixins
 @import 
@@ -9,52 +9,53 @@
 // Reset
 @import 
 	"normalize",
-	"scaffolding",
-	"print";
+	"scaffolding";
 
 // Core CSS
 @import 
 	"type",
-	"code",
 	"grid",
-	"tables",
 	"forms",
 	"buttons";
+	// "tables";
 
 // Components
-@import
-	"component-animations",
-	"dropdowns",	
-	"button-groups",
-	"input-groups",
-	"navs",
-	"glyphicons",
-	"navbar",
-	"breadcrumbs",
-	"pagination",
-	"pager",
-	"labels",
- 	"badges",
- 	"jumbotron",
- 	"thumbnails",
- 	"alerts",
- 	"progress-bars",
-	"media",
- 	"list-group",
- 	"panels",
-	 "wells",
- 	"close";
+// @import
+// "alerts",
+// "badges",
+// "breadcrumbs",
+// "button-groups",
+// "close",
+// "code",
+// "component-animations",
+// "dropdowns",
+// "glyphicons",
+// "input-groups",
+// "jumbotron",
+// "labels",
+// "list-group",
+// "media",
+// "navbar",
+// "navs",
+// "pager",
+// "pagination",
+// "panels",
+// "print",
+// "progress-bars",
+// "theme",
+// "thumbnails",
+// "wells";
 
 // Components w/ JavaScript
-	 @import 
-	 "modals",
-	 "tooltip",
-	 "popovers",
-	 "carousel";
+// @import 
+// "modals",
+// "tooltip",
+// "popovers",
+// "carousel";
 
 
 // Utility classes
-	@import 
+@import 
 	"utilities",
-	 "responsive-embed",
+// "responsive-embed",
 	"responsive-utilities";
