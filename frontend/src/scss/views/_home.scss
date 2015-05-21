@@ -39,7 +39,7 @@ html, body{
 				  	height: 65px;
 				  	letter-spacing: .08em;
 				  	transition: all .5s;
-				  	background-color: #000;
+				  	background-color: rgb(248, 244, 229);
 				  	text-transform: uppercase;
 				  	-webkit-transform: rotateX(-90deg);
 				  	transform: rotateX(-90deg);
@@ -53,10 +53,23 @@ html, body{
 	  					-webkit-transform-origin: center bottom;
 	  					transform-origin: center bottom;
 	  					background-color: #3b2e29;
-	  					color: #E4DED2;
+	  					color: rgb(248, 244, 229);
 	  					top: 0;
 	  					z-index: 2;
 	  				}
+  				}
+  				&:hover{
+  					div{
+  						-webkit-transform: rotateX(0deg);
+  						transform: rotateX(0deg);
+  						top: -71px;
+  					}
+  					div:first-child{
+  						top: -71px;
+  						z-index: 1;
+  						-webkit-transform: rotateX(90deg);
+  						transform: rotateX(90deg);
+  					}
   				}
 	 		}
 	 		a.logo-link div{
@@ -93,6 +106,28 @@ html, body{
   				width: 100%;
   			}
   		}
+	}
+	#about-us{
+		background-image: url(../img/texturas/debut_light/debut_light.png);
+		padding: 7% 17%;
+		background-size: 30%;
+		h3{
+			font-style: italic;
+		}
+		.texto-about{
+			padding: 7% 0 0 20%;
+			.separador{ 
+				border-bottom:1px solid #3b2e29;
+				padding-top:7%;
+			}
+			p{
+				padding-top:5%;
+				font-size: 1.5rem;
+			}
+		}
+	}
+	#the-goods{
+		background-color:rgb(248, 244, 229);
 	}
 }
 footer{

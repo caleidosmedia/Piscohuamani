@@ -12207,6 +12207,17 @@ html, body {
   top: 0;
   z-index: 2;
 }
+.site-menu .contenedor-menu nav a:hover div {
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  top: -71px;
+}
+.site-menu .contenedor-menu nav a:hover div:first-child {
+  top: -71px;
+  z-index: 1;
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+}
 .site-menu .contenedor-menu nav a.logo-link div {
   width: 175px;
   line-height: 60px;
@@ -12238,6 +12249,28 @@ html, body {
 }
 .site-content .img-principal .scroll-down img {
   width: 100%;
+}
+.site-content #about-us {
+  background-image: url(../img/texturas/debut_light/debut_light.png);
+  padding: 7% 17%;
+  background-size: 30%;
+}
+.site-content #about-us h3 {
+  font-style: italic;
+}
+.site-content #about-us .texto-about {
+  padding: 7% 0 0 20%;
+}
+.site-content #about-us .texto-about .separador {
+  border-bottom: 1px solid #3b2e29;
+  padding-top: 7%;
+}
+.site-content #about-us .texto-about p {
+  padding-top: 5%;
+  font-size: 1.5rem;
+}
+.site-content #the-goods {
+  background-color: #f8f4e5;
 }
 
 footer {
@@ -12342,6 +12375,10 @@ footer .col-md-3 p a:hover {
 
 .bg-p-brownlight {
   background-color: #8d744a;
+}
+
+.line-height {
+  line-height: 1.8;
 }
 
 /*# sourceMappingURL=style.css.map */
