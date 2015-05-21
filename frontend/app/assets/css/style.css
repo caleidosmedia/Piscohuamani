@@ -12178,7 +12178,7 @@ html, body {
 }
 .site-menu .contenedor-menu nav a div {
   font-size: 14px;
-  color: #fff;
+  color: #3b2e29;
   text-decoration: none;
   display: block;
   text-align: center;
@@ -12188,7 +12188,7 @@ html, body {
   height: 65px;
   letter-spacing: .08em;
   transition: all .5s;
-  background-color: #000;
+  background-color: #f8f4e5;
   text-transform: uppercase;
   -webkit-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
@@ -12203,14 +12203,15 @@ html, body {
   -webkit-transform-origin: center bottom;
   transform-origin: center bottom;
   background-color: #3b2e29;
-  color: #E4DED2;
+  color: #f8f4e5;
   top: 0;
   z-index: 2;
 }
 .site-menu .contenedor-menu nav a:hover div {
   -webkit-transform: rotateX(0deg);
   transform: rotateX(0deg);
-  top: -71px;
+  top: -65px;
+  height: 65px;
 }
 .site-menu .contenedor-menu nav a:hover div:first-child {
   top: -71px;
