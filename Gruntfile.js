@@ -422,16 +422,16 @@ module.exports = function (grunt) {
    * Run `grunt` on the command line
    */
   grunt.registerTask('default', [
-    // 'coffee:dev',
+   // 'coffee:dev',
     'sass:ebm',
     'sass:dev',
-    // 'bower:dev',
+    'bower:dev',
     // 'autoprefixer:dev',
     // 'cssmin:dev',
     // 'jshint',
     // 'concat:dev',
     // 'responsive_images:dev',
-    // 'responsive_images_extender:dev',
+    //'responsive_images_extender:dev',
     'connect:livereload',
     'uglify',
     'open',
