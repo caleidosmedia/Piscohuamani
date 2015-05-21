@@ -1,0 +1,24 @@
+.site-wrapper{
+	height: 100%;
+}
+.fondo{
+	/*background-image: url(../img/texturas/cream_pixels/cream_pixels.png);*/
+	width: 100%;
+	height: 100%;
+	background-color: #4e3227;
+	padding: 10%;
+	h3{
+		font-family: "MuseoSans";
+		line-height: 1.3;
+  		padding-top: 10px;
+  		font-size: 20px;
+  		letter-spacing: 2px;
+	}
+	.logo-title{
+		width: 350px;
+  		margin: 0 auto;
+  		img{
+  			width: 100%;
+  		}
+	} 
+}

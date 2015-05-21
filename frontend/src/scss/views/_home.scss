@@ -2,6 +2,99 @@
 	font-family: MuseoSans;
 	src: url(../fonts/museo-sans/MuseoSans.otf);
 }*/
+html, body{
+	height:auto;
+}
+.container{
+	width:100%;
+	padding:0; 
+}
+.site-menu{
+	position: relative;
+	height: 65px;
+	.contenedor-menu{
+		position: fixed;
+	  	top: 0;
+	  	width: 100%;
+	  	height: 65px;
+	  	background: #3b2e29;
+	 	z-index: 10;
+	 	nav{
+	 		display: inline-block;
+	 		a{
+				height: 65px;
+  				float: left;
+  				text-align: center;
+  				text-decoration: none;
+  				position: relative;
+  				div{
+					font-size: 14px;
+  					color: #fff;
+  					text-decoration: none;
+  					display: block;
+  					text-align: center;
+				  	position: relative;
+				  	top: 0;
+				  	line-height: 70px;
+				  	height: 65px;
+				  	letter-spacing: .08em;
+				  	transition: all .5s;
+				  	background-color: #000;
+				  	text-transform: uppercase;
+				  	-webkit-transform: rotateX(-90deg);
+				  	transform: rotateX(-90deg);
+				  	-webkit-transform-origin: center top;
+				  	transform-origin: center top;
+				  	z-index: 1;
+				  	padding: 0 25px;
+	  				&:first-child{
+	  					-webkit-transform: rotateX(0deg);
+	  					transform: rotateX(0deg);
+	  					-webkit-transform-origin: center bottom;
+	  					transform-origin: center bottom;
+	  					background-color: #3b2e29;
+	  					color: #E4DED2;
+	  					top: 0;
+	  					z-index: 2;
+	  				}
+  				}
+	 		}
+	 		a.logo-link div{
+				width: 175px;
+				line-height: 60px;
+				img{
+					width: 100%;
+				}
+			}
+	 	}
+	}
+}
+.site-content{
+	.img-principal{
+		height: 610px;
+		background-image: url(../img/fotos/foto-home.png);
+		background-size: cover;
+  		background-repeat: no-repeat;
+  		padding-top: 10%;
+  		div.texto{
+  			font-family: times;
+  			h1{
+				font-size: 4rem;
+  			}
+  			h3{
+				font-style: italic;
+  			}
+  		}
+  		.scroll-down{
+  			width: 90px;
+  			margin: 0 auto;
+  			padding-top:5%;
+  			img{
+  				width: 100%;
+  			}
+  		}
+	}
+}
 footer{
 	color: #8d744a;
 	.footer-logo{
