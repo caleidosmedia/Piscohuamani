@@ -7,6 +7,12 @@
 .text-white{
 	color:#fff;
 }
+.text-brown{
+	color: #3B2E29;
+}
+.text-brown-light{
+	color: #8d744a;
+}
 .text-bold{
 	font-weight:bold;
 }
@@ -29,7 +35,7 @@
 	font-family: "MuseoSans";
 }
 .float-left{
-	float:left;
+	float:left; 
 }
 .bg-p-brown{
 	background-color: #4e3227;
@@ -39,4 +45,7 @@
 }
 .line-height{
 	line-height: 1.8;
+}
+.letter-spacing{
+	letter-spacing: 1.5px;
 }

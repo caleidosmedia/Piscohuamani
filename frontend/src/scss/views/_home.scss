@@ -4,39 +4,50 @@
 }*/
 html, body{
 	height:auto;
+	font-family: "museo-sans";
 }
 .container{
 	width:100%;
 	padding:0; 
 }
+h1, h2{
+	font-family: "trajan-pro-3";
+}
 .site-menu{
 	position: relative;
-	height: 65px;
+	height: 61px;
 	.contenedor-menu{
 		position: fixed;
 	  	top: 0;
 	  	width: 100%;
-	  	height: 65px;
+	  	height: 61px;
 	  	background: #3b2e29;
-	 	z-index: 10;
+	 	z-index: 10; 
 	 	nav{
 	 		display: inline-block;
 	 		a{
-				height: 65px;
+				height: 61px;
   				float: left;
   				text-align: center;
   				text-decoration: none;
   				position: relative;
   				div{
-					font-size: 14px;
+					font-size: 14px; 
   					color: #3b2e29;
+  					letter-spacing: 0px;
   					text-decoration: none;
   					display: block;
   					text-align: center;
 				  	position: relative;
 				  	top: 0;
-				  	line-height: 70px;
-				  	height: 65px;
+				  	line-height: 62px;
+				  	display: flex;
+  					flex-direction: column;
+  					flex-wrap: wrap;
+  					justify-content: center;
+  					align-content: flex-start;
+  					align-items: center;
+				  	height: 61px;
 				  	letter-spacing: .08em;
 				  	transition: all .5s;
 				  	background-color: rgb(248, 244, 229);
@@ -46,7 +57,7 @@ html, body{
 				  	-webkit-transform-origin: center top;
 				  	transform-origin: center top;
 				  	z-index: 1;
-				  	padding: 0 25px;
+				  	padding: 0 33px;
 	  				&:first-child{
 	  					-webkit-transform: rotateX(0deg);
 	  					transform: rotateX(0deg);
@@ -62,11 +73,11 @@ html, body{
   					div{
   						-webkit-transform: rotateX(0deg);
   						transform: rotateX(0deg);
-  						top: -65px;
-  						height: 65px;
+  						top: -61px;
+  						height: 61px;
   					}
   					div:first-child{
-  						top: -71px;
+  						top: -70px;
   						z-index: 1;
   						-webkit-transform: rotateX(90deg);
   						transform: rotateX(90deg);
@@ -74,10 +85,11 @@ html, body{
   				}
 	 		}
 	 		a.logo-link div{
-				width: 175px;
-				line-height: 60px;
+				width: 200px;
+				line-height: 55px!important;
+  				display: block;
 				img{
-					width: 100%;
+					width: 100%; 
 				}
 			}
 	 	}
@@ -85,7 +97,7 @@ html, body{
 }
 .site-content{
 	.img-principal{
-		height: 610px;
+		height: 600px;
 		background-image: url(../img/fotos/foto-home.png);
 		background-size: cover;
   		background-repeat: no-repeat;
@@ -98,11 +110,19 @@ html, body{
   			h3{
 				font-style: italic;
   			}
+  			p{
+  				font-size: 1.7rem;
+  				font-family: "museo-sans";
+  				font-weight: lighter;
+  				font-style: italic;
+  				margin-top: 18px;
+  				letter-spacing: 0;
+  			}
   		}
   		.scroll-down{
   			width: 90px;
   			margin: 0 auto;
-  			padding-top:5%;
+  			padding-top:6%;
   			img{
   				width: 100%;
   			}
@@ -110,25 +130,33 @@ html, body{
 	}
 	#about-us{
 		background-image: url(../img/texturas/debut_light/debut_light.png);
-		padding: 7% 17%;
+		padding: 5% 17% 12%;
 		background-size: 30%;
+		h1{
+			font-size: 35px;
+		}
 		h3{
 			font-style: italic;
 		}
 		.texto-about{
-			padding: 7% 0 0 20%;
-			.separador{ 
+			padding: 9% 0 0 17%;
+			.separador{
 				border-bottom:1px solid #3b2e29;
-				padding-top:7%;
+				padding-top:4%;
 			}
 			p{
-				padding-top:5%;
+				padding-top:6%;
 				font-size: 1.5rem;
+				font-weight: 300;
 			}
 		}
 	}
 	#the-goods{
 		background-color:rgb(248, 244, 229);
+	}
+	#follow-us{
+		background-color: #8d744a;
+		padding: 7% 17%;
 	}
 }
 footer{
