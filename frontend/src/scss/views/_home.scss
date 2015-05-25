@@ -187,9 +187,16 @@ h1, h2{
 }
 		
 	}
+	#make-drink{
+		@extend #the-goods; 
+		background-image: url(../img/texturas/textura-oscura.png);
+	}
+	#events{
+		@extend #the-goods;
+	}
 	#follow-us{
 		background-color: #8d744a;
-		padding: 6% 17%;
+		padding: 6% 17%; 
 		h3{
 			font-weight: lighter;
   			font-style: italic;
