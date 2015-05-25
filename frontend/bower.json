@@ -2,6 +2,7 @@
   "name": "easyboxmodel",
   "version": "1.0.0",
   "dependencies": {
-  	"flickity": "latest"
+    "flickity": "latest",
+    "flickity-as-nav-for": "~1.0.1"
   }
 }

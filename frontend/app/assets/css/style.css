@@ -12306,9 +12306,7 @@ h1, h2 {
   font-style: italic;
 }
 .site-content #the-goods .slider-text {
-  padding: 5% 0 0 13%;
-  width: 50%;
-  float: left;
+  padding: 5% 20%;
 }
 .site-content #the-goods .slider-text .separador {
   border-bottom: 1px solid #3b2e29;
@@ -12319,17 +12317,18 @@ h1, h2 {
   font-size: 1.5rem;
   font-weight: 300;
 }
-.site-content #the-goods .slider-img {
+.site-content #the-goods .slider-content {
   position: relative;
-  right: 17%;
-  bottom: 16%;
-  height: 600px;
+  padding-right: 9%;
+  height: 500px;
+  top: -150px;
+  text-align: right;
 }
-.site-content #the-goods .slider-img .slider-content {
-  width: 210px;
-  position: absolute;
-  top: -25%;
-  right: -10%;
+.site-content #the-goods .gallery-cell {
+  width: 100%;
+}
+.site-content #the-goods .gallery-nav .gallery-cell.is-nav-selected {
+  background: #ED2;
 }
 .site-content #follow-us {
   background-color: #8d744a;
@@ -12454,6 +12453,78 @@ footer .col-md-3 p a:hover {
   width: 100%;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-brown {
+  color: #3B2E29;
+}
+
+.text-brown-light {
+  color: #8d744a;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.pd-0 {
+  padding: 0;
+}
+
+.pd-5-15 {
+  padding: 5% 15%;
+}
+
+.mg-0 {
+  margin: 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.type-style-none {
+  list-style: none;
+}
+
+.family-museosans {
+  font-family: "MuseoSans";
+}
+
+.float-left {
+  float: left;
+}
+
+.bg-p-brown {
+  background-color: #4e3227;
+}
+
+.bg-p-brownlight {
+  background-color: #8d744a;
+}
+
+.line-height {
+  line-height: 1.8;
+}
+
+.letter-spacing {
+  letter-spacing: 1.5px;
+}
+
+.pt-8 {
+  padding-top: 8%;
+}
+
 .site-content .content-blog {
   padding: 4% 17%;
 }
@@ -12556,76 +12627,108 @@ footer .col-md-3 p a:hover {
   font-style: italic;
 }
 
-.text-center {
-  text-align: center;
+#blog-post {
+  padding: 5% 17%;
 }
-
-.text-left {
-  text-align: left;
+#blog-post .breadcrumb {
+  padding-bottom: 3%;
 }
-
-.text-white {
-  color: #fff;
-}
-
-.text-brown {
-  color: #3B2E29;
-}
-
-.text-brown-light {
-  color: #8d744a;
-}
-
-.text-bold {
-  font-weight: bold;
-}
-
-.pd-0 {
-  padding: 0;
-}
-
-.pd-5-15 {
-  padding: 5% 15%;
-}
-
-.mg-0 {
-  margin: 0;
-}
-
-.w-100 {
-  width: 100%;
-}
-
-.type-style-none {
-  list-style: none;
-}
-
-.family-museosans {
-  font-family: "MuseoSans";
-}
-
-.float-left {
+#blog-post .breadcrumb li {
   float: left;
 }
-
-.bg-p-brown {
-  background-color: #4e3227;
+#blog-post .breadcrumb li::before {
+  content: ">";
 }
-
-.bg-p-brownlight {
-  background-color: #8d744a;
+#blog-post .breadcrumb li:first-child::before {
+  content: none;
 }
-
-.line-height {
-  line-height: 1.8;
+#blog-post .breadcrumb li a {
+  padding: 0 22px;
+  text-decoration: none;
+  color: #8d744a;
+  font-weight: lighter;
+  font-size: 1.3rem;
 }
-
-.letter-spacing {
-  letter-spacing: 1.5px;
+#blog-post .breadcrumb li span {
+  padding: 0 22px;
+  color: #8d744a;
+  font-size: 1.3rem;
 }
-
-.pt-8 {
+#blog-post .imagen {
+  width: 100%;
+}
+#blog-post .imagen img {
+  width: 100%;
+}
+#blog-post .texto {
+  padding-top: 2%;
+  font-weight: 300;
+}
+#blog-post .texto h2 {
+  color: #4e3227;
+}
+#blog-post .texto p {
+  padding-top: 2%;
+  margin-bottom: 3%;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #4e3227;
+}
+#blog-post .texto .gorro {
+  margin: 7% 0;
+  border-bottom: 1px solid #8d744a;
+  border-top: 1px solid #8d744a;
+}
+#blog-post .texto .gorro p {
+  text-transform: uppercase;
+  color: #8d744a;
+  font-weight: 400;
+  font-family: "trajan-pro-3";
+}
+#blog-post .botons {
   padding-top: 8%;
+  padding-bottom: 5%;
+}
+#blog-post .botons .social {
+  float: left;
+}
+#blog-post .botons .social p {
+  font-size: 1.5rem;
+  color: #4e3227;
+  float: left;
+  font-weight: 300;
+  margin-right: 17px;
+}
+#blog-post .botons .social li {
+  float: left;
+  list-style: none;
+}
+#blog-post .botons .social li:nth-child(3) {
+  padding: 0 13px;
+}
+
+#terms {
+  padding: 3% 18% 10%;
+}
+#terms h2 {
+  color: #8d744a;
+}
+#terms .separador {
+  border-bottom: 1px solid #8d744a;
+  margin-top: 3%;
+  margin-bottom: 6%;
+  width: 36%;
+}
+#terms p {
+  color: #4e3227;
+  line-height: 1.8;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+#terms .sub-title {
+  text-transform: uppercase;
+  color: #8d744a;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

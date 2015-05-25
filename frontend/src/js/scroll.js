@@ -13,6 +13,8 @@ $(document).ready(function(){
 	});
 });
 
+
+
 /*Carrousel*/
 
 $(document).ready( function() {
@@ -24,40 +26,27 @@ $(document).ready( function() {
       contain: true
     });
 
-   var $gallery2 = $('.second-gallery .gallery').flickity();
-  $('.second-gallery').flickity({
-      // options
-      cellAlign: 'left',
-      contain: true
-    });
-
-  $('.button--previous').on( 'click', function() {
-
-    $('.main-gallery').flickity('previous');
-  });
-  // previous wrapped
-  $('.button--previous-wrapped').on( 'click', function() {
-    $('.main-gallery').flickity( 'previous', true );
-  });
-
-// GO TO PREVIOUS
-  // $('.main-gallery button.previous').on( 'click', function() {
-
-  //   $('.second-gallery').flickity('previous');
-  // });
-  // previous wrapped
  $('.main-gallery button.previous').on( 'click', function() {
    $('.second-gallery').flickity( 'previous', true );
  });
 
-// GO TO NEXT
-  //  $('.main-gallery button.next').on( 'click', function() {
-
-  //   $('.second-gallery').flickity('next');
-  // });
-  // previous wrapped
  $('.main-gallery button.next').on( 'click', function() {
    $('.second-gallery').flickity( 'next', true );
  });
-  
+ 
+});
+
+// asNavFor can be set a selector string
+asNavFor: '.gallery-main'
+// or an element
+asNavFor: $('.gallery-main')[0]
+asNavFor: document.querySelector('.gallery-main')
+
+// 1st gallery, main
+$('.gallery-main').flickity();
+// 2nd gallery, navigation
+$('.gallery-nav').flickity({
+  asNavFor: '.gallery-main',
+  contain: true,
+  pageDots: false
 });

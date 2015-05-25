@@ -34,7 +34,7 @@
 // @import "EBM/elements/ebm-panels-custom";
 
 // APP Modules
-@import "EBM/modules/ebm-ie-control";
+@import "EBM/modules/ebm-ie-control"; 
 // @import "EBM/modules/ebm-header";
 // @import "EBM/modules/ebm-footer";
 // @import "EBM/modules/ebm-size-control";
@@ -51,6 +51,12 @@
 
 @import "views/_ingreso.scss";
 
-@import "views/_blog.scss"; 
-
 @import "includes/_utilities.scss";
+
+@import "views/_blog.scss";
+
+@import "views/_blog-post.scss";
+
+@import "views/_terms.scss";
+
+@import "views/_contact.scss";  
