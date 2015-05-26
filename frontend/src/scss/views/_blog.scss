@@ -19,10 +19,11 @@
 					text-decoration: none;
 					font-size: 18px;
 					font-weight: lighter;
-					&:first-child{
-						border: 1px solid;
-		  				padding: 5px 14px;
-		  			}
+					padding: 5px 8px;
+  				border: 1px solid transparent;
+					&:hover{
+						border-color:#8d744a;
+					}
 				}
 			}
 		}
@@ -100,6 +101,33 @@
 			  	font-weight: 100;
 			  	font-style: italic;
 			} 
+		}
+		#pagination{
+			padding-top: 5%;
+			ul{
+				width: 100%;
+				li{
+					a{
+						border: 1px solid transparent;
+						font-size: 1.5rem;
+  					font-weight: 300;
+  					padding: 0 2%;
+  					background-color: transparent;
+  					color: #4e3227;
+  					&:hover{
+							border-color:#4e3227;
+  					}
+					}
+					&:first-child a, &:last-child a, .next , .previous {
+  						border: none;
+  					}
+				}
+				li.active{
+					a{
+						border:1px solid #4e3227;
+					}
+				}
+			}
 		}
 	}
 }
