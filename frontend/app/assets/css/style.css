@@ -12418,6 +12418,18 @@ h1, h2 {
   -webkit-transform: rotateX(90deg);
   transform: rotateX(90deg);
 }
+.site-menu .contenedor-menu nav a.active div {
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  top: -61px;
+  height: 61px;
+}
+.site-menu .contenedor-menu nav a.active div:first-child {
+  top: -70px;
+  z-index: 1;
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+}
 .site-menu .contenedor-menu nav a.logo-link div {
   width: 200px;
   line-height: 55px !important;
@@ -12953,6 +12965,10 @@ footer .col-md-3 p a:hover {
   border: 1px solid;
   padding: 5px 14px;
 }
+#media-kit .active {
+  border: 1px solid;
+  padding: 5px 14px;
+}
 #media-kit #downloads {
   padding-top: 5%;
   padding-bottom: 6%;
@@ -13010,6 +13026,67 @@ footer .col-md-3 p a:hover {
 #media-kit .panel-group .panel-default .panel-body .grid .descarga a img {
   padding-right: 10px;
   padding-bottom: 2%;
+}
+
+#faqs {
+  padding: 5% 17%;
+}
+#faqs h2 {
+  color: #8d744a;
+}
+#faqs .separador {
+  border-bottom: 1px solid #8d744a;
+  padding-top: 2%;
+  padding-left: 2%;
+  width: 10%;
+}
+#faqs #menu-blog {
+  padding-top: 5%;
+  padding-bottom: 4%;
+}
+#faqs #menu-blog nav a {
+  padding: 0 7px;
+  color: #8d744a;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: lighter;
+  margin: 0 3.5% 0 0;
+}
+#faqs #menu-blog nav a:first-child {
+  border: 1px solid;
+  padding: 5px 14px;
+}
+#faqs .section {
+  border-bottom: 1px solid;
+  padding-bottom: 5%;
+  padding-top: 4%;
+}
+#faqs .section:last-child {
+  border-bottom: transparent;
+}
+#faqs .section h2 {
+  color: #3B2E29;
+  padding-bottom: 5%;
+}
+#faqs .section .panel-title {
+  padding-bottom: 2%;
+}
+#faqs .section .panel-title a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+#faqs .section .panel-title a img {
+  width: 21px;
+  margin-right: 3%;
+}
+#faqs .section .panel-body {
+  padding-left: 7%;
+  padding: 0% 6% 5%;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #3B2E29;
 }
 
 /*# sourceMappingURL=style.css.map */
