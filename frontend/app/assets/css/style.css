@@ -12965,10 +12965,16 @@ footer .col-md-3 p a:hover {
   text-decoration: none;
   font-size: 18px;
   font-weight: lighter;
-  margin: 0 3.5% 0 0;
+  border: 1px solid;
+  padding: 5px 14px;
+  border: 1px solid transparent;
+  margin-right: 2%;
 }
 #media-kit #menu-blog nav a:first-child {
   border: 1px solid;
+}
+#media-kit #menu-blog nav a:hover {
+  border: 1px solid #8d744a;
   padding: 5px 14px;
 }
 #media-kit .active {
@@ -13056,10 +13062,16 @@ footer .col-md-3 p a:hover {
   text-decoration: none;
   font-size: 18px;
   font-weight: lighter;
-  margin: 0 3.5% 0 0;
+  border: 1px solid;
+  padding: 5px 14px;
+  border: 1px solid transparent;
+  margin-right: 2%;
 }
 #faqs #menu-blog nav a:first-child {
   border: 1px solid;
+}
+#faqs #menu-blog nav a:hover {
+  border: 1px solid #8d744a;
   padding: 5px 14px;
 }
 #faqs .section {

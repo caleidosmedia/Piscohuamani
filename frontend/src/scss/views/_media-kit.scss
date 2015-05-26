@@ -19,11 +19,17 @@
 				text-decoration: none;
 				font-size: 18px;
 				font-weight: lighter;
-				margin: 0 3.5% 0 0;
+				border: 1px solid;
+	  		padding: 5px 14px;
+	  		border: 1px solid transparent;
+	  		margin-right: 2%;
 				&:first-child{
 					border: 1px solid;
-	  			padding: 5px 14px;
 	  			}
+	  		&:hover{
+					border: 1px solid #8d744a;
+		  		padding: 5px 14px;
+				}
 			}
 		}
 	}
