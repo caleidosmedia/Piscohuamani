@@ -424,8 +424,8 @@ module.exports = function (grunt) {
   grunt.registerTask('default', [
     // 'coffee:dev',
     //'sass:ebm',
-    'sass:dev',
-    'bower:dev',
+    // 'sass:dev',
+    // 'bower:dev',
     // 'autoprefixer:dev',
     // 'cssmin:dev',
     // 'jshint',
