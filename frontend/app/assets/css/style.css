@@ -5124,20 +5124,50 @@ tbody.collapse.in {
 	App custom
 */
 /* PROJECT ESPECIFIC FONTS */
+.thin {
+  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-weight: 100;
+  font-style: normal;
+}
+
 .light {
   font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
   font-weight: 300;
   font-style: normal;
 }
 
-.book {
+.light-italic {
   font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
-  font-weight: 400;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.medium {
+  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-weight: 500;
   font-style: normal;
 }
 
 .bold {
   font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.black-italic {
+  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.serif-book {
+  font-family: "trajan-pro-3", "Times New Roman", Times, serif !important;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.serif-bold {
+  font-family: "trajan-pro-3", "Times New Roman", Times, serif !important;
   font-weight: 700;
   font-style: normal;
 }
@@ -6409,8 +6439,12 @@ body::-webkit-scrollbar {
 	Home
 */
 .site-menu {
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
   height: 61px;
+  width: 100%;
 }
 .site-menu .contenedor-menu {
   position: fixed;
@@ -6502,23 +6536,47 @@ body::-webkit-scrollbar {
   width: 100%;
 }
 
-.site-content .img-principal {
-  height: 600px;
-  background-image: url(../img/fotos/foto-home.png);
-  background-size: cover;
+.img-principal {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
   background-repeat: no-repeat;
-  padding-top: 10%;
+  background-size: cover;
 }
-.site-content .img-principal div.texto {
+.img-principal div.texto {
   font-family: times;
 }
-.site-content .img-principal div.texto h1 {
+.img-principal div.texto h1 {
+  font-size: 56px;
   font-size: 4rem;
 }
-.site-content .img-principal div.texto h3 {
+.img-principal div.texto h3 {
   font-style: italic;
 }
-.site-content .img-principal div.texto p {
+.img-principal div.texto p {
   font-size: 1.7rem;
   font-family: "museo-sans";
   font-weight: lighter;
@@ -6526,94 +6584,110 @@ body::-webkit-scrollbar {
   margin-top: 18px;
   letter-spacing: 0;
 }
-.site-content .img-principal .scroll-down {
+.img-principal .scroll-down {
   width: 90px;
   margin: 0 auto;
   padding-top: 6%;
 }
-.site-content .img-principal .scroll-down img {
+.img-principal .scroll-down img {
   width: 100%;
 }
-.site-content #about-us {
+
+/*
+	About us
+*/
+#about-us {
   background-image: url(../img/texturas/debut_light/debut_light.png);
   padding: 5% 17% 12%;
   background-size: 30%;
 }
-.site-content #about-us h1 {
+#about-us h1 {
   font-size: 35px;
 }
-.site-content #about-us h3 {
+#about-us h3 {
   font-style: italic;
 }
-.site-content #about-us .texto-about {
+#about-us .texto-about {
   padding: 9% 0 0 17%;
 }
-.site-content #about-us .texto-about .separador {
+#about-us .texto-about .separador {
   border-bottom: 1px solid #3b2e29;
   padding-top: 4%;
 }
-.site-content #about-us .texto-about p {
+#about-us .texto-about p {
   padding-top: 6%;
   font-size: 1.5rem;
   font-weight: 300;
 }
-.site-content #the-goods, .site-content #make-drink, .site-content #events {
+
+/*
+	The goods
+*/
+#the-goods, #make-drink, #events {
   background-color: #f8f4e5;
   padding: 8% 17%;
 }
-.site-content #the-goods h1, .site-content #make-drink h1, .site-content #events h1 {
+#the-goods h1, #make-drink h1, #events h1 {
   font-size: 35px;
 }
-.site-content #the-goods h3, .site-content #make-drink h3, .site-content #events h3 {
+#the-goods h3, #make-drink h3, #events h3 {
   font-style: italic;
 }
-.site-content #the-goods .slider-text, .site-content #make-drink .slider-text, .site-content #events .slider-text {
+#the-goods .slider-text, #make-drink .slider-text, #events .slider-text {
   padding: 5% 20%;
 }
-.site-content #the-goods .slider-text .separador, .site-content #make-drink .slider-text .separador, .site-content #events .slider-text .separador {
+#the-goods .slider-text .separador, #make-drink .slider-text .separador, #events .slider-text .separador {
   border-bottom: 1px solid #3b2e29;
   padding-top: 4%;
 }
-.site-content #the-goods .slider-text p, .site-content #make-drink .slider-text p, .site-content #events .slider-text p {
+#the-goods .slider-text p, #make-drink .slider-text p, #events .slider-text p {
   padding-top: 6%;
   font-size: 1.5rem;
   font-weight: 300;
 }
-.site-content #the-goods .slider-content, .site-content #make-drink .slider-content, .site-content #events .slider-content {
+#the-goods .slider-content, #make-drink .slider-content, #events .slider-content {
   position: relative;
   padding-right: 9%;
   height: 500px;
   top: -150px;
   text-align: right;
 }
-.site-content #the-goods .gallery-cell, .site-content #make-drink .gallery-cell, .site-content #events .gallery-cell {
+#the-goods .gallery-cell, #make-drink .gallery-cell, #events .gallery-cell {
   width: 100%;
 }
-.site-content #the-goods .gallery-nav .gallery-cell.is-nav-selected, .site-content #make-drink .gallery-nav .gallery-cell.is-nav-selected, .site-content #events .gallery-nav .gallery-cell.is-nav-selected {
+#the-goods .gallery-nav .gallery-cell.is-nav-selected, #make-drink .gallery-nav .gallery-cell.is-nav-selected, #events .gallery-nav .gallery-cell.is-nav-selected {
   background: #ED2;
 }
-.site-content #make-drink {
+
+/*
+	Make drink
+*/
+#make-drink {
   background-image: url(../img/texturas/textura-oscura.png);
 }
-.site-content #events {
+
+/*
+	Events
+*/
+#events {
   background-image: url(../img/fotos/bg.jpg);
   background-size: cover;
 }
-.site-content #events .separador {
+#events .separador {
   border-bottom: 2px solid #fff !important;
   margin-bottom: 2%;
 }
-.site-content #events .flickity-viewport {
+#events .flickity-viewport {
   min-height: 550px;
 }
-.site-content #events .row {
+#events .row {
   padding-top: 7%;
 }
-.site-content #events .row h3 {
+#events .row h3 {
   font-style: normal;
   font-weight: 300;
 }
-.site-content #events .row button {
+#events .row button {
   background-color: transparent;
   padding: 2% 14%;
   margin-top: 8%;
@@ -6621,14 +6695,14 @@ body::-webkit-scrollbar {
   transition: all .5s ease-in-out;
   position: relative;
 }
-.site-content #events .row button a {
+#events .row button a {
   font-size: 1.4rem;
   font-weight: 300;
   text-decoration: none;
   position: relative;
   z-index: 1;
 }
-.site-content #events .row button .overlay {
+#events .row button .overlay {
   background-color: #a05324;
   position: absolute;
   top: 0;
@@ -6639,27 +6713,31 @@ body::-webkit-scrollbar {
   transform: translateX(-100%);
   transition: all .5s ease-in;
 }
-.site-content #events .row button:hover a {
+#events .row button:hover a {
   color: #fff;
 }
-.site-content #events .row button:hover .overlay {
+#events .row button:hover .overlay {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
 }
-.site-content #follow-us {
+
+/*
+	Follow us
+*/
+#follow-us {
   background-color: #8d744a;
   padding: 6% 17%;
 }
-.site-content #follow-us h3 {
+#follow-us h3 {
   font-weight: lighter;
   font-style: italic;
 }
-.site-content #follow-us .container-social {
+#follow-us .container-social {
   display: inline-block;
   padding-top: 4%;
   font-family: "MuseoSans";
 }
-.site-content #follow-us .container-social a {
+#follow-us .container-social a {
   display: block;
   width: 180px;
   height: 180px;
@@ -6673,7 +6751,7 @@ body::-webkit-scrollbar {
   transition: all .5s ease-in-out;
   padding: 2% 3%;
 }
-.site-content #follow-us .container-social a .overlay {
+#follow-us .container-social a .overlay {
   background-image: url(../img/texturas/textura-hover-redes.png);
   position: absolute;
   top: 0;
@@ -6684,35 +6762,38 @@ body::-webkit-scrollbar {
   transform: translateX(-100%);
   transition: all .5s ease-in;
 }
-.site-content #follow-us .container-social a:hover {
+#follow-us .container-social a:hover {
   color: #fff;
 }
-.site-content #follow-us .container-social a:hover .overlay {
+#follow-us .container-social a:hover .overlay {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
 }
-.site-content #follow-us .container-social a h1, .site-content #follow-us .container-social a p {
+#follow-us .container-social a h1, #follow-us .container-social a p {
   font-family: "Museo-Sans";
   position: relative;
   z-index: 1;
 }
-.site-content #follow-us .container-social a p {
+#follow-us .container-social a p {
   font-size: 1.5rem;
   font-weight: lighter;
   padding-top: 3%;
   line-height: 1.3;
   font-style: italic;
 }
-.site-content #follow-us .container-social a .icon {
+#follow-us .container-social a .icon {
   position: absolute;
   width: 45px;
   bottom: 8%;
   right: 10%;
 }
-.site-content #follow-us .container-social a .icon img {
+#follow-us .container-social a .icon img {
   width: 100%;
 }
 
+/*
+	Footer
+*/
 footer {
   color: #8d744a;
 }
@@ -6742,12 +6823,7 @@ footer .col-md-3 p a:hover {
 /*
 	Ingreso Fondo
 */
-.site-wrapper {
-  height: 100%;
-}
-
 .fondo {
-  /*background-image: url(../img/texturas/cream_pixels/cream_pixels.png);*/
   width: 100%;
   height: 100%;
   background-color: #4e3227;

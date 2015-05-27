@@ -324,8 +324,9 @@ body {
 	Home
 */
 .site-menu {
-	position: relative;
+	@include position(absolute, 0 0 null 0);
 	height: 61px;
+	width: 100%;
 	.contenedor-menu {
 		position: fixed;
 	 	top: 0;
@@ -420,222 +421,243 @@ body {
 	 	}
 	}
 }
-.site-content {
-	.img-principal {
-		height: 600px;
-		background-image: url(../img/fotos/foto-home.png);
-		background-size: cover;
-  	background-repeat: no-repeat;
-  	padding-top: 10%;
-  		div.texto {
-  			font-family: times;
-  			h1 {
-				font-size: 4rem;
-  			}
-  			h3 {
-				font-style: italic;
-  			}
-  			p {
-  				font-size: 1.7rem;
-  				font-family: "museo-sans";
-  				font-weight: lighter;
-  				font-style: italic;
-  				margin-top: 18px;
-  				letter-spacing: 0;
-  			}
-  		}
-  		.scroll-down {
-  			width: 90px;
-  			margin: 0 auto;
-  			padding-top: 6%;
-  			img {
-  				width: 100%;
-  			}
-  		}
-	}
-	#about-us {
-		background-image: url(../img/texturas/debut_light/debut_light.png);
-		padding: 5% 17% 12%;
-		background-size: 30%;
-		h1 {
-			font-size: 35px;
-		}
-		h3 {
-			font-style: italic;
-		}
-		.texto-about {
-			padding: 9% 0 0 17%;
-			.separador {
-				border-bottom: 1px solid #3b2e29;
-				padding-top:4%;
+
+.img-principal {
+	@include flex-column-center;	
+	@include bg-img-control;
+		div.texto {
+			font-family: times;
+			h1 {
+				font-size: 56px;
+				font-size: rem(56px);
 			}
-			p {
-				padding-top: 6%;
-				font-size: 1.5rem;
-				font-weight: 300;
-			}
-		}
-	} 
-	#the-goods {
-		background-color:rgb(248, 244, 229);
-		padding: 8% 17%;
-		h1 {
-			font-size: 35px;
-		}
-		h3 {
-			font-style: italic;
-		}
-		.slider-text {
-			padding: 5% 20%;
-			.separador {
-				border-bottom: 1px solid #3b2e29;
-				padding-top: 4%;
-			}
-			p {
-				padding-top: 6%;
-				font-size: 1.5rem;
-				font-weight: 300;
-			}
-		}
-		.slider-content {
-			position: relative;
-			padding-right: 9%;
-			height: 500px;
-			top: -150px;
-			text-align: right;
-		}
-		.gallery-cell {
-			width: 100%;
-		}
-		.gallery-nav .gallery-cell.is-nav-selected {
-  		background: #ED2; 
-		}	
-	}
-	#make-drink {
-		@extend #the-goods; 
-		background-image: url(../img/texturas/textura-oscura.png);
-	}
-	#events {
-		@extend #the-goods;
-		background-image: url(../img/fotos/bg.jpg); 
-		background-size: cover;
-		.separador {
-			border-bottom: 2px solid #fff!important;
-			margin-bottom: 2%;
-		}
-		.flickity-viewport {
-			min-height: 550px;
-		}
-		.row {
-			padding-top: 7%;
 			h3 {
-				font-style: normal;
-  			font-weight: 300;
+			font-style: italic;
 			}
-			button {
-				background-color: transparent;
-				padding: 2% 14%;
-				margin-top: 8%;
-				border: 1px solid #fff;
-				transition: all .5s ease-in-out;
-				position: relative; 
-				a {
-					font-size: 1.4rem;
-  				font-weight: 300;
-  				text-decoration: none;
-  				position: relative;
-  				z-index: 1;
-				}
-				.overlay {
-					background-color: #a05324;
-					position: absolute;
-					top: 0;
-					left: 0; 
-					width: 100%;
-					height: 100%;
-					-webkit-transform: translateX(-100%);
-					transform: translateX(-100%); 
-					transition: all .5s ease-in;
-				}
-				&:hover {
-  				a {
-  					color: #fff;
-  				}
-					.overlay { 
-						-webkit-transform: translateX(0%);
-						transform: translateX(0%); 
-					} 
-  			}
+			p {
+				font-size: 1.7rem;
+				font-family: "museo-sans";
+				font-weight: lighter;
+				font-style: italic;
+				margin-top: 18px;
+				letter-spacing: 0;
 			}
+		}
+		.scroll-down {
+			width: 90px;
+			margin: 0 auto;
+			padding-top: 6%;
+			img {
+				width: 100%;
+			}
+		}
+}
+
+/*
+	About us
+*/
+#about-us {
+	background-image: url(../img/texturas/debut_light/debut_light.png);
+	padding: 5% 17% 12%;
+	background-size: 30%;
+	h1 {
+		font-size: 35px;
+	}
+	h3 {
+		font-style: italic;
+	}
+	.texto-about {
+		padding: 9% 0 0 17%;
+		.separador {
+			border-bottom: 1px solid #3b2e29;
+			padding-top:4%;
+		}
+		p {
+			padding-top: 6%;
+			font-size: 1.5rem;
+			font-weight: 300;
 		}
 	}
-	#follow-us {
-		background-color: #8d744a;
-		padding: 6% 17%; 
-		h3 {
-			font-weight: lighter;
-  		font-style: italic;
-		}
-		.container-social {
-			display: inline-block;
+} 
+
+/*
+	The goods
+*/
+#the-goods {
+	background-color:rgb(248, 244, 229);
+	padding: 8% 17%;
+	h1 {
+		font-size: 35px;
+	}
+	h3 {
+		font-style: italic;
+	}
+	.slider-text {
+		padding: 5% 20%;
+		.separador {
+			border-bottom: 1px solid #3b2e29;
 			padding-top: 4%;
-			font-family: "MuseoSans";
+		}
+		p {
+			padding-top: 6%;
+			font-size: 1.5rem;
+			font-weight: 300;
+		}
+	}
+	.slider-content {
+		position: relative;
+		padding-right: 9%;
+		height: 500px;
+		top: -150px;
+		text-align: right;
+	}
+	.gallery-cell {
+		width: 100%;
+	}
+	.gallery-nav .gallery-cell.is-nav-selected {
+		background: #ED2; 
+	}	
+}
+
+/*
+	Make drink
+*/
+#make-drink {
+	@extend #the-goods; 
+	background-image: url(../img/texturas/textura-oscura.png);
+}
+
+/*
+	Events
+*/
+#events {
+	@extend #the-goods;
+	background-image: url(../img/fotos/bg.jpg); 
+	background-size: cover;
+	.separador {
+		border-bottom: 2px solid #fff!important;
+		margin-bottom: 2%;
+	}
+	.flickity-viewport {
+		min-height: 550px;
+	}
+	.row {
+		padding-top: 7%;
+		h3 {
+			font-style: normal;
+			font-weight: 300;
+		}
+		button {
+			background-color: transparent;
+			padding: 2% 14%;
+			margin-top: 8%;
+			border: 1px solid #fff;
+			transition: all .5s ease-in-out;
+			position: relative; 
 			a {
-				display: block;
-				width: 180px;
-  			height: 180px;
-				border: 1.5px solid #fff;
-				float: left; 
- 				margin-right: 24px;
-				margin-bottom: 26px;
-				position: relative;
+				font-size: 1.4rem;
+				font-weight: 300;
 				text-decoration: none;
-				overflow: hidden;
-				transition: all .5s ease-in-out;
-				padding: 2% 3%;
-				.overlay{
-					background-image: url(../img/texturas/textura-hover-redes.png);
-					position: absolute;
-					top: 0;
-					left: 0; 
-					width: 100%;
-					height: 100%;
-					-webkit-transform: translateX(-100%);
-					transform: translateX(-100%); 
-					transition: all .5s ease-in; 
-				}
-				&:hover {
+				position: relative;
+				z-index: 1;
+			}
+			.overlay {
+				background-color: #a05324;
+				position: absolute;
+				top: 0;
+				left: 0; 
+				width: 100%;
+				height: 100%;
+				-webkit-transform: translateX(-100%);
+				transform: translateX(-100%); 
+				transition: all .5s ease-in;
+			}
+			&:hover {
+				a {
 					color: #fff;
-					.overlay { 
-						-webkit-transform: translateX(0%);
-						transform: translateX(0%); 
-					} 
 				}
-				h1, p {
-					font-family: "Museo-Sans";
-					position: relative;
-					z-index: 1;
+				.overlay { 
+					-webkit-transform: translateX(0%);
+					transform: translateX(0%); 
 				} 
-				p {
-					font-size: 1.5rem;
-					font-weight: lighter;
-					padding-top: 3%;
-					line-height: 1.3;
-					font-style: italic;
-				}
-				.icon {
-					position: absolute;
-					width: 45px;
-					bottom: 8%;
-					right: 10%;
-					img {
-						width: 100%;
-					}
-				}
-			} 
+			}
 		}
 	}
 }
+
+/*
+	Follow us
+*/
+#follow-us {
+	background-color: #8d744a;
+	padding: 6% 17%; 
+	h3 {
+		font-weight: lighter;
+		font-style: italic;
+	}
+	.container-social {
+		display: inline-block;
+		padding-top: 4%;
+		font-family: "MuseoSans";
+		a {
+			display: block;
+			width: 180px;
+			height: 180px;
+			border: 1.5px solid #fff;
+			float: left; 
+				margin-right: 24px;
+			margin-bottom: 26px;
+			position: relative;
+			text-decoration: none;
+			overflow: hidden;
+			transition: all .5s ease-in-out;
+			padding: 2% 3%;
+			.overlay{
+				background-image: url(../img/texturas/textura-hover-redes.png);
+				position: absolute;
+				top: 0;
+				left: 0; 
+				width: 100%;
+				height: 100%;
+				-webkit-transform: translateX(-100%);
+				transform: translateX(-100%); 
+				transition: all .5s ease-in; 
+			}
+			&:hover {
+				color: #fff;
+				.overlay { 
+					-webkit-transform: translateX(0%);
+					transform: translateX(0%); 
+				} 
+			}
+			h1, p {
+				font-family: "Museo-Sans";
+				position: relative;
+				z-index: 1;
+			} 
+			p {
+				font-size: 1.5rem;
+				font-weight: lighter;
+				padding-top: 3%;
+				line-height: 1.3;
+				font-style: italic;
+			}
+			.icon {
+				position: absolute;
+				width: 45px;
+				bottom: 8%;
+				right: 10%;
+				img {
+					width: 100%;
+				}
+			}
+		} 
+	}
+}
+
+/*
+	Footer
+*/
 footer {
 	color: #8d744a;
 	.footer-logo {
@@ -665,11 +687,7 @@ footer {
 /*
 	Ingreso Fondo
 */
-.site-wrapper {
-	height: 100%;
-}
 .fondo {
-	/*background-image: url(../img/texturas/cream_pixels/cream_pixels.png);*/
 	width: 100%;
 	height: 100%;
 	background-color: #4e3227;
