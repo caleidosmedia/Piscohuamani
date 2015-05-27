@@ -207,6 +207,57 @@ h1, h2{
 	}
 	#events{
 		@extend #the-goods;
+		background-image: url(../img/fotos/bg.jpg); 
+		background-size: cover;
+		.separador{
+			border-bottom: 2px solid #fff!important;
+			margin-bottom: 2%;
+		}
+		.flickity-viewport{
+			min-height: 550px;
+		}
+		.row{
+			padding-top: 7%;
+			h3{
+				font-style: normal;
+  			font-weight: 300;
+			}
+			button{
+				background-color: transparent;
+				padding:2% 14%;
+				margin-top: 8%;
+				border: 1px solid #fff;
+				transition: all .5s ease-in-out;
+				position: relative; 
+				a{
+					font-size: 1.4rem;
+  				font-weight: 300;
+  				text-decoration: none;
+  				position: relative;
+  				z-index: 1;
+				}
+				.overlay{
+					background-color: #a05324;
+					position: absolute;
+					top: 0;
+					left: 0; 
+					width: 100%;
+					height: 100%;
+					-webkit-transform: translateX(-100%);
+					transform: translateX(-100%); 
+					transition: all .5s ease-in;
+				}
+				&:hover{
+  				a{
+  					color: #fff;
+  				}
+					.overlay{ 
+						-webkit-transform: translateX(0%);
+						transform: translateX(0%); 
+					} 
+  			}
+			}
+		}
 	}
 	#follow-us{
 		background-color: #8d744a;

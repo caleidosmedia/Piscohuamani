@@ -13675,6 +13675,57 @@ h1, h2 {
 .site-content #make-drink {
   background-image: url(../img/texturas/textura-oscura.png);
 }
+.site-content #events {
+  background-image: url(../img/fotos/bg.jpg);
+  background-size: cover;
+}
+.site-content #events .separador {
+  border-bottom: 2px solid #fff !important;
+  margin-bottom: 2%;
+}
+.site-content #events .flickity-viewport {
+  min-height: 550px;
+}
+.site-content #events .row {
+  padding-top: 7%;
+}
+.site-content #events .row h3 {
+  font-style: normal;
+  font-weight: 300;
+}
+.site-content #events .row button {
+  background-color: transparent;
+  padding: 2% 14%;
+  margin-top: 8%;
+  border: 1px solid #fff;
+  transition: all .5s ease-in-out;
+  position: relative;
+}
+.site-content #events .row button a {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+.site-content #events .row button .overlay {
+  background-color: #a05324;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  transition: all .5s ease-in;
+}
+.site-content #events .row button:hover a {
+  color: #fff;
+}
+.site-content #events .row button:hover .overlay {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
 .site-content #follow-us {
   background-color: #8d744a;
   padding: 6% 17%;
