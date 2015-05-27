@@ -25,56 +25,56 @@ body {
 /*
 	Blog posts
 */
-#blog-post{
+#blog-post {
 	padding: 5% 17%;
-	.breadcrumb{
+	.breadcrumb {
 		padding-bottom: 3%;
-		li{
+		li {
 			float: left;
-			&::before{
-				content:">";
+			&::before {
+				content: ">";
 			}
-			&:first-child::before{
+			&:first-child::before {
 				content: none;
 			}
-			a{
+			a {
 				padding: 0 22px;
 				text-decoration: none;
 				color: #8d744a;
 				font-weight: lighter;
 				font-size:1.3rem;
 			}
-			span{
+			span {
 				padding: 0 22px;
 				color: #8d744a;
-				font-size:1.3rem; 
+				font-size: 1.3rem; 
 			}
 		}
 	}
-	.imagen{
+	.imagen {
 		width: 100%;
-		img{
+		img {
 			width: 100%; 
 		}
 	}
-	.texto{
+	.texto {
 		padding-top: 2%;
 		font-weight: 300; 
-		h2{
+		h2 {
 			color: #4e3227;
 		}
-		p{
+		p {
 			padding-top: 2%;
 			margin-bottom: 3%;
 			font-size: 1.5rem;
 			line-height: 1.5;
 			color: #4e3227; 
 		}
-		.gorro{
+		.gorro {
 			margin: 7% 0;
 			border-bottom: 1px solid #8d744a;
 			border-top: 1px solid #8d744a;
-			p{
+			p {
 				text-transform: uppercase;
 				color: #8d744a;
 				font-weight: 400;
@@ -82,19 +82,19 @@ body {
 			}
 		} 
 	}
-	.botons{
+	.botons {
 		padding-top: 8%;
 		padding-bottom: 5%; 
-		.social{
+		.social {
 			float: left;
-			p{
+			p {
 				font-size: 1.5rem;
 				color: #4e3227;
 				float: left;
 				font-weight: 300; 
 				margin-right: 17px;
 			} 
-			li{
+			li {
 				float: left;
 				list-style: none;
 				&:nth-child(3){
@@ -108,22 +108,22 @@ body {
 /*
 	Menu blog
 */
-.site-content{
-	.content-blog{
+.site-content {
+	.content-blog {
 		padding: 4% 17%;
-		h2{
+		h2 {
 			color: #8d744a;
 		}
-		.separador{
+		.separador {
 			border-bottom:1px solid #8d744a;
 			padding-top:2%;
 			width: 36%;
 		}
-		#menu-blog{
+		#menu-blog {
 			padding-top: 5%;
 			padding-bottom: 8%;
-			nav{
-				a{
+			nav {
+				a {
 					padding: 0 7px;
 					color: #8d744a;
 					text-decoration: none;
@@ -131,7 +131,7 @@ body {
 					font-weight: lighter;
 					padding: 5px 8px;
   				border: 1px solid transparent;
-					&:hover{
+					&:hover {
 						border-color:#8d744a;
 					}
 				}
@@ -139,20 +139,20 @@ body {
 		}
 		.post{
 			border-bottom: 1px solid #3B2E29;
-	  		padding-bottom: 6%; 
-			.imagen{
+	  	padding-bottom: 6%; 
+			.imagen {
 				width: 100%;
-				img{
+				img {
 					width: 100%; 
 				}
 			}
-			.texto{
+			.texto {
 				padding-top: 2%;
 				font-weight: 300;
-				h2{
+				h2 {
 					color: #4e3227;
 				}
-				p{
+				p {
 					padding-top: 2%;
 					margin-bottom: 3%;
 					font-size: 1.5rem;
@@ -160,9 +160,9 @@ body {
 					color: #4e3227; 
 				} 
 			}
-			.botons{
+			.botons {
 				padding-top: 3%;
-				button{
+				button {
 					background-color: transparent;
 					padding: 0.7% 5.5%;
 					border: 1px solid #4e3227;
@@ -172,30 +172,30 @@ body {
 					-moz-transiton: all 0.25s ease-in-out;
 					-webkit-transiton: all 0.25s ease-in-out;
 					transition: all 0.25s ease-in-out;  
-					a{
+					a {
 						text-decoration: none;
 						color: #4e3227;
 						font-size: 1.5rem;
 					}
-					&:hover{ 
-						border:1px solid transparent;
+					&:hover { 
+						border: 1px solid transparent;
 						background-color: #a05324;
-						a{
+						a {
 							color: #fff; 
 						}
 					}
 				}
-				.social{
+				.social {
 					float: left;
 					padding-left: 6%;
-					p{
+					p {
 						font-size: 1.5rem;
 						color: #4e3227;
 						float: left;
 						font-weight: 300; 
 						margin-right: 17px;
 					} 
-					li{
+					li {
 						float: left;
 						list-style: none;
 						&:nth-child(3){
@@ -204,37 +204,37 @@ body {
 					} 
 				} 
 			}
-			.tags{
+			.tags {
 				color: #8d744a; 
 				padding-top: 3.5%;
 				font-size: 1.3rem;
-			  	font-weight: 100;
-			  	font-style: italic;
+			  font-weight: 100;
+			  font-style: italic;
 			} 
 		}
-		#pagination{
+		#pagination {
 			padding-top: 5%;
-			ul{
+			ul {
 				width: 100%;
-				li{
-					a{
+				li {
+					a {
 						border: 1px solid transparent;
 						font-size: 1.5rem;
   					font-weight: 300;
   					padding: 0 2%;
   					background-color: transparent;
   					color: #4e3227;
-  					&:hover{
+  					&:hover {
 							border-color:#4e3227;
   					}
 					}
 					&:first-child a, &:last-child a, .next , .previous {
-  						border: none;
-  					}
+  					border: none;
+  				}
 				}
-				li.active{
-					a{
-						border:1px solid #4e3227;
+				li.active {
+					a {
+						border: 1px solid #4e3227;
 					}
 				}
 			}
@@ -245,7 +245,7 @@ body {
 /*
 	Slider events
 */
-#slider-events{
+#slider-events {
 	background-image: url(../img/fotos/fotos-eventos/2-grande.png); 
 	height: 500px;
   background-size: cover;
@@ -254,22 +254,22 @@ body {
 /*
 	Menu blog
 */
-#faqs{
+#faqs {
 	padding: 5% 17%;
-	h2{
+	h2 {
 			color: #8d744a;
 		}
-	.separador{
-		border-bottom:1px solid #8d744a;
-		padding-top:2%;
+	.separador {
+		border-bottom: 1px solid #8d744a;
+		padding-top: 2%;
 		padding-left: 2%;
 		width: 10%;
 	}
-	#menu-blog{
+	#menu-blog {
 		padding-top: 5%;
 		padding-bottom: 4%;
-		nav{
-			a{
+		nav {
+			a {
 				padding: 0 7px; 
 				color: #8d744a;
 				text-decoration: none;
@@ -279,37 +279,37 @@ body {
 	  		padding: 5px 14px;
 	  		border: 1px solid transparent;
 	  		margin-right: 2%;
-	  		&:hover{
+	  		&:hover  {
 					border: 1px solid #8d744a;
 		  		padding: 5px 14px;
 				}
 			} 
 		}
 	}
-	.section{
+	.section {
 		border-bottom: 1px solid;
   	padding-bottom: 5%;
   	padding-top: 4%;
-  	&:last-child{
+  	&:last-child {
   		border-bottom:transparent; 
   	}
-		h2{
+		h2 {
 			color: #3B2E29; 
 			padding-bottom: 5%;
 		}
-		.panel-title{
+		.panel-title {
 			padding-bottom: 2%;
-			a{
+			a {
 				text-transform: uppercase;
 				text-decoration: none;
 				font-size: 1.4rem;
-				img{
+				img {
 					width: 21px;
 					margin-right: 3%;
 				}
 			}
 		}
-		.panel-body{
+		.panel-body {
 			padding-left: 7%;
 			padding: 0% 6% 5%;
 			font-size: 1.4rem;
@@ -317,32 +317,32 @@ body {
   		line-height: 1.5;
   		color: #3B2E29;
 		}
-	}
-	
+	}	
 }
 
 /*
 	Home
 */
-.site-menu{
+.site-menu {
 	position: relative;
 	height: 61px;
-	.contenedor-menu{
+	.contenedor-menu {
 		position: fixed;
 	 	top: 0;
+	 	left: 0;
 	 	width: 100%;
 	 	height: 61px;
 	  background: #3b2e29;
 	 	z-index: 10; 
-	 	nav{
+	 	nav {
 	 		display: inline-block;
-	 		a{
+	 		a {
 				height: 61px;
-  				float: left;
-  				text-align: center;
-  				text-decoration: none;
-  				position: relative;
-  				div{
+  			float: left;
+				text-align: center;
+				text-decoration: none;
+				position: relative;
+  				div {
 						font-size: 14px; 
   					color: #3b2e29;
   					letter-spacing: 0px;
@@ -369,7 +369,7 @@ body {
 				  	transform-origin: center top;
 				  	z-index: 1;
 				  	padding: 0 33px;
-	  				&:first-child{
+	  				&:first-child {
 	  					-webkit-transform: rotateX(0deg);
 	  					transform: rotateX(0deg);
 	  					-webkit-transform-origin: center bottom;
@@ -380,14 +380,14 @@ body {
 	  					z-index: 2;
 	  				}
   				}
-  				&:hover{
-  					div{
+  				&:hover {
+  					div {
   						-webkit-transform: rotateX(0deg);
   						transform: rotateX(0deg);
   						top: -61px;
   						height: 61px;
   					}
-  					div:first-child{
+  					div:first-child {
   						top: -70px;
   						z-index: 1;
   						-webkit-transform: rotateX(90deg);
@@ -395,47 +395,47 @@ body {
   					}
   				}
 	 		}
-	 		a.active{
-				div{
+	 		a.active {
+				div {
 					-webkit-transform: rotateX(0deg);
 					transform: rotateX(0deg);
 					top: -61px;
 					height: 61px;
 				}
-				div:first-child{
+				div:first-child {
 					top: -70px;
 					z-index: 1;
 					-webkit-transform: rotateX(90deg);
 					transform: rotateX(90deg);
 				}
 			}
-	 		a.logo-link div{
+	 		a.logo-link div {
 				width: 200px;
 				line-height: 55px!important;
-  				display: block;
-				img{
+  			display: block;
+				img {
 					width: 100%; 
 				}
 			}
 	 	}
 	}
 }
-.site-content{
-	.img-principal{
+.site-content {
+	.img-principal {
 		height: 600px;
 		background-image: url(../img/fotos/foto-home.png);
 		background-size: cover;
-  		background-repeat: no-repeat;
-  		padding-top: 10%;
-  		div.texto{
+  	background-repeat: no-repeat;
+  	padding-top: 10%;
+  		div.texto {
   			font-family: times;
-  			h1{
+  			h1 {
 				font-size: 4rem;
   			}
-  			h3{
+  			h3 {
 				font-style: italic;
   			}
-  			p{
+  			p {
   				font-size: 1.7rem;
   				font-family: "museo-sans";
   				font-weight: lighter;
@@ -444,110 +444,109 @@ body {
   				letter-spacing: 0;
   			}
   		}
-  		.scroll-down{
+  		.scroll-down {
   			width: 90px;
   			margin: 0 auto;
-  			padding-top:6%;
-  			img{
+  			padding-top: 6%;
+  			img {
   				width: 100%;
   			}
   		}
 	}
-	#about-us{
+	#about-us {
 		background-image: url(../img/texturas/debut_light/debut_light.png);
 		padding: 5% 17% 12%;
 		background-size: 30%;
-		h1{
+		h1 {
 			font-size: 35px;
 		}
-		h3{
+		h3 {
 			font-style: italic;
 		}
-		.texto-about{
+		.texto-about {
 			padding: 9% 0 0 17%;
-			.separador{
-				border-bottom:1px solid #3b2e29;
+			.separador {
+				border-bottom: 1px solid #3b2e29;
 				padding-top:4%;
 			}
-			p{
-				padding-top:6%;
+			p {
+				padding-top: 6%;
 				font-size: 1.5rem;
 				font-weight: 300;
 			}
 		}
 	} 
-	#the-goods{
+	#the-goods {
 		background-color:rgb(248, 244, 229);
 		padding: 8% 17%;
-		h1{
+		h1 {
 			font-size: 35px;
 		}
-		h3{
+		h3 {
 			font-style: italic;
 		}
-		.slider-text{
-			  padding: 5% 20%;
-			.separador{
-				border-bottom:1px solid #3b2e29;
-				padding-top:4%;
+		.slider-text {
+			padding: 5% 20%;
+			.separador {
+				border-bottom: 1px solid #3b2e29;
+				padding-top: 4%;
 			}
-			p{
-				padding-top:6%;
+			p {
+				padding-top: 6%;
 				font-size: 1.5rem;
 				font-weight: 300;
 			}
 		}
-		.slider-content{
+		.slider-content {
 			position: relative;
 			padding-right: 9%;
 			height: 500px;
 			top: -150px;
 			text-align: right;
 		}
-		.gallery-cell{
+		.gallery-cell {
 			width: 100%;
 		}
 		.gallery-nav .gallery-cell.is-nav-selected {
-  background: #ED2; 
-}
-		
+  		background: #ED2; 
+		}	
 	}
-	#make-drink{
+	#make-drink {
 		@extend #the-goods; 
 		background-image: url(../img/texturas/textura-oscura.png);
 	}
-	#events{
+	#events {
 		@extend #the-goods;
 		background-image: url(../img/fotos/bg.jpg); 
 		background-size: cover;
-		.separador{
+		.separador {
 			border-bottom: 2px solid #fff!important;
 			margin-bottom: 2%;
 		}
-		.flickity-viewport{
+		.flickity-viewport {
 			min-height: 550px;
 		}
-		.row{
+		.row {
 			padding-top: 7%;
-			h3{
+			h3 {
 				font-style: normal;
   			font-weight: 300;
 			}
-			button{
+			button {
 				background-color: transparent;
-				padding:2% 14%;
+				padding: 2% 14%;
 				margin-top: 8%;
 				border: 1px solid #fff;
 				transition: all .5s ease-in-out;
 				position: relative; 
-				a{
+				a {
 					font-size: 1.4rem;
   				font-weight: 300;
   				text-decoration: none;
   				position: relative;
   				z-index: 1;
 				}
-				.overlay{
+				.overlay {
 					background-color: #a05324;
 					position: absolute;
 					top: 0;
@@ -558,11 +557,11 @@ body {
 					transform: translateX(-100%); 
 					transition: all .5s ease-in;
 				}
-				&:hover{
-  				a{
+				&:hover {
+  				a {
   					color: #fff;
   				}
-					.overlay{ 
+					.overlay { 
 						-webkit-transform: translateX(0%);
 						transform: translateX(0%); 
 					} 
@@ -570,12 +569,12 @@ body {
 			}
 		}
 	}
-	#follow-us{
+	#follow-us {
 		background-color: #8d744a;
 		padding: 6% 17%; 
-		h3{
+		h3 {
 			font-weight: lighter;
-  			font-style: italic;
+  		font-style: italic;
 		}
 		.container-social {
 			display: inline-block;
@@ -584,17 +583,17 @@ body {
 			a {
 				display: block;
 				width: 180px;
-  				height: 180px;
+  			height: 180px;
 				border: 1.5px solid #fff;
 				float: left; 
  				margin-right: 24px;
-  				margin-bottom: 26px;
-  				position: relative;
-  				text-decoration: none;
-  				overflow: hidden;
-  				transition: all .5s ease-in-out;
-  				padding: 2% 3%;
-  				.overlay{
+				margin-bottom: 26px;
+				position: relative;
+				text-decoration: none;
+				overflow: hidden;
+				transition: all .5s ease-in-out;
+				padding: 2% 3%;
+				.overlay{
 					background-image: url(../img/texturas/textura-hover-redes.png);
 					position: absolute;
 					top: 0;
@@ -605,120 +604,111 @@ body {
 					transform: translateX(-100%); 
 					transition: all .5s ease-in; 
 				}
-				&:hover{
+				&:hover {
 					color: #fff;
-					.overlay{ 
+					.overlay { 
 						-webkit-transform: translateX(0%);
 						transform: translateX(0%); 
 					} 
 				}
-				h1, p{
+				h1, p {
 					font-family: "Museo-Sans";
 					position: relative;
 					z-index: 1;
 				} 
-				p{ 
+				p {
 					font-size: 1.5rem;
-  					font-weight: lighter;
-  					padding-top: 3%;
-  					line-height: 1.3;
-  					font-style: italic;
+					font-weight: lighter;
+					padding-top: 3%;
+					line-height: 1.3;
+					font-style: italic;
 				}
-				.icon{
+				.icon {
 					position: absolute;
-  					width: 45px;
-  					bottom: 8%;
-  					right: 10%;
-  					img{
-  						width: 100%;
-  					}
+					width: 45px;
+					bottom: 8%;
+					right: 10%;
+					img {
+						width: 100%;
+					}
 				}
 			} 
 		}
 	}
 }
-footer{
+footer {
 	color: #8d744a;
-	.footer-logo{
+	.footer-logo {
 		width: 70px; 
 	}
-	.texto{
+	.texto {
 		padding-left: 10%;
 	}
-	p{
+	p {
 		font-size: 12px;
 		margin: 0;
 		margin-bottom: 3px; 
 	}
-	.col-md-3 p{
+	.col-md-3 p {
 		margin-bottom: 10px; 
-		a{
+		a {
 			border-bottom: 1px solid #8d744a;
 			text-decoration: none;
 			color: #8d744a;
-			&:hover{
-				color:#4e3227;
+			&:hover {
+				color: #4e3227;
 			}
 		} 
 	}
 }
 
-$facebook: #3B5998;
-$twitter:  #33CCFF;
-$youtube:  #E42526;
-$instagram: #4187FB;
-
-.border-right {
-	border-right: 1px solid #ccc;
-}
-
 /*
 	Ingreso Fondo
 */
-.site-wrapper{
+.site-wrapper {
 	height: 100%;
 }
-.fondo{
+.fondo {
 	/*background-image: url(../img/texturas/cream_pixels/cream_pixels.png);*/
 	width: 100%;
 	height: 100%;
 	background-color: #4e3227;
 	padding: 10%;
-	h3{
+	h3 {
 		font-family: "MuseoSans";
 		line-height: 1.3;
-  		padding-top: 10px;
-  		font-size: 20px;
-  		letter-spacing: 2px;
+		padding-top: 10px;
+		font-size: 20px;
+		letter-spacing: 2px;
 	}
-	.logo-title{
+	.logo-title {
 		width: 350px;
-  		margin: 0 auto;
-  		img{
-  			width: 100%;
-  		}
+  	margin: 0 auto;
+		img {
+			width: 100%;
+		}
 	} 
 }
 
 /*
 	Media kit
 */
-#media-kit{
+#media-kit {
 	padding: 5% 17%;
-	h2:first-child{
-			color: #8d744a;
-		}
-	.separador{
-		border-bottom:1px solid #8d744a;
-		padding-top:2%;
+	h2:first-child {
+		color: #8d744a;
+	}
+	.separador {
+		border-bottom: 1px solid #8d744a;
+		padding-top: 2%;
 		padding-left: 2%;
 		width: 21%;
 	}
-	#menu-blog{
+	#menu-blog {
 		padding-top: 5%;
 		padding-bottom: 8%;
-		nav{
-			a{
+		nav {
+			a {
 				padding: 0 7px; 
 				color: #8d744a;
 				text-decoration: none;
@@ -728,35 +718,35 @@ $instagram: #4187FB;
 	  		padding: 5px 14px;
 	  		border: 1px solid transparent;
 	  		margin-right: 2%;
-	  		&:hover{
+	  		&:hover {
 					border: 1px solid #8d744a;
 		  		padding: 5px 14px;
 				}
 			}
 		}
 	}
-	.active{
+	.active {
 		border: 1px solid;
 	  padding: 5px 14px;
 	}
-	#downloads{
+	#downloads {
 		padding-top: 5%;
   	padding-bottom: 6%;
   	border-bottom: 1px solid #4e3227;
-		nav{
-			div{
+		nav {
+			div {
 				float: left;
 				padding-right: 8.5%;
-				p{
+				p {
 					font-size: 1.5rem;
   				font-weight: 400;
   				color: #4e3227;
 				}
-				a{
+				a {
 					font-size: 1.3rem;
   				font-weight: lighter;
   				text-decoration: none; 
-  				img{
+  				img {
   					padding-right: 10px;
   					padding-bottom: 5%;
   				}
@@ -764,35 +754,35 @@ $instagram: #4187FB;
 			}
 		}
 	}
-	.panel-group{
-		.panel-default{
+	.panel-group {
+		.panel-default {
 			padding-top: 7%;
 			padding-bottom: 6%;
 			border-bottom: 1px solid;
-			&:nth-child(5){
+			&:nth-child(5) {
 				border-bottom:none;
 			}
-			.panel-title a{
-				  font-size: 2.1rem;
-  				font-weight: 300;
-  				font-family: "trajan-pro-3";
-  				text-decoration: none;
-  				img{
-  					padding-right: 2%;
-  				}
+			.panel-title a {
+			  font-size: 2.1rem;
+				font-weight: 300;
+				font-family: "trajan-pro-3";
+				text-decoration: none;
+				img {
+					padding-right: 2%;
+				}
 			}
-			.panel-body{
+			.panel-body {
 				padding-top: 7%;
-				.grid .descarga{
-					  padding: 7% 4% 18%;
-					a{
+				.grid .descarga {
+					padding: 7% 4% 18%;
+					a {
 						font-size: 1.2rem;
   					font-weight: 300;
   					text-decoration: none;
-						&:nth-child(2){
+						&:nth-child(2) {
 							float:right;
 						}
-						img{
+						img {
 							padding-right: 10px;
 							padding-bottom: 2%;
 						}
@@ -806,26 +796,26 @@ $instagram: #4187FB;
 /*
 	Terms
 */
-#terms{
-	padding:3% 18% 10%; 
-	h2{
-		font-size:2.3rem;
+#terms {
+	padding: 3% 18% 10%; 
+	h2 {
+		font-size: 2.3rem;
 		color: #8d744a;
 	}
-	.separador{
-		border-bottom:1px solid #8d744a;
+	.separador {
+		border-bottom: 1px solid #8d744a;
 		margin-top: 3%;
   	margin-bottom: 7%;
 		width: 29%;
 	}
-	p{
+	p {
 		color: #4e3227;
-	  	line-height: 1.8;
-	  	font-size: 1.5rem;
-	  	font-weight: 300;
+  	line-height: 1.8;
+  	font-size: 1.5rem;
+  	font-weight: 300;
 	  margin-bottom: 2.5%;
 	}
-	.sub-title{
+	.sub-title {
 		text-transform: uppercase;
 		color: #8d744a; 
 		font-weight: 300;
@@ -837,57 +827,57 @@ $instagram: #4187FB;
 /*
 	Utilities
 */
-.text-center{
-	text-align:center;
+.text-center {
+	text-align: center;
 }
-.text-left{
+.text-left {
 	text-align: left;
 }
-.text-white{
-	color:#fff;
+.text-white {
+	color: #fff;
 }
 .text-brown{
 	color: #3B2E29;
 }
-.text-brown-light{
+.text-brown-light {
 	color: #8d744a;
 }
-.text-bold{
-	font-weight:bold;
+.text-bold {
+	font-weight: bold;
 }
-.pd-0{
+.pd-0 {
 	padding: 0;
 }
-.pd-5-15{ 
+.pd-5-15 { 
 	padding: 5% 15%;
 }
-.mg-0{ 
+.mg-0 { 
 	margin: 0;
 }
-.w-100{
+.w-100 {
 	width: 100%; 
 }
-.type-style-none{
-	list-style:none;
+.type-style-none {
+	list-style: none;
 }
-.family-museosans{
+.family-museosans {
 	font-family: "MuseoSans";
 }
-.float-left{
-	float:left; 
+.float-left {
+	float: left; 
 }
-.bg-p-brown{
+.bg-p-brown {
 	background-color: #4e3227;
 }
-.bg-p-brownlight{
+.bg-p-brownlight {
 	background-color: #8d744a;
 }
-.line-height{
+.line-height {
 	line-height: 1.8;
 }
-.letter-spacing{
+.letter-spacing {
 	letter-spacing: 1.5px;
 }
-.pt-8{
+.pt-8 {
 	padding-top: 8%;
 }

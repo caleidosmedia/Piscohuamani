@@ -6415,6 +6415,7 @@ body::-webkit-scrollbar {
 .site-menu .contenedor-menu {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   height: 61px;
   background: #3b2e29;
@@ -6736,10 +6737,6 @@ footer .col-md-3 p a {
 }
 footer .col-md-3 p a:hover {
   color: #4e3227;
-}
-
-.border-right {
-  border-right: 1px solid #ccc;
 }
 
 /*
