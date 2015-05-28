@@ -302,9 +302,25 @@ body {
 		  display:none;
 		  text-align:center;
 		  z-index: 100;
-		  @include flex-column-center;
+		  display: flex;
+		  flex-direction: column;
+		  flex-wrap: wrap;
+		  justify-content: center;
+		  align-content: flex-start;
+		  align-items: center;
 		  img{
-		  	width: 50%;
+		  	width: 40%;
+		  }
+		  a{
+		  	right: 25%;
+  			top: 2%;
+  			position: absolute;
+  			background-color:transparent;
+  			text-decoration: none;
+  			cursor: pointer;
+  			&:hover{
+  				color:#8d744a;
+  			}
 		  }
 		}
 	}
