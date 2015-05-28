@@ -5130,6 +5130,12 @@ tbody.collapse.in {
   font-style: normal;
 }
 
+.extra-light {
+  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-weight: 200;
+  font-style: normal;
+}
+
 .light {
   font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
   font-weight: 300;
@@ -5142,10 +5148,10 @@ tbody.collapse.in {
   font-style: italic;
 }
 
-.medium {
+.medium-italic {
   font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
   font-weight: 500;
-  font-style: normal;
+  font-style: italic;
 }
 
 .bold {
@@ -5154,21 +5160,21 @@ tbody.collapse.in {
   font-style: normal;
 }
 
-.black-italic {
-  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
-  font-weight: 900;
+.serif-light {
+  font-family: "trajan-pro-3", "Times New Roman", Times, serif !important;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.serif-light-italic {
+  font-family: "trajan-pro-3", "Times New Roman", Times, serif !important;
+  font-weight: 300;
   font-style: italic;
 }
 
 .serif-book {
   font-family: "trajan-pro-3", "Times New Roman", Times, serif !important;
   font-weight: 400;
-  font-style: normal;
-}
-
-.serif-bold {
-  font-family: "trajan-pro-3", "Times New Roman", Times, serif !important;
-  font-weight: 700;
   font-style: normal;
 }
 
@@ -6151,7 +6157,7 @@ body::-webkit-scrollbar {
 	Blog posts
 */
 #blog-post {
-  padding: 5% 17%;
+  padding: 10% 17%;
 }
 #blog-post .breadcrumb {
   padding-bottom: 3%;
@@ -6170,12 +6176,14 @@ body::-webkit-scrollbar {
   text-decoration: none;
   color: #8d744a;
   font-weight: lighter;
-  font-size: 1.3rem;
+  font-size: 18px;
+  font-size: 1.28571rem;
 }
 #blog-post .breadcrumb li span {
   padding: 0 22px;
   color: #8d744a;
-  font-size: 1.3rem;
+  font-size: 18px;
+  font-size: 1.28571rem;
 }
 #blog-post .imagen {
   width: 100%;
@@ -6193,6 +6201,7 @@ body::-webkit-scrollbar {
 #blog-post .texto p {
   padding-top: 2%;
   margin-bottom: 3%;
+  font-size: 21px;
   font-size: 1.5rem;
   line-height: 1.5;
   color: #4e3227;
@@ -6216,6 +6225,7 @@ body::-webkit-scrollbar {
   float: left;
 }
 #blog-post .botons .social p {
+  font-size: 21px;
   font-size: 1.5rem;
   color: #4e3227;
   float: left;
@@ -6253,6 +6263,7 @@ body::-webkit-scrollbar {
   color: #8d744a;
   text-decoration: none;
   font-size: 18px;
+  font-size: 1.28571rem;
   font-weight: lighter;
   padding: 5px 8px;
   border: 1px solid transparent;
@@ -6280,6 +6291,7 @@ body::-webkit-scrollbar {
 .site-content .content-blog .post .texto p {
   padding-top: 2%;
   margin-bottom: 3%;
+  font-size: 21px;
   font-size: 1.5rem;
   line-height: 1.5;
   color: #4e3227;
@@ -6301,6 +6313,7 @@ body::-webkit-scrollbar {
 .site-content .content-blog .post .botons button a {
   text-decoration: none;
   color: #4e3227;
+  font-size: 21px;
   font-size: 1.5rem;
 }
 .site-content .content-blog .post .botons button:hover {
@@ -6315,6 +6328,7 @@ body::-webkit-scrollbar {
   padding-left: 6%;
 }
 .site-content .content-blog .post .botons .social p {
+  font-size: 21px;
   font-size: 1.5rem;
   color: #4e3227;
   float: left;
@@ -6331,7 +6345,8 @@ body::-webkit-scrollbar {
 .site-content .content-blog .post .tags {
   color: #8d744a;
   padding-top: 3.5%;
-  font-size: 1.3rem;
+  font-size: 18px;
+  font-size: 1.28571rem;
   font-weight: 100;
   font-style: italic;
 }
@@ -6343,6 +6358,7 @@ body::-webkit-scrollbar {
 }
 .site-content .content-blog #pagination ul li a {
   border: 1px solid transparent;
+  font-size: 21px;
   font-size: 1.5rem;
   font-weight: 300;
   padding: 0 2%;
@@ -6366,6 +6382,81 @@ body::-webkit-scrollbar {
   background-image: url(../img/fotos/fotos-eventos/2-grande.png);
   height: 500px;
   background-size: cover;
+}
+
+#galeria {
+  padding: 5% 17% 8%;
+}
+#galeria h1 {
+  font-family: "trajan-pro-3";
+  color: #8d744a;
+}
+#galeria .fecha {
+  font-size: 21px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding-bottom: 23px;
+  color: #4e3227;
+}
+#galeria .parrafo {
+  font-size: 22px;
+  font-size: 1.57143rem;
+  font-weight: 100;
+  line-height: 1.5;
+  color: #4e3227;
+}
+#galeria .grid {
+  padding-top: 25px;
+}
+#galeria .grid ul {
+  list-style-type: none;
+  margin: 0 -9px;
+}
+#galeria .grid ul li {
+  padding: 9px;
+}
+#galeria .grid ul li img {
+  width: 100%;
+}
+#galeria .grid #overlay {
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+  z-index: 100;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+#galeria .grid #overlay img {
+  width: 50%;
 }
 
 /*
@@ -6392,6 +6483,7 @@ body::-webkit-scrollbar {
   color: #8d744a;
   text-decoration: none;
   font-size: 18px;
+  font-size: 1.28571rem;
   font-weight: lighter;
   border: 1px solid;
   padding: 5px 14px;
@@ -6420,6 +6512,7 @@ body::-webkit-scrollbar {
 #faqs .section .panel-title a {
   text-transform: uppercase;
   text-decoration: none;
+  font-size: 19.6px;
   font-size: 1.4rem;
 }
 #faqs .section .panel-title a img {
@@ -6429,6 +6522,7 @@ body::-webkit-scrollbar {
 #faqs .section .panel-body {
   padding-left: 7%;
   padding: 0% 6% 5%;
+  font-size: 19.6px;
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.5;
@@ -6467,6 +6561,7 @@ body::-webkit-scrollbar {
 }
 .site-menu .contenedor-menu nav a div {
   font-size: 14px;
+  font-size: 1rem;
   color: #3b2e29;
   letter-spacing: 0px;
   text-decoration: none;
@@ -6565,6 +6660,8 @@ body::-webkit-scrollbar {
   -ms-flex-pack: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: 60px;
+  padding-top: 60px;
 }
 .img-principal div.texto {
   font-family: times;
@@ -6577,6 +6674,7 @@ body::-webkit-scrollbar {
   font-style: italic;
 }
 .img-principal div.texto p {
+  font-size: 23.8px;
   font-size: 1.7rem;
   font-family: "museo-sans";
   font-weight: lighter;
@@ -6603,6 +6701,7 @@ body::-webkit-scrollbar {
 }
 #about-us h1 {
   font-size: 35px;
+  font-size: 2.5rem;
 }
 #about-us h3 {
   font-style: italic;
@@ -6616,6 +6715,7 @@ body::-webkit-scrollbar {
 }
 #about-us .texto-about p {
   padding-top: 6%;
+  font-size: 21px;
   font-size: 1.5rem;
   font-weight: 300;
 }
@@ -6629,6 +6729,7 @@ body::-webkit-scrollbar {
 }
 #the-goods h1, #make-drink h1, #events h1 {
   font-size: 35px;
+  font-size: 2.5rem;
 }
 #the-goods h3, #make-drink h3, #events h3 {
   font-style: italic;
@@ -6696,6 +6797,7 @@ body::-webkit-scrollbar {
   position: relative;
 }
 #events .row button a {
+  font-size: 19.6px;
   font-size: 1.4rem;
   font-weight: 300;
   text-decoration: none;
@@ -6775,6 +6877,7 @@ body::-webkit-scrollbar {
   z-index: 1;
 }
 #follow-us .container-social a p {
+  font-size: 21px;
   font-size: 1.5rem;
   font-weight: lighter;
   padding-top: 3%;
@@ -6805,6 +6908,7 @@ footer .texto {
 }
 footer p {
   font-size: 12px;
+  font-size: 0.85714rem;
   margin: 0;
   margin-bottom: 3px;
 }
@@ -6834,6 +6938,7 @@ footer .col-md-3 p a:hover {
   line-height: 1.3;
   padding-top: 10px;
   font-size: 20px;
+  font-size: 1.42857rem;
   letter-spacing: 2px;
 }
 .fondo .logo-title {
@@ -6868,6 +6973,7 @@ footer .col-md-3 p a:hover {
   color: #8d744a;
   text-decoration: none;
   font-size: 18px;
+  font-size: 1.28571rem;
   font-weight: lighter;
   border: 1px solid;
   padding: 5px 14px;
@@ -6892,11 +6998,13 @@ footer .col-md-3 p a:hover {
   padding-right: 8.5%;
 }
 #media-kit #downloads nav div p {
+  font-size: 21px;
   font-size: 1.5rem;
   font-weight: 400;
   color: #4e3227;
 }
 #media-kit #downloads nav div a {
+  font-size: 18.2px;
   font-size: 1.3rem;
   font-weight: lighter;
   text-decoration: none;
@@ -6914,7 +7022,8 @@ footer .col-md-3 p a:hover {
   border-bottom: none;
 }
 #media-kit .panel-group .panel-default .panel-title a {
-  font-size: 2.1rem;
+  font-size: 32px;
+  font-size: 2.28571rem;
   font-weight: 300;
   font-family: "trajan-pro-3";
   text-decoration: none;
@@ -6929,6 +7038,7 @@ footer .col-md-3 p a:hover {
   padding: 7% 4% 18%;
 }
 #media-kit .panel-group .panel-default .panel-body .grid .descarga a {
+  font-size: 16.8px;
   font-size: 1.2rem;
   font-weight: 300;
   text-decoration: none;
@@ -6948,6 +7058,7 @@ footer .col-md-3 p a:hover {
   padding: 3% 18% 10%;
 }
 #terms h2 {
+  font-size: 32.2px;
   font-size: 2.3rem;
   color: #8d744a;
 }
@@ -6960,6 +7071,7 @@ footer .col-md-3 p a:hover {
 #terms p {
   color: #4e3227;
   line-height: 1.8;
+  font-size: 21px;
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 2.5%;

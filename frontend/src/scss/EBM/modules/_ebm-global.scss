@@ -26,7 +26,7 @@ body {
 	Blog posts
 */
 #blog-post {
-	padding: 5% 17%;
+	padding: 10% 17%;
 	.breadcrumb {
 		padding-bottom: 3%;
 		li {
@@ -42,12 +42,14 @@ body {
 				text-decoration: none;
 				color: #8d744a;
 				font-weight: lighter;
-				font-size:1.3rem;
+				font-size:18px;
+				font-size: rem(18px);
 			}
 			span {
 				padding: 0 22px;
 				color: #8d744a;
-				font-size: 1.3rem; 
+				font-size:18px;
+				font-size: rem(18px);
 			}
 		}
 	}
@@ -66,7 +68,8 @@ body {
 		p {
 			padding-top: 2%;
 			margin-bottom: 3%;
-			font-size: 1.5rem;
+			font-size: 21px;
+			font-size: rem(21px);
 			line-height: 1.5;
 			color: #4e3227; 
 		}
@@ -88,7 +91,8 @@ body {
 		.social {
 			float: left;
 			p {
-				font-size: 1.5rem;
+				font-size: 21px;
+				font-size: rem(21px);
 				color: #4e3227;
 				float: left;
 				font-weight: 300; 
@@ -128,6 +132,7 @@ body {
 					color: #8d744a;
 					text-decoration: none;
 					font-size: 18px;
+					font-size: rem(18px);
 					font-weight: lighter;
 					padding: 5px 8px;
   				border: 1px solid transparent;
@@ -155,7 +160,8 @@ body {
 				p {
 					padding-top: 2%;
 					margin-bottom: 3%;
-					font-size: 1.5rem;
+					font-size: 21px;
+					font-size: rem(21px);
 					line-height: 1.5;
 					color: #4e3227; 
 				} 
@@ -175,7 +181,8 @@ body {
 					a {
 						text-decoration: none;
 						color: #4e3227;
-						font-size: 1.5rem;
+						font-size: 21px;
+						font-size: rem(21px);
 					}
 					&:hover { 
 						border: 1px solid transparent;
@@ -189,7 +196,8 @@ body {
 					float: left;
 					padding-left: 6%;
 					p {
-						font-size: 1.5rem;
+						font-size: 21px;
+						font-size: rem(21px);
 						color: #4e3227;
 						float: left;
 						font-weight: 300; 
@@ -207,7 +215,8 @@ body {
 			.tags {
 				color: #8d744a; 
 				padding-top: 3.5%;
-				font-size: 1.3rem;
+				font-size: 18px;
+				font-size: rem(18px);
 			  font-weight: 100;
 			  font-style: italic;
 			} 
@@ -219,7 +228,8 @@ body {
 				li {
 					a {
 						border: 1px solid transparent;
-						font-size: 1.5rem;
+						font-size: 21px;
+						font-size: rem(21px);
   					font-weight: 300;
   					padding: 0 2%;
   					background-color: transparent;
@@ -250,6 +260,55 @@ body {
 	height: 500px;
   background-size: cover;
 } 
+#galeria{
+	padding: 5% 17% 8%;
+	h1{
+		font-family: "trajan-pro-3";
+  	color: #8d744a;
+	}
+	.fecha{
+		font-size: 21px;
+		font-size: rem(21px);
+  	font-weight: 100;
+  	padding-bottom: 23px;
+  	color: #4e3227;
+	}
+	.parrafo{
+		font-size: 22px;
+		font-size: rem(22px);
+		font-weight: 100;
+		line-height: 1.5;
+		color: #4e3227;
+	}
+	.grid{
+		padding-top: 25px;
+		ul{
+			list-style-type: none;
+			margin:0 -9px;
+			li{
+				padding:9px;
+				img{
+					width: 100%;
+				}
+			}
+		}
+		#overlay {
+		  background:rgba(0,0,0,0.9);
+		  width:100%;
+		  height:100%;
+		  position:fixed;
+		  top:0;
+		  left:0;
+		  display:none;
+		  text-align:center;
+		  z-index: 100;
+		  @include flex-column-center;
+		  img{
+		  	width: 50%;
+		  }
+		}
+	}
+}
 
 /*
 	Menu blog
@@ -274,6 +333,7 @@ body {
 				color: #8d744a;
 				text-decoration: none;
 				font-size: 18px;
+				font-size: rem(18px);
 				font-weight: lighter;
 				border: 1px solid;
 	  		padding: 5px 14px;
@@ -302,7 +362,8 @@ body {
 			a {
 				text-transform: uppercase;
 				text-decoration: none;
-				font-size: 1.4rem;
+				font-size: 19.6px;
+				font-size: rem(19.6px);
 				img {
 					width: 21px;
 					margin-right: 3%;
@@ -312,7 +373,8 @@ body {
 		.panel-body {
 			padding-left: 7%;
 			padding: 0% 6% 5%;
-			font-size: 1.4rem;
+			font-size: 19.6px;
+			font-size: rem(19.6px);
   		font-weight: 300;
   		line-height: 1.5;
   		color: #3B2E29;
@@ -344,7 +406,8 @@ body {
 				text-decoration: none;
 				position: relative;
   				div {
-						font-size: 14px; 
+						font-size: 14px;
+						font-size: rem(14px); 
   					color: #3b2e29;
   					letter-spacing: 0px;
   					text-decoration: none;
@@ -425,6 +488,8 @@ body {
 .img-principal {
 	@include flex-column-center;	
 	@include bg-img-control;
+	background-position-y:60px;
+	padding-top: 60px;
 		div.texto {
 			font-family: times;
 			h1 {
@@ -435,7 +500,8 @@ body {
 			font-style: italic;
 			}
 			p {
-				font-size: 1.7rem;
+				font-size: 23.8px;
+				font-size: rem(23.8px);
 				font-family: "museo-sans";
 				font-weight: lighter;
 				font-style: italic;
@@ -462,6 +528,7 @@ body {
 	background-size: 30%;
 	h1 {
 		font-size: 35px;
+		font-size: rem(35px);
 	}
 	h3 {
 		font-style: italic;
@@ -474,7 +541,8 @@ body {
 		}
 		p {
 			padding-top: 6%;
-			font-size: 1.5rem;
+			font-size: 21px;
+			font-size: rem(21px);
 			font-weight: 300;
 		}
 	}
@@ -488,6 +556,7 @@ body {
 	padding: 8% 17%;
 	h1 {
 		font-size: 35px;
+		font-size: rem(35px);
 	}
 	h3 {
 		font-style: italic;
@@ -555,7 +624,8 @@ body {
 			transition: all .5s ease-in-out;
 			position: relative; 
 			a {
-				font-size: 1.4rem;
+				font-size: 19.6px;
+				font-size: rem(19.6px);
 				font-weight: 300;
 				text-decoration: none;
 				position: relative;
@@ -605,7 +675,7 @@ body {
 			height: 180px;
 			border: 1.5px solid #fff;
 			float: left; 
-				margin-right: 24px;
+			margin-right: 24px;
 			margin-bottom: 26px;
 			position: relative;
 			text-decoration: none;
@@ -636,7 +706,8 @@ body {
 				z-index: 1;
 			} 
 			p {
-				font-size: 1.5rem;
+				font-size: 21px;
+				font-size: rem(21px);
 				font-weight: lighter;
 				padding-top: 3%;
 				line-height: 1.3;
@@ -668,6 +739,7 @@ footer {
 	}
 	p {
 		font-size: 12px;
+		font-size: rem(12px);
 		margin: 0;
 		margin-bottom: 3px; 
 	}
@@ -697,6 +769,7 @@ footer {
 		line-height: 1.3;
 		padding-top: 10px;
 		font-size: 20px;
+		font-size: rem(20px);
 		letter-spacing: 2px;
 	}
 	.logo-title {
@@ -731,6 +804,7 @@ footer {
 				color: #8d744a;
 				text-decoration: none;
 				font-size: 18px;
+				font-size: rem(18px);
 				font-weight: lighter;
 				border: 1px solid;
 	  		padding: 5px 14px;
@@ -756,12 +830,14 @@ footer {
 				float: left;
 				padding-right: 8.5%;
 				p {
-					font-size: 1.5rem;
+					font-size: 21px;
+					font-size: rem(21px);
   				font-weight: 400;
   				color: #4e3227;
 				}
 				a {
-					font-size: 1.3rem;
+					font-size: 18.2px;
+					font-size: rem(18.2px);
   				font-weight: lighter;
   				text-decoration: none; 
   				img {
@@ -781,7 +857,8 @@ footer {
 				border-bottom:none;
 			}
 			.panel-title a {
-			  font-size: 2.1rem;
+			  font-size: 32px;
+			  font-size: rem(32px);
 				font-weight: 300;
 				font-family: "trajan-pro-3";
 				text-decoration: none;
@@ -794,7 +871,8 @@ footer {
 				.grid .descarga {
 					padding: 7% 4% 18%;
 					a {
-						font-size: 1.2rem;
+						font-size: 16.8px;
+						font-size: rem(16.8px);
   					font-weight: 300;
   					text-decoration: none;
 						&:nth-child(2) {
@@ -817,7 +895,8 @@ footer {
 #terms {
 	padding: 3% 18% 10%; 
 	h2 {
-		font-size: 2.3rem;
+		font-size: 32.2px;
+		font-size: rem(32.2px);
 		color: #8d744a;
 	}
 	.separador {
@@ -829,7 +908,8 @@ footer {
 	p {
 		color: #4e3227;
   	line-height: 1.8;
-  	font-size: 1.5rem;
+  	font-size: 21px;
+  	font-size: rem(21px);
   	font-weight: 300;
 	  margin-bottom: 2.5%;
 	}

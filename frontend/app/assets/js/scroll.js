@@ -30,7 +30,6 @@ $('.change-arrow').click(function() {
 });
 
 /*Carrousel*/
-
 $(document).ready( function() {
   // vanilla JS
   var $gallery = $('.main-gallery .gallery').flickity();
@@ -40,29 +39,13 @@ $(document).ready( function() {
       contain: true
     });
 
- $('.main-gallery button.previous').on( 'click', function() {
-   $('.second-gallery').flickity( 'previous', true );
- });
+  $('.main-gallery button.previous').on( 'click', function() {
+    $('.second-gallery').flickity( 'previous', true );
+  });
 
- $('.main-gallery button.next').on( 'click', function() {
-   $('.second-gallery').flickity( 'next', true );
- });
- 
-});
-
-// asNavFor can be set a selector string
-asNavFor: '.gallery-main'
-// or an element
-asNavFor: $('.gallery-main')[0]
-asNavFor: document.querySelector('.gallery-main')
-
-// 1st gallery, main
-$('.gallery-main').flickity();
-// 2nd gallery, navigation
-$('.gallery-nav').flickity({
-  asNavFor: '.gallery-main',
-  contain: true,
-  pageDots: false
+  $('.main-gallery button.next').on( 'click', function() {
+    $('.second-gallery').flickity( 'next', true );
+  });
 });
 
 /*
@@ -106,3 +89,23 @@ function onScroll(event){
         }
     });
 }
+
+/*
+  Popup Events
+*/
+var $overlay = $('#overlay');
+var $image = $('#overlay img');
+var $caption = $('#overlay p');
+
+$('.grid ul li a').click(function (event) {
+  event.preventDefault();
+  var href = $(this).attr('href');
+  var captionText = $(this).children("img").attr("alt");
+  $caption.text(captionText);
+  $image.attr("src", href);
+  $overlay.show();
+});
+
+$overlay.click(function(){ 
+      $overlay.hide();
+});
