@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
   Easy Box Model Import
   Last update: 14.05.15
@@ -6357,308 +6358,10 @@ body::-webkit-scrollbar {
 }
 
 /*
-	Blog posts
+	Ingreso Fondo
 */
-#blog-post {
-  padding: 10% 17%;
-}
-#blog-post .breadcrumb {
-  padding-bottom: 3%;
-}
-#blog-post .breadcrumb li {
-  float: left;
-}
-#blog-post .breadcrumb li::before {
-  content: ">";
-}
-#blog-post .breadcrumb li:first-child::before {
-  content: none;
-}
-#blog-post .breadcrumb li a {
-  padding: 0 22px;
-  text-decoration: none;
-  color: #8d744a;
-  font-weight: lighter;
-  font-size: 18px;
-  font-size: 1.28571rem;
-}
-#blog-post .breadcrumb li span {
-  padding: 0 22px;
-  color: #8d744a;
-  font-size: 18px;
-  font-size: 1.28571rem;
-}
-#blog-post .imagen {
+.fondo {
   width: 100%;
-}
-#blog-post .imagen img {
-  width: 100%;
-}
-#blog-post .texto {
-  padding-top: 2%;
-  font-weight: 300;
-}
-#blog-post .texto h2 {
-  color: #4e3227;
-}
-#blog-post .texto p {
-  padding-top: 2%;
-  margin-bottom: 3%;
-  font-size: 21px;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  color: #4e3227;
-}
-#blog-post .texto .gorro {
-  margin: 7% 0;
-  border-bottom: 1px solid #8d744a;
-  border-top: 1px solid #8d744a;
-}
-#blog-post .texto .gorro p {
-  text-transform: uppercase;
-  color: #8d744a;
-  font-weight: 400;
-  font-family: "trajan-pro-3";
-}
-#blog-post .botons {
-  padding-top: 8%;
-  padding-bottom: 5%;
-}
-#blog-post .botons .social {
-  float: left;
-}
-#blog-post .botons .social p {
-  font-size: 21px;
-  font-size: 1.5rem;
-  color: #4e3227;
-  float: left;
-  font-weight: 300;
-  margin-right: 17px;
-}
-#blog-post .botons .social li {
-  float: left;
-  list-style: none;
-}
-#blog-post .botons .social li:nth-child(3) {
-  padding: 0 13px;
-}
-
-/*
-	Menu blog
-*/
-.site-content .content-blog {
-  padding: 132px 237px;
-}
-.site-content .content-blog h2 {
-  color: #8d744a;
-  font-family: "trajan-pro-3";
-}
-.site-content .content-blog .separador {
-  border-bottom: 1px solid #8d744a;
-  padding-top: 2%;
-  width: 36%;
-}
-.site-content .content-blog #menu-blog {
-  padding-top: 5%;
-  padding-bottom: 8%;
-}
-.site-content .content-blog #menu-blog nav a {
-  padding: 0 7px;
-  color: #8d744a;
-  text-decoration: none;
-  font-size: 18px;
-  font-size: 1.28571rem;
-  font-weight: lighter;
-  padding: 5px 8px;
-  border: 1px solid transparent;
-}
-.site-content .content-blog #menu-blog nav a:hover {
-  border-color: #8d744a;
-}
-.site-content .content-blog .post {
-  border-bottom: 1px solid #3B2E29;
-  padding-bottom: 6%;
-}
-.site-content .content-blog .post .imagen {
-  width: 100%;
-}
-.site-content .content-blog .post .imagen img {
-  width: 100%;
-}
-.site-content .content-blog .post .texto {
-  padding-top: 2%;
-  font-weight: 300;
-}
-.site-content .content-blog .post .texto h2 {
-  color: #4e3227;
-}
-.site-content .content-blog .post .texto p {
-  padding-top: 2%;
-  margin-bottom: 3%;
-  font-size: 21px;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  color: #4e3227;
-}
-.site-content .content-blog .post .botons {
-  padding-top: 3%;
-}
-.site-content .content-blog .post .botons button {
-  background-color: transparent;
-  padding: 0.7% 5.5%;
-  border: 1px solid #4e3227;
-  float: left;
-  overflow: hidden;
-  transition: all .2s ease-in;
-  position: relative;
-}
-.site-content .content-blog .post .botons button a {
-  text-decoration: none;
-  color: #4e3227;
-  font-size: 21px;
-  font-size: 1.5rem;
-  position: relative;
-  z-index: 1;
-}
-.site-content .content-blog .post .botons button .overlay {
-  background-color: #a05324;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  transition: all .2s ease-in;
-}
-.site-content .content-blog .post .botons button:hover a {
-  color: #fff;
-}
-.site-content .content-blog .post .botons button:hover .overlay {
-  -webkit-transform: translateX(0%);
-  transform: translateX(0%);
-}
-.site-content .content-blog .post .botons .social {
-  float: left;
-  padding-left: 6%;
-}
-.site-content .content-blog .post .botons .social p {
-  font-size: 21px;
-  font-size: 1.5rem;
-  color: #4e3227;
-  float: left;
-  font-weight: 300;
-  margin-right: 17px;
-}
-.site-content .content-blog .post .botons .social li {
-  float: left;
-  list-style: none;
-}
-.site-content .content-blog .post .botons .social li:nth-child(3) {
-  padding: 0 13px;
-}
-.site-content .content-blog .post .tags {
-  color: #8d744a;
-  padding-top: 3.5%;
-  font-size: 18px;
-  font-size: 1.28571rem;
-  font-weight: 100;
-  font-style: italic;
-}
-.site-content .content-blog #pagination {
-  padding-top: 5%;
-}
-.site-content .content-blog #pagination ul {
-  width: 100%;
-}
-.site-content .content-blog #pagination ul li a {
-  border: 1px solid transparent;
-  font-size: 21px;
-  font-size: 1.5rem;
-  font-weight: 300;
-  padding: 0 2%;
-  background-color: transparent;
-  color: #4e3227;
-}
-.site-content .content-blog #pagination ul li a:hover {
-  border-color: #4e3227;
-}
-.site-content .content-blog #pagination ul li:first-child a, .site-content .content-blog #pagination ul li:last-child a, .site-content .content-blog #pagination ul li .next, .site-content .content-blog #pagination ul li .previous {
-  border: none;
-}
-.site-content .content-blog #pagination ul li.active a {
-  border: 1px solid #4e3227;
-}
-
-/*
-	Slider events
-*/
-#slider-events {
-  background-image: url(../img/fotos/fotos-eventos/2-grande.png);
-  height: 500px;
-  background-size: cover;
-}
-
-#galeria {
-  padding: 5% 17% 8%;
-}
-#galeria h1 {
-  font-family: "trajan-pro-3";
-  color: #8d744a;
-}
-#galeria .fecha {
-  font-size: 21px;
-  font-size: 1.5rem;
-  font-weight: 100;
-  padding-bottom: 23px;
-  color: #4e3227;
-}
-#galeria .parrafo {
-  font-size: 22px;
-  font-size: 1.57143rem;
-  font-weight: 100;
-  line-height: 1.5;
-  color: #4e3227;
-}
-#galeria .grid {
-  padding-top: 25px;
-}
-#galeria .grid ul {
-  list-style-type: none;
-  margin: 0 -9px;
-}
-#galeria .grid ul li {
-  padding: 9px;
-}
-#galeria .grid ul li img {
-  width: 100%;
-}
-#galeria .grid #overlay {
-  background: rgba(0, 0, 0, 0.9);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  text-align: center;
-  z-index: 100;
-  display: none;
-}
-#galeria .grid #overlay img {
-  width: 40%;
-}
-#galeria .grid #overlay a {
-  right: 25%;
-  top: 2%;
-  position: absolute;
-  background-color: transparent;
-  text-decoration: none;
-  cursor: pointer;
-}
-#galeria .grid #overlay a:hover {
-  color: #8d744a;
-}
-#galeria .grid .flex {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -6666,75 +6369,119 @@ body::-webkit-scrollbar {
   align-content: flex-start;
   align-items: center;
 }
+.fondo h3 {
+  font-family: "trajan-pro-3";
+  line-height: 1.3;
+  padding-top: 18px;
+  font-size: 22px;
+  font-size: 1.57143rem;
+  letter-spacing: 2px;
+}
+.fondo .logo-title {
+  width: 372px;
+  margin: 0 auto;
+}
+.fondo .logo-title img {
+  width: 100%;
+}
 
-/*
-	Menu blog
-*/
-#faqs {
-  padding: 102px 235px 57px;
+#formulario .date {
+  padding-top: 27px;
 }
-#faqs h2 {
-  color: #8d744a;
+#formulario .date input {
+  background-color: transparent;
+  border: 1.5px solid #fff;
+  width: 162px;
+  height: 40px;
+  font-size: 19px;
+  color: #fff;
+  margin: 6px;
+  outline: none;
 }
-#faqs .separador {
-  border-bottom: 1px solid #8d744a;
-  padding-top: 2%;
-  padding-left: 2%;
-  width: 10%;
-}
-#faqs #menu-blog {
-  padding-top: 5%;
-  padding-bottom: 4%;
-}
-#faqs #menu-blog nav a {
-  padding: 0 7px;
-  color: #8d744a;
-  text-decoration: none;
-  font-size: 18px;
-  font-size: 1.28571rem;
+#formulario .date input::-webkit-input-placeholder {
+  color: #fff;
   font-weight: lighter;
-  border: 1px solid;
-  padding: 5px 14px;
-  border: 1px solid transparent;
-  margin-right: 2%;
 }
-#faqs #menu-blog nav a:hover {
-  border: 1px solid #8d744a;
-  padding: 5px 14px;
+#formulario .date input:-moz-placeholder {
+  color: #fff;
+  font-weight: lighter;
 }
-#faqs .section {
-  border-bottom: 1px solid;
-  padding-bottom: 5%;
-  padding-top: 4%;
+#formulario .date input:-ms-input-placeholder {
+  color: #fff;
+  font-weight: lighter;
 }
-#faqs .section:last-child {
-  border-bottom: transparent;
+#formulario .action {
+  padding-top: 26px;
+  margin-left: 6px;
 }
-#faqs .section h2 {
-  color: #3B2E29;
-  padding-bottom: 5%;
+#formulario .action .dropdown button {
+  width: 162px;
+  height: 26px;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 2px 0;
+  border-color: #8d744a;
+  color: #8d744a;
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+  outline: none;
 }
-#faqs .section .panel-title {
-  padding-bottom: 2%;
+#formulario .action .dropdown button span {
+  position: absolute;
+  right: 15px;
+  font-size: 19px;
 }
-#faqs .section .panel-title a {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 19.6px;
-  font-size: 1.4rem;
+#formulario .action .dropdown .dropdown-menu {
+  background-color: transparent;
+  width: 162px;
+  border-radius: 0;
 }
-#faqs .section .panel-title a img {
-  width: 21px;
-  margin-right: 3%;
+#formulario .action .dropdown .dropdown-menu a {
+  color: #8d744a;
 }
-#faqs .section .panel-body {
-  padding-left: 7%;
-  padding: 0% 6% 5%;
-  font-size: 19.6px;
-  font-size: 1.4rem;
+#formulario .action .btn-group {
+  margin-left: 10px;
+}
+#formulario .action .btn-group .btn-default {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0;
+  border-color: transparent;
+  outline: none;
+  font-size: 14px;
+  padding: 3px 0;
   font-weight: 300;
-  line-height: 1.5;
-  color: #3B2E29;
+}
+#formulario .action .btn-group .btn-default:focus {
+  border-color: #8d744a;
+  color: #8d744a;
+}
+#formulario .action .enter button {
+  background-color: transparent;
+  color: #605551;
+  border-color: #605551;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: lighter;
+  width: 125px;
+  height: 39px;
+  margin-left: 30px;
+  outline: none;
+}
+#formulario .action .enter button span {
+  top: 2px;
+  right: -4px;
+  position: relative;
+}
+#formulario .checkbox {
+  margin-left: 27px;
+}
+#formulario .checkbox input[type="checkbox"] {
+  background-color: transparent;
+}
+#formulario .checkbox label {
+  font-style: italic;
 }
 
 /*
@@ -6903,16 +6650,19 @@ body::-webkit-scrollbar {
 	About us
 */
 #about-us {
-  background-image: url(../img/texturas/debut_light/debut_light.png);
   padding: 5% 17% 12%;
   background-size: 30%;
 }
 #about-us h1 {
   font-size: 35px;
   font-size: 2.5rem;
+  font-family: "trajan-pro-3";
 }
 #about-us h3 {
   font-style: italic;
+}
+#about-us h1, #about-us h2 {
+  font-family: "trajan-pro-3";
 }
 #about-us .texto-about {
   padding: 9% 0 0 17%;
@@ -6941,6 +6691,9 @@ body::-webkit-scrollbar {
 }
 #the-goods h3, #make-drink h3, #events h3 {
   font-style: italic;
+}
+#the-goods h1, #make-drink h1, #events h1, #the-goods h2, #make-drink h2, #events h2 {
+  font-family: "trajan-pro-3";
 }
 #the-goods .slider-text, #make-drink .slider-text, #events .slider-text {
   padding: 5% 20%;
@@ -6979,7 +6732,6 @@ body::-webkit-scrollbar {
 	Events
 */
 #events {
-  background-image: url(../img/fotos/bg.jpg);
   background-size: cover;
 }
 #events .separador {
@@ -7134,10 +6886,458 @@ footer .col-md-3 p a:hover {
 }
 
 /*
-	Ingreso Fondo
+	Blog
 */
-.fondo {
+.site-content .content-blog {
+  padding: 132px 237px;
+}
+.site-content .content-blog h2 {
+  color: #8d744a;
+  font-family: "trajan-pro-3";
+}
+.site-content .content-blog .separador {
+  border-bottom: 1px solid #8d744a;
+  padding-top: 2%;
+  width: 36%;
+}
+.site-content .content-blog #menu-blog {
+  padding-top: 5%;
+  padding-bottom: 8%;
+}
+.site-content .content-blog #menu-blog nav a {
+  padding: 0 7px;
+  color: #8d744a;
+  text-decoration: none;
+  font-size: 18px;
+  font-size: 1.28571rem;
+  font-weight: lighter;
+  padding: 5px 8px;
+  border: 1px solid transparent;
+}
+.site-content .content-blog #menu-blog nav a:hover {
+  border-color: #8d744a;
+}
+.site-content .content-blog .post {
+  border-bottom: 1px solid #3B2E29;
+  padding-bottom: 6%;
+}
+.site-content .content-blog .post .imagen {
   width: 100%;
+}
+.site-content .content-blog .post .imagen img {
+  width: 100%;
+}
+.site-content .content-blog .post .texto {
+  padding-top: 2%;
+  font-weight: 300;
+}
+.site-content .content-blog .post .texto h2 {
+  color: #4e3227;
+}
+.site-content .content-blog .post .texto p {
+  padding-top: 2%;
+  margin-bottom: 3%;
+  font-size: 21px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #4e3227;
+}
+.site-content .content-blog .post .botons {
+  padding-top: 3%;
+}
+.site-content .content-blog .post .botons button {
+  background-color: transparent;
+  padding: 0.7% 5.5%;
+  border: 1px solid #4e3227;
+  float: left;
+  overflow: hidden;
+  transition: all .2s ease-in;
+  position: relative;
+}
+.site-content .content-blog .post .botons button a {
+  text-decoration: none;
+  color: #4e3227;
+  font-size: 21px;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+.site-content .content-blog .post .botons button .overlay {
+  background-color: #a05324;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  transition: all .2s ease-in;
+}
+.site-content .content-blog .post .botons button:hover a {
+  color: #fff;
+}
+.site-content .content-blog .post .botons button:hover .overlay {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+.site-content .content-blog .post .botons .social {
+  float: left;
+  padding-left: 6%;
+}
+.site-content .content-blog .post .botons .social p {
+  font-size: 21px;
+  font-size: 1.5rem;
+  color: #4e3227;
+  float: left;
+  font-weight: 300;
+  margin-right: 17px;
+}
+.site-content .content-blog .post .botons .social li {
+  float: left;
+  list-style: none;
+}
+.site-content .content-blog .post .botons .social li:nth-child(3) {
+  padding: 0 13px;
+}
+.site-content .content-blog .post .tags {
+  color: #8d744a;
+  padding-top: 3.5%;
+  font-size: 18px;
+  font-size: 1.28571rem;
+  font-weight: 100;
+  font-style: italic;
+}
+.site-content .content-blog #pagination {
+  padding-top: 5%;
+}
+.site-content .content-blog #pagination ul {
+  width: 100%;
+}
+.site-content .content-blog #pagination ul li a {
+  border: 1px solid transparent;
+  font-size: 21px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 0 2%;
+  background-color: transparent;
+  color: #4e3227;
+}
+.site-content .content-blog #pagination ul li a:hover {
+  border-color: #4e3227;
+}
+.site-content .content-blog #pagination ul li:first-child a, .site-content .content-blog #pagination ul li:last-child a, .site-content .content-blog #pagination ul li .next, .site-content .content-blog #pagination ul li .previous {
+  border: none;
+}
+.site-content .content-blog #pagination ul li.active a {
+  border: 1px solid #4e3227;
+}
+
+/*
+	Blog
+*/
+.site-content .content-blog {
+  padding: 132px 237px;
+}
+.site-content .content-blog h2 {
+  color: #8d744a;
+  font-family: "trajan-pro-3";
+}
+.site-content .content-blog .separador {
+  border-bottom: 1px solid #8d744a;
+  padding-top: 2%;
+  width: 36%;
+}
+.site-content .content-blog #menu-blog {
+  padding-top: 5%;
+  padding-bottom: 8%;
+}
+.site-content .content-blog #menu-blog nav a {
+  padding: 0 7px;
+  color: #8d744a;
+  text-decoration: none;
+  font-size: 18px;
+  font-size: 1.28571rem;
+  font-weight: lighter;
+  padding: 5px 8px;
+  border: 1px solid transparent;
+}
+.site-content .content-blog #menu-blog nav a:hover {
+  border-color: #8d744a;
+}
+.site-content .content-blog .post {
+  border-bottom: 1px solid #3B2E29;
+  padding-bottom: 6%;
+}
+.site-content .content-blog .post .imagen {
+  width: 100%;
+}
+.site-content .content-blog .post .imagen img {
+  width: 100%;
+}
+.site-content .content-blog .post .texto {
+  padding-top: 2%;
+  font-weight: 300;
+}
+.site-content .content-blog .post .texto h2 {
+  color: #4e3227;
+}
+.site-content .content-blog .post .texto p {
+  padding-top: 2%;
+  margin-bottom: 3%;
+  font-size: 21px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #4e3227;
+}
+.site-content .content-blog .post .botons {
+  padding-top: 3%;
+}
+.site-content .content-blog .post .botons button {
+  background-color: transparent;
+  padding: 0.7% 5.5%;
+  border: 1px solid #4e3227;
+  float: left;
+  overflow: hidden;
+  transition: all .2s ease-in;
+  position: relative;
+}
+.site-content .content-blog .post .botons button a {
+  text-decoration: none;
+  color: #4e3227;
+  font-size: 21px;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+.site-content .content-blog .post .botons button .overlay {
+  background-color: #a05324;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  transition: all .2s ease-in;
+}
+.site-content .content-blog .post .botons button:hover a {
+  color: #fff;
+}
+.site-content .content-blog .post .botons button:hover .overlay {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+.site-content .content-blog .post .botons .social {
+  float: left;
+  padding-left: 6%;
+}
+.site-content .content-blog .post .botons .social p {
+  font-size: 21px;
+  font-size: 1.5rem;
+  color: #4e3227;
+  float: left;
+  font-weight: 300;
+  margin-right: 17px;
+}
+.site-content .content-blog .post .botons .social li {
+  float: left;
+  list-style: none;
+}
+.site-content .content-blog .post .botons .social li:nth-child(3) {
+  padding: 0 13px;
+}
+.site-content .content-blog .post .tags {
+  color: #8d744a;
+  padding-top: 3.5%;
+  font-size: 18px;
+  font-size: 1.28571rem;
+  font-weight: 100;
+  font-style: italic;
+}
+.site-content .content-blog #pagination {
+  padding-top: 5%;
+}
+.site-content .content-blog #pagination ul {
+  width: 100%;
+}
+.site-content .content-blog #pagination ul li a {
+  border: 1px solid transparent;
+  font-size: 21px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 0 2%;
+  background-color: transparent;
+  color: #4e3227;
+}
+.site-content .content-blog #pagination ul li a:hover {
+  border-color: #4e3227;
+}
+.site-content .content-blog #pagination ul li:first-child a, .site-content .content-blog #pagination ul li:last-child a, .site-content .content-blog #pagination ul li .next, .site-content .content-blog #pagination ul li .previous {
+  border: none;
+}
+.site-content .content-blog #pagination ul li.active a {
+  border: 1px solid #4e3227;
+}
+
+/*
+	Blog posts
+*/
+#blog-post {
+  padding: 10% 17%;
+}
+#blog-post .breadcrumb {
+  padding-bottom: 3%;
+}
+#blog-post .breadcrumb li {
+  float: left;
+}
+#blog-post .breadcrumb li::before {
+  content: ">";
+}
+#blog-post .breadcrumb li:first-child::before {
+  content: none;
+}
+#blog-post .breadcrumb li a {
+  padding: 0 22px;
+  text-decoration: none;
+  color: #8d744a;
+  font-weight: lighter;
+  font-size: 18px;
+  font-size: 1.28571rem;
+}
+#blog-post .breadcrumb li span {
+  padding: 0 22px;
+  color: #8d744a;
+  font-size: 18px;
+  font-size: 1.28571rem;
+}
+#blog-post .imagen {
+  width: 100%;
+}
+#blog-post .imagen img {
+  width: 100%;
+}
+#blog-post .texto {
+  padding-top: 2%;
+  font-weight: 300;
+}
+#blog-post .texto h2 {
+  color: #4e3227;
+}
+#blog-post .texto p {
+  padding-top: 2%;
+  margin-bottom: 3%;
+  font-size: 21px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #4e3227;
+}
+#blog-post .texto .gorro {
+  margin: 7% 0;
+  border-bottom: 1px solid #8d744a;
+  border-top: 1px solid #8d744a;
+}
+#blog-post .texto .gorro p {
+  text-transform: uppercase;
+  color: #8d744a;
+  font-weight: 400;
+  font-family: "trajan-pro-3";
+}
+#blog-post .botons {
+  padding-top: 8%;
+  padding-bottom: 5%;
+}
+#blog-post .botons .social {
+  float: left;
+}
+#blog-post .botons .social p {
+  font-size: 21px;
+  font-size: 1.5rem;
+  color: #4e3227;
+  float: left;
+  font-weight: 300;
+  margin-right: 17px;
+}
+#blog-post .botons .social li {
+  float: left;
+  list-style: none;
+}
+#blog-post .botons .social li:nth-child(3) {
+  padding: 0 13px;
+}
+
+/*
+	Events
+*/
+#slider-events {
+  background-image: url(../img/fotos/fotos-eventos/2-grande.png);
+  height: 500px;
+  background-size: cover;
+}
+
+/*
+	Geler├¡a eventos
+*/
+#galeria {
+  padding: 5% 17% 8%;
+}
+#galeria h1 {
+  font-family: "trajan-pro-3";
+  color: #8d744a;
+}
+#galeria .fecha {
+  font-size: 21px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding-bottom: 23px;
+  color: #4e3227;
+}
+#galeria .parrafo {
+  font-size: 22px;
+  font-size: 1.57143rem;
+  font-weight: 100;
+  line-height: 1.5;
+  color: #4e3227;
+}
+#galeria .grid {
+  padding-top: 25px;
+}
+#galeria .grid ul {
+  list-style-type: none;
+  margin: 0 -9px;
+}
+#galeria .grid ul li {
+  padding: 9px;
+}
+#galeria .grid ul li img {
+  width: 100%;
+}
+#galeria .grid #overlay {
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 100;
+  display: none;
+}
+#galeria .grid #overlay img {
+  width: 40%;
+}
+#galeria .grid #overlay a {
+  right: 25%;
+  top: 2%;
+  position: absolute;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+#galeria .grid #overlay a:hover {
+  color: #8d744a;
+}
+#galeria .grid .flex {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -7145,119 +7345,75 @@ footer .col-md-3 p a:hover {
   align-content: flex-start;
   align-items: center;
 }
-.fondo h3 {
-  font-family: "trajan-pro-3";
-  line-height: 1.3;
-  padding-top: 18px;
-  font-size: 22px;
-  font-size: 1.57143rem;
-  letter-spacing: 2px;
-}
-.fondo .logo-title {
-  width: 372px;
-  margin: 0 auto;
-}
-.fondo .logo-title img {
-  width: 100%;
-}
 
-#formulario .date {
-  padding-top: 27px;
+/*
+	Menu blog
+*/
+#faqs {
+  padding: 102px 235px 57px;
 }
-#formulario .date input {
-  background-color: transparent;
-  border: 1.5px solid #fff;
-  width: 162px;
-  height: 40px;
-  font-size: 19px;
-  color: #fff;
-  margin: 6px;
-  outline: none;
-}
-#formulario .date input::-webkit-input-placeholder {
-  color: #fff;
-  font-weight: lighter;
-}
-#formulario .date input:-moz-placeholder {
-  color: #fff;
-  font-weight: lighter;
-}
-#formulario .date input:-ms-input-placeholder {
-  color: #fff;
-  font-weight: lighter;
-}
-#formulario .action {
-  padding-top: 26px;
-  margin-left: 6px;
-}
-#formulario .action .dropdown button {
-  width: 162px;
-  height: 26px;
-  background-color: transparent;
-  border-radius: 0;
-  padding: 2px 0;
-  border-color: #8d744a;
-  color: #8d744a;
-  position: relative;
-  padding-left: 20px;
-  font-size: 14px;
-  outline: none;
-}
-#formulario .action .dropdown button span {
-  position: absolute;
-  right: 15px;
-  font-size: 19px;
-}
-#formulario .action .dropdown .dropdown-menu {
-  background-color: transparent;
-  width: 162px;
-  border-radius: 0;
-}
-#formulario .action .dropdown .dropdown-menu a {
+#faqs h2 {
   color: #8d744a;
 }
-#formulario .action .btn-group {
-  margin-left: 10px;
+#faqs .separador {
+  border-bottom: 1px solid #8d744a;
+  padding-top: 2%;
+  padding-left: 2%;
+  width: 10%;
 }
-#formulario .action .btn-group .btn-default {
-  background-color: transparent;
-  color: #fff;
-  border-radius: 0;
-  border-color: transparent;
-  outline: none;
-  font-size: 14px;
-  padding: 3px 0;
-  font-weight: 300;
+#faqs #menu-blog {
+  padding-top: 5%;
+  padding-bottom: 4%;
 }
-#formulario .action .btn-group .btn-default:focus {
-  border-color: #8d744a;
+#faqs #menu-blog nav a {
+  padding: 0 7px;
   color: #8d744a;
-}
-#formulario .action .enter button {
-  background-color: transparent;
-  color: #605551;
-  border-color: #605551;
-  border-radius: 0;
+  text-decoration: none;
   font-size: 18px;
+  font-size: 1.28571rem;
   font-weight: lighter;
-  width: 125px;
-  height: 39px;
-  margin-left: 30px;
-  outline: none;
+  border: 1px solid;
+  padding: 5px 14px;
+  border: 1px solid transparent;
+  margin-right: 2%;
 }
-#formulario .action .enter button span {
-  top: 2px;
-  right: -4px;
-  position: relative;
+#faqs #menu-blog nav a:hover {
+  border: 1px solid #8d744a;
+  padding: 5px 14px;
 }
-#formulario .checkbox {
-  margin-left: 27px;
+#faqs .section {
+  border-bottom: 1px solid;
+  padding-bottom: 5%;
+  padding-top: 4%;
 }
-#formulario .checkbox input[type="checkbox"] {
-  background-color: transparent;
+#faqs .section:last-child {
+  border-bottom: transparent;
 }
-#formulario .checkbox label {
-  font-style: italic;
+#faqs .section h2 {
+  color: #3B2E29;
+  padding-bottom: 5%;
+}
+#faqs .section .panel-title {
+  padding-bottom: 2%;
+}
+#faqs .section .panel-title a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 19.6px;
+  font-size: 1.4rem;
+}
+#faqs .section .panel-title a img {
+  width: 21px;
+  margin-right: 3%;
+}
+#faqs .section .panel-body {
+  padding-left: 7%;
+  padding: 0% 6% 5%;
+  font-size: 19.6px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #3B2E29;
 }
 
 /*
