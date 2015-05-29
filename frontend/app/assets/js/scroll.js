@@ -1,14 +1,27 @@
-/*$("a.smooth").live("click", function(e) {
-	e.preventDefault();
-    var $link = $(this);
-    var anchor  = $link.attr('href');
-    $('html, body').stop().animate({
-        scrollTop: $(anchor).offset().top
-    }, 1000);
-});*/
+/*
+vALIDACIÓN INGRESO
+*/
+$("#formulario").submit(function(){
+  var day = $("#day").val();
+  var month = $("#month").val();
+  var year = $("#year").val();
+  var age = 18;
+  var mydate = new Date();
+  mydate.setFullYear(year, month-1, day);
+
+  var currdate = new Date();
+  currdate.setFullYear(currdate.getFullYear() - age);
+  if ((currdate - mydate) < 0){
+    $('.change-arrow').click(function() {
+    $(" #up").toggleClass("hidden");
+    $(" #down").toggleClass('hidden');
+    });
+  }
+  return true;
+});
 
 /*
-  Smooth scroll
+  SMOOTH SCROLL
 */
 $(document).ready(function(){
 	$("nav.smooth a").click(function(e){
@@ -21,15 +34,10 @@ $(document).ready(function(){
   });
   $(document).on("scroll", onScroll);
 });
-/*
-  Collapse-Faq's
-*/
-$('.change-arrow').click(function() {
-    $(" #up").toggleClass("hidden");
-    $(" #down").toggleClass('hidden');
-});
 
-/*Carrousel*/
+/*
+  CARROUSEL
+*/
 $(document).ready( function() {
   // vanilla JS
   var $gallery = $('.main-gallery .gallery').flickity();
@@ -49,49 +57,55 @@ $(document).ready( function() {
 });
 
 /*
-  Smooth scroll active
+  SMOOTH SCROLL ACTIVE
 */
 $(document).ready(function () {
-    $(document).on("scroll", onScroll);
-    $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-        
-        $('a').each(function () {
-            $(this).removeClass('active');
-        })
-        $(this).addClass('active');
-      
-        var target = this.hash,
-            menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
-        }, 500, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
+  $(document).on("scroll", onScroll);
+  $('a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
+    $(document).off("scroll");
+    
+    $('a').each(function () {
+        $(this).removeClass('active');
+    })
+    $(this).addClass('active');
+  
+    var target = this.hash,
+        menu = target;
+    $target = $(target);
+    $('html, body').stop().animate({
+        'scrollTop': $target.offset().top+2
+    }, 500, 'swing', function () {
+        window.location.hash = target;
+        $(document).on("scroll", onScroll);
     });
-
+  });
 });
-
 function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-   $('.contenedor-menu a[href^="#"]').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href").toString());
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('.contenedor-menu nav a').removeClass("active");
-            currLink.addClass("active");
-        }
-        else{
-            currLink.removeClass("active");
-        }
-    });
+  var scrollPos = $(document).scrollTop();
+  $('.contenedor-menu a[href^="#"]').each(function () {
+    var currLink = $(this);
+    var refElement = $(currLink.attr("href").toString());
+    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+      $('.contenedor-menu nav a').removeClass("active");
+      currLink.addClass("active");
+    }
+    else{
+      currLink.removeClass("active");
+    }
+  });
 }
 
 /*
-  Popup Events
+  COLLAPSE FAQS
+*/
+$('.change-arrow').click(function() {
+    $(" #up").toggleClass("hidden");
+    $(" #down").toggleClass('hidden');
+});
+
+/*
+  POPUP EVENTS
 */
 var $overlay = $('#overlay');
 var $image = $('#overlay img');
