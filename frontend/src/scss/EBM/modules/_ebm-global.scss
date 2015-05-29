@@ -114,9 +114,10 @@ body {
 */
 .site-content {
 	.content-blog {
-		padding: 4% 17%;
+		  padding: 132px 237px;
 		h2 {
 			color: #8d744a;
+			font-family: "trajan-pro-3"
 		}
 		.separador {
 			border-bottom:1px solid #8d744a;
@@ -173,23 +174,36 @@ body {
 					padding: 0.7% 5.5%;
 					border: 1px solid #4e3227;
 					float: left;
-					-o-transiton: all 0.25s ease-in-out;
-					-ms-transiton: all 0.25s ease-in-out;
-					-moz-transiton: all 0.25s ease-in-out;
-					-webkit-transiton: all 0.25s ease-in-out;
-					transition: all 0.25s ease-in-out;  
+					overflow: hidden;
+					transition: all .2s ease-in;
+					position: relative;
 					a {
 						text-decoration: none;
 						color: #4e3227;
 						font-size: 21px;
 						font-size: rem(21px);
+						position: relative;
+						z-index: 1;
 					}
-					&:hover { 
-						border: 1px solid transparent;
+					.overlay {
 						background-color: #a05324;
+						position: absolute;
+						top: 0;
+						left: 0; 
+						width: 100%;
+						height: 100%;
+						-webkit-transform: translateX(-100%);
+						transform: translateX(-100%); 
+						transition: all .2s ease-in;
+					}
+					&:hover {
 						a {
-							color: #fff; 
+							color: #fff;
 						}
+						.overlay { 
+							-webkit-transform: translateX(0%);
+							transform: translateX(0%); 
+						} 
 					}
 				}
 				.social {
@@ -299,15 +313,9 @@ body {
 		  position:fixed;
 		  top:0;
 		  left:0;
-		  display:none;
 		  text-align:center;
 		  z-index: 100;
-		  display: flex;
-		  flex-direction: column;
-		  flex-wrap: wrap;
-		  justify-content: center;
-		  align-content: flex-start;
-		  align-items: center;
+		  display: none;
 		  img{
 		  	width: 40%;
 		  }
@@ -323,6 +331,14 @@ body {
   			}
 		  }
 		}
+		.flex{
+			display: flex;
+			flex-direction: column;
+		  flex-wrap: wrap;
+		  justify-content: center;
+		  align-content: flex-start;
+		  align-items: center;
+		}
 	}
 }
 
@@ -330,7 +346,7 @@ body {
 	Menu blog
 */
 #faqs {
-	padding: 5% 17%;
+	  padding: 102px 235px 57px;
 	h2 {
 			color: #8d744a;
 		}
@@ -632,13 +648,14 @@ body {
 			font-style: normal;
 			font-weight: 300;
 		}
-		button {
+		.see-more {
 			background-color: transparent;
 			padding: 2% 14%;
 			margin-top: 8%;
-			border: 1px solid #fff;
+			border: 2px solid #fff;
 			transition: all .5s ease-in-out;
-			position: relative; 
+			position: relative;
+			overflow: hidden;
 			a {
 				font-size: 19.6px;
 				font-size: rem(19.6px);
@@ -656,7 +673,7 @@ body {
 				height: 100%;
 				-webkit-transform: translateX(-100%);
 				transform: translateX(-100%); 
-				transition: all .5s ease-in;
+				transition: all .2s ease-in;
 			}
 			&:hover {
 				a {
@@ -696,7 +713,7 @@ body {
 			position: relative;
 			text-decoration: none;
 			overflow: hidden;
-			transition: all .5s ease-in-out;
+			transition: all .2s ease-in-out;
 			padding: 2% 3%;
 			.overlay{
 				background-image: url(../img/texturas/textura-hover-redes.png);
@@ -707,7 +724,7 @@ body {
 				height: 100%;
 				-webkit-transform: translateX(-100%);
 				transform: translateX(-100%); 
-				transition: all .5s ease-in; 
+				transition: all .2s ease-in-out; 
 			}
 			&:hover {
 				color: #fff;
@@ -717,7 +734,7 @@ body {
 				} 
 			}
 			h1, p {
-				font-family: "Museo-Sans";
+				font-family: "museo-sans";
 				position: relative;
 				z-index: 1;
 			} 
@@ -777,19 +794,22 @@ footer {
 */
 .fondo {
 	width: 100%;
-	height: 100%;
-	background-color: #4e3227;
-	padding: 10%;
+	display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
 	h3 {
-		font-family: "MuseoSans";
+		font-family: "trajan-pro-3";
 		line-height: 1.3;
-		padding-top: 10px;
-		font-size: 20px;
-		font-size: rem(20px);
+		padding-top: 18px;
+		font-size: 22px;
+		font-size: rem(22px);
 		letter-spacing: 2px;
 	}
 	.logo-title {
-		width: 350px;
+		width: 372px;
   	margin: 0 auto;
 		img {
 			width: 100%;
@@ -797,19 +817,125 @@ footer {
 	} 
 }
 
+#formulario {
+	.date {
+		padding-top: 27px;
+		input {
+			background-color: transparent;
+	  	border: 1.5px solid #fff;
+	  	width: 162px;
+	  	height: 40px;
+	  	font-size: 19px;
+	  	color: #fff;
+	  	margin: 6px;
+	  	outline: none;
+	  	&::-webkit-input-placeholder {
+			  color: #fff;
+			  font-weight: lighter;
+			}
+			&:-moz-placeholder {
+			  color: #fff;
+			  font-weight: lighter; 
+			}
+			&:-ms-input-placeholder { 
+			  color: #fff;
+			  font-weight: lighter;
+			}
+		}
+	}
+	.action {
+		padding-top: 26px;
+		margin-left: 6px;
+		.dropdown {
+			button {
+				width: 162px;
+				height: 26px;
+			  background-color: transparent;
+				border-radius: 0;
+				padding: 2px 0;
+				border-color: #8d744a;
+				color: #8d744a;
+				position: relative;
+				padding-left: 20px;
+				font-size: 14px;
+				outline: none;
+				span {
+					position: absolute;
+					right: 15px;
+  				font-size: 19px;
+				}
+			}
+			.dropdown-menu {
+				background-color: transparent;
+  			width: 162px;
+  			border-radius: 0;
+  			a {
+  				color: #8d744a;
+  			}
+			}
+		}
+		.btn-group {
+			margin-left: 10px;
+			.btn-default {
+				background-color: transparent;
+				color: #fff;
+			  border-radius: 0;
+			  border-color: transparent;
+			  outline: none;
+			  font-size: 14px;
+			  padding: 3px 0;
+			  font-weight: 300;
+			  &:focus {
+			  	border-color: #8d744a;
+			  	color: #8d744a;
+			  }
+			 }
+		}
+		.enter {
+			button {
+				background-color: transparent;
+			  color: rgb(96, 85, 81);
+			  border-color: rgb(96, 85, 81);
+			  border-radius: 0;
+			  font-size: 18px;
+			  font-weight: lighter;
+			  width: 125px;
+			  height: 39px;
+			  margin-left: 30px;
+			  outline: none;
+			  span {
+					top: 2px;
+				  right: -4px;
+				  position: relative;
+			  }
+			}
+		}	
+	}
+	.checkbox {
+		margin-left: 27px;
+		input[type="checkbox"]{
+			background-color:transparent;
+		}
+		label{
+			font-style: italic;
+		}
+	}
+}
+
 /*
 	Media kit
 */
 #media-kit {
-	padding: 5% 17%;
-	h2:first-child {
+	padding: 110px 234px;
+	h1:first-child {
 		color: #8d744a;
+		font-family: "trajan-pro-3";
 	}
 	.separador {
 		border-bottom: 1px solid #8d744a;
 		padding-top: 2%;
 		padding-left: 2%;
-		width: 21%;
+		width: 25%;
 	}
 	#menu-blog {
 		padding-top: 5%;
@@ -909,7 +1035,7 @@ footer {
 	Terms
 */
 #terms {
-	padding: 3% 18% 10%; 
+	padding: 106px 237px 124px; 
 	h2 {
 		font-size: 32.2px;
 		font-size: rem(32.2px);
@@ -936,6 +1062,97 @@ footer {
 		padding-bottom: 2%;
 		padding-top: 1%;
 	}
+}
+/*
+	Contact
+*/
+#container-contact{
+	background-color: #3B2E29;
+	display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+  h3{
+  	font-family: "trajan-pro-3";
+  }
+  .formulario{
+  	padding-top: 14px;
+  	position: relative;
+  	input{
+  		width: 280px;
+  		height: 45px; 
+		  background-color: transparent;
+		  border: 1.5px solid #fff;
+		  margin: 0 6px;
+		}
+		textarea{
+			width: 576px;
+  		height: 96px;
+  		background-color: transparent;
+		  border: 1.5px solid #fff;
+		  margin-top: 17px;
+		  padding-top: 18px;
+		  margin-left: 6px;
+		}
+		input , textarea {
+			font-size: 18px;
+			font-size: rem(18px);
+			padding-left: 15px;
+			&::-webkit-input-placeholder {
+			  color: #fff;
+			  font-weight: lighter;
+			}
+			&:-moz-placeholder {
+			  color: #fff;
+			  font-weight: lighter; 
+			}
+			&:-ms-input-placeholder { 
+			  color: #fff;
+			  font-weight: lighter;
+			}
+		}
+		button {
+			width: 142px;
+			height: 46px;
+			background-color: transparent;
+		  border: 1px solid white;
+		  outline: none;
+		  position: absolute;
+  		right: 6px;
+  		margin-top: 3px;
+  		font-weight: 300;
+  		overflow: hidden;
+  		z-index: 1;
+  		p {
+				z-index: 1;
+				position: relative;
+				font-size: 18px;
+				font-size: rem(18px);
+  		}
+			.overlay {
+				background-color: #8d744a;
+				position: absolute;
+				top: 0;
+				left: 0; 
+				width: 100%;
+				height: 100%;
+				-webkit-transform: translateX(-100%);
+				transform: translateX(-100%); 
+				transition: all .2s ease-in;
+			}
+			&:hover {
+				a {
+					color: #fff;
+				}
+				.overlay { 
+					-webkit-transform: translateX(0%);
+					transform: translateX(0%); 
+				} 
+			}
+		}
+  }
 }
 
 /*

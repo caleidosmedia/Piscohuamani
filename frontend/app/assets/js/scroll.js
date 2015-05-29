@@ -103,7 +103,7 @@ $('.grid ul li a').click(function (event) {
   var captionText = $(this).children("img").attr("alt");
   $caption.text(captionText);
   $image.attr("src", href);
-  $overlay.show();
+  $overlay.addClass("#flex").show();
 });
 
 $overlay.click(function(){ 
