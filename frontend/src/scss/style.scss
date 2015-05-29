@@ -25,7 +25,7 @@
 
 // APP Includes
 @import "EBM/elements/ebm-buttons-custom";
-// @import "EBM/elements/ebm-icons";
+@import "EBM/elements/ebm-icons";
 // @import "EBM/elements/ebm-button-icons";
 // @import "EBM/elements/ebm-banners-custom";
 // @import "EBM/elements/ebm-forms-custom";
@@ -46,3 +46,6 @@
 // @import "EBM/modules/ebm-style-guide";
 // @import "EBM/modules/ebm-bg-gallery";
 // @import "EBM/modules/ebm-hero-unit"; 
+
+// External
+@import "flickity/flickity";

@@ -9,10 +9,6 @@
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <link href="assets/css/style.css" rel="stylesheet"> <!-- App styles -->
     <link href="assets/css/ebm.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.css">
-    <Link rel = "stylesheet" href = tipo "flexslider.css" = "text / css">
-    <!--<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script src = "jquery.flexslider.js"></script>-->
     <script src="//use.typekit.net/wml8szi.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
   <body>
@@ -126,47 +122,62 @@
             </div>
           </div>
         </section> 
-        <section id="make-drink">
-          <h1 class="text-white">MAKE A DRINK</h1>
-          <h3 class="text-white">We are just getting sarted</h3>
-          <div class="row">
-            <div class="col-sm-8">    
-              <div class="main-gallery">
+        <section id="make-drink" style="background-image: url(assets/img/texturas/textura-oscura.png);">
+          <div class="container">
+            <div class="section-title text-white">
+              <h2>MAKE A DRINK</h2>
+              <h3>We are just getting sarted</h3>
+            </div>
+          </div>
+          <div class="container-sm pt-42">
+            <div class="gallery-wrapper">
+              <div class="gallery-button-left">
+                <a href="#" class="icon-chevron-left"></a>
+              </div>
+              <div class="gallery-button-right">
+                <a href="#" class="icon-chevron-right"></a>
+              </div>
+              <div class="gallery">
                 <div class="gallery-cell text-white">
-                  <div class="slider-text">
-                    <h2 class="text-white">CHILCANO DE FRUTAS</h2>
-                    <div class="separador"></div>
-                    <p class="line-height">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est exercitationem non error tenetur laudantium sint at aspernatur voluptatum libero corporis laboriosam quaerat.</p>
+                  <h2 class="text-white serif-light">CHILCANO DE FRUTAS</h2>
+                  <div class="separator separator-white"></div>
+                  <div class="row pt-28">
+                    <div class="col-sm-6">
+                      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est exercitationem non error tenetur laudantium sint at aspernatur voluptatum libero corporis laboriosam quaerat.</p>
+                    </div>
                   </div>
                 </div>
                 <div class="gallery-cell text-white">
-                  <div class="slider-text">
-                    <h2 class="">LA HACIENDA</h2>
-                    <div class="separador"></div>
-                    <p class="line-height">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est exercitationem non error tenetur laudantium sint at aspernatur voluptatum libero corporis laboriosam quaerat.</p>
+                  <h2 class="text-white serif-light uppercase">Chilcano de maracuya</h2>
+                  <div class="separator separator-white"></div>
+                  <div class="row pt-28">
+                    <div class="col-sm-6">
+                      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est exercitationem non error tenetur laudantium sint at aspernatur voluptatum libero corporis laboriosam quaerat.</p>
+                    </div>
                   </div>
                 </div>
-                <div class="gallery-cell text-white">
-                  <div class="slider-text">
-                    <h2 class="">LA HACIENDA</h2>
-                    <div class="separador"></div>
-                    <p class="line-height">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est exercitationem non error tenetur laudantium sint at aspernatur voluptatum libero corporis laboriosam quaerat.</p>
+              </div>
+              <div class="gallery-child">
+                <div class="gallery-cell">
+                  <div class="row">
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6">
+                      <img src="assets/img/fotos/foto-copa-make-a-drink.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery-cell">
+                  <div class="row">
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6">
+                      <img src="assets/img/fotos/foto-copa-make-a-drink.png" alt="">
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-4 slider-img gallery js-flickity"> 
-              <div class="slider-content text-center gallery-cell">
-                <img src="assets/img/fotos/foto-copa-make-a-drink.png" alt="">
-              </div>
-              <div class="slider-content text-center gallery-cell">
-                <img src="assets/img/fotos/foto-copa-make-a-drink.png" alt="">
-              </div>
-              <div class="slider-content text-center gallery-cell">
-                <img src="assets/img/fotos/foto-copa-make-a-drink.png" alt="">
-              </div>
-            </div>
-          </div> 
+          </div>
+          </div>
         </section>
         <section id="events" style="background-image: url(assets/img/fotos/bg.jpg);">
           <h1 class="text-white">EXPERIENCE HUAMANI</h1>
@@ -272,8 +283,9 @@
         </ul> 
       </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.js"></script>
-    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- // <script src="assets/js/scroll-control.js"></script> -->
+    <script src="assets/js/gallery-control.js"></script>
   </body>
 </html> 

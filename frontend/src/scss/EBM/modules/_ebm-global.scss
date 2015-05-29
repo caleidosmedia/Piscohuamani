@@ -22,6 +22,74 @@ body {
 	position: relative; 
 }
 
+.site-content {
+	> section {
+		padding: 70px 0;
+		padding: rem(70px) 0;
+	}
+	.section-title {
+		h2 {
+			@include serif-light;
+			font-size: $font-size-h1;
+			font-size: rem($font-size-h1);
+		}
+		h3 {
+			@include light-italic;
+		}
+	}
+}
+
+/*
+	Make drink
+*/
+$make-drink-gallery-height-control: 560px;
+#make-drink {
+	.gallery-wrapper {
+		min-height: $make-drink-gallery-height-control;
+		position: relative;
+	}
+	.gallery,
+	.gallery-cell,
+	.gallery-child {
+		min-height: $make-drink-gallery-height-control;
+		width: 100%; 
+	}
+	.gallery-button-left,
+	.gallery-button-right {
+		@include flex-column-center;
+		a {
+			font-size: 63px;
+			font-size: rem(63px);
+			color: $gray-light;
+		}
+	}
+	.gallery-button-left {
+		@include position(absolute, 0 null 0 -98px);
+	}
+	.gallery-button-right {
+		@include position(absolute, 0 -98px 0 null);
+	}
+	.gallery-child {
+		@include position(absolute, 0 0 0 0);
+	}
+}
+
+/*
+	Separadores
+*/
+$separator-height-control: 2px;
+.separator {
+	height: $separator-height-control;
+	margin: 21px 0;
+	margin: rem(21px) 0;
+	@for $i from 1 through length($grayscale-list) {
+		&.separator-#{nth($grayscale-sufix-list, $i)} {
+			background-color: #{nth($grayscale-list, $i)};
+		}
+	}
+}
+
+
 /*
 	Ingreso Fondo
 */
@@ -297,7 +365,7 @@ body {
 	About us
 */
 #about-us {
-	padding: 5% 17% 12%;
+	// padding: 5% 17% 12%;
 	background-size: 30%;
 	h1 {
 		font-size: 35px;
@@ -330,7 +398,7 @@ body {
 */
 #the-goods {
 	background-color:rgb(248, 244, 229);
-	padding: 8% 17%;
+	// padding: 8% 17%;
 	h1 {
 		font-size: 35px;
 		font-size: rem(35px); 
@@ -371,10 +439,10 @@ body {
 /*
 	Make drink
 */
-#make-drink {
-	@extend #the-goods; 
-	background-image: url(../img/texturas/textura-oscura.png);
-}
+// #make-drink {
+// 	@extend #the-goods; 
+// 	background-image: url(../img/texturas/textura-oscura.png);
+// }
 
 /*
 	Events
@@ -440,7 +508,7 @@ body {
 */
 #follow-us {
 	background-color: #8d744a;
-	padding: 6% 17%; 
+	// padding: 6% 17%; 
 	h3 {
 		font-weight: lighter;
 		font-style: italic;
@@ -854,7 +922,7 @@ footer {
 	Blog posts
 */
 #blog-post {
-	padding: 10% 17%;
+	// padding: 10% 17%;
 	.breadcrumb {
 		padding-bottom: 3%;
 		li {
@@ -951,7 +1019,7 @@ footer {
 	Gelería eventos
 */ 
 #galeria{
-	padding: 5% 17% 8%;
+	// padding: 5% 17% 8%;
 	h1{
 		font-family: "trajan-pro-3";
   	color: #8d744a;
@@ -1022,10 +1090,10 @@ footer {
 	Menu blog
 */
 #faqs {
-	  padding: 102px 235px 57px;
+	  // padding: 102px 235px 57px;
 	h2 {
-			color: #8d744a;
-		}
+		color: #8d744a;
+	}
 	.separador {
 		border-bottom: 1px solid #8d744a;
 		padding-top: 2%;
