@@ -210,6 +210,10 @@ $separator-height-control: 2px;
 				  position: relative;
 			  }
 			}
+		}
+		.active {
+			border-color: #8d744a;
+			color: #8d744a;
 		}	
 	}
 	.checkbox {
