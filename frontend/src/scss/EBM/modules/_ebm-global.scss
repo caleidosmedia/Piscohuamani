@@ -24,8 +24,8 @@ body {
 
 .site-content {
 	> section {
-		padding: 70px 0;
-		padding: rem(70px) 0;
+		padding: 71px 90px;
+		padding: rem(71px) rem(90px);
 	}
 	.section-title {
 		h2 {
@@ -54,15 +54,6 @@ $make-drink-gallery-height-control: 560px;
 		min-height: $make-drink-gallery-height-control;
 		width: 100%; 
 	}
-	.gallery-button-left,
-	.gallery-button-right {
-		@include flex-column-center;
-		a {
-			font-size: 63px;
-			font-size: rem(63px);
-			color: $gray-light;
-		}
-	}
 	.gallery-button-left {
 		@include position(absolute, 0 null 0 -98px);
 	}
@@ -71,6 +62,19 @@ $make-drink-gallery-height-control: 560px;
 	}
 	.gallery-child {
 		@include position(absolute, 0 0 0 0);
+	}
+}
+
+/*
+	Gallery buttons
+*/
+.gallery-button-left,
+.gallery-button-right {
+	@include flex-column-center;
+	a {
+		font-size: 63px;
+		font-size: rem(63px);
+		color: rgb(179, 172, 160);
 	}
 }
 
@@ -410,11 +414,11 @@ $separator-height-control: 2px;
 	h3 {
 		font-style: italic;
 	}
-	h1, h2{
+	h1, h2{ 
 		font-family: "trajan-pro-3"; 
 	}
 	.slider-text {
-		padding: 5% 20%;
+		padding: 5% 20% 5% 0%;
 		.separador {
 			border-bottom: 1px solid #3b2e29;
 			padding-top: 4%;
@@ -432,11 +436,21 @@ $separator-height-control: 2px;
 		top: -150px;
 		text-align: right;
 	}
+	.gallery-wrapper{
+		position: relative;
+	}
 	.gallery-cell {
 		width: 100%;
 	}
 	.gallery-nav .gallery-cell.is-nav-selected {
 		background: #ED2; 
+	}
+	.gallery-button-left {
+		@include position(absolute, 0 null 0 -98px);
+	}
+	.gallery-button-right {
+		@include position(absolute, 0 265px 0 null);
+		z-index: 100;
 	}	
 }
 
@@ -590,8 +604,8 @@ footer {
 		padding-left: 10%;
 	}
 	p {
-		font-size: 12px;
-		font-size: rem(12px);
+		font-size: 14px;
+		font-size: rem(14px);
 		margin: 0;
 		margin-bottom: 3px; 
 	}
