@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="keywords" content=""> 
-    <meta name="author" content="@MadeByGus">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="shortcut icon" href="assets/img/favicon.png">
-    <link href="assets/css/style.css" rel="stylesheet"> <!-- App styles -->
-    <link href="assets/css/ebm.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.css">
-    <Link rel = "stylesheet" href = tipo "flexslider.css" = "text / css">
-    <!--<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script src = "jquery.flexslider.js"></script>-->
-    <script src="//use.typekit.net/wml8szi.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
+  <title></title>
+  <meta name="description" content="">
+  <meta name="keywords" content=""> 
+  <meta name="author" content="@MadeByGus">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+  <link href="assets/css/style.css" rel="stylesheet"> <!-- App styles -->
+  <link href="assets/css/ebm.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.css">
+  <script src="//use.typekit.net/wml8szi.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
   <body>
     <div class="site-wrapper"> <!-- Body -->
       <header class="site-menu">
@@ -51,10 +48,10 @@
         <div id="container-contact" class="minhp-100">
           <h3 class="text-white">GET IN TOUCH</h3>
           <div class="formulario">
-            <input type="text" pattern="[0-9]*" maxlength="25" class="month" placeholder="NAME" name="name" required>
-            <input type="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" maxlength="25" class="day" placeholder="E-MAIL" name="e-mail" required>
-            <p><textarea placeholder="MESSAGE" name="textarea" required></textarea></p>
-            <button class="text-white">
+            <input type="text" pattern="[0-9]*" maxlength="25" class="name" placeholder="NAME" name="name" required>
+            <input type="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" maxlength="25" class="e-mail" placeholder="E-MAIL" name="e-mail" required>
+            <p><textarea class="message" placeholder="MESSAGE" name="textarea" required></textarea></p>
+            <button class="text-white send" type="submit" disabled="disabled">
               <p class="m-0">SEND</p>
               <div class="overlay"></div>
             </button>
@@ -64,6 +61,6 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.js"></script>
-    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/forms-control.js"></script>
   </body>
 </html> 

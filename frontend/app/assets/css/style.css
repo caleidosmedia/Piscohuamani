@@ -6556,8 +6556,22 @@ body::-webkit-scrollbar {
 #formulario .action .dropdown .dropdown-menu a {
   color: #8d744a;
 }
+#formulario .action select {
+  width: 162px;
+  height: 26px;
+  font-size: 14px;
+  font-size: 1rem;
+  -webkit-appearance: none;
+  background: #3b2e29;
+  outline: none;
+  border: 1px solid #8d744a;
+  color: #8d744a;
+}
+#formulario .action select option {
+  background-image: url(../img/texturas/textura-oscura.png);
+}
 #formulario .action .btn-group {
-  margin-left: 10px;
+  margin-left: 23px;
 }
 #formulario .action .btn-group .btn-default {
   background-color: transparent;
@@ -6595,13 +6609,30 @@ body::-webkit-scrollbar {
   color: #8d744a;
 }
 #formulario .checkbox {
-  margin-left: 27px;
+  margin-left: 6px;
 }
-#formulario .checkbox input[type="checkbox"] {
-  background-color: transparent;
+#formulario .checkbox .box {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #fff;
+  position: relative;
+  float: left;
+  cursor: pointer;
+}
+#formulario .checkbox .box span {
+  font-size: 30px;
+  position: absolute;
+  top: -15px;
+  left: -2px;
+  display: none;
 }
 #formulario .checkbox label {
   font-style: italic;
+  margin-left: 10px;
+}
+
+.show {
+  display: block;
 }
 
 /*
@@ -6613,6 +6644,7 @@ body::-webkit-scrollbar {
   right: 0;
   left: 0;
   height: 61px;
+  height: 4.35714rem;
   width: 100%;
 }
 .site-menu .contenedor-menu {
@@ -6621,6 +6653,7 @@ body::-webkit-scrollbar {
   left: 0;
   width: 100%;
   height: 61px;
+  height: 4.35714rem;
   background: #3b2e29;
   z-index: 10;
 }
@@ -6652,6 +6685,7 @@ body::-webkit-scrollbar {
   align-content: flex-start;
   align-items: center;
   height: 61px;
+  height: 4.35714rem;
   letter-spacing: .08em;
   transition: all .5s;
   background-color: #f8f4e5;
@@ -6662,6 +6696,7 @@ body::-webkit-scrollbar {
   transform-origin: center top;
   z-index: 1;
   padding: 0 33px;
+  padding: 0 2.35714rem;
 }
 .site-menu .contenedor-menu nav a div:first-child {
   -webkit-transform: rotateX(0deg);
@@ -6699,6 +6734,7 @@ body::-webkit-scrollbar {
 }
 .site-menu .contenedor-menu nav a.logo-link div {
   width: 200px;
+  width: 14.28571rem;
   line-height: 55px !important;
   display: block;
 }
@@ -6742,8 +6778,8 @@ body::-webkit-scrollbar {
   font-family: times;
 }
 .img-principal div.texto h1 {
-  font-size: 56px;
-  font-size: 4rem;
+  font-size: 65px;
+  font-size: 4.64286rem;
 }
 .img-principal div.texto h3 {
   font-style: italic;
@@ -7311,6 +7347,10 @@ footer .col-md-3 p a:hover {
 /*
 	Blog posts
 */
+#blog-post .container {
+  padding: 125px 34px;
+  padding: 8.92857rem 2.42857rem;
+}
 #blog-post .breadcrumb {
   padding-bottom: 3%;
 }
@@ -7472,6 +7512,10 @@ footer .col-md-3 p a:hover {
 /*
 	Menu blog
 */
+#faqs .container {
+  padding: 110px 33px;
+  padding: 7.85714rem 2.35714rem;
+}
 #faqs h2 {
   color: #8d744a;
 }

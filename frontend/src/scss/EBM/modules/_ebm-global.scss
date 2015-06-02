@@ -179,8 +179,22 @@ $separator-height-control: 2px;
   			}
 			}
 		}
+		select{
+			width: 162px;
+			height: 26px;
+			font-size: 14px;
+			font-size: rem(14px);
+			-webkit-appearance: none;
+  		background: rgb(59, 46, 41);
+  		outline: none;
+  		border: 1px solid #8d744a;
+  		color: #8d744a;
+			option{
+				background-image: url(../img/texturas/textura-oscura.png);
+			}
+		}
 		.btn-group {
-			margin-left: 10px;
+			margin-left: 23px;
 			.btn-default {
 				background-color: transparent;
 				color: #fff;
@@ -221,15 +235,31 @@ $separator-height-control: 2px;
 		}	
 	}
 	.checkbox {
-		margin-left: 27px;
-		input[type="checkbox"]{
-			background-color:transparent;
+		margin-left: 6px;
+		.box {
+			width: 17px;
+			height: 17px;
+			border: 1px solid #fff;
+			position: relative;
+  		float: left;
+  		cursor: pointer;
+  		span {
+  			font-size: 30px;
+			  position: absolute;
+			  top: -15px;
+			  left: -2px;
+			  display: none;
+  		}
 		}
 		label{
 			font-style: italic;
+			margin-left: 10px;
 		}
 	}
 }
+.show {
+		display: block;
+	}
 
 
 /*
@@ -238,6 +268,7 @@ $separator-height-control: 2px;
 .site-menu {
 	@include position(absolute, 0 0 null 0);
 	height: 61px;
+	height: rem(61px); 
 	width: 100%;
 	.contenedor-menu {
 		position: fixed;
@@ -245,6 +276,7 @@ $separator-height-control: 2px;
 	 	left: 0;
 	 	width: 100%;
 	 	height: 61px;
+	 	height: rem(61px);
 	  background: #3b2e29;
 	 	z-index: 10; 
 	 	nav {
@@ -273,6 +305,7 @@ $separator-height-control: 2px;
   					align-content: flex-start;
   					align-items: center;
 				  	height: 61px;
+				  	height: rem(61px);
 				  	letter-spacing: .08em; 
 				  	transition: all .5s;
 				  	background-color: rgb(248, 244, 229);
@@ -283,6 +316,7 @@ $separator-height-control: 2px;
 				  	transform-origin: center top;
 				  	z-index: 1;
 				  	padding: 0 33px;
+				  	padding: 0 rem(33px);
 	  				&:first-child {
 	  					-webkit-transform: rotateX(0deg);
 	  					transform: rotateX(0deg);
@@ -325,6 +359,7 @@ $separator-height-control: 2px;
 			}
 	 		a.logo-link div {
 				width: 200px;
+				width: rem(200px);
 				line-height: 55px!important;
   			display: block;
 				img {
@@ -343,8 +378,8 @@ $separator-height-control: 2px;
 		div.texto {
 			font-family: times;
 			h1 {
-				font-size: 56px;
-				font-size: rem(56px);
+				font-size: 65px;
+				font-size: rem(65px);
 			}
 			h3 {
 			font-style: italic;
@@ -940,7 +975,10 @@ footer {
 	Blog posts
 */
 #blog-post {
-	// padding: 10% 17%;
+	.container{
+		padding: 125px 34px;
+		padding: rem(125px) rem(34px);
+	}
 	.breadcrumb {
 		padding-bottom: 3%;
 		li {
@@ -1109,6 +1147,10 @@ footer {
 */
 #faqs {
 	  // padding: 102px 235px 57px;
+	.container{
+	 	padding: 110px 33px;
+	 	padding: rem(110px) rem(33px);
+	 }
 	h2 {
 		color: #8d744a;
 	}

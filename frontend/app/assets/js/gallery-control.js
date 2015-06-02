@@ -9,23 +9,27 @@ $(document).ready(function(){
 		contain: true,
 		prevNextButtons: false,
 		pageDots: false,
-		wrapAround: false
+		wrapAround: false,
+		draggable: false,
+		wrapAround: true
 	});
 
 	$makeDrinkGalleryNav.flickity({
-		asNavFor: '.gallery-child',
+		asNavFor: '#make-drink .gallery-child',
 		cellAlign: 'left',
 		contain: true,
 		prevNextButtons: false,
 		pageDots: false,
-		wrapAround: false
+		wrapAround: false,
+		draggable: false,
+		wrapAround: true
 	});
 
-	$('#make-drink .gallery-button-left a').on( 'click', function(e) {
+	$('#make-drink .gallery-button-left span').on( 'click', function(e) {
 		e.preventDefault();
 	  $makeDrinkGallery.flickity('previous');
 	});
-	$('#make-drink .gallery-button-right a').on( 'click', function(e) {
+	$('#make-drink .gallery-button-right span').on( 'click', function(e) {
 		e.preventDefault();
 	  $makeDrinkGallery.flickity('next');
 	});
@@ -39,23 +43,27 @@ $(document).ready(function(){
 		contain: true,
 		prevNextButtons: false,
 		pageDots: false,
-		wrapAround: false
+		wrapAround: false,
+		draggable: false,
+		wrapAround: true
 	});
 
 	$goodsGalleryNav.flickity({
-		asNavFor: '.gallery-child',
+		asNavFor: '#the-goods .gallery-child',
 		cellAlign: 'left',
 		contain: true,
 		prevNextButtons: false,
 		pageDots: false,
-		wrapAround: false
+		wrapAround: false,
+		draggable: false,
+		wrapAround: true
 	});
 
-	$('#the-goods .gallery-button-left a').on( 'click', function(e) {
+	$('#the-goods .gallery-button-left span').on( 'click', function(e) {
 		e.preventDefault();
 	  $goodsGallery.flickity('previous');
 	});
-	$('#the-goods .gallery-button-right a').on( 'click', function(e) {
+	$('#the-goods .gallery-button-right span').on( 'click', function(e) {
 		e.preventDefault();
 	  $goodsGallery.flickity('next');
 	});
@@ -73,7 +81,7 @@ $(document).ready(function(){
 	});
 
 	$eventsGalleryNav.flickity({
-		asNavFor: '.gallery-child',
+		asNavFor: '#events .gallery-child',
 		cellAlign: 'left',
 		contain: true,
 		prevNextButtons: false,
@@ -81,12 +89,12 @@ $(document).ready(function(){
 		wrapAround: false
 	});
 
-	$('#the-events .gallery-button-left a').on( 'click', function(e) {
+	$('#the-events .gallery-button-left span').on( 'click', function(e) {
 		e.preventDefault();
-	  $eventsGallery.flickity('previous');
+	  $eventsGalleryNav.flickity('previous');
 	});
-	$('#the-events .gallery-button-right a').on( 'click', function(e) {
+	$('#the-events .gallery-button-right span').on( 'click', function(e) {
 		e.preventDefault();
-	  $eventsGallery.flickity('next');
+	  $eventsGalleryNav.flickity('next');
 	});
 });
