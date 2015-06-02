@@ -24,8 +24,12 @@ body {
 
 .site-content {
 	> section {
-		padding: 71px 90px;
-		padding: rem(71px) rem(90px);
+			padding: 82px 235px;
+			padding: rem(82px) rem(235px);
+			.container-sm {
+				margin-left: 100px;
+				margin-right: 20px;
+			}
 	}
 	.section-title {
 		h2 {
@@ -63,6 +67,11 @@ $make-drink-gallery-height-control: 560px;
 	.gallery-child {
 		@include position(absolute, 0 0 0 0);
 	}
+	//.gallery-child {
+		//.gallery-cell {
+		//	-webkit-transition: all 0.3s ease-in-out;
+		//}
+	//}
 }
 
 /*
@@ -71,10 +80,8 @@ $make-drink-gallery-height-control: 560px;
 .gallery-button-left,
 .gallery-button-right {
 	@include flex-column-center;
-	a {
-		font-size: 63px;
-		font-size: rem(63px);
-		color: rgb(179, 172, 160);
+	img {
+		cursor: pointer;
 	}
 }
 
@@ -151,7 +158,7 @@ $separator-height-control: 2px;
 	.action {
 		padding-top: 26px;
 		margin-left: 6px;
-		.dropdown {
+		/*.dropdown {
 			button {
 				width: 162px;
 				height: 26px;
@@ -178,7 +185,7 @@ $separator-height-control: 2px;
   				color: #8d744a;
   			}
 			}
-		}
+		}*/
 		select{
 			width: 162px;
 			height: 26px;
@@ -205,6 +212,10 @@ $separator-height-control: 2px;
 			  padding: 3px 0;
 			  font-weight: 300;
 			  &:focus {
+			  	border-color: #8d744a;
+			  	color: #8d744a;
+			  }
+			  &:active {
 			  	border-color: #8d744a;
 			  	color: #8d744a;
 			  }
@@ -422,7 +433,7 @@ $separator-height-control: 2px;
 		font-family: "trajan-pro-3";
 	}
 	.texto-about {
-		padding: 9% 0 0 17%;
+		padding: 9% 17px 0 76px;
 		.separador {
 			border-bottom: 1px solid #3b2e29;
 			padding-top:4%;
@@ -432,6 +443,12 @@ $separator-height-control: 2px;
 			font-size: 21px;
 			font-size: rem(21px);
 			font-weight: 300;
+		}
+	}
+	.imagen {
+		text-align: center;
+		img {
+			width: 362px;
 		}
 	}
 } 
@@ -453,7 +470,7 @@ $separator-height-control: 2px;
 		font-family: "trajan-pro-3"; 
 	}
 	.slider-text {
-		padding: 5% 20% 5% 0%;
+		padding: 9% 20% 5% 0%;
 		.separador {
 			border-bottom: 1px solid #3b2e29;
 			padding-top: 4%;
@@ -462,6 +479,7 @@ $separator-height-control: 2px;
 			padding-top: 6%;
 			font-size: 1.5rem;
 			font-weight: 300;
+			padding-right: 20px;
 		}
 	}
 	.slider-content {
@@ -476,6 +494,7 @@ $separator-height-control: 2px;
 	}
 	.gallery-cell {
 		width: 100%;
+		left: 120%;
 	}
 	.gallery-nav .gallery-cell.is-nav-selected {
 		background: #ED2; 
@@ -553,6 +572,10 @@ $separator-height-control: 2px;
 				} 
 			}
 		}
+		.gallery-button-right {
+			@include position(absolute, 0 0 0 null);
+			z-index: 100;
+		}	
 	}
 }
 
@@ -1151,7 +1174,7 @@ footer {
 	 	padding: 110px 33px;
 	 	padding: rem(110px) rem(33px);
 	 }
-	h2 {
+	h1 {
 		color: #8d744a;
 	}
 	.separador {

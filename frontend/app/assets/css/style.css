@@ -6358,8 +6358,12 @@ body::-webkit-scrollbar {
 }
 
 .site-content > section {
-  padding: 71px 90px;
-  padding: 5.07143rem 6.42857rem;
+  padding: 82px 235px;
+  padding: 5.85714rem 16.78571rem;
+}
+.site-content > section .container-sm {
+  margin-left: 100px;
+  margin-right: 20px;
 }
 .site-content .section-title h2 {
   font-family: "trajan-pro-3", "Times New Roman", Times, serif !important;
@@ -6439,11 +6443,9 @@ body::-webkit-scrollbar {
   justify-content: center;
   -ms-flex-pack: center;
 }
-.gallery-button-left a,
-.gallery-button-right a {
-  font-size: 63px;
-  font-size: 4.5rem;
-  color: #b3aca0;
+.gallery-button-left img,
+.gallery-button-right img {
+  cursor: pointer;
 }
 
 /*
@@ -6529,32 +6531,34 @@ body::-webkit-scrollbar {
 #formulario .action {
   padding-top: 26px;
   margin-left: 6px;
-}
-#formulario .action .dropdown button {
-  width: 162px;
-  height: 26px;
-  background-color: transparent;
-  border-radius: 0;
-  padding: 2px 0;
-  border-color: #8d744a;
-  color: #8d744a;
-  position: relative;
-  padding-left: 20px;
-  font-size: 14px;
-  outline: none;
-}
-#formulario .action .dropdown button span {
-  position: absolute;
-  right: 15px;
-  font-size: 19px;
-}
-#formulario .action .dropdown .dropdown-menu {
-  background-color: transparent;
-  width: 162px;
-  border-radius: 0;
-}
-#formulario .action .dropdown .dropdown-menu a {
-  color: #8d744a;
+  		/*.dropdown {
+  			button {
+  				width: 162px;
+  				height: 26px;
+  			  background-color: transparent;
+  				border-radius: 0;
+  				padding: 2px 0;
+  				border-color: #8d744a;
+  				color: #8d744a;
+  				position: relative;
+  				padding-left: 20px;
+  				font-size: 14px;
+  				outline: none;
+  				span {
+  					position: absolute;
+  					right: 15px;
+    				font-size: 19px;
+  				}
+  			}
+  			.dropdown-menu {
+  				background-color: transparent;
+    			width: 162px;
+    			border-radius: 0;
+    			a {
+    				color: #8d744a;
+    			}
+  			}
+  		}*/
 }
 #formulario .action select {
   width: 162px;
@@ -6584,6 +6588,10 @@ body::-webkit-scrollbar {
   font-weight: 300;
 }
 #formulario .action .btn-group .btn-default:focus {
+  border-color: #8d744a;
+  color: #8d744a;
+}
+#formulario .action .btn-group .btn-default:active {
   border-color: #8d744a;
   color: #8d744a;
 }
@@ -6820,7 +6828,7 @@ body::-webkit-scrollbar {
   font-family: "trajan-pro-3";
 }
 #about-us .texto-about {
-  padding: 9% 0 0 17%;
+  padding: 9% 17px 0 76px;
 }
 #about-us .texto-about .separador {
   border-bottom: 1px solid #3b2e29;
@@ -6831,6 +6839,12 @@ body::-webkit-scrollbar {
   font-size: 21px;
   font-size: 1.5rem;
   font-weight: 300;
+}
+#about-us .imagen {
+  text-align: center;
+}
+#about-us .imagen img {
+  width: 362px;
 }
 
 /*
@@ -6850,7 +6864,7 @@ body::-webkit-scrollbar {
   font-family: "trajan-pro-3";
 }
 #the-goods .slider-text, #events .slider-text {
-  padding: 5% 20% 5% 0%;
+  padding: 9% 20% 5% 0%;
 }
 #the-goods .slider-text .separador, #events .slider-text .separador {
   border-bottom: 1px solid #3b2e29;
@@ -6860,6 +6874,7 @@ body::-webkit-scrollbar {
   padding-top: 6%;
   font-size: 1.5rem;
   font-weight: 300;
+  padding-right: 20px;
 }
 #the-goods .slider-content, #events .slider-content {
   position: relative;
@@ -6873,6 +6888,7 @@ body::-webkit-scrollbar {
 }
 #the-goods .gallery-cell, #events .gallery-cell {
   width: 100%;
+  left: 120%;
 }
 #the-goods .gallery-nav .gallery-cell.is-nav-selected, #events .gallery-nav .gallery-cell.is-nav-selected {
   background: #ED2;
@@ -6948,6 +6964,13 @@ body::-webkit-scrollbar {
 #events .row .see-more:hover .overlay {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
+}
+#events .row .gallery-button-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
 }
 
 /*
@@ -7516,7 +7539,7 @@ footer .col-md-3 p a:hover {
   padding: 110px 33px;
   padding: 7.85714rem 2.35714rem;
 }
-#faqs h2 {
+#faqs h1 {
   color: #8d744a;
 }
 #faqs .separador {

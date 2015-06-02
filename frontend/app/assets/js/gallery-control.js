@@ -25,11 +25,11 @@ $(document).ready(function(){
 		wrapAround: true
 	});
 
-	$('#make-drink .gallery-button-left span').on( 'click', function(e) {
+	$('#make-drink .gallery-button-left img').on( 'click', function(e) {
 		e.preventDefault();
 	  $makeDrinkGallery.flickity('previous');
 	});
-	$('#make-drink .gallery-button-right span').on( 'click', function(e) {
+	$('#make-drink .gallery-button-right img').on( 'click', function(e) {
 		e.preventDefault();
 	  $makeDrinkGallery.flickity('next');
 	});
@@ -59,11 +59,11 @@ $(document).ready(function(){
 		wrapAround: true
 	});
 
-	$('#the-goods .gallery-button-left span').on( 'click', function(e) {
+	$('#the-goods .gallery-button-left img').on( 'click', function(e) {
 		e.preventDefault();
 	  $goodsGallery.flickity('previous');
 	});
-	$('#the-goods .gallery-button-right span').on( 'click', function(e) {
+	$('#the-goods .gallery-button-right img').on( 'click', function(e) {
 		e.preventDefault();
 	  $goodsGallery.flickity('next');
 	});
@@ -89,11 +89,11 @@ $(document).ready(function(){
 		wrapAround: false
 	});
 
-	$('#the-events .gallery-button-left span').on( 'click', function(e) {
+	$('#the-events .gallery-button-left img').on( 'click', function(e) {
 		e.preventDefault();
 	  $eventsGalleryNav.flickity('previous');
 	});
-	$('#the-events .gallery-button-right span').on( 'click', function(e) {
+	$('#the-events .gallery-button-right img').on( 'click', function(e) {
 		e.preventDefault();
 	  $eventsGalleryNav.flickity('next');
 	});
