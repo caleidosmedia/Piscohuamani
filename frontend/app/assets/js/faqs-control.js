@@ -1,7 +1,8 @@
 /*
   COLLAPSE FAQS
 */
-$('.change-arrow').click(function() {
-    $(" #up").toggleClass("hidden");
-    $(" #down").toggleClass('hidden');
+$('.change-arrow').click(function(){
+	$(this).parent().find('#up').toggleClass("hidden");
+	$(this).parent().find('#down').toggleClass("hidden");	
 });
+
