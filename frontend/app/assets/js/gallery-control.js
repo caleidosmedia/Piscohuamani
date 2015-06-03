@@ -1,92 +1,96 @@
 $(document).ready(function(){
 
-	// Gallery Make Drink Control
-	var $makeDrinkGallery = $('#make-drink .gallery-child');
-	var $makeDrinkGalleryNav = $('#make-drink .gallery');
-
-	$makeDrinkGallery.flickity({
-		cellAlign: 'left',
-		contain: true,
-		prevNextButtons: false,
-		pageDots: false,
-		wrapAround: false,
-		draggable: false,
-		wrapAround: true
-	});
-
-	$makeDrinkGalleryNav.flickity({
-		asNavFor: '#make-drink .gallery-child',
-		cellAlign: 'left',
-		contain: true,
-		prevNextButtons: false,
-		pageDots: false,
-		wrapAround: false,
-		draggable: false,
-		wrapAround: true
-	});
-
-	$('#make-drink .gallery-button-left img').on( 'click', function(e) {
-		e.preventDefault();
-	  $makeDrinkGallery.flickity('previous');
-	});
-	$('#make-drink .gallery-button-right img').on( 'click', function(e) {
-		e.preventDefault();
-	  $makeDrinkGallery.flickity('next');
-	});
-
 	// Gallery Goods Control
 	var $goodsGallery = $('#the-goods  .gallery-child');
 	var $goodsGalleryNav = $('#the-goods .gallery');
 
-	$goodsGallery.flickity({
-		cellAlign: 'left',
+	$goodsGalleryNav.flickity({
+		//cellAlign: 'left',
 		contain: true,
 		prevNextButtons: false,
 		pageDots: false,
-		wrapAround: false,
 		draggable: false,
 		wrapAround: true
 	});
 
-	$goodsGalleryNav.flickity({
-		asNavFor: '#the-goods .gallery-child',
-		cellAlign: 'left',
+	$goodsGallery.flickity({
+		//cellAlign: 'left',
+		asNavFor: '#the-goods .gallery',
 		contain: true,
 		prevNextButtons: false,
 		pageDots: false,
-		wrapAround: false,
 		draggable: false,
 		wrapAround: true
 	});
 
 	$('#the-goods .gallery-button-left img').on( 'click', function(e) {
 		e.preventDefault();
-	  $goodsGallery.flickity('previous');
+		setTimeout(function(){
+	  	$goodsGalleryNav.flickity('previous');}, 500);
+		$goodsGallery.flickity('previous');
 	});
 	$('#the-goods .gallery-button-right img').on( 'click', function(e) {
 		e.preventDefault();
-	  $goodsGallery.flickity('next');
+	  setTimeout(function(){
+	  	$goodsGalleryNav.flickity('next');}, 500);
+		$goodsGallery.flickity('next');
+	});
+
+	// Gallery Make Drink Control
+	var $makeDrinkGallery = $('#make-drink .gallery-child');
+	var $makeDrinkGalleryNav = $('#make-drink .gallery');
+
+	$makeDrinkGalleryNav.flickity({
+		cellAlign: 'left',
+		contain: true,
+		prevNextButtons: false,
+		pageDots: false,
+		draggable: false,
+		wrapAround: true
+	});
+
+	$makeDrinkGallery.flickity({
+		asNavFor: '#make-drink .gallery',
+		cellAlign: 'left',
+		contain: true,
+		prevNextButtons: false,
+		pageDots: false,
+		draggable: false,
+		wrapAround: true
+	});
+
+	$('#make-drink .gallery-button-left img').on( 'click', function(e) {
+		e.preventDefault();
+		setTimeout(function(){
+	  	$makeDrinkGalleryNav.flickity('previous');}, 500);
+	  $makeDrinkGallery.flickity('previous');
+	});
+	$('#make-drink .gallery-button-right img').on( 'click', function(e) {
+		e.preventDefault();
+		setTimeout(function(){
+	  	$makeDrinkGalleryNav.flickity('next');}, 500);
+	  $makeDrinkGallery.flickity('next');
 	});
 
 	// Gallery Events Control
 	var $eventsGallery = $('#events .gallery-child');
 	var $eventsGalleryNav = $('#events .gallery');
 
-	$eventsGallery.flickity({
+	$eventsGalleryNav.flickity({
 		cellAlign: 'left',
 		contain: true,
 		prevNextButtons: false,
 		pageDots: false,
-		wrapAround: false
+		wrapAround: true
 	});
 
-	$eventsGalleryNav.flickity({
-		asNavFor: '#events .gallery-child',
+	$eventsGallery.flickity({
+		asNavFor: '#events .gallery',
 		cellAlign: 'left',
 		contain: true,
 		prevNextButtons: false,
 		pageDots: false,
-		wrapAround: false
+		wrapAround: true
 	});
 
 	$('#the-events .gallery-button-left img').on( 'click', function(e) {

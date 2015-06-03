@@ -64,14 +64,13 @@ $make-drink-gallery-height-control: 560px;
 	.gallery-button-right {
 		@include position(absolute, 0 -98px 0 null);
 	}
+	.gallery {
+		z-index: 2;
+	}
 	.gallery-child {
 		@include position(absolute, 0 0 0 0);
+		z-index: 1;
 	}
-	//.gallery-child {
-		//.gallery-cell {
-		//	-webkit-transition: all 0.3s ease-in-out;
-		//}
-	//}
 }
 
 /*
@@ -268,6 +267,10 @@ $separator-height-control: 2px;
 		}
 	}
 }
+
+/*
+	Active checkout
+*/
 .show {
 		display: block;
 	}
@@ -459,6 +462,28 @@ $separator-height-control: 2px;
 #the-goods {
 	background-color:rgb(248, 244, 229);
 	// padding: 8% 17%;
+	.container{
+		position: absolute;
+	}
+	.gallery {
+		padding-top: 115px;
+		-webkit-box-shadow: 22px 5px 30px 0px rgba(248, 244, 229, 1);
+		z-index: 2; 
+	}
+	.gallery-child {
+		z-index: 1;
+		.flickity-viewport {
+			height: 630px!important;
+		}
+	}
+	.flickity-viewport {
+		height: 500px;
+		img {
+			padding-top: 150px;
+			width: 195px;
+  		height: 820px;
+		}
+	}
 	h1 {
 		font-size: 35px;
 		font-size: rem(35px); 
@@ -500,13 +525,14 @@ $separator-height-control: 2px;
 		background: #ED2; 
 	}
 	.gallery-button-left {
-		@include position(absolute, 0 null 0 -98px);
+		@include position(absolute, 10px null 0 -98px);
 	}
 	.gallery-button-right {
-		@include position(absolute, 0 265px 0 null);
+		@include position(absolute, 10px 265px 0 null);
 		z-index: 100;
 	}	
 }
+
 
 /*
 	Make drink
@@ -528,6 +554,9 @@ $separator-height-control: 2px;
 	}
 	.flickity-viewport {
 		min-height: 550px;
+	}
+	.gallery {
+		-webkit-box-shadow: none;
 	}
 	.row {
 		padding-top: 7%;
@@ -1099,7 +1128,6 @@ footer {
 	Gelería eventos
 */ 
 #galeria{
-	// padding: 5% 17% 8%;
 	h1{
 		font-family: "trajan-pro-3";
   	color: #8d744a;
@@ -1147,23 +1175,23 @@ footer {
 		  	right: 25%;
   			top: 2%;
   			position: absolute;
-  			background-color:transparent;
   			text-decoration: none;
   			cursor: pointer;
+  			font-size: 80px;
   			&:hover{
   				color:#8d744a;
   			}
 		  }
 		}
-		.flex{
-			display: flex;
-			flex-direction: column;
-		  flex-wrap: wrap;
-		  justify-content: center;
-		  align-content: flex-start;
-		  align-items: center;
-		}
 	}
+}
+.flex{
+	display: flex!important;
+	flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
 }
 
 /*
@@ -1356,7 +1384,10 @@ footer {
 	Terms
 */
 #terms {
-	padding: 106px 237px 124px; 
+	padding: 106px 0 124px;
+	.container {
+		padding: 0 50px;
+	} 
 	h1 {
 		color: #8d744a;
 	}

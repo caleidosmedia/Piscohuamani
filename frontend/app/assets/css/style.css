@@ -6403,12 +6403,16 @@ body::-webkit-scrollbar {
   right: -98px;
   bottom: 0;
 }
+#make-drink .gallery {
+  z-index: 2;
+}
 #make-drink .gallery-child {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 1;
 }
 
 /*
@@ -6639,6 +6643,9 @@ body::-webkit-scrollbar {
   margin-left: 10px;
 }
 
+/*
+	Active checkout
+*/
 .show {
   display: block;
 }
@@ -6853,6 +6860,28 @@ body::-webkit-scrollbar {
 #the-goods, #events {
   background-color: #f8f4e5;
 }
+#the-goods .container, #events .container {
+  position: absolute;
+}
+#the-goods .gallery, #events .gallery {
+  padding-top: 115px;
+  -webkit-box-shadow: 22px 5px 30px 0px #f8f4e5;
+  z-index: 2;
+}
+#the-goods .gallery-child, #events .gallery-child {
+  z-index: 1;
+}
+#the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport {
+  height: 630px !important;
+}
+#the-goods .flickity-viewport, #events .flickity-viewport {
+  height: 500px;
+}
+#the-goods .flickity-viewport img, #events .flickity-viewport img {
+  padding-top: 150px;
+  width: 195px;
+  height: 820px;
+}
 #the-goods h1, #events h1 {
   font-size: 35px;
   font-size: 2.5rem;
@@ -6895,13 +6924,13 @@ body::-webkit-scrollbar {
 }
 #the-goods .gallery-button-left, #events .gallery-button-left {
   position: absolute;
-  top: 0;
+  top: 10px;
   bottom: 0;
   left: -98px;
 }
 #the-goods .gallery-button-right, #events .gallery-button-right {
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 265px;
   bottom: 0;
   z-index: 100;
@@ -6922,6 +6951,9 @@ body::-webkit-scrollbar {
 }
 #events .flickity-viewport {
   min-height: 550px;
+}
+#events .gallery {
+  -webkit-box-shadow: none;
 }
 #events .row {
   padding-top: 7%;
@@ -7517,15 +7549,16 @@ footer .col-md-3 p a:hover {
   right: 25%;
   top: 2%;
   position: absolute;
-  background-color: transparent;
   text-decoration: none;
   cursor: pointer;
+  font-size: 80px;
 }
 #galeria .grid #overlay a:hover {
   color: #8d744a;
 }
-#galeria .grid .flex {
-  display: flex;
+
+.flex {
+  display: flex !important;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
@@ -7711,7 +7744,10 @@ footer .col-md-3 p a:hover {
 	Terms
 */
 #terms {
-  padding: 106px 237px 124px;
+  padding: 106px 0 124px;
+}
+#terms .container {
+  padding: 0 50px;
 }
 #terms h1 {
   color: #8d744a;
