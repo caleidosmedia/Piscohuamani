@@ -25,14 +25,18 @@ $(document).ready(function(){
 
 	$('#the-goods .gallery-button-left img').on( 'click', function(e) {
 		e.preventDefault();
+		$('#the-goods .gallery .gallery-cell').fadeIn();
 		setTimeout(function(){
 	  	$goodsGalleryNav.flickity('previous');}, 500);
+		$('#the-goods .gallery .gallery-cell.is-selected').fadeOut();
 		$goodsGallery.flickity('previous');
 	});
 	$('#the-goods .gallery-button-right img').on( 'click', function(e) {
 		e.preventDefault();
+		$('#the-goods .gallery .gallery-cell').fadeIn();
 	  setTimeout(function(){
 	  	$goodsGalleryNav.flickity('next');}, 500);
+	  $('#the-goods .gallery .gallery-cell.is-selected').fadeOut();
 		$goodsGallery.flickity('next');
 	});
 
@@ -61,14 +65,22 @@ $(document).ready(function(){
 
 	$('#make-drink .gallery-button-left img').on( 'click', function(e) {
 		e.preventDefault();
+		$('#make-drink .gallery .gallery-cell').fadeIn();
+		$('#make-drink .gallery-child .gallery-cell').removeClass("active-hidden");
 		setTimeout(function(){
 	  	$makeDrinkGalleryNav.flickity('previous');}, 500);
+		$('#make-drink .gallery .gallery-cell.is-selected').fadeOut();
+		$('#make-drink .gallery-child .gallery-cell.is-selected').addClass("active-hidden");
 	  $makeDrinkGallery.flickity('previous');
 	});
 	$('#make-drink .gallery-button-right img').on( 'click', function(e) {
 		e.preventDefault();
+		$('#make-drink .gallery .gallery-cell').fadeIn();
+		$('#make-drink .gallery-child .gallery-cell').removeClass("active-hidden");
 		setTimeout(function(){
 	  	$makeDrinkGalleryNav.flickity('next');}, 500);
+		$('#make-drink .gallery .gallery-cell.is-selected').fadeOut();
+		$('#make-drink .gallery-child .gallery-cell.is-selected').addClass("active-hidden");
 	  $makeDrinkGallery.flickity('next');
 	});
 

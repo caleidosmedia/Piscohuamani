@@ -6379,43 +6379,6 @@ body::-webkit-scrollbar {
 }
 
 /*
-	Make drink
-*/
-#make-drink .gallery-wrapper {
-  min-height: 560px;
-  position: relative;
-}
-#make-drink .gallery,
-#make-drink .gallery-cell,
-#make-drink .gallery-child {
-  min-height: 560px;
-  width: 100%;
-}
-#make-drink .gallery-button-left {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -98px;
-}
-#make-drink .gallery-button-right {
-  position: absolute;
-  top: 0;
-  right: -98px;
-  bottom: 0;
-}
-#make-drink .gallery {
-  z-index: 2;
-}
-#make-drink .gallery-child {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
-
-/*
 	Gallery buttons
 */
 .gallery-button-left,
@@ -6937,9 +6900,56 @@ body::-webkit-scrollbar {
   z-index: 100;
 }
 
+.active-hidden {
+  opacity: 0;
+  -webkit-transition: opacity .15s ease-out;
+}
+
 /*
 	Make drink
 */
+#make-drink .gallery-wrapper {
+  min-height: 560px;
+  position: relative;
+}
+#make-drink .gallery,
+#make-drink .gallery-cell,
+#make-drink .gallery-child {
+  min-height: 560px;
+  width: 100%;
+}
+#make-drink .gallery-button-left {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -98px;
+}
+#make-drink .gallery-button-right {
+  position: absolute;
+  top: 0;
+  right: -98px;
+  bottom: 0;
+}
+#make-drink .gallery .gallery-cell {
+  padding-top: 76px;
+}
+#make-drink .gallery .gallery-cell .subtitle {
+  font-style: italic;
+  font-size: 24px;
+  font-size: 1.71429rem;
+  margin-bottom: 20px;
+}
+#make-drink .gallery .gallery-cell ul {
+  margin-bottom: 42px;
+}
+#make-drink .gallery-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 /*
 	Events
 */
@@ -6955,6 +6965,15 @@ body::-webkit-scrollbar {
 }
 #events .gallery {
   -webkit-box-shadow: none;
+  padding-top: 0;
+}
+#events .gallery-child {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+}
+#events .gallery-child .gallery-cell {
+  height: 700px;
 }
 #events .row {
   padding-top: 7%;
@@ -7004,6 +7023,10 @@ body::-webkit-scrollbar {
   right: 0;
   bottom: 0;
   z-index: 100;
+}
+#events .row .gallery-button-left {
+  z-index: 1;
+  left: 0;
 }
 
 /*

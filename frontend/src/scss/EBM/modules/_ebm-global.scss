@@ -44,36 +44,6 @@ body {
 }
 
 /*
-	Make drink
-*/
-$make-drink-gallery-height-control: 560px;
-#make-drink {
-	.gallery-wrapper {
-		min-height: $make-drink-gallery-height-control;
-		position: relative;
-	}
-	.gallery,
-	.gallery-cell,
-	.gallery-child {
-		min-height: $make-drink-gallery-height-control;
-		width: 100%; 
-	}
-	.gallery-button-left {
-		@include position(absolute, 0 null 0 -98px);
-	}
-	.gallery-button-right {
-		@include position(absolute, 0 -98px 0 null);
-	}
-	.gallery {
-		z-index: 2;
-	}
-	.gallery-child {
-		@include position(absolute, 0 0 0 0);
-		z-index: 1;
-	}
-}
-
-/*
 	Gallery buttons
 */
 .gallery-button-left,
@@ -533,15 +503,50 @@ $separator-height-control: 2px;
 		z-index: 100;
 	}	
 }
-
+.active-hidden {
+	opacity: 0;
+	-webkit-transition: opacity .15s ease-out;
+}
 
 /*
 	Make drink
 */
-// #make-drink {
-// 	@extend #the-goods; 
-// 	background-image: url(../img/texturas/textura-oscura.png);
-// }
+$make-drink-gallery-height-control: 560px;
+#make-drink {
+	.gallery-wrapper {
+		min-height: $make-drink-gallery-height-control;
+		position: relative;
+	}
+	.gallery,
+	.gallery-cell,
+	.gallery-child {
+		min-height: $make-drink-gallery-height-control;
+		width: 100%; 
+	}
+	.gallery-button-left {
+		@include position(absolute, 0 null 0 -98px);
+	}
+	.gallery-button-right {
+		@include position(absolute, 0 -98px 0 null);
+	}
+	.gallery {
+		.gallery-cell {
+			padding-top: 76px;
+			.subtitle {
+				font-style: italic;
+				font-size: 24px;
+				font-size: rem(24px);
+				margin-bottom: 20px;
+			}
+			ul {
+				margin-bottom: 42px;
+			} 
+		}
+	}
+	.gallery-child {
+		@include position(absolute, 0 0 0 0);
+	}
+}
 
 /*
 	Events
@@ -558,6 +563,15 @@ $separator-height-control: 2px;
 	}
 	.gallery {
 		-webkit-box-shadow: none;
+		padding-top: 0;
+	}
+	.gallery-child {
+		position: absolute;
+		width: 100%;
+		height: 700px;
+		.gallery-cell {
+			height: 700px;
+		}
 	}
 	.row {
 		padding-top: 7%;
@@ -605,6 +619,10 @@ $separator-height-control: 2px;
 		.gallery-button-right {
 			@include position(absolute, 0 0 0 null);
 			z-index: 100;
+		}
+		.gallery-button-left {
+			z-index: 1;
+			left: 0;
 		}	
 	}
 }
