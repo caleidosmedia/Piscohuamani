@@ -1154,8 +1154,31 @@ footer {
 */
 #slider-events {
 	background-image: url(../img/fotos/fotos-eventos/2-grande.png); 
-	height: 500px;
+	height: 550px;
   background-size: cover;
+  @extend #events;
+  padding: 0;
+  .gallery {
+  	height: auto;
+  }
+  .flickity-viewport {
+		height: 300px!important;
+		min-height: 300px;
+	}
+  .gallery-cell {
+  	height: 550px!important;
+  }
+  .gallery-button-right,
+ 	.gallery-button-left {
+ 		bottom: -100px!important;
+ 		top: 0!important;
+ 	}
+ 	.gallery-button-left {
+ 		left: 4%!important;
+ 	}
+ 	.gallery-button-right {
+ 		right: 4%!important;
+ 	}
 }
 
 /*
