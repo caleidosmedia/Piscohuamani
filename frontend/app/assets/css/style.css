@@ -6566,10 +6566,10 @@ body::-webkit-scrollbar {
   border-color: #8d744a;
   color: #8d744a;
 }
-#formulario .action .enter button {
+#formulario .action .enter {
   background-color: transparent;
   color: #605551;
-  border-color: #605551;
+  border: 1px solid #605551;
   border-radius: 0;
   font-size: 18px;
   font-weight: lighter;
@@ -6578,7 +6578,7 @@ body::-webkit-scrollbar {
   margin-left: 30px;
   outline: none;
 }
-#formulario .action .enter button span {
+#formulario .action .enter span {
   top: 2px;
   right: -4px;
   position: relative;

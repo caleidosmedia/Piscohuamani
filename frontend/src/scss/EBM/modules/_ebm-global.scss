@@ -193,22 +193,20 @@ $separator-height-control: 2px;
 			 }
 		}
 		.enter {
-			button {
-				background-color: transparent;
-			  color: rgb(96, 85, 81);
-			  border-color: rgb(96, 85, 81);
-			  border-radius: 0;
-			  font-size: 18px;
-			  font-weight: lighter;
-			  width: 125px;
-			  height: 39px;
-			  margin-left: 30px;
-			  outline: none;
-			  span {
-					top: 2px;
-				  right: -4px;
-				  position: relative;
-			  }
+			background-color: transparent;
+		  color: rgb(96, 85, 81);
+		  border: 1px solid rgb(96, 85, 81);
+		  border-radius: 0;
+		  font-size: 18px;
+		  font-weight: lighter;
+		  width: 125px;
+		  height: 39px;
+		  margin-left: 30px;
+		  outline: none;
+		  span {
+				top: 2px;
+			  right: -4px;
+			  position: relative;
 			}
 		}
 		.active {
