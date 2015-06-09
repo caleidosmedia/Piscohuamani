@@ -24,8 +24,9 @@
 		    			<input id="month" class="text-center" type="text" pattern="[0-9]*" min="1" max="12" maxlength="2" class="day" placeholder="MONTH" name="month" required>
 		    			<input id="year" class="text-center" type="text" pattern="[0-9]*" maxlength="4" class="year" placeholder="YEAR" name="year" required>
 		    			<div class="action row">
-								<select name="LOCATION" required class="col-md-4 thin text-white" style="background-image: url(assets/img/texturas/textura-oscura.png);">
+								<select name="LOCATION" required class="col-md-4 col-xs-6 thin text-white" style="background-image: url(assets/img/texturas/textura-oscura.png);">
 									<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+									<option value="AF">LOCATION</option>
 									<option value="AF">Afghanistan</option>
 									<option value="AX">Åland Islands</option>
 									<option value="AL">Albania</option>
@@ -275,9 +276,13 @@
 									<option value="ZM">Zambia</option>
 									<option value="ZW">Zimbabwe</option>
 								</select>
-								<div class="btn-group col-md-4 p-0" role="group" aria-label="...">
+								<div class="btn-group col-md-4 p-0 hidden-xs" role="group" aria-label="...">
 								  <button type="button" class="col-md-6 btn btn-default">ENGLISH</button>
 								  <button type="button" class="col-md-6 btn btn-default">ESPAÑOL</button>
+								</div>
+								<div class="btn-group col-md-4 col-xs-6 m-0 pr-0 hidden-lg hidden-md hidden-sm" role="group" aria-label="...">
+								  <button type="button" class="col-xs-6 btn btn-default">EN</button>
+								  <button type="button" class="col-xs-6 btn btn-default">ES</button>
 								</div>
 								<button href="index.html" class="enter" type="submit" class="btn btn-default">ENTER<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
 		    			</div>

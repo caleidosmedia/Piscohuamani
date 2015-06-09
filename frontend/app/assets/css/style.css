@@ -6494,6 +6494,7 @@ body::-webkit-scrollbar {
   width: 162px;
   height: 40px;
   font-size: 19px;
+  font-size: 1.35714rem;
   color: #fff;
   margin: 6px;
   outline: none;
@@ -6513,37 +6514,9 @@ body::-webkit-scrollbar {
 #formulario .action {
   padding-top: 26px;
   margin-left: 6px;
-  		/*.dropdown {
-  			button {
-  				width: 162px;
-  				height: 26px;
-  			  background-color: transparent;
-  				border-radius: 0;
-  				padding: 2px 0;
-  				border-color: #8d744a;
-  				color: #8d744a;
-  				position: relative;
-  				padding-left: 20px;
-  				font-size: 14px;
-  				outline: none;
-  				span {
-  					position: absolute;
-  					right: 15px;
-    				font-size: 19px;
-  				}
-  			}
-  			.dropdown-menu {
-  				background-color: transparent;
-    			width: 162px;
-    			border-radius: 0;
-    			a {
-    				color: #8d744a;
-    			}
-  			}
-  		}*/
 }
 #formulario .action select {
-  width: 162px;
+  max-width: 162px;
   height: 26px;
   font-size: 14px;
   font-size: 1rem;
@@ -6552,6 +6525,7 @@ body::-webkit-scrollbar {
   outline: none;
   border: 1px solid #8d744a;
   color: #8d744a;
+  margin-left: 6px;
 }
 #formulario .action select option {
   background-image: url(../img/texturas/textura-oscura.png);
@@ -6569,11 +6543,7 @@ body::-webkit-scrollbar {
   padding: 3px 0;
   font-weight: 300;
 }
-#formulario .action .btn-group .btn-default:focus {
-  border-color: #8d744a;
-  color: #8d744a;
-}
-#formulario .action .btn-group .btn-default:active {
+#formulario .action .btn-group .btn-default:first-child, #formulario .action .btn-group .btn-default:focus, #formulario .action .btn-group .btn-default:active {
   border-color: #8d744a;
   color: #8d744a;
 }
@@ -6621,13 +6591,63 @@ body::-webkit-scrollbar {
   margin-left: 10px;
 }
 
-/*
-	Active checkout
-*/
+/*Active checkout*/
 .show {
   display: block;
 }
 
+/*RESPONSIVE FORMULARIO*/
+@media screen and (max-width: 480px) {
+  .fondo {
+    padding: 25px 10%;
+    display: block;
+    height: 100%;
+  }
+  .fondo .logo-title {
+    width: 61%;
+    width: 195px;
+    padding-top: 35px;
+  }
+  .fondo h3 {
+    font-size: 13px;
+  }
+
+  #formulario {
+    padding: 15px 14%;
+    text-align: right;
+  }
+  #formulario .date {
+    padding-top: 27px;
+  }
+  #formulario .date input {
+    display: block;
+    margin: 0 auto;
+    margin-top: 13px;
+    width: 100%;
+    height: 48px;
+    border: 1.5px solid #fff;
+    font-size: 23px;
+  }
+  #formulario .action select {
+    margin-left: 0;
+  }
+  #formulario .action .btn-group {
+    padding-left: 12px;
+  }
+  #formulario .action .btn-group button {
+    padding: 0 7px !important;
+  }
+  #formulario .action select,
+  #formulario .action .btn-group button {
+    height: 34px;
+  }
+  #formulario .action .enter {
+    margin-top: 40px;
+  }
+  #formulario .checkbox {
+    display: inline-block;
+  }
+}
 /*
 	Home
 */

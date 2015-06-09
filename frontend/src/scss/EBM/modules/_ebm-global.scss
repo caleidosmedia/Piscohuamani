@@ -116,6 +116,7 @@ $separator-height-control: 2px;
 	  	width: 162px;
 	  	height: 40px;
 	  	font-size: 19px;
+	  	font-size: rem(19px);
 	  	color: #fff;
 	  	margin: 6px;
 	  	outline: none;
@@ -136,36 +137,8 @@ $separator-height-control: 2px;
 	.action {
 		padding-top: 26px;
 		margin-left: 6px;
-		/*.dropdown {
-			button {
-				width: 162px;
-				height: 26px;
-			  background-color: transparent;
-				border-radius: 0;
-				padding: 2px 0;
-				border-color: #8d744a;
-				color: #8d744a;
-				position: relative;
-				padding-left: 20px;
-				font-size: 14px;
-				outline: none;
-				span {
-					position: absolute;
-					right: 15px;
-  				font-size: 19px;
-				}
-			}
-			.dropdown-menu {
-				background-color: transparent;
-  			width: 162px;
-  			border-radius: 0;
-  			a {
-  				color: #8d744a;
-  			}
-			}
-		}*/
 		select{
-			width: 162px;
+			max-width: 162px;
 			height: 26px;
 			font-size: 14px;
 			font-size: rem(14px);
@@ -174,6 +147,7 @@ $separator-height-control: 2px;
   		outline: none;
   		border: 1px solid #8d744a;
   		color: #8d744a;
+  		margin-left: 6px;
 			option{
 				background-image: url(../img/texturas/textura-oscura.png);
 			}
@@ -189,15 +163,13 @@ $separator-height-control: 2px;
 			  font-size: 14px;
 			  padding: 3px 0;
 			  font-weight: 300;
-			  &:focus {
-			  	border-color: #8d744a;
-			  	color: #8d744a;
-			  }
+			  &:first-child,
+			  &:focus,
 			  &:active {
 			  	border-color: #8d744a;
-			  	color: #8d744a;
+  				color: #8d744a;
 			  }
-			 }
+			}
 		}
 		.enter {
 			background-color: transparent;
@@ -245,13 +217,64 @@ $separator-height-control: 2px;
 	}
 }
 
-/*
-	Active checkout
-*/
+/*Active checkout*/
 .show {
 		display: block;
 	}
 
+/*RESPONSIVE FORMULARIO*/
+@media screen and (max-width: #{$screen-phone}){
+	.fondo {
+		padding: 25px 10%;
+		display: block;
+		height: 100%;
+		.logo-title {
+			width: 61%;
+  		width: 195px;
+  		padding-top: 35px;
+		}
+		h3 {
+			font-size: 13px;
+		}
+	}
+	#formulario {
+		padding: 15px 14%;
+		text-align: right;
+		.date {
+			padding-top: 27px;
+			input {
+				display: block;
+	  		margin: 0 auto;
+	  		margin-top: 13px;
+	  		width: 100%;
+	  		height: 48px;
+  			border: 1.5px solid #fff;
+  			font-size: 23px;
+  		}
+		}
+		.action {
+			select {
+				margin-left: 0;
+			}
+			.btn-group {
+				padding-left: 12px;
+				button {
+					padding: 0 7px!important;					
+				}
+			}
+			select,
+			.btn-group button{
+				height: 34px;
+			}
+			.enter {
+				margin-top: 40px;
+			}
+		}
+		.checkbox {
+			display: inline-block;
+		}
+	}
+}
 
 /*
 	Home
