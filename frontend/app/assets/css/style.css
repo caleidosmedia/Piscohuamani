@@ -6382,6 +6382,15 @@ body::-webkit-scrollbar {
   font-style: italic;
 }
 
+.hover-arrow-controls, .gallery-button-left img,
+.gallery-button-right img {
+  -webkit-transition: opacity .1s ease-out;
+}
+.hover-arrow-controls:hover, .gallery-button-left img:hover,
+.gallery-button-right img:hover {
+  opacity: 0.5;
+}
+
 /*
 	Gallery buttons
 */
@@ -6797,6 +6806,7 @@ body::-webkit-scrollbar {
 }
 #about-us h3 {
   font-style: italic;
+  font-weight: 300;
 }
 #about-us h1, #about-us h2 {
   font-family: "trajan-pro-3";
@@ -6810,8 +6820,8 @@ body::-webkit-scrollbar {
 }
 #about-us .texto-about p {
   padding-top: 6%;
-  font-size: 21px;
-  font-size: 1.5rem;
+  font-size: 18.2px;
+  font-size: 1.3rem;
   font-weight: 300;
 }
 #about-us .imagen {
@@ -6819,6 +6829,7 @@ body::-webkit-scrollbar {
 }
 #about-us .imagen img {
   width: 362px;
+  height: 1400px;
 }
 
 /*
@@ -6856,6 +6867,7 @@ body::-webkit-scrollbar {
 }
 #the-goods h3, #events h3, #slider-events h3 {
   font-style: italic;
+  font-weight: 300;
 }
 #the-goods h1, #events h1, #slider-events h1, #the-goods h2, #events h2, #slider-events h2 {
   font-family: "trajan-pro-3";
@@ -6869,7 +6881,8 @@ body::-webkit-scrollbar {
 }
 #the-goods .slider-text p, #events .slider-text p, #slider-events .slider-text p {
   padding-top: 6%;
-  font-size: 1.5rem;
+  font-size: 18.2px;
+  font-size: 1.3rem;
   font-weight: 300;
   padding-right: 20px;
 }
@@ -6924,18 +6937,18 @@ body::-webkit-scrollbar {
 }
 #make-drink .gallery-button-left {
   position: absolute;
-  top: 0;
+  top: -60px;
   bottom: 0;
   left: -98px;
 }
 #make-drink .gallery-button-right {
   position: absolute;
-  top: 0;
+  top: -60px;
   right: -98px;
   bottom: 0;
 }
 #make-drink .gallery .gallery-cell {
-  padding-top: 76px;
+  padding-top: 30px;
 }
 #make-drink .gallery .gallery-cell .subtitle {
   font-style: italic;
@@ -6944,11 +6957,19 @@ body::-webkit-scrollbar {
   margin-bottom: 20px;
 }
 #make-drink .gallery .gallery-cell ul {
-  margin-bottom: 42px;
+  margin-bottom: 30px;
+}
+#make-drink .gallery .gallery-cell ul li {
+  font-size: 18.2px;
+  font-size: 1.3rem;
+}
+#make-drink .gallery .gallery-cell p {
+  font-size: 18.2px;
+  font-size: 1.3rem;
 }
 #make-drink .gallery-child {
   position: absolute;
-  top: 0;
+  top: -60px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -7055,6 +7076,7 @@ body::-webkit-scrollbar {
 #follow-us h3 {
   font-weight: lighter;
   font-style: italic;
+  font-weight: 300;
 }
 #follow-us .container-social {
   display: inline-block;
@@ -7108,12 +7130,28 @@ body::-webkit-scrollbar {
 }
 #follow-us .container-social a .icon {
   position: absolute;
-  width: 45px;
-  bottom: 8%;
-  right: 10%;
+  bottom: 12%;
+  right: 8%;
 }
-#follow-us .container-social a .icon img {
-  width: 100%;
+#follow-us .container-social a .icon .icon-facebook,
+#follow-us .container-social a .icon .icon-mail,
+#follow-us .container-social a .icon .icon-instagram {
+  border: 2px solid white;
+  border-radius: 100%;
+  padding: 8px;
+}
+#follow-us .container-social a .icon .icon-facebook {
+  font-size: 28px;
+  font-size: 2rem;
+}
+#follow-us .container-social a .icon .icon-instagram {
+  font-size: 25px;
+  font-size: 1.78571rem;
+  padding: 10px;
+}
+#follow-us .container-social a .icon .icon-mail {
+  font-size: 30px;
+  font-size: 2.14286rem;
 }
 
 /*
@@ -7175,6 +7213,9 @@ footer .col-md-3 p a:hover {
   padding: 5px 8px;
   border: 1px solid transparent;
 }
+.site-content .content-blog #menu-blog nav a:first-child {
+  border: 1px solid #8d744a;
+}
 .site-content .content-blog #menu-blog nav a:hover {
   border-color: #8d744a;
 }
@@ -7197,9 +7238,9 @@ footer .col-md-3 p a:hover {
 }
 .site-content .content-blog .post .texto p {
   padding-top: 2%;
-  margin-bottom: 3%;
-  font-size: 21px;
-  font-size: 1.5rem;
+  margin-bottom: 27px;
+  font-size: 18.2px;
+  font-size: 1.3rem;
   line-height: 1.5;
   color: #4e3227;
 }
@@ -7246,8 +7287,8 @@ footer .col-md-3 p a:hover {
   padding-left: 6%;
 }
 .site-content .content-blog .post .botons .social p {
-  font-size: 21px;
-  font-size: 1.5rem;
+  font-size: 18.2px;
+  font-size: 1.3rem;
   color: #4e3227;
   float: left;
   font-weight: 300;
@@ -7256,156 +7297,41 @@ footer .col-md-3 p a:hover {
 .site-content .content-blog .post .botons .social li {
   float: left;
   list-style: none;
+  border: 1.5px solid;
+  padding: 4px;
+  width: 38px;
+  height: 40px;
+  text-align: center;
+  margin: 0 6px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
 }
-.site-content .content-blog .post .botons .social li:nth-child(3) {
-  padding: 0 13px;
-}
-.site-content .content-blog .post .tags {
-  color: #8d744a;
-  padding-top: 3.5%;
+.site-content .content-blog .post .botons .social li span {
   font-size: 18px;
-  font-size: 1.28571rem;
-  font-weight: 100;
-  font-style: italic;
-}
-.site-content .content-blog #pagination {
-  padding-top: 5%;
-}
-.site-content .content-blog #pagination ul {
-  width: 100%;
-}
-.site-content .content-blog #pagination ul li a {
-  border: 1px solid transparent;
-  font-size: 21px;
-  font-size: 1.5rem;
-  font-weight: 300;
-  padding: 0 2%;
-  background-color: transparent;
-  color: #4e3227;
-}
-.site-content .content-blog #pagination ul li a:hover {
-  border-color: #4e3227;
-}
-.site-content .content-blog #pagination ul li:first-child a, .site-content .content-blog #pagination ul li:last-child a, .site-content .content-blog #pagination ul li .next, .site-content .content-blog #pagination ul li .previous {
-  border: none;
-}
-.site-content .content-blog #pagination ul li.active a {
-  border: 1px solid #4e3227;
-}
-
-/*
-	Blog
-*/
-.site-content .content-blog {
-  padding: 132px 237px;
-}
-.site-content .content-blog h2 {
-  color: #8d744a;
-  font-family: "trajan-pro-3";
-}
-.site-content .content-blog .separador {
-  border-bottom: 1px solid #8d744a;
-  padding-top: 2%;
-  width: 36%;
-}
-.site-content .content-blog #menu-blog {
-  padding-top: 5%;
-  padding-bottom: 8%;
-}
-.site-content .content-blog #menu-blog nav a {
-  padding: 0 7px;
-  color: #8d744a;
-  text-decoration: none;
-  font-size: 18px;
-  font-size: 1.28571rem;
-  font-weight: lighter;
-  padding: 5px 8px;
-  border: 1px solid transparent;
-}
-.site-content .content-blog #menu-blog nav a:hover {
-  border-color: #8d744a;
-}
-.site-content .content-blog .post {
-  border-bottom: 1px solid #3B2E29;
-  padding-bottom: 6%;
-}
-.site-content .content-blog .post .imagen {
-  width: 100%;
-}
-.site-content .content-blog .post .imagen img {
-  width: 100%;
-}
-.site-content .content-blog .post .texto {
-  padding-top: 2%;
-  font-weight: 300;
-}
-.site-content .content-blog .post .texto h2 {
-  color: #4e3227;
-}
-.site-content .content-blog .post .texto p {
-  padding-top: 2%;
-  margin-bottom: 3%;
-  font-size: 21px;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  color: #4e3227;
-}
-.site-content .content-blog .post .botons {
-  padding-top: 3%;
-}
-.site-content .content-blog .post .botons button {
-  background-color: transparent;
-  padding: 0.7% 5.5%;
-  border: 1px solid #4e3227;
-  float: left;
-  overflow: hidden;
-  transition: all .2s ease-in;
-  position: relative;
-}
-.site-content .content-blog .post .botons button a {
-  text-decoration: none;
-  color: #4e3227;
-  font-size: 21px;
-  font-size: 1.5rem;
-  position: relative;
-  z-index: 1;
-}
-.site-content .content-blog .post .botons button .overlay {
-  background-color: #a05324;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  transition: all .2s ease-in;
-}
-.site-content .content-blog .post .botons button:hover a {
-  color: #fff;
-}
-.site-content .content-blog .post .botons button:hover .overlay {
-  -webkit-transform: translateX(0%);
-  transform: translateX(0%);
-}
-.site-content .content-blog .post .botons .social {
-  float: left;
-  padding-left: 6%;
-}
-.site-content .content-blog .post .botons .social p {
-  font-size: 21px;
-  font-size: 1.5rem;
-  color: #4e3227;
-  float: left;
-  font-weight: 300;
-  margin-right: 17px;
-}
-.site-content .content-blog .post .botons .social li {
-  float: left;
-  list-style: none;
-}
-.site-content .content-blog .post .botons .social li:nth-child(3) {
-  padding: 0 13px;
 }
 .site-content .content-blog .post .tags {
   color: #8d744a;
@@ -7566,17 +7492,21 @@ footer .col-md-3 p a:hover {
 #galeria h1 {
   font-family: "trajan-pro-3";
   color: #8d744a;
+  padding-bottom: 23px;
+}
+#galeria .texto-evento {
+  padding-left: 8px;
+}
+#galeria .texto-evento p {
+  font-size: 18.2px;
+  font-size: 1.3rem;
 }
 #galeria .fecha {
-  font-size: 21px;
-  font-size: 1.5rem;
-  font-weight: 100;
-  padding-bottom: 23px;
   color: #4e3227;
 }
 #galeria .parrafo {
-  font-size: 22px;
-  font-size: 1.57143rem;
+  font-size: 18.2px;
+  font-size: 1.3rem;
   font-weight: 100;
   line-height: 1.5;
   color: #4e3227;
@@ -7661,6 +7591,9 @@ footer .col-md-3 p a:hover {
   border: 1px solid transparent;
   margin-right: 2%;
 }
+#faqs #menu-blog nav a:first-child {
+  border: 1px solid #8d744a;
+}
 #faqs #menu-blog nav a:hover {
   border: 1px solid #8d744a;
   padding: 5px 14px;
@@ -7693,8 +7626,8 @@ footer .col-md-3 p a:hover {
 #faqs .section .panel-body {
   padding-left: 7%;
   padding: 0% 6% 5%;
-  font-size: 19.6px;
-  font-size: 1.4rem;
+  font-size: 18.2px;
+  font-size: 1.3rem;
   font-weight: 300;
   line-height: 1.5;
   color: #3B2E29;
@@ -7732,6 +7665,9 @@ footer .col-md-3 p a:hover {
   border: 1px solid transparent;
   margin-right: 2%;
 }
+#media-kit #menu-blog nav a:first-child {
+  border: 1px solid #8d744a;
+}
 #media-kit #menu-blog nav a:hover {
   border: 1px solid #8d744a;
   padding: 5px 14px;
@@ -7760,6 +7696,12 @@ footer .col-md-3 p a:hover {
   font-size: 1.3rem;
   font-weight: lighter;
   text-decoration: none;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  -moz-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
+}
+#media-kit #downloads nav div a:hover {
+  opacity: 0.8;
 }
 #media-kit #downloads nav div a img {
   padding-right: 10px;
@@ -7794,6 +7736,9 @@ footer .col-md-3 p a:hover {
   font-size: 1.2rem;
   font-weight: 300;
   text-decoration: none;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  -moz-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
 }
 #media-kit .panel-group .panel-default .panel-body .grid .descarga a:nth-child(2) {
   float: right;
@@ -7801,6 +7746,9 @@ footer .col-md-3 p a:hover {
 #media-kit .panel-group .panel-default .panel-body .grid .descarga a img {
   padding-right: 10px;
   padding-bottom: 2%;
+}
+#media-kit .panel-group .panel-default .panel-body .grid .descarga a:hover {
+  opacity: 0.8;
 }
 
 /*
@@ -7824,8 +7772,8 @@ footer .col-md-3 p a:hover {
 #terms p {
   color: #4e3227;
   line-height: 1.8;
-  font-size: 21px;
-  font-size: 1.5rem;
+  font-size: 18.2px;
+  font-size: 1.3rem;
   font-weight: 300;
   margin-bottom: 2.5%;
 }
@@ -7962,10 +7910,6 @@ footer .col-md-3 p a:hover {
   padding: 5% 15%;
 }
 
-.mg-0 {
-  margin: 0;
-}
-
 .w-100 {
   width: 100%;
 }
@@ -8000,6 +7944,17 @@ footer .col-md-3 p a:hover {
 
 .pt-8 {
   padding-top: 8%;
+}
+
+.fecha,
+.share {
+  font-size: 15.4px !important;
+  font-size: 1.1rem !important;
+  font-weight: 400;
+}
+
+.share {
+  margin: 10px 17px;
 }
 
 a.btn.form-control,
