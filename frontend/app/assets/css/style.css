@@ -6384,7 +6384,9 @@ body::-webkit-scrollbar {
 
 .hover-arrow-controls, .gallery-button-left img,
 .gallery-button-right img {
-  -webkit-transition: opacity .1s ease-out;
+  -webkit-transition: opacity 0.1s ease-out;
+  -moz-transition: opacity 0.1s ease-out;
+  transition: opacity 0.1s ease-out;
 }
 .hover-arrow-controls:hover, .gallery-button-left img:hover,
 .gallery-button-right img:hover {
@@ -6678,7 +6680,9 @@ body::-webkit-scrollbar {
   height: 61px;
   height: 4.35714rem;
   letter-spacing: .08em;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
   background-color: #f8f4e5;
   text-transform: uppercase;
   -webkit-transform: rotateX(-90deg);
@@ -6919,7 +6923,9 @@ body::-webkit-scrollbar {
 
 .active-hidden {
   opacity: 0;
-  -webkit-transition: opacity .15s ease-out;
+  -webkit-transition: opacity 0.15s ease-out;
+  -moz-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
 }
 
 /*
@@ -7022,7 +7028,9 @@ body::-webkit-scrollbar {
   padding: 2% 14%;
   margin-top: 8%;
   border: 2px solid #fff;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   position: relative;
   overflow: hidden;
 }
@@ -7043,7 +7051,9 @@ body::-webkit-scrollbar {
   height: 100%;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
-  transition: all .2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 #events .row .see-more:hover a, #slider-events .row .see-more:hover a {
   color: #fff;
@@ -7094,7 +7104,9 @@ body::-webkit-scrollbar {
   position: relative;
   text-decoration: none;
   overflow: hidden;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   padding: 2% 3%;
 }
 #follow-us .container-social a .overlay {
@@ -7106,7 +7118,9 @@ body::-webkit-scrollbar {
   height: 100%;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 #follow-us .container-social a:hover {
   color: #fff;
@@ -7253,7 +7267,9 @@ footer .col-md-3 p a:hover {
   border: 1px solid #4e3227;
   float: left;
   overflow: hidden;
-  transition: all .2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   position: relative;
 }
 .site-content .content-blog .post .botons button a {
@@ -7273,7 +7289,9 @@ footer .col-md-3 p a:hover {
   height: 100%;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
-  transition: all .2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 .site-content .content-blog .post .botons button:hover a {
   color: #fff;
@@ -7548,6 +7566,22 @@ footer .col-md-3 p a:hover {
 }
 #galeria .grid #overlay a:hover {
   color: #8d744a;
+}
+#galeria .grid #overlay .controls {
+  top: 40%;
+  width: 100px;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  -moz-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
+}
+#galeria .grid #overlay .controls:hover {
+  opacity: 0.2;
+}
+#galeria .grid #overlay .previous-overlay {
+  left: 20%;
+}
+#galeria .grid #overlay .next-overlay {
+  right: 20%;
 }
 
 .flex {
@@ -7865,7 +7899,9 @@ footer .col-md-3 p a:hover {
   height: 100%;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
-  transition: all .2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 #container-contact .formulario button:hover a {
   color: #fff;

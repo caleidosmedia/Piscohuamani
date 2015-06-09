@@ -45,7 +45,7 @@ body {
 	}
 }
 .hover-arrow-controls {
-	-webkit-transition: opacity .1s ease-out;
+	@include transition(opacity .1s ease-out);
 		&:hover {
 			opacity: 0.5;
 		}
@@ -298,7 +298,7 @@ $separator-height-control: 2px;
 				  	height: 61px;
 				  	height: rem(61px);
 				  	letter-spacing: .08em; 
-				  	transition: all .5s;
+				  	@include transition(all .5s);
 				  	background-color: rgb(248, 244, 229);
 				  	text-transform: uppercase;
 				  	-webkit-transform: rotateX(-90deg);
@@ -516,7 +516,7 @@ $separator-height-control: 2px;
 }
 .active-hidden {
 	opacity: 0;
-	-webkit-transition: opacity .15s ease-out;
+	@include transition(opacity .15s ease-out);
 }
 
 /*
@@ -613,7 +613,7 @@ $make-drink-gallery-height-control: 560px;
 			padding: 2% 14%;
 			margin-top: 8%;
 			border: 2px solid #fff;
-			transition: all .5s ease-in-out;
+			@include transition(all .5s ease-in-out);
 			position: relative;
 			overflow: hidden;
 			a {
@@ -633,7 +633,7 @@ $make-drink-gallery-height-control: 560px;
 				height: 100%;
 				-webkit-transform: translateX(-100%);
 				transform: translateX(-100%); 
-				transition: all .2s ease-in;
+				@include transition(all .2s ease-in);
 			}
 			&:hover {
 				a {
@@ -685,7 +685,7 @@ $make-drink-gallery-height-control: 560px;
 			position: relative;
 			text-decoration: none;
 			overflow: hidden;
-			transition: all .2s ease-in-out;
+			@include transition(all .2s ease-in-out);
 			padding: 2% 3%;
 			.overlay{
 				background-image: url(../img/texturas/textura-hover-redes.png);
@@ -696,7 +696,7 @@ $make-drink-gallery-height-control: 560px;
 				height: 100%;
 				-webkit-transform: translateX(-100%);
 				transform: translateX(-100%); 
-				transition: all .2s ease-in-out; 
+				@include transition(all .2s ease-in-out); 
 			}
 			&:hover {
 				color: #fff;
@@ -846,7 +846,7 @@ footer {
 					border: 1px solid #4e3227;
 					float: left;
 					overflow: hidden;
-					transition: all .2s ease-in;
+					@include transition(all .2s ease-in);
 					position: relative;
 					a {
 						text-decoration: none;
@@ -865,7 +865,7 @@ footer {
 						height: 100%;
 						-webkit-transform: translateX(-100%);
 						transform: translateX(-100%); 
-						transition: all .2s ease-in;
+						@include transition(all .2s ease-in);
 					}
 					&:hover {
 						a {
@@ -1129,6 +1129,20 @@ footer {
   			&:hover{
   				color:#8d744a;
   			}
+		  }
+		  .controls {
+		  	top: 40%;
+		  	width: 100px;
+		  	@include transition(opacity .1s ease-in-out);
+		  	&:hover {
+		  		opacity: 0.2;
+		  	}
+		  }
+		  .previous-overlay {
+		  	left: 20%;
+		  }
+		  .next-overlay {
+		  	right: 20%;
 		  }
 		}
 	}
@@ -1453,7 +1467,7 @@ footer {
 				height: 100%;
 				-webkit-transform: translateX(-100%);
 				transform: translateX(-100%); 
-				transition: all .2s ease-in;
+				@include transition(all .2s ease-in);
 			}
 			&:hover {
 				a {
