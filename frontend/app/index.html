@@ -15,30 +15,36 @@
     <div class="site-wrapper"> <!-- Body -->
       <header class="site-menu">
         <div class="contenedor-menu text-center">
-          <nav class="clearfix smooth">
-            <a href="home.html" data-scroll="" class="logo-link">
+          <nav class="nav-desktop clearfix smooth hidden-xs">
+            <a href="index.html" class="logo-link">
               <div><img src="assets/img/iconos-logos/logo-head-pisco-huamani.png" alt=""></div>
               <div><img src="assets/img/iconos-logos/logo-head-seleccion-pisco-huamani.png" alt=""></div>
             </a>
-            <a href="#about-us" data-scroll="" class="about-link">
+            <a href="#about-us" class="about-link">
               <div>ABOUT US</div>
               <div>ABOUT US</div> 
             </a>
-            <a href="#the-goods" data-scroll="" class="goods-link">
+            <a href="#the-goods" class="goods-link">
               <div>THE GOODS</div>
               <div>THE GOODS</div>
             </a>
-            <a href="#make-drink" data-scroll="" class="made-link">
+            <a href="#make-drink" class="made-link">
               <div>MAKE A DRINK</div>
               <div>MAKE A DRINK</div>
             </a>
-            <a href="#events" data-scroll="" class="events-link">
+            <a href="#events" class="events-link">
               <div>EVENTS</div>
               <div>EVENTS</div>
             </a>
-            <a href="#follow-us" data-scroll="" class="follow-link">
+            <a href="#follow-us" class="follow-link">
               <div>FOLLOW US</div>
               <div>FOLLOW US</div>
+            </a>
+          </nav>
+          <nav class="nav-movil hidden-lg hidden-md hidden-sm
+          ">
+            <a href="index.html" class="logo-link">
+              <div><img src="assets/img/iconos-logos/logo-head-pisco-huamani.png" alt=""></div>
             </a>
           </nav>
         </div>
@@ -54,6 +60,7 @@
             <a href="#about-us" data-scroll=""><img src="assets/img/iconos-logos/icono-scrolldown.png" alt=""></a>
           </div>
         </div>
+
         <section id="about-us" style="background-image:url(assets/img/texturas/debut_light/debut_light.png);">
           <div class="container">
             <div class="row">
@@ -76,18 +83,19 @@
                   <p class="line-height text-brown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est exercitationem non error tenetur laudantium sint at aspernatur voluptatum libero corporis laboriosam quaerat rem unde illum dicta est.</p>
                 </div>
               </div>
-              <div class="col-sm-6 imagen">
+              <div class="col-sm-6 imagen hidden-xs">
                 <img src="assets/img/fotos/botella.png" alt="">
               </div>
             </div>
           </div>
-        </section> 
+        </section>
+
         <section id="the-goods">
           <div class="container">
             <h1 class="text-brown-light">THE GOODS</h1>
             <h3 class="text-brown-light">We are just getting sarted</h3>
           </div>
-          <div class="container-sm">
+          <div class="container-sm ">
             <div class="gallery-wrapper row">
               <div class="gallery-button-left">
                 <img src="assets/img/iconos-logos/icono-previo-gris.png" alt="">
@@ -95,7 +103,18 @@
               <div class="gallery-button-right">
                 <img src="assets/img/iconos-logos/icono-siguiente-gris.png" alt="">
               </div> 
-              <div class="gallery pr-0 col-sm-8">
+              <div class="col-xs-12 pl-0 slider-img gallery-child hidden-lg hidden-md hidden-sm"> <!--movil-->
+                <div class="slider-content text-center gallery-cell p-0 text-center">
+                  <img src="assets/img/fotos/bottle2.png" alt="">
+                </div>
+                <div class="slider-content text-center gallery-cell p-0 text-center">
+                  <img src="assets/img/fotos/bottle2.png" alt="">
+                </div>
+                <div class="slider-content text-center gallery-cell p-0 text-center">
+                  <img src="assets/img/fotos/bottle2.png" alt="">
+                </div>
+              </div>
+              <div class="gallery pr-0 col-sm-8 col-xs-12">
                 <div class="gallery-cell">
                   <div class="slider-text">
                     <h2 class="text-brown">MOSTO VERDE</h2>
@@ -118,7 +137,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-4 pl-0 slider-img gallery-child"> 
+              <div class="col-sm-4 pl-0 slider-img gallery-child hidden-xs"> 
                 <div class="slider-content text-center gallery-cell">
                   <img src="assets/img/fotos/bottle2.png" alt="">
                 </div>
@@ -147,11 +166,22 @@
               <div class="gallery-button-right">
                 <img src="assets/img/iconos-logos/icono-siguiente-blanco.png" alt="">
               </div>
+              <div class="gallery-child hidden-lg hidden-md hidden-sm"><!--Movil-->
+                <div class="gallery-cell">
+                  <img src="assets/img/fotos/foto-copa-make-a-drink.png" alt="">
+                </div>
+                <div class="gallery-cell">
+                  <img src="assets/img/fotos/foto-copa-make-a-drink.png" alt="">
+                </div>
+                <div class="gallery-cell">
+                  <img src="assets/img/fotos/foto-copa-make-a-drink.png" alt="">
+                </div>
+              </div>
               <div class="gallery">
                 <div class="gallery-cell text-white">
                   <h2 class="text-white serif-light">CHILCANO DE FRUTAS</h2>
                   <div class="separator separator-white"></div>
-                  <div class="row pt-28">
+                  <div class="row pt-14">
                     <div class="col-sm-6 lead">
                       <p class="subtitle">Ingredients</p>
                       <ul class="type-style-none thin p-0">
@@ -169,7 +199,7 @@
                 <div class="gallery-cell text-white">
                   <h2 class="text-white serif-light">CHILCANO DE FRUTAS</h2>
                   <div class="separator separator-white"></div>
-                  <div class="row pt-28">
+                  <div class="row pt-14">
                     <div class="col-sm-6 lead">
                       <p class="subtitle">Ingredients</p>
                       <ul class="type-style-none thin p-0">
@@ -187,7 +217,7 @@
                 <div class="gallery-cell text-white">
                   <h2 class="text-white serif-light">CHILCANO DE FRUTAS</h2>
                   <div class="separator separator-white"></div>
-                  <div class="row pt-28">
+                  <div class="row pt-14">
                     <div class="col-sm-6 lead">
                       <p class="subtitle">Ingredients</p>
                       <ul class="type-style-none thin p-0">
@@ -203,7 +233,7 @@
                   </div>
                 </div>
               </div>
-              <div class="gallery-child">
+              <div class="gallery-child hidden-xs">
                 <div class="gallery-cell">
                   <div class="row">
                     <div class="col-sm-6"></div>
@@ -298,26 +328,26 @@
             <div class="container-social clearfix text-left">
               <a href="" class="facebook">
                 <div class="overlay"> </div>
-                <h1 class="mg-0">Like.</h1>
-                <p>Ge1 involved</p>
+                <h1 class="m-0">Like.</h1>
+                <p>Get involved</p>
                 <div class="icon">
-                  <img src="assets/img/iconos-logos/icono-facebook-footer.png" alt="">
+                  <span class="icon-facebook">&#xea8c</span>
                 </div>
               </a>
               <a href="" class="facebook">
                 <div class="overlay"></div>
-                <h1 class="mg-0 text-bold">Tag.</h1>
+                <h1 class="m-0 text-bold">Tag.</h1>
                 <p>Become a<br>#huamanifan</p>
                 <div class="icon">
-                  <img src="assets/img/iconos-logos/icono-instagram-footer.png" alt="">
+                  <span class="icon-instagram">&#xea90</span>
                 </div>
               </a> 
               <a href="" class="facebook">
                 <div class="overlay"></div>
-                <h1 class="mg-0 text-bold">Share.</h1>
+                <h1 class="m-0 text-bold">Share.</h1>
                 <p>Send us a note</p>
                 <div class="icon">
-                  <img src="assets/img/iconos-logos/icono-mail-footer.png" alt="">
+                  <span class="icon-mail">&#xe600</span>
                 </div> 
               </a>
             </div>

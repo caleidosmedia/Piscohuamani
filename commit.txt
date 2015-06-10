@@ -1,0 +1,306 @@
+commit ed4877316dd33a84ce9737b3dc59e5f606d205f3
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Tue Jun 9 12:26:00 2015 -0500
+
+    Correcciones terminadas
+
+commit 496219ea2972082481a7d063956443dd9b62ae79
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Mon Jun 8 19:29:37 2015 -0500
+
+    Correcciones al 90%
+
+commit 53d133ffcfbf60d269c75e6d72c2d943d64a3a06
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Fri Jun 5 12:09:53 2015 -0500
+
+    Validación de ingreso
+
+commit fb760254e06328b448a2a73d2096c66d8e1e5845
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Thu Jun 4 11:43:49 2015 -0500
+
+    Events terminado
+
+commit 1986b6522c1845b6872bf5fb111db9a77a3f0a8b
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Wed Jun 3 19:15:11 2015 -0500
+
+    Carruseles terminados :D
+
+commit 46658fd2b6600c5adeba4619645d2d88aac7174c
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Wed Jun 3 16:20:00 2015 -0500
+
+    The goods y make-drink al 95%
+
+commit 3f74954689bd229dbcd8e91180ad8bb8c810ce98
+Author: Maritza <maritzasintafur@gmail.com>
+Date:   Wed Jun 3 08:22:51 2015 -0500
+
+    change image in the goods
+
+commit 2f6e002bdb1fd270c0141e1758789814819153ab
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Tue Jun 2 19:06:12 2015 -0500
+
+    setTimeout carrousel
+
+commit 6cf496d435a52ab846d6cb70914cd1ab0c25c12a
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Tue Jun 2 12:55:39 2015 -0500
+
+    Faqs-control fixed
+
+commit cedaf927797a39adc8ad411bf1233f6a3f9c3bd2
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Tue Jun 2 12:08:11 2015 -0500
+
+    language button active
+
+commit 97901616611052539b06dc47a0fb00c8ea0459a0
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Mon Jun 1 19:30:30 2015 -0500
+
+    Commit de prueba
+
+commit a82974ef9f9ec3c0b688274e9704ba553aaf42e8
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Mon Jun 1 19:06:15 2015 -0500
+
+    Validación contacto
+
+commit a65597a62c2b0325136089503c4b37e9ca7bc4a6
+Author: Maritza <maritzasintafur@gmail.com>
+Date:   Mon Jun 1 08:10:18 2015 -0500
+
+    Carrousel 70%
+
+commit f502f698ebb59f07a8a530eb617a6a69ae445294
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Sat May 30 13:20:09 2015 -0500
+
+    scroll arreglado
+
+commit 8dfdcf858eeba06771b263d962481d221105b1ef
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Fri May 29 19:42:57 2015 -0500
+
+    Espacio del index arreglado
+
+commit 681542edc1427d77a048dd00ee675b843129ecee
+Author: Gus <yo@soygus.com>
+Date:   Fri May 29 12:23:11 2015 -0500
+
+    Make drink gallery
+
+commit 0c4a7f19e1d87f2b2e6702567b6efd42643db569
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Fri May 29 10:11:31 2015 -0500
+
+    style modificado
+
+commit 61604ee5cba53fdc09a60ecc3086cada652cc8cf
+Author: Maritza <maritzasintafur@gmail.com>
+Date:   Fri May 29 07:12:15 2015 -0500
+
+    m
+
+commit 301a2caa89f9b71ef5ca249166b0f2126f343ac9
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Thu May 28 21:35:39 2015 -0500
+
+    code clean
+
+commit 7183df303e3aad5dcd133c3b2d1a4648cad92b9a
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Thu May 28 09:45:04 2015 -0500
+
+    Eventos al 80%: galería de imágenes con pop-up listo
+
+commit bc2d7ef771313fc66ec163e1474c9bbf397999a3
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Wed May 27 21:10:14 2015 -0500
+
+    events al 70%
+
+commit 35b95247309c44d6f0dcd0c12cbaf73dc6526f0d
+Author: Gus <yo@soygus.com>
+Date:   Wed May 27 13:30:36 2015 -0500
+
+    CSS CLeaning
+
+commit d780239a6361429d23e04c93dc9bbdd49f99eb02
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Wed May 27 12:25:33 2015 -0500
+
+    Espacios del _ebm-globa-scss arreglados
+
+commit d8333db18f0519dbbe1375b858631333c674418e
+Author: Gus <yo@soygus.com>
+Date:   Wed May 27 11:45:21 2015 -0500
+
+    Sass to ebm-global
+
+commit d230bf3479acf83409b05f153885d581af005837
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Wed May 27 11:29:18 2015 -0500
+
+    Se movió los archivos js a app/assets/js
+
+commit e114742bde0c83037a0090bebcaea28a31128017
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Wed May 27 11:16:52 2015 -0500
+
+    link de los html modificados
+
+commit 18aca2e62dbb31a7dbd2c48239b4e7b6cf0cee3f
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Wed May 27 11:05:44 2015 -0500
+
+    Home indentado
+
+commit 56f2ccfdbf3720317bf2bfdcdf8ce7645431c0c6
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Tue May 26 18:42:11 2015 -0500
+
+    Diseño de paginador listo
+
+commit bfede6d626c62a606ee03145c17a1909cedb07e4
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Tue May 26 16:38:31 2015 -0500
+
+    Menu active y smooth scroll de Faqs y Media-kit terminado
+
+commit 3bbd7d3c9603f6c7d0a7f9ce7aa7c7639f405ef0
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Tue May 26 15:45:47 2015 -0500
+
+    Menú identifica secciones
+
+commit ee3c06ab829405a0a9d8ee532b7bc797e8643db2
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Tue May 26 14:13:47 2015 -0500
+
+    Estructura de Faqs terminada
+
+commit 6e05c35166296a38e164afc27e6b2d5f009304ac
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Mon May 25 18:06:30 2015 -0500
+
+    Estructura de Media-Kit terminada
+
+commit 8f54fed327203781f5bb15f18ecb17763741686b
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Mon May 25 11:58:03 2015 -0500
+
+    Estructura del Terms y blog-post terminada
+
+commit cc5165f2e3c899963df3422e7cb2c600003d0524
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Fri May 22 20:44:02 2015 -0500
+
+    Carrusel de la sección the goods al 70%
+
+commit 8d792ab1714f9e3870a44de6ec813e34f268c751
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Fri May 22 18:55:51 2015 -0500
+
+    about-us terminado
+
+commit 423ec14a5671fb38233d97c9570d9b6f3f08c921
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Fri May 22 16:47:04 2015 -0500
+
+    Estructura del Blog terminada y sección about us al 90%
+
+commit 614d286ac753c9fb5459963ed4b88075cf083944
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Thu May 21 19:36:20 2015 -0500
+
+    menu, hero-head y about us perfectamente alineados
+
+commit c7ef413efb791aecbeb682396d74aec53de029ec
+Author: MaritzaVst <maritzasintitafur@gmail.com>
+Date:   Thu May 21 16:39:35 2015 -0500
+
+    El menú ya recorre las secciones
+
+commit dd9e033dbbe1cbe8fe9157888307bea8c35c2292
+Author: MaritzaSintiTafur <maritzasintitafur@gmail.com>
+Date:   Thu May 21 15:47:18 2015 +0100
+
+    efecto del menu arreglado
+
+commit 4f3e0e9dca0b0475262dc56123001ae5e7f64f70
+Author: MaritzaSintiTafur <maritzasintitafur@gmail.com>
+Date:   Thu May 21 15:24:45 2015 +0100
+
+    about us avanzado y efecto de menu al 80%
+
+commit af1b8f263641d970fd21b96d83decef4987e5b3e
+Author: MaritzaSintiTafur <maritzasintitafur@gmail.com>
+Date:   Thu May 21 11:43:21 2015 +0100
+
+    menú y view-principal avance 90%
+
+commit 25f7fb46a46df770ea8cd9ca16c12bb135a5209e
+Author: MaritzaSintiTafur <maritzasintitafur@gmail.com>
+Date:   Wed May 20 17:28:04 2015 +0100
+
+    commit de prueba
+
+commit 79cc03fce3f7ae134e75c07ad6bf72008315ca34
+Merge: e216243 d6a3965
+Author: MaritzaSintiTafur <maritzasintitafur@gmail.com>
+Date:   Wed May 20 16:16:43 2015 +0100
+
+    readme
+
+commit e216243f0fa08c76d87a7c95c7b149c273ab8a3e
+Author: MaritzaSintiTafur <maritzasintitafur@gmail.com>
+Date:   Wed May 20 16:12:52 2015 +0100
+
+    test lorem
+
+commit 8171d0fc84e4174198c5fc54daf6cc2399b4046d
+Author: MaritzaSintiTafur <maritzasintitafur@gmail.com>
+Date:   Wed May 20 16:06:29 2015 +0100
+
+    footer con ebm
+
+commit d6a396597a9c7b38605be3c15f0d40b9ea7ba672
+Author: MaritzaSintiTafur <maritzasintitafur@gmail.com>
+Date:   Tue May 19 18:57:55 2015 +0100
+
+    Footer listo
+
+commit 734f9c3b77b5624a9d577aaad53fb43c32215f2f
+Author: MaritzaSintiTafur <maritzasintitafur@gmail.com>
+Date:   Tue May 19 17:06:54 2015 +0100
+
+    pruebas de commit
+
+commit f08beb3ab41c05f05dbde3efba65ebd59864d739
+Author: joseleerazuri <jose.lee@ayuinc.com>
+Date:   Tue May 19 16:54:16 2015 -0500
+
+    carpeta frontend para maritza
+
+commit a9902eb2e5d429389ddba00cf9f392340690c184
+Author: Herman Marin <herman.marin@ayuinc.com>
+Date:   Thu Oct 2 14:20:47 2014 -0500
+
+    Expression Instalado
+
+commit 711e741e9c317931208e7ef6c4951f91f153733f
+Author: Herman Marin <herman.marin@ayuinc.com>
+Date:   Thu Oct 2 14:12:59 2014 -0500
+
+    Primer commit con boiler plate
+
+commit 52fc2629d2f2146f1be14aaa6ed839c1127e1b40
+Author: ayu <info@ayuinc.com>
+Date:   Wed Oct 1 17:48:28 2014 -0400
+
+    Primeros cambios

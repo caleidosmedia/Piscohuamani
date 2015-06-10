@@ -44,6 +44,12 @@ body {
 		}
 	}
 }
+.hover-arrow-controls {
+	@include transition(opacity .1s ease-out);
+		&:hover {
+			opacity: 0.5;
+		}
+}
 
 /*
 	Gallery buttons
@@ -53,6 +59,7 @@ body {
 	@include flex-column-center;
 	img {
 		cursor: pointer;
+		@extend .hover-arrow-controls;
 	}
 }
 
@@ -109,6 +116,7 @@ $separator-height-control: 2px;
 	  	width: 162px;
 	  	height: 40px;
 	  	font-size: 19px;
+	  	font-size: rem(19px);
 	  	color: #fff;
 	  	margin: 6px;
 	  	outline: none;
@@ -129,36 +137,8 @@ $separator-height-control: 2px;
 	.action {
 		padding-top: 26px;
 		margin-left: 6px;
-		/*.dropdown {
-			button {
-				width: 162px;
-				height: 26px;
-			  background-color: transparent;
-				border-radius: 0;
-				padding: 2px 0;
-				border-color: #8d744a;
-				color: #8d744a;
-				position: relative;
-				padding-left: 20px;
-				font-size: 14px;
-				outline: none;
-				span {
-					position: absolute;
-					right: 15px;
-  				font-size: 19px;
-				}
-			}
-			.dropdown-menu {
-				background-color: transparent;
-  			width: 162px;
-  			border-radius: 0;
-  			a {
-  				color: #8d744a;
-  			}
-			}
-		}*/
 		select{
-			width: 162px;
+			max-width: 162px;
 			height: 26px;
 			font-size: 14px;
 			font-size: rem(14px);
@@ -167,6 +147,7 @@ $separator-height-control: 2px;
   		outline: none;
   		border: 1px solid #8d744a;
   		color: #8d744a;
+  		margin-left: 6px;
 			option{
 				background-image: url(../img/texturas/textura-oscura.png);
 			}
@@ -182,15 +163,13 @@ $separator-height-control: 2px;
 			  font-size: 14px;
 			  padding: 3px 0;
 			  font-weight: 300;
-			  &:focus {
-			  	border-color: #8d744a;
-			  	color: #8d744a;
-			  }
+			  &:first-child,
+			  &:focus,
 			  &:active {
 			  	border-color: #8d744a;
-			  	color: #8d744a;
+  				color: #8d744a;
 			  }
-			 }
+			}
 		}
 		.enter {
 			background-color: transparent;
@@ -238,13 +217,64 @@ $separator-height-control: 2px;
 	}
 }
 
-/*
-	Active checkout
-*/
+/*Active checkout*/
 .show {
 		display: block;
 	}
 
+/*RESPONSIVE FORMULARIO*/
+@media screen and (max-width: #{$screen-phone}){
+	.fondo {
+		padding: 25px 10%;
+		display: block;
+		height: 100%;
+		.logo-title {
+			width: 61%;
+  		width: 195px;
+  		padding-top: 35px;
+		}
+		h3 {
+			font-size: 13px;
+		}
+	}
+	#formulario {
+		padding: 15px 14%;
+		text-align: right;
+		.date {
+			padding-top: 27px;
+			input {
+				display: block;
+	  		margin: 0 auto;
+	  		margin-top: 13px;
+	  		width: 100%;
+	  		height: 48px;
+  			border: 1.5px solid #fff;
+  			font-size: 23px;
+  		}
+		}
+		.action {
+			select {
+				margin-left: 0;
+			}
+			.btn-group {
+				padding-left: 12px;
+				button {
+					padding: 0 7px!important;					
+				}
+			}
+			select,
+			.btn-group button{
+				height: 34px;
+			}
+			.enter {
+				margin-top: 40px;
+			}
+		}
+		.checkbox {
+			display: inline-block;
+		}
+	}
+}
 
 /*
 	Home
@@ -263,7 +293,7 @@ $separator-height-control: 2px;
 	 	height: rem(61px);
 	  background: #3b2e29;
 	 	z-index: 10; 
-	 	nav {
+	 	.nav-desktop {
 	 		display: inline-block;
 	 		a {
 				height: 61px;
@@ -291,7 +321,7 @@ $separator-height-control: 2px;
 				  	height: 61px;
 				  	height: rem(61px);
 				  	letter-spacing: .08em; 
-				  	transition: all .5s;
+				  	@include transition(all .5s);
 				  	background-color: rgb(248, 244, 229);
 				  	text-transform: uppercase;
 				  	-webkit-transform: rotateX(-90deg);
@@ -392,7 +422,6 @@ $separator-height-control: 2px;
 	About us
 */
 #about-us {
-	// padding: 5% 17% 12%;
 	background-size: 30%;
 	h1 {
 		font-size: 35px;
@@ -401,6 +430,7 @@ $separator-height-control: 2px;
 	}
 	h3 {
 		font-style: italic;
+		font-weight: 300;
 	}
 	h1, h2{
 		font-family: "trajan-pro-3";
@@ -413,8 +443,8 @@ $separator-height-control: 2px;
 		}
 		p {
 			padding-top: 6%;
-			font-size: 21px;
-			font-size: rem(21px);
+			font-size: 18.2px;
+			font-size: rem(18.2px);
 			font-weight: 300;
 		}
 	}
@@ -422,6 +452,7 @@ $separator-height-control: 2px;
 		text-align: center;
 		img {
 			width: 362px;
+			height: 1400px;
 		}
 	}
 } 
@@ -461,6 +492,7 @@ $separator-height-control: 2px;
 	}
 	h3 {
 		font-style: italic;
+		font-weight: 300;
 	}
 	h1, h2{ 
 		font-family: "trajan-pro-3"; 
@@ -473,7 +505,8 @@ $separator-height-control: 2px;
 		}
 		p {
 			padding-top: 6%;
-			font-size: 1.5rem;
+			font-size: 18.2px;
+			font-size: rem(18.2px);
 			font-weight: 300;
 			padding-right: 20px;
 		}
@@ -505,7 +538,7 @@ $separator-height-control: 2px;
 }
 .active-hidden {
 	opacity: 0;
-	-webkit-transition: opacity .15s ease-out;
+	@include transition(opacity .15s ease-out);
 }
 
 /*
@@ -524,14 +557,14 @@ $make-drink-gallery-height-control: 560px;
 		width: 100%; 
 	}
 	.gallery-button-left {
-		@include position(absolute, 0 null 0 -98px);
+		@include position(absolute, -60px null 0 -98px);
 	}
 	.gallery-button-right {
-		@include position(absolute, 0 -98px 0 null);
+		@include position(absolute, -60px -98px 0 null);
 	}
 	.gallery {
 		.gallery-cell {
-			padding-top: 76px;
+			padding-top: 30px;
 			.subtitle {
 				font-style: italic;
 				font-size: 24px;
@@ -539,12 +572,20 @@ $make-drink-gallery-height-control: 560px;
 				margin-bottom: 20px;
 			}
 			ul {
-				margin-bottom: 42px;
+				margin-bottom: 30px;
+				li {
+					font-size: 18.2px;
+					font-size: rem(18.2px);
+				}
+			}
+			p {
+				font-size: 18.2px;
+				font-size: rem(18.2px);
 			} 
 		}
 	}
 	.gallery-child {
-		@include position(absolute, 0 0 0 0);
+		@include position(absolute, -60px 0 0 0);
 	}
 }
 
@@ -594,7 +635,7 @@ $make-drink-gallery-height-control: 560px;
 			padding: 2% 14%;
 			margin-top: 8%;
 			border: 2px solid #fff;
-			transition: all .5s ease-in-out;
+			@include transition(all .5s ease-in-out);
 			position: relative;
 			overflow: hidden;
 			a {
@@ -614,7 +655,7 @@ $make-drink-gallery-height-control: 560px;
 				height: 100%;
 				-webkit-transform: translateX(-100%);
 				transform: translateX(-100%); 
-				transition: all .2s ease-in;
+				@include transition(all .2s ease-in);
 			}
 			&:hover {
 				a {
@@ -649,6 +690,7 @@ $make-drink-gallery-height-control: 560px;
 	h3 {
 		font-weight: lighter;
 		font-style: italic;
+		font-weight: 300;
 	}
 	.container-social {
 		display: inline-block;
@@ -665,7 +707,7 @@ $make-drink-gallery-height-control: 560px;
 			position: relative;
 			text-decoration: none;
 			overflow: hidden;
-			transition: all .2s ease-in-out;
+			@include transition(all .2s ease-in-out);
 			padding: 2% 3%;
 			.overlay{
 				background-image: url(../img/texturas/textura-hover-redes.png);
@@ -676,7 +718,7 @@ $make-drink-gallery-height-control: 560px;
 				height: 100%;
 				-webkit-transform: translateX(-100%);
 				transform: translateX(-100%); 
-				transition: all .2s ease-in-out; 
+				@include transition(all .2s ease-in-out); 
 			}
 			&:hover {
 				color: #fff;
@@ -700,13 +742,29 @@ $make-drink-gallery-height-control: 560px;
 			}
 			.icon {
 				position: absolute;
-				width: 45px;
-				bottom: 8%;
-				right: 10%;
-				img {
-					width: 100%;
+				bottom: 12%;
+				right: 8%;
+				.icon-facebook, 
+				.icon-mail,
+				.icon-instagram {
+					border: 2px solid white;
+				  border-radius: 100%;
+				  padding: 8px;
 				}
-			}
+				.icon-facebook {
+					font-size: 28px;
+					font-size: rem(28px); 
+				}
+				.icon-instagram {
+					font-size: 25px;
+					font-size: rem(25px);
+				  padding: 10px;
+				}
+				.icon-mail {
+					font-size: 30px;
+					font-size: rem(30px);
+				}
+			} 
 		} 
 	}
 }
@@ -769,163 +827,9 @@ footer {
 					font-weight: lighter;
 					padding: 5px 8px;
   				border: 1px solid transparent;
-					&:hover {
-						border-color:#8d744a;
-					}
-				}
-			}
-		}
-		.post{
-			border-bottom: 1px solid #3B2E29;
-	  	padding-bottom: 6%; 
-			.imagen {
-				width: 100%;
-				img {
-					width: 100%; 
-				}
-			}
-			.texto {
-				padding-top: 2%;
-				font-weight: 300;
-				h2 {
-					color: #4e3227;
-				}
-				p {
-					padding-top: 2%;
-					margin-bottom: 3%;
-					font-size: 21px;
-					font-size: rem(21px);
-					line-height: 1.5;
-					color: #4e3227; 
-				} 
-			}
-			.botons {
-				padding-top: 3%;
-				button {
-					background-color: transparent;
-					padding: 0.7% 5.5%;
-					border: 1px solid #4e3227;
-					float: left;
-					overflow: hidden;
-					transition: all .2s ease-in;
-					position: relative;
-					a {
-						text-decoration: none;
-						color: #4e3227;
-						font-size: 21px;
-						font-size: rem(21px);
-						position: relative;
-						z-index: 1;
-					}
-					.overlay {
-						background-color: #a05324;
-						position: absolute;
-						top: 0;
-						left: 0; 
-						width: 100%;
-						height: 100%;
-						-webkit-transform: translateX(-100%);
-						transform: translateX(-100%); 
-						transition: all .2s ease-in;
-					}
-					&:hover {
-						a {
-							color: #fff;
-						}
-						.overlay { 
-							-webkit-transform: translateX(0%);
-							transform: translateX(0%); 
-						} 
-					}
-				}
-				.social {
-					float: left;
-					padding-left: 6%;
-					p {
-						font-size: 21px;
-						font-size: rem(21px);
-						color: #4e3227;
-						float: left;
-						font-weight: 300; 
-						margin-right: 17px;
-					} 
-					li {
-						float: left;
-						list-style: none;
-						&:nth-child(3){
-							padding: 0 13px;
-						} 
-					} 
-				} 
-			}
-			.tags {
-				color: #8d744a; 
-				padding-top: 3.5%;
-				font-size: 18px;
-				font-size: rem(18px);
-			  font-weight: 100;
-			  font-style: italic;
-			} 
-		}
-		#pagination {
-			padding-top: 5%;
-			ul {
-				width: 100%;
-				li {
-					a {
-						border: 1px solid transparent;
-						font-size: 21px;
-						font-size: rem(21px);
-  					font-weight: 300;
-  					padding: 0 2%;
-  					background-color: transparent;
-  					color: #4e3227;
-  					&:hover {
-							border-color:#4e3227;
-  					}
-					}
-					&:first-child a, &:last-child a, .next , .previous {
-  					border: none;
+  				&:first-child {
+  					border: 1px solid #8d744a;
   				}
-				}
-				li.active {
-					a {
-						border: 1px solid #4e3227;
-					}
-				}
-			}
-		}
-	}
-}
-
-/*
-	Blog
-*/
-.site-content {
-	.content-blog {
-		  padding: 132px 237px;
-		h2 {
-			color: #8d744a;
-			font-family: "trajan-pro-3"
-		}
-		.separador {
-			border-bottom:1px solid #8d744a;
-			padding-top:2%;
-			width: 36%;
-		}
-		#menu-blog {
-			padding-top: 5%;
-			padding-bottom: 8%;
-			nav {
-				a {
-					padding: 0 7px;
-					color: #8d744a;
-					text-decoration: none;
-					font-size: 18px;
-					font-size: rem(18px);
-					font-weight: lighter;
-					padding: 5px 8px;
-  				border: 1px solid transparent;
 					&:hover {
 						border-color:#8d744a;
 					}
@@ -949,9 +853,9 @@ footer {
 				}
 				p {
 					padding-top: 2%;
-					margin-bottom: 3%;
-					font-size: 21px;
-					font-size: rem(21px);
+					margin-bottom: 27px;
+					font-size: 18.2px;
+					font-size: rem(18.2px);
 					line-height: 1.5;
 					color: #4e3227; 
 				} 
@@ -964,7 +868,7 @@ footer {
 					border: 1px solid #4e3227;
 					float: left;
 					overflow: hidden;
-					transition: all .2s ease-in;
+					@include transition(all .2s ease-in);
 					position: relative;
 					a {
 						text-decoration: none;
@@ -983,7 +887,7 @@ footer {
 						height: 100%;
 						-webkit-transform: translateX(-100%);
 						transform: translateX(-100%); 
-						transition: all .2s ease-in;
+						@include transition(all .2s ease-in);
 					}
 					&:hover {
 						a {
@@ -999,8 +903,8 @@ footer {
 					float: left;
 					padding-left: 6%;
 					p {
-						font-size: 21px;
-						font-size: rem(21px);
+						font-size: 18.2px;
+						font-size: rem(18.2px);
 						color: #4e3227;
 						float: left;
 						font-weight: 300; 
@@ -1009,9 +913,16 @@ footer {
 					li {
 						float: left;
 						list-style: none;
-						&:nth-child(3){
-							padding: 0 13px;
-						} 
+						border: 1.5px solid;
+ 						padding: 4px;
+ 						width: 38px;
+						height: 40px;
+						text-align: center;
+						margin: 0 6px;
+						@include flex-column-center;
+						span {
+							font-size: 18px;
+						}
 					} 
 				} 
 			}
@@ -1140,7 +1051,7 @@ footer {
 				list-style: none;
 				&:nth-child(3){
 					padding: 0 13px;
-				} 
+				}
 			} 
 		}
 	} 
@@ -1186,17 +1097,21 @@ footer {
 	h1{
 		font-family: "trajan-pro-3";
   	color: #8d744a;
+  	padding-bottom: 23px;
+	}
+	.texto-evento {
+		padding-left: 8px;
+		p {
+			font-size: 18.2px;
+			font-size: rem(18.2px);
+		}
 	}
 	.fecha{
-		font-size: 21px;
-		font-size: rem(21px);
-  	font-weight: 100;
-  	padding-bottom: 23px;
   	color: #4e3227;
 	}
 	.parrafo{
-		font-size: 22px;
-		font-size: rem(22px);
+		font-size: 18.2px;
+		font-size: rem(18.2px);
 		font-weight: 100;
 		line-height: 1.5;
 		color: #4e3227;
@@ -1236,6 +1151,20 @@ footer {
   			&:hover{
   				color:#8d744a;
   			}
+		  }
+		  .controls {
+		  	top: 40%;
+		  	width: 100px;
+		  	@include transition(opacity .1s ease-in-out);
+		  	&:hover {
+		  		opacity: 0.2;
+		  	}
+		  }
+		  .previous-overlay {
+		  	left: 20%;
+		  }
+		  .next-overlay {
+		  	right: 20%;
 		  }
 		}
 	}
@@ -1282,6 +1211,9 @@ footer {
 	  		padding: 5px 14px;
 	  		border: 1px solid transparent;
 	  		margin-right: 2%;
+	  		&:first-child {
+	  			border: 1px solid #8d744a;
+	  		}
 	  		&:hover  {
 					border: 1px solid #8d744a;
 		  		padding: 5px 14px;
@@ -1316,8 +1248,8 @@ footer {
 		.panel-body {
 			padding-left: 7%;
 			padding: 0% 6% 5%;
-			font-size: 19.6px;
-			font-size: rem(19.6px);
+			font-size: 18.2px;
+			font-size: rem(18.2px);
   		font-weight: 300;
   		line-height: 1.5;
   		color: #3B2E29;
@@ -1356,6 +1288,9 @@ footer {
 	  		padding: 5px 14px;
 	  		border: 1px solid transparent;
 	  		margin-right: 2%;
+	  		&:first-child {
+	  			border: 1px solid #8d744a;
+	  		}
 	  		&:hover {
 					border: 1px solid #8d744a;
 		  		padding: 5px 14px;
@@ -1385,7 +1320,11 @@ footer {
 					font-size: 18.2px;
 					font-size: rem(18.2px);
   				font-weight: lighter;
-  				text-decoration: none; 
+  				text-decoration: none;
+  				@include transition(opacity .1s ease-in-out);
+  				&:hover {
+  					opacity: 0.8;
+  				}  
   				img {
   					padding-right: 10px;
   					padding-bottom: 5%;
@@ -1421,12 +1360,16 @@ footer {
 						font-size: rem(16.8px);
   					font-weight: 300;
   					text-decoration: none;
+  					@include transition(opacity .1s ease-in-out); 
 						&:nth-child(2) {
 							float:right;
 						}
 						img {
 							padding-right: 10px;
 							padding-bottom: 2%;
+						}
+						&:hover {
+							opacity: 0.8;
 						}
 					}
 				}
@@ -1455,8 +1398,8 @@ footer {
 	p {
 		color: #4e3227;
   	line-height: 1.8;
-  	font-size: 21px;
-  	font-size: rem(21px);
+  	font-size: 18.2px;
+  	font-size: rem(18.2px);
   	font-weight: 300;
 	  margin-bottom: 2.5%;
 	}
@@ -1546,7 +1489,7 @@ footer {
 				height: 100%;
 				-webkit-transform: translateX(-100%);
 				transform: translateX(-100%); 
-				transition: all .2s ease-in;
+				@include transition(all .2s ease-in);
 			}
 			&:hover {
 				a {
@@ -1559,6 +1502,152 @@ footer {
 			}
 		}
   }
+}
+
+/*RESPONSIVE MENÚ E IMG-PRINCIPAL*/
+@media screen and (max-width: #{$screen-phone}) {
+	.site-content {
+		> section {
+				padding: 42px 0;
+				.container {
+					padding: 0 16%;
+					h2 {
+						font-size: 25px;
+					}
+					h3 {
+						font-size: 20px;
+					}
+				}
+				.container-sm {
+					margin: 0;
+					padding: 0;
+				}
+			}
+	}
+	.img-principal {
+	  background-position-y: 10%;
+	  div.texto {
+	  	h1 {
+	  		font-size: 42px;
+	  	}
+	  	p {
+	  		font-size: 22px;
+	  	}
+	  }
+	  .scroll-down {
+	  	width: 50px;
+	  }
+	}
+	/*ABOUT US*/
+	#about-us {
+		.container .row .col-sm-6 {
+			padding: 0;
+			.texto-about {
+			  padding: 33px 0 9px!important;
+			  h2 {
+			  	font-size: 21px;
+			  }
+			  p {
+			  	padding-top: 30px;
+			  }
+			}
+		}
+	}
+	/*THE GOODS*/
+	#the-goods {
+		.container-sm .gallery-wrapper {
+			.gallery-button-left,
+			.gallery-button-right{
+				width: 40px;
+				z-index: 10;
+				display: inline-block;
+				top: 225px;
+				img {
+					width: 100%;
+				}
+			}
+			.gallery-button-left {
+				left: 35px;
+			}
+			.gallery-button-right {
+				right: 35px;
+			}
+			.gallery-child .flickity-viewport {
+				height: 439px!important;
+				.slider-content{
+					height: auto!important;
+					top: 0!important;
+					text-align: center!important;
+					img {
+						width: 24%!important;
+						height: auto!important;
+						padding-top: 140px!important;
+					}
+				}
+			}
+			.gallery {
+				padding-top: 25px;
+				height: auto;
+				.flickity-viewport {
+					height: 330px;
+					.gallery-cell {
+						padding: 0 16%;
+						.slider-text {
+							padding: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	/*MAKE DRINK*/
+	#make-drink {
+		.container-sm .gallery-wrapper {
+			.gallery-button-left,
+			.gallery-button-right{
+				width: 40px;
+				z-index: 10;
+				display: inline-block;
+				top: 120px;
+				img {
+					width: 100%;
+				}
+			}
+			.gallery-button-left {
+				left: 35px;
+			}
+			.gallery-button-right {
+				right: 35px;
+			}
+			.gallery-child {
+				position: relative;
+				top: 40px;
+				min-height: 325px;
+				.flickity-viewport {
+					min-height: 300px;
+					.gallery-cell {
+						text-align: center;
+						min-height: 300px;
+						img {
+							width: 46%;
+						}
+					}
+				}
+			}
+			.gallery {
+				min-height: 390px;
+				.flickity-viewport {
+					height: 390px;
+					.gallery-cell {
+						padding: 0 16%;
+						h2 {
+							font-size: 17px;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 /*
@@ -1588,9 +1677,6 @@ footer {
 .pd-5-15 { 
 	padding: 5% 15%;
 }
-.mg-0 { 
-	margin: 0;
-}
 .w-100 {
 	width: 100%; 
 }
@@ -1617,4 +1703,13 @@ footer {
 }
 .pt-8 {
 	padding-top: 8%;
+}
+.fecha,
+.share {
+	font-size: 15.4px!important;
+	font-size: rem(15.4px)!important;
+  font-weight: 400;
+}
+.share {
+  margin: 10px 17px;
 }
