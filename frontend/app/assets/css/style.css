@@ -8120,6 +8120,16 @@ footer .col-md-3 p a:hover {
     position: relative;
     z-index: 1;
   }
+
+  /*FOOTER*/
+  #follow-us .container-social {
+    padding-top: 30px;
+  }
+  #follow-us .container-social a {
+    width: 100%;
+    height: 150px;
+    padding: 7%;
+  }
 }
 /*
 	Utilities
