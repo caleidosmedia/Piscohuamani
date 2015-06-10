@@ -1,4 +1,7 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+$base_url = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
+$base_url .= "://".$_SERVER['HTTP_HOST'].'/piscohuamani';
+$admin_url  = $base_url . '/admin.php';
 
 $config['index_page'] = "index.php";
 /*
@@ -11,17 +14,34 @@ $config['index_page'] = "index.php";
 | observed by ExpressionEngine, e.g. 'permitted_uri_chars'
 |
 */
+$config['site_url'] = $base_url ;
 
 $config['app_version'] = '281';
 $config['license_number'] = "4630-2858-5276-6671";
 $config['debug'] = '1';
-$config['cp_url'] = 'http://piscohumani.dev/admin.php';
+$config['cp_url'] = $config['site_url'].'/admin.php';
 $config['doc_url'] = "http://ellislab.com/expressionengine/user-guide/";
 $config['is_system_on'] = "y";
 $config['allow_extensions'] = 'y';
-$config['cookie_prefix'] = '';
+$config['cookie_prefix'] = 'pisco_';
 $config['cookie_httponly'] = 'y';
 
+
+
+$config['server_path'] = FCPATH;
+$config['site_index'] = '';
+$config['cookie_prefix'] = "upc_";
+$config['theme_folder_url'] = $config['site_url']."/themes/";
+$config['theme_folder_path'] = $config['server_path']."/themes/";
+$config['save_tmpl_files'] = "y";
+$config['tmpl_file_basepath'] = $config['server_path']."/templates/";
+$config['avatar_url'] = $config['site_url']."/images/uploads/system/avatars/";
+$config['avatar_path'] = $config['server_path']."/images/uploads/system/avatars/";
+$config['photo_url'] = $config['site_url']."/images/uploads/system/member_photos/";
+$config['photo_path'] = $config['server_path']."/images/uploads/system/member_photos/";
+$config['sig_img_url'] = $config['site_url']."/images/uploads/system/signature_attachments/";
+$config['sig_img_path'] = $config['server_path']."/images/uploads/system/signature_attachments/";
+$config['prv_msg_upload_path'] = $config['server_path']."/images/uploads/system/pm_attachments/";
 
 /*
 |--------------------------------------------------------------------------
