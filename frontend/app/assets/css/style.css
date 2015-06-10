@@ -6670,17 +6670,17 @@ body::-webkit-scrollbar {
   background: #3b2e29;
   z-index: 10;
 }
-.site-menu .contenedor-menu nav {
+.site-menu .contenedor-menu .nav-desktop {
   display: inline-block;
 }
-.site-menu .contenedor-menu nav a {
+.site-menu .contenedor-menu .nav-desktop a {
   height: 61px;
   float: left;
   text-align: center;
   text-decoration: none;
   position: relative;
 }
-.site-menu .contenedor-menu nav a div {
+.site-menu .contenedor-menu .nav-desktop a div {
   font-size: 14px;
   font-size: 1rem;
   color: #3b2e29;
@@ -6713,7 +6713,7 @@ body::-webkit-scrollbar {
   padding: 0 33px;
   padding: 0 2.35714rem;
 }
-.site-menu .contenedor-menu nav a div:first-child {
+.site-menu .contenedor-menu .nav-desktop a div:first-child {
   -webkit-transform: rotateX(0deg);
   transform: rotateX(0deg);
   -webkit-transform-origin: center bottom;
@@ -6723,37 +6723,37 @@ body::-webkit-scrollbar {
   top: 0;
   z-index: 2;
 }
-.site-menu .contenedor-menu nav a:hover div {
+.site-menu .contenedor-menu .nav-desktop a:hover div {
   -webkit-transform: rotateX(0deg);
   transform: rotateX(0deg);
   top: -61px;
   height: 61px;
 }
-.site-menu .contenedor-menu nav a:hover div:first-child {
+.site-menu .contenedor-menu .nav-desktop a:hover div:first-child {
   top: -70px;
   z-index: 1;
   -webkit-transform: rotateX(90deg);
   transform: rotateX(90deg);
 }
-.site-menu .contenedor-menu nav a.active div {
+.site-menu .contenedor-menu .nav-desktop a.active div {
   -webkit-transform: rotateX(0deg);
   transform: rotateX(0deg);
   top: -61px;
   height: 61px;
 }
-.site-menu .contenedor-menu nav a.active div:first-child {
+.site-menu .contenedor-menu .nav-desktop a.active div:first-child {
   top: -70px;
   z-index: 1;
   -webkit-transform: rotateX(90deg);
   transform: rotateX(90deg);
 }
-.site-menu .contenedor-menu nav a.logo-link div {
+.site-menu .contenedor-menu .nav-desktop a.logo-link div {
   width: 200px;
   width: 14.28571rem;
   line-height: 55px !important;
   display: block;
 }
-.site-menu .contenedor-menu nav a.logo-link div img {
+.site-menu .contenedor-menu .nav-desktop a.logo-link div img {
   width: 100%;
 }
 
@@ -6817,6 +6817,48 @@ body::-webkit-scrollbar {
   width: 100%;
 }
 
+/*RESPONSIVE MEN├Ü E IMG-PRINCIPAL*/
+@media screen and (max-width: 480px) {
+  .site-content > section {
+    padding: 42px 10%;
+  }
+  .site-content > section .container-sm {
+    margin: 0;
+  }
+
+  .img-principal {
+    background-position-y: 10%;
+  }
+  .img-principal div.texto h1 {
+    font-size: 42px;
+  }
+  .img-principal div.texto p {
+    font-size: 22px;
+  }
+  .img-principal .scroll-down {
+    width: 50px;
+  }
+
+  /*ABOUT US*/
+  #about-us {
+    padding: 42px 10%;
+  }
+  #about-us .container .row .col-sm-6 .texto-about {
+    padding: 33px 0 9px !important;
+  }
+  #about-us .container .row .col-sm-6 .texto-about p {
+    padding-top: 30px;
+  }
+
+  /*THE GOODS*/
+  #the-goods .slider-content, #events .slider-content, #slider-events .slider-content {
+    height: auto !important;
+  }
+  #the-goods .slider-content img, #events .slider-content img, #slider-events .slider-content img {
+    width: 34% !important;
+    height: auto !important;
+  }
+}
 /*
 	About us
 */
