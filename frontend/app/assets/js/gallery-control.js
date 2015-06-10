@@ -9,7 +9,7 @@ $(document).ready(function(){
 		contain: true,
 		prevNextButtons: false,
 		pageDots: false,
-		draggable: false,
+		draggable: true,
 		friction: 0.4,
 		wrapAround: true
 	});
@@ -20,7 +20,7 @@ $(document).ready(function(){
 		contain: true,
 		prevNextButtons: false,
 		pageDots: false,
-		draggable: false,
+		draggable: true,
 		friction: 0.4,
 		wrapAround: true
 	});

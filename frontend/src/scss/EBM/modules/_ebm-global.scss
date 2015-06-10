@@ -1624,7 +1624,7 @@ footer {
 				top: 40px;
 				min-height: 325px;
 				.flickity-viewport {
-					min-height: 300px;
+					min-height: 300px!important;
 					.gallery-cell {
 						text-align: center;
 						min-height: 300px;
@@ -1637,12 +1637,62 @@ footer {
 			.gallery {
 				min-height: 390px;
 				.flickity-viewport {
-					height: 390px;
+					height: 400px!important;
 					.gallery-cell {
 						padding: 0 16%;
 						h2 {
 							font-size: 17px;
 						}
+					}
+				}
+			}
+		}
+	}
+	/*EXPERIENCE*/
+	#events {
+		.event-movil {
+			padding: 42px 16% 50px;
+			background-position: left;
+  		background-size: cover;
+			h2 {
+				font-size: 25px;
+				line-height: 1.3;
+				position: relative;
+			}
+			h3 {
+				font-size: 20px;
+			}
+			.contenido {
+				padding-top: 60px;
+				h2 {
+					font-size: 20px;
+				}
+				.separador {
+					border-bottom: 2px solid #fff!important;
+					margin-bottom: 2%;
+					width: 90%;
+					margin: 15px 0px 20px;
+				}
+				h3 {
+					font-style: normal;
+					font-weight: 300;
+				}
+				p.parrafo {
+					padding-top: 30px;
+				}
+				.see-more {
+					background-color: transparent;
+					padding: 10px 0;
+  				width: 100%;
+					margin-top: 8%;
+					border: 2px solid #fff;
+					position: relative;
+					a {
+						font-size: 18px;
+						font-weight: 300;
+						text-decoration: none;
+						position: relative;
+						z-index: 1;
 					}
 				}
 			}
