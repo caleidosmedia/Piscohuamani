@@ -3,7 +3,7 @@
 $active_group = 'expressionengine';
 $active_record = TRUE;
 
-$db['expressionengine']['hostname'] = 'localhost';
+$db['expressionengine']['hostname'] = '45.55.253.252';
 $db['expressionengine']['username'] = 'piscohuamani_r';
 $db['expressionengine']['password'] = 'HdmB37b0';
 $db['expressionengine']['database'] = 'piscohuamani_db';
