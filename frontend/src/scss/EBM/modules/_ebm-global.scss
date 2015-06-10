@@ -222,60 +222,6 @@ $separator-height-control: 2px;
 		display: block;
 	}
 
-/*RESPONSIVE FORMULARIO*/
-@media screen and (max-width: #{$screen-phone}){
-	.fondo {
-		padding: 25px 10%;
-		display: block;
-		height: 100%;
-		.logo-title {
-			width: 61%;
-  		width: 195px;
-  		padding-top: 35px;
-		}
-		h3 {
-			font-size: 13px;
-		}
-	}
-	#formulario {
-		padding: 15px 14%;
-		text-align: right;
-		.date {
-			padding-top: 27px;
-			input {
-				display: block;
-	  		margin: 0 auto;
-	  		margin-top: 13px;
-	  		width: 100%;
-	  		height: 48px;
-  			border: 1.5px solid #fff;
-  			font-size: 23px;
-  		}
-		}
-		.action {
-			select {
-				margin-left: 0;
-			}
-			.btn-group {
-				padding-left: 12px;
-				button {
-					padding: 0 7px!important;					
-				}
-			}
-			select,
-			.btn-group button{
-				height: 34px;
-			}
-			.enter {
-				margin-top: 40px;
-			}
-		}
-		.checkbox {
-			display: inline-block;
-		}
-	}
-}
-
 /*
 	Home
 */
@@ -1506,6 +1452,57 @@ footer {
 
 /*RESPONSIVE MENÚ E IMG-PRINCIPAL*/
 @media screen and (max-width: #{$screen-phone}) {
+	/*RESPONSIVE FORMULARIO*/
+	.fondo {
+		padding: 25px 10%;
+		display: block;
+		height: 100%;
+		.logo-title {
+			width: 61%;
+  		width: 195px;
+  		padding-top: 35px;
+		}
+		h3 {
+			font-size: 13px;
+		}
+	}
+	#formulario {
+		padding: 15px 14%;
+		text-align: right;
+		.date {
+			padding-top: 27px;
+			input {
+				display: block;
+	  		margin: 0 auto;
+	  		margin-top: 13px;
+	  		width: 100%;
+	  		height: 48px;
+  			border: 1.5px solid #fff;
+  			font-size: 23px;
+  		}
+		}
+		.action {
+			select {
+				margin-left: 0;
+			}
+			.btn-group {
+				padding-left: 12px;
+				button {
+					padding: 0 7px!important;					
+				}
+			}
+			select,
+			.btn-group button{
+				height: 34px;
+			}
+			.enter {
+				margin-top: 40px;
+			}
+		}
+		.checkbox {
+			display: inline-block;
+		}
+	}
 	.site-content {
 		> section {
 				padding: 42px 0;
@@ -1698,8 +1695,39 @@ footer {
 			}
 		}
 	}
+	/*FOllow us*/
+	#follow-us {
+		.container-social {
+			padding-top: 30px;
+			a {
+				width: 100%;
+				height: 150px;
+				padding: 7%;
+			}
+		}
+	}
+	/*FOOTER*/
+	footer {
+		ul {
+			padding: 50px 10%!important;
+			li {
+				padding: 0!important;
+				.texto {
+					p {
+	  				font-family: "museo-sans";
+  				}
+				}
+			}
+			.col-md-3 {
+				padding-top: 30px!important;
+				p {
+					font-size: 15px!important;
+					font-family: "Museo-sans";
+				}
+			}
+		}
+	}	
 }
-
 /*
 	Utilities
 */
