@@ -228,7 +228,6 @@ $separator-height-control: 2px;
 .site-menu {
 	@include position(absolute, 0 0 null 0);
 	height: 61px;
-	height: rem(61px); 
 	width: 100%;
 	.contenedor-menu {
 		position: fixed;
@@ -236,17 +235,16 @@ $separator-height-control: 2px;
 	 	left: 0;
 	 	width: 100%;
 	 	height: 61px;
-	 	height: rem(61px);
 	  background: #3b2e29;
-	 	z-index: 10; 
+	 	z-index: 15; 
 	 	.nav-desktop {
 	 		display: inline-block;
 	 		a {
 				height: 61px;
-  			float: left;
 				text-align: center;
 				text-decoration: none;
 				position: relative;
+				float: left;
   				div {
 						font-size: 14px;
 						font-size: rem(14px); 
@@ -751,6 +749,7 @@ footer {
 .site-content {
 	.content-blog {
 		  padding: 132px 237px;
+		  padding: 10% 17%;
 		h2 {
 			color: #8d744a;
 			font-family: "trajan-pro-3"
@@ -1503,6 +1502,97 @@ footer {
 			display: inline-block;
 		}
 	}
+	/*RESPONSIVE MENÚ*/
+	.site-menu {
+		.nav-movil {
+			height: 55px;
+			@include flex-column-center;
+			a {
+				left: 7%;
+			  text-align: left;
+			  position: relative;
+			  float: left;
+ 				width: 100px;
+				img {
+					width: 100px;
+				}
+			}
+			p {
+				position: absolute;
+				margin: -15px 0 0 -15px;
+			  right: 12%;
+			  width: 70px;
+			}
+			.switch {
+		  	width: 20px;
+		  	height: 17px;
+		  	position: absolute;
+		  	right: 7%;
+		  	margin: -15px 0px 0px -15px;
+			 	cursor: pointer;
+			}
+			.switch.on:after {
+			  	transform: rotate(-45deg) translate(5px, -5px);
+			}
+			.switch.on:before {
+			  	transform: rotate(45deg) translate(5px, 5px);
+			}
+			.switch .menu-toggle {
+			  	width: 100%;
+			  	height: 3px;
+			  	background: #fff;
+			  	margin: 4px auto;
+			  	transition: all 0.3s;
+			  	backface-visibility: hidden;
+			}
+			.switch.on .menu-toggle {
+			  	opacity: 0;
+			}
+			.switch:before, .switch:after {
+			  	content: "";
+			  	display: block;
+			  	height: 3px;
+			  	background: #fff;
+			  	transition: all 0.3s;
+			  	backface-visibility: hidden;
+			}
+		}
+	}
+	/*Esconde text-menu*/
+	.hidde {
+		visibility: hidden;
+	}
+	#overlay-menu {
+		position: fixed;
+		z-index: 12;
+	  width: 100%;
+	  height: 100%;
+	  top: 0;
+	  left: 0;
+	  background-color: rgb(59, 46, 41);
+	  padding-top: 32%;
+	  @include transform(translateX(-100%));
+	  @include transition(transform .5s ease);
+	  ul {
+	  	list-style: none;
+	  	li {
+				height: 70px;
+				font-size: 18px;
+				font-size: rem(18px);
+				font-family: "trajan-pro-3";
+				text-transform: uppercase;
+				.separador {
+					border-bottom: 1px solid #8d744a;
+				  width: 20%;
+				  margin: 0 auto;
+				  padding-top: 18px;
+				}
+	  	}
+	  }
+	}
+	.open {
+		@include transform(translateX(0)!important);
+	}
 	.site-content {
 		> section {
 				padding: 42px 0;
@@ -1723,6 +1813,94 @@ footer {
 				p {
 					font-size: 15px!important;
 					font-family: "Museo-sans";
+				}
+			}
+		}
+	}
+	/*BLOG*/
+	.site-content {
+		.content-blog {
+			padding: 25% 12% 10%;
+			h2.title {
+				font-size: 24px;
+				font-size: rem(24px);
+				padding-left: 2%;
+			}
+			.separador {
+				width: 25%;
+				margin-left: 2%;
+			}
+			#menu-blog {
+				nav {
+					padding: 10px 0 15px;
+					padding-left: 2%;
+					a {
+						display: inline-block;
+						margin-bottom: 3%;
+						padding: 5px 14px;
+					}
+				}
+			}
+			.post {
+				padding-bottom: 25%;
+				&:first-child { 
+					border: none;
+				}
+				.imagen-movil {
+					width: 100%;
+					height: 500px;
+					background-position: center;
+  				background-repeat: no-repeat;
+				}
+				.texto {
+					padding-top: 15%;
+					.parrafo {
+						padding-top: 8%;
+						line-height: 1.8;
+						font-size: 16px;
+					}
+					.fecha {
+						font-size: 14px!important;
+						margin-bottom: 18px;
+					}
+				}
+				.tags {
+					padding-bottom: 7%;
+				}
+				.botons {
+					button {
+						width: 100%;
+						background-color: #A05324;
+						@include transition(none);
+						border-color: #A05324;
+						height: 50px;
+						a {
+							color: #fff;
+							font-size: 22px;
+						}
+					}
+					.social {
+						padding-top: 25px;
+						.fecha {
+							font-size: 20px!important;
+  						margin-top: 5px;
+						}
+					}
+				}
+			}
+			#pagination {
+				ul {
+					text-align: center;
+					li {
+						display: inline-block;
+						a {
+							font-size: 27px;
+						}
+						&.active a {
+							border: none;
+							font-weight: lighter;
+						}
+					}
 				}
 			}
 		}

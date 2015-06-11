@@ -7169,6 +7169,7 @@ footer .col-md-3 p a:hover {
 */
 .site-content .content-blog {
   padding: 132px 237px;
+  padding: 10% 17%;
 }
 .site-content .content-blog h2 {
   color: #8d744a;
@@ -8023,7 +8024,7 @@ footer .col-md-3 p a:hover {
     top: 0;
     left: 0;
     background-color: #3b2e29;
-    padding-top: 120px;
+    padding-top: 32%;
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
@@ -8039,6 +8040,7 @@ footer .col-md-3 p a:hover {
   #overlay-menu ul li {
     height: 70px;
     font-size: 18px;
+    font-size: 1.28571rem;
     font-family: "trajan-pro-3";
     text-transform: uppercase;
   }
@@ -8271,6 +8273,89 @@ footer .col-md-3 p a:hover {
   footer ul .col-md-3 p {
     font-size: 15px !important;
     font-family: "Museo-sans";
+  }
+
+  /*BLOG*/
+  .site-content .content-blog {
+    padding: 25% 12% 10%;
+  }
+  .site-content .content-blog h2.title {
+    font-size: 24px;
+    font-size: 1.71429rem;
+    padding-left: 2%;
+  }
+  .site-content .content-blog .separador {
+    width: 25%;
+    margin-left: 2%;
+  }
+  .site-content .content-blog #menu-blog nav {
+    padding: 10px 0 15px;
+    padding-left: 2%;
+  }
+  .site-content .content-blog #menu-blog nav a {
+    display: inline-block;
+    margin-bottom: 3%;
+    padding: 5px 14px;
+  }
+  .site-content .content-blog .post {
+    padding-bottom: 25%;
+  }
+  .site-content .content-blog .post:first-child {
+    border: none;
+  }
+  .site-content .content-blog .post .imagen-movil {
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .site-content .content-blog .post .texto {
+    padding-top: 15%;
+  }
+  .site-content .content-blog .post .texto .parrafo {
+    padding-top: 8%;
+    line-height: 1.8;
+    font-size: 16px;
+  }
+  .site-content .content-blog .post .texto .fecha {
+    font-size: 14px !important;
+    margin-bottom: 18px;
+  }
+  .site-content .content-blog .post .tags {
+    padding-bottom: 7%;
+  }
+  .site-content .content-blog .post .botons button {
+    width: 100%;
+    background-color: #A05324;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    border-color: #A05324;
+    height: 50px;
+  }
+  .site-content .content-blog .post .botons button a {
+    color: #fff;
+    font-size: 22px;
+  }
+  .site-content .content-blog .post .botons .social {
+    padding-top: 25px;
+  }
+  .site-content .content-blog .post .botons .social .fecha {
+    font-size: 20px !important;
+    margin-top: 5px;
+  }
+  .site-content .content-blog #pagination ul {
+    text-align: center;
+  }
+  .site-content .content-blog #pagination ul li {
+    display: inline-block;
+  }
+  .site-content .content-blog #pagination ul li a {
+    font-size: 27px;
+  }
+  .site-content .content-blog #pagination ul li.active a {
+    border: none;
+    font-weight: lighter;
   }
 }
 /*
