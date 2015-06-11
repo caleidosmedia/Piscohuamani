@@ -8459,6 +8459,67 @@ footer .col-md-3 p a:hover {
     font-size: 18px;
     padding-left: 12%;
   }
+
+  /*BLOG POST*/
+  #blog-post .container {
+    padding: 25% 12% 15%;
+  }
+  #blog-post .container h1 {
+    color: #8d744a;
+    font-family: "trajan-pro-3";
+    font-size: 21px;
+  }
+  #blog-post .container .separador {
+    border-bottom: 1px solid #8d744a;
+    padding-top: 2%;
+    width: 25%;
+  }
+  #blog-post .container .breadcrumb {
+    padding: 10% 0;
+  }
+  #blog-post .container .breadcrumb ul li a,
+  #blog-post .container .breadcrumb ul li span {
+    padding: 0 6%;
+    font-size: 20px;
+    font-size: 1.42857rem;
+  }
+  #blog-post .container .breadcrumb ul li a {
+    font-weight: 300;
+  }
+  #blog-post .container .imagen-blog-post {
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #blog-post .container .texto .fecha {
+    font-size: 14px;
+  }
+  #blog-post .container .texto p {
+    line-height: 1.9;
+  }
+  #blog-post .container .texto .gorro {
+    margin: 10% 0;
+  }
+  #blog-post .container .texto .gorro .col-sm-1 {
+    text-align: center;
+  }
+  #blog-post .container .texto .gorro p {
+    padding: 10% 5%;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  #blog-post .container .botons {
+    text-align: center;
+    padding-top: 15%;
+  }
+  #blog-post .container .botons .social {
+    float: none;
+    display: inline-block;
+  }
+  #blog-post .container .botons .social p {
+    font-size: 20px;
+  }
 }
 /*
 	Utilities

@@ -2019,7 +2019,70 @@ footer {
 			}
 		}
 	}
-
+	/*BLOG POST*/
+	#blog-post {
+		.container {
+			padding: 25% 12% 15%;
+			h1 {
+				color: #8d744a;
+				font-family: "trajan-pro-3";
+				font-size: 21px;
+			}
+			.separador {
+				border-bottom:1px solid #8d744a;
+				padding-top:2%;
+				width: 25%;
+			}
+			.breadcrumb {
+				padding: 10% 0;
+				ul li a, 
+				ul li span {
+					padding: 0 6%;
+  				font-size: 20px;
+  				font-size: rem(20px)
+				}
+				ul li a {
+					font-weight: 300;
+				}
+			}
+			.imagen-blog-post {
+				width: 100%;
+				height: 500px;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+			.texto {
+				.fecha {
+					font-size: 14px;
+				}
+				p {
+					line-height: 1.9;
+				}
+				.gorro {
+					margin: 10% 0;
+					.col-sm-1 {
+						text-align: center;
+					}
+					p {
+						padding: 10% 5%;
+						font-size: 18px;
+						line-height: 1.5;
+					}
+				}
+			}
+			.botons {
+				text-align: center;
+				padding-top: 15%;
+				.social {
+					float: none;
+					display: inline-block;
+					p {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
 }
 /*
 	Utilities
