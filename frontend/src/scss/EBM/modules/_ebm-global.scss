@@ -2100,6 +2100,41 @@ footer {
 			}
 		}
 	}
+	/*CONTACT*/
+	#container-contact {
+		padding: 28% 15% 15%;
+		display: block;
+		text-align: center;
+		min-height: 700px; 
+		.formulario {
+			padding-top: 15%;
+			textarea,
+			input {
+				width: 100%;
+				margin: 0;
+				font-size: 20px;
+			}
+			input {
+				margin-bottom: 15px;
+			}
+			textarea {
+				margin-top: 0;
+				font-size: 20px;
+				padding-top: 8px;
+				height: 250px;
+			}
+			button {
+				width: 100%;
+				right: 0;
+				height: 50px;
+				background-color: #8D744A;
+				@include transition(none);
+				border: 1px solid #fff;
+				font-size: 20px;
+  			font-weight: 400;
+			}
+		}
+	}
 }
 /*
 	Utilities

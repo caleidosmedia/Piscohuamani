@@ -8534,6 +8534,44 @@ footer .col-md-3 p a:hover {
     padding: 10% 0 7%;
     font-size: 16px;
   }
+
+  /*CONTACT*/
+  #container-contact {
+    padding: 28% 15% 15%;
+    display: block;
+    text-align: center;
+    min-height: 700px;
+  }
+  #container-contact .formulario {
+    padding-top: 15%;
+  }
+  #container-contact .formulario textarea,
+  #container-contact .formulario input {
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+  }
+  #container-contact .formulario input {
+    margin-bottom: 15px;
+  }
+  #container-contact .formulario textarea {
+    margin-top: 0;
+    font-size: 20px;
+    padding-top: 8px;
+    height: 250px;
+  }
+  #container-contact .formulario button {
+    width: 100%;
+    right: 0;
+    height: 50px;
+    background-color: #8D744A;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    border: 1px solid #fff;
+    font-size: 20px;
+    font-weight: 400;
+  }
 }
 /*
 	Utilities
