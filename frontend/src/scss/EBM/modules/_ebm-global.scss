@@ -1209,6 +1209,7 @@ footer {
 */
 #media-kit {
 	padding: 110px 234px;
+	padding: 9% 17%;
 	h1:first-child {
 		color: #8d744a;
 		font-family: "trajan-pro-3";
@@ -1839,6 +1840,7 @@ footer {
 						display: inline-block;
 						margin-bottom: 3%;
 						padding: 5px 14px;
+						font-size: 15px;
 					}
 				}
 			}
@@ -1925,6 +1927,7 @@ footer {
 					a {
 						margin-bottom: 8px;
 						display: inline-block;
+						font-size: 15px;
 					}
 				}
 			}
@@ -1962,6 +1965,61 @@ footer {
 			}
 		}
 	}	
+	/*MEDIA-KIT*/
+	#media-kit {
+		padding: 25% 12% 15%;
+		.container {
+			h1,
+			h2 {
+				font-size: 22px;
+			}
+			#menu-blog {
+				nav {
+					padding-top: 6%;
+					padding-left: 5%;
+					a {
+						display: inline-block;
+  					margin-bottom: 7px;
+  					font-size: 15px;
+					}
+				}
+			}
+			#downloads {
+				nav {
+					padding: 5% 5% 10%;
+					div {
+						float: none;
+						padding-bottom: 15px;
+						a {
+							font-size: 16px;
+						}
+						p {
+							font-size: 21px;
+							margin-bottom: 5px;
+						}
+					}
+				}
+			}
+			.panel-group {
+				padding-top: 7%;
+				.panel-default {
+					border: none;
+					.panel-title a {
+						img {
+							float: left;
+							width: 20px;
+							margin-top: 5px;
+						}
+						p {
+							font-size: 18px;
+							padding-left: 12%;
+						}
+					}
+				}
+			}
+		}
+	}
+
 }
 /*
 	Utilities

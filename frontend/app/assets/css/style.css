@@ -7640,6 +7640,7 @@ footer .col-md-3 p a:hover {
 */
 #media-kit {
   padding: 110px 234px;
+  padding: 9% 17%;
 }
 #media-kit h1:first-child {
   color: #8d744a;
@@ -8297,6 +8298,7 @@ footer .col-md-3 p a:hover {
     display: inline-block;
     margin-bottom: 3%;
     padding: 5px 14px;
+    font-size: 15px;
   }
   .site-content .content-blog .post {
     padding-bottom: 25%;
@@ -8380,6 +8382,7 @@ footer .col-md-3 p a:hover {
   #faqs .container #menu-blog nav a {
     margin-bottom: 8px;
     display: inline-block;
+    font-size: 15px;
   }
   #faqs .container .section {
     padding-top: 10%;
@@ -8408,6 +8411,53 @@ footer .col-md-3 p a:hover {
   }
   #faqs .container .section .panel-body {
     padding: 0% 6% 5% 10%;
+  }
+
+  /*MEDIA-KIT*/
+  #media-kit {
+    padding: 25% 12% 15%;
+  }
+  #media-kit .container h1,
+  #media-kit .container h2 {
+    font-size: 22px;
+  }
+  #media-kit .container #menu-blog nav {
+    padding-top: 6%;
+    padding-left: 5%;
+  }
+  #media-kit .container #menu-blog nav a {
+    display: inline-block;
+    margin-bottom: 7px;
+    font-size: 15px;
+  }
+  #media-kit .container #downloads nav {
+    padding: 5% 5% 10%;
+  }
+  #media-kit .container #downloads nav div {
+    float: none;
+    padding-bottom: 15px;
+  }
+  #media-kit .container #downloads nav div a {
+    font-size: 16px;
+  }
+  #media-kit .container #downloads nav div p {
+    font-size: 21px;
+    margin-bottom: 5px;
+  }
+  #media-kit .container .panel-group {
+    padding-top: 7%;
+  }
+  #media-kit .container .panel-group .panel-default {
+    border: none;
+  }
+  #media-kit .container .panel-group .panel-default .panel-title a img {
+    float: left;
+    width: 20px;
+    margin-top: 5px;
+  }
+  #media-kit .container .panel-group .panel-default .panel-title a p {
+    font-size: 18px;
+    padding-left: 12%;
   }
 }
 /*
