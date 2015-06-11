@@ -7757,11 +7757,8 @@ footer .col-md-3 p a:hover {
 /*
 	Terms
 */
-#terms {
-  padding: 106px 0 124px;
-}
-#terms .container {
-  padding: 0 50px;
+#terms .contenedor {
+  padding: 10% 17%;
 }
 #terms h1 {
   color: #8d744a;
@@ -8519,6 +8516,23 @@ footer .col-md-3 p a:hover {
   }
   #blog-post .container .botons .social p {
     font-size: 20px;
+  }
+
+  /*TERMS*/
+  #terms .contenedor {
+    padding: 25% 12% 15%;
+  }
+  #terms .contenedor h1 {
+    font-size: 21px;
+  }
+  #terms .contenedor p {
+    font-size: 15px;
+    line-height: 1.9;
+    padding-bottom: 7%;
+  }
+  #terms .contenedor .sub-title {
+    padding: 10% 0 7%;
+    font-size: 16px;
   }
 }
 /*

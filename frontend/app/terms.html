@@ -15,37 +15,58 @@
     <div class="site-wrapper"> <!-- Body -->
       <header class="site-menu">
         <div class="contenedor-menu text-center">
-          <nav class="clearfix">
-            <a href="index.html" data-scroll="" class="logo-link">
+          <nav class="nav-desktop clearfix smooth hidden-xs">
+            <a href="index.html" class="logo-link">
               <div><img src="assets/img/iconos-logos/logo-head-pisco-huamani.png" alt=""></div>
               <div><img src="assets/img/iconos-logos/logo-head-seleccion-pisco-huamani.png" alt=""></div>
             </a>
-            <a href="#about-us" data-scroll="" class="about-link">
+            <a href="#about-us" class="about-link">
               <div>ABOUT US</div>
               <div>ABOUT US</div> 
             </a>
-            <a href="#the-goods" data-scroll="" class="goods-link">
+            <a href="#the-goods" class="goods-link">
               <div>THE GOODS</div>
               <div>THE GOODS</div>
             </a>
-            <a href="#made-drink" data-scroll="" class="made-link">
+            <a href="#make-drink" class="made-link">
               <div>MAKE A DRINK</div>
               <div>MAKE A DRINK</div>
             </a>
-            <a href="events.html" data-scroll="" class="events-link">
+            <a href="#events" class="events-link">
               <div>EVENTS</div>
-              <div>EVENTS</div> 
+              <div>EVENTS</div>
             </a>
-            <a href="#follow-us" data-scroll="" class="follow-link">
+            <a href="#follow-us" class="follow-link">
               <div>FOLLOW US</div>
               <div>FOLLOW US</div>
-            </a> 
+            </a>
+          </nav>
+          <nav class="nav-movil hidden-lg hidden-md hidden-sm"><!--movil-->
+            <a href="index.html" class="logo-link"> 
+              <img src="assets/img/iconos-logos/logo-head-pisco-huamani.png" alt="">
+            </a>
+            <p class="text-menu text-white">MENÚ</p>
+            <p class="text-menu text-white hidde">CERRAR</p>
+            <div class="switch">
+              <div class="menu-toggle"></div>
+            </div>
           </nav>
         </div>
       </header>
       <main class="site-content">
+        <section id="overlay-menu" class="hidden-lg hidden-md hidden-sm">
+          <ul class="text-white text-center p-0">
+            <li><a href="index.html">HOME</a><div class="separador"></div>
+            </li>
+            <li><a href="blog.html">BLOG</a><div class="separador"></div></li>
+            <li><a href="faqs.html">FAQS</a><div class="separador"></div></li>
+            <li><a href="media-kit.html">MEDIA KIT</a><div class="separador"></div></li>
+            <li><a href="terms.html">TERMS OF USE</a><div class="separador"></div></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </section>
         <div id="terms">
-          <div class="container">
+          <div class="contenedor">
             <h1 class="serif-light">TERMS OF USE</h1>
             <div class="separador"></div>
             <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
@@ -55,10 +76,10 @@
             <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quisquam doloribus perferendis eligendi earum libero at enim iusto corrupti voluptate dolores aspernatur in ipsa cupiditate fuga, eos, ab velit quaerat.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quisquam doloribus perferendis eligendi earum libero at enim iusto corrupti voluptate dolores aspernatur in ipsa cupiditate fuga, eos, ab velit quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, iusto sint sapiente ratione voluptatum, dolorem aperiam eaque ut maiores quod quaerat repudiandae modi illum obcaecati veniam. Vitae eligendi adipisci, odit.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quisquam doloribus perferendis eligendi earum libero at enim iusto corrupti voluptate dolores aspernatur in ipsa cupiditate fuga, eos, ab velit quaerat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quisquam doloribus perferendis eligendi earum libero at enim iusto corrupti voluptate dolores aspernatur in ipsa cupiditate fuga, eos, ab velit quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum facilis sequi, vel explicabo. Autem obcaecati perferendis hic necessitatibus sunt nihil iste, esse cupiditate, consectetur officiis fugiat aliquam quidem ex tenetur.</p>
+            <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quisquam doloribus perferendis eligendi earum libero at enim iusto corrupti voluptate dolores aspernatur in ipsa cupiditate fuga, eos, ab velit quaerat.</p>
+            <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quisquam doloribus perferendis eligendi earum libero at enim iusto corrupti voluptate dolores aspernatur in ipsa cupiditate fuga, eos, ab velit quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum facilis sequi, vel explicabo. Autem obcaecati perferendis hic necessitatibus sunt nihil iste, esse cupiditate, consectetur officiis fugiat aliquam quidem ex tenetur.</p>
 
-            <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <p class="sub-title hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quisquam doloribus perferendis eligendi earum libero at enim iusto corrupti voluptate dolores aspernatur in ipsa cupiditate fuga, eos, ab velit quaerat.</p>
           </div>
         </div>
@@ -97,23 +118,23 @@
       </main> 
       <footer>
         <ul class="row type-style-none family-museosans pd-5-15">
-          <li class="col-md-6">
-            <div class="float-left footer-logo">
+          <li class="col-md-6 col-xs-12">
+            <div class="col-xs-6 p-0 footer-logo">
               <img src="assets/img/iconos-logos/icono-H-footer.png" class="w-100" alt="">
             </div>
-            <div class="float-left texto">
+            <div class="col-xs-9 pr-0 texto">
               <p>info@piscohuamani.com</p>
               <p>(+51) 456 - 34562</p>
               <p>© 2015 Huamaní; Incorporated</p>
-              <p>Ramón Ribeyro 188, Miraflores. Perú</p>
+              <p>Ramón Ribeyro 188, Miraflores. PERÚ</p>
             </div>
           </li>
-          <li class="col-md-3">
+          <li class="col-md-3 col-xs-6">
             <p><a href="blog.html">BLOG</a></p>
             <p><a href="faqs.html">FAQs</a></p>
             <p><a href="terms.html">TERMS OF USE</a></p>
           </li> 
-          <li class="col-md-3">
+          <li class="col-md-3 col-xs-6">
             <p><a href="media-kit.html">MEDIA KIT</a></p>
             <p><a href="contact.html">CONTACT US</a></p>
           </li>
@@ -121,9 +142,6 @@
       </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="../src/js/smooth-scroll.min.js"></script>
-    <script>
-        smoothScroll.init();
-    </script>
+    <script src="assets/js/menu-movil-control.js"></script>
   </body>
 </html>

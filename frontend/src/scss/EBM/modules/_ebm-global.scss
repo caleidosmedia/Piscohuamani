@@ -1329,9 +1329,8 @@ footer {
 	Terms
 */
 #terms {
-	padding: 106px 0 124px;
-	.container {
-		padding: 0 50px;
+	.contenedor {
+		padding: 10% 17%;
 	} 
 	h1 {
 		color: #8d744a;
@@ -2080,6 +2079,24 @@ footer {
 						font-size: 20px;
 					}
 				}
+			}
+		}
+	}
+	/*TERMS*/
+	#terms {
+		.contenedor {
+			padding: 25% 12% 15%;
+			h1 {
+				font-size: 21px;
+			}
+			p {
+				font-size: 15px;
+				line-height: 1.9;
+				padding-bottom: 7%;
+			}
+			.sub-title {
+				padding: 10% 0 7%;
+				font-size: 16px;
 			}
 		}
 	}
