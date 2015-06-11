@@ -7623,6 +7623,7 @@ footer .col-md-3 p a:hover {
 #faqs .section .panel-title a img {
   width: 21px;
   margin-right: 3%;
+  float: left;
 }
 #faqs .section .panel-body {
   padding-left: 7%;
@@ -8356,6 +8357,57 @@ footer .col-md-3 p a:hover {
   .site-content .content-blog #pagination ul li.active a {
     border: none;
     font-weight: lighter;
+  }
+
+  /*FAQS*/
+  #faqs .container {
+    padding: 25% 12% 10%;
+  }
+  #faqs .container h1 {
+    font-size: 21px;
+    padding-left: 2%;
+  }
+  #faqs .container .separador {
+    width: 21%;
+    margin-left: 2%;
+  }
+  #faqs .container #menu-blog {
+    padding-left: 2%;
+  }
+  #faqs .container #menu-blog nav {
+    padding-top: 10px;
+  }
+  #faqs .container #menu-blog nav a {
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+  #faqs .container .section {
+    padding-top: 10%;
+  }
+  #faqs .container .section:nth-child(0) {
+    padding-top: 5%;
+  }
+  #faqs .container .section h2 {
+    font-size: 20px;
+    padding-bottom: 5%;
+  }
+  #faqs .container .section .panel-group {
+    padding-top: 2%;
+  }
+  #faqs .container .section .panel-title a img {
+    width: 15px;
+    margin-top: 10px;
+  }
+  #faqs .container .section .panel-title a img:nth-child(2) {
+    -webkit-transform: rotate(90deg);
+  }
+  #faqs .container .section .panel-title a p {
+    padding-left: 9%;
+    padding-left: 10%;
+    line-height: 1.3;
+  }
+  #faqs .container .section .panel-body {
+    padding: 0% 6% 5% 10%;
   }
 }
 /*
