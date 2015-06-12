@@ -66,7 +66,19 @@
             <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </section> 
-        <div id="container-contact" class="">
+        <div id="container-contact" class="minhp-100 hidden-xs">
+          <h3 class="text-white">GET IN TOUCH</h3>
+          <div class="formulario">
+            <input type="text" pattern="[0-9]*" maxlength="25" class="name" placeholder="NAME" name="name" required>
+            <input type="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" maxlength="25" class="e-mail" placeholder="E-MAIL" name="e-mail" required>
+            <p><textarea class="message" placeholder="MESSAGE" name="textarea" required></textarea></p>
+            <button class="text-white send" type="submit" disabled="disabled">
+              <p class="m-0">SEND</p>
+              <div class="overlay"></div>
+            </button>
+          </div>
+        </div>
+        <div id="container-contact" class="hidden-lg hidden-md hidden-sm">
           <h3 class="text-white">GET IN TOUCH</h3>
           <div class="formulario">
             <input type="text" pattern="[0-9]*" maxlength="25" class="name" placeholder="NAME" name="name" required>

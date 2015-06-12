@@ -1007,7 +1007,6 @@ footer {
 	Events
 */
 #slider-events {
-	background-image: url(../img/fotos/fotos-eventos/2-grande.png); 
 	height: 550px;
   background-size: cover;
   @extend #events;
@@ -2097,6 +2096,81 @@ footer {
 			.sub-title {
 				padding: 10% 0 7%;
 				font-size: 16px;
+			}
+		}
+	}
+	/*EVENTS*/
+	#slider-events {
+		position: relative;
+		background-position: left;
+  	background-size: cover;
+		.event-movil {
+			padding: 42px 16% 50px;
+  		position: absolute;
+  		bottom: 15%;
+			h2 {
+				font-size: 22px;
+				line-height: 1.3;
+				position: relative;
+			}
+			h3 {
+				font-size: 25px;
+				font-style: normal;
+			}
+			.separador {
+				border-bottom: 2px solid #fff!important;
+				width: 90%;
+				margin-bottom: 12%;
+				margin-top: 6%;
+			}
+			.fecha-movil {
+				font-size: 20px;
+				font-weight: lighter;
+			}
+		}
+	}
+	#galeria {
+		padding: 15% 0;
+		.container {
+			padding: 0;
+			.texto-evento {
+				padding: 0 16%;
+				p {
+					font-size: 15px;
+				}
+				h1 {
+					font-size: 22px;
+				}
+				.fecha {
+					font-size: 18px!important;
+  				font-weight: 300;
+				}
+			}
+			.grid {
+				padding: 10% 7% 7%;
+				ul li {
+					padding: 3px 3px 3px;
+				}
+				#overlay {
+					img {
+						width: 85%;
+					}
+					a {
+						top: 18%;
+						right: 5%;
+						font-size: 50px;
+					}
+					.controls {
+						width: 25px;
+						@include transition(none);
+					}
+					.next-overlay {
+						right: 25%;
+					}
+					.previous-overlay {
+						left: 25%;
+					}
+				}
 			}
 		}
 	}
