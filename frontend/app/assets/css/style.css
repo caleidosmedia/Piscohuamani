@@ -8599,10 +8599,14 @@ footer .col-md-3 p a:hover {
     font-size: 50px;
   }
   #galeria .container .grid #overlay .controls {
+    top: 70%;
     width: 25px;
     -webkit-transition: none;
     -moz-transition: none;
     transition: none;
+  }
+  #galeria .container .grid #overlay .controls:hover {
+    opacity: 1;
   }
   #galeria .container .grid #overlay .next-overlay {
     right: 25%;

@@ -2161,8 +2161,12 @@ footer {
 						font-size: 50px;
 					}
 					.controls {
+						top: 70%;
 						width: 25px;
 						@include transition(none);
+						&:hover {
+							opacity: 1;
+						}
 					}
 					.next-overlay {
 						right: 25%;
