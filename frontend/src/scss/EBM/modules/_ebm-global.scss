@@ -336,8 +336,8 @@ $separator-height-control: 2px;
 		div.texto {
 			font-family: times;
 			h1 {
-				font-size: 65px;
-				font-size: rem(65px);
+				font-size: 60px;
+				font-size: rem(60px);
 			}
 			h3 {
 			font-style: italic;
@@ -1793,6 +1793,7 @@ footer {
 				width: 100%;
 				height: 150px;
 				padding: 7%;
+				@include transition(none);
 			}
 		}
 	}
