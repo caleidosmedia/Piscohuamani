@@ -163,7 +163,7 @@ $separator-height-control: 2px;
 			  font-size: 14px;
 			  padding: 3px 0;
 			  font-weight: 300;
-			  &:first-child,
+			  &.active-btn,
 			  &:focus,
 			  &:active {
 			  	border-color: #8d744a;
@@ -520,6 +520,9 @@ $make-drink-gallery-height-control: 560px;
 				li {
 					font-size: 18.2px;
 					font-size: rem(18.2px);
+					&:before {
+						content: "-"
+					}
 				}
 			}
 			p {
@@ -539,6 +542,14 @@ $make-drink-gallery-height-control: 560px;
 #events {
 	@extend #the-goods; 
 	background-size: cover;
+	.overlay-events {
+		width: 100%;
+		left: 0;
+		top: 0;
+		position: absolute;
+		background-color: rgba(0,0,0,0.3);
+		height: 100%;
+	}
 	.container-sm {
 		margin-left: 280px;
 		padding-top: 190px;
@@ -555,6 +566,9 @@ $make-drink-gallery-height-control: 560px;
 	}
 	.flickity-viewport {
 		min-height: 835px;
+	}
+	.gallery-wrapper {
+		position: relative;
 	}
 	.gallery {
 		-webkit-box-shadow: none;
@@ -2253,6 +2267,9 @@ footer {
 }
 .float-left {
 	float: left; 
+}
+.display-ib {
+	display: inline-block;
 }
 .bg-p-brown {
 	background-color: #4e3227;

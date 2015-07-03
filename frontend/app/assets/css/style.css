@@ -6543,7 +6543,7 @@ body::-webkit-scrollbar {
   padding: 3px 0;
   font-weight: 300;
 }
-#formulario .action .btn-group .btn-default:first-child, #formulario .action .btn-group .btn-default:focus, #formulario .action .btn-group .btn-default:active {
+#formulario .action .btn-group .btn-default.active-btn, #formulario .action .btn-group .btn-default:focus, #formulario .action .btn-group .btn-default:active {
   border-color: #8d744a;
   color: #8d744a;
 }
@@ -6935,6 +6935,9 @@ body::-webkit-scrollbar {
   font-size: 18.2px;
   font-size: 1.3rem;
 }
+#make-drink .gallery .gallery-cell ul li:before {
+  content: "-";
+}
 #make-drink .gallery .gallery-cell p {
   font-size: 18.2px;
   font-size: 1.3rem;
@@ -6953,6 +6956,14 @@ body::-webkit-scrollbar {
 #events, #slider-events {
   background-size: cover;
 }
+#events .overlay-events, #slider-events .overlay-events {
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
 #events .container-sm, #slider-events .container-sm {
   margin-left: 280px;
   padding-top: 190px;
@@ -6969,6 +6980,9 @@ body::-webkit-scrollbar {
 }
 #events .flickity-viewport, #slider-events .flickity-viewport {
   min-height: 835px;
+}
+#events .gallery-wrapper, #slider-events .gallery-wrapper {
+  position: relative;
 }
 #events .gallery, #slider-events .gallery {
   -webkit-box-shadow: none;
@@ -8705,6 +8719,10 @@ footer .col-md-3 p a:hover {
 
 .float-left {
   float: left;
+}
+
+.display-ib {
+  display: inline-block;
 }
 
 .bg-p-brown {
