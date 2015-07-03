@@ -6935,6 +6935,9 @@ body::-webkit-scrollbar {
   font-size: 18.2px;
   font-size: 1.3rem;
 }
+#make-drink .gallery .gallery-cell ul li:before {
+  content: "-";
+}
 #make-drink .gallery .gallery-cell p {
   font-size: 18.2px;
   font-size: 1.3rem;

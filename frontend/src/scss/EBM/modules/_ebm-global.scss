@@ -520,6 +520,9 @@ $make-drink-gallery-height-control: 560px;
 				li {
 					font-size: 18.2px;
 					font-size: rem(18.2px);
+					&:before {
+						content: "-"
+					}
 				}
 			}
 			p {
