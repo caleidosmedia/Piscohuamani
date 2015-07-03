@@ -13,39 +13,62 @@
   <script>try{Typekit.load();}catch(e){}</script>
   <body>
     <div class="site-wrapper"> <!-- Body -->
-      <div class="site-menu">
+      <header class="site-menu">
         <div class="contenedor-menu text-center">
-          <nav class="clearfix">
-            <a href="index.html" data-scroll="" class="logo-link">
+          <nav class="nav-desktop clearfix smooth hidden-xs">
+            <a href="index.html" class="logo-link">
               <div><img src="assets/img/iconos-logos/logo-head-pisco-huamani.png" alt=""></div>
               <div><img src="assets/img/iconos-logos/logo-head-seleccion-pisco-huamani.png" alt=""></div>
             </a>
-            <a href="#about-us" data-scroll="" class="about-link">
+            <a href="#about-us" class="about-link">
               <div>ABOUT US</div>
               <div>ABOUT US</div> 
             </a>
-            <a href="#the-goods" data-scroll="" class="goods-link">
+            <a href="#the-goods" class="goods-link">
               <div>THE GOODS</div>
               <div>THE GOODS</div>
             </a>
-            <a href="#made-drink" data-scroll="" class="made-link">
+            <a href="#make-drink" class="made-link">
               <div>MAKE A DRINK</div>
               <div>MAKE A DRINK</div>
             </a>
-            <a href="events.html" data-scroll="" class="events-link">
+            <a href="events.html" class="events-link">
               <div>EVENTS</div>
-              <div>EVENTS</div> 
+              <div>EVENTS</div>
             </a>
-            <a href="#follow-us" data-scroll="" class="follow-link">
+            <a href="#follow-us" class="follow-link">
               <div>FOLLOW US</div>
               <div>FOLLOW US</div>
-            </a> 
+            </a>
+          </nav>
+          <nav class="nav-movil hidden-lg hidden-md hidden-sm"><!--movil-->
+            <a href="index.html" class="logo-link"> 
+              <img src="assets/img/iconos-logos/logo-head-pisco-huamani.png" alt="">
+            </a>
+            <p class="text-menu text-white">MENÚ</p>
+            <p class="text-menu text-white hidde">CERRAR</p>
+            <div class="switch">
+              <div class="menu-toggle"></div>
+            </div>
           </nav>
         </div>
-      </div>
-      <div class="site-content">
+      </header>
+      <main class="site-content">
+        <section id="overlay-menu" class="hidden-lg hidden-md hidden-sm">
+          <ul class="text-white text-center p-0">
+            <li><a href="index.html">HOME</a><div class="separador"></div>
+            </li>
+            <li><a href="blog.html">BLOG</a><div class="separador"></div></li>
+            <li><a href="faqs.html">FAQS</a><div class="separador"></div></li>
+            <li><a href="media-kit.html">MEDIA KIT</a><div class="separador"></div></li>
+            <li><a href="terms.html">TERMS OF USE</a><div class="separador"></div></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </section>
         <div id="blog-post">
           <div class="container">
+            <h1 clas="title">THE HUAMANI LIFE</h1>
+            <div class="separador"></div>
             <div class="breadcrumb">
               <ul class="type-style-none pl-0 clearfix">
                 <li><a href="#" class="pl-0">Blog</a></li>
@@ -53,20 +76,23 @@
                 <li class="active"><span>Blog post title</span></li>
               </ul>
             </div> 
-            <div class="imagen">
+            <div class="imagen hidden-xs">
               <img src="assets/img/fotos/foto-eventos.png" alt="">
             </div>
+            <div class="imagen-blog-post hidden-lg hidden-md hidden-sm" style="background:url(assets/img/fotos/foto-eventos.png)">
+            </div><!--movil-->
             <div class="texto">
-              <p>Apr 8, 2015</p>
+              <p class="fecha">Apr 8, 2015</p>
               <h2 class="serif-light">BLOG POST TITLE 1</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime! Ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime!.Sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime! Ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime!.Sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati</p>
+              <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime! Ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime!.Sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime! Ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime!.Sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati</p>
+              <p class="hidden-lg hidden-md hidden-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis aut aperiam officia atque totam quisquam quod rem fugit odit excepturi sequi saepe laudantium doloremque ea consectetur, non praesentium, illum accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt veniam voluptatem perferendis nobis asperiores atque doloremque saepe quam, esse nihil tempore aliquid, laudantium aut facere a, totam magni. Voluptate, incidunt.</p><!---movil-->
               <div class="gorro clearfix ">
                   <div class="col-sm-1"><img src="assets/img/iconos-logos/quote4.png" alt=""></div>
                   <p class="col-sm-11">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, quibusdam nisi explicabo in similique molestiae veniam commodi pariatur labore ullam.</p>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime! Ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime!.Sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime! Ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime!.Sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati</p>
+              <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime! Ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime!.Sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime! Ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime!.Sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime! Ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime!.Sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime! Ducimus commodi.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime! Ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime!.Sequi vitae natus totam.</p>
+              <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime! Ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime!.Sequi vitae natus totam.</p>
             </div>
              <div class="botons clearfix">
                 <div class="social clearfix">
@@ -116,38 +142,35 @@
             </div>
           </div>
         </section>
-      </div> 
+      </main> 
       <footer>
-          <ul class="row type-style-none family-museosans pd-5-15">
-              <li class="col-md-6">
-                  <div class="float-left footer-logo">
-                      <img src="assets/img/iconos-logos/icono-H-footer.png" class="w-100" alt="">
-                  </div>
-                  <div class="float-left texto">
-                      <p>info@piscohuamani.com</p>
-                      <p>(+51) 456 - 34562</p>
-                      <p>© 2015 Huamaní; Incorporated</p>
-                      <p>Ramón Ribeyro 188, Miraflores. Perú</p>
-                  </div> 
-              </li>
-              <li class="col-md-3">
-                  <p><a href="blog.html">BLOG</a></p>
-                  <p><a href="faqs.html">FAQs</a></p>
-                  <p><a href="terms.html">TERMS OF USE</a></p>
-              </li>
-              <li class="col-md-3">
-                  <p><a href="media-kit.html">MEDIA KIT</a></p>
-                  <p><a href="contact.html">CONTACT US</a></p>
-              </li>
-          </ul>
+        <ul class="row type-style-none family-museosans pd-5-15">
+          <li class="col-md-6 col-xs-12">
+            <div class="col-xs-6 p-0 footer-logo">
+              <img src="assets/img/iconos-logos/icono-H-footer.png" class="w-100" alt="">
+            </div>
+            <div class="col-xs-8 pr-0 texto">
+              <p>info@piscohuamani.com</p>
+              <p>(+51) 456 - 34562</p>
+              <p>© 2015 Huamaní; Incorporated</p>
+              <p>Ramón Ribeyro 188, Miraflores. PERÚ</p>
+            </div>
+          </li>
+          <li class="col-md-3 col-xs-6">
+            <p><a href="blog.html">BLOG</a></p>
+            <p><a href="faqs.html">FAQs</a></p>
+            <p><a href="terms.html">TERMS OF USE</a></p>
+          </li> 
+          <li class="col-md-3 col-xs-6">
+            <p><a href="media-kit.html">MEDIA KIT</a></p>
+            <p><a href="contact.html">CONTACT US</a></p>
+          </li>
+        </ul> 
       </footer>
     </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="js/smooth-scroll.min.js"></script>
   <script src="//use.typekit.net/wml8szi.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
-  <script>
-      smoothScroll.init();
-  </script>
+  <script src="assets/js/menu-movil-control.js"></script>
   </body>
 </html>

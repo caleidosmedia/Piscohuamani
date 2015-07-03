@@ -41,21 +41,37 @@
               <div>FOLLOW US</div>
             </a>
           </nav>
-          <nav class="nav-movil hidden-lg hidden-md hidden-sm
-          ">
-            <a href="index.html" class="logo-link">
-              <div><img src="assets/img/iconos-logos/logo-head-pisco-huamani.png" alt=""></div>
+          <nav class="nav-movil hidden-lg hidden-md hidden-sm"><!--movil-->
+            <a href="index.html" class="logo-link"> 
+              <img src="assets/img/iconos-logos/logo-head-pisco-huamani.png" alt="">
             </a>
+            <p class="text-menu text-white">MENÚ</p>
+            <p class="text-menu text-white hidde">CERRAR</p>
+            <div class="switch">
+              <div class="menu-toggle"></div>
+            </div>
           </nav>
         </div>
       </header> 
 
       
+
       <main class="site-content">
+        <section id="overlay-menu" class="hidden-lg hidden-md hidden-sm">
+          <ul class="text-white text-center p-0">
+            <li><a href="index.html">HOME</a><div class="separador"></div>
+            </li>
+            <li><a href="blog.html">BLOG</a><div class="separador"></div></li>
+            <li><a href="faqs.html">FAQS</a><div class="separador"></div></li>
+            <li><a href="media-kit.html">MEDIA KIT</a><div class="separador"></div></li>
+            <li><a href="terms.html">TERMS OF USE</a><div class="separador"></div></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </section> 
         <div class="img-principal text-center minhp-100" style="background-image: url(assets/img/fotos/foto-home.png);">
           <div class="texto text-white letter-spacing">
-            <h1>MAKING PISCO</h1>
-            <h1 class="mg-0">SINCE 1890</h1>
+            <h1 class="serif-light">MAKING PISCO</h1>
+            <h1 class="serif-light mg-0">SINCE 1890</h1>
             <p>Discover the tradition</p>
           </div>
           <div class="scroll-down">
@@ -357,7 +373,7 @@
                 <div class="icon">
                   <span class="icon-instagram">&#xea90</span>
                 </div>
-              </a> 
+              </a>
               <a href="" class="facebook">
                 <div class="overlay"></div>
                 <h1 class="m-0 text-bold">Share.</h1>
@@ -376,7 +392,7 @@
             <div class="col-xs-6 p-0 footer-logo">
               <img src="assets/img/iconos-logos/icono-H-footer.png" class="w-100" alt="">
             </div>
-            <div class="col-xs-9 pr-0 texto">
+            <div class="col-xs-8 pr-0 texto">
               <p>info@piscohuamani.com</p>
               <p>(+51) 456 - 34562</p>
               <p>© 2015 Huamaní; Incorporated</p>
@@ -400,5 +416,6 @@
     <script src="assets/js/gallery-control.js"></script>
     <script src="assets/js/scroll-control.js"></script>
     <script src="assets/js/smooth-scroll-active.js"></script>
+    <script src="assets/js/menu-movil-control.js"></script>
   </body>
 </html> 

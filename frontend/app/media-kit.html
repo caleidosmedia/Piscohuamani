@@ -15,45 +15,73 @@
       <div class="site-wrapper"> <!-- Body -->
         <header class="site-menu">
           <div class="contenedor-menu text-center">
-            <nav class="clearfix">
-              <a href="index.html" data-scroll="" class="logo-link">
+            <nav class="nav-desktop clearfix smooth hidden-xs">
+              <a href="index.html" class="logo-link">
                 <div><img src="assets/img/iconos-logos/logo-head-pisco-huamani.png" alt=""></div>
                 <div><img src="assets/img/iconos-logos/logo-head-seleccion-pisco-huamani.png" alt=""></div>
               </a>
-              <a href="#about-us" data-scroll="" class="about-link">
+              <a href="#about-us" class="about-link">
                 <div>ABOUT US</div>
                 <div>ABOUT US</div> 
               </a>
-              <a href="#the-goods" data-scroll="" class="goods-link">
+              <a href="#the-goods" class="goods-link">
                 <div>THE GOODS</div>
                 <div>THE GOODS</div>
               </a>
-              <a href="#made-drink" data-scroll="" class="made-link">
+              <a href="#make-drink" class="made-link">
                 <div>MAKE A DRINK</div>
                 <div>MAKE A DRINK</div>
               </a>
-              <a href="events.html" data-scroll="" class="events-link">
+              <a href="events.html" class="events-link">
                 <div>EVENTS</div>
-                <div>EVENTS</div> 
+                <div>EVENTS</div>
               </a>
-              <a href="#follow-us" data-scroll="" class="follow-link">
+              <a href="#follow-us" class="follow-link">
                 <div>FOLLOW US</div>
                 <div>FOLLOW US</div>
-              </a> 
+              </a>
+            </nav>
+            <nav class="nav-movil hidden-lg hidden-md hidden-sm"><!--movil-->
+              <a href="index.html" class="logo-link"> 
+                <img src="assets/img/iconos-logos/logo-head-pisco-huamani.png" alt="">
+              </a>
+              <p class="text-menu text-white">MENÚ</p>
+              <p class="text-menu text-white hidde">CERRAR</p>
+              <div class="switch">
+                <div class="menu-toggle"></div>
+              </div>
             </nav>
           </div>
         </header>
         <main class="site-content">
+          <section id="overlay-menu" class="hidden-lg hidden-md hidden-sm">
+            <ul class="text-white text-center p-0">
+              <li><a href="index.html">HOME</a><div class="separador"></div>
+              </li>
+              <li><a href="blog.html">BLOG</a><div class="separador"></div></li>
+              <li><a href="faqs.html">FAQS</a><div class="separador"></div></li>
+              <li><a href="media-kit.html">MEDIA KIT</a><div class="separador"></div></li>
+              <li><a href="terms.html">TERMS OF USE</a><div class="separador"></div></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </section> 
           <div id="media-kit">
             <div class="container">
               <h1>MEDIA KIT</h1>
               <div class="separador"></div>
               <div id="menu-blog">
-                <nav>
+                <nav class="hidden-xs">
                     <a href="#sales-info" class="smooth">SALES INFO</a>
                     <a href="#logos" class="smooth">LOGOS</a>
                     <a href="#bottle" class="smooth">BOTTLE PHOTOS</a>
                     <a href="#drink" class="smooth">DRINK PHOTOS</a>
+                    <a href="#hacienda" class="smooth">HACIENDA PHOTOS</a>
+                </nav>
+                 <nav class="hidden-lg hidden-md hidden-sm">
+                    <a href="#sales-info" class="smooth">SALES INFO</a></br>
+                    <a href="#logos" class="smooth">LOGOS</a></br>
+                    <a href="#bottle" class="smooth">BOTTLE PHOTOS</a></br>
+                    <a href="#drink" class="smooth">DRINK PHOTOS</a></br>
                     <a href="#hacienda" class="smooth">HACIENDA PHOTOS</a>
                 </nav>
               </div>
@@ -84,7 +112,7 @@
                       <a class="change-arrow" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <img id="down" src="assets/img/iconos-logos/icono-contenido-sin-desplegar.png" alt=""> 
                         <img id="up"class="hidden" src="assets/img/iconos-logos/icono-contenido-desplegado.png" alt="">
-                        LOGOS
+                        <p>LOGOS</p>
                       </a>
                     </h4>
                   </div> 
@@ -148,7 +176,7 @@
                       <a class="change-arrow" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                         <img id="down" src="assets/img/iconos-logos/icono-contenido-sin-desplegar.png" alt=""> 
                         <img id="up"class="hidden" src="assets/img/iconos-logos/icono-contenido-desplegado.png" alt="">
-                        BOTTLE PHOTOS
+                        <p>BOTTLE PHOTOS</p>
                       </a>
                     </h4>
                   </div> 
@@ -212,7 +240,7 @@
                       <a class="change-arrow" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                         <img id="down" src="assets/img/iconos-logos/icono-contenido-sin-desplegar.png" alt=""> 
                         <img id="up"class="hidden" src="assets/img/iconos-logos/icono-contenido-desplegado.png" alt="">
-                        DRINK PHOTOS
+                        <p>DRINK PHOTOS</p>
                       </a>
                     </h4>
                   </div> 
@@ -276,7 +304,7 @@
                       <a class="change-arrow" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
                         <img id="down" src="assets/img/iconos-logos/icono-contenido-sin-desplegar.png" alt=""> 
                         <img id="up"class="hidden" src="assets/img/iconos-logos/icono-contenido-desplegado.png" alt="">
-                        HACIENDA PHOTOS
+                        <p>HACIENDA PHOTOS</p>
                       </a>
                     </h4>
                   </div> 
@@ -340,7 +368,7 @@
                       <a class="change-arrow" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
                         <img id="down" src="assets/img/iconos-logos/icono-contenido-sin-desplegar.png" alt=""> 
                         <img id="up"class="hidden" src="assets/img/iconos-logos/icono-contenido-desplegado.png" alt="">
-                        LIFESTYLE PHOTOS
+                        <p>LIFESTYLE PHOTOS</p>
                       </a>
                     </h4>
                   </div> 
@@ -402,61 +430,61 @@
             </div>
           </div>
           <section id="follow-us" class="text-white text-center">
-          <div class="container">
-            <h1 class="text-left serif-light">FOLLOW US</h1>
-            <h3 class="text-left">We are just getting started</h3>
-            <div class="container-social clearfix text-left">
-              <a href="" class="facebook">
-                <div class="overlay"> </div>
-                <h1 class="m-0">Like.</h1>
-                <p>Get involved</p>
-                <div class="icon">
-                  <span class="icon-facebook">&#xea8c</span>
-                </div>
-              </a>
-              <a href="" class="facebook">
-                <div class="overlay"></div>
-                <h1 class="m-0 text-bold">Tag.</h1>
-                <p>Become a<br>#huamanifan</p>
-                <div class="icon">
-                  <span class="icon-instagram">&#xea90</span>
-                </div>
-              </a> 
-              <a href="" class="facebook">
-                <div class="overlay"></div>
-                <h1 class="m-0 text-bold">Share.</h1>
-                <p>Send us a note</p>
-                <div class="icon">
-                  <span class="icon-mail">&#xe600</span>
-                </div> 
-              </a>
+            <div class="container">
+              <h1 class="text-left serif-light">FOLLOW US</h1>
+              <h3 class="text-left">We are just getting started</h3>
+              <div class="container-social clearfix text-left">
+                <a href="" class="facebook">
+                  <div class="overlay"> </div>
+                  <h1 class="m-0">Like.</h1>
+                  <p>Get involved</p>
+                  <div class="icon">
+                    <span class="icon-facebook">&#xea8c</span>
+                  </div>
+                </a>
+                <a href="" class="facebook">
+                  <div class="overlay"></div>
+                  <h1 class="m-0 text-bold">Tag.</h1>
+                  <p>Become a<br>#huamanifan</p>
+                  <div class="icon">
+                    <span class="icon-instagram">&#xea90</span>
+                  </div>
+                </a> 
+                <a href="" class="facebook">
+                  <div class="overlay"></div>
+                  <h1 class="m-0 text-bold">Share.</h1>
+                  <p>Send us a note</p>
+                  <div class="icon">
+                    <span class="icon-mail">&#xe600</span>
+                  </div> 
+                </a>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
         </main>
         <footer>
           <ul class="row type-style-none family-museosans pd-5-15">
-            <li class="col-md-6">
-              <div class="float-left footer-logo">
-                  <img src="assets/img/iconos-logos/icono-H-footer.png" class="w-100" alt="">
+            <li class="col-md-6 col-xs-12">
+              <div class="col-xs-6 p-0 footer-logo">
+                <img src="assets/img/iconos-logos/icono-H-footer.png" class="w-100" alt="">
               </div>
-              <div class="float-left texto">
-                  <p>info@piscohuamani.com</p>
-                  <p>(+51) 456 - 34562</p>
-                  <p>© 2015 Huamaní; Incorporated</p>
-                  <p>Ramón Ribeyro 188, Miraflores. Perú</p>
-              </div> 
+              <div class="col-xs-8 pr-0 texto">
+                <p>info@piscohuamani.com</p>
+                <p>(+51) 456 - 34562</p>
+                <p>© 2015 Huamaní; Incorporated</p>
+                <p>Ramón Ribeyro 188, Miraflores. PERÚ</p>
+              </div>
             </li>
-              <li class="col-md-3"> 
-                <p><a href="blog.html">BLOG</a></p>
-                <p><a href="faqs.html">FAQs</a></p>
-                <p><a href="terms.html">TERMS OF USE</a></p>
-              </li>
-              <li class="col-md-3">
-                <p><a href="media-kit.html">MEDIA KIT</a></p>
-                <p><a href="contact.html">CONTACT US</a></p>
-              </li>
-          </ul>
+            <li class="col-md-3 col-xs-6">
+              <p><a href="blog.html">BLOG</a></p>
+              <p><a href="faqs.html">FAQs</a></p>
+              <p><a href="terms.html">TERMS OF USE</a></p>
+            </li> 
+            <li class="col-md-3 col-xs-6">
+              <p><a href="media-kit.html">MEDIA KIT</a></p>
+              <p><a href="contact.html">CONTACT US</a></p>
+            </li>
+          </ul> 
         </footer>
       </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -464,5 +492,6 @@
     <script src="assets/js/b3/transition.js"></script>
     <script src="assets/js/b3/collapse.js"></script>
     <script src="assets/js/faqs-control.js"></script>
+    <script src="assets/js/menu-movil-control.js"></script>
   </body>
 </html>
