@@ -109,6 +109,7 @@ $separator-height-control: 2px;
 
 #formulario {
 	.date {
+		width: 560px;
 		padding-top: 27px;
 		input {
 			background-color: transparent;
@@ -171,7 +172,12 @@ $separator-height-control: 2px;
 			  }
 			}
 		}
-		.enter {
+		.active {
+			border-color: #8d744a;
+			color: #8d744a;
+		}	
+	}
+	.enter {
 			background-color: transparent;
 		  color: rgb(96, 85, 81);
 		  border: 1px solid rgb(96, 85, 81);
@@ -188,11 +194,6 @@ $separator-height-control: 2px;
 			  position: relative;
 			}
 		}
-		.active {
-			border-color: #8d744a;
-			color: #8d744a;
-		}	
-	}
 	.checkbox {
 		margin-left: 6px;
 		.box {
@@ -1499,7 +1500,7 @@ footer {
 				margin-left: 0;
 			}
 			.btn-group {
-				padding-left: 12px;
+
 				button {
 					padding: 0 7px!important;					
 				}

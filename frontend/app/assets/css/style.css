@@ -6486,6 +6486,7 @@ body::-webkit-scrollbar {
 }
 
 #formulario .date {
+  width: 560px;
   padding-top: 27px;
 }
 #formulario .date input {
@@ -6547,7 +6548,11 @@ body::-webkit-scrollbar {
   border-color: #8d744a;
   color: #8d744a;
 }
-#formulario .action .enter {
+#formulario .action .active {
+  border-color: #8d744a;
+  color: #8d744a;
+}
+#formulario .enter {
   background-color: transparent;
   color: #605551;
   border: 1px solid #605551;
@@ -6559,14 +6564,10 @@ body::-webkit-scrollbar {
   margin-left: 30px;
   outline: none;
 }
-#formulario .action .enter span {
+#formulario .enter span {
   top: 2px;
   right: -4px;
   position: relative;
-}
-#formulario .action .active {
-  border-color: #8d744a;
-  color: #8d744a;
 }
 #formulario .checkbox {
   margin-left: 6px;
@@ -7925,9 +7926,6 @@ footer .col-md-3 p a:hover {
   }
   #formulario .action select {
     margin-left: 0;
-  }
-  #formulario .action .btn-group {
-    padding-left: 12px;
   }
   #formulario .action .btn-group button {
     padding: 0 7px !important;

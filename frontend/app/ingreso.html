@@ -19,12 +19,12 @@
 		    	</div>
 		    	<h3 class="text-white text-center family-museosans"> HELLO THERE, <br>ARE YOU OF LEGAL DRINKIG AGE?</h3>
 		    	<div id="formulario">
-		    		<form class="date" action="index.html">
+		    		<form class="date clearfix text-center" action="index.html">
 		    			<input id="day" class="text-center text-white" type="day" pattern="[0-9]*" maxlength="2" class="month" placeholder="DAY" name="day" required>
 		    			<input id="month" class="text-center" type="text" pattern="[0-9]*" min="1" max="12" maxlength="2" class="day" placeholder="MONTH" name="month" required>
 		    			<input id="year" class="text-center" type="text" pattern="[0-9]*" maxlength="4" class="year" placeholder="YEAR" name="year" required> 
-		    			<div class="action row">
-								<select name="LOCATION" required class="col-md-4 col-xs-6 thin text-white" style="background-image: url(assets/img/texturas/textura-oscura.png);">
+		    			<div class="action row col-md-8 pl-21">
+								<select name="LOCATION" required class="col-md-4 col-xs-6 thin text-white ml-0" style="background-image: url(assets/img/texturas/textura-oscura.png);">
 									<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
 									<option value="AF">LOCATION</option>
 									<option value="AF">Afghanistan</option>
@@ -276,18 +276,20 @@
 									<option value="ZM">Zambia</option>
 									<option value="ZW">Zimbabwe</option>
 								</select>
-								<div class="btn-group col-md-4 p-0 hidden-xs" role="group" aria-label="...">
-								  <button type="button" class="col-md-6 btn btn-default">ENGLISH</button>
-								  <button type="button" class="col-md-6 btn btn-default">ESPAÑOL</button>
+								<div class="pl-14 pr-0 col-md-6 col-md-offset-2">
+									<div class="btn-group p-0 hidden-xs ml-0" role="group" aria-label="...">
+									  <button type="button" class="btn btn-default ph-7">ENGLISH</button>
+									  <button type="button" class="btn btn-default ph-7">ESPAÑOL</button>
+									</div>
+									<div class="btn-group col-xs-6 m-0 pr-0 hidden-lg hidden-md hidden-sm" role="group" aria-label="...">
+									  <button type="button" class="btn btn-default ph-7 btn-language text-white">EN</button>
+									  <button type="button" class="btn btn-default ph-7 btn-language text-white">ES</button>
+									</div>
 								</div>
-								<div class="btn-group col-md-4 col-xs-6 m-0 pr-0 hidden-lg hidden-md hidden-sm" role="group" aria-label="...">
-								  <button type="button" class="col-xs-6 btn btn-default btn-language text-white">EN</button>
-								  <button type="button" class="col-xs-6 btn btn-default btn-language text-white">ES</button>
-								</div>
-								<button href="index.html" class="enter" type="submit" class="btn btn-default">ENTER<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
 		    			</div>
+		    			<button href="index.html" class="enter mt-21" type="submit" class="btn btn-default">ENTER<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
 		    		</form>
-		    		<div class="checkbox">
+		    		<div class="checkbox pl-14">
 						  <!--input type="checkbox" required id="ejemplo-1" value="1" name="" />-->
 						  <div class="box">
 						  	<span class="close text-white" data-dismiss="modal">&times;</span>
