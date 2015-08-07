@@ -760,13 +760,7 @@ footer {
 					padding: 0 7px;
 					color: #8d744a;
 					text-decoration: none;
-					font-size: 18px;
-					font-size: rem(18px);
 					font-weight: lighter;
-  				// border: 1px solid transparent;
-  				// &:first-child {
-  				// 	border: 1px solid #8d744a;
-  				// }
 					&:hover {
 						border-color:#8d744a;
 					}
@@ -1588,13 +1582,17 @@ footer {
 			  }
 			  p {
 			  	padding-top: 30px;
+			  	// font-size: 18px;
 			  }
 			}
+		}
+		.gallery-cell {
+			text-align: center;
 		}
 	}
 	/*THE GOODS*/
 	#the-goods {
-		.container-sm .gallery-wrapper {
+		.container .gallery-wrapper {
 			.gallery-button-left,
 			.gallery-button-right{
 				width: 40px;
@@ -1612,7 +1610,8 @@ footer {
 				right: 35px;
 			}
 			.gallery-child .flickity-viewport {
-				height: 439px!important;
+				// height: 439px!important;
+				height: 350px!important;
 				.slider-content{
 					height: auto!important;
 					top: 0!important;

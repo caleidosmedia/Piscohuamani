@@ -7,7 +7,7 @@ $(document).ready(function(){
 	$goodsGalleryNav.flickity({
 		//cellAlign: 'left',
 		// contain: true,
-		resize: false,
+		// resize: false,
 		prevNextButtons: false,
 		pageDots: false,
 		draggable: true,
