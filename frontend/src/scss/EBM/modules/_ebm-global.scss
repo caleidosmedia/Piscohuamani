@@ -15,6 +15,18 @@ body {
 	&::-webkit-scrollbar { 
     display: none; 
 	}
+	h2 {
+		font-size: 28px;
+	}
+	h3 {
+		font-family: "museo-sans";
+	}
+	#content-blog,
+	#faqs,
+	#terms,
+	#media-kit {
+		background-color: #f8f4e5;
+	}
 }
 .row {
 	margin: 0!important;
@@ -26,8 +38,8 @@ body {
 
 .site-content {
 	> section {
-			padding: 82px 235px;
-			padding: rem(82px) rem(235px);
+			padding: 82px 210px;
+			padding: rem(82px) rem(210px);
 			.container-sm {
 				margin-left: 100px;
 				margin-right: 20px;
@@ -269,18 +281,14 @@ $separator-height-control: 2px;
 				  	@include transition(all .5s);
 				  	background-color: rgb(248, 244, 229);
 				  	text-transform: uppercase;
-				  	-webkit-transform: rotateX(-90deg);
-				  	transform: rotateX(-90deg);
-				  	-webkit-transform-origin: center top;
-				  	transform-origin: center top;
+				  	@include transform (rotateX(-90deg));
+				  	@include transform-origin (center top);
 				  	z-index: 1;
 				  	padding: 0 33px;
 				  	padding: 0 rem(33px);
 	  				&:first-child {
-	  					-webkit-transform: rotateX(0deg);
-	  					transform: rotateX(0deg);
-	  					-webkit-transform-origin: center bottom;
-	  					transform-origin: center bottom;
+	  					@include transform (rotateX(0deg));
+	  					@include transform-origin (center bottom);
 	  					background-color: #3b2e29;
 	  					color: rgb(248, 244, 229);
 	  					top: 0;
@@ -289,31 +297,27 @@ $separator-height-control: 2px;
   				}
   				&:hover {
   					div {
-  						-webkit-transform: rotateX(0deg);
-  						transform: rotateX(0deg);
+  						@include transform (rotateX(0deg));
   						top: -61px;
   						height: 61px;
   					}
   					div:first-child {
   						top: -70px;
   						z-index: 1;
-  						-webkit-transform: rotateX(90deg);
-  						transform: rotateX(90deg);
+  						@include transform (rotateX(-90deg));
   					}
   				}
 	 		}
 	 		a.active {
 				div {
-					-webkit-transform: rotateX(0deg);
-					transform: rotateX(0deg);
+					@include transform (rotateX(0deg));
 					top: -61px;
 					height: 61px;
 				}
 				div:first-child {
 					top: -70px;
 					z-index: 1;
-					-webkit-transform: rotateX(90deg);
-					transform: rotateX(90deg);
+					@include transform (rotateX(90deg));
 				}
 			}
 	 		a.logo-link div {
@@ -384,7 +388,7 @@ $separator-height-control: 2px;
 		padding: 9% 17px 0 76px;
 		.separador {
 			border-bottom: 1px solid #3b2e29;
-			padding-top:4%;
+			padding-top: 7px;
 		}
 		p {
 			padding-top: 6%;
@@ -458,8 +462,9 @@ $separator-height-control: 2px;
 	}
 	.slider-content {
 		position: relative;
-		padding-right: 9%;
-		height: 500px;
+		// padding-right: 9%;
+		width: 50%;
+		height: auto;
 		top: -150px;
 		text-align: right;
 	}
@@ -733,6 +738,7 @@ $make-drink-gallery-height-control: 560px;
 */
 footer {
 	color: #8d744a;
+	background-color: #f8f4e5;
 	.footer-logo {
 		width: 70px; 
 	}
@@ -775,8 +781,6 @@ footer {
 			width: 36%;
 		}
 		#menu-blog {
-			padding-top: 5%;
-			padding-bottom: 8%;
 			nav {
 				a {
 					padding: 0 7px;
@@ -785,7 +789,6 @@ footer {
 					font-size: 18px;
 					font-size: rem(18px);
 					font-weight: lighter;
-					padding: 5px 8px;
   				border: 1px solid transparent;
   				&:first-child {
   					border: 1px solid #8d744a;
@@ -798,7 +801,6 @@ footer {
 		}
 		.post{
 			border-bottom: 1px solid #3B2E29;
-	  	padding-bottom: 6%; 
 			.imagen {
 				width: 100%;
 				img {
@@ -813,9 +815,6 @@ footer {
 				}
 				p {
 					padding-top: 2%;
-					margin-bottom: 27px;
-					font-size: 18.2px;
-					font-size: rem(18.2px);
 					line-height: 1.5;
 					color: #4e3227; 
 				} 
@@ -829,24 +828,17 @@ footer {
 					float: left;
 					overflow: hidden;
 					@include transition(all .2s ease-in);
-					position: relative;
 					a {
 						text-decoration: none;
 						color: #4e3227;
-						font-size: 21px;
-						font-size: rem(21px);
-						position: relative;
 						z-index: 1;
 					}
 					.overlay {
-						background-color: #a05324;
-						position: absolute;
+						background-color: #8d744a;
 						top: 0;
 						left: 0; 
 						width: 100%;
-						height: 100%;
-						-webkit-transform: translateX(-100%);
-						transform: translateX(-100%); 
+						@include transform(translateX(-100%)); 
 						@include transition(all .2s ease-in);
 					}
 					&:hover {
@@ -854,8 +846,7 @@ footer {
 							color: #fff;
 						}
 						.overlay { 
-							-webkit-transform: translateX(0%);
-							transform: translateX(0%); 
+							@include transform(translateX(0%));
 						} 
 					}
 				}
@@ -877,8 +868,6 @@ footer {
  						padding: 4px;
  						width: 38px;
 						height: 40px;
-						text-align: center;
-						margin: 0 6px;
 						@include flex-column-center;
 						span {
 							font-size: 18px;
@@ -886,11 +875,8 @@ footer {
 					} 
 				} 
 			}
-			.tags {
+			.tags, .tags a {
 				color: #8d744a; 
-				padding-top: 3.5%;
-				font-size: 18px;
-				font-size: rem(18px);
 			  font-weight: 100;
 			  font-style: italic;
 			} 
@@ -1383,44 +1369,29 @@ footer {
   justify-content: center;
   align-content: flex-start;
   align-items: center;
-  h3{
+  h1{
   	font-family: "trajan-pro-3";
   }
   .formulario{
-  	padding-top: 14px;
-  	position: relative;
   	input{
   		width: 280px;
   		height: 45px; 
-		  background-color: transparent;
-		  border: 1.5px solid #fff;
-		  margin: 0 6px;
 		}
 		textarea{
-			width: 576px;
+			width: 578px;
   		height: 96px;
-  		background-color: transparent;
-		  border: 1.5px solid #fff;
-		  margin-top: 17px;
-		  padding-top: 18px;
-		  margin-left: 6px;
+  		min-height: 96px;
+  		overflow: hidden;
+	  	resize: none;
+	  	outline: none;
 		}
 		input , textarea {
-			font-size: 18px;
-			font-size: rem(18px);
-			padding-left: 15px;
-			&::-webkit-input-placeholder {
-			  color: #fff;
+			background-color: transparent;
+		  border: 1.5px solid #fff;
+			@include placeholder {
+		    color: #fff;
 			  font-weight: lighter;
-			}
-			&:-moz-placeholder {
-			  color: #fff;
-			  font-weight: lighter; 
-			}
-			&:-ms-input-placeholder { 
-			  color: #fff;
-			  font-weight: lighter;
-			}
+		  }
 		}
 		button {
 			width: 142px;
@@ -1428,27 +1399,20 @@ footer {
 			background-color: transparent;
 		  border: 1px solid white;
 		  outline: none;
-		  position: absolute;
   		right: 6px;
   		margin-top: 3px;
   		font-weight: 300;
   		overflow: hidden;
   		z-index: 1;
-  		p {
+  		span {
 				z-index: 1;
-				position: relative;
-				font-size: 18px;
-				font-size: rem(18px);
   		}
 			.overlay {
 				background-color: #8d744a;
-				position: absolute;
 				top: 0;
 				left: 0; 
 				width: 100%;
-				height: 100%;
-				-webkit-transform: translateX(-100%);
-				transform: translateX(-100%); 
+				@include transform(translateX(-100%)); 
 				@include transition(all .2s ease-in);
 			}
 			&:hover {
@@ -1456,8 +1420,7 @@ footer {
 					color: #fff;
 				}
 				.overlay { 
-					-webkit-transform: translateX(0%);
-					transform: translateX(0%); 
+					@include transform(translateX(0%));
 				} 
 			}
 		}
@@ -2205,11 +2168,6 @@ footer {
 			textarea,
 			input {
 				width: 100%;
-				margin: 0;
-				font-size: 20px;
-			}
-			input {
-				margin-bottom: 15px;
 			}
 			textarea {
 				margin-top: 0;
@@ -2224,15 +2182,21 @@ footer {
 				background-color: #8D744A;
 				@include transition(none);
 				border: 1px solid #fff;
-				font-size: 20px;
   			font-weight: 400;
 			}
 		}
 	}
 }
 /*
-	Utilities
+	UTILITIES
 */
+$prefijo: fz !default;
+@for $i from 8 through 40 {
+  .#{$prefijo}-#{$i} {
+    font-size: 0px + $i !important;
+    font-size: rem(0px + $i)!important;
+  }
+}
 .text-center {
 	text-align: center;
 }
@@ -2241,6 +2205,15 @@ footer {
 }
 .text-white {
 	color: #fff;
+}
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+}
+.fixed {
+	position: fixed;
 }
 .text-brown{
 	color: #3B2E29;

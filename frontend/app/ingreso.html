@@ -19,10 +19,11 @@
 		    	</div>
 		    	<h3 class="text-white text-center family-museosans"> HELLO THERE, <br>ARE YOU OF LEGAL DRINKIG AGE?</h3>
 		    	<div id="formulario">
-		    		<form class="date clearfix text-center" action="index.html">
-		    			<input id="day" class="text-center text-white" type="day" pattern="[0-9]*" maxlength="2" class="month" placeholder="DAY" name="day" required>
-		    			<input id="month" class="text-center" type="text" pattern="[0-9]*" min="1" max="12" maxlength="2" class="day" placeholder="MONTH" name="month" required>
-		    			<input id="year" class="text-center" type="text" pattern="[0-9]*" maxlength="4" class="year" placeholder="YEAR" name="year" required> 
+		    		<form class="date clearfix text-center" action="index.html" method="post">
+		    			<input id="day" class="number text-center text-white day" type="text" min="1" max="30" maxlength="2" placeholder="DAY" name="day" required>
+		    			<span id="mensaje"></span>
+		    			<input id="month" class="number text-center month" type="text" pattern="[0-9]*" min="1" max="12" maxlength="2" placeholder="MONTH" name="month" required>
+		    			<input id="year" class="number text-center" type="text" pattern="[0-9]*" maxlength="4" class="year" placeholder="YEAR" name="year" required> 
 		    			<div class="action row col-md-8 pl-21">
 								<select name="LOCATION" required class="col-md-4 col-xs-6 thin text-white ml-0" style="background-image: url(assets/img/texturas/textura-oscura.png);">
 									<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
@@ -304,4 +305,37 @@
 	<script src="assets/js/b3/dropdown.js"></script>
 	<script src="assets/js/forms-control.js"></script>
 	<script src="assets/js/ingreso-control.js"></script>
+	<script>
+		$(document).ready(function() {
+			var day = $("#day");
+			
+			var month = $("#month");
+			var year = $("#year");
+			var numericReg = /^[0-9\b]+$/;
+			function validar(e) {
+				var inputVal = String.fromCharCode(e.keyCode);
+				// var mensaje = document.getElementById("mensaje");
+				if(!numericReg.test(inputVal)) {
+					mensajeUp.val("12");
+				    e.preventDefault();
+			    }
+		    else {
+		    	mensajeUp.innerText = "";;
+		    	return;
+		    }
+			}
+			$('#day').keydown(function(e) {
+				if ( 12 < mensajeUp.val()) {
+		    	mensajeUp.val("12");
+		    }
+			  validar(e);
+			});
+			$('#day').keyup(function(e) {
+				if ( 12 < mensajeUp.val()) {
+		    	mensajeUp.val("12");
+		    }
+			    validar(e);
+			});
+		});
+	</script>
 </html>

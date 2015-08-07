@@ -67,32 +67,34 @@
           </ul>
         </section> 
         <div id="container-contact" class="minhp-100 hidden-xs">
-          <h3 class="text-white">GET IN TOUCH</h3>
-          <div class="formulario">
-            <input type="text" pattern="[0-9]*" maxlength="25" class="name" placeholder="NAME" name="name" required>
-            <input type="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" maxlength="25" class="e-mail" placeholder="E-MAIL" name="e-mail" required>
-            <p><textarea class="message" placeholder="MESSAGE" name="textarea" required></textarea></p>
-            <button class="text-white send" type="submit" disabled="disabled">
-              <p class="m-0">SEND</p>
-              <div class="overlay"></div>
+          <h1 class="text-white">GET IN TOUCH</h1>
+          <div class="formulario relative pt-28">
+            <input type="text" pattern="[0-9]*" maxlength="25" class="name mv-0 mh-7 fz-18 ph-14" placeholder="NAME" name="name" required>
+            <input type="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="e-mail mv-0 mh-7 fz-18 ph-14" maxlength="25" placeholder="E-MAIL" name="e-mail" required>
+            <p><textarea class="message ml-7 mt-21 pv-14 fz-18 ph-14" onkeyup="auto_grow(this)" placeholder="MESSAGE" name="textarea" required></textarea></p>
+            <button class="text-white send absolute" type="submit" disabled="disabled">
+              <span class="fz-18 relative">SEND</span>
+              <div class="overlay absolute minhp-100"></div>
             </button>
           </div>
         </div>
         <div id="container-contact" class="hidden-lg hidden-md hidden-sm">
           <h3 class="text-white">GET IN TOUCH</h3>
           <div class="formulario">
-            <input type="text" pattern="[0-9]*" maxlength="25" class="name" placeholder="NAME" name="name" required>
-            <input type="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" maxlength="25" class="e-mail" placeholder="E-MAIL" name="e-mail" required>
-            <p><textarea class="message" placeholder="MESSAGE" name="textarea" required></textarea></p>
-            <button class="text-white send" type="submit" disabled="disabled">
-              <p class="m-0">SEND</p>
-              <div class="overlay"></div>
-            </button>
+            <form action="" method="post">
+              <input type="text" pattern="[a-zA-Z]*" maxlength="25" class="name mb-21 ph-14 m-0 fz-26" placeholder="NAME" name="name" required>
+              <input type="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" maxlength="25" class="e-mail mb-21 ph-14 m-0 fz-26" placeholder="E-MAIL" name="e-mail" title="Este formato no es válido" required=>
+              <p><textarea class="message ph-14 m-0 fz-26" placeholder="MESSAGE" name="textarea" required></textarea></p>
+              <button class="text-white send" type="submit" disabled="disabled">
+                <span class="fz-26">SEND</span>
+                <div class="overlay"></div>
+              </button>
+            </form>
           </div>
         </div>
       </main>
       <footer>
-        <ul class="row type-style-none family-museosans pd-5-15">
+        <ul class="clearfix container type-style-none family-museosans pv-70 ph-28 ph-42-xs">
           <li class="col-md-6 col-xs-12">
             <div class="col-xs-6 p-0 footer-logo">
               <img src="assets/img/iconos-logos/icono-H-footer.png" class="w-100" alt="">
@@ -120,5 +122,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.js"></script>
     <script src="assets/js/forms-control.js"></script>
     <script src="assets/js/menu-movil-control.js"></script>
+    <script src="assets/js/textarea-control.js"></script>
   </body>
 </html> 

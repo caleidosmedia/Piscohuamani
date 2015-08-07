@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 	$goodsGalleryNav.flickity({
 		//cellAlign: 'left',
-		contain: true,
+		// contain: true,
 		prevNextButtons: false,
 		pageDots: false,
 		draggable: true,
@@ -15,9 +15,9 @@ $(document).ready(function(){
 	});
 
 	$goodsGallery.flickity({
-		//cellAlign: 'left',
+		// cellAlign: 'left',
 		asNavFor: '#the-goods .gallery',
-		contain: true,
+		// contain: true,
 		prevNextButtons: false,
 		pageDots: false,
 		draggable: true,
