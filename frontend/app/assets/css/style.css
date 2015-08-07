@@ -6448,7 +6448,7 @@ body .active-select {
 	Separadores
 */
 .separator {
-  height: 2px;
+  height: 1px;
   margin: 21px 0;
   margin: 1.5rem 0;
 }
