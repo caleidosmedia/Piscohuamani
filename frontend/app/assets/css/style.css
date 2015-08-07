@@ -6369,6 +6369,10 @@ body #terms,
 body #media-kit {
   background-color: #f8f4e5;
 }
+html .active-select,
+body .active-select {
+  border: 1px solid #8d744a;
+}
 
 .row {
   margin: 0 !important;
@@ -7220,10 +7224,6 @@ footer .col-md-3 p a:hover {
   font-size: 18px;
   font-size: 1.28571rem;
   font-weight: lighter;
-  border: 1px solid transparent;
-}
-.site-content .content-blog #menu-blog nav a:first-child {
-  border: 1px solid #8d744a;
 }
 .site-content .content-blog #menu-blog nav a:hover {
   border-color: #8d744a;

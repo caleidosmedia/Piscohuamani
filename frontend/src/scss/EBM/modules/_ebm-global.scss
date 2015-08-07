@@ -27,6 +27,9 @@ body {
 	#media-kit {
 		background-color: #f8f4e5;
 	}
+	.active-select {
+		border: 1px solid #8d744a;
+	}
 }
 .row {
 	margin: 0!important;
@@ -760,10 +763,10 @@ footer {
 					font-size: 18px;
 					font-size: rem(18px);
 					font-weight: lighter;
-  				border: 1px solid transparent;
-  				&:first-child {
-  					border: 1px solid #8d744a;
-  				}
+  				// border: 1px solid transparent;
+  				// &:first-child {
+  				// 	border: 1px solid #8d744a;
+  				// }
 					&:hover {
 						border-color:#8d744a;
 					}
