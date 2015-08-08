@@ -40,14 +40,14 @@ body {
 }
 
 .site-content {
-	// > section {
+	/* > section {
 	// 		padding: 82px 210px;
 	// 		padding: rem(82px) rem(210px);
 	// 		.container-sm {
 	// 			margin-left: 100px;
 	// 			margin-right: 20px;
 	// 		}
-	// }
+	// }*/
 	.section-title {
 		h2 {
 			@include serif-light;
@@ -557,7 +557,7 @@ $make-drink-gallery-height-control: 560px;
 		height: 100%;
 	}
 	.container-sm {
-		margin-left: 280px;
+		/*margin-left: 280px;*/
 		padding-top: 190px;
 	}
 	h1 {
@@ -1177,8 +1177,6 @@ footer {
 	Media kit
 */
 #media-kit {
-	padding: 110px 234px;
-	padding: 9% 17%;
 	h1:first-child {
 		color: #8d744a;
 		font-family: "trajan-pro-3";

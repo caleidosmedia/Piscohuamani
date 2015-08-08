@@ -6383,6 +6383,16 @@ body .active-select {
   position: relative;
 }
 
+.site-content {
+  /* > section {
+  // 		padding: 82px 210px;
+  // 		padding: rem(82px) rem(210px);
+  // 		.container-sm {
+  // 			margin-left: 100px;
+  // 			margin-right: 20px;
+  // 		}
+  // }*/
+}
 .site-content .section-title h2 {
   font-family: "trajan-pro-3", "Times New Roman", Times, serif !important;
   font-weight: 300;
@@ -7001,7 +7011,7 @@ body .active-select {
   height: 100%;
 }
 #events .container-sm, #slider-events .container-sm {
-  margin-left: 280px;
+  /*margin-left: 280px;*/
   padding-top: 190px;
 }
 #events h1, #slider-events h1 {
@@ -7655,10 +7665,6 @@ footer .col-md-3 p a:hover {
 /*
 	Media kit
 */
-#media-kit {
-  padding: 110px 234px;
-  padding: 9% 17%;
-}
 #media-kit h1:first-child {
   color: #8d744a;
   font-family: "trajan-pro-3";
