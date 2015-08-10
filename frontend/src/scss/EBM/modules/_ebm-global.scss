@@ -860,7 +860,7 @@ footer {
 						font-size: 21px;
 						font-size: rem(21px);
   					font-weight: 300;
-  					padding: 0 2%;
+  					padding: 0 14px;
   					background-color: transparent;
   					color: #4e3227;
   					&:hover {
@@ -886,8 +886,10 @@ footer {
 */
 #blog-post {
 	.container{
-		padding: 125px 34px;
-		padding: rem(125px) rem(34px);
+		h1 {
+			color: #8d744a;
+			font-family: "trajan-pro-3";
+		}
 	}
 	.breadcrumb {
 		padding-bottom: 3%;
