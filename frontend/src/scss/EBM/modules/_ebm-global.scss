@@ -30,6 +30,13 @@ body {
 	.active-select {
 		border: 1px solid #8d744a;
 	}
+	.opacity-active {
+		opacity: 0;
+    transition: all 0.4s ease-in-out;
+	}
+	.slider-text {
+		transition: all 0.4s ease-in-out;
+	}
 }
 .row {
 	margin: 0!important;
@@ -84,8 +91,6 @@ body {
 $separator-height-control: 1px;
 .separator {
 	height: $separator-height-control;
-	margin: 21px 0;
-	margin: rem(21px) 0;
 	@for $i from 1 through length($grayscale-list) {
 		&.separator-#{nth($grayscale-sufix-list, $i)} {
 			background-color: #{nth($grayscale-list, $i)};
@@ -210,27 +215,25 @@ $separator-height-control: 1px;
 			  position: relative;
 			}
 		}
-	.checkbox {
-		margin-left: 6px;
-		.box {
-			width: 17px;
-			height: 17px;
-			border: 1px solid #fff;
-			position: relative;
-  		float: left;
-  		cursor: pointer;
-  		span {
-  			font-size: 30px;
-			  position: absolute;
-			  top: -15px;
-			  left: -2px;
-			  display: none;
-  		}
+	.box {
+		width: 17px;
+		height: 17px;
+		border: 1px solid #fff;
+		position: relative;
+		float: left;
+		cursor: pointer;
+		background-color: transparent;
+ 		outline: transparent;
+		span {
+			font-size: 30px;
+		  position: absolute;
+		  top: -15px;
+		  left: -2px;
+		  display: none;
 		}
-		label{
-			font-style: italic;
-			margin-left: 10px;
-		}
+	}
+	label{
+		font-style: italic;
 	}
 }
 
@@ -1644,10 +1647,10 @@ footer {
 		.container-sm .gallery-wrapper {
 			.gallery-button-left,
 			.gallery-button-right{
-				width: 40px;
+				width: 20px;
 				z-index: 10;
 				display: inline-block;
-				top: 120px;
+				top: 160px;
 				img {
 					width: 100%;
 				}

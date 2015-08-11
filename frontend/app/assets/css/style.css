@@ -6373,6 +6373,15 @@ html .active-select,
 body .active-select {
   border: 1px solid #8d744a;
 }
+html .opacity-active,
+body .opacity-active {
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+html .slider-text,
+body .slider-text {
+  transition: all 0.4s ease-in-out;
+}
 
 .row {
   margin: 0 !important;
@@ -6459,8 +6468,6 @@ body .active-select {
 */
 .separator {
   height: 1px;
-  margin: 21px 0;
-  margin: 1.5rem 0;
 }
 .separator.separator-gray-darker {
   background-color: #3E3F40;
@@ -6594,27 +6601,25 @@ body .active-select {
   right: -4px;
   position: relative;
 }
-#formulario .checkbox {
-  margin-left: 6px;
-}
-#formulario .checkbox .box {
+#formulario .box {
   width: 17px;
   height: 17px;
   border: 1px solid #fff;
   position: relative;
   float: left;
   cursor: pointer;
+  background-color: transparent;
+  outline: transparent;
 }
-#formulario .checkbox .box span {
+#formulario .box span {
   font-size: 30px;
   position: absolute;
   top: -15px;
   left: -2px;
   display: none;
 }
-#formulario .checkbox label {
+#formulario label {
   font-style: italic;
-  margin-left: 10px;
 }
 
 /*Active checkout*/
@@ -8172,10 +8177,10 @@ footer .col-md-3 p a:hover {
   /*MAKE DRINK*/
   #make-drink .container-sm .gallery-wrapper .gallery-button-left,
   #make-drink .container-sm .gallery-wrapper .gallery-button-right {
-    width: 40px;
+    width: 20px;
     z-index: 10;
     display: inline-block;
-    top: 120px;
+    top: 160px;
   }
   #make-drink .container-sm .gallery-wrapper .gallery-button-left img,
   #make-drink .container-sm .gallery-wrapper .gallery-button-right img {
