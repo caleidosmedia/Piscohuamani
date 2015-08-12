@@ -1,43 +1,47 @@
-var contentLength = $(".text-opacity").length;
-
 $(document).ready(function() {
-	mostrarContenido();
+	mostrarContenido("#slider-text-experience", ".text-opacity");
+	slide("#slider_next_experience", "next", "translate-left", "#slider-text-experience", ".text-opacity");
+	slide("#slider_back_experience", "back", "translate-right", "#slider-text-experience", ".text-opacity");
+	mostrarContenido("#slider-text-goods", ".text-opacity1");
+	slide("#slider_next_goods", "next", "translate-left", "#slider-text-goods", ".text-opacity1");
+	slide("#slider_back_goods", "back", "translate-right", "#slider-text-goods", ".text-opacity1");
+	mostrarContenido("#slider-text-make", ".text-opacity2");
+	slide("#slider_next_make", "next", "translate-left", "#slider-text-make", ".text-opacity2");
+	slide("#slider_back_make", "back", "translate-right", "#slider-text-make", ".text-opacity2");
 });
 
-/*controls*/
-$("#slider_back").click(function(e) {
-	accionEfect("back", "translate-right", $(this).parents().find(".slider-text-oficial"));
-});
 
-$("#slider_next").click(function(e) {
-	accionEfect("next", "translate-left", $(this).parents().find(".slider-text-oficial"));
-});
+function slide(sender, action, classEffect, container, contentClass) {
+	$(sender).click(function(e) {
+		accionEfect(action, classEffect, container, contentClass);
+	});
+}
 
-function accionEfect(control, translate, element) {
-	$(element).addClass("opacity-active");
-	$(element).removeClass("translate-active");
-	$(element).addClass(translate);
+function accionEfect(control, translate, container, contentClass) {
+	$(container).addClass("opacity-active");
+	$(container).removeClass("translate-active");
+	$(container).addClass(translate);
 	setTimeout(function() {
-		interpolar(control)
+		interpolar(control, container, contentClass)
 	}, 400);
 }
 
-function mostrarContenido() {
-	var current_element = obtenerContenidoActual();
+function mostrarContenido(container, contentClass) {
+	var current_element = obtenerContenidoActual(contentClass);
 	if (current_element != null) {
-		$(".slider-text-oficial").html(current_element.html());
-		$(".slider-text-oficial").removeClass("translate-left");
-		$(".slider-text-oficial").addClass("translate-active");
-		$(".slider-text-oficial").removeClass("translate-right");
+		$(container).html(current_element.html());
+		$(container).removeClass("translate-left");
+		$(container).addClass("translate-active");
+		$(container).removeClass("translate-right");
 		setTimeout(function() {
-			$(".slider-text-oficial").removeClass("opacity-active");
+			$(container).removeClass("opacity-active");
 		}, 300);
 	};
 }
 
-function obtenerContenidoActual() {
+function obtenerContenidoActual(contentClass) {
 	var current_element = null;
-	$(".text-opacity").each(function(index, element) {
+	$(contentClass).each(function(index, element) {
 		var current = $(element).attr("data-current");
 		if (current == 1) {
 			current_element = $(element);
@@ -47,9 +51,9 @@ function obtenerContenidoActual() {
 	return current_element;
 }
 
-function obtenerContenidoPorIndice(indice) {
+function obtenerContenidoPorIndice(indice, contentClass) {
 	var content = null;
-	$(".text-opacity").each(function(index, element) {
+	$(contentClass).each(function(index, element) {
 		var index = $(element).attr("data-index");
 		if (index == indice) {
 			content = $(element);
@@ -59,8 +63,9 @@ function obtenerContenidoPorIndice(indice) {
 	return content;
 }
 
-function interpolar(accion) {
-	var current_element = obtenerContenidoActual();
+function interpolar(accion, container, contentClass) {
+	var contentLength = $(contentClass).length;
+	var current_element = obtenerContenidoActual(contentClass);
 	var index = $(current_element).attr("data-index");
 	if (accion == "next") {
 		if (index == contentLength) { index = 0;};
@@ -69,8 +74,8 @@ function interpolar(accion) {
 		if (index == 1) { index = contentLength + 1;};
 		index--;
 	};
-	var element = obtenerContenidoPorIndice(index);
+	var element = obtenerContenidoPorIndice(index, contentClass);
 	$(current_element).attr("data-current", "0");
 	$(element).attr("data-current", "1");
-	mostrarContenido();
+	mostrarContenido(container, contentClass);
 }

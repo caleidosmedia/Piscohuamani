@@ -30,7 +30,9 @@ body {
 	.active-select {
 		border: 1px solid #8d744a;
 	}
-	.opacity-active {
+	.opacity-active,
+	.opacity-active2,
+	.opacity-active3 {
 		opacity: 0;
     transition: all 0.4s ease-in-out;
 	}
@@ -43,7 +45,8 @@ body {
 	.translate-right {
 		@include transform (translateX(20px));
 	}
-	.slider-text-oficial {
+	.slider-text-oficial,
+	.slider-text-oficial2 {
 		@include transition (all 0.4s ease-in-out);
 	}
 }
@@ -459,7 +462,7 @@ $separator-height-control: 1px;
 	h1, h2{ 
 		font-family: "trajan-pro-3"; 
 	}
-	.slider-text {
+	#slider-text-goods {
 		padding-top: 9%;;
 		.separador {
 			border-bottom: 1px solid #3b2e29;
@@ -519,13 +522,13 @@ $make-drink-gallery-height-control: 560px;
 		width: 100%; 
 	}
 	.gallery-button-left {
-		@include position(absolute, -60px null 0 -98px);
+		@include position(absolute, -60px null 0 220px);
 	}
 	.gallery-button-right {
-		@include position(absolute, -60px -98px 0 null);
+		@include position(absolute, -60px 220px 0 null);
 	}
 	.make-text {
-		.text-opacity {
+		#slider-text-make {
 			padding-top: 30px;
 			.subtitle {
 				font-style: italic;
@@ -567,10 +570,6 @@ $make-drink-gallery-height-control: 560px;
 		position: absolute;
 		background-color: rgba(0,0,0,0.3);
 		height: 100%;
-	}
-	.container-sm {
-		/*margin-left: 280px;*/
-		padding-top: 190px;
 	}
 	h1 {
 		position: absolute;
@@ -1651,7 +1650,8 @@ footer {
 	}
 	/*MAKE DRINK*/
 	#make-drink {
-		.container-sm .gallery-wrapper {
+		.gallery-wrapper {
+			min-height: auto;
 			.gallery-button-left,
 			.gallery-button-right{
 				width: 20px;
@@ -1671,7 +1671,7 @@ footer {
 			.gallery-child {
 				position: relative;
 				top: 40px;
-				min-height: 325px;
+				min-height: auto;
 				.flickity-viewport {
 					min-height: 300px!important;
 					.gallery-cell {
@@ -1696,11 +1696,14 @@ footer {
 				}
 			}
 		}
+		.make-text {
+			position: relative!important;
+		}
 	}
 	/*EXPERIENCE*/
 	#events {
 		.event-movil {
-			padding: 42px 16% 50px;
+			padding: 42px 42px 50px;
 			background-position: left;
   		background-size: cover;
 			h2 {
@@ -1717,7 +1720,7 @@ footer {
 					font-size: 20px;
 				}
 				.separador {
-					border-bottom: 2px solid #fff!important;
+					border-bottom: 1px solid #fff!important;
 					margin-bottom: 2%;
 					width: 90%;
 					margin: 15px 0px 20px;

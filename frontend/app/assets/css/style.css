@@ -6374,7 +6374,11 @@ body .active-select {
   border: 1px solid #8d744a;
 }
 html .opacity-active,
-body .opacity-active {
+html .opacity-active2,
+html .opacity-active3,
+body .opacity-active,
+body .opacity-active2,
+body .opacity-active3 {
   opacity: 0;
   transition: all 0.4s ease-in-out;
 }
@@ -6403,7 +6407,9 @@ body .translate-right {
   transform: translateX(20px);
 }
 html .slider-text-oficial,
-body .slider-text-oficial {
+html .slider-text-oficial2,
+body .slider-text-oficial,
+body .slider-text-oficial2 {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -6920,13 +6926,13 @@ body .slider-text-oficial {
 #the-goods h1, #events h1, #slider-events h1, #the-goods h2, #events h2, #slider-events h2 {
   font-family: "trajan-pro-3";
 }
-#the-goods .slider-text, #events .slider-text, #slider-events .slider-text {
+#the-goods #slider-text-goods, #events #slider-text-goods, #slider-events #slider-text-goods {
   padding-top: 9%;
 }
-#the-goods .slider-text .separador, #events .slider-text .separador, #slider-events .slider-text .separador {
+#the-goods #slider-text-goods .separador, #events #slider-text-goods .separador, #slider-events #slider-text-goods .separador {
   border-bottom: 1px solid #3b2e29;
 }
-#the-goods .slider-text p, #events .slider-text p, #slider-events .slider-text p {
+#the-goods #slider-text-goods p, #events #slider-text-goods p, #slider-events #slider-text-goods p {
   padding-top: 6%;
   font-size: 18.2px;
   font-size: 1.3rem;
@@ -6988,34 +6994,34 @@ body .slider-text-oficial {
   position: absolute;
   top: -60px;
   bottom: 0;
-  left: -98px;
+  left: 220px;
 }
 #make-drink .gallery-button-right {
   position: absolute;
   top: -60px;
-  right: -98px;
+  right: 220px;
   bottom: 0;
 }
-#make-drink .make-text .text-opacity {
+#make-drink .make-text #slider-text-make {
   padding-top: 30px;
 }
-#make-drink .make-text .text-opacity .subtitle {
+#make-drink .make-text #slider-text-make .subtitle {
   font-style: italic;
   font-size: 24px;
   font-size: 1.71429rem;
   margin-bottom: 20px;
 }
-#make-drink .make-text .text-opacity ul {
+#make-drink .make-text #slider-text-make ul {
   margin-bottom: 30px;
 }
-#make-drink .make-text .text-opacity ul li {
+#make-drink .make-text #slider-text-make ul li {
   font-size: 18.2px;
   font-size: 1.3rem;
 }
-#make-drink .make-text .text-opacity ul li:before {
+#make-drink .make-text #slider-text-make ul li:before {
   content: "-";
 }
-#make-drink .make-text .text-opacity p {
+#make-drink .make-text #slider-text-make p {
   font-size: 18.2px;
   font-size: 1.3rem;
 }
@@ -7040,10 +7046,6 @@ body .slider-text-oficial {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.3);
   height: 100%;
-}
-#events .container-sm, #slider-events .container-sm {
-  /*margin-left: 280px;*/
-  padding-top: 190px;
 }
 #events h1, #slider-events h1 {
   position: absolute;
@@ -8197,54 +8199,60 @@ footer .col-md-3 p a:hover {
   }
 
   /*MAKE DRINK*/
-  #make-drink .container-sm .gallery-wrapper .gallery-button-left,
-  #make-drink .container-sm .gallery-wrapper .gallery-button-right {
+  #make-drink .gallery-wrapper {
+    min-height: auto;
+  }
+  #make-drink .gallery-wrapper .gallery-button-left,
+  #make-drink .gallery-wrapper .gallery-button-right {
     width: 20px;
     z-index: 10;
     display: inline-block;
     top: 160px;
   }
-  #make-drink .container-sm .gallery-wrapper .gallery-button-left img,
-  #make-drink .container-sm .gallery-wrapper .gallery-button-right img {
+  #make-drink .gallery-wrapper .gallery-button-left img,
+  #make-drink .gallery-wrapper .gallery-button-right img {
     width: 100%;
   }
-  #make-drink .container-sm .gallery-wrapper .gallery-button-left {
+  #make-drink .gallery-wrapper .gallery-button-left {
     left: 35px;
   }
-  #make-drink .container-sm .gallery-wrapper .gallery-button-right {
+  #make-drink .gallery-wrapper .gallery-button-right {
     right: 35px;
   }
-  #make-drink .container-sm .gallery-wrapper .gallery-child {
+  #make-drink .gallery-wrapper .gallery-child {
     position: relative;
     top: 40px;
-    min-height: 325px;
+    min-height: auto;
   }
-  #make-drink .container-sm .gallery-wrapper .gallery-child .flickity-viewport {
+  #make-drink .gallery-wrapper .gallery-child .flickity-viewport {
     min-height: 300px !important;
   }
-  #make-drink .container-sm .gallery-wrapper .gallery-child .flickity-viewport .gallery-cell {
+  #make-drink .gallery-wrapper .gallery-child .flickity-viewport .gallery-cell {
     text-align: center;
     min-height: 300px;
   }
-  #make-drink .container-sm .gallery-wrapper .gallery-child .flickity-viewport .gallery-cell img {
+  #make-drink .gallery-wrapper .gallery-child .flickity-viewport .gallery-cell img {
     width: 46%;
   }
-  #make-drink .container-sm .gallery-wrapper .gallery {
+  #make-drink .gallery-wrapper .gallery {
     min-height: 390px;
   }
-  #make-drink .container-sm .gallery-wrapper .gallery .flickity-viewport {
+  #make-drink .gallery-wrapper .gallery .flickity-viewport {
     height: 400px !important;
   }
-  #make-drink .container-sm .gallery-wrapper .gallery .flickity-viewport .gallery-cell {
+  #make-drink .gallery-wrapper .gallery .flickity-viewport .gallery-cell {
     padding: 0 16%;
   }
-  #make-drink .container-sm .gallery-wrapper .gallery .flickity-viewport .gallery-cell h2 {
+  #make-drink .gallery-wrapper .gallery .flickity-viewport .gallery-cell h2 {
     font-size: 17px;
+  }
+  #make-drink .make-text {
+    position: relative !important;
   }
 
   /*EXPERIENCE*/
   #events .event-movil, #slider-events .event-movil {
-    padding: 42px 16% 50px;
+    padding: 42px 42px 50px;
     background-position: left;
     background-size: cover;
   }
@@ -8263,7 +8271,7 @@ footer .col-md-3 p a:hover {
     font-size: 20px;
   }
   #events .event-movil .contenido .separador, #slider-events .event-movil .contenido .separador {
-    border-bottom: 2px solid #fff !important;
+    border-bottom: 1px solid #fff !important;
     margin-bottom: 2%;
     width: 90%;
     margin: 15px 0px 20px;

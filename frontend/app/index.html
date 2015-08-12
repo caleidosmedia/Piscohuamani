@@ -107,16 +107,16 @@
         </section>
 
         <section id="the-goods">
-          <div class="container ph-28 pv-70">
+          <div class="container relative ph-28 pv-70">
             <div class="absolute ph-14">
               <h1 class="text-brown-light">THE GOODS</h1>
               <h3 class="text-brown-light">We are just getting sarted</h3>
             </div>
             <div class="gallery-wrapper row">
-              <div class="gallery-button-left">
+              <div id="slider_back_goods" class="gallery-button-left" style="z-index:2">
                 <img src="assets/img/iconos-logos/icono-previo-gris.png" alt="">
               </div>
-              <div class="gallery-button-right">
+              <div id="slider_next_goods" class="gallery-button-right">
                 <img src="assets/img/iconos-logos/icono-siguiente-gris.png" alt="">
               </div> 
               <div class="col-xs-12 pl-0 slider-img gallery-child hidden-lg hidden-md hidden-sm"> <!--movil-->
@@ -130,45 +130,42 @@
                   <img src="assets/img/fotos/bottle2.png" alt="">
                 </div>
               </div>
-              <div class="gallery pr-0 pl-70-sm pr-28 ph-0-xs col-sm-6 col-xs-12">
-                <div class="gallery-cell pl-21 ph-14-xs">
-                  <div class="slider-text">
-                    <h2 class="text-brown">MOSTO VERDE</h2>
-                    <div class="separador pt-7"></div>
-                    <p class="line-height text-brown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est exercitationem non error tenetur laudantium sint at aspernatur voluptatum libero corporis laboriosam quaerat.</p>
-                  </div>
+              <div class="col-sm-6 col-sm-offset-6 pl-0 slider-img gallery-child hidden-xs"> 
+                <div class="slider-content text-center gallery-cell">
+                  <img src="assets/img/fotos/bottle2.png" alt="">
                 </div>
-                <div class="gallery-cell pl-21 ph-14-xs">
-                  <div class="slider-text">
-                    <h2 class="text-brown">EL HUAMANÍ</h2>
-                    <div class="separador"></div>
-                    <p class="line-height text-brown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est exercitationem non error tenetur laudantium sint at aspernatur voluptatum libero corporis laboriosam quaerat.</p>
-                  </div>
+                <div class="slider-content text-center gallery-cell">
+                  <img src="assets/img/fotos/bottle2.png" alt="">
                 </div>
-                <div class="gallery-cell pl-21 ph-14-xs">
-                  <div class="slider-text">
-                    <h2 class="text-brown">MOSTO VERDE</h2>
-                    <div class="separador"></div>
-                    <p class="line-height text-brown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est exercitationem non error tenetur laudantium sint at aspernatur voluptatum libero corporis laboriosam quaerat.</p>
-                  </div>
+                <div class="slider-content text-center gallery-cell">
+                  <img src="assets/img/fotos/bottle2.png" alt="">
+                </div>
+                <div class="slider-content text-center gallery-cell">
+                  <img src="assets/img/fotos/bottle2.png" alt="">
+                </div>
+                <div class="slider-content text-center gallery-cell">
+                  <img src="assets/img/fotos/bottle2.png" alt="">
                 </div>
               </div>
-              <div class="col-sm-6 pl-0 slider-img gallery-child hidden-xs"> 
-                <div class="slider-content text-center gallery-cell">
-                  <img src="assets/img/fotos/bottle2.png" alt="">
-                </div>
-                <div class="slider-content text-center gallery-cell">
-                  <img src="assets/img/fotos/bottle2.png" alt="">
-                </div>
-                <div class="slider-content text-center gallery-cell">
-                  <img src="assets/img/fotos/bottle2.png" alt="">
-                </div>
-                <div class="slider-content text-center gallery-cell">
-                  <img src="assets/img/fotos/bottle2.png" alt="">
-                </div>
-                <div class="slider-content text-center gallery-cell">
-                  <img src="assets/img/fotos/bottle2.png" alt="">
-                </div>
+            </div>
+            <div class="make-text absolute pt-14-sm pt-0-xs ph-42-xs" style="top:200px; width:100%">
+              <div class="text-opacity1 hidden text-white" data-index="1" data-current="1">
+                <h2 class="text-brown">MOSTO VERDE</h2>
+                <div class="separador pt-7"></div>
+                <p class="line-height text-brown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est exercitationem non error tenetur laudantium sint at aspernatur voluptatum libero corporis laboriosam quaerat.</p>
+              </div>
+              <div class="text-opacity1 hidden text-white" data-index="2">
+                <h2 class="text-brown">EL HUAMANÍ</h2>
+                <div class="separador"></div>
+                <p class="line-height text-brown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est exercitationem non error tenetur laudantium sint at aspernatur voluptatum libero corporis laboriosam quaerat.</p>
+              </div>
+              <div class="text-opacity1 hidden text-white" data-index="3">
+                <h2 class="text-brown">EL HUAMANÍ 2</h2>
+                <div class="separador"></div>
+                <p class="line-height text-brown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est exercitationem non error tenetur laudantium sint at aspernatur voluptatum libero corporis laboriosam quaerat.</p>
+              </div>
+              <div class="container-sm ph-0">
+                <div id="slider-text-goods" class="slider-text-oficial2 relative col-md-6 ml-0 pl-0 pr-42 pt-21 text-white" style="z-index: 1;"></div>
               </div>
             </div>
           </div>
@@ -180,15 +177,15 @@
               <h3>We are just getting sarted</h3>
             </div>
           </div>
-          <div class="container-sm relative">
+          <div class="relative">
             <div class="gallery-wrapper">
-              <div id="slider_back" class="gallery-button-left">
+              <div id="slider_back_make" class="gallery-button-left" style="z-index:3">
                 <img src="assets/img/iconos-logos/icono-previo-blanco.png" alt="">
               </div>
-              <div id="slider_next" class="gallery-button-right">
+              <div id="slider_next_make" class="gallery-button-right" style="z-index:3">
                 <img src="assets/img/iconos-logos/icono-siguiente-blanco.png" alt="">
               </div>
-              <div class="gallery-child hidden-lg hidden-md hidden-sm"><!--Movil-->
+              <div class="gallery-child hidden-lg hidden-md hidden-sm" style="z-index:2"><!--Movil-->
                 <div class="gallery-cell">
                   <img src="assets/img/fotos/foto-copa-make-a-drink.png" alt="">
                 </div>
@@ -199,35 +196,32 @@
                   <img src="assets/img/fotos/foto-copa-make-a-drink.png" alt="">
                 </div>
               </div>
-              <div class="gallery-child hidden-xs">
+              <div class="gallery-child hidden-xs" style="z-index:2">
                 <div class="gallery-cell">
                   <div class="row">
-                    <div class="col-sm-6"></div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-7 col-sm-offset-3 pl-70 text-right">
                       <img src="assets/img/fotos/foto-copa-make-a-drink.png" alt="">
                     </div>
                   </div>
                 </div>
                 <div class="gallery-cell">
                   <div class="row">
-                    <div class="col-sm-6"></div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-7 col-sm-offset-3 pl-70 text-right">
                       <img src="assets/img/fotos/foto-copa-make-a-drink.png" alt="">
                     </div>
                   </div>
                 </div>
                 <div class="gallery-cell">
                   <div class="row">
-                    <div class="col-sm-6"></div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-7 col-sm-offset-3 pl-70 text-right">
                       <img src="assets/img/fotos/foto-copa-make-a-drink.png" alt="">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="make-text absolute pt-35" style="top:0px">
-              <div class="text-opacity hidden text-white" data-index="1" data-current="1">
+            <div class="make-text absolute pt-14-sm pt-0-xs ph-42-xs" style="top:0px; width:100%">
+              <div class="text-opacity2 hidden text-white" data-index="1" data-current="1">
                 <h2 class="text-white serif-light">CHILCANO DE FRUTAS</h2>
                 <div class="separator mt-14 separator-white"></div>
                 <div class="row pt-21">
@@ -245,47 +239,49 @@
                   </div>
                 </div>
               </div>
-              <div class="text-opacity hidden text-white" data-index="2">
-                <h2 class="text-white serif-light">CHILCANO DE FRUTAS</h2>
+              <div class="text-opacity2 hidden text-white" data-index="2">
+                <h2 class="text-white serif-light">COCTEL DE FRUTAS</h2>
                 <div class="separator mt-14 separator-white"></div>
                 <div class="row pt-21">
                   <div class="col-sm-6 lead">
                     <p class="subtitle mb-7">Ingredients</p>
                     <ul class="type-style-none thin p-0">
-                      <li>- Lorem ipsum dolor sit.</li>
-                      <li>- Consectetur adipisicing.</li>
-                      <li>- Veritatis optio.</li>
-                      <li>- Qui ad nemo tenetut.</li>
-                      <li>- Nostrum ea.</li>
+                      <li> &nbsp;Lorem ipsum dolor sit amet.</li>
+                      <li> &nbsp;Consectetur adipisicing elit.</li>
+                      <li> &nbsp;Veritatis optio.</li>
+                      <li> &nbsp;Qui ad nemo tenetur dolorem</li>
+                      <li> &nbsp;Nostrum ea quibusdam doloribus.</li>
                     </ul>
                     <p class="subtitle mb-7">Directions:</p>
                     <p class="thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus mollitia distinctio laudantium unde esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus mollitia distinctio laudantium unde esse.</p>
                   </div>
                 </div>
               </div>
-              <div class="text-opacity hidden text-white" data-index="3">
-                <h2 class="text-white serif-light">CHILCANO DE FRUTAS</h2>
+              <div class="text-opacity2 hidden text-white" data-index="3">
+                <h2 class="text-white serif-light">CHILCANO DE PESCADO</h2>
                 <div class="separator mt-14 separator-white"></div>
                 <div class="row pt-21">
                   <div class="col-sm-6 lead">
                     <p class="subtitle mb-7">Ingredients</p>
                     <ul class="type-style-none thin p-0">
-                      <li>- Lorem ipsum dolor sit.</li>
-                      <li>- Consectetur adipisicing.</li>
-                      <li>- Veritatis optio.</li>
-                      <li>- Qui ad nemo tenetut.</li>
-                      <li>- Nostrum ea.</li>
+                      <li> &nbsp;Lorem ipsum dolor sit amet.</li>
+                      <li> &nbsp;Consectetur adipisicing elit.</li>
+                      <li> &nbsp;Veritatis optio.</li>
+                      <li> &nbsp;Qui ad nemo tenetur dolorem</li>
+                      <li> &nbsp;Nostrum ea quibusdam doloribus.</li>
                     </ul>
                     <p class="subtitle mb-7">Directions:</p>
                     <p class="thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus mollitia distinctio laudantium unde esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus mollitia distinctio laudantium unde esse.</p>
                   </div>
                 </div>
               </div>
-              <div class="slider-text-oficial relative ml-0 ph-0 pt-21 text-white col-md-5 col-md-offset-3" style="z-index: 1;"></div>
+              <div class="container-sm ph-7">
+                <div id="slider-text-make" class="slider-text-oficial2 relative ml-0 ph-0 pt-21 text-white" style="z-index: 1;"></div>
+              </div>
             </div>
           </div>
         </section>
-        <section id="events" class="p-0 relative minhp-100" style="overflow:hidden">
+        <section id="events" class="p-0 relative minh-700" style="overflow:hidden">
           <div class="container ph-35">  
             <h1 class="text-white pt-70 mt-42 hidden-xs">EXPERIENCE HUAMANI</h1>
           </div>
@@ -296,16 +292,16 @@
               <div class="gallery-cell" style="background-image:url(assets/img/fotos/fondo3.jpg)"><div class="overlay-events"></div></div>
             </div>
             <div class="">
-              <div id="slider_back" class="gallery-button-left">
+              <div id="slider_back_experience" class="gallery-button-left">
                 <img src="assets/img/iconos-logos/icono-previo-blanco.png" alt="">
               </div>
-              <div id="slider_next" class="gallery-button-right">
+              <div id="slider_next_experience" class="gallery-button-right">
                 <img src="assets/img/iconos-logos/icono-siguiente-blanco.png" alt=""> 
               </div> 
             </div>
           </div>
           <!--Slider-text-->
-          <div class="row pb-70 mb-70 relative" style="padding-top: 180px">
+          <div class="row pb-70 mb-70 absolute hidden-xs" style="padding-top: 180px; width:100%">
             <div id="" class="text-opacity hidden" data-index="1" data-current="1">
               <h2>TARDE DE GALLOS</h2>
               <div class="separador mt-14 mb-28"></div>
@@ -318,7 +314,7 @@
               </button>
             </div>
             <div id="" class="text-opacity hidden" data-index="2">
-              <h2>TARDE DE GATITOS</h2>
+              <h2>TARDE DE GALLOS 2</h2>
               <div class="separador mt-14 mb-28"></div>
               <p class="fz-20 thin">October 30 <sup>th</sup></p>
               <h3 class="p-0 m-0">MIRAFLORES PERÚ</h3>
@@ -329,7 +325,7 @@
               </button>
             </div>
             <div id="" class="text-opacity hidden" data-index="3">
-              <h2>TARDE DE CONEJITOS</h2>
+              <h2>TARDE DE GALLOS 3</h2>
               <div class="separador mt-14 mb-28"></div>
               <p class="fz-20 thin">November 30 <sup>th</sup></p>
               <h3 class="p-0 m-0">MIRAFLORES PERÚ</h3>
@@ -339,11 +335,13 @@
                 <div class="overlay absolute minhp-100 btn-block"></div>
               </button>
             </div>
-            <div id="" class="slider-text-oficial relative ph-0 pt-21 text-white col-md-3 col-md-offset-3" style="z-index: 1;">
+            <div class="container-sm ph-7 clearfix ph-28">
+              <div id="slider-text-experience" class="slider-text-oficial relative ph-0 pt-21 text-white col-md-6" style="z-index: 1;">
+              </div>
             </div>
           </div>
           <!--Slider.text-->
-          <div class="event-movil hidden-lg hidden-md hidden-sm text-white" style="background-image: url(assets/img/fotos/fondo2.jpg)"><!--movil-->
+          <div class="event-movil minhp-100 hidden-lg hidden-md hidden-sm text-white" style="background-image: url(assets/img/fotos/fondo2.jpg)"><!--movil-->
             <h2 class="text-white p-0">EXPERIENCE HUAMANI</h2>
             <h3>We are just getting sarted</h3>
             <div class="contenido pb-28-xs">
