@@ -6380,18 +6380,32 @@ body .opacity-active {
 }
 html .translate-active,
 body .translate-active {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
   transform: translateX(0px);
 }
 html .translate-left,
 body .translate-left {
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  -o-transform: translateX(-20px);
   transform: translateX(-20px);
 }
 html .translate-right,
 body .translate-right {
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -o-transform: translateX(20px);
   transform: translateX(20px);
 }
 html .slider-text-oficial,
 body .slider-text-oficial {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 

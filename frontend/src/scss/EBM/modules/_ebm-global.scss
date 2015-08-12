@@ -35,16 +35,16 @@ body {
     transition: all 0.4s ease-in-out;
 	}
 	.translate-active {
-		transform: translateX(0px);
+		@include transform (translateX(0px));
 	}
 	.translate-left {
-		transform: translateX(-20px);
+		@include transform (translateX(-20px));
 	}
 	.translate-right {
-		transform: translateX(20px);
+		@include transform (translateX(20px));
 	}
 	.slider-text-oficial {
-		transition: all 0.4s ease-in-out;
+		@include transition (all 0.4s ease-in-out);
 	}
 }
 .row {
