@@ -34,7 +34,16 @@ body {
 		opacity: 0;
     transition: all 0.4s ease-in-out;
 	}
-	#slider-text-oficial {
+	.translate-active {
+		transform: translateX(0px);
+	}
+	.translate-left {
+		transform: translateX(-20px);
+	}
+	.translate-right {
+		transform: translateX(20px);
+	}
+	.slider-text-oficial {
 		transition: all 0.4s ease-in-out;
 	}
 }
@@ -515,8 +524,8 @@ $make-drink-gallery-height-control: 560px;
 	.gallery-button-right {
 		@include position(absolute, -60px -98px 0 null);
 	}
-	.gallery {
-		.gallery-cell {
+	.make-text {
+		.text-opacity {
 			padding-top: 30px;
 			.subtitle {
 				font-style: italic;

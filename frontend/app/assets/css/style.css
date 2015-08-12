@@ -6378,8 +6378,20 @@ body .opacity-active {
   opacity: 0;
   transition: all 0.4s ease-in-out;
 }
-html #slider-text-oficial,
-body #slider-text-oficial {
+html .translate-active,
+body .translate-active {
+  transform: translateX(0px);
+}
+html .translate-left,
+body .translate-left {
+  transform: translateX(-20px);
+}
+html .translate-right,
+body .translate-right {
+  transform: translateX(20px);
+}
+html .slider-text-oficial,
+body .slider-text-oficial {
   transition: all 0.4s ease-in-out;
 }
 
@@ -6970,26 +6982,26 @@ body #slider-text-oficial {
   right: -98px;
   bottom: 0;
 }
-#make-drink .gallery .gallery-cell {
+#make-drink .make-text .text-opacity {
   padding-top: 30px;
 }
-#make-drink .gallery .gallery-cell .subtitle {
+#make-drink .make-text .text-opacity .subtitle {
   font-style: italic;
   font-size: 24px;
   font-size: 1.71429rem;
   margin-bottom: 20px;
 }
-#make-drink .gallery .gallery-cell ul {
+#make-drink .make-text .text-opacity ul {
   margin-bottom: 30px;
 }
-#make-drink .gallery .gallery-cell ul li {
+#make-drink .make-text .text-opacity ul li {
   font-size: 18.2px;
   font-size: 1.3rem;
 }
-#make-drink .gallery .gallery-cell ul li:before {
+#make-drink .make-text .text-opacity ul li:before {
   content: "-";
 }
-#make-drink .gallery .gallery-cell p {
+#make-drink .make-text .text-opacity p {
   font-size: 18.2px;
   font-size: 1.3rem;
 }
