@@ -5,7 +5,7 @@ $(document).ready(function(){
 	var $goodsGalleryNav = $('#the-goods .gallery');
 
 	$goodsGalleryNav.flickity({
-		//cellAlign: 'left',
+		cellAlign: 'center',
 		prevNextButtons: false,
 		pageDots: false,
 		draggable: true,
@@ -14,7 +14,7 @@ $(document).ready(function(){
 	});
 
 	$goodsGallery.flickity({
-		// cellAlign: 'left',
+		cellAlign: 'right',
 		asNavFor: '#the-goods .gallery',
 		prevNextButtons: false,
 		pageDots: false,
@@ -170,3 +170,11 @@ $(document).ready(function(){
 	  $sliderEventsGallery.flickity('next');
 	});
 });
+
+// $(document).ready(function(){
+// 	var Flickity = require('flickity-imagesloaded');
+
+// 	var flkty = new Flickity( '.gallery-right', {
+// 	  imagesLoaded: true
+// 	});
+// });

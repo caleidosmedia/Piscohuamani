@@ -434,7 +434,6 @@ $separator-height-control: 1px;
 	.gallery {
 		height: 630px;
 		padding-top: 115px;
-		-webkit-box-shadow: 22px 5px 30px 0px rgba(248, 244, 229, 1);
 		z-index: 2; 
 	}
 	.gallery-child {
@@ -447,7 +446,7 @@ $separator-height-control: 1px;
 		height: 500px!important;
 		img {
 			padding-top: 150px;
-			width: 170px;
+			width: 150px;
   		height: 780px;
 		}
 	}
@@ -481,7 +480,6 @@ $separator-height-control: 1px;
 		width: 50%;
 		height: auto;
 		top: -150px;
-		text-align: right;
 	}
 	.gallery-wrapper{
 		position: relative;
@@ -497,7 +495,10 @@ $separator-height-control: 1px;
 		@include position(absolute, 10px null 0 0);
 	}
 	.gallery-button-right {
-		@include position(absolute, 10px 332px 0 null);
+		@include position(absolute, 10px 42% 0 null);
+		-moz-box-shadow:    22px 5px 30px 0px rgba(248, 244, 229, 1);
+	  -webkit-box-shadow: 22px 5px 30px 0px rgba(248, 244, 229, 1);
+	  box-shadow:         22px 5px 30px 0px rgba(248, 244, 229, 1);
 		z-index: 100;
 	}	
 }
@@ -518,8 +519,7 @@ $make-drink-gallery-height-control: 560px;
 	.gallery,
 	.gallery-cell,
 	.gallery-child {
-		min-height: $make-drink-gallery-height-control;
-		width: 100%; 
+		min-height: $make-drink-gallery-height-control; 
 	}
 	.gallery-button-left {
 		@include position(absolute, -60px null 0 220px);
@@ -1620,8 +1620,8 @@ footer {
 				right: 35px;
 			}
 			.gallery-child .flickity-viewport {
-				// height: 439px!important;
-				height: 350px!important;
+				margin-top: 80px;
+				height: 358px!important;
 				.slider-content{
 					height: auto!important;
 					top: 0!important;
@@ -1629,7 +1629,7 @@ footer {
 					img {
 						width: 24%!important;
 						height: auto!important;
-						padding-top: 140px!important;
+						padding-top: 50px!important;
 					}
 				}
 			}
@@ -1646,6 +1646,11 @@ footer {
 					}
 				}
 			}
+		}
+		.make-text {
+			width: auto!important;
+			position: relative;
+			top: 0px!important;
 		}
 	}
 	/*MAKE DRINK*/
