@@ -170,11 +170,3 @@ $(document).ready(function(){
 	  $sliderEventsGallery.flickity('next');
 	});
 });
-
-// $(document).ready(function(){
-// 	var Flickity = require('flickity-imagesloaded');
-
-// 	var flkty = new Flickity( '.gallery-right', {
-// 	  imagesLoaded: true
-// 	});
-// });

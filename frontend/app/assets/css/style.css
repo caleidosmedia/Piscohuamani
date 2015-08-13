@@ -6371,7 +6371,7 @@ body #media-kit {
 }
 html .active-select,
 body .active-select {
-  border: 1px solid #8d744a;
+  border: 1px solid #8d744a !important;
 }
 html .opacity-active,
 html .opacity-active2,
@@ -6608,7 +6608,7 @@ body .slider-text-oficial2 {
   padding: 3px 0;
   font-weight: 300;
 }
-#formulario .action .btn-group .btn-default.active-btn, #formulario .action .btn-group .btn-default:focus, #formulario .action .btn-group .btn-default:active {
+#formulario .action .btn-group .btn-default.active-btn {
   border-color: #8d744a;
   color: #8d744a;
 }
@@ -7648,9 +7648,6 @@ footer .col-md-3 p a:hover {
   border: 1px solid transparent;
   margin-right: 2%;
 }
-#faqs #menu-blog nav a:first-child {
-  border: 1px solid #8d744a;
-}
 #faqs #menu-blog nav a:hover {
   border: 1px solid #8d744a;
   padding: 5px 14px;
@@ -7719,9 +7716,6 @@ footer .col-md-3 p a:hover {
   padding: 5px 14px;
   border: 1px solid transparent;
   margin-right: 2%;
-}
-#media-kit #menu-blog nav a:first-child {
-  border: 1px solid #8d744a;
 }
 #media-kit #menu-blog nav a:hover {
   border: 1px solid #8d744a;

@@ -28,7 +28,7 @@ body {
 		background-color: #f8f4e5;
 	}
 	.active-select {
-		border: 1px solid #8d744a;
+		border: 1px solid #8d744a!important;
 	}
 	.opacity-active,
 	.opacity-active2,
@@ -197,9 +197,7 @@ $separator-height-control: 1px;
 			  font-size: 14px;
 			  padding: 3px 0;
 			  font-weight: 300;
-			  &.active-btn,
-			  &:focus,
-			  &:active {
+			  &.active-btn {
 			  	border-color: #8d744a;
   				color: #8d744a;
 			  }
@@ -1107,7 +1105,6 @@ footer {
 	Menu blog
 */
 #faqs {
-	  // padding: 102px 235px 57px;
 	.container{
 	 	padding: 110px 33px;
 	 	padding: rem(110px) rem(33px);
@@ -1136,9 +1133,6 @@ footer {
 	  		padding: 5px 14px;
 	  		border: 1px solid transparent;
 	  		margin-right: 2%;
-	  		&:first-child {
-	  			border: 1px solid #8d744a;
-	  		}
 	  		&:hover  {
 					border: 1px solid #8d744a;
 		  		padding: 5px 14px;
@@ -1213,9 +1207,6 @@ footer {
 	  		padding: 5px 14px;
 	  		border: 1px solid transparent;
 	  		margin-right: 2%;
-	  		&:first-child {
-	  			border: 1px solid #8d744a;
-	  		}
 	  		&:hover {
 					border: 1px solid #8d744a;
 		  		padding: 5px 14px;
