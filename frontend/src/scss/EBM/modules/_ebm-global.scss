@@ -224,6 +224,10 @@ $separator-height-control: 1px;
 			  right: -4px;
 			  position: relative;
 			}
+			&.active-enter {
+				border-color: #8d744a;
+    		color: #8d744a;
+			}
 		}
 	.box {
 		width: 17px;
@@ -1413,6 +1417,9 @@ footer {
 		}
 	}
 	#formulario {
+		form {
+			width: 100%!important;
+		}
 		padding: 15px 14%;
 		text-align: right;
 		.date {

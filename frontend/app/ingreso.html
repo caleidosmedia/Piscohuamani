@@ -19,15 +19,15 @@
 		    	</div>
 		    	<h3 class="text-white text-center family-museosans"> HELLO THERE, <br>ARE YOU OF LEGAL DRINKIG AGE?</h3>
 		    	<div id="formulario">
-		    		<form class="date clearfix text-center" action="index.html" method="post">
+		    		<form class="date clearfix text-center">
 		    			<input id="day" class="number text-center text-white day" type="text" min="1" max="30" maxlength="2" placeholder="DAY" name="day" required>
 		    			<input id="month" class="number text-center month" type="text" pattern="[0-9]*" min="1" max="12" maxlength="2" placeholder="MONTH" name="month" required>
-		    			<input id="year" class="number text-center" type="text" pattern="[0-9]*" maxlength="4" class="year" placeholder="YEAR" name="year" required> 
+		    			<input id="year" class="number text-center" type="text" pattern="[0-9]*" min="4" maxlength="4" class="year" placeholder="YEAR" name="year" required> 
 		    			<div class="action row col-md-8 pl-21">
-								<select name="LOCATION" required class="col-md-4 col-xs-6 thin text-white ml-0" style="background-image: url(assets/img/texturas/textura-oscura.png);">
+								<select name="LOCATION" id="country" class="col-md-4 col-xs-6 thin text-white ml-0" style="background-image: url(assets/img/texturas/textura-oscura.png); required">
 									<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
 									<option value="AF">LOCATION</option>
-									<option value="PE">Perú</option>
+									<option value="PE">Peru</option>
 									<option value="AX">Åland Islands</option>
 									<option value="AL">Albania</option>
 									<option value="DZ">Algeria</option> 
@@ -155,7 +155,8 @@
 									<option value="MK">Macedonia, the former Yugoslav Republic of</option>
 									<option value="MG">Madagascar</option>
 									<option value="MW">Malawi</option>
-									<option value="MY">Malaysia</option>									<option value="MV">Maldives</option>
+									<option value="MY">Malaysia</option>									
+									<option value="MV">Maldives</option>
 									<option value="ML">Mali</option>
 									<option value="MT">Malta</option>
 									<option value="MH">Marshall Islands</option>
@@ -252,12 +253,11 @@
 									<option value="UY">Uruguay</option>
 									<option value="UZ">Uzbekistan</option>
 									<option value="VU">Vanuatu</option>
-									<option value="VE">Venezuela, Bolivarian Republic of</option>
-									<option value="VN">Viet Nam</option>
+									<option value="VE">Venezuela</option>
+									<option value="VN">Vietnam</option>
 									<option value="VG">Virgin Islands, British</option>
 									<option value="VI">Virgin Islands, U.S.</option>
 									<option value="WF">Wallis and Futuna</option>
-									<option value="EH">Western Sahara</option>
 									<option value="ZM">Zambia</option>
 									<option value="ZW">Zimbabwe</option>
 								</select>
@@ -272,7 +272,7 @@
 									</div>
 								</div>
 		    			</div>
-		    			<button href="index.html" class="enter mt-21" type="submit" class="btn btn-default">ENTER<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
+		    			<button href="index.html" class="enter mt-21 btn btn-default" type="submit" disabled="disabled">ENTER<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
 		    		</form>
 					  <button class="box ml-21 mr-14 mv-14">
 					  	<span class="close text-white" data-dismiss="modal">&times;</span>
@@ -283,7 +283,9 @@
 			</div>
 		</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="assets/js/b3/dropdown.js"></script>
 	<script src="assets/js/forms-control.js"></script>
 	<script src="assets/js/ingreso-control.js"></script>
+	<script type="text/javascript">
+		
+	</script>
 </html>

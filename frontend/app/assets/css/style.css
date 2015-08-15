@@ -6633,6 +6633,10 @@ body .slider-text-oficial2 {
   right: -4px;
   position: relative;
 }
+#formulario .enter.active-enter {
+  border-color: #8d744a;
+  color: #8d744a;
+}
 #formulario .box {
   width: 17px;
   height: 17px;
@@ -7938,6 +7942,9 @@ footer .col-md-3 p a:hover {
   #formulario {
     padding: 15px 14%;
     text-align: right;
+  }
+  #formulario form {
+    width: 100% !important;
   }
   #formulario .date {
     padding-top: 27px;

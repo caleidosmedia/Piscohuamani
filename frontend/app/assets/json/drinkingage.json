@@ -1,0 +1,715 @@
+{
+	"countries" : [
+	   
+		{
+			"country" : "Benin" ,
+			"age": 0
+		},
+		{
+			"country" : "Bolivia",
+			"age": 0
+		},
+		{
+			"country" : "Burkina Faso",
+			"age": 0
+		},
+		{
+			"country" : "Burundi",
+			"age": 0
+		},
+		{
+			"country" : "Cambodia",
+			"age": 0
+		},
+		{
+			"country" : "Cameroon",
+			"age": 0
+		},
+		{
+			"country" : "China",
+			"age": 0
+		},
+		{
+			"country" : "Gabon",
+			"age": 0
+		},
+		{
+			"country" : "Guinea-Bissau",
+			"age": 0
+		},
+		{
+			"country" : "Indonesia",
+			"age": 0
+		},
+		{
+			"country" : "Kosovo",
+			"age": 0
+		},
+		{
+			"country" : "Laos",
+			"age": 0
+		},
+		{
+			"country" : "Mali",
+			"age": 0
+		},
+		{
+			"country" : "Rwanda",
+			"age": 0
+		},
+		{
+			"country" : "Sao Tome and Principe",
+			"age": 0
+		},
+		{
+			"country" : "Sierra Leone",
+			"age": 0
+		},
+		{
+			"country" : "Solomon Islands",
+			"age": 0
+		},
+		{
+			"country" : "Timor-Leste",
+			"age": 0
+		},
+		{
+			"country" : "Togo",
+			"age": 0
+		},
+
+
+
+		{
+			"country" : "Antigua and Barbuda",
+			"age" : 10
+		},
+		{
+			"country" : "Central African Republic",
+			"age" : 10
+		},
+
+
+
+		{
+			"country" : "Austria",
+			"age" : 17
+		},
+		{
+			"country" : "Belgium",
+			"age" : 17
+		},
+		{
+			"country" : "Congo",
+			"age" : 17
+		},
+		{
+			"country" : "Cyprus",
+			"age" : 17
+		},
+		{
+			"country" : "Denmark",
+			"age" : 17
+		},
+		{
+			"country" : "Dominica",
+			"age" : 17
+		},
+		{
+			"country" : "Germany",
+			"age" : 17
+		},
+		{
+			"country" : "Grenada",
+			"age" : 17
+		},
+		{
+			"country" : "Guyana",
+			"age" : 17
+		},
+		{
+			"country" : "Haiti",
+			"age" : 17
+		},
+		{
+			"country" : "Liechtenstein",
+			"age" : 17
+		},
+		{
+			"country" : "Luxembourg",
+			"age" : 17
+		},
+		{
+			"country" : "Malta",
+			"age" : 17
+		},
+		{
+			"country" : "Morocco",
+			"age" : 17
+		},
+		{
+			"country" : "Netherlands",
+			"age" : 17
+		},
+		{
+			"country" : "Portugal",
+			"age" : 17
+		},
+		{
+			"country" : "Saint Lucia",
+			"age" : 17
+		},
+		{
+			"country" : "Saint Vincent and the Grenadines",
+			"age" : 17
+		},
+		{
+			"country" : "San Marino",
+			"age" : 17
+		},
+		{
+			"country" : "Spain",
+			"age" : 17
+		},
+		{
+			"country" : "Switzerland",
+			"age" : 17
+		},
+
+
+
+		{
+			"country" : "Albania",
+			"age" : 18
+		},
+		{
+			"country" : "Algeria",
+			"age" : 18
+		},
+		{
+			"country" : "Andorra",
+			"age" : 18
+		},
+		{
+			"country" : "Angola",
+			"age" : 18
+		},
+		{
+			"country" : "Argentina",
+			"age" : 18
+		},
+		{
+			"country" : "Armenia",
+			"age" : 18
+		},
+		{
+			"country" : "Australia",
+			"age" : 18
+		},
+		{
+			"country" : "Azerbaijan",
+			"age" : 18
+		},
+		{
+			"country" : "Bahamas",
+			"age" : 18
+		},
+		{
+			"country" : "Barbados",
+			"age" : 18
+		},
+		{
+			"country" : "Belarus",
+			"age" : 18
+		},
+		{
+			"country" : "Belize",
+			"age" : 18
+		},
+		{
+			"country" : "Bhutan",
+			"age" : 18
+		},
+		{
+			"country" : "Bosnia and Herzegovina",
+			"age" : 18
+		},
+		{
+			"country" : "Botswana",
+			"age" : 18
+		},
+		{
+			"country" : "Brazil",
+			"age" : 18
+		},
+		{
+			"country" : "Bulgaria",
+			"age" : 18
+		},
+		{
+			"country" : "Canada",
+			"age" : 18
+		},
+		{
+			"country" : "Cape Verde",
+			"age" : 18
+		},
+		{
+			"country" : "Chad",
+			"age" : 18
+		},
+		{
+			"country" : "Chile",
+			"age" : 18
+		},
+		{
+			"country" : "Colombia",
+			"age" : 18
+		},
+		{
+			"country" : "Comoros",
+			"age" : 18
+		},
+		{
+			"country" : "Costa Rica",
+			"age" : 18
+		},
+		{
+			"country" : "Croatia",
+			"age" : 18
+		},
+		{
+			"country" : "Cuba",
+			"age" : 18
+		},
+		{
+			"country" : "Czech Republic",
+			"age" : 18
+		},
+		{
+			"country" : "Democratic Republic of the Congo",
+			"age" : 18
+		},
+		{
+			"country" : "Dominican Republic",
+			"age" : 18
+		},
+		{
+			"country" : "Ecuador",
+			"age" : 18
+		},
+		{
+			"country" : "Egypt",
+			"age" : 18
+		},
+		{
+			"country" : "El Salvador",
+			"age" : 18
+		},
+		{
+			"country" : "Eritrea",
+			"age" : 18
+		},
+		{
+			"country" : "Estonia",
+			"age" : 18
+		},
+		{
+			"country" : "Ethiopia",
+			"age" : 18
+		},
+		{
+			"country" : "Fiji",
+			"age" : 18
+		},{
+			"count: ry" : "Finland",
+			"age" : 18
+		},
+		{
+			"country" : "France",
+			"age" : 18
+		},
+		{
+			"country" : "Gambia",
+			"age" : 18
+		},
+		{
+			"country" : "Georgia",
+			"age" : 18
+		},
+		{
+			"country" : "Ghana",
+			"age" : 18
+		},
+		{
+			"country" : "Greece",
+			"age" : 18
+		},
+		{
+			"country" : "Guatemala",
+			"age" : 18
+		},
+		{
+			"country" : "Guinea",
+			"age" : 18
+		},
+		{
+			"country" : "Honduras",
+			"age" : 18
+		},
+		{
+			"country" : "Hungary",
+			"age" : 18
+		},
+		{
+			"country" : "India",
+			"age" : 18
+		},
+		{
+			"country" : "Ireland",
+			"age" : 18
+		},
+		{
+			"country" : "Israel",
+			"age" : 18
+		},
+		{
+			"country" : "Italy",
+			"age" : 18
+		},
+		{
+			"country" : "Jamaica",
+			"age" : 18
+		},
+		{
+			"country" : "Jordan",
+			"age" : 18
+		},
+		{
+			"country" : "Kazakhstan",
+			"age" : 18
+		},
+		{
+			"country" : "Kenya",
+			"age" : 18
+		},
+		{
+			"country" : "Kyrgyzstan",
+			"age" : 18
+		},
+		{
+			"country" : "Latvia",
+			"age" : 18
+		},
+		{
+			"country" : "Lesotho",
+			"age" : 18
+		},
+		{
+			"country" : "Liberia",
+			"age" : 18
+		},
+		{
+			"country" : "Lithuania",
+			"age" : 18
+		},
+		{
+			"country" : "Macedonia",
+			"age" : 18
+		},
+		{
+			"country" : "Madagascar",
+			"age" : 18
+		},
+		{
+			"country" : "Malawi",
+			"age" : 18
+		},
+		{
+			"country" : "Malaysia",
+			"age" : 18
+		},
+		{
+			"country" : "Mauritius",
+			"age" : 18
+		},
+		{
+			"country" : "Mexico",
+			"age" : 18
+		},
+		{
+			"country" : "Moldova",
+			"age" : 18
+		},
+		{
+			"country" : "Monaco",
+			"age" : 18
+		},
+		{
+			"country" : "Montenegro",
+			"age" : 18
+		},
+		{
+			"country" : "Mozambique",
+			"age" : 18
+		},
+		{
+			"country" : "Myanmar",
+			"age" : 18
+		},
+		{
+			"country" : "Namibia",
+			"age" : 18
+		},
+		{
+			"country" : "Nepal",
+			"age" : 18
+		},
+		{
+			"country" : "New Zealand",
+			"age" : 18
+		},
+		{
+			"country" : "Nicaragua",
+			"age" : 18
+		},
+		{
+			"country" : "Niger",
+			"age" : 18
+		},
+		{
+			"country" : "Nigeria",
+			"age" : 18
+		},
+		{
+			"country" : "Norway",
+			"age" : 18
+		},
+		{
+			"country" : "Panama",
+			"age" : 18
+		},
+		{
+			"country" : "Papua New Guinea",
+			"age" : 18
+		},
+		{
+			"country" : "Peru",
+			"age" : 18
+		},
+		{
+			"country" : "Philippines",
+			"age" : 18
+		},
+		{
+			"country" : "Poland",
+			"age" : 18
+		},
+		{
+			"country" : "Romania",
+			"age" : 18
+		},
+		{
+			"country" : "Russia",
+			"age" : 18
+		},
+		{
+			"country" : "Saint Kitts and Nevis",
+			"age" : 18
+		},
+		{
+			"country" : "Senegal",
+			"age" : 18
+		},
+		{
+			"country" : "Serbia",
+			"age" : 18
+		},
+		{
+			"country" : "Seychelles",
+			"age" : 18
+		},
+		{
+			"country" : "Singapore",
+			"age" : 18
+		},
+		{
+			"country" : "Slovakia",
+			"age" : 18
+		},
+		{
+			"country" : "Slovenia",
+			"age" : 18
+		},
+		{
+			"country" : "South Africa",
+			"age" : 18
+		},
+		{
+			"country" : "South Korea",
+			"age" : 18
+		},
+		{
+			"country" : "Suriname",
+			"age" : 18
+		},
+		{
+			"country" : "Swaziland",
+			"age" : 18
+		},
+		{
+			"country" : "Sweden",
+			"age" : 18
+		},
+		{
+			"country" : "Syria",
+			"age" : 18
+		},
+		{
+			"country" : "Tajikistan",
+			"age" : 18
+		},
+		{
+			"country" : "Tanzania",
+			"age" : 18
+		},
+		{
+			"country" : "Tonga",
+			"age" : 18
+		},
+		{
+			"country" : "Trinidad and Tobago",
+			"age" : 18
+		},
+		{
+			"country" : "Tunisia",
+			"age" : 18
+		},
+		{
+			"country" : "Turkey",
+			"age" : 18
+		},
+		{
+			"country" : "Turkmenistan",
+			"age" : 18
+		},
+		{
+			"country" : "Tuvalu",
+			"age" : 18
+		},
+		{
+			"country" : "Uganda",
+			"age" : 18
+		},
+		{
+			"country" : "Ukraine",
+			"age" : 18
+		},
+		{
+			"country" : "United Kingdom",
+			"age" : 18
+		},
+		{
+			"country" : "Uruguay",
+			"age" : 18
+		},
+		{
+			"country" : "Vanuatu",
+			"age" : 18
+		},
+		{
+			"country" : "Vatican City",
+			"age" : 18
+		},
+		{
+			"country" : "Venezuela",
+			"age" : 18
+		},
+		{
+			"country" : "Vietnam",
+			"age" : 18
+		},
+		{
+			"country" : "Zambia",
+			"age" : 18
+		},
+		{
+			"country" : "Zimbabwe",
+			"age" : 18
+		},
+
+
+
+		{
+			"country" : "Iceland",
+			"age" : 20
+		},
+		{
+			"country" : "Japan",
+			"age" : 20
+		},
+		{
+			"country" : "Paraguay",
+			"age" : 20
+		},
+		{
+			"country" : "Thailand",
+			"age" : 20
+		},
+		{
+			"country" : "Uzbekistan",
+			"age" : 20
+		},
+
+
+
+		{
+			"country" : "Côte d'Ivoire",
+			"age" : 21
+		},
+		{
+			"country" : "Equatorial Guinea",
+			"age" : 21
+		},
+		{
+			"country" : "Iraq",
+			"age" : 21
+		},
+		{
+			"country" : "Kiribati",
+			"age" : 21
+		},
+		{
+			"country" : "Micronesia",
+			"age" : 21
+		},
+		{
+			"country" : "Mongolia",
+			"age" : 21
+		},
+		{
+			"country" : "Nauru",
+			"age" : 21
+		},
+		{
+			"country" : "Oman",
+			"age" : 21
+		},
+		{
+			"country" : "Palau",
+			"age" : 21
+		},
+		{
+			"country" : "Samoa",
+			"age" : 21
+		},
+		{
+			"country" : "Sri Lanka",
+			"age" : 21
+		},
+		{
+			"country" : "United States",
+			"age" : 21
+		}
+	]
+}
