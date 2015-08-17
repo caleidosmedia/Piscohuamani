@@ -1439,21 +1439,22 @@ footer {
 				margin-left: 0;
 			}
 			.btn-group {
-
 				button {
-					padding: 0 7px!important;					
+					padding: 0 7px!important;
+					float: right;				
 				}
 			}
 			select,
 			.btn-group button{
 				height: 34px;
 			}
-			.enter {
-				margin-top: 40px;
-			}
 		}
-		.checkbox {
-			display: inline-block;
+		.enter {
+			margin-top: 40px!important;
+			float: right;
+		}
+		.box {
+			float: none;
 		}
 	}
 	/*RESPONSIVE MENÚ*/

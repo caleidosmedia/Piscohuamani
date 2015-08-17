@@ -7963,16 +7963,18 @@ footer .col-md-3 p a:hover {
   }
   #formulario .action .btn-group button {
     padding: 0 7px !important;
+    float: right;
   }
   #formulario .action select,
   #formulario .action .btn-group button {
     height: 34px;
   }
-  #formulario .action .enter {
-    margin-top: 40px;
+  #formulario .enter {
+    margin-top: 40px !important;
+    float: right;
   }
-  #formulario .checkbox {
-    display: inline-block;
+  #formulario .box {
+    float: none;
   }
 
   /*RESPONSIVE MEN├Ü*/

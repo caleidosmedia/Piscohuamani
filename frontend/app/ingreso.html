@@ -19,14 +19,14 @@
 		    	</div>
 		    	<h3 class="text-white text-center family-museosans"> HELLO THERE, <br>ARE YOU OF LEGAL DRINKIG AGE?</h3>
 		    	<div id="formulario">
-		    		<form class="date clearfix text-center">
+		    		<form class="date clearfix text-center relative" action="index.html">
 		    			<input id="day" class="number text-center text-white day" type="text" min="1" max="30" maxlength="2" placeholder="DAY" name="day" required>
 		    			<input id="month" class="number text-center month" type="text" pattern="[0-9]*" min="1" max="12" maxlength="2" placeholder="MONTH" name="month" required>
 		    			<input id="year" class="number text-center" type="text" pattern="[0-9]*" min="4" maxlength="4" class="year" placeholder="YEAR" name="year" required> 
-		    			<div class="action row col-md-8 pl-21">
+		    			<div class="action row col-md-8 pl-21 ph-0-xs">
 								<select name="LOCATION" id="country" class="col-md-4 col-xs-6 thin text-white ml-0" style="background-image: url(assets/img/texturas/textura-oscura.png); required">
 									<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-									<option value="AF">LOCATION</option>
+									<option value="">LOCATION</option>
 									<option value="PE">Peru</option>
 									<option value="AX">Åland Islands</option>
 									<option value="AL">Albania</option>
@@ -272,7 +272,7 @@
 									</div>
 								</div>
 		    			</div>
-		    			<button href="index.html" class="enter mt-21 btn btn-default" type="submit" disabled="disabled">ENTER<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
+		    			<button class="enter mt-21 btn btn-default" type="submit" disabled="disabled">ENTER<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
 		    		</form>
 					  <button class="box ml-21 mr-14 mv-14">
 					  	<span class="close text-white" data-dismiss="modal">&times;</span>
