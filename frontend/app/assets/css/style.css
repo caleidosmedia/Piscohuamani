@@ -6656,6 +6656,7 @@ body .slider-text-oficial2 {
 }
 #formulario label {
   font-style: italic;
+  float: left;
 }
 
 /*Active checkout*/
@@ -7957,6 +7958,7 @@ footer .col-md-3 p a:hover {
     height: 48px;
     border: 1.5px solid #fff;
     font-size: 23px;
+    border-radius: 0px;
   }
   #formulario .action select {
     margin-left: 0;
@@ -7969,11 +7971,10 @@ footer .col-md-3 p a:hover {
   #formulario .action .btn-group button {
     height: 34px;
   }
-  #formulario .enter {
-    margin-top: 40px !important;
-    float: right;
-  }
   #formulario .box {
+    float: none;
+  }
+  #formulario label {
     float: none;
   }
 
@@ -8069,6 +8070,7 @@ footer .col-md-3 p a:hover {
     height: 100%;
     top: 0;
     left: 0;
+    bottom: 0;
     background-color: #3b2e29;
     padding-top: 32%;
     -webkit-transform: translateX(-100%);

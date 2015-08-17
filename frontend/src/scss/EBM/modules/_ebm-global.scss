@@ -248,6 +248,7 @@ $separator-height-control: 1px;
 	}
 	label{
 		font-style: italic;
+		float: left;
 	}
 }
 
@@ -1432,6 +1433,7 @@ footer {
 	  		height: 48px;
   			border: 1.5px solid #fff;
   			font-size: 23px;
+  			border-radius: 0px;
   		}
 		}
 		.action {
@@ -1449,11 +1451,10 @@ footer {
 				height: 34px;
 			}
 		}
-		.enter {
-			margin-top: 40px!important;
-			float: right;
-		}
 		.box {
+			float: none;
+		}
+		label {
 			float: none;
 		}
 	}
@@ -1524,6 +1525,7 @@ footer {
 	  height: 100%;
 	  top: 0;
 	  left: 0;
+	  bottom: 0;
 	  background-color: rgb(59, 46, 41);
 	  padding-top: 32%;
 	  @include transform(translateX(-100%));
