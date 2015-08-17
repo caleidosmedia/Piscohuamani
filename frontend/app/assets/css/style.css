@@ -7219,6 +7219,10 @@ body .slider-text-oficial2 {
   border-radius: 100%;
   padding: 8px;
 }
+#follow-us .container-social a .icon .icon-twitter img {
+  width: 45px;
+  top: 5px;
+}
 
 /*
 	Footer
