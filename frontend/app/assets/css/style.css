@@ -8037,9 +8037,17 @@ footer .col-md-3 p a:hover {
     cursor: pointer;
   }
   .site-menu .nav-movil .switch.on:after {
+    -webkit-transform: rotate(-45deg) translate(5px, -5px);
+    -moz-transform: rotate(-45deg) translate(5px, -5px);
+    -ms-transform: rotate(-45deg) translate(5px, -5px);
+    -o-transform: rotate(-45deg) translate(5px, -5px);
     transform: rotate(-45deg) translate(5px, -5px);
   }
   .site-menu .nav-movil .switch.on:before {
+    -webkit-transform: rotate(45deg) translate(5px, 5px);
+    -moz-transform: rotate(45deg) translate(5px, 5px);
+    -ms-transform: rotate(45deg) translate(5px, 5px);
+    -o-transform: rotate(45deg) translate(5px, 5px);
     transform: rotate(45deg) translate(5px, 5px);
   }
   .site-menu .nav-movil .switch .menu-toggle {
@@ -8240,11 +8248,11 @@ footer .col-md-3 p a:hover {
     min-height: auto;
   }
   #make-drink .gallery-wrapper .gallery-child .flickity-viewport {
-    min-height: 300px !important;
+    min-height: 260px !important;
   }
   #make-drink .gallery-wrapper .gallery-child .flickity-viewport .gallery-cell {
     text-align: center;
-    min-height: 300px;
+    min-height: 230px;
   }
   #make-drink .gallery-wrapper .gallery-child .flickity-viewport .gallery-cell img {
     width: 46%;
@@ -8263,6 +8271,9 @@ footer .col-md-3 p a:hover {
   }
   #make-drink .make-text {
     position: relative !important;
+  }
+  #make-drink .make-text h2 {
+    line-height: 1.2 !important;
   }
 
   /*EXPERIENCE*/

@@ -1492,10 +1492,10 @@ footer {
 			 	cursor: pointer;
 			}
 			.switch.on:after {
-			  	transform: rotate(-45deg) translate(5px, -5px);
+			  	@include transform (rotate(-45deg) translate(5px, -5px));
 			}
 			.switch.on:before {
-			  	transform: rotate(45deg) translate(5px, 5px);
+			  	@include transform (rotate(45deg) translate(5px, 5px));
 			}
 			.switch .menu-toggle {
 			  	width: 100%;
@@ -1683,10 +1683,10 @@ footer {
 				top: 40px;
 				min-height: auto;
 				.flickity-viewport {
-					min-height: 300px!important;
+					min-height: 260px!important;
 					.gallery-cell {
 						text-align: center;
-						min-height: 300px;
+						min-height: 230px;
 						img {
 							width: 46%;
 						}
@@ -1708,6 +1708,9 @@ footer {
 		}
 		.make-text {
 			position: relative!important;
+			h2 {
+				line-height: 1.2!important;
+			}
 		}
 	}
 	/*EXPERIENCE*/
