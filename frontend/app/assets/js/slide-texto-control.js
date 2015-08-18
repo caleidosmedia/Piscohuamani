@@ -8,6 +8,9 @@ $(document).ready(function() {
 	mostrarContenido("#slider-text-make", ".text-opacity2");
 	slide("#slider_next_make", "next", "translate-left", "#slider-text-make", ".text-opacity2");
 	slide("#slider_back_make", "back", "translate-right", "#slider-text-make", ".text-opacity2");
+	mostrarContenido("#container-ronda", ".ronda-1");
+	slide(".gallery-button-right", "next", "translate-left", "#container-ronda", ".ronda-1");
+	slide(".gallery-button-left", "back", "translate-right", "#container-ronda", ".ronda-1");
 });
 
 

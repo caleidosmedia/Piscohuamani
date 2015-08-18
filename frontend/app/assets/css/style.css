@@ -6654,6 +6654,15 @@ body .slider-text-oficial2 {
   left: -2px;
   display: none;
 }
+#formulario .box input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  visibility: hidden;
+}
 #formulario label {
   font-style: italic;
   float: left;
@@ -7561,18 +7570,18 @@ footer .col-md-3 p a:hover {
   line-height: 1.5;
   color: #4e3227;
 }
-#galeria .grid {
-  padding-top: 25px;
-}
-#galeria .grid ul {
+#galeria #container-ronda ul {
   list-style-type: none;
   margin: 0 -9px;
 }
-#galeria .grid ul li {
+#galeria #container-ronda ul li {
   padding: 9px;
 }
-#galeria .grid ul li img {
+#galeria #container-ronda ul li img {
   width: 100%;
+}
+#galeria .grid {
+  padding-top: 25px;
 }
 #galeria .grid #overlay {
   background: rgba(0, 0, 0, 0.9);
