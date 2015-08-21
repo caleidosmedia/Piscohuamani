@@ -7634,12 +7634,13 @@ footer .col-md-3 p a:hover {
 }
 
 .flex {
-  display: flex !important;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start;
-  align-items: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 50%;
+  position: relative;
 }
 
 /*

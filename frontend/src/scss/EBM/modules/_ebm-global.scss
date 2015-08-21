@@ -1120,12 +1120,9 @@ footer {
 	}
 }
 .flex{
-	display: flex!important;
-	flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start;
-  align-items: center;
+	@include transform (translateY(-50%));
+  top: 50%;
+  position: relative;
 }
 
 /*

@@ -92,7 +92,7 @@ function interpolar(accion, container, contentClass) {
 					// e.preventDefault();
 					href = $(this).attr('href');
 					$(".img-overlay").attr("src", href);
-					$overlay.addClass("flex");
+					$('#overlay img').addClass("flex");
 					$index = $(this).attr('data-image-index');
 					setGalleryURLS($index);
 					$overlay.show();
