@@ -40,6 +40,7 @@ function mostrarContenido(container, contentClass) {
 			$(container).removeClass("opacity-active");
 		}, 300);
 	};
+	set_image_to_overlay();
 }
 
 function obtenerContenidoActual(contentClass) {
@@ -82,3 +83,21 @@ function interpolar(accion, container, contentClass) {
 	$(element).attr("data-current", "1");
 	mostrarContenido(container, contentClass);
 }
+
+
+	var set_image_to_overlay = function (){
+		$('.grid-image').each(function(){
+			var href;
+			$(this).click(function() {
+					// e.preventDefault();
+					href = $(this).attr('href');
+					$(".img-overlay").attr("src", href);
+					$overlay.addClass("flex");
+					$index = $(this).attr('data-image-index');
+					setGalleryURLS($index);
+					$overlay.show();
+					return false;
+				});
+		});
+	}
+		
