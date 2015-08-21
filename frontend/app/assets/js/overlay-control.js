@@ -9,8 +9,8 @@ var $images = $('.grid-image').length;
 var $close = $('.close');
 
 $(document).ready(function(){
-	if($('.grid #container-ronda') != null) {
-		$('.grid #container-ronda ul li a').click(function(e) {
+	while($("'#container-ronda") != null){
+		$('#container-ronda ul li a').click(function(e) {
 		  e.preventDefault();
 		  var href = $(this).attr('href');
 		  $image.attr("src", href);
@@ -38,7 +38,9 @@ $(document).ready(function(){
 			$image.attr("src", $(".grid-image-"+($index)).attr("href"))
 		  setGalleryURLS($index);
 		});
-	}
+
+		return;
+	};
 });
 
 function setGalleryURLS($index){

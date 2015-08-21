@@ -6668,6 +6668,14 @@ body .slider-text-oficial2 {
   float: left;
 }
 
+#country {
+  cursor: pointer;
+  background-repeat: no-repeat !important;
+  background-position-x: 95px !important;
+  background-size: 18px !important;
+  background-position-y: 3px !important;
+}
+
 /*Active checkout*/
 .show {
   display: block;
