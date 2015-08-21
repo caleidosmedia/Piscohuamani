@@ -2127,7 +2127,7 @@ footer {
 		}
 	}
 	#galeria {
-		padding: 15% 0;
+		padding: 0;
 		.container {
 			padding: 0;
 			.texto-evento {
@@ -2144,7 +2144,7 @@ footer {
 				}
 			}
 			.grid {
-				padding: 10% 7% 7%;
+				padding: 10% 7% 10%;
 				ul li {
 					padding: 3px 3px 3px;
 				}
@@ -2153,12 +2153,12 @@ footer {
 						width: 85%;
 					}
 					a {
-						top: 18%;
+						top: 20%;
 						right: 5%;
-						font-size: 50px;
+						font-size: 30px;
 					}
 					.controls {
-						top: 70%;
+						top: 75%;
 						width: 25px;
 						@include transition(none);
 						&:hover {
