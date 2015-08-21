@@ -1368,7 +1368,7 @@ footer {
   .formulario{
   	input{
   		width: 280px;
-  		height: 45px; 
+  		height: 45px;
 		}
 		textarea{
 			width: 578px;
@@ -1381,6 +1381,7 @@ footer {
 		input , textarea {
 			background-color: transparent;
 		  border: 1.5px solid #fff;
+		  border-radius: 0px;
 			@include placeholder {
 		    color: #fff;
 			  font-weight: lighter;

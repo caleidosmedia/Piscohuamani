@@ -7888,6 +7888,7 @@ footer .col-md-3 p a:hover {
 #container-contact .formulario input, #container-contact .formulario textarea {
   background-color: transparent;
   border: 1.5px solid #fff;
+  border-radius: 0px;
 }
 #container-contact .formulario input::-webkit-input-placeholder, #container-contact .formulario textarea::-webkit-input-placeholder {
   color: #fff;
