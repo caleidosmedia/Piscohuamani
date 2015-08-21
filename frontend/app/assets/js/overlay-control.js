@@ -8,17 +8,7 @@ var $previous = $('#overlay .previous-overlay');
 var $images = $('.grid-image').length;
 var $close = $('.close');
 
-$(document).ready(function(){
-	while($("'#container-ronda") != null){
-		$('#container-ronda ul li a').click(function(e) {
-		  e.preventDefault();
-		  var href = $(this).attr('href');
-		  $image.attr("src", href);
-		  $overlay.addClass("flex");
-		  $index = $(this).attr('data-image-index');
-		  setGalleryURLS($index);
-		  $overlay.show();
-		});
+var ready = function(){
 
 		$close.click(function(){
 			$overlay.hide();
@@ -38,10 +28,8 @@ $(document).ready(function(){
 			$image.attr("src", $(".grid-image-"+($index)).attr("href"))
 		  setGalleryURLS($index);
 		});
-
-		return;
-	};
-});
+	// }
+};
 
 function setGalleryURLS($index){
 
@@ -53,3 +41,7 @@ function setGalleryURLS($index){
 	  $next.attr("data-image-index", parseInt($index)+1);
 	}
 }
+
+
+$(document).ready(ready);
+$(document).on('page:load', ready);
