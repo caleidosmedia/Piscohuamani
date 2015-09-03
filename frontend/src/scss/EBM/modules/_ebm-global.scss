@@ -9,6 +9,11 @@ $video-bg-height: 490px; // Hero Unit and Videocover
 $user-card-height: 42px; // User cards
 $user-card-width: 70px;
 
+@font-face{
+	font-family: Across;
+	src: url(../fonts/across-the-road.ttf);
+}
+
 html,
 body {
 	background-color: $body-bg;	
@@ -122,9 +127,16 @@ $separator-height-control: 1px;
   justify-content: center;
   align-content: flex-start;
   align-items: center;
+  background-size: cover;
+  background-position-Y: 30%;
+  .overlay-fondo {
+  	top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.35);
+  }
 	h3 {
-		font-family: "trajan-pro-3";
-		line-height: 1.3;
+		line-height: 1.5;
 		padding-top: 18px;
 		font-size: 22px;
 		font-size: rem(22px);
@@ -142,7 +154,6 @@ $separator-height-control: 1px;
 #formulario {
 	.date {
 		width: 560px;
-		padding-top: 27px;
 		input {
 			background-color: transparent;
 	  	border: 1.5px solid #fff;
@@ -171,25 +182,26 @@ $separator-height-control: 1px;
 		padding-top: 26px;
 		margin-left: 6px;
 		select{
-			max-width: 162px;
-			height: 26px;
+			width: 162px;
+    	height: 30px;
 			border-radius: 0px;
 			font-size: 14px;
 			font-size: rem(14px);
 			-webkit-appearance: none;
-  		background: rgb(59, 46, 41);
+  		background: transparent;
   		outline: none;
-  		border: 1px solid #8d744a;
-  		color: #8d744a;
+  		border: 1px solid white;
   		margin-left: 6px;
 			option{
-				background-image: url(../img/texturas/textura-oscura.png);
+				background-color: #3b2e29;
 			}
 		}
 		.btn-group {
 			margin-left: 23px;
 			.btn-default {
 				background-color: transparent;
+				width: 80px;
+				height: 30px;
 				color: #fff;
 			  border-radius: 0;
 			  border-color: transparent;
@@ -198,8 +210,7 @@ $separator-height-control: 1px;
 			  padding: 3px 0;
 			  font-weight: 300;
 			  &.active-btn {
-			  	border-color: #8d744a;
-  				color: #8d744a;
+			  	border-color: white;
 			  }
 			}
 		}
@@ -210,23 +221,23 @@ $separator-height-control: 1px;
 	}
 	.enter {
 			background-color: transparent;
-		  color: rgb(96, 85, 81);
-		  border: 1px solid rgb(96, 85, 81);
+		  border: 1px solid white;
 		  border-radius: 0;
 		  font-size: 18px;
 		  font-weight: lighter;
-		  width: 125px;
+		  width: 162px;
 		  height: 39px;
-		  margin-left: 30px;
 		  outline: none;
+		  z-index: 3;
 		  span {
 				top: 2px;
 			  right: -4px;
 			  position: relative;
 			}
 			&.active-enter {
-				border-color: #8d744a;
-    		color: #8d744a;
+				border-color: white;
+		    color: white;
+		    background-color: rgba(250,250,250,0.3);
 			}
 		}
 	.box {
@@ -256,14 +267,13 @@ $separator-height-control: 1px;
 		}
 	}
 	label{
-		font-style: italic;
 		float: left;
 	}
 }
 #country {
 	cursor: pointer;
   background-repeat: no-repeat!important;
-  background-position-x: 95px!important;
+  background-position-x: 90%!important;
   background-size: 18px!important;
   background-position-y: 3px!important;
 }
@@ -1431,7 +1441,7 @@ footer {
 		.logo-title {
 			width: 61%;
   		width: 195px;
-  		padding-top: 35px;
+  		padding-top: 10px;
 		}
 		h3 {
 			font-size: 13px;
@@ -1441,10 +1451,10 @@ footer {
 		form {
 			width: 100%!important;
 		}
-		padding: 15px 14%;
+		padding: 15px 10%;
 		text-align: right;
 		.date {
-			padding-top: 27px;
+			padding-top: 0px;
 			input {
 				display: block;
 	  		margin: 0 auto;
@@ -1459,23 +1469,23 @@ footer {
 		.action {
 			select {
 				margin-left: 0;
+				width: 50%!important;
 			}
 			.btn-group {
 				button {
 					padding: 0 7px!important;
-					float: right;				
+					float: right;		
+					width: 35px!important;		
 				}
 			}
 			select,
 			.btn-group button{
-				height: 34px;
+				height: 35px!important;
 			}
 		}
-		.box {
-			float: none;
-		}
-		label {
-			float: none;
+		.enter {
+			width: 100%;
+			height: 45px!important;
 		}
 	}
 	/*RESPONSIVE MENÚ*/
@@ -2233,7 +2243,7 @@ footer {
 	UTILITIES
 */
 $prefijo: fz !default;
-@for $i from 8 through 40 {
+@for $i from 8 through 45 {
   .#{$prefijo}-#{$i} {
     font-size: 0px + $i !important;
     font-size: rem(0px + $i)!important;
