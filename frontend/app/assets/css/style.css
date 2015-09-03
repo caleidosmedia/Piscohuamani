@@ -8240,6 +8240,40 @@ footer .col-md-3 p a:hover {
     top: 0px !important;
   }
 
+  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
+    padding-top: 180px !important;
+    width: 70px !important;
+    height: auto !important;
+  }
+
+  #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
+    height: 325px !important;
+  }
+
+  #the-goods .gallery-button-right, #events .gallery-button-right, #slider-events .gallery-button-right,
+  #the-goods .gallery-button-left,
+  #events .gallery-button-left,
+  #slider-events .gallery-button-left {
+    width: 20px;
+    top: 10px;
+  }
+
+  #the-goods .gallery-button-right img, #events .gallery-button-right img, #slider-events .gallery-button-right img,
+  #the-goods .gallery-button-left img,
+  #events .gallery-button-left img,
+  #slider-events .gallery-button-left img {
+    width: 100%;
+  }
+
+  #the-goods .gallery-button-left, #events .gallery-button-left, #slider-events .gallery-button-left {
+    left: 10%;
+  }
+
+  #the-goods .gallery-button-right, #events .gallery-button-right, #slider-events .gallery-button-right {
+    right: 10%;
+    box-shadow: none !important;
+  }
+
   /*MAKE DRINK*/
   #make-drink .gallery-wrapper {
     min-height: auto;

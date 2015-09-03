@@ -1674,6 +1674,32 @@ footer {
 			top: 0px!important;
 		}
 	}
+	#the-goods .flickity-viewport img {
+    padding-top: 180px!important;
+    width: 70px!important;
+    height: auto!important;
+  }
+  #the-goods .gallery-child .flickity-viewport {
+    height: 325px !important;
+  }
+  #the-goods .gallery-button-right,
+  #the-goods .gallery-button-left {
+		width: 20px;
+		top: 10px;
+  }
+  #the-goods .gallery-button-right img,
+  #the-goods .gallery-button-left img {
+		width: 100%;
+  }
+  #the-goods .gallery-button-left {
+    left: 10%;
+	}
+	 #the-goods .gallery-button-right {
+    right: 10%;
+    box-shadow: none!important;
+	}
+
+
 	/*MAKE DRINK*/
 	#make-drink {
 		.gallery-wrapper {

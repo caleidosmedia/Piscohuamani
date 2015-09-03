@@ -8,7 +8,7 @@ $(document).ready(function(){
 		cellAlign: 'center',
 		prevNextButtons: false,
 		pageDots: false,
-		draggable: true,
+		draggable: false,
 		friction: 0.4,
 		wrapAround: true
 	});
@@ -18,7 +18,7 @@ $(document).ready(function(){
 		asNavFor: '#the-goods .gallery',
 		prevNextButtons: false,
 		pageDots: false,
-		draggable: true,
+		draggable: false,
 		friction: 0.4,
 		wrapAround: true
 	});
