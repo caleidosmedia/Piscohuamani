@@ -423,17 +423,17 @@ $separator-height-control: 1px;
 	h1 {
 		font-size: 35px;
 		font-size: rem(35px);
-		font-family: "trajan-pro-3";
+		font-family: Verdana;
 	}
 	h3 {
 		font-style: italic;
 		font-weight: 300;
 	}
-	h1, h2{
+	h2{
 		font-family: "trajan-pro-3";
 	}
 	.texto-about {
-		padding: 9% 17px 0 76px;
+		padding: 6% 17px 0 76px;
 		.separador {
 			border-bottom: 1px solid #3b2e29;
 			padding-top: 7px;
@@ -448,8 +448,8 @@ $separator-height-control: 1px;
 	.imagen {
 		text-align: center;
 		img {
-			width: 362px;
-			height: 1400px;
+			width: 350px;
+    	max-height: 1110px;
 		}
 	}
 } 
@@ -481,13 +481,14 @@ $separator-height-control: 1px;
 	}
 	h1 {
 		font-size: 35px;
-		font-size: rem(35px); 
+		font-size: rem(35px);
+		font-family: Verdana; 
 	}
 	h3 {
 		font-style: italic;
 		font-weight: 300;
 	}
-	h1, h2{ 
+	h2{ 
 		font-family: "trajan-pro-3"; 
 	}
 	#slider-text-goods {

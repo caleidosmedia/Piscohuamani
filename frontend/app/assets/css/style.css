@@ -6891,17 +6891,17 @@ body .slider-text-oficial2 {
 #about-us h1 {
   font-size: 35px;
   font-size: 2.5rem;
-  font-family: "trajan-pro-3";
+  font-family: Verdana;
 }
 #about-us h3 {
   font-style: italic;
   font-weight: 300;
 }
-#about-us h1, #about-us h2 {
+#about-us h2 {
   font-family: "trajan-pro-3";
 }
 #about-us .texto-about {
-  padding: 9% 17px 0 76px;
+  padding: 6% 17px 0 76px;
 }
 #about-us .texto-about .separador {
   border-bottom: 1px solid #3b2e29;
@@ -6917,8 +6917,8 @@ body .slider-text-oficial2 {
   text-align: center;
 }
 #about-us .imagen img {
-  width: 362px;
-  height: 1400px;
+  width: 350px;
+  max-height: 1110px;
 }
 
 /*
@@ -6949,12 +6949,13 @@ body .slider-text-oficial2 {
 #the-goods h1, #events h1, #slider-events h1 {
   font-size: 35px;
   font-size: 2.5rem;
+  font-family: Verdana;
 }
 #the-goods h3, #events h3, #slider-events h3 {
   font-style: italic;
   font-weight: 300;
 }
-#the-goods h1, #events h1, #slider-events h1, #the-goods h2, #events h2, #slider-events h2 {
+#the-goods h2, #events h2, #slider-events h2 {
   font-family: "trajan-pro-3";
 }
 #the-goods #slider-text-goods, #events #slider-text-goods, #slider-events #slider-text-goods {
