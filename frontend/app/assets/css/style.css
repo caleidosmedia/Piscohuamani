@@ -7259,6 +7259,7 @@ footer .col-md-3 p a:hover {
 */
 .site-content .content-blog h1 {
   color: #8d744a;
+  font-family: Verdana;
 }
 .site-content .content-blog .separador {
   border-bottom: 1px solid #8d744a;
@@ -7311,31 +7312,17 @@ footer .col-md-3 p a:hover {
 .site-content .content-blog .post .botons button a {
   text-decoration: none;
   color: #4e3227;
-  z-index: 1;
 }
 .site-content .content-blog .post .botons button .overlay {
-  background-color: #8d744a;
   top: 0;
   left: 0;
   width: 100%;
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
-  transform: translateX(-100%);
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-.site-content .content-blog .post .botons button:hover a {
-  color: #fff;
-}
 .site-content .content-blog .post .botons button:hover .overlay {
-  -webkit-transform: translateX(0%);
-  -moz-transform: translateX(0%);
-  -ms-transform: translateX(0%);
-  -o-transform: translateX(0%);
-  transform: translateX(0%);
+  background-color: rgba(250, 250, 250, 0.2);
 }
 .site-content .content-blog .post .botons .social {
   float: left;
@@ -7421,7 +7408,7 @@ footer .col-md-3 p a:hover {
 */
 #blog-post .container h1 {
   color: #8d744a;
-  font-family: "trajan-pro-3";
+  font-family: Verdana;
 }
 #blog-post .breadcrumb {
   padding-bottom: 3%;
@@ -7634,6 +7621,7 @@ footer .col-md-3 p a:hover {
 }
 #faqs h1 {
   color: #8d744a;
+  font-family: Verdana;
 }
 #faqs .separador {
   border-bottom: 1px solid #8d744a;
@@ -7702,7 +7690,7 @@ footer .col-md-3 p a:hover {
 */
 #media-kit h1:first-child {
   color: #8d744a;
-  font-family: "trajan-pro-3";
+  font-family: Verdana;
 }
 #media-kit .separador {
   border-bottom: 1px solid #8d744a;
@@ -7817,6 +7805,7 @@ footer .col-md-3 p a:hover {
 }
 #terms h1 {
   color: #8d744a;
+  font-family: Verdana;
 }
 #terms .separador {
   border-bottom: 1px solid #8d744a;
@@ -7926,6 +7915,38 @@ footer .col-md-3 p a:hover {
   -ms-transform: translateX(0%);
   -o-transform: translateX(0%);
   transform: translateX(0%);
+}
+
+#thanks {
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  transform: translate(-50%);
+  top: 25%;
+  background-color: white;
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.overlay-contact {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.active-pop {
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1 !important;
+  z-index: 10000 !important;
 }
 
 /*RESPONSIVE MEN├Ü E IMG-PRINCIPAL*/
