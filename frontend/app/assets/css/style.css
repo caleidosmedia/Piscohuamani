@@ -6442,8 +6442,8 @@ body .slider-text-oficial2 {
   font-family: "trajan-pro-3", "Times New Roman", Times, serif !important;
   font-weight: 300;
   font-style: normal;
-  font-size: 36px;
-  font-size: 2.57143rem;
+  font-size: 40px;
+  font-size: 2.85714rem;
 }
 .site-content .section-title h3 {
   font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
@@ -6722,8 +6722,8 @@ body .slider-text-oficial2 {
   float: left;
 }
 .site-menu .contenedor-menu .nav-desktop a div {
-  font-size: 14px;
-  font-size: 1rem;
+  font-size: 15px;
+  font-size: 1.07143rem;
   color: #3b2e29;
   letter-spacing: 0px;
   text-decoration: none;
@@ -6738,8 +6738,8 @@ body .slider-text-oficial2 {
   justify-content: center;
   align-content: flex-start;
   align-items: center;
-  height: 80px;
-  height: 5.71429rem;
+  height: 78px;
+  height: 5.57143rem;
   letter-spacing: .08em;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -6955,9 +6955,6 @@ body .slider-text-oficial2 {
   font-style: italic;
   font-weight: 300;
 }
-#the-goods h2, #events h2, #slider-events h2 {
-  font-family: "trajan-pro-3";
-}
 #the-goods #slider-text-goods, #events #slider-text-goods, #slider-events #slider-text-goods {
   padding-top: 9%;
 }
@@ -7084,6 +7081,7 @@ body .slider-text-oficial2 {
   position: absolute;
   z-index: 2;
   margin-top: 100px;
+  font-size: 60px;
 }
 #events .separador, #slider-events .separador {
   border-top: 1px solid #fff !important;
@@ -7126,14 +7124,8 @@ body .slider-text-oficial2 {
   z-index: 1;
 }
 #events .row .see-more .overlay, #slider-events .row .see-more .overlay {
-  background-color: #8d744a;
   top: 0;
   left: 0;
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
-  transform: translateX(-100%);
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -7142,11 +7134,7 @@ body .slider-text-oficial2 {
   color: #fff;
 }
 #events .row .see-more:hover .overlay, #slider-events .row .see-more:hover .overlay {
-  -webkit-transform: translateX(0%);
-  -moz-transform: translateX(0%);
-  -ms-transform: translateX(0%);
-  -o-transform: translateX(0%);
-  transform: translateX(0%);
+  background-color: rgba(250, 250, 250, 0.2);
 }
 #events .row .gallery-button-right, #slider-events .row .gallery-button-right {
   position: absolute;
@@ -7154,11 +7142,11 @@ body .slider-text-oficial2 {
   right: 0;
   bottom: 0;
   z-index: 100;
-  right: 300px;
+  right: 145px;
 }
 #events .row .gallery-button-left, #slider-events .row .gallery-button-left {
   z-index: 1;
-  left: 225px;
+  left: 140px;
 }
 #events .row .gallery-button-right, #slider-events .row .gallery-button-right,
 #events .row .gallery-button-left,
@@ -7171,11 +7159,6 @@ body .slider-text-oficial2 {
 */
 #follow-us {
   background-color: #8d744a;
-}
-#follow-us h3 {
-  font-weight: lighter;
-  font-style: italic;
-  font-weight: 300;
 }
 #follow-us .container-social {
   display: inline-block;
@@ -7199,17 +7182,11 @@ body .slider-text-oficial2 {
   padding: 2% 3%;
 }
 #follow-us .container-social a .overlay {
-  background-image: url(../img/texturas/textura-hover-redes.png);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
-  transform: translateX(-100%);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -7218,22 +7195,16 @@ body .slider-text-oficial2 {
   color: #fff;
 }
 #follow-us .container-social a:hover .overlay {
-  -webkit-transform: translateX(0%);
-  -moz-transform: translateX(0%);
-  -ms-transform: translateX(0%);
-  -o-transform: translateX(0%);
-  transform: translateX(0%);
+  background-color: rgba(250, 250, 250, 0.2);
 }
 #follow-us .container-social a h1, #follow-us .container-social a p {
-  font-family: "museo-sans";
+  font-family: Verdana;
   position: relative;
   z-index: 1;
 }
 #follow-us .container-social a p {
-  font-weight: bold;
   padding-top: 3%;
   line-height: 1.3;
-  font-style: italic;
 }
 #follow-us .container-social a .icon {
   position: absolute;

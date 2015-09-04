@@ -75,8 +75,8 @@ body {
 	.section-title {
 		h2 {
 			@include serif-light;
-			font-size: $font-size-h1;
-			font-size: rem($font-size-h1);
+			font-size: 40px;
+			font-size: rem(40px);
 		}
 		h3 {
 			@include light-italic;
@@ -307,8 +307,8 @@ $separator-height-control: 1px;
 				position: relative;
 				float: left;
   				div {
-						font-size: 14px;
-						font-size: rem(14px); 
+						font-size: 15px;
+						font-size: rem(15px); 
   					color: #3b2e29;
   					letter-spacing: 0px;
   					text-decoration: none;
@@ -323,8 +323,8 @@ $separator-height-control: 1px;
   					justify-content: center;
   					align-content: flex-start;
   					align-items: center;
-				  	height: 80px;
-				  	height: rem(80px);
+				  	height: 78px;
+				  	height: rem(78px);
 				  	letter-spacing: .08em; 
 				  	@include transition(all .5s);
 				  	background-color: rgb(248, 244, 229);
@@ -488,9 +488,9 @@ $separator-height-control: 1px;
 		font-style: italic;
 		font-weight: 300;
 	}
-	h2{ 
-		font-family: "trajan-pro-3"; 
-	}
+	// h2{ 
+	// 	font-family: "trajan-pro-3"; 
+	// }
 	#slider-text-goods {
 		padding-top: 9%;;
 		.separador {
@@ -605,6 +605,7 @@ $make-drink-gallery-height-control: 560px;
 		position: absolute;
 		z-index: 2;
 		margin-top: 100px;
+		font-size: 60px;
 	}
 	.separador {
 		border-top: 1px solid #fff !important;
@@ -645,10 +646,8 @@ $make-drink-gallery-height-control: 560px;
 				z-index: 1;
 			}
 			.overlay {
-				background-color: #8d744a;
 				top: 0;
 				left: 0; 
-				@include transform (translateX(-100%));
 				@include transition(all .2s ease-in);
 			}
 			&:hover {
@@ -656,18 +655,18 @@ $make-drink-gallery-height-control: 560px;
 					color: #fff;
 				}
 				.overlay {  
-					@include transform (translateX(0%));
+					background-color: rgba(250, 250, 250, 0.2);
 				} 
 			}
 		}
 		.gallery-button-right {
 			@include position(absolute, 0 0 0 null);
 			z-index: 100;
-  		right: 300px;
+  		right: 145px;
 		}
 		.gallery-button-left {
 			z-index: 1;
-			left: 225px;
+			left: 140px;
 		}	
 		.gallery-button-right,
 		.gallery-button-left {
@@ -683,11 +682,6 @@ $make-drink-gallery-height-control: 560px;
 #follow-us {
 	background-color: #8d744a;
 	// padding: 6% 17%; 
-	h3 {
-		font-weight: lighter;
-		font-style: italic;
-		font-weight: 300;
-	}
 	.container-social {
 		display: inline-block;
 		padding-top: 4%;
@@ -706,31 +700,27 @@ $make-drink-gallery-height-control: 560px;
 			@include transition(all .2s ease-in-out);
 			padding: 2% 3%;
 			.overlay{
-				background-image: url(../img/texturas/textura-hover-redes.png);
 				position: absolute;
 				top: 0;
 				left: 0; 
 				width: 100%;
-				height: 100%;
-				@include transform (translateX(-100%)); 
+				height: 100%; 
 				@include transition(all .2s ease-in-out); 
 			}
 			&:hover {
 				color: #fff;
 				.overlay { 
-					@include transform (translateX(0%));
+					background-color: rgba(250, 250, 250, 0.2);
 				} 
 			}
 			h1, p {
-				font-family: "museo-sans";
+				font-family: Verdana;
 				position: relative;
 				z-index: 1;
 			} 
 			p {
-				font-weight: bold;
 				padding-top: 3%;
 				line-height: 1.3;
-				font-style: italic;
 			}
 			.icon {
 				position: absolute;
