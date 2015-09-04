@@ -6527,6 +6527,13 @@ body .slider-text-oficial2 {
 /*
 	Ingreso Fondo
 */
+.overlay-fondo {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
 .fondo {
   width: 100%;
   display: flex;
@@ -6537,12 +6544,6 @@ body .slider-text-oficial2 {
   align-items: center;
   background-size: cover;
   background-position-Y: 30%;
-}
-.fondo .overlay-fondo {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.35);
 }
 .fondo h3 {
   line-height: 1.5;
@@ -6698,7 +6699,7 @@ body .slider-text-oficial2 {
   top: 0;
   right: 0;
   left: 0;
-  height: 61px;
+  height: 80px;
   width: 100%;
 }
 .site-menu .contenedor-menu {
@@ -6706,7 +6707,7 @@ body .slider-text-oficial2 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 61px;
+  height: 80px;
   background: #3b2e29;
   z-index: 110;
 }
@@ -6714,7 +6715,7 @@ body .slider-text-oficial2 {
   display: inline-block;
 }
 .site-menu .contenedor-menu .nav-desktop a {
-  height: 61px;
+  height: 80px;
   text-align: center;
   text-decoration: none;
   position: relative;
@@ -6737,8 +6738,8 @@ body .slider-text-oficial2 {
   justify-content: center;
   align-content: flex-start;
   align-items: center;
-  height: 61px;
-  height: 4.35714rem;
+  height: 80px;
+  height: 5.71429rem;
   letter-spacing: .08em;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -6781,8 +6782,8 @@ body .slider-text-oficial2 {
   -ms-transform: rotateX(0deg);
   -o-transform: rotateX(0deg);
   transform: rotateX(0deg);
-  top: -61px;
-  height: 61px;
+  top: -80px;
+  height: 80px;
 }
 .site-menu .contenedor-menu .nav-desktop a:hover div:first-child {
   top: -70px;
@@ -6799,8 +6800,8 @@ body .slider-text-oficial2 {
   -ms-transform: rotateX(0deg);
   -o-transform: rotateX(0deg);
   transform: rotateX(0deg);
-  top: -61px;
-  height: 61px;
+  top: -80px;
+  height: 80px;
 }
 .site-menu .contenedor-menu .nav-desktop a.active div:first-child {
   top: -70px;
@@ -6814,7 +6815,7 @@ body .slider-text-oficial2 {
 .site-menu .contenedor-menu .nav-desktop a.logo-link div {
   width: 200px;
   width: 14.28571rem;
-  line-height: 55px !important;
+  line-height: 70px !important;
   display: block;
 }
 .site-menu .contenedor-menu .nav-desktop a.logo-link div img {
@@ -6875,7 +6876,7 @@ body .slider-text-oficial2 {
 .img-principal .scroll-down {
   width: 90px;
   margin: 0 auto;
-  padding-top: 6%;
+  padding-top: 3%;
 }
 .img-principal .scroll-down img {
   width: 100%;
