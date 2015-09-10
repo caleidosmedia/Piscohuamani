@@ -71,32 +71,31 @@
             <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </section> 
-        <div id="container-contact" class="minhp-100 hidden-xs">
-          <h1 class="text-white">GET IN TOUCH</h1>
+        <div id="container-contact" class="minhp-100">
+          <h1 class="text-white hidden-xs hidden-sm">GET IN TOUCH</h1>
+          <h3 class="text-white hidden-lg hidden-md">GET IN TOUCH</h3>
           <div class="formulario relative pt-28">
-            <input type="text" pattern="[0-9]*" maxlength="25" class="name mv-0 mh-7 fz-18 ph-14" placeholder="NAME" name="name" required>
-            <input type="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="e-mail mv-0 mh-7 fz-18 ph-14" maxlength="25" placeholder="E-MAIL" name="e-mail" required>
-            <p><textarea class="message ml-7 mt-21 pv-14 fz-18 ph-14" onkeyup="auto_grow(this)" placeholder="MESSAGE" name="textarea" required></textarea></p>
-            <button class="text-white send absolute" type="submit" disabled="disabled">
-              <a href="" style="cursor:pointer"><span class="fz-18 relative">SEND</span>
-              <div class="overlay absolute minhp-100"></div></a>
-            </button>
+            <form action="" method="post">
+              <input type="text" pattern="[a-zA-Z]*" maxlength="25" class="name mv-0-md mh-7-md m-0-xs mb-21-xs fz-18 ph-14" placeholder="NAME" name="name" required><!--fz-26-->
+              <input type="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="e-mail mv-0-md mh-7-md mb-21-xs ph-14-xs m-0-xs fz-18 ph-14" maxlength="25" placeholder="E-MAIL" name="e-mail" title="Este formato no es válido" required><!--fz-26-->
+              <p><textarea class="message ml-7-md mt-21-md m-0-xs pv-14 fz-18 ph-14" onkeyup="auto_grow(this)" placeholder="MESSAGE" name="textarea" required></textarea></p>
+              <button class="text-white send absolute" type="submit" disabled="disabled">
+                <a href="" style="cursor:pointer"><span class="fz-18 relative hidden-xs hidden-sm">SEND</span>
+                <a href="" style="cursor:pointer"><span class="fz-26 relative hidden-lg hidden-md">SEND</span>
+              </button>
+            </form>
           </div>
         </div>
-        <div id="container-contact" class="hidden-lg hidden-md hidden-sm">
+        <!-- <div id="container-contact" class="hidden-lg hidden-md hidden-sm">
           <h3 class="text-white">GET IN TOUCH</h3>
           <div class="formulario">
             <form action="" method="post">
               <input type="text" pattern="[a-zA-Z]*" maxlength="25" class="name mb-21 ph-14 m-0 fz-26" placeholder="NAME" name="name" required>
               <input type="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" maxlength="25" class="e-mail mb-21 ph-14 m-0 fz-26" placeholder="E-MAIL" name="e-mail" title="Este formato no es válido" required=>
               <p><textarea class="message ph-14 m-0 fz-26" placeholder="MESSAGE" name="textarea" required></textarea></p>
-              <button class="text-white send" type="submit">
-                <span class="fz-26">SEND</span>
-                <div class="overlay"></div>
-              </button>
             </form>
           </div>
-        </div>
+        </div> -->
       </main>
       <footer>
         <ul class="clearfix container type-style-none family-museosans pv-70 ph-28 ph-42-xs mb-0">
