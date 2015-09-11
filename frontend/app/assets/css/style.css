@@ -7837,7 +7837,8 @@ footer .col-md-3 p a:hover {
 /*
 	Contact
 */
-#container-contact {
+#container-contact,
+#thanks-contact {
   background-color: #3B2E29;
   display: flex;
   flex-direction: column;
@@ -7846,6 +7847,7 @@ footer .col-md-3 p a:hover {
   align-content: flex-start;
   align-items: center;
 }
+
 #container-contact h1 {
   font-family: "trajan-pro-3";
 }
@@ -7904,18 +7906,25 @@ footer .col-md-3 p a:hover {
   color: #fff;
 }
 
-#thanks {
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  -moz-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  -o-transform: translate(-50%);
-  transform: translate(-50%);
-  top: 25%;
-  background-color: white;
-  width: 500px;
-  height: 300px;
-  border-radius: 10px;
+.thanks-box {
+  width: 750px;
+  border: 1px solid #f8f4e5;
+  color: #f8f4e5;
+  font-size: 20px;
+}
+.thanks-box h3 {
+  font-family: "trajan-pro-3";
+}
+.thanks-box button {
+  background-color: transparent;
+  border-radius: 0px;
+  font-size: 20px;
+}
+.thanks-box button:hover {
+  background-color: rgba(250, 250, 250, 0.2);
+}
+.thanks-box button:hover a {
+  color: #fff !important;
 }
 
 .overlay-contact {
