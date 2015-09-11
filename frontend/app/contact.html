@@ -78,8 +78,8 @@
             <div class="formulario relative pt-28">
               <form action="thanks.html" name="myForm">
                 <input id="nombre" type="text" pattern="[a-zA-Z]*" maxlength="25" class=" text-white thin name mv-0-md mh-7-md m-0-xs mb-21-xs fz-18 ph-14" placeholder="NAME" name="name" required><!--fz-26-->
-                <input id="correo" type="email" class=" text-white thin e-mail mv-0-md mh-7-md mb-21-xs ph-14-xs m-0-xs fz-18 ph-14" maxlength="25" placeholder="E-MAIL" name="email" required><!--fz-26-->
-                <p><textarea id="comentario" type="textarea" class=" text-white thin message ml-7-md mt-21-md m-0-xs pv-14 fz-18 ph-14" onkeyup="auto_grow(this)" placeholder="MESSAGE" name="textarea" required></textarea></p>
+                <input id="correo" type="email" class=" text-white thin e-mail mv-0-md mh-7-md mb-21-xs ph-14-xs m-0-xs fz-18 ph-14" maxlength="25" placeholder="E-MAIL" name="email" required><br><!--fz-26-->
+                <p><textarea id="comentario" type="textarea" class=" text-white thin message ml-7-md mt-21-md m-0-xs pv-14 fz-18 ph-14" onkeyup="auto_grow(this)" placeholder="MESSAGE" name="textarea" required oninput="setCustomValidity('')"></textarea></p>
                 <button class="text-white send absolute" type="submit">
                   <span class="fz-18 relative hidden-xs hidden-sm">SEND</span>
                   <span class="fz-26 relative hidden-lg hidden-md">SEND</span>

@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 	validar(email, "Please enter a valid e-mail address", "This field is required");
 	validar(name, "Please enter a valid name", "This field is required");
-	validar(message, "m", "Please write a message");
+	validar(message, "Please enter a valid message", "This field is required");
 
 	function validar(inputName, addInformation, invalid) {
 		inputName.oninvalid = function(e) {
