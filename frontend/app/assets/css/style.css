@@ -6347,6 +6347,10 @@ a.not-underline:hover {
   font-family: Across;
   src: url(../fonts/across-the-road.ttf);
 }
+::-webkit-validation-bubble-message {
+  background-color: black;
+}
+
 html,
 body {
   background-color: #fff;
