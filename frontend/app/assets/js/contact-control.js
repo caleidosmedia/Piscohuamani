@@ -12,7 +12,7 @@ $(document).ready(function(){
 		inputName.oninvalid = function(e) {
 			e.target.setCustomValidity("");
 			if (!e.target.validity.valid) {
-				if (e.target.value.length != 0) {
+				if ((e.target.value.length != 0) || (e.charCode != 32)){
 					e.target.setCustomValidity(addInformation);
 				} else {
 						e.target.setCustomValidity(invalid);
