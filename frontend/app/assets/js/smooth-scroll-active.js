@@ -25,7 +25,7 @@ $(document).ready(function () {
 });
 function onScroll(event){
   var scrollPos = $(document).scrollTop();
-  $('.contenedor-menu a[href^="#"]').each(function () {
+  $('.contenedor-menu a.active-hover[href^="#"]').each(function () {
     var currLink = $(this);
     var refElement = $(currLink.attr("href").toString());
     if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {

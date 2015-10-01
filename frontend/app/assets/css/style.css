@@ -6780,7 +6780,7 @@ body .slider-text-oficial2 {
   top: 0;
   z-index: 2;
 }
-.site-menu .contenedor-menu .nav-desktop a:hover div {
+.site-menu .contenedor-menu .nav-desktop a:nth-child(n+2):hover div {
   -webkit-transform: rotateX(0deg);
   -moz-transform: rotateX(0deg);
   -ms-transform: rotateX(0deg);
@@ -6789,7 +6789,7 @@ body .slider-text-oficial2 {
   top: -80px;
   height: 80px;
 }
-.site-menu .contenedor-menu .nav-desktop a:hover div:first-child {
+.site-menu .contenedor-menu .nav-desktop a:nth-child(n+2):hover div:first-child {
   top: -70px;
   z-index: 1;
   -webkit-transform: rotateX(-90deg);

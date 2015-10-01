@@ -345,7 +345,7 @@ $separator-height-control: 1px;
 	  					z-index: 2;
 	  				}
   				}
-  				&:hover {
+  				&:nth-child(n+2):hover {
   					div {
   						@include transform (rotateX(0deg));
   						top: -80px;
