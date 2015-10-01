@@ -7163,6 +7163,10 @@ body .slider-text-oficial2 {
   color: #f8f4e5;
 }
 
+#pagination .pagination > li > a {
+  border: 0px;
+}
+
 /*
 	Follow us
 */
@@ -7565,9 +7569,6 @@ footer .col-md-3 p a:hover {
 }
 #galeria #container-ronda ul li img {
   width: 100%;
-}
-#galeria .grid {
-  padding-top: 25px;
 }
 #galeria .grid #overlay {
   background: rgba(0, 0, 0, 0.9);

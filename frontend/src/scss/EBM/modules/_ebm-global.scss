@@ -682,6 +682,9 @@ $make-drink-gallery-height-control: 560px;
 		color: #f8f4e5;
 	}
 }
+#pagination .pagination > li > a {
+	border: 0px;
+}
 
 /*
 	Follow us
@@ -1080,7 +1083,6 @@ footer {
 		}
 	}
 	.grid{
-		padding-top: 25px;
 		#overlay {
 		  background:rgba(0,0,0,0.9);
 		  width:100%;
