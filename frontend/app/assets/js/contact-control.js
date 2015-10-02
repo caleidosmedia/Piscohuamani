@@ -17,7 +17,7 @@ $(document).ready(function() {
 
   $('#nombre').keydown(function(e) {
   	var inputVal = String.fromCharCode(e.keyCode);
-    var numericReg = /^[0-9]+$/;
+    var numericReg = /^[0-9\b]+$/;
     var numberInput = $("#nombre").data("id");
     if(numericReg.test(inputVal) && e.keyCode != 8) {
       e.preventDefault();
