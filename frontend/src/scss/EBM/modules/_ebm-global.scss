@@ -1418,6 +1418,29 @@ footer {
 				}  
 			}
 		}
+		.error-nombre, 
+		.error-correo, 
+		.error-comentario {
+			div {
+				width: 160px;
+				background-color: #F3EFE0;
+		    color: #3B2E29;
+		    padding: 7px 14px;
+			}
+		}
+		.error-nombre, .error-correo {
+			top: 34px;
+		}
+		.error-nombre {
+    	right: 100%;
+		}
+		.error-correo {
+			left: 100%;
+		}
+		.error-comentario {
+			top: 120px;
+			right: 100%;
+		}
   }
 }
 .thanks-box {

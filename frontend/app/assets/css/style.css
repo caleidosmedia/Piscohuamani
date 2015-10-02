@@ -7910,6 +7910,27 @@ footer .col-md-3 p a:hover {
 #container-contact .formulario button:hover a {
   color: #fff;
 }
+#container-contact .formulario .error-nombre div,
+#container-contact .formulario .error-correo div,
+#container-contact .formulario .error-comentario div {
+  width: 160px;
+  background-color: #F3EFE0;
+  color: #3B2E29;
+  padding: 7px 14px;
+}
+#container-contact .formulario .error-nombre, #container-contact .formulario .error-correo {
+  top: 34px;
+}
+#container-contact .formulario .error-nombre {
+  right: 100%;
+}
+#container-contact .formulario .error-correo {
+  left: 100%;
+}
+#container-contact .formulario .error-comentario {
+  top: 120px;
+  right: 100%;
+}
 
 .thanks-box {
   width: 750px;
