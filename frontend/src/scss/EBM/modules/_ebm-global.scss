@@ -498,8 +498,10 @@ $separator-height-control: 1px;
 		.separador {
 			border-bottom: 1px solid #3b2e29;
 		}
-		p {
+		h4{
 			padding-top: 6%;
+		}
+		p {
 			font-size: 18.2px;
 			font-size: rem(18.2px);
 			font-weight: 300;
@@ -1341,13 +1343,15 @@ footer {
   	margin-bottom: 5%;
 		width: 29%;
 	}
-	p {
+	p, li, ol {
 		color: #4e3227;
   	line-height: 1.8;
   	font-size: 18.2px;
   	font-size: rem(18.2px);
   	font-weight: 300;
-	  margin-bottom: 2.5%;
+	}
+	p {
+		margin-bottom: 2.5%;
 	}
 	.sub-title {
 		text-transform: uppercase;
@@ -1373,7 +1377,7 @@ footer {
 }
 #container-contact{
   h1{
-  	font-family: "trajan-pro-3";
+  	font-family: "Verdana";
   }
   .formulario{
   	input{

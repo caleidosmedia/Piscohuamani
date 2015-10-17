@@ -4,7 +4,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -153,7 +153,9 @@ class EE_Menu {
 				'tracking_preferences'			=> cp_url('admin_system/tracking_preferences'),
 				'captcha_preferences'			=> cp_url('admin_system/captcha_preferences'),
 				'throttling_configuration'		=> cp_url('admin_system/throttling_configuration')
-			)
+			),
+			'----',
+			'software_registration'			=>  cp_url('admin_system/software_registration')
 		);
 
 

@@ -5,7 +5,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.8
@@ -104,6 +104,8 @@ class Csrf {
 			return TRUE;
 		}
 
+		$this->backend->refresh_token();
+
 		// Exempt safe html methods (@see RFC2616)
 		$safe = array('GET', 'HEAD', 'OPTIONS', 'TRACE');
 
@@ -149,8 +151,7 @@ class Csrf {
 		unset($_POST['csrf_token']);
 		unset($_POST['XID']);
 
-		// Reject failed tokens or tokens of bogus size
-		if ( ! $token || strlen($token) != self::TOKEN_LENGTH)
+		if ( ! $this->token_is_valid_format($token))
 		{
 			$token = '';
 		}
@@ -173,11 +174,26 @@ class Csrf {
 			$this->session_token = $this->backend->fetch_token();
 		}
 
-		if ($this->session_token == '')
+		if ( ! $this->token_is_valid_format($this->session_token))
 		{
 			$this->session_token = $this->refresh_token();
 		}
 
 		return (string) $this->session_token;
+	}
+
+	/**
+	 * 	Reject failed tokens or tokens that are bogus hashes
+	 *
+	 * @return bool		whether the token is a valid format
+	 **/
+	private function token_is_valid_format($token = '')
+	{
+		if (empty($token) OR strlen($token) != self::TOKEN_LENGTH)
+		{
+			return FALSE;
+		}
+
+		return preg_match('/^[a-f0-9]{'.self::TOKEN_LENGTH.'}$/', $token);
 	}
 }

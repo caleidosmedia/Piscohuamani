@@ -4,7 +4,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -214,6 +214,42 @@ class File_upload_preferences_model extends CI_Model
 		}
 
 		return array_unique($cat_groups);
+	}
+
+	// -------------------------------------------------------------------------
+
+	/**
+	 * Get all file upload paths in a mapped associative array with the keys
+	 * being the file upload directory ID and the value being the URL of the
+	 * directory.
+	 * @return array Associative array containing upload dir IDs and paths
+	 *               Array(
+	 *                 [1] => http://expressionengine/images/uploads/
+	 *                 [3] => http://expressionengine/themes/site_themes/...
+	 *                 ...
+	 *               )
+	 */
+	public function get_paths()
+	{
+		if ( ! ee()->session->cache(__CLASS__, 'paths'))
+		{
+			$paths = array();
+			$upload_prefs = $this->get_file_upload_preferences(NULL, NULL, TRUE);
+
+			if (count($upload_prefs) == 0)
+			{
+				return $paths;
+			}
+
+			foreach ($upload_prefs as $row)
+			{
+				$paths[$row['id']] = $row['url'];
+			}
+
+			ee()->session->set_cache(__CLASS__, 'paths', $paths);
+		}
+
+		return ee()->session->cache(__CLASS__, 'paths');
 	}
 }
 

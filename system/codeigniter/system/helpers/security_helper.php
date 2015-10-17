@@ -6,7 +6,7 @@
  *
  * @package		CodeIgniter
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2008 - 2015, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @link		http://codeigniter.com
  * @since		Version 1.0
@@ -95,7 +95,20 @@ if ( ! function_exists('encode_php_tags'))
 {
 	function encode_php_tags($str)
 	{
-		return str_replace(array('<?php', '<?PHP', '<?', '?>'),  array('&lt;?php', '&lt;?PHP', '&lt;?', '?&gt;'), $str);
+		$str = str_replace(array('<?php', '<?PHP', '<?', '?>', '<%', '%>'),
+		                   array('&lt;?php', '&lt;?PHP', '&lt;?', '?&gt;', '&lt;%', '%&gt;'),
+		                   $str);
+
+		if (stristr($str, '<script') &&
+			preg_match_all("/<script.*?language\s*=\s*(\042|\047)?php(\\1)?.*?>.*?<\/script>/is", $str, $matches))
+		{
+			foreach ($matches[0] as $match)
+			{
+				$str = str_replace($match, htmlspecialchars($match), $str);
+			}
+		}
+
+		return $str;
 	}
 }
 

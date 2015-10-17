@@ -4,7 +4,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -108,6 +108,14 @@ abstract class EE_Fieldtype {
 		// to __set and __get when we're ready for full deprecation.
 		$this->field_id = $this->id;
 		$this->field_name = $this->name;
+
+		// Since fieldtypes are currently treated as singletons, we need to make
+		// sure if a fieldtype is instantiated without a content_id that it
+		// doesn't continue to use the content ID from the previous instantiation
+		if ( ! isset($config['content_id']))
+		{
+			$this->content_id = NULL;
+		}
 	}
 
 	// --------------------------------------------------------------------

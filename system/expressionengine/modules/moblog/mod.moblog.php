@@ -4,7 +4,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -1396,7 +1396,7 @@ class Moblog {
 		$prefs_q = ee()->file_upload_preferences_model->get_file_upload_preferences(1, $dir_id);
 		$sizes_q = ee()->file_model->get_dimensions_by_dir_id($dir_id);
 
-		$dir_server_path = $prefs_q['server_path'];
+		$dir_server_path = (isset($prefs_q['server_path'])) ? $prefs_q['server_path'] : '';
 
 		// @todo if 0 skip!!
 		$thumb_data = array();
@@ -1803,14 +1803,14 @@ class Moblog {
 
 		if ($upload_dir_id == 0)
 		{
-			continue;
+			return TRUE;
 		}
 
 		if ($subtype == 'appledouble')
 		{
 			if ( ! $data = $this->appledouble($value))
 			{
-				continue;
+				return TRUE;
 			}
 			else
 			{
@@ -1846,7 +1846,7 @@ class Moblog {
 
 		if (stristr($filename, 'dottedline') OR stristr($filename, 'spacer.gif') OR stristr($filename, 'masthead.jpg'))
 		{
-			continue;
+			return TRUE;
 		}
 
 		/** --------------------------------
@@ -1891,7 +1891,7 @@ class Moblog {
 				$this->body = ( ! isset($this->post_data[$type]['plain'])) ? $this->post_data[$type]['alt'] : $this->post_data[$type]['plain'];
 			}
 
-			continue;
+			return TRUE;
 		}
 
 		// Eudora and Mail.app use this by default
@@ -1964,7 +1964,7 @@ class Moblog {
 		}
 		else
 		{
-			continue;
+			return TRUE;
 		}
 
 		// Clean the file
@@ -1998,7 +1998,7 @@ class Moblog {
 			{
 				$this->attach_text = $file_code;
 				$this->attach_name = $filename;
-				continue; // No upload of file.
+				return TRUE; // No upload of file.
 			}
 		}
 
@@ -2117,40 +2117,31 @@ class Moblog {
 		$username = (isset($x['1']) && $x['0'] == 'AUTH') ? $x['1'] : $x['0'];
 		$password = (isset($x['2']) && $x['0'] == 'AUTH') ? $x['2'] : $x['1'];
 
-		/** --------------------------------------
-		/**  Check Username and Password, First
-		/** --------------------------------------*/
+		//  Check Username and Password, First
+		ee()->load->library('auth');
 
-		ee()->load->helper('security');
-
-		ee()->db->select('member_id, group_id');
-		ee()->db->where('username', $username);
-		ee()->db->where('password', sha1(stripslashes($password)));
-		$query = ee()->db->get('members');
-
-		if ($query->num_rows() == 0)
-		{
-			return FALSE;
-		}
-		elseif($query->row('group_id')  == '1')
-		{
-			$this->author	=  $query->row('member_id') ;
-			$this->body		= str_replace($login,'',$this->body);
-			return TRUE;
-		}
-
-		ee()->db->where('group_id', $query->row('group_id'));
-		ee()->db->where('channel_id', $this->moblog_array['moblog_channel_id']);
-		$count = ee()->db->count_all_results('channel_member_groups');
-
-		if ($count == 0)
+		if (FALSE == ($auth = ee()->auth->authenticate_username($username, $password)))
 		{
 			return FALSE;
 		}
 
-		$this->author	=  $query->row('member_id') ;
+		$group_id = $auth->member('group_id');
+
+		// Do they have permission to post to this channel?
+		if ($group_id  != '1')
+		{
+			ee()->db->where('group_id', $group_id);
+			ee()->db->where('channel_id', $this->moblog_array['moblog_channel_id']);
+			$count = ee()->db->count_all_results('channel_member_groups');
+
+			if ($count == 0)
+			{
+				return FALSE;
+			}
+		}
+
+		$this->author	=  $auth->member('member_id');
 		$this->body		= str_replace($login,'',$this->body);
-
 		return TRUE;
 	}
 

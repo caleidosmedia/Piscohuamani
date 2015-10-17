@@ -1,0 +1,42 @@
+{embed="includes/head"}
+  <body>
+    <div class="site-wrapper"> <!-- Body -->
+      {embed="includes/header" about="{path='home'#about-us}" goods="{path='home'}#the-goods" make="{path='home'}#make-drink" events="{path='home'}#events"} 
+      <main class="site-content">
+        <!-- <div class="overlay-contact minhp-100 absolute w-100" style="opacity:0">
+          <div id="thanks" class="absolute text-center">
+            <p>Thanks!!</p>
+          </div>
+        </div> -->
+        {emebed="includes/overlay-menu"}
+        <section>
+          <div id="container-contact" class="minhp-100">
+            <h1 class="text-white hidden-xs hidden-sm">GET IN TOUCH</h1>
+            <h3 class="text-white hidden-lg hidden-md">GET IN TOUCH</h3>
+            <div class="formulario relative pt-28">
+              <form action="{path='thanks'}" name="myForm">
+                <div class="error-nombre absolute"></div>
+                <div class="error-correo absolute"></div>
+                <div class="error-comentario absolute"></div>
+                <input id="nombre" type="text" data-id="0" maxlength="25" class="input-contact text-white thin name mv-0-md mh-7-md m-0-xs mb-21-xs fz-18 ph-14" placeholder="NAME" name="name"><!--fz-26-->
+                <input id="correo" type="email" data-id="1" class="input-contact text-white thin e-mail mv-0-md mh-7-md mb-21-xs ph-14-xs m-0-xs fz-18 ph-14" data-id="2" maxlength="25" placeholder="E-MAIL" name="email"><br><!--fz-26-->
+                <p><textarea id="comentario" type="textarea" data-id="3" maxlength="600" class="input-contact text-white thin message ml-7-md mt-21-md m-0-xs pv-14 fz-18 ph-14" onkeyup="auto_grow(this)" placeholder="MESSAGE" name="textarea"></textarea></p>
+                <button class="text-white send absolute" type="submit">
+                  <span class="fz-18 relative hidden-xs hidden-sm">SEND</span>
+                  <span class="fz-26 relative hidden-lg hidden-md">SEND</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+        {embed="includes/follow"}
+      </main>
+      {embed="includes/footer"}
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="{site_url}frontend/app/assets/js/forms-control.js"></script>
+    <script src="{site_url}frontend/app/assets/js/menu-movil-control.js"></script>
+    <script src="{site_url}frontend/app/assets/js/textarea-control.js"></script>
+    <script src="{site_url}frontend/app/assets/js/contact-control.js"></script>
+  </body>
+</html> 

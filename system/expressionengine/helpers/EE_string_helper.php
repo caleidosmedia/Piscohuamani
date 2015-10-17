@@ -5,7 +5,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -61,6 +61,35 @@ function unique_marker($ident)
 function trim_nbs($string)
 {
 	return trim($string, " \t\n\r\0\xB\xA0".chr(0xC2).chr(0xA0));
+}
+
+// ----------------------------------------------------------------------------
+
+
+/**
+ * Validates format of submitted license number, for soft validation
+ *
+ * @param string	$license	the string to run the pattern check on
+ * @return bool		TRUE on pattern math, FALSE on failure
+ **/
+function valid_license_pattern($license)
+{
+	if (IS_CORE && $license == 'CORE LICENSE')
+	{
+		return TRUE;
+	}
+
+	if (count(count_chars(str_replace('-', '', $license), 1)) == 1 OR $license == '1234-1234-1234-1234')
+	{
+		return FALSE;
+	}
+
+	if ( ! preg_match('/^[\d]{4}-[\d]{4}-[\d]{4}-[\d]{4}$/', $license))
+	{
+		return FALSE;
+	}
+
+	return TRUE;
 }
 
 // ----------------------------------------------------------------------------

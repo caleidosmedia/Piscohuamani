@@ -4,7 +4,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -1849,9 +1849,9 @@ class Wiki {
 													((count($parents) > 0) ? implode($this->cats_separator, $parents).$this->cats_separator : '').
 													$data['cat_name']);
 
-		$this->conditionals['children']		= ($children == 'y') ? 'TRUE' : 'FALSE';
-		$this->conditionals['first_child']	= ($depth > $last_depth) ? 'TRUE' : 'FALSE';
-		$this->conditionals['last_child']	= ($depth > $next_depth) ? 'TRUE' : 'FALSE';
+		$this->conditionals['children']		= ($children == 'y') ? TRUE : FALSE;
+		$this->conditionals['first_child']	= ($depth > $last_depth) ? TRUE : FALSE;
+		$this->conditionals['last_child']	= ($depth > $next_depth) ? TRUE : FALSE;
 
 		$template = $this->prep_conditionals($template, array_merge($cdata, $this->conditionals));
 		$template = str_replace(array_keys($cdata), array_values($cdata), $template);
@@ -3521,13 +3521,13 @@ class Wiki {
 
 	function _deny_if($cond, $str)
 	{
-		$this->conditionals[$cond] = 'FALSE';
+		$this->conditionals[$cond] = FALSE;
 		return preg_replace("/\{if\s+".$cond."\}/si", "{if FALSE}", $str);
 	}
 
 	function _allow_if($cond, $str)
 	{
-		$this->conditionals[$cond] = 'TRUE';
+		$this->conditionals[$cond] = TRUE;
 		return preg_replace("/\{if\s+".$cond."\}/si", "{if TRUE}", $str);
 	}
 
@@ -5124,8 +5124,7 @@ class Wiki {
 		}
 
 		// success, so let's make remove this request from the tracker so login redirects don't go here
-		array_shift(ee()->session->tracker);
-		ee()->input->set_cookie('tracker', serialize(ee()->session->tracker), '0');
+		ee()->session->do_not_track();
 
 		fpassthru($fp);
 		@fclose($fp);

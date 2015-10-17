@@ -4,7 +4,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -79,7 +79,7 @@ class EE_Template_Router extends CI_Router {
 		ee()->db->join('template_groups', 'templates.group_id = template_groups.group_id');
 		ee()->db->where('route_parsed is not null');
 		ee()->db->where('templates.site_id', $site_id);
-		ee()->db->order_by('LENGTH(route_parsed), group_name, template_name', 'ASC');
+		ee()->db->order_by('order, group_name, template_name', 'ASC');
 		$query = ee()->db->get();
 
 		foreach ($query->result() as $template)

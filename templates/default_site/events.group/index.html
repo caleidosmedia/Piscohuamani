@@ -1,0 +1,226 @@
+{embed="includes/head"}
+  <body>
+    <div class="site-wrapper"> <!-- Body -->
+      {embed="includes/header" about="{path='home'#about-us}" goods="{path='home'}#the-goods" make="{path='home'}#make-drink" events="{path='home'}#events"}
+      <main class="site-content">
+        {embed="includes/overlay-menu"}
+        <section id="slider-events" class="hidden-xs relative">
+          <div class="overlay-fondo w-100 minh-100 absolute" style="z-index:2"></div>
+          <div class="gallery-wrapper row p-0">
+            <div class="gallery-child">
+              <div class="gallery-cell" style="background-image:url({site_url}frontend/app/assets/img/fotos/hero1.jpg)"></div>
+              <div class="gallery-cell" style="background-image:url({site_url}frontend/app/assets/img/fotos/hero2.jpg)"></div>
+              <div class="gallery-cell" style="background-image:url({site_url}frontend/app/assets/img/fotos/IMG_0212.png)"></div>
+            </div>
+            <div class="container relative clearfix pt-42 mt-70 pl-42" style="z-index:3">
+              <div id="slider_back_experience" class="gallery-button-left" style="top:285px!important; left:-7%!important">
+                <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-previo-blanco.png" alt="">
+              </div>
+              <div id="slider_next_experience" class="gallery-button-right" style="top:285px!important; right:-7%!important">
+                <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-blanco.png" alt=""> 
+              </div> 
+              <div class="row pb-70 mb-70 absolute hidden-xs" style="padding-top: 30px; width:100%">
+                <div id="" class="text-opacity hidden" data-index="1" data-current="1">
+                  <h2>TARDE DE GALLOS</h2>
+                  <div class="separador mt-14 mb-28"></div>
+                  <p class="fz-20 thin">August 30 <sup>th</sup></p>
+                  <h3 class="p-0 m-0">MIRAFLORES PERÚ</h3>
+                  <p class="fz-19 pt-21 thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est.</p>
+                </div>
+                <div id="" class="text-opacity hidden" data-index="2">
+                  <h2>TARDE DE GALLOS 2</h2>
+                  <div class="separador mt-14 mb-28"></div>
+                  <p class="fz-20 thin">October 30 <sup>th</sup></p>
+                  <h3 class="p-0 m-0">MIRAFLORES PERÚ</h3>
+                  <p class="fz-19 pt-21 thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est.</p>
+                </div>
+                <div id="" class="text-opacity hidden" data-index="3">
+                  <h2>TARDE DE GALLOS 3</h2>
+                  <div class="separador mt-14 mb-28"></div>
+                  <p class="fz-20 thin">November 30 <sup>th</sup></p>
+                  <h3 class="p-0 m-0">MIRAFLORES PERÚ</h3>
+                  <p class="fz-19 pt-21 thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est.</p>
+                </div>
+                <div class="clearfix ">
+                  <div id="slider-text-experience" class="slider-text-oficial relative ph-0 pt-21 text-white col-md-4" style="z-index: 1;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </section>
+        <section id="slider-events" class="minhp-100 hidden-lg hidden-md hidden-sm" style="background-image: url(assets/img/fotos/fotos-eventos/2-grande.png); "><!--movil-->
+          <div class="event-movil text-white">
+            <h2>TARDE DE GALLOS</h2>
+            <div class="separador"></div>
+            <p class="fecha-movil">August 30 <sup>th</sup></p>
+            <h3 class="p-0 m-0">MIRAFLORES PERÚ</h3>
+          </div>
+        </section>
+        <section id="galeria">
+          <div class="container pv-70-md pv-0-xs">
+            <div class="texto-evento">
+              <!-- <p class="fecha">August 30 <sup>th</sup></p>
+              <h1>TARDE DE GALLOS</h1>
+              <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam earum. </p> -->
+            </div>
+            <div class="grid">
+              <div class="ronda-1 hidden" data-index="1" data-current="1">
+                <ul class="group row mg-0 pd-0 group-1">
+                  <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/1.png" data-image-index="1" class="grid-image grid-image-1"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/1.png" alt=""></a></li>
+                  <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/2.png" data-image-index="2" class="grid-image grid-image-2"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/2.png" alt=""></a></li>
+                  <li class="col-md-4 hidden-xs"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/3.png" data-image-index="3" class="grid-image grid-image-3"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/3.png" alt=""></a></li>
+                </ul>
+                <ul class="group row mg-0 pd-0 group-1">
+                  <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/4.png" data-image-index="4" class="grid-image grid-image-4"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/4.png" alt=""></a></li>
+                  <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/5.png" data-image-index="5" class="grid-image grid-image-5"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/5.png" alt=""></a></li>
+                  <li class="col-md-4 hidden-xs"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/6.png" data-image-index="6" class="grid-image grid-image-6"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/6.png" alt=""></a></li>
+                </ul>
+                <ul class="group row mg-0 pd-0 group-2 hidden" data-number="2">
+                  <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/4.png" data-image-index="7" class="grid-image grid-image-4"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/4.png" alt=""></a></li>
+                  <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/2.png" data-image-index="8" class="grid-image grid-image-2"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/2.png" alt=""></a></li>
+                  <li class="col-md-4 hidden-xs"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/6.png" data-image-index="9" class="grid-image grid-image-6"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/6.png" alt=""></a></li>
+                </ul>
+                <ul class="group row mg-0 pd-0 group-2 hidden" data-number="2">
+                  <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/1.png" data-image-index="10" class="grid-image grid-image-1"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/1.png" alt=""></a></li>
+                  <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/5.png" data-image-index="11" class="grid-image grid-image-5"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/5.png" alt=""></a></li>
+                  <li class="col-md-4 hidden-xs"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/3.png" data-image-index="12" class="grid-image grid-image-3"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/3.png" alt=""></a></li>
+                </ul>
+                <ul class="group row mg-0 pd-0 group-3 hidden">
+                  <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/4.png" data-image-index="13" class="grid-image grid-image-4"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/4.png" alt=""></a></li>
+                  <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/5.png" data-image-index="14" class="grid-image grid-image-5"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/5.png" alt=""></a></li>
+                  <li class="col-md-4 hidden-xs"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/6.png" data-image-index="15" class="grid-image grid-image-6"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/6.png" alt=""></a></li>
+                </ul>
+                <ul class="group row mg-0 pd-0 group-3 hidden">
+                  <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/1.png" data-image-index="16" class="grid-image grid-image-1"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/1.png" alt=""></a></li>
+                  <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/2.png" data-image-index="17" class="grid-image grid-image-2"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/2.png" alt=""></a></li>
+                  <li class="col-md-4 hidden-xs"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/3.png" data-image-index="18" class="grid-image grid-image-3"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/3.png" alt=""></a></li>
+                </ul>
+              </div>
+              <div class="ronda-1 hidden" data-index="2">
+                <ul class="row mg-0 pd-0">
+                  <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/7.png" data-image-index="1" class="grid-image grid-image-1"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/7.png" alt=""></a></li>
+                  <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/8.png" data-image-index="2" class="grid-image grid-image-2"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/8.png" alt=""></a></li>
+                  <li class="col-md-4 hidden-xs"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/9.png" data-image-index="3" class="grid-image grid-image-3"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/9.png" alt=""></a></li>
+                </ul>
+                <ul class="row mg-0 pd-0 hidden-xs">
+                  <li class="col-md-4"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/1.png" data-image-index="4" class="grid-image grid-image-4"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/1.png" alt=""></a></li>
+                   <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/1.png" data-image-index="5" class="grid-image grid-image-5"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/1.png" alt=""></a></li>
+                  <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/2.png" data-image-index="6" class="grid-image grid-image-6"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/2.png" alt=""></a></li>
+                </ul>
+              </div>
+              <div class="ronda-1 hidden" data-index="3">
+                <ul class="row mg-0 pd-0 hidden-xs">
+                  <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/4.png" data-image-index="1" class="grid-image grid-image-1"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/4.png" alt=""></a></li>
+                  <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/5.png" data-image-index="2" class="grid-image grid-image-2"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/5.png" alt=""></a></li>
+                  <li class="col-md-4 hidden-xs"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/3.png" data-image-index="3" class="grid-image grid-image-3"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/3.png" alt=""></a></li>
+                </ul>
+                <ul class="row mg-0 pd-0 hidden-xs">
+                  <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/7.png" data-image-index="4" class="grid-image grid-image-4"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/7.png" alt=""></a></li>
+                  <li class="col-md-4 col-xs-6"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/8.png" data-image-index="5" class="grid-image grid-image-5"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/8.png" alt=""></a></li>
+                  <li class="col-md-4 hidden-xs"><a href="{site_url}frontend/app/assets/img/fotos/fotos-eventos/9.png" data-image-index="6" class="grid-image grid-image-6"><img src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/9.png" alt=""></a></li>
+                </ul>
+              </div>
+              <div id="container-ronda"></div>
+              <div id="overlay">
+                <a class="close text-white pv-7 ph-14 thin" data-dismiss="modal">&times;</a>
+                <a class="previous-overlay controls" data-image-index="" href="">
+                  <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-previo-blanco.png" alt="">
+                </a>
+                <img src="" class="img-overlay">
+                <a class="next-overlay controls" data-image-index="" href="">
+                  <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-blanco.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div id="pagination" class="text-center">
+              <nav>
+                <ul class="pagination hidden-xs">
+                  <li class="first"><a href="#">First</a></li>
+                  <li class="li-previous">
+                    <a class="previous" href="" aria-label="Previous">
+                      <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                    </a>
+                  </li>
+                  <li class="numeracion numeracion1 active" data-id="0"><a href="#">1 <span class="sr-only">(current)</span></a></li>       
+                  <li class="numeracion numeracion2" data-id="1"><a href="">2</a></li>
+                  <li class="numeracion numeracion3" data-id="2"><a href="">3</a></li>
+                  <li class="li-next">
+                    <a class="next" href="" aria-label="Next">
+                      <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    </a>
+                  </li>
+                  <li class="last"><a href="#">Last</a></li>
+                </ul>
+                <!-- <ul class="pagination hidden-lg hideen-md hidden-sm">
+                  <li>
+                    <a class="previous" href="#" aria-label="Previous">
+                      <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                    </a>
+                  </li>
+                  <li class="active"><a href="#">2<span class="sr-only">(current)</span></a></li>                            
+                  <li>
+                    <a class="next" href="#" aria-label="Next">
+                      <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    </a>
+                  </li>
+                </ul> -->
+              </nav>
+            </div>
+          </div>
+        </section>
+        {embed="includes/follow"}
+      </main>
+      {embed="includes/footer"}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.js"></script>
+    <script src="{site_url}frontend/app/assets/js/gallery-control.js"></script>
+    <script src="{site_url}frontend/app/assets/js/menu-movil-control.js"></script>
+    <script src="{site_url}frontend/app/assets/js/slide-texto-control.js"></script>
+    <!-- <script src="{site_url}frontend/app/assets/js/smooth-scroll-active.js"></script> -->
+    <script src="{site_url}frontend/app/assets/js/overlay-control.js"></script>
+    <!--<script>
+      $(document).ready(function(){
+        paginacion(".numeracion1", ".group-1");
+        paginacion(".numeracion2", ".group-2");
+        paginacion(".numeracion3", ".group-3");
+        function paginacion(hola, groupNumber){
+          $(hola).click(function(e){
+            e.preventDefault();
+            $(".numeracion").removeClass("active");
+            $(this).addClass("active");
+            $(".group").addClass("hidden");
+            $(groupNumber).removeClass("hidden");
+          });
+        }
+        callBtn(".first", ".numeracion1", ".group-1");
+        callBtn(".last", ".numeracion3", ".group-3");
+        function callBtn(btn, hola, groupNumber){
+          $(btn).click(function(e){
+            e.preventDefault();
+            $(".numeracion").removeClass("active");
+            $(hola).addClass("active");
+            $(".group").addClass("hidden");
+            $(groupNumber).removeClass("hidden");
+          });
+        }
+         
+        $(".li-next").click(function(e){
+          e.preventDefault();
+          // $item = $item.focus(); 
+          var n = $(".numeracion").data("id"); 
+          $(".numeracion")[n+1].click();
+          var $(".numeracion") = $(".numeracion")[n+1];
+        });
+        $(".li-previous").click(function(e){
+          e.preventDefault();
+          // $item = $item.prev();
+          var n = $(".numeracion").data("id") 
+          $(".numeracion")[n-1].click();
+          var $(".numeracion") = $(".numeracion")[n-1];
+        });
+
+      });
+    </script>-->
+  </body>
+</html> 

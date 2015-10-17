@@ -4,7 +4,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -64,7 +64,7 @@ class EE_Lang extends CI_Lang {
 			}
 		}
 
-		$deft_lang = ( ! $EE->config->item('language')) ? 'english' : $EE->config->item('language');
+		$deft_lang = ( ! $EE->config->item('deft_lang')) ? 'english' : $EE->config->item('deft_lang');
 
 		// Sec.ur.ity code.  ::sigh::
 		$package = ($package == '') ? $EE->security->sanitize_filename(str_replace(array('lang.', '.php'), '', $which)) : $EE->security->sanitize_filename($package);

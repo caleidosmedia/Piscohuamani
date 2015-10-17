@@ -1,26 +1,22 @@
-{embed="includes/head"}
-  <body>
-    <div class="site-wrapper"> <!-- Body -->
       <header class="site-menu">
         <div class="contenedor-menu text-center">
           <nav class="nav-desktop clearfix smooth hidden-xs">
-            <a href="index.html" class="logo-link">
-              <div><img src="assets/img/iconos-logos/logo-head-pisco-huamani.png" alt=""></div>
-              <div><img src="assets/img/iconos-logos/logo-head-seleccion-pisco-huamani.png" alt=""></div>
+            <a href="#background" class="logo-link">
+              <div><img src="{site_url}frontend/app/assets/img/iconos-logos/logo-head-pisco-huamani-beige-01.png" alt=""></div>
             </a>
-            <a href="#about-us" class="about-link">
+            <a href="{embed:about}" class="about-link">
               <div>ABOUT US</div>
               <div>ABOUT US</div> 
             </a>
-            <a href="#the-goods" class="goods-link">
+            <a href="{embed:goods}" class="goods-link">
               <div>THE GOODS</div>
               <div>THE GOODS</div>
             </a>
-            <a href="#make-drink" class="made-link">
+            <a href="{embed:make}" class="made-link">
               <div>MAKE A DRINK</div>
               <div>MAKE A DRINK</div>
             </a>
-            <a href="#events" class="events-link">
+            <a href="{embed:events}" class="events-link">
               <div>EVENTS</div>
               <div>EVENTS</div>
             </a>
@@ -29,11 +25,15 @@
               <div>FOLLOW US</div>
             </a>
           </nav>
-          <nav class="nav-movil hidden-lg hidden-md hidden-sm
-          ">
-            <a href="index.html" class="logo-link">
-              <div><img src="assets/img/iconos-logos/logo-head-pisco-huamani.png" alt=""></div>
+          <nav class="nav-movil hidden-lg hidden-md hidden-sm"><!--movil-->
+            <a href="{path='home'}" class="logo-link"> 
+              <img src="{site_url}frontend/app/assets/img/iconos-logos/logo-head-pisco-huamani.png" alt="">
             </a>
+            <p class="text-menu text-white">MENÚ</p>
+            <p class="text-menu text-white hidde">CERRAR</p>
+            <div class="switch">
+              <div class="menu-toggle"></div>
+            </div>
           </nav>
         </div>
-      </header> }
+      </header> 

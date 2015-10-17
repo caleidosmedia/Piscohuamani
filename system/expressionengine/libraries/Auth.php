@@ -4,7 +4,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -419,10 +419,10 @@ class Auth {
 		// remove old remember me's and sessions, so that
 		// changing your password effectively logs out people
 		// using the old one.
-		ee()->remember->delete_others();
+		ee()->remember->delete_others($member_id);
 
 		ee()->db->where('member_id', (int) $member_id);
-		ee()->db->where('session_id !=', ee()->session->userdata('session_id'));
+		ee()->db->where('session_id !=', (string) ee()->session->userdata('session_id'));
 		ee()->db->delete('sessions');
 
 		// update password in db
@@ -442,6 +442,11 @@ class Auth {
 	private function _authenticate(CI_DB_result $member, $password)
 	{
 		$always_disallowed = array(4);
+
+		if (bool_config_item('allow_pending_login'))
+		{
+			$always_disallowed = array_diff($always_disallowed, array(4));
+		}
 
 		if ($member->num_rows() !== 1)
 		{

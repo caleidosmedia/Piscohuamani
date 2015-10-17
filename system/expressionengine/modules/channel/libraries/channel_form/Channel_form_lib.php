@@ -6,7 +6,7 @@
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team,
  * 		- Original Development by Barrett Newton -- http://barrettnewton.com
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -118,7 +118,7 @@ class Channel_form_lib
 		if (ee()->extensions->active_hook('safecracker_entry_form_absolute_start') === TRUE)
 		{
 			ee()->load->library('logger');
-			ee()->logger->deprecated('2.7', 'Renamed to: channel_form_entry_form_absolute_start');
+			ee()->logger->deprecated_hook('safecracker_entry_form_absolute_start', '2.7', 'channel_form_entry_form_absolute_start');
 
 			ee()->extensions->call('safecracker_entry_form_absolute_start');
 			if (ee()->extensions->end_script === TRUE) return;
@@ -291,7 +291,7 @@ class Channel_form_lib
 		if (ee()->extensions->active_hook('safecracker_entry_form_tagdata_start') === TRUE)
 		{
 			ee()->load->library('logger');
-			ee()->logger->deprecated('2.7', 'Renamed to: channel_form_entry_form_tagdata_start');
+			ee()->logger->deprecated_hook('safecracker_entry_form_tagdata_start', '2.7', 'channel_form_entry_form_tagdata_start');
 
 			ee()->TMPL->tagdata = ee()->extensions->call('safecracker_entry_form_tagdata_start', ee()->TMPL->tagdata, $this);
 			if (ee()->extensions->end_script === TRUE) return;
@@ -404,7 +404,7 @@ class Channel_form_lib
 			//custom field pair parsing with replace_tag
 			elseif (isset($this->custom_fields[$tag_name]))
 			{
-				if (preg_match_all('/'.LD.preg_quote($tag_pair_open).RD.'(.*)'.LD.'\/'.$tag_name.RD.'/s', ee()->TMPL->tagdata, $matches))
+				if (preg_match_all('/'.LD.preg_quote($tag_pair_open).RD.'(.*?)'.LD.'\/'.$tag_name.RD.'/s', ee()->TMPL->tagdata, $matches))
 				{
 					foreach ($matches[1] as $match_index => $var_pair_tagdata)
 					{
@@ -578,9 +578,7 @@ class Channel_form_lib
 		{
 			$this->parse_variables['title']		= $this->channel('default_entry_title');
 			$this->parse_variables['url_title'] = $this->channel('url_title_prefix');
-
 			$this->parse_variables['allow_comments'] = ($this->channel('deft_comments') == 'n' OR $this->channel('comment_system_enabled') != 'y') ? '' : "checked='checked'";
-
 
 			if ($this->datepicker)
 			{
@@ -613,6 +611,12 @@ class Channel_form_lib
 
 					$this->parse_variables['comment_expiration_date'] = $comment_expiration_date;
 				}
+			}
+			else
+			{
+				$this->parse_variables['entry_date'] = ee()->localize->human_time();
+				$this->parse_variables['expiration_date'] = '';
+				$this->parse_variables['comment_expiration_date'] = '';
 			}
 
 			foreach ($this->custom_fields as $field)
@@ -820,7 +824,7 @@ class Channel_form_lib
 		if (ee()->extensions->active_hook('safecracker_entry_form_tagdata_end') === TRUE)
 		{
 			ee()->load->library('logger');
-			ee()->logger->deprecated('2.7', 'Renamed to: channel_form_entry_form_tagdata_end');
+			ee()->logger->deprecated_hook('safecracker_entry_form_tagdata_end', '2.7', 'channel_form_entry_form_tagdata_end');
 
 			$return = ee()->extensions->call('safecracker_entry_form_tagdata_end', $return, $this);
 			if (ee()->extensions->end_script === TRUE) return;
@@ -1284,9 +1288,8 @@ GRID_FALLBACK;
 			{
 				$conditional_errors['error:' . $error['field']] = $error['error'];
 			}
-
-			unset($conditional_errors['field_errors']);
 		}
+
 
 		return $conditional_errors;
 	}
@@ -1363,7 +1366,7 @@ GRID_FALLBACK;
 		if (ee()->extensions->active_hook('safecracker_submit_entry_start') === TRUE)
 		{
 			ee()->load->library('logger');
-			ee()->logger->deprecated('2.7', 'Renamed to: channel_form_submit_entry_start');
+			ee()->logger->deprecated_hook('safecracker_submit_entry_start', '2.7', 'channel_form_submit_entry_start');
 
 			ee()->extensions->call('safecracker_submit_entry_start', $this);
 			if (ee()->extensions->end_script === TRUE) return;
@@ -1490,12 +1493,6 @@ GRID_FALLBACK;
 
 		foreach ($this->custom_fields as $i => $field)
 		{
-			$isset = (
-				isset($_POST['field_id_'.$field['field_id']]) ||
-				isset($_POST[$field['field_name']]) ||
-				isset($_POST[$field['field_name'].'_hidden_file']) // always call the fieldtype if a file field was on the page
-			);
-
 			if (in_array($field['field_type'], $this->file_fields))
 			{
 				// trick validation into calling the file fieldtype
@@ -1504,6 +1501,13 @@ GRID_FALLBACK;
 					$_POST[$field['field_name']] = $_FILES[$field['field_name']]['name'];
 				}
 			}
+
+			$isset = (
+				isset($_POST['field_id_'.$field['field_id']]) ||
+				isset($_POST[$field['field_name']]) ||
+				// always call the fieldtype if a file field was on the page
+				isset($_POST[$field['field_name'].'_hidden_file'])
+			);
 
 			$this->custom_fields[$i]['isset'] = $isset;
 
@@ -1750,7 +1754,7 @@ GRID_FALLBACK;
 		if (ee()->extensions->active_hook('safecracker_submit_entry_end') === TRUE)
 		{
 			ee()->load->library('logger');
-			ee()->logger->deprecated('2.7', 'Renamed to: channel_form_submit_entry_end');
+			ee()->logger->deprecated_hook('safecracker_submit_entry_end', '2.7', 'channel_form_submit_entry_end');
 
 			ee()->extensions->call('safecracker_submit_entry_end', $this);
 			if (ee()->extensions->end_script === TRUE) return;
@@ -2764,7 +2768,7 @@ GRID_FALLBACK;
 				{
 					$row = trim($row);
 
-					if ( ! $row)
+					if ($row == '')
 					{
 						continue;
 					}
@@ -3351,6 +3355,7 @@ GRID_FALLBACK;
 				foreach ($rows as $row)
 				{
 					$row_output = $var_pair_tagdata;
+					$row_output = ee()->functions->prep_conditionals($row_output, $row);
 
 					foreach ($row as $k => $v)
 					{

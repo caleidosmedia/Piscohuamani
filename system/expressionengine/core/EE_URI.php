@@ -4,7 +4,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -288,7 +288,7 @@ class EE_URI extends CI_URI {
 			}
 
 			$query_str = trim($query_str.'&'.$session_id, '&');
-			$query_str = $query_str ? '?'.$query_str : '';
+			$query_str = $query_str ? '&'.$query_str : '';
 
 			$new = $matches[1].'?'.$controller.$query_str;
 		}

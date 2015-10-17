@@ -4,7 +4,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -60,7 +60,10 @@ class View {
 		$this->_theme = $cp_theme;
 
 		ee()->session->userdata['cp_theme'] = $cp_theme;
+
+		// root overrides deprecated in 2.9.1, view overrides should be in /views/ henceforth
 		ee()->load->add_theme_cascade(PATH_CP_THEME.$cp_theme.'/');
+		ee()->load->add_theme_cascade(PATH_CP_THEME.$cp_theme.'/views/');
 	}
 
 	// --------------------------------------------------------------------

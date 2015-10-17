@@ -4,7 +4,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -235,21 +235,6 @@ class Tools_data extends CP_Controller {
 			BASE.AMP.'C=tools_data'.AMP.'M=sql_manager' => lang('sql_manager')
 		);
 
-		$this->javascript->output('
-			$(".toggle_all").toggle(
-				function(){
-					$("input.toggle").each(function() {
-						this.checked = true;
-					});
-				}, function (){
-					var checked_status = this.checked;
-					$("input.toggle").each(function() {
-						this.checked = false;
-					});
-				}
-			);'
-		);
-
 		$this->cp->render('tools/sql_view_database', $details);
 	}
 
@@ -391,7 +376,7 @@ class Tools_data extends CP_Controller {
 				$title 	= lang('sql_status');
 				break;
 			case 'run_query' :
-				$this->db->db_debug = ($this->input->post('debug') !== FALSE) ? TRUE : FALSE;;
+				$this->db->db_debug = ($this->input->post('debug') !== FALSE OR empty($_POST)) ? TRUE : FALSE;;
 				$run_query = TRUE;
 				$title	= lang('query_result');
 				break;
@@ -427,7 +412,12 @@ class Tools_data extends CP_Controller {
 				}
 				else
 				{
-					$sql = rawurldecode(base64_decode($sql));
+					$sql = trim(rawurldecode(base64_decode($sql)));
+
+					if (strncasecmp($sql, 'SELECT ', 7) !== 0)
+					{
+						return $this->sql_query_form();
+					}
 				}
 			}
 
@@ -857,7 +847,7 @@ class Tools_data extends CP_Controller {
 				}
 			}
 
-			if ($this->cp->installed_modules['comment'])
+			if (isset($this->cp->installed_modules['comment']))
 			{
 				if ($member_comments_count->num_rows() > 0)
 				{

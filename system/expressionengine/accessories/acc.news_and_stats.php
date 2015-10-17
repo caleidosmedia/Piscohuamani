@@ -4,7 +4,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -75,11 +75,19 @@ class News_and_stats_acc {
 		$ret = '';
 
 		ee()->load->library('rss_parser');
-		$feed = ee()->rss_parser->create('http://ellislab.com/blog/rss-feed/cpnews/', 60 * 24 * 3);
+
+		try
+		{
+			$feed = ee()->rss_parser->create('http://ellislab.com/blog/rss-feed/cpnews/', 60 * 24 * 3);
+		}
+		catch (Exception $e)
+		{
+			return 'Could not retrieve news feed.';
+		}
 
 		if ( ! is_object($feed) OR $feed->get_item_quantity() <= 0)
 		{
-			return '';
+			return 'Could not retrieve news feed.';
 		}
 		else
 		{

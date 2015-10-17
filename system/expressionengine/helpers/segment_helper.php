@@ -5,7 +5,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -92,6 +92,11 @@
 					$category_name = $split[$index + 1];
 					break;
 				}
+			}
+
+			if (empty($category_name))
+			{
+				return '';
 			}
 
 			ee()->load->model('category_model');

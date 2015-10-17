@@ -4,7 +4,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.6
@@ -856,15 +856,6 @@ class Relationship_ft extends EE_Fieldtype {
 		ee()->dbforge->add_key('grid_row_id');
 
 		ee()->dbforge->create_table($this->_table);
-
-		$field['field_id_'.$data['field_id']] = array(
-			'type' 			=> 'INT',
-			'constraint'	=> 10,
-			'null' 			=> FALSE,
-			'default'		=> 0
-			);
-
-		return $field;
 	}
 
 	// --------------------------------------------------------------------

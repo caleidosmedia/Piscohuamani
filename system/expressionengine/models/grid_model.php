@@ -4,7 +4,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -299,6 +299,23 @@ class Grid_model extends CI_Model {
 				$this->_get_ft_api_settings($field_id, $content_type)
 			);
 		}
+	}
+
+	// ------------------------------------------------------------------------
+
+	/**
+	 * Returns the row data for a single entry ID and field ID
+	 *
+	 * @param	int 	Entry ID
+	 * @param	int		Field ID to get row data for
+	 * @param	string	Content type to get data for
+	 * @return	array	Row data
+	 */
+	public function get_entry($entry_id, $field_id, $content_type)
+	{
+		$table = $this->_data_table($content_type, $field_id);
+		ee()->db->where('entry_id', $entry_id);
+		return ee()->db->get($table)->result_array();
 	}
 
 	// ------------------------------------------------------------------------

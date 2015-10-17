@@ -4,7 +4,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -77,7 +77,7 @@ class EE_Route_segment {
 			// Place each rule inside an anchored lookahead,
 			// this will match the entire string if the rule matches.
 			// This allows rules to work together without consuming the match.
-			$compiled_rules .= "((?=\b" . $rule->validator() . "\b)" . $rule->validator() . ")";
+			$compiled_rules .= "((?=\b" . $rule->validator() . "\b)([^\/]*))";
 		}
 
 		if (empty($this->rules))

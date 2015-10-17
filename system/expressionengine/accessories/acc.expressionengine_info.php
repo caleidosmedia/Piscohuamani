@@ -4,7 +4,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -89,9 +89,9 @@ class Expressionengine_info_acc {
 	 */
 	function _fetch_version()
 	{
-		ee()->load->helper('version_helper');
+		ee()->load->library('el_pings');
+		$details = ee()->el_pings->get_version_info();
 
-		$details = get_version_info();
 		$download_url = ee()->cp->masked_url('https://store.ellislab.com/manage');
 
 		if ( ! $details)

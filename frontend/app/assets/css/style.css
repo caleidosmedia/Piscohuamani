@@ -6965,8 +6965,10 @@ body .slider-text-oficial2 {
 #the-goods #slider-text-goods .separador, #events #slider-text-goods .separador, #slider-events #slider-text-goods .separador {
   border-bottom: 1px solid #3b2e29;
 }
-#the-goods #slider-text-goods p, #events #slider-text-goods p, #slider-events #slider-text-goods p {
+#the-goods #slider-text-goods h4, #events #slider-text-goods h4, #slider-events #slider-text-goods h4 {
   padding-top: 6%;
+}
+#the-goods #slider-text-goods p, #events #slider-text-goods p, #slider-events #slider-text-goods p {
   font-size: 18.2px;
   font-size: 1.3rem;
   font-weight: 300;
@@ -7823,12 +7825,14 @@ footer .col-md-3 p a:hover {
   margin-bottom: 5%;
   width: 29%;
 }
-#terms p {
+#terms p, #terms li, #terms ol {
   color: #4e3227;
   line-height: 1.8;
   font-size: 18.2px;
   font-size: 1.3rem;
   font-weight: 300;
+}
+#terms p {
   margin-bottom: 2.5%;
 }
 #terms .sub-title {
@@ -7854,7 +7858,7 @@ footer .col-md-3 p a:hover {
 }
 
 #container-contact h1 {
-  font-family: "trajan-pro-3";
+  font-family: "Verdana";
 }
 #container-contact .formulario input {
   width: 280px;

@@ -4,7 +4,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -31,11 +31,35 @@ class Date_ft extends EE_Fieldtype {
 
 	var $has_array_data = FALSE;
 
+	/**
+	 * Parses the date input, first with the configured date format (as used
+	 * by the datepicker). If that fails it will try again with a fuzzier
+	 * conversion, which allows things like "2 weeks".
+	 *
+	 * @param	string	$date	A date string for parsing
+	 * @return	mixed	Will return a UNIX timestamp or FALSE
+	 */
+	private function _parse_date($date)
+	{
+		// First we try with the configured date format
+		$timestamp = ee()->localize->string_to_timestamp($date, TRUE, ee()->localize->get_date_format());
+
+		// If the date format didn't work, try something more fuzzy
+		if ($timestamp === FALSE)
+		{
+			$timestamp = ee()->localize->string_to_timestamp($date);
+		}
+
+		return $timestamp;
+	}
+
+	// --------------------------------------------------------------------
+
 	function save($data)
 	{
 		if ( ! is_numeric($data))
 		{
-			$data = ee()->localize->string_to_timestamp($data);
+			$data = $this->_parse_date($data);
 		}
 
 		if (empty($data))
@@ -52,10 +76,10 @@ class Date_ft extends EE_Fieldtype {
 	{
 		if ( ! is_numeric($data))
 		{
-			$data = ee()->localize->string_to_timestamp($data);
+			$data = $this->_parse_date($data);
 		}
 
-		if ($this->settings['localize'] !== TRUE)
+		if ( ! empty($data) && $this->settings['localize'] !== TRUE)
 		{
 			$data = array($data, ee()->session->userdata('timezone'));
 		}
@@ -73,12 +97,18 @@ class Date_ft extends EE_Fieldtype {
 	 */
 	function validate($data)
 	{
-		if ( ! is_numeric($data) && trim($data) && ! empty($data))
+		if (preg_match('/\d{1,2}-\d{1,2}-\d{2}\b/', $data))
 		{
-			$data = ee()->localize->string_to_timestamp($data);
+			return lang('invalid_date_ambiguous');
 		}
 
-		if ($data === FALSE)
+		if ( ! is_numeric($data) && trim($data) && ! empty($data))
+		{
+			$data = $this->_parse_date($data);
+		}
+
+		if ($data === FALSE
+			OR (is_numeric($data) && ($data > 2147483647 OR $data < -2147483647)))
 		{
 			return lang('invalid_date');
 		}
@@ -165,11 +195,22 @@ class Date_ft extends EE_Fieldtype {
 			$date = $field_data;
 		}
 
-		ee()->javascript->set_global(array(
-			'date.date_format' => ee()->localize->datepicker_format(),
-			'date.time_format' => ee()->session->userdata('time_format', ee()->config->item('time_format')),
-			'date.include_seconds' => ee()->session->userdata('include_seconds', ee()->config->item('include_seconds'))
-		));
+		$date_js_globals = array(
+			'date_format'     => ee()->localize->datepicker_format(),
+			'time_format'     => ee()->session->userdata('time_format', ee()->config->item('time_format')),
+			'include_seconds' => ee()->session->userdata('include_seconds', ee()->config->item('include_seconds'))
+		);
+
+		if (REQ == 'CP')
+		{
+			ee()->javascript->set_global('date', $date_js_globals);
+		}
+		elseif ( ! ee()->session->cache(__CLASS__, 'date_js_loaded'))
+		{
+			// We only want to set the date global once
+			ee()->session->set_cache(__CLASS__, 'date_js_loaded', TRUE);
+			ee()->javascript->output('EE.date = '.json_encode($date_js_globals).';');
+		}
 
 		ee()->cp->add_js_script(array(
 			'ui' => 'datepicker',

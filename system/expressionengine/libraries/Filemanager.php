@@ -5,7 +5,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -505,10 +505,10 @@ class Filemanager {
 		}
 
 		// If the original is smaller than the thumb hxw, we'll make a copy rather than upsize
-		if (($force_master_dim == 'height' && $prefs['height'] < $prefs['max_height']) OR
-				($force_master_dim == 'width' && $prefs['width'] < $prefs['max_width']) OR
-				($force_master_dim == FALSE && $prefs['width'] < $prefs['max_width']) OR
-				($force_master_dim == FALSE && $prefs['height'] < $prefs['max_height']))
+		if (($force_master_dim == 'height' && $prefs['height'] <= $prefs['max_height']) OR
+				($force_master_dim == 'width' && $prefs['width'] <= $prefs['max_width']) OR
+				($force_master_dim == FALSE && $prefs['width'] <= $prefs['max_width']) OR
+				($force_master_dim == FALSE && $prefs['height'] <= $prefs['max_height']))
 		{
 			return $prefs;
 		}
@@ -1870,7 +1870,7 @@ class Filemanager {
 
 		foreach ($files as &$file)
 		{
-			$file['file_name'] = urlencode($file['file_name']);
+			$file['file_name'] = rawurlencode($file['file_name']);
 
 			// Get thumb information
 			$thumb_info = $this->get_thumb($file, $dir['id']);

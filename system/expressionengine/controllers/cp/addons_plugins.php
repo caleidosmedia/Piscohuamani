@@ -4,7 +4,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -62,22 +62,6 @@ class Addons_plugins extends CP_Controller {
 			headers: {2: {sorter: false}},
 			widgets: ["zebra"]
 		}');
-
-		$this->javascript->output('
-			$(".toggle_all").toggle(
-				function(){
-					$(".mainTable tbody tr").addClass("selected");
-					$("input.toggle").each(function() {
-						this.checked = true;
-					});
-				}, function (){
-					$(".mainTable tbody tr").removeClass("selected");
-					$("input.toggle").each(function() {
-						this.checked = false;
-					});
-				}
-			);
-		');
 
 		$this->javascript->compile();
 

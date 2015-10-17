@@ -5,7 +5,7 @@
  *
  * @package		ExpressionEngine
  * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2014, EllisLab, Inc.
+ * @copyright	Copyright (c) 2003 - 2015, EllisLab, Inc.
  * @license		http://ellislab.com/expressionengine/user-guide/license.html
  * @link		http://ellislab.com
  * @since		Version 2.0
@@ -38,6 +38,9 @@
 	function get_version_info()
 	{
 		$EE =& get_instance();
+
+		ee()->load->library('logger');
+		ee()->logger->deprecated('2.9.0', 'Pings::get_version_info()');
 
 		// Attempt to grab the local cached file
 		$cached = ee()->cache->get('current_version', Cache::GLOBAL_SCOPE);
