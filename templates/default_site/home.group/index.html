@@ -15,26 +15,26 @@
             <a href="#about-us" data-scroll=""><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-scrolldown.png" alt=""></a>
           </div>
         </div>
-
+        {exp:channel:entries channel="about_us" limit="1" dynamic="off" sort="asc"}
         <section id="about-us" class="pb-42 relative" style="background-image:url({site_url}frontend/app/assets/img/texturas/debut_light/textura2-crema.png); z-index:101">
           <div class="container ph-14-sm pv-70-md pv-0-xs ph-42-xs mh-14-xs">
             <div class="row">
               <div class="col-md-6">
                 <h2 class="text-brown" style="font-family:'Across'; font-size: 60px;">Our love for Pisco extends</br> for four generations.</h2>
                 <div class="texto-about">
-                  <h2 class="text-brown">LA HACIENDA</h2>
+                  <h2 class="text-brown">{home_subtitle_1}</h2>
                   <div class="separador"></div>
-                  <p class="line-height text-brown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est exercitationem non error tenetur laudantium sint at aspernatur voluptatum libero corporis laboriosam quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <p class="line-height text-brown">{text_home_1}</p>
                 </div>
                 <div class="texto-about">
-                  <h2 class="text-brown">THE RECIPE</h2>
+                  <h2 class="text-brown">{home_subtitle_2}</h2>
                   <div class="separador"></div>
-                  <p class="line-height text-brown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est exercitationem non error tenetur laudantium sint at aspernatur voluptatum libero corporis laboriosam quaerat rem unde illum dicta est.</p>
+                  <p class="line-height text-brown">{text_home_2}</p>
                 </div>
                 <div class="texto-about">
-                  <h2 class="text-brown">OUR FOUNDER</h2>
+                  <h2 class="text-brown">{home_subtitle_3}</h2>
                   <div class="separador"></div>
-                  <p class="line-height text-brown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est exercitationem non error tenetur laudantium sint at aspernatur voluptatum libero corporis laboriosam quaerat rem unde illum dicta est.</p>
+                  <p class="line-height text-brown">{text_home_3}</p>
                 </div>
               </div>
               <div class="col-md-6 imagen pt-70-md mt-70-md hidden-xs hidden-sm">
@@ -43,12 +43,13 @@
             </div>
           </div>
         </section>
-
+        {/exp:channel:entries}
+        {exp:channel:entries channel="home" limit="1" dynamic="off" sort="asc"}
         <section id="the-goods">
           <div class="container-lg relative pt-70-md ph-7-xs">
             <div class="container pl-14-md pl-42-xs relative" style="z-index:1">
-              <h3 class="text-brown fz-45" style="font-family:'Across'">Straight from the hacienda...</h3>
-              <h1 class="text-brown fz-42 pl-35-md ml-21-md mt-0">THE GOODS</h1>
+              <h3 class="text-brown fz-45" style="font-family:'Across'; margin-bottom:5%">{epigrafe}</h3>
+              <h1 class="text-brown fz-42 pl-35-md ml-21-md mt-0">{title_the_good}</h1>
             </div>
             <div class="gallery-wrapper row">
               <div id="slider_back_goods" class="gallery-button-left" style="z-index:2">
@@ -88,31 +89,40 @@
             </div>
             <div class="make-text absolute pt-14-md pt-0-xs ph-42-xs" style="top:200px; width:100%">
               <div class="text-opacity1 hidden text-white" data-index="1" data-current="1">
-                <h2 class="text-brown">MOSTO VERDE</h2>
+                <span class="fz-18" style="color:#3B2E29"><em>{categoria_1}</em></span>
+                <h2 class="text-brown mt-7">{subtitle_the_goods_1}</h2>
                 <div class="separador pt-7"></div>
-                <p class="line-height text-brown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est exercitationem non error tenetur laudantium sint at aspernatur voluptatum libero corporis laboriosam quaerat.</p>
+                <h4 class="line-height text-brown">Nuestro clásico y elegante Pisco Puro.</h4>
+                <p class="line-height text-brown">{text_the_good_1}</p>
               </div>
               <div class="text-opacity1 hidden text-white" data-index="2">
-                <h2 class="text-brown">EL HUAMANÍ</h2>
+                <span class="fz-18" style="color:#3B2E29"><em>Pisco Huamaní</em></span>
+                <h2 class="text-brown mt-7">ACHOLADO</h2>
                 <div class="separador"></div>
-                <p class="line-height text-brown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est exercitationem non error tenetur laudantium sint at aspernatur voluptatum libero corporis laboriosam quaerat.</p>
+                <h4 class="line-height text-brown">A favorite of Don Ismael de la Quintana</h4>
+                <p class="line-height text-brown">Created from the original version of the 1890 Huamani recipe. It maintains a classic citric flavor with a hint of almond from the the Torontel grapes.</p>
               </div>
               <div class="text-opacity1 hidden text-white" data-index="3">
-                <h2 class="text-brown">EL HUAMANÍ 2</h2>
+                <span class="fz-18" style="color:#3B2E29"><em>Huamaní Mosto Verde</em></span>
+                <h2 class="text-brown mt-7">QUEBRANTA</h2>
                 <div class="separador"></div>
-                <p class="line-height text-brown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est exercitationem non error tenetur laudantium sint at aspernatur voluptatum libero corporis laboriosam quaerat.</p>
+                <h4 class="line-height text-brown">Whether drinking it pure or in a cocktail, you’ll note the difference</h4>
+                <p class="line-height text-brown">Made from a base of Quebranta, the Mosto Verde hosts woody and citric aromas. It’s elegance and purity cannot be mistaken. </p>
               </div>
               <div class="text-opacity1 hidden text-white" data-index="4">
-                <h2 class="text-brown">EL HUAMANÍ 3</h2>
+                <span class="fz-18" style="color:#3B2E29"><em>Huamaní Mosto Verde</em></span>
+                <h2 class="text-brown mt-7">ACHOLADO</h2>
                 <div class="separador"></div>
-                <p class="line-height text-brown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est exercitationem non error tenetur laudantium sint at aspernatur voluptatum libero corporis laboriosam quaerat.</p>
+                <h4 class="line-height text-brown">Art in a bottle</h4>
+                <p class="line-height text-brown">The best of what Huamani has to offer, containing the absolute maximum aroma and flavor.</p>
               </div>
               <div class="container-sm ph-0">
-                <div id="slider-text-goods" class="slider-text-oficial2 relative col-md-6 ml-0 pl-28-md pr-0-md pr-0-xs pt-28-sm pt-0-xs text-white" style="z-index: 1;"></div>
+                <div id="slider-text-goods" class="slider-text-oficial2 relative col-md-6 ml-0 pl-28-md pr-0-md pr-0-xs pt-70-sm pt-0-xs text-white" style="z-index: 1;"></div>
               </div>
             </div>
           </div>
         </section> 
+        {/exp:channel:entries}
         <section id="make-drink" class="pv-70" style="background-image: url({site_url}frontend/app/assets/img/texturas/textura-oscura.png)">
           <div class="container ph-21">
             <div class="section-title text-white pl-35-xs">
