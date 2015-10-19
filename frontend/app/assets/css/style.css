@@ -7120,14 +7120,13 @@ body .slider-text-oficial2 {
   background-color: transparent;
   padding: 2% 14%;
   margin-top: 8%;
-  border: 2px solid rgba(246,241,224,1);
+  border: 2px solid #fff;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   overflow: hidden;
 }
 #events .row .see-more a, #slider-events .row .see-more a {
-  color:rgba(246,241,224,1);
   font-weight: 300;
   text-decoration: none;
   z-index: 1;
@@ -7185,7 +7184,7 @@ body .slider-text-oficial2 {
   display: block;
   width: 180px;
   height: 180px;
-  border: 1.5px solid #f8f4e5;
+  border: 1.5px solid #fff;
   float: left;
   margin-right: 24px;
   margin-bottom: 26px;
@@ -7541,6 +7540,9 @@ footer .col-md-3 p a:hover {
 /*
 	Geler├¡a eventos
 */
+#galeria {
+  background-color: #f8f4e5;
+}
 #galeria h1 {
   font-family: "trajan-pro-3";
   color: #8d744a;
@@ -7939,7 +7941,7 @@ footer .col-md-3 p a:hover {
 
 .thanks-box {
   width: 750px;
-/*  border: 1px solid #f8f4e5;*/
+  border: 1px solid #f8f4e5;
   color: #f8f4e5;
   font-size: 20px;
 }
