@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	$(".text-opacity1:first-child, .text-opacity2:first-child").attr("data-current","1");
 	mostrarContenido("#slider-text-experience", ".text-opacity");
 	slide("#slider_next_experience", "next", "translate-left", "#slider-text-experience", ".text-opacity");
 	slide("#slider_back_experience", "back", "translate-right", "#slider-text-experience", ".text-opacity");
