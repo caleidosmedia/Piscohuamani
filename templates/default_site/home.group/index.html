@@ -2,281 +2,143 @@
 	<body>
     <div class="site-wrapper"> <!-- Body -->
       {embed="includes/header" about="#about-us" goods="#the-goods" make="#make-drink" events="#events"}      
-      <main class="site-content">
-        {embed="includes/overlay-menu"}
-        <div class="img-principal text-center minhp-100 relative" id="background">
-          <div class="overlay-fondo w-100 minhp-100 absolute"></div>
-          <div class="texto text-white letter-spacing relative">
-            <h1 class="mb-7" style="font-family:Verdana; color:#f8f4e5;">MAKING PISCO</h1>
-            <h1 class=" mt-0" style="font-family:Verdana; color:#f8f4e5;">SINCE 1890</h1>
-            <h3 class="pt-21 fz-40" style="font-family:'Across'">Discover the tradition</h3>
-          </div>
-          <div class="scroll-down relative">
-            <a href="#about-us" data-scroll=""><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-scrolldown.png" alt=""></a>
-          </div>
-        </div>
-        {exp:channel:entries channel="about_us" limit="1" dynamic="off" sort="asc"}
-        <section id="about-us" class="pb-42 relative" style="background-image:url({site_url}frontend/app/assets/img/texturas/debut_light/textura2-crema.png); z-index:101">
-          <div class="container ph-14-sm pv-70-md pv-0-xs ph-42-xs mh-14-xs">
-            <div class="row">
-              <div class="col-md-6">
-                <h2 class="text-brown" style="font-family:'Across'; font-size: 60px;">Our love for Pisco extends</br> for four generations.</h2>
-                <div class="texto-about">
-                  <h2 class="text-brown">{home_subtitle_1}</h2>
-                  <div class="separador"></div>
-                  <p class="line-height text-brown">{text_home_1}</p>
-                </div>
-                <div class="texto-about">
-                  <h2 class="text-brown">{home_subtitle_2}</h2>
-                  <div class="separador"></div>
-                  <p class="line-height text-brown">{text_home_2}</p>
-                </div>
-                <div class="texto-about">
-                  <h2 class="text-brown">{home_subtitle_3}</h2>
-                  <div class="separador"></div>
-                  <p class="line-height text-brown">{text_home_3}</p>
-                </div>
-              </div>
-              <div class="col-md-6 imagen pt-70-md mt-70-md hidden-xs hidden-sm">
-                <img src="{site_url}frontend/app/assets/img/fotos/botella.png" alt="">
-              </div>
+        <main class="site-content">
+        {exp:channel:entries channel="home" dynamic="off" limit="1" sort="asc"}
+          {embed="includes/overlay-menu"}
+          <div class="img-principal text-center minhp-100 relative" id="background">
+            <div class="overlay-fondo w-100 minhp-100 absolute"></div>
+            <div class="texto text-white letter-spacing relative">
+              <h1 class="mb-7" style="font-family:Verdana; color:#f8f4e5;">MAKING PISCO</h1>
+              <h1 class=" mt-0" style="font-family:Verdana; color:#f8f4e5;">SINCE 1890</h1>
+              <h3 class="pt-21 fz-40" style="font-family:'Across'">Discover the tradition</h3>
+            </div>
+            <div class="scroll-down relative">
+              <a href="#about-us" data-scroll=""><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-scrolldown.png" alt=""></a>
             </div>
           </div>
-        </section>
-        {/exp:channel:entries}
-        
-        <section id="the-goods">
-          <div class="container-lg relative pt-70-md ph-7-xs">
-            <div class="container pl-14-md pl-42-xs relative" style="z-index:1">
-              <h3 class="text-brown fz-45" style="font-family:'Across'; margin-bottom:5%">From our hacienda to your glass...</h3>
-              <h1 class="text-brown fz-42 pl-35-md ml-21-md mt-0">THE GOODS</h1>
-            </div>
-            <div class="gallery-wrapper row">
-              <div id="slider_back_goods" class="gallery-button-left" style="z-index:2">
-                <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-previo-gris.png" alt="">
-              </div>
-              <div id="slider_next_goods" class="gallery-button-right">
-                <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-gris.png" alt="">
-              </div> 
-              <div class="col-xs-12 pl-0-md ph-0-xs slider-img gallery-child hidden-lg hidden-md"> <!--movil-->
-                <div class="bottle1 slider-content text-center gallery-cell p-0 text-center">
-                  <img src="{site_url}frontend/app/assets/img/fotos/bottle6.png" alt="">
+          <section id="about-us" class="pb-42 relative" style="background-image:url({site_url}frontend/app/assets/img/texturas/debut_light/textura2-crema.png); z-index:101">
+            <div class="container ph-14-sm pv-70-md pv-0-xs ph-42-xs mh-14-xs">
+              <div class="row">
+                <div class="col-md-6">
+                  <h2 class="text-brown" style="font-family:'Across'; font-size: 60px;">Our love for Pisco extends</br> for four generations.</h2>
+                  {embed=includes/contenido_about_us}
                 </div>
-                <div class="bottle2 slider-content text-center gallery-cell p-0 text-center">
-                  <img src="{site_url}frontend/app/assets/img/fotos/bottle5.png" alt="">
-                </div>
-                <div class="bottle3 slider-content text-center gallery-cell p-0 text-center">
-                  <img src="{site_url}frontend/app/assets/img/fotos/bottle4.png" alt="">
-                </div>
-                <div class="bottle4 slider-content text-center gallery-cell p-0 text-center">
-                  <img src="{site_url}frontend/app/assets/img/fotos/bottle5.png" alt="">
-                </div>
-              </div>
-              <div class="col-md-5 col-md-offset-7 ph-0 slider-img gallery-child hidden-xs hidden-sm" style="top:-120px"> 
-                <div class="bottle1 slider-content text-center gallery-cell holi" style="width:50%; left: 0%!important">
-                  <img src="{site_url}frontend/app/assets/img/fotos/bottle6.png" alt="">
-                </div>
-                <div class="bottle2 slider-content text-center gallery-cell" style="width:50%; left: 100%!important">
-                  <img src="{site_url}frontend/app/assets/img/fotos/bottle3.png" alt="">
-                </div>
-                <div class="bottle3 slider-content text-center gallery-cell" style="width:50%; left: 150%!important">
-                  <img src="{site_url}frontend/app/assets/img/fotos/bottle4.png" alt="">
-                </div>
-                <div class="bottle4 slider-content text-center gallery-cell" style="width:50%; left: 200%!important">
-                  <img src="{site_url}frontend/app/assets/img/fotos/bottle5.png" alt="">
+                <div class="col-md-6 imagen pt-70-md mt-70-md hidden-xs hidden-sm">
+                  <img src="{site_url}frontend/app/assets/img/fotos/botella.png" alt="">
                 </div>
               </div>
             </div>
-            <div class="make-text absolute pt-14-md pt-0-xs ph-42-xs" style="top:200px; width:100%">
-            {exp:channel:entries channel="the_goods" dynamic="off" orderby="cardinal_order" sort="asc"}
-              <div class="text-opacity1 hidden text-white" data-index="{cardinal_order}">
-                <span class="fz-18" style="color:#3B2E29"><em>{categoria}</em></span>
-                <h2 class="text-brown mt-7 text-uppercase">{subtitle_the_goods}</h2>
-                <div class="separador pt-7"></div>
-                <h4 class="line-height text-brown">{entrada}</h4>
-                <p class="line-height text-brown">{text_the_goods}</p>
+          </section>
+          
+          <section id="the-goods">
+            <div class="container-lg relative pt-70-md ph-7-xs">
+              <div class="container pl-14-md pl-42-xs relative" style="z-index:1">
+                <h3 class="text-brown fz-45" style="font-family:'Across'; margin-bottom:5%">{leyenda_the_goods}</h3>
+                <h1 class="text-brown fz-42 text-uppercase pl-35-md ml-21-md mt-0">{the_goods_titulo}</h1>
               </div>
-            {/exp:channel:entries}
-              <div class="container-sm ph-0">
-                <div id="slider-text-goods" class="slider-text-oficial2 relative col-md-6 ml-0 pl-28-md pr-0-md pr-0-xs pt-70-sm pt-0-xs text-white" style="z-index: 1;"></div>
-              </div>
-            </div>
-          </div>
-        </section> 
-        <section id="make-drink" class="pv-70" style="background-image: url({site_url}frontend/app/assets/img/texturas/textura-oscura.png)">
-          <div class="container ph-21">
-            <div class="section-title text-white pl-35-xs">
-              <h2 style="font-family:'Verdana'!important">MAKE A DRINK</h2>
-            </div>
-          </div>
-          <div class="relative">
-            <div class="gallery-wrapper">
-              <div id="slider_back_make" class="gallery-button-left" style="z-index:3">
-                <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-previo-blanco.png" alt="">
-              </div>
-              <div id="slider_next_make" class="gallery-button-right" style="z-index:3">
-                <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-blanco.png" alt="">
-              </div>
-              <div class="gallery-child pl-70-sm col-md-10 col-md-offset-2" style="z-index:2">
-                <div class="gallery-cell" style="width:100%">
-                  <div class="row">
-                    <div class="pl-70-sm text-center">
-                      <img src="{site_url}frontend/app/assets/img/fotos/foto-copa-make-a-drink.png" alt="">
-                    </div>
+              <div class="gallery-wrapper row">
+                <div id="slider_back_goods" class="gallery-button-left" style="z-index:2">
+                  <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-previo-gris.png" alt="">
+                </div>
+                <div id="slider_next_goods" class="gallery-button-right">
+                  <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-gris.png" alt="">
+                </div> 
+                <div class="col-xs-12 pl-0-md ph-0-xs slider-img gallery-child hidden-lg hidden-md"> <!--movil-->
+                  <div class="bottle1 slider-content text-center gallery-cell p-0 text-center">
+                    <img src="{site_url}frontend/app/assets/img/fotos/bottle6.png" alt="">
+                  </div>
+                  <div class="bottle2 slider-content text-center gallery-cell p-0 text-center">
+                    <img src="{site_url}frontend/app/assets/img/fotos/bottle5.png" alt="">
+                  </div>
+                  <div class="bottle3 slider-content text-center gallery-cell p-0 text-center">
+                    <img src="{site_url}frontend/app/assets/img/fotos/bottle4.png" alt="">
+                  </div>
+                  <div class="bottle4 slider-content text-center gallery-cell p-0 text-center">
+                    <img src="{site_url}frontend/app/assets/img/fotos/bottle5.png" alt="">
                   </div>
                 </div>
-                <div class="gallery-cell" style="width:100%">
-                  <div class="row">
-                    <div class="pl-70-sm text-center">
-                      <img src="{site_url}frontend/app/assets/img/fotos/foto-copa-make-a-drink.png" alt="">
-                    </div>
-                  </div>
+                <div class="col-md-5 col-md-offset-7 ph-0 slider-img gallery-child hidden-xs hidden-sm" style="top:-120px"> 
+                  {embed="includes/img-goods"}
                 </div>
-                <div class="gallery-cell" style="width:100%">
-                  <div class="row">
-                    <div class="pl-70-smd text-center">
-                      <img src="{site_url}frontend/app/assets/img/fotos/foto-copa-make-a-drink.png" alt="">
-                    </div>
-                  </div>
+              </div>
+              <div class="make-text absolute pt-14-md pt-0-xs ph-42-xs" style="top:200px; width:100%">
+                {embed="includes/contenido_the_goods"}
+                <div class="container-sm ph-0">
+                  <div id="slider-text-goods" class="slider-text-oficial2 relative col-md-6 ml-0 pl-28-md pr-0-md pr-0-xs pt-70-sm pt-0-xs text-white" style="z-index: 1;"></div>
                 </div>
               </div>
             </div>
-            <div class="make-text absolute pt-14-md pt-0-xs ph-42-xs" style="top:0px; width:100%">
-            {exp:channel:entries channel="home" dynamic="off" orderby="orden_cardinal" sort="asc"}
-              <div class="text-opacity2 hidden text-white" data-index="{orden_cardinal}">
-                <h2 class="text-white light text-uppercase">{titulo_make_drink}</h2>
-                <div class="separator mt-14 separator-white"></div>
-                <div class="row pt-21">
-                  <div class="col-md-6 lead">
-                    <p class="subtitle mb-7">{ingredientes_titulo}</p>
-                    <ul class="type-style-none thin p-0 make-drink-list">
-                      {ingredientes}
-                    </ul>
-                    <p class="subtitle mb-7">{preparacion_titulo}</p>
-                    <p class="thin">{preparacion}</p>
-                  </div>
+          </section> 
+          <section id="make-drink" class="pv-70" style="background-image: url({site_url}frontend/app/assets/img/texturas/textura-oscura.png)">
+            <div class="container ph-21">
+              <div class="section-title text-white pl-35-xs">
+                <h2 class="text-uppercase" style="font-family:'Verdana'!important">{make_drink_titulo}</h2>
+              </div>
+            </div>
+            <div class="relative">
+              <div class="gallery-wrapper">
+                <div id="slider_back_make" class="gallery-button-left" style="z-index:3">
+                  <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-previo-blanco.png" alt="">
+                </div>
+                <div id="slider_next_make" class="gallery-button-right" style="z-index:3">
+                  <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-blanco.png" alt="">
+                </div>
+                <div class="gallery-child pl-70-sm col-md-10 col-md-offset-2" style="z-index:2">
+                  {embed="includes/img-make"}
                 </div>
               </div>
-             <!--  <div class="text-opacity2 hidden text-white" data-index="2">
-                <h2 class="text-white light">COCTEL DE FRUTAS</h2>
-                <div class="separator mt-14 separator-white"></div>
-                <div class="row pt-21">
-                  <div class="col-md-6 lead">
-                    <p class="subtitle mb-7">Ingredients</p>
-                    <ul class="type-style-none thin p-0">
-                      <li> &nbsp;Lorem ipsum dolor sit amet.</li>
-                      <li> &nbsp;Consectetur adipisicing elit.</li>
-                      <li> &nbsp;Veritatis optio.</li>
-                      <li> &nbsp;Qui ad nemo tenetur dolorem</li>
-                      <li> &nbsp;Nostrum ea quibusdam doloribus.</li>
-                    </ul>
-                    <p class="subtitle mb-7">Directions:</p>
-                    <p class="thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus mollitia distinctio laudantium unde esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus mollitia distinctio laudantium unde esse.</p>
-                  </div>
+              <div class="make-text absolute pt-14-md pt-0-xs ph-42-xs" style="top:0px; width:100%">
+                {embed="includes/contenido_make_drink"}
+                <div class="container-sm ph-7">
+                  <div id="slider-text-make" class="slider-text-oficial2 relative ml-0 ph-0 pt-21 text-white" style="z-index: 1;"></div>
                 </div>
               </div>
-              <div class="text-opacity2 hidden text-white" data-index="3">
-                <h2 class="text-white light">CHILCANO DE MANGO</h2>
-                <div class="separator mt-14 separator-white"></div>
-                <div class="row pt-21">
-                  <div class="col-md-6 lead">
-                    <p class="subtitle mb-7">Ingredients</p>
-                    <ul class="type-style-none thin p-0">
-                      <li> &nbsp;Lorem ipsum dolor sit amet.</li>
-                      <li> &nbsp;Consectetur adipisicing elit.</li>
-                      <li> &nbsp;Veritatis optio.</li>
-                      <li> &nbsp;Qui ad nemo tenetur dolorem</li>
-                      <li> &nbsp;Nostrum ea quibusdam doloribus.</li>
-                    </ul>
-                    <p class="subtitle mb-7">Directions:</p>
-                    <p class="thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus mollitia distinctio laudantium unde esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus mollitia distinctio laudantium unde esse.</p>
-                  </div>
+            </div>
+          </section>
+          <section id="events" class="p-0 relative minh-700" style="overflow:hidden">
+            <div class="overlay-fondo w-100 minhp-100 absolute"></div>
+            <div class="container ph-21">  
+              <h1 class="pt-70 mt-42 hidden-xs hidden-sm" style="font-family:'Across'">{events_titulo}</h1>
+            </div>
+            <div class="gallery-wrapper row p-0 hidden-xs hidden-sm">
+              <div class="gallery-child">
+                {embed="includes/img-events"}
+              </div>
+              <div class="">
+                <div id="slider_back_experience" class="gallery-button-left">
+                  <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-previo-blanco.png" alt="">
                 </div>
-              </div> -->
-            {/exp:channel:entries}
-              <div class="container-sm ph-7">
-                <div id="slider-text-make" class="slider-text-oficial2 relative ml-0 ph-0 pt-21 text-white" style="z-index: 1;"></div>
+                <div id="slider_next_experience" class="gallery-button-right">
+                  <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-blanco.png" alt=""> 
+                </div> 
               </div>
             </div>
-          </div>
-        </section>
-        <section id="events" class="p-0 relative minh-700" style="overflow:hidden">
-          <div class="overlay-fondo w-100 minhp-100 absolute"></div>
-          <div class="container ph-21">  
-            <h1 class="pt-70 mt-42 hidden-xs hidden-sm" style="font-family:'Across'">The Huamani Experience</h1>
-          </div>
-          <div class="gallery-wrapper row p-0 hidden-xs hidden-sm">
-            <div class="gallery-child">
-              <div class="gallery-cell" style="background-image:url({site_url}frontend/app/assets/img/fotos/hero1.jpg); background-position-y: 30%;"><div class="overlay-events"></div></div>
-              <div class="gallery-cell" style="background-image:url({site_url}frontend/app/assets/img/fotos/hero2.jpg); background-position-y: 30%;"><div class="overlay-events"></div></div>
-              <div class="gallery-cell" style="background-image:url({site_url}frontend/app/assets/img/fotos/IMG_0212.png); background-position-y: 30%;"><div class="overlay-events"></div></div>
-            </div>
-            <div class="">
-              <div id="slider_back_experience" class="gallery-button-left">
-                <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-previo-blanco.png" alt="">
-              </div>
-              <div id="slider_next_experience" class="gallery-button-right">
-                <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-blanco.png" alt=""> 
-              </div> 
-            </div>
-          </div>
-          <!--Slider-text-->
-          <div class="row pb-70 mb-70 absolute hidden-xs hidden-sm" style="padding-top: 180px; width:100%">
-            <div id="" class="text-opacity hidden" data-index="1" data-current="1">
-              <h2>TARDE DE GALLOS</h2>
-              <div class="separador mt-14 mb-28"></div>
-              <p class="fz-20 thin">August 30 <sup>th</sup></p>
-              <h3 class="p-0 m-0">MIRAFLORES PERÚ</h3>
-              <p class="fz-19 pt-21 thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est.</p>
-              <button class="see-more relative">
-                <a href="events.html" class="relative fz-20">SEE MORE PHOTOS</a>
-                <div class="overlay absolute minhp-100 btn-block"></div>
-              </button>
-            </div>
-            <div id="" class="text-opacity hidden" data-index="2">
-              <h2>TARDE DE GALLOS 2</h2>
-              <div class="separador mt-14 mb-28"></div>
-              <p class="fz-20 thin">October 30 <sup>th</sup></p>
-              <h3 class="p-0 m-0">MIRAFLORES PERÚ</h3>
-              <p class="fz-19 pt-21 thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est.</p>
-              <button class="see-more relative">
-                <a href="events.html" class="relative fz-20">SEE MORE PHOTOS</a>
-                <div class="overlay absolute minhp-100 btn-block"></div>
-              </button>
-            </div>
-            <div id="" class="text-opacity hidden" data-index="3">
-              <h2>TARDE DE GALLOS 3</h2>
-              <div class="separador mt-14 mb-28"></div>
-              <p class="fz-20 thin">November 30 <sup>th</sup></p>
-              <h3 class="p-0 m-0">MIRAFLORES PERÚ</h3>
-              <p class="fz-19 pt-21 thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est.</p>
-              <button class="see-more relative">
-                <a href="events.html" class="relative fz-20">SEE MORE PHOTOS</a>
-                <div class="overlay absolute minhp-100 btn-block"></div>
-              </button>
-            </div>
-            <div class="container ph-7 clearfix ph-42">
-              <div id="slider-text-experience" class="slider-text-oficial relative pl-0 pr-70 pt-21 text-white col-md-6" style="z-index: 1;">
+            <!--Slider-text-->
+            <div class="row pb-70 mb-70 absolute hidden-xs hidden-sm" style="padding-top: 180px; width:100%">
+              {embed="includes/contenido_events"}
+              <div class="container ph-7 clearfix ph-42">
+                <div id="slider-text-experience" class="slider-text-oficial relative pl-0 pr-70 pt-21 text-white col-md-6" style="z-index: 1;">
+                </div>
               </div>
             </div>
-          </div>
-          <!--Slider.text-->
-          <div class="event-movil minhp-100 hidden-lg hidden-md text-white" style="background-image: url({site_url}frontend/app/assets/img/fotos/fondo2.jpg)"><!--movil-->
-            <h2 class="text-white p-0 fz-45" style="font-family:'Across'">The Huamani Experience</h2>
-            <div class="contenido pb-14-xs pt-42-xs">
-              <h2 class="m-0">TARDE DE GALLOS</h2>
-              <div class="separador"></div>
-              <p>August 30 <sup>th</sup></p>
-              <h3 class="p-0 m-0">MIRAFLORES, PERÚ</h3>
-              <p class="line-height parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo ullam delectus, rem unde illum dicta est.</p>
-              <button class="see-more mt-70-xs">
-                <a href="events.html">SEE MORE PHOTOS</a>
-              </button>
+            <!--Slider.text-->
+            <div class="event-movil minhp-100 hidden-lg hidden-md text-white" style="background-image: url({site_url}frontend/app/assets/img/fotos/fondo2.jpg)"><!--movil-->
+              <h2 class="text-white p-0 fz-45" style="font-family:'Across'">The Huamani Experience</h2>
+              <div class="contenido pb-14-xs pt-42-xs">
+                <h2 class="m-0">{titulo_events}</h2>
+                <div class="separador"></div>
+                <p>{fecha_events}</p><!-- <sup>th</sup> -->
+                <h3 class="p-0 m-0">{lugar_events}</h3>
+                <p class="line-height parrafo">{introduccion_events}</p>
+                <button class="see-more mt-70-xs">
+                  <a href="events.html">SEE MORE PHOTOS</a>
+                </button>
+              </div>
             </div>
-          </div>
-        </section>
-        {embed="includes/follow"}
-      </main>
+          </section>
+          {/exp:channel:entries}
+          {embed="includes/follow"}
+        </main>
       {embed="includes/footer"}
     </div>
     <script src="{site_url}frontend/app/assets/js/jquery.min.js"></script>

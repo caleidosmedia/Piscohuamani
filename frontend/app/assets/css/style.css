@@ -7212,6 +7212,9 @@ body .slider-text-oficial2 {
 #follow-us .container-social a:hover .overlay {
   background-color: rgba(250, 250, 250, 0.2);
 }
+#follow-us .container-social a:nth-child(3) img {
+  width: 45px;
+}
 #follow-us .container-social a h1, #follow-us .container-social a p {
   font-family: Verdana;
   position: relative;
@@ -7223,19 +7226,8 @@ body .slider-text-oficial2 {
 }
 #follow-us .container-social a .icon {
   position: absolute;
-  bottom: 12%;
+  bottom: 8%;
   right: 8%;
-}
-#follow-us .container-social a .icon .icon-facebook,
-#follow-us .container-social a .icon .icon-mail,
-#follow-us .container-social a .icon .icon-instagram {
-  border: 2px solid white;
-  border-radius: 100%;
-  padding: 8px;
-}
-#follow-us .container-social a .icon .icon-twitter img {
-  width: 45px;
-  top: 5px;
 }
 
 /*

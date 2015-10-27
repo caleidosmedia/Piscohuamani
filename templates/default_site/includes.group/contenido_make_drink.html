@@ -1,0 +1,16 @@
+{exp:channel:entries channel="home" dinamyc="off" status="make_drink" sort="asc"}
+  <div class="text-opacity2 hidden text-white" data-index="{count}">
+    <h2 class="text-white light text-uppercase">{titulo_make_drink}</h2>
+    <div class="separator mt-14 separator-white"></div>
+    <div class="row pt-21">
+      <div class="col-md-6 lead">
+        <p class="subtitle mb-7">{ingredientes_titulo}</p>
+        <ul class="type-style-none thin p-0 make-drink-list">
+          {ingredientes}
+        </ul>
+        <p class="subtitle mb-7">{preparacion_titulo}</p>
+        <p class="thin">{preparacion}</p>
+      </div>
+    </div>
+  </div>
+{/exp:channel:entries}

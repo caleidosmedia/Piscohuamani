@@ -725,6 +725,9 @@ $make-drink-gallery-height-control: 560px;
 					background-color: rgba(250, 250, 250, 0.2);
 				} 
 			}
+			&:nth-child(3) img{
+				width: 45px;
+			}
 			h1, p {
 				font-family: Verdana;
 				position: relative;
@@ -736,19 +739,8 @@ $make-drink-gallery-height-control: 560px;
 			}
 			.icon {
 				position: absolute;
-				bottom: 12%;
+				bottom: 8%;
 				right: 8%;
-				.icon-facebook, 
-				.icon-mail,
-				.icon-instagram {
-					border: 2px solid white;
-				  border-radius: 100%;
-				  padding: 8px;
-				}
-				.icon-twitter img{
-					width: 45px;
-					top: 5px;
-				}
 			} 
 		} 
 	}

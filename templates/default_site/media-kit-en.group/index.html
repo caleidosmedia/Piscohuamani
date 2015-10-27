@@ -9,22 +9,7 @@
               <h1>MEDIA KIT</h1>
               <div class="separador"></div>
               <div id="menu-blog">
-                <nav class="hidden-xs">
-                    <a href="#sales-info" class="smooth btn-select active-select">SALES INFO</a>
-                    <a href="#logos" class="smooth btn-select">LOGOS</a>
-                    <a href="#bottle" class="smooth btn-select">BOTTLE</a>
-                    <a href="#drink" class="smooth btn-select">DRINK</a>
-                    <a href="#hacienda" class="smooth btn-select">HACIENDA</a>
-                    <a href="#hacienda" class="smooth btn-select">LIFESTYLE</a>
-                </nav>
-                 <nav class="hidden-lg hidden-md hidden-sm">
-                    <a href="#sales-info" class="smooth btn-select active-select">SALES INFO</a></br>
-                    <a href="#logos" class="smooth btn-select">LOGOS</a></br>
-                    <a href="#bottle" class="smooth btn-select">BOTTLE</a></br>
-                    <a href="#drink" class="smooth btn-select">DRINK</a></br>
-                    <a href="#hacienda" class="smooth btn-select">HACIENDA</a></br>
-                    <a href="#hacienda" class="smooth btn-select">LIFESTYLE</a>
-                </nav>
+              {embed="media-kit-en/menu"}
               </div>
               <h2 id="sales-info" class="text-brown serif-light">SALES INFO</h2>
               <div id="downloads">
@@ -47,81 +32,49 @@
                 </nav>
               </div>
               <div id="accordion" class="panel-group" role="tablist" aria-multiselectable="true">
-                <div id="logos" class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingOne">
+              {exp:channel:categories channel="media_kit_en" style="linear" dinamyc="off" category_group="5"}
+                <div id="{category_name}" class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading{count}">
                     <h4 class="panel-title">
-                      <a class="change-arrow" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <a class="change-arrow" data-toggle="collapse" data-parent="#accordion" href="#collapse{count}" aria-expanded="true" aria-controls="collapse{count}">
                         <img id="down" class="hidden" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-sin-desplegar.png" alt=""> 
                         <img id="up" class="" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-desplegado.png" alt="">
-                        <p class="display-ib">LOGOS</p>
+                        <p class="display-ib">{category_name}</p>
                       </a>
                     </h4>
                   </div> 
-                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div id="collapse{count}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading{count}">
                     <div class="panel-body">
                       <div class="grid">
                         <ul class="row type-style-none pd-0">
-                          <li class="col-md-4">
-                            <img src="{site_url}frontend/app/assets/img/fotos/media-kit/BP1.png" class="w-100" alt="">
+                        {exp:channel:entries channel="media_kit_en" orderby="{count}" dynamic="off" category="{category_id}" style="off" sort="asc"}
+                          <li class="col-md-4 list-unstyled" style="float:right!important">
+                            {imagen_media_kit}
+                              <img src="{image:url}" class="btn-block">
                             <div class="descarga">
-                              <a href="" download><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-download.png" alt="">Hi-res</a>
-                              <a href="" download><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-download.png" alt="">Low-res</a>
+                              <a href="{image:url:large}" download><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-download.png" alt="">Hi-res</a>
+                              <a href="{image:url:small}" download ><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-download.png" alt="">Low-res</a>
                             </div>
+                            {/imagen_media_kit}
                           </li>
-                          <li class="col-md-4">
-                            <img src="{site_url}frontend/app/assets/img/fotos/media-kit/BP2.png" class="w-100" alt="">
-                            <div class="descarga">
-                              <a href="" download><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-download.png" alt="">Hi-res</a>
-                              <a href="" download><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-download.png" alt="">Low-res</a>
-                            </div>
-
-                          </li>
-                          <li class="col-md-4">
-                            <img src="{site_url}frontend/app/assets/img/fotos/media-kit/BP3.png" class="w-100" alt="">
-                            <div class="descarga">
-                              <a href="" download><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-download.png" alt="">Hi-res</a>
-                              <a href="" download><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-download.png" alt="">Low-res</a>
-                            </div>
-                          </li>
-                        </ul>
-                          <ul class="row type-style-none pd-0">
-                          <li class="col-md-4">
-                            <img src="{site_url}frontend/app/assets/img/fotos/media-kit/BP4.png" class="w-100" alt="">
-                            <div class="descarga">
-                              <a href="" download><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-download.png" alt="">Hi-res</a>
-                              <a href="" download><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-download.png" alt="">Low-res</a>
-                            </div>
-                          </li>
-                          <li class="col-md-4">
-                            <img src="{site_url}frontend/app/assets/img/fotos/media-kit/BP5.png" class="w-100" alt="">
-                            <div class="descarga">
-                              <a href="" download><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-download.png" alt="">Hi-res</a>
-                              <a href="" download><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-download.png" alt="">Low-res</a>
-                            </div>
-                          </li>
-                          <li class="col-md-4">
-                            <img src="{site_url}frontend/app/assets/img/fotos/media-kit/BP6.png" class="w-100" alt="">
-                            <div class="descarga">
-                              <a href="" download><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-download.png" alt="">Hi-res</a>
-                              <a href="" download><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-download.png" alt="">Low-res</a>
-                            </div>
-                          </li>
+                        {/exp:channel:entries}
                         </ul>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div id="bottle" class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingTwo">
+              {/exp:channel:categories}
+                <!-- <div id="bottle" class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading2">
                     <h4 class="panel-title">
-                      <a class="change-arrow" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      <a class="change-arrow" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
                         <img id="down" class="hidden" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-sin-desplegar.png" alt=""> 
                         <img id="up" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-desplegado.png" alt="">
                         <p class="display-ib">BOTTLE PHOTOS</p>
                       </a>
                     </h4>
                   </div> 
-                  <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+                  <div id="collapse2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2">
                     <div class="panel-body">
                       <div class="grid">
                         <ul class="row type-style-none pd-0">
@@ -176,16 +129,16 @@
                   </div>
                 </div>
                 <div id="drink" class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingThree">
+                  <div class="panel-heading" role="tab" id="heading3">
                     <h4 class="panel-title">
-                      <a class="change-arrow" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      <a class="change-arrow" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
                         <img id="down" class="hidden" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-sin-desplegar.png" alt=""> 
                         <img id="up" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-desplegado.png" alt="">
                         <p class="display-ib">DRINK PHOTOS</p>
                       </a>
                     </h4>
                   </div> 
-                  <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+                  <div id="collapse3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading3">
                     <div class="panel-body">
                       <div class="grid">
                         <ul class="row type-style-none pd-0">
@@ -240,16 +193,16 @@
                   </div>
                 </div>
                 <div id="hacienda" class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingFour">
+                  <div class="panel-heading" role="tab" id="heading4">
                     <h4 class="panel-title">
-                      <a class="change-arrow" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                      <a class="change-arrow" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapseOne">
                         <img id="down" class="hidden" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-sin-desplegar.png" alt=""> 
                         <img id="up" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-desplegado.png" alt="">
                         <p class="display-ib">HACIENDA PHOTOS</p>
                       </a>
                     </h4>
                   </div> 
-                  <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+                  <div id="collapse4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading4">
                     <div class="panel-body">
                       <div class="grid">
                         <ul class="row type-style-none pd-0">
@@ -304,16 +257,16 @@
                   </div>
                 </div>
                 <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingFive">
+                  <div class="panel-heading" role="tab" id="heading5">
                     <h4 class="panel-title">
-                      <a class="change-arrow" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
+                      <a class="change-arrow" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapseOne">
                         <img id="down" class="hidden" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-sin-desplegar.png" alt=""> 
                         <img id="up" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-desplegado.png" alt="">
                         <p class="display-ib">LIFESTYLE PHOTOS</p>
                       </a>
                     </h4>
                   </div> 
-                  <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
+                  <div id="collapse5" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading5">
                     <div class="panel-body">
                       <div class="grid">
                         <ul class="row type-style-none pd-0">
@@ -366,7 +319,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>

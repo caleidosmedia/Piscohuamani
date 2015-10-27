@@ -1,40 +1,50 @@
-        <section id="follow-us" class="text-white text-center">
-          <div class="container ph-21 ph-42-xs pv-70-md pv-0-xs">
-            <h3 class="text-left fz-45" style="font-family:'Across'">Dont be a stranger</h3>
-            <h2 class="text-left pl-42-md ml-7-md pl-0-xs ml-0-xs text-uppercase fz-40">Give us a shout</h2>
-            <div class="container-social clearfix text-left">
-              <a href="https://www.facebook.com/piscohuamani" target="_blank" class="facebook">
-                <div class="overlay"> </div>
-                <h1 class="m-0 text-uppercase light">Like</h1>
-                <p class="fz-18 thin">Say hello.</p>
-                <div class="icon">
-                  <span class="icon-facebook fz-28">&#xea8c</span>
-                </div>
-              </a>
-              <a href="https://instagram.com/piscohuamani/" target="_blank" class="instagram">
-                <div class="overlay"></div>
-                <h1 class="m-0 text-uppercase light">Tag</h1>
-                <p class="fz-18 thin">Share your<br>#efectohuamani.</p>
-                <div class="icon">
-                  <span class="icon-instagram fz-25">&#xea90</span>
-                </div>
-              </a>
-              <a href="https://twitter.com/piscohuamani" target="_blank" class="twitter">
-                <div class="overlay"></div>
-                <h1 class="m-0 text-uppercase light">Tweet</h1>
-                <p class="fz-18 thin">We know,<br>you miss us.</p>
-                <div class="icon">
-                  <span class="icon-twitter"><img class="relative" src="{site_url}frontend/app/assets/img/iconos-logos/twitter44.png" alt=""></span>
-                </div>
-              </a>
-              <a href="{path='contact'}" class="mail">
-                <div class="overlay"></div>
-                <h1 class="m-0 text-uppercase light">Share</h1>
-                <p class="fz-18 thin">Send us a note,</br>we love mail.</p>
-                <div class="icon">
-                  <span class="icon-mail fz-30">&#xe600</span>
-                </div> 
-              </a>
-            </div>
+{exp:channel:entries channel="follow_us" dynamic="off" limit="" sort="asc"}
+  <section id="follow-us" class="text-white text-center">
+    <div class="container ph-21 ph-42-xs pv-70-md pv-0-xs">
+      <h3 class="text-left fz-45" style="font-family:'Across'">{leyenda_follow}</h3>
+      <h2 class="text-left text-uppercase pl-42-md ml-7-md pl-0-xs ml-0-xs text-uppercase fz-40">{titulo_follow}</h2>
+      <div class="container-social clearfix text-left">
+        <a href="{enlace_1}" target="_blank" class="">
+          <div class="overlay"> </div>
+          <h1 class="m-0 text-uppercase light">{subtitulo_1}</h1>
+          <p class="fz-18 thin">{frase_1}</p>
+          <div class="icon">
+            {imagen_follow_1}
+            <span class="fz-28"><img class="relative" src="{image:url}" alt=""></span>
+            {/imagen_follow_1}
           </div>
-        </section>
+        </a>
+        <a href="{enlace_2}" target="_blank" class="">
+          <div class="overlay"> </div>
+          <h1 class="m-0 text-uppercase light">{subtitulo_2}</h1>
+          <p class="fz-18 thin">{frase_2}</p>
+          <div class="icon">
+            {imagen_follow_2}
+            <span class="fz-28"><img class="relative" src="{image:url}" alt=""></span>
+            {/imagen_follow_2}
+          </div>
+        </a>
+        <a href="{enlace_3}" target="_blank" class="">
+          <div class="overlay"> </div>
+          <h1 class="m-0 text-uppercase light">{subtitulo_3}</h1>
+          <p class="fz-18 thin">{frase_3}</p>
+          <div class="icon">
+            {imagen_follow_3}
+            <span class="fz-28"><img class="relative" src="{image:url}" alt=""></span>
+            {/imagen_follow_3}
+          </div>
+        </a>
+        <a href="{enlace_4}" target="_blank" class="">
+          <div class="overlay"> </div>
+          <h1 class="m-0 text-uppercase light">{subtitulo_4}</h1>
+          <p class="fz-18 thin">{frase_4}</p>
+          <div class="icon">
+            {imagen_follow_4}
+            <span class="fz-28"><img class="relative" src="{image:url}" alt=""></span>
+            {/imagen_follow_4}
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+{/exp:channel:entries}

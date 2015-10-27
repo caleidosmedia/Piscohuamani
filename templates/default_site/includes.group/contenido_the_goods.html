@@ -1,0 +1,11 @@
+{exp:channel:categories channel="home" category_group="4" dinamyc="off" style="linear" status="the_goods"}
+	{exp:channel:entries channel="home" orderby="{absolute_count}" category="{category_id}" status="the_goods" dynamic="off" sort="asc"}	
+		<div class="text-opacity1 hidden text-white" data-index="{count}">
+		  <span class="fz-18" style="color:#3B2E29"><em>{category_name}</em></span>
+		  <h2 class="text-brown mt-7 text-uppercase">{titulo_the_good}</h2>
+		  <div class="separador pt-7"></div>
+		  <h4 class="line-height text-brown">{entrada}</h4>
+		  <p class="line-height text-brown">{contenido_the_goods}</p>
+		</div>
+	{/exp:channel:entries}
+{/exp:channel:categories}

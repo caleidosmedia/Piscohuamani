@@ -8,187 +8,19 @@
           <div class="container ph-21 ph-42-xs mt-28">
             <h1 class="">FAQ's</h1>
             <div class="separador"></div> 
-            <div id="menu-blog">
-              <nav class="hidden-xs">
-                  <a href="#section1" class="smooth">SECCIÓN 1</a>
-                  <a href="#section2" class="smooth">SECCIÓN 2</a>
-                  <a href="#section3" class="smooth">SECCIÓN 3</a>
-              </nav>
-              <nav class="hidden-lg hidden-md hidden-sm">
-                  <a href="#section1" class="smooth btn-select active-select">SECCIÓN 1</a></br>
-                  <a href="#section2" class="smooth btn-select">SECCIÓN 2</a></br>
-                  <a href="#section3" class="smooth btn-select">SECCIÓN 3</a>
-              </nav>
-            </div>
-            {exp:channel:category_archive channel="faqs_ingles" style="linear" class="list-unstyled"}
-              <div id="section{count}" class="section">
-                {categories}
-                  <h2 class="text-brown serif-light">{category_name}</h2>
-                
-                {if category_description}
-                {exp:channel:entries channel="faqs_ingles" dinamyc="off" category="{category_id}" orderby="" sort="asc"}
-                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                    <!-- {if count == "1"} -->
-                      <div class="panel-heading" role="tab" id="heading{absolute_count}">
-                        <h4 class="panel-title">
-                          <a class="change-arrow" data-toggle="collapse" data-parent="#accordion" href="#collapse{absolute_count}" aria-expanded="true" aria-controls="collapse{absolute_count}">
-                            <img id="down" class="" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-sin-desplegar.png" alt="">
-                            <img id="up" class="hidden" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-desplegado.png" alt="">
-                            <p class="text-uppercase">{pregunta}</p>
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapse{absolute_count}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{absolute_count}">
-                        <div class="panel-body">
-                          {respuesta}
-                        </div>
-                      </div>
-                    <!-- {/if} -->
-                    </div>
-                  </div>
-                {/exp:channel:entries}
-                {/if}
-                {/categories}
+              <div id="menu-blog">
+                <nav class="hidden-xs">
+                {exp:channel:categories channel="faqs_ingles" style="off" dinamyc="off" category_group="3"}
+                  <a href="#section{count}" class="smooth">{category_name}</a>
+                {/exp:channel:categories}
+                </nav>
+                <nav class="hidden-lg hidden-md hidden-sm">
+                    <a href="#section1" class="smooth btn-select active-select">SECCIÓN 1</a></br>
+                    <a href="#section2" class="smooth btn-select">SECCIÓN 2</a></br>
+                    <a href="#section3" class="smooth btn-select">SECCIÓN 3</a>
+                </nav>
               </div>
-            {/exp:channel:category_archive}
-           <!--  <div id="section2" class="section">
-              <h2 class="text-brown serif-light">SECCIÓN 2</h2>
-              <div class="panel-group2" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingOne2">
-                    <h4 class="panel-title">
-                      <a class="change-arrow" data-toggle="collapse" data-parent="#accordion" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne">
-                        <img id="down" class="" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-sin-desplegar.png" alt="">
-                        <img id="up" class="hidden" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-desplegado.png" alt=""> 
-                        <p>Lorem ipsum dolor sit, consectetur adipisicing elit.</p>
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseOne2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica.
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingTwo">
-                    <h4 class="panel-title">
-                      <a class="change-arrow collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo">
-                        <img id="down" class="" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-sin-desplegar.png" alt="">
-                        <img id="up" class="hidden" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-desplegado.png" alt=""> 
-                        <p>Lorem ipsum dolor sit, consectetur adipisicing elit.</p>
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                    <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica.
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingThree">
-                    <h4 class="panel-title">
-                      <a class="change-arrow collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree2" aria-expanded="false" aria-controls="collapseThree">
-                        <img id="down" class="" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-sin-desplegar.png" alt="">
-                        <img id="up" class="hidden" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-desplegado.png" alt=""> 
-                        <p>Lorem ipsum dolor sit, consectetur adipisicing elit.</p>
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseThree2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                    <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="section3" class="section">
-              <h2 class="text-brown serif-light">SECCIÓN 3</h2>
-              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title">
-                      <a class="change-arrow" data-toggle="collapse" data-parent="#accordion" href="#collapseOne3" aria-expanded="true" aria-controls="collapseOne">
-                        <img id="down" class="" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-sin-desplegar.png" alt="">
-                        <img id="up" class="hidden" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-desplegado.png" alt=""> 
-                        <p>Lorem ipsum dolor sit, consectetur adipisicing elit.</p>
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseOne3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica.
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingTwo">
-                    <h4 class="panel-title">
-                      <a class="change-arrow collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo">
-                        <img id="down" class="" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-sin-desplegar.png" alt="">
-                        <img id="up" class="hidden" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-desplegado.png" alt=""> 
-                        <p>Lorem ipsum dolor sit, consectetur adipisicing elit.</p>
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseTwo3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                    <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingThree">
-                    <h4 class="panel-title">
-                      <a class="change-arrow collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree">
-                        <img id="down" class="" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-sin-desplegar.png" alt="">
-                        <img id="up" class="hidden" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-desplegado.png" alt=""> 
-                        <p>Lorem ipsum dolor sit, consectetur adipisicing elit.</p>
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseThree3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                    <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid.
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingFour">
-                    <h4 class="panel-title">
-                      <a class="change-arrow collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour3" aria-expanded="false" aria-controls="collapseFour">
-                        <img id="down" class="" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-sin-desplegar.png" alt="">
-                        <img id="up" class="hidden" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-desplegado.png" alt=""> 
-                        <p>Lorem ipsum dolor sit, consectetur adipisicing elit.</p>                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseFour3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                    <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid.
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingFive">
-                    <h4 class="panel-title">
-                      <a class="change-arrow collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive3" aria-expanded="false" aria-controls="collapseFive ">
-                        <img id="down" class="" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-sin-desplegar.png" alt="">
-                        <img id="up" class="hidden" src="{site_url}frontend/app/assets/img/iconos-logos/icono-contenido-desplegado.png" alt=""> 
-                        <p>Lorem ipsum dolor sit, consectetur adipisicing elit.</p>
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseFive3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                    <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
+            {embed="includes/panel_group"}
           </div>
         </div>
         {embed="includes/follow"}
