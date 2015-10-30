@@ -1,4 +1,8 @@
 /*INGRESO*/
+$(document).ready(function(){
+	$(".btn-language.active").addClass("active-btn");
+});
+
 $(".btn-language").click(function() {
 	$(".btn-language").removeClass("active-btn");
   $(this).toggleClass("active-btn");
@@ -15,6 +19,9 @@ $(".btn-select").click(function(event) {
 $(".box").click(function(){
 	$(".close").toggleClass("show");
 });
+
+/*media kit*/
+$(".btn-select:first-child").addClass("active-select");
 
 /*COOKIES*/
 

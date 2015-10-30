@@ -1,5 +1,16 @@
 $(document).ready(function() {
-	$(".text-opacity:first-child, .text-opacity1:first-child, .text-opacity2:first-child").attr("data-current","1");
+	$(".ronda-1:first-child, .text-opacity1:first-child, .text-opacity2:first-child").attr("data-current","1");
+	/*EVENTS*/
+	if($('.events-slide[data-current="1"]').size() == 0){
+		$(".text-opacity:first-child").attr("data-current","1");
+	}
+	$(".ronda-1 li").each(function(index, element){ 
+		order= $(this).index();  
+		$(this).find("a").attr("data-image-index", order + 1);
+		$(this).find("a").addClass("grid-image-" + (order +1));
+	});
+	/**/
+
 	mostrarContenido("#slider-text-experience", ".text-opacity");
 	slide("#slider_next_experience", "next", "translate-left", "#slider-text-experience", ".text-opacity");
 	slide("#slider_back_experience", "back", "translate-right", "#slider-text-experience", ".text-opacity");

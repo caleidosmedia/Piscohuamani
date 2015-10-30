@@ -1,7 +1,7 @@
       <footer>
         <ul class="clearfix container type-style-none family-museosans pv-70 ph-28 ph-42-xs mb-0">
           <li class="col-md-6 col-xs-12">
-          {exp:channel:entries channel="footer" dynamic="off" limit="1"}
+          {exp:channel:entries channel="footer" dynamic="off"}
             <div class="col-xs-6 p-0 footer-logo">
               {logo}
                 <img src="{image:url}" class="w-100" alt="">
@@ -16,13 +16,13 @@
           {/exp:channel:entries}
           </li>
           <li class="col-md-3 col-xs-6 light">
-            <p><a href="{path='blog-en'}">BLOG</a></p>
-            <p><a href="{path='faqs'}">FAQs</a></p>
-            <p><a href="{path='terms-use'}">TERMS OF USE</a></p>
+            <p><a href="{path='blog-en'}" class="text-uppercase">BLOG</a></p>
+            <p><a href="{path='faqs'}" class="text-uppercase">{exp:transcribe:replace id="3"}FAQs{/exp:transcribe:replace}</a></p>
+            <p><a href="{path='terms-use'}" class="text-uppercase">{exp:transcribe:replace id="1"}TERMS OF USE{/exp:transcribe:replace}</a></p>
           </li> 
           <li class="col-md-3 col-xs-6 light">
-            <p><a href="{path='media-kit-en'}">MEDIA KIT</a></p>
-            <p><a href="{path='contact'}">CONTACT US</a></p>
+            <p><a href="{path='media-kit-en'}" class="text-uppercase">{exp:transcribe:replace id="4"}MEDIA KIT{/exp:transcribe:replace}</a></p>
+            <p><a href="{path='contact'}" class="text-uppercase">{exp:transcribe:replace id="5"}CONTACT US{/exp:transcribe:replace}</a></p>
           </li>
         </ul> 
       </footer>

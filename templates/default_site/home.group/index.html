@@ -1,7 +1,7 @@
 {embed="includes/head"}
 	<body>
     <div class="site-wrapper"> <!-- Body -->
-      {embed="includes/header" about="#about-us" goods="#the-goods" make="#make-drink" events="#events"}      
+      {embed="includes/header" huamani="#background" about="#about-us" goods="#the-goods" make="#make-drink" events="#events"}      
         <main class="site-content">
         {exp:channel:entries channel="home" dynamic="off" limit="1" sort="asc"}
           {embed="includes/overlay-menu"}
@@ -21,7 +21,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <h2 class="text-brown" style="font-family:'Across'; font-size: 60px;">Our love for Pisco extends</br> for four generations.</h2>
-                  {embed=includes/contenido_about_us}
+                  {embed=home/about_us}
                 </div>
                 <div class="col-md-6 imagen pt-70-md mt-70-md hidden-xs hidden-sm">
                   <img src="{site_url}frontend/app/assets/img/fotos/botella.png" alt="">
@@ -84,11 +84,11 @@
                   <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-blanco.png" alt="">
                 </div>
                 <div class="gallery-child pl-70-sm col-md-10 col-md-offset-2" style="z-index:2">
-                  {embed="includes/img-make"}
+                  {embed="home/img_make"}
                 </div>
               </div>
               <div class="make-text absolute pt-14-md pt-0-xs ph-42-xs" style="top:0px; width:100%">
-                {embed="includes/contenido_make_drink"}
+                {embed="home/make_drink"}
                 <div class="container-sm ph-7">
                   <div id="slider-text-make" class="slider-text-oficial2 relative ml-0 ph-0 pt-21 text-white" style="z-index: 1;"></div>
                 </div>
@@ -102,7 +102,7 @@
             </div>
             <div class="gallery-wrapper row p-0 hidden-xs hidden-sm">
               <div class="gallery-child">
-                {embed="includes/img-events"}
+                {embed="events/img_events"}
               </div>
               <div class="">
                 <div id="slider_back_experience" class="gallery-button-left">
@@ -115,7 +115,7 @@
             </div>
             <!--Slider-text-->
             <div class="row pb-70 mb-70 absolute hidden-xs hidden-sm" style="padding-top: 180px; width:100%">
-              {embed="includes/contenido_events"}
+              {embed="events/slider_events"}
               <div class="container ph-7 clearfix ph-42">
                 <div id="slider-text-experience" class="slider-text-oficial relative pl-0 pr-70 pt-21 text-white col-md-6" style="z-index: 1;">
                 </div>
@@ -139,6 +139,7 @@
           {/exp:channel:entries}
           {embed="includes/follow"}
         </main>
+        
       {embed="includes/footer"}
     </div>
     <script src="{site_url}frontend/app/assets/js/jquery.min.js"></script>

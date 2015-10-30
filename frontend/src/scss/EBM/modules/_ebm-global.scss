@@ -1036,6 +1036,10 @@ footer {
  	.gallery-button-right {
  		right: 4%!important;
  	}
+ 	.see-more {
+ 		display: none;
+ 		visibility: hidden;
+ 	}
 }
 
 /*
@@ -1103,7 +1107,7 @@ footer {
   			}
 		  }
 		  .controls {
-		  	top: 40%;
+		  	top: 50%;
 		  	width: 100px;
 		  	@include transition(opacity .1s ease-in-out);
 		  	&:hover {
@@ -1231,7 +1235,7 @@ footer {
 				border: 1px solid;
 	  		padding: 5px 14px;
 	  		border: 1px solid transparent;
-	  		margin-right: 2%;
+	  		margin-right: 15px;
 	  		&:hover {
 					border: 1px solid #8d744a;
 		  		padding: 5px 14px;
@@ -2261,10 +2265,13 @@ footer {
 	}
 	/*CONTACT*/
 	#container-contact {
-		padding: 28% 15% 15%;
+		padding: 15% 15% 15%;
 		display: block;
 		text-align: center;
 		min-height: 700px; 
+		h1 {
+			font-size: 24px;
+		}
 		.formulario {
 			padding-top: 15%;
 			textarea,

@@ -7528,6 +7528,10 @@ footer .col-md-3 p a:hover {
 #slider-events .gallery-button-right {
   right: 4% !important;
 }
+#slider-events .see-more {
+  display: none;
+  visibility: hidden;
+}
 
 /*
 	Geler├¡a eventos
@@ -7593,7 +7597,7 @@ footer .col-md-3 p a:hover {
   color: #8d744a;
 }
 #galeria .grid #overlay .controls {
-  top: 40%;
+  top: 50%;
   width: 100px;
   -webkit-transition: opacity 0.1s ease-in-out;
   -moz-transition: opacity 0.1s ease-in-out;
@@ -7719,7 +7723,7 @@ footer .col-md-3 p a:hover {
   border: 1px solid;
   padding: 5px 14px;
   border: 1px solid transparent;
-  margin-right: 2%;
+  margin-right: 15px;
 }
 #media-kit #menu-blog nav a:hover {
   border: 1px solid #8d744a;
@@ -8776,10 +8780,13 @@ footer .col-md-3 p a:hover {
 
   /*CONTACT*/
   #container-contact {
-    padding: 28% 15% 15%;
+    padding: 15% 15% 15%;
     display: block;
     text-align: center;
     min-height: 700px;
+  }
+  #container-contact h1 {
+    font-size: 24px;
   }
   #container-contact .formulario {
     padding-top: 15%;

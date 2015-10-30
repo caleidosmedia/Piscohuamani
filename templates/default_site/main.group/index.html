@@ -253,8 +253,11 @@
 							</select>
 							<div class="pr-0 ph-xs ph-sm col-xs-6">
 								<div class="btn-group p-0 col-xs-12 ml-0 col-md-12 pr-0-xs" role="group" aria-label="...">
-								  <button type="button" class="btn btn-default btn-language text-white active-btn ph-7">EN</button>
-								  <button type="button" class="btn btn-default btn-language text-white ph-7">ES</button>
+								  {exp:transcribe:language_links}
+						        {languages}
+						            <a href="{link}" class="btn btn-default btn-language text-white ph-7 {if current}active{/if}">{name}</a>
+						        {/languages}
+								{/exp:transcribe:language_links}
 								</div>
 							</div>
 	    			</div>
@@ -268,6 +271,7 @@
 	    	</div>
 	    </div>
 		</div>
+		
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="{site_url}frontend/app/assets/js/forms-control.js"></script>

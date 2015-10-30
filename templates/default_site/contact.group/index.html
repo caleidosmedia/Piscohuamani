@@ -1,31 +1,35 @@
 {embed="includes/head"}
   <body>
     <div class="site-wrapper"> <!-- Body -->
-      {embed="includes/header" about="{path='home'#about-us}" goods="{path='home'}#the-goods" make="{path='home'}#make-drink" events="{path='home'}#events"} 
+      {embed="includes/header" huamani="{path='home'}" about="{path='home'#about-us}" goods="{path='home'}#the-goods" make="{path='home'}#make-drink" events="{path='home'}#events"} 
       <main class="site-content">
-        <!-- <div class="overlay-contact minhp-100 absolute w-100" style="opacity:0">
-          <div id="thanks" class="absolute text-center">
-            <p>Thanks!!</p>
-          </div>
-        </div> -->
-        {emebed="includes/overlay-menu"}
+        {embed="includes/overlay-menu"}
         <section>
           <div id="container-contact" class="minhp-100">
-            <h1 class="text-white hidden-xs hidden-sm">GET IN TOUCH</h1>
-            <h3 class="text-white hidden-lg hidden-md">GET IN TOUCH</h3>
+            <h1 class="text-white">GET IN TOUCH</h1>
             <div class="formulario relative pt-28">
               <form action="{path='thanks'}" name="myForm">
                 <div class="error-nombre absolute"></div>
                 <div class="error-correo absolute"></div>
                 <div class="error-comentario absolute"></div>
-                <input id="nombre" type="text" data-id="0" maxlength="25" class="input-contact text-white thin name mv-0-md mh-7-md m-0-xs mb-21-xs fz-18 ph-14" placeholder="NAME" name="name"><!--fz-26-->
-                <input id="correo" type="email" data-id="1" class="input-contact text-white thin e-mail mv-0-md mh-7-md mb-21-xs ph-14-xs m-0-xs fz-18 ph-14" data-id="2" maxlength="25" placeholder="E-MAIL" name="email"><br><!--fz-26-->
-                <p><textarea id="comentario" type="textarea" data-id="3" maxlength="600" class="input-contact text-white thin message ml-7-md mt-21-md m-0-xs pv-14 fz-18 ph-14" onkeyup="auto_grow(this)" placeholder="MESSAGE" name="textarea"></textarea></p>
-                <button class="text-white send absolute" type="submit">
-                  <span class="fz-18 relative hidden-xs hidden-sm">SEND</span>
-                  <span class="fz-26 relative hidden-lg hidden-md">SEND</span>
-                </button>
-              </form>
+                {exp:freeform:form
+                  form_id="2"
+                  recipients="yes"
+                  recipient1="Maritza Sinti|maritzasintitafur@gmail.com"
+                  notify_user="yes"
+                  user_email_field="email"
+                  required="name|email|comment"
+                  return="thanks"
+                }
+                  {freeform:field:name attr:id="nombre" attr:type="text" attr:data-id="0" attr:maxlength="25" attr:class="input-contact text-white thin name mv-0-md mh-7-md m-0-xs mb-21-xs fz-18 ph-14" attr:placeholder="NAME" attr:name="name"}
+                  {freeform:field:email attr:id="correo" attr:type="email" attr:data-id="1" attr:class="input-contact text-white thin e-mail mv-0-md mh-7-md mb-21-xs ph-14-xs m-0-xs fz-18 ph-14" attr:data-id="2" attr:maxlength="25" attr:placeholder="E-MAIL" attr:name="email"}<br>
+                  <p>{freeform:field:comment attr:id="comentario" attr:attr:type="textarea" attr:data-id="3" attr:maxlength="600" attr:class="input-contact text-white thin message ml-7-md mt-21-md m-0-xs pv-14 fz-18 ph-14" attr:onkeyup="auto_grow(this)" attr:placeholder="MESSAGE" attr:name="comment"}</p>
+                  <button class="text-white send absolute" type="submit">
+                    <span class="fz-18 relative hidden-xs hidden-sm">SEND</span>
+                    <span class="fz-26 relative hidden-lg hidden-md">SEND</span>
+                  </button>
+                  {!-- {freeform:submit attr:class="text-white send absolute" attr:value="SEND"} --}
+              {/exp:freeform:form}
             </div>
           </div>
         </section>
