@@ -55,7 +55,7 @@ RewriteCond %{QUERY_STRING} !^(ACT=.*)$ [NC]
 RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5})$
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} ^/piscohuamani/(includes|home|terminos-uso|terms-use|blog-es|blog-en|events|eventos|preguntas-frecuentes|faqs|media-kit-es|media-kit-en|contact|main|thanks|members|P[0-9]{2,8}) [NC]
-RewriteRule (.*) /piscohuamani/index.php/$1 [L]
+RewriteCond %{REQUEST_URI} ^/(includes|home|terminos-uso|terms-use|blog-es|blog-en|events|eventos|preguntas-frecuentes|faqs|media-kit-es|media-kit-en|contact|main|thanks|members|P[0-9]{2,8}) [NC]
+RewriteRule (.*) /index.php/$1 [L]
 
 # -- NSM .htaccess Generator End --
