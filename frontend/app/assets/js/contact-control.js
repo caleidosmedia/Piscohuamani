@@ -1,7 +1,7 @@
 /*Validacion formulario*/
 
 $(document).ready(function() {
-  $("button.send").click(function(e){
+  $(".send").click(function(e){
     if($("#nombre").val() == "" || $("#correo").val() == "" || $("#comentario").val() == ""){
       e.preventDefault();
       submitValidate("#nombre", ".error-nombre", '<div style="width:160px">This field is required</div>');
@@ -12,6 +12,10 @@ $(document).ready(function() {
           $(divError).html(img);
         }
       }
+    }else if ($("#nombre").val() == "" & $("#correo").val() == "" & $("#comentario").val() == "") {
+      $(".send").atrr("disabled", "disabled");
+    }else {
+      $(".send").removeAtrr("disabled", "disabled");
     }
   });
 
