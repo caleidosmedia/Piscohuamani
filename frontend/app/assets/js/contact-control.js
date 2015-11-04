@@ -46,6 +46,7 @@ $(document).ready(function() {
     }
   });
   $('#comentario').keydown(function(e) {
+    var numberInput = $("#comentario").data("id");
   	if($('.input-contact').keydown){
       if((e.which == 13) && ($("#comentario").val() == "")){
         e.preventDefault();
