@@ -150,4 +150,13 @@
     <script src="{site_url}frontend/app/assets/js/menu-movil-control.js"></script>
     <script src="{site_url}frontend/app/assets/js/faqs-control.js"></script>
     <script src="{site_url}frontend/app/assets/js/slide-texto-control.js"></script>
+    <script>
+      var backgrounds = [
+        {embed="home/img_header"}
+      ]
+      $(document).ready(function () {
+        var i = Math.floor(Math.random()*4)
+        $("#background").attr("style", "background-image: url("+backgrounds[i]+"); background-position-y:30%");
+      });
+    </script>
   </body>
