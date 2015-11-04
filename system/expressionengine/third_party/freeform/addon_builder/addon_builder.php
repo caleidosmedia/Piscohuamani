@@ -3470,8 +3470,8 @@ EOT;
 
 		$action_id = $action_q->row('action_id');
 
-		return ee()->functions->fetch_site_index(0, 0) .
-					QUERY_MARKER . 'ACT=' . $action_id;
+		return ee()->config->item('site_url') .
+		QUERY_MARKER . 'ACT=' . $action_id;
 	}
 	//END get_action_url
 
