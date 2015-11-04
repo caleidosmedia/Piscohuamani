@@ -4,7 +4,7 @@ $(document).ready(function() {
   $(".send").click(function(e){
     if($("#nombre").val() == "" || $("#correo").val() == "" || $("#comentario").val() == ""){
       e.preventDefault();
-      $(".send").atrr("disabled", "disabled");
+      $(".send").attr("disabled", "disabled");
       submitValidate("#nombre", ".error-nombre", '<div style="width:160px">This field is required</div>');
       submitValidate("#correo", ".error-correo", '<div style="width:160px">This field is required</div>');
       submitValidate("#comentario", ".error-comentario", '<div style="width:160px">This field is required</div>');
@@ -14,7 +14,7 @@ $(document).ready(function() {
         }
       }
     }else {
-      $(".send").removeAtrr("disabled");
+      $(".send").removeAttr("disabled");
     }
   });
 
