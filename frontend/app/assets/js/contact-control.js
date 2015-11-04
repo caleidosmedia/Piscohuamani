@@ -15,7 +15,7 @@ $(document).ready(function() {
     }else if ($("#nombre").val() == "" & $("#correo").val() == "" & $("#comentario").val() == "") {
       $(".send").atrr("disabled", "disabled");
     }else {
-      $(".send").removeAtrr("disabled", "disabled");
+      $(".send").removeAtrr("disabled");
     }
   });
 
