@@ -7891,7 +7891,7 @@ footer .col-md-3 p a:hover {
   color: #fff;
   font-weight: lighter;
 }
-#container-contact .formulario button {
+#container-contact .formulario .submit {
   width: 142px;
   height: 46px;
   background-color: transparent;
@@ -7903,13 +7903,13 @@ footer .col-md-3 p a:hover {
   overflow: hidden;
   z-index: 1;
 }
-#container-contact .formulario button span {
+#container-contact .formulario .submit span {
   z-index: 1;
 }
-#container-contact .formulario button:hover {
+#container-contact .formulario .submit:hover {
   background-color: rgba(250, 250, 250, 0.2);
 }
-#container-contact .formulario button:hover a {
+#container-contact .formulario .submit:hover a {
   color: #fff;
 }
 #container-contact .formulario .error-nombre div,
