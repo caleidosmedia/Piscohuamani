@@ -4,6 +4,7 @@ $(document).ready(function() {
   $(".send").click(function(e){
     if($("#nombre").val() == "" || $("#correo").val() == "" || $("#comentario").val() == ""){
       e.preventDefault();
+      $(".send").atrr("disabled", "disabled");
       submitValidate("#nombre", ".error-nombre", '<div style="width:160px">This field is required</div>');
       submitValidate("#correo", ".error-correo", '<div style="width:160px">This field is required</div>');
       submitValidate("#comentario", ".error-comentario", '<div style="width:160px">This field is required</div>');
@@ -12,8 +13,6 @@ $(document).ready(function() {
           $(divError).html(img);
         }
       }
-    }else if ($("#nombre").val() == "" & $("#correo").val() == "" & $("#comentario").val() == "") {
-      $(".send").atrr("disabled", "disabled");
     }else {
       $(".send").removeAtrr("disabled");
     }
