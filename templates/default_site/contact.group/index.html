@@ -13,22 +13,14 @@
                 <div class="error-correo absolute"></div>
                 <div class="error-comentario absolute"></div>
                 {exp:freeform:form
-                  form_id="2"
-                  recipients="yes"
-                  recipient1="Maritza Sinti|maritzasintitafur@gmail.com"
-                  notify_user="yes"
-                  user_email_field="email"
+                  form_id="1"
                   required="name|email|comment"
-                  return="thanks"
+                  return="thanks/index"
                 }
                   {freeform:field:name attr:id="nombre" attr:type="text" attr:data-id="0" attr:maxlength="25" attr:class="input-contact text-white thin name mv-0-md mh-7-md m-0-xs mb-21-xs fz-18 ph-14" attr:placeholder="NAME" attr:name="name"}
                   {freeform:field:email attr:id="correo" attr:type="email" attr:data-id="1" attr:class="input-contact text-white thin e-mail mv-0-md mh-7-md mb-21-xs ph-14-xs m-0-xs fz-18 ph-14" attr:data-id="2" attr:maxlength="25" attr:placeholder="E-MAIL" attr:name="email"}<br>
                   <p>{freeform:field:comment attr:id="comentario" attr:attr:type="textarea" attr:data-id="3" attr:maxlength="600" attr:class="input-contact text-white thin message ml-7-md mt-21-md m-0-xs pv-14 fz-18 ph-14" attr:onkeyup="auto_grow(this)" attr:placeholder="MESSAGE" attr:name="comment"}</p>
-                  <button class="text-white send absolute" type="submit">
-                    <span class="fz-18 relative hidden-xs hidden-sm">SEND</span>
-                    <span class="fz-26 relative hidden-lg hidden-md">SEND</span>
-                  </button>
-                  {!-- {freeform:submit attr:class="text-white send absolute" attr:value="SEND"} --}
+                  {freeform:submit attr:class="text-white send absolute fz-18" attr:value="SEND"}
               {/exp:freeform:form}
             </div>
           </div>
