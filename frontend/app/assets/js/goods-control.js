@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$(".text-opacity1").each(function(){
 		ubicacion = $(".text-opacity1").eq(i);
 		numberData = $(ubicacion).index();
-		$(ubicacion).attr("data-index", numberData);
+		$(ubicacion).attr("data-index", numberData + 1);
 		i++
 	});
 });
