@@ -57,6 +57,7 @@ function mostrarContenido(container, contentClass) {
 
 function obtenerContenidoActual(contentClass) {
 	var current_element = null;
+	console.log(contentClass.length);
 	$(contentClass).each(function(index, element) {
 		var current = $(element).attr("data-current");
 		if (current == 1) {
