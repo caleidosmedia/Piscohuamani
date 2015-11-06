@@ -8,7 +8,7 @@
           <div class="container ph-21 pv-70 mt-70">
             <h1 class="text-uppercase">{exp:transcribe:replace name="titulo_blog"}</h1>
             <div class="separador"></div>
-            {exp:channel:entries channel="blog"}
+            {exp:channel:entries channel="blog" limit="1"}
               {if count == 1}
               <div class="breadcrumb">
                 <ul class="type-style-none pl-0 clearfix">
@@ -35,7 +35,7 @@
                 </div>
                 <div class="texto-izquierdo">
                   {imagen_derecha}
-                    <img src="{image:url}" class="img-right pull-right ml-21 mb-7 bg-img-block" style="width:295px; height:295px">
+                    <div class="img-right pull-right ml-21 mb-7 bg-img-block" style="background-image:url({image:url}); width: 295px; height: 295px;"></div>
                   {/imagen_derecha}
                   {texto_izquierdo} 
                 </div>

@@ -31,7 +31,9 @@
               <div class="texto">
                   <p class="fecha mb-28">{fecha}</p>
                   <h2 class="text-uppercase">{titulo_blog}</h2>
-                  <span class="parrafo fz-18 mb-28">{texto_blog}</span>
+                  {exp:word_limit total="100"}
+                    <span class="parrafo fz-18 mb-28">{texto_blog}</span>
+                  {/exp:word_limit}
               </div>
               <p class="tags hidden-lg hidden-md hidden-sm"><span class="text-bold">Tags:</span> Leishure, Profiles.</p>
               <div class="botons clearfix">
@@ -61,7 +63,7 @@
               <div id="pagination">
                 <nav>
                   {pagination_links page_padding="2" always_show_first_last = "yes"}
-                    <ul class="list-unstyled pagination hidden-xs pt-70 mt-28">
+                    <ul class="list-unstyled pagination hidden-xs pt-42 mt-0">
                       {first_page}
                         <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-first">First</a></li>
                       {/first_page}
