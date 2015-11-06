@@ -62,23 +62,27 @@
                 {pagination_links page_padding="2" always_show_first_last = "yes"}
                   <ul class="list-unstyled">
                     {first_page}
-                      <li class="inline ph-7"><a href="{pagination_url}" class="page-first">First</a></li>
+                      <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-first">First</a></li>
                     {/first_page}
 
                     {previous_page}
-                      <li class="inline ph-7"><a href="{pagination_url}" class="page-previous">Previous</a></li>
+                      <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-previous">Previous</a></li>
                     {/previous_page}
 
                     {page}
-                      <li class="inline ph-7"><a href="{pagination_url}" class="page-{pagination_page_number} {if current_page}active{/if}">{pagination_page_number}</a></li>
+                      <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-{pagination_page_number} {if current_page}active{/if}">{pagination_page_number}</a></li>
                     {/page}
 
                     {next_page}
-                      <li class="inline ph-7"><a href="{pagination_url}" class="page-next">Next</a></li>
+                      <li class="ph-7" style="display:inline-block">
+                        <a href="{pagination_url}" class="page-next next" aria-label="Next">
+                          <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                        </a>
+                      </li>
                     {/next_page}
 
                     {last_page}
-                      <li class="inline ph-7"><a href="{pagination_url}" class="page-last">Last</a></li>
+                      <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-last">Last</a></li>
                     {/last_page}
                   </ul>
                 {/pagination_links}
