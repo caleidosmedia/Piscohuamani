@@ -6,7 +6,7 @@
         {embed="includes/overlay-menu"}
         <div id="blog-post" style="background-color:#f8f4e5;">
           <div class="container ph-21 pv-70 mt-70">
-            <h1 clas="">{exp:transcribe:replace name="titulo_blog"}</h1>
+            <h1 clas="text-uppercase">{exp:transcribe:replace name="titulo_blog"}</h1>
             <div class="separador"></div>
             {exp:channel:entries channel="blog"}
               <div class="breadcrumb">
@@ -32,12 +32,10 @@
                     <p class="col-sm-11">{resumen}</p>
                 </div>
                 <div class="clearfix">
-                  <p class="col-md-8 pl-0">{texto_izquierdo}</p>
-                  <div class="img-right col-md-4 pr-0">
-                    {imagen_derecha}
-                      <img class="btn-block" src="{image:url}" alt="">
-                    {/imagen_derecha}
-                  </div>
+                  <div class="pull-left pl-0">{texto_izquierdo}</div>
+                  {imagen_derecha}
+                    <div class="img-right pull-left pl-21" style="background-image:url({image:url}); width:295px, height:295px"></div>
+                  {/imagen_derecha}  
                 </div>
                 <p class="hidden-xs">{texto_tercero}</p>
               </div>
