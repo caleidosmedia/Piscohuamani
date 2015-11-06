@@ -59,8 +59,30 @@
             </div>
             <div id="paginate_exp">
               {paginate}
-                <p class="pv-21 col-md-12 col-sm-12">Page {current_page} of {total_pages} pages {pagination_links}</p>
-              {/paginate} 
+                {pagination_links}
+                  <ul>
+                    {first_page}
+                      <li><a href="{pagination_url}" class="page-first">First Page</a></li>
+                    {/first_page}
+
+                    {previous_page}
+                      <li><a href="{pagination_url}" class="page-previous">Previous Page</a></li>
+                    {/previous_page}
+
+                    {page}
+                      <li><a href="{pagination_url}" class="page-{pagination_page_number} {if current_page}active{/if}">{pagination_page_number}</a></li>
+                    {/page}
+
+                    {next_page}
+                      <li><a href="{pagination_url}" class="page-next">Next Page</a></li>
+                    {/next_page}
+
+                    {last_page}
+                      <li><a href="{pagination_url}" class="page-last">Last Page</a></li>
+                    {/last_page}
+                  </ul>
+                {/pagination_links}
+              {/paginate}
             </div>
           {/exp:channel:entries}
           <div id="pagination">
