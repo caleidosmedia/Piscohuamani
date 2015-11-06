@@ -20,7 +20,7 @@
                   <a href="" class="btn-select fz-18 active-select">ALL</a></br>
               </nav>
           </div>
-          {exp:channel:entries channel="blog" dynamic="off" orderby="date" limit="2" sort="desc" paginate= "bottom"}
+          {exp:channel:entries channel="blog" dynamic="off" orderby="date" limit="1" sort="desc" paginate= "bottom"}
             <div class="post pb-42">
               <div class="imagen hidden-xs">
                 {imagen_blog}  
@@ -57,31 +57,11 @@
                 <a href="">{tags}</a>
               </p>
             </div>
-            {paginate}
-              {pagination_links}
-                <ul>
-                  {first_page}
-                    <li><a href="{pagination_url}" class="page-first">First Page</a></li>
-                  {/first_page}
-
-                  {previous_page}
-                    <li><a href="{pagination_url}" class="page-previous">Previous Page</a></li>
-                  {/previous_page}
-
-                  {page}
-                    <li><a href="{pagination_url}" class="page-{pagination_page_number} {if current_page}active{/if}">{pagination_page_number}</a></li>
-                  {/page}
-
-                  {next_page}
-                    <li><a href="{pagination_url}" class="page-next">Next Page</a></li>
-                  {/next_page}
-
-                  {last_page}
-                    <li><a href="{pagination_url}" class="page-last">Last Page</a></li>
-                  {/last_page}
-                </ul>
-              {/pagination_links}
-            {/paginate}
+            <div id="paginate_exp">
+              {paginate}
+                <p class="pv-21 col-md-12 col-sm-12">Page {current_page} of {total_pages} pages {pagination_links}</p>
+              {/paginate} 
+            </div>
           {/exp:channel:entries}
           <div id="pagination">
             <nav>
