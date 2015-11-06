@@ -6,39 +6,44 @@
         {embed="includes/overlay-menu"}
         <div id="blog-post" style="background-color:#f8f4e5;">
           <div class="container ph-21 pv-70 mt-70">
-            <h1 clas="">THE HUAMANI LIFE</h1>
+            <h1 clas="">{exp:transcribe:replace name="titulo_blog"}</h1>
             <div class="separador"></div>
-            <div class="breadcrumb">
-              <ul class="type-style-none pl-0 clearfix">
-                <li><a href="#" class="pl-0">Blog</a></li>
-                <li><a href="#">Customers</a></li>
-                <li class="active"><span>Blog post title</span></li>
-              </ul>
-            </div> 
-            <div class="imagen hidden-xs">
-              <img src="{site_url}frontend/app/assets/img/fotos/foto-eventos.png" alt="">
-            </div>
-            <div class="imagen-blog-post hidden-lg hidden-md hidden-sm" style="background:url({site_url}frontend/app/assets/img/fotos/foto-eventos.png)">
-            </div><!--movil-->
-            <div class="texto">
-              <p class="fecha">Apr 8<sup>th</sup></p>
-              <h2 class="serif-light">BLOG POST TITLE 1</h2>
-              <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime! Ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime!.Sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime! Ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime!.Sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati</p>
-              <p class="hidden-lg hidden-md hidden-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis aut aperiam officia atque totam quisquam quod rem fugit odit excepturi sequi saepe laudantium doloremque ea consectetur, non praesentium, illum accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt veniam voluptatem perferendis nobis asperiores atque doloremque saepe quam, esse nihil tempore aliquid, laudantium aut facere a, totam magni. Voluptate, incidunt.</p><!---movil-->
-              <div class="gorro clearfix ">
-                  <div class="col-sm-1"><img src="{site_url}frontend/app/assets/img/iconos-logos/quote4.png" alt=""></div>
-                  <p class="col-sm-11">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, quibusdam nisi explicabo in similique molestiae veniam commodi pariatur labore ullam.</p>
+            {exp:channel:entries channel="blog"}
+              <div class="breadcrumb">
+                <ul class="type-style-none pl-0 clearfix">
+                  <li><a href="#" class="pl-0">Blog</a></li>
+                  <li><a href="#">Customers</a></li>
+                  <li class="active"><span>Blog post title</span></li>
+                </ul>
+              </div> 
+              <div class="imagen hidden-xs">
+                {imagen_blog}
+                  <img src="{image:url}" alt="">
+                {/imagen_blog}
               </div>
-              <div class="clearfix">
-                <p class="col-md-8 pl-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime! Ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime!.Sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis volupta.</p>
-                <div class="img-right col-md-4 pr-0"><img class="btn-block" src="{site_url}frontend/app/assets/img/fotos/fotos-eventos/carta.jpg" alt=""></div>
+              <div class="imagen-blog-post hidden-lg hidden-md hidden-sm" style="background:url({site_url}frontend/app/assets/img/fotos/foto-eventos.png)">
+              </div><!--movil-->
+              <div class="texto">
+                <p class="fecha">{fecha}</p>
+                <h2 class="serif-light">{titulo_blog}</h2>
+                <p class="hidden-xs">{texto_blog}</p>
+                <div class="gorro clearfix ">
+                    <div class="col-sm-1"><img src="{site_url}frontend/app/assets/img/iconos-logos/quote4.png" alt=""></div>
+                    <p class="col-sm-11">{resumen}</p>
+                </div>
+                <div class="clearfix">
+                  <p class="col-md-8 pl-0">{texto_izquierdo}</p>
+                  <div class="img-right col-md-4 pr-0">
+                    {imagen_derecha}
+                      <img class="btn-block" src="{image:url}" alt="">
+                    {/imagen_derecha}
+                  </div>
+                </div>
+                <p class="hidden-xs">{texto_tercero}</p>
               </div>
-              <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime! Ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime!.Sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime! Ducimus commodi.</p>
-              <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime! Ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime!.Sequi vitae natus totam.</p>
-            </div>
-             <div class="botons clearfix">
+              <div class="botons clearfix">
                 <div class="social clearfix">
-                  <p>Share</p> 
+                  <p>{exp:transcribe:replace name="share_blog"}</p> 
                   <li>
                     <a href="http://www.facebook.com/sharer.php?u=https://www.facebook.com/piscohuamani" target="_blank"><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-share-facebook.png"></a>
                   </li>
@@ -49,7 +54,8 @@
                    <a href = "https://plus.google.com/share?url=https://plus.google.com/107812576428175904914/about" target = "_blank"><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-share-google+.png" alt=""></a>
                   </li>
                 </div>
-            </div>
+              </div>
+            {/exp:channel:entries}
           </div> 
         </div>
         {embed="includes/follow"}
