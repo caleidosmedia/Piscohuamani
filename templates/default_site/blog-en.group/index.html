@@ -20,7 +20,7 @@
                   <a href="" class="btn-select fz-18 active-select">ALL</a></br>
               </nav>
           </div>
-          {exp:channel:entries channel="blog" dynamic="off" orderby="" sort="asc"}
+          {exp:channel:entries channel="blog" dynamic="off" orderby="" sort="asc" paginate= "bottom"}
             <div class="post pb-42">
               <div class="imagen hidden-xs">
                 {imagen_blog}  
@@ -40,7 +40,7 @@
                     <div class="overlay absolute minhp-100"></div>
                 </button>
                 <div class="social clearfix pl-0-xs">
-                  <p class="fecha share text-uppercase">{exp:transcribe:replace name="share_blog"}</p>
+                  <p class="fecha share text-uppercase">{exp:transcribe:replace name="share_blog"}:</p>
                   <li class="mv-0 mh-7 text-center">
                     <a href="http://www.facebook.com/sharer.php?u=https://www.facebook.com/piscohuamani" target="_blank"><span class="icon-facebook">&#xea8c;</span></a>
                   </li>
@@ -57,6 +57,9 @@
                 <a href="">{tags}</a>
               </p>
             </div>
+            {paginate} 
+              <p>Page {current_page} of {total_pages} pages {pagination_links} </p> 
+            {/paginate} 
           {/exp:channel:entries}
           <!-- <div class="post pt-8 pb-42">
               <div class="imagen hidden-xs">  
