@@ -57,107 +57,76 @@
                 <a href="">{tags}</a>
               </p>
             </div>
-            <div id="paginate_exp">
-              {paginate}
-                {pagination_links page_padding="2" always_show_first_last = "yes"}
-                  <ul class="list-unstyled">
-                    {first_page}
-                      <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-first">First</a></li>
-                    {/first_page}
+            <div id="pagination">
+              <nav>
+                {paginate}
+                  {pagination_links page_padding="2" always_show_first_last = "yes"}
+                    <ul class="list-unstyled pagination hidden-xs">
+                      {first_page}
+                        <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-first">First</a></li>
+                      {/first_page}
 
-                    {previous_page}
-                      <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-previous">Previous</a></li>
-                    {/previous_page}
+                      {previous_page}
+                        <li class="ph-7" style="display:inline-block">
+                          <a href="{pagination_url}" class="page-previous previous" aria-label="Previous">
+                            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                          </a>
+                        </li>
+                      {/previous_page}
 
-                    {page}
-                      <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-{pagination_page_number} {if current_page}active{/if}">{pagination_page_number}</a></li>
-                    {/page}
+                      {page}
+                        <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-{pagination_page_number} {if current_page}active{/if}">{pagination_page_number}</a></li>
+                      {/page}
 
-                    {next_page}
-                      <li class="ph-7" style="display:inline-block">
-                        <a href="{pagination_url}" class="page-next next" aria-label="Next">
-                          <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                        </a>
-                      </li>
-                    {/next_page}
+                      {next_page}
+                        <li class="ph-7" style="display:inline-block">
+                          <a href="{pagination_url}" class="page-next next" aria-label="Next">
+                            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                          </a>
+                        </li>
+                      {/next_page}
 
-                    {last_page}
-                      <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-last">Last</a></li>
-                    {/last_page}
-                  </ul>
-                {/pagination_links}
-              {/paginate}
+                      {last_page}
+                        <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-last">Last</a></li>
+                      {/last_page}
+                    </ul>
+                  {/pagination_links}
+                {/paginate}
+                <!-- <ul class="pagination hidden-xs">
+                  <li><a href="#">First</a></li>
+                  <li>
+                    <a class="previous" href="#" aria-label="Previous">
+                      <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                    </a>
+                  </li>
+                  <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>                            
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li>
+                    <a class="next" href="#" aria-label="Next">
+                      <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    </a>
+                  </li>
+                  <li><a href="#">Last</a></li>
+                </ul> -->
+                <ul class="pagination hidden-lg hideen-md hidden-sm"><!--movil-->
+                  <li>
+                    <a class="previous" href="#" aria-label="Previous">
+                      <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                    </a>
+                  </li>
+                  <li class="active"><a href="#">2<span class="sr-only">(current)</span></a></li>                            
+                  <li>
+                    <a class="next" href="#" aria-label="Next">
+                      <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           {/exp:channel:entries}
-          <div id="pagination">
-            <nav>
-              {paginate}
-                {pagination_links page_padding="2" always_show_first_last = "yes"}
-                  <ul class="list-unstyled pagination hidden-xs">
-                    {first_page}
-                      <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-first">First</a></li>
-                    {/first_page}
-
-                    {previous_page}
-                      <li class="ph-7" style="display:inline-block">
-                        <a href="{pagination_url}" class="page-previous previous" aria-label="Previous">
-                          <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-                        </a>
-                      </li>
-                    {/previous_page}
-
-                    {page}
-                      <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-{pagination_page_number} {if current_page}active{/if}">{pagination_page_number}</a></li>
-                    {/page}
-
-                    {next_page}
-                      <li class="ph-7" style="display:inline-block">
-                        <a href="{pagination_url}" class="page-next next" aria-label="Next">
-                          <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                        </a>
-                      </li>
-                    {/next_page}
-
-                    {last_page}
-                      <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-last">Last</a></li>
-                    {/last_page}
-                  </ul>
-                {/pagination_links}
-              {/paginate}
-              <!-- <ul class="pagination hidden-xs">
-                <li><a href="#">First</a></li>
-                <li>
-                  <a class="previous" href="#" aria-label="Previous">
-                    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-                  </a>
-                </li>
-                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>                            
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
-                  <a class="next" href="#" aria-label="Next">
-                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                  </a>
-                </li>
-                <li><a href="#">Last</a></li>
-              </ul> -->
-              <ul class="pagination hidden-lg hideen-md hidden-sm"><!--movil-->
-                <li>
-                  <a class="previous" href="#" aria-label="Previous">
-                    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-                  </a>
-                </li>
-                <li class="active"><a href="#">2<span class="sr-only">(current)</span></a></li>                            
-                <li>
-                  <a class="next" href="#" aria-label="Next">
-                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
         </div>
         {embed="includes/follow"}
       </main> 
