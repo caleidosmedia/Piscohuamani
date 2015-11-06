@@ -32,12 +32,12 @@
                     <p class="col-sm-11">{resumen}</p>
                 </div>
                 <div class="clearfix">
-                  <div class="pull-left pl-0">
+                  <div class="texto-izquierdo">
                     {texto_izquierdo}
-                    {imagen_derecha}
-                      <img src="{image:url}" class="img-right pull-left pl-21 bg-img-block" style="width:295px; height:295px">
-                    {/imagen_derecha} 
-                  </div> 
+                  </div>
+                  {imagen_derecha}
+                    <img src="{image:url}" class="img-right pull-left pl-21 bg-img-block" style="width:295px; height:295px">
+                  {/imagen_derecha}  
                 </div>
                 <p class="hidden-xs">{texto_tercero}</p>
               </div>
@@ -63,8 +63,9 @@
       {embed="includes/footer"}
     </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="assets/js/smooth-scroll-active.js"></script>
+  <script src="{site_url}frontend/app/assets/js/smooth-scroll-active.js"></script>
   <script src="//use.typekit.net/wml8szi.js"></script>
-  <script src="assets/js/menu-movil-control.js"></script>
+  <script src="{site_url}frontend/app/assets/js/menu-movil-control.js"></script>
+  <script src="{site_url}frontend/app/assets/js/blog-control.js"></script>
   </body>
 </html>
