@@ -23,15 +23,17 @@
               </nav>
           </div>
           <div class="post pb-42">
-          {exp:channel:entries channel="blog_ingles" dinamyc="off" orderby="date" sort="asc"}
-              <div class="imagen hidden-xs">  
-                  <img src="{site_url}frontend/app/assets/img/fotos/foto-eventos.png" alt="">
+          {exp:channel:entries channel="blog" dynamic="off" orderby="" sort="asc"}
+              <div class="imagen hidden-xs">
+                {imagen_blog}  
+                  <img src="{image:url}" alt="">
+                {/imagen_blog} 
               </div>
               <div class="imagen-movil hidden-lg hidden-md hidden-sm" style="background:url({site_url}frontend/app/assets/img/fotos/foto-eventos.png)"></div><!--movil-->
               <div class="texto">
-                  <p class="fecha mb-28">{fecha}<sup>th</sup></p>
+                  <p class="fecha mb-28">{fecha}</p>
                   <h2 class="text-uppercase">{titulo_blog}</h2>
-                  <span class="parrafo fz-18 mb-28">{contenido}</span>
+                  <span class="parrafo fz-18 mb-28">{texto}</span>
               </div>
               <p class="tags hidden-lg hidden-md hidden-sm"><span class="text-bold">Tags:</span> Leishure, Profiles.</p>
               <div class="botons clearfix">
@@ -58,12 +60,12 @@
               </p>
           {/exp:channel:entries}
           </div>
-          <div class="post pt-8 pb-42">
+          <!-- <div class="post pt-8 pb-42">
               <div class="imagen hidden-xs">  
                   <img src="{site_url}frontend/app/assets/img/fotos/foto2-eventos.png" alt="" >
               </div>
-              <div class="imagen-movil hidden-lg hidden-md hidden-sm" style="background:url({site_url}frontend/app/assets/img/fotos/foto-eventos.png)"></div><!--movil-->
-              <div class="texto">
+              <div class="imagen-movil hidden-lg hidden-md hidden-sm" style="background:url({site_url}frontend/app/assets/img/fotos/foto-eventos.png)"></div> --><!--movil-->
+              <!-- <div class="texto">
                   <p class="fecha mb-28">Apr 8<sup>th</sup></p>
                   <h2>BLOG POST TITLE 1</h2>
                   <p class="parrafo fz-18 mb-28">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat sint quisquam provident magni quas, sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime! Ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati, deserunt maxime!.Sequi vitae natus totam, ducimus commodi sunt blanditiis voluptate non perferendis quidem obcaecati</p>
@@ -88,7 +90,7 @@
                 </div>
               </div> 
               <p class="tags hidden-xs fz-18 pt-35 mb-21 pb-14"><span class="text-bold">Tags:</span> <a href="">Customers,</a><a href=""> Leishure,</a><a href=""> Profiles.</a></p>
-          </div>
+          </div> -->
           <div id="pagination">
             <nav>
               <ul class="pagination hidden-xs">
