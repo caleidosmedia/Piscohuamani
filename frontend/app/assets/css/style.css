@@ -7385,13 +7385,13 @@ footer .col-md-3 p a:hover {
   font-weight: 100;
   font-style: italic;
 }
-.site-content .content-blog #pagination {
+.site-content .content-blog #pagination, .site-content .content-blog .pagination {
   padding-top: 5%;
 }
-.site-content .content-blog #pagination ul {
+.site-content .content-blog #pagination ul, .site-content .content-blog .pagination ul {
   width: 100%;
 }
-.site-content .content-blog #pagination ul li a {
+.site-content .content-blog #pagination ul li a, .site-content .content-blog .pagination ul li a {
   border: 1px solid transparent;
   font-size: 21px;
   font-size: 1.5rem;
@@ -7400,13 +7400,13 @@ footer .col-md-3 p a:hover {
   background-color: transparent;
   color: #4e3227;
 }
-.site-content .content-blog #pagination ul li a:hover {
+.site-content .content-blog #pagination ul li a:hover, .site-content .content-blog .pagination ul li a:hover {
   border-color: #4e3227;
 }
-.site-content .content-blog #pagination ul li:first-child a, .site-content .content-blog #pagination ul li:last-child a, .site-content .content-blog #pagination ul li .next, .site-content .content-blog #pagination ul li .previous {
+.site-content .content-blog #pagination ul li:first-child a, .site-content .content-blog #pagination ul li:last-child a, .site-content .content-blog #pagination ul li .next, .site-content .content-blog #pagination ul li .previous, .site-content .content-blog .pagination ul li:first-child a, .site-content .content-blog .pagination ul li:last-child a, .site-content .content-blog .pagination ul li .next, .site-content .content-blog .pagination ul li .previous {
   border: none;
 }
-.site-content .content-blog #pagination ul li.active a {
+.site-content .content-blog #pagination ul li.active a, .site-content .content-blog .pagination ul li.active a {
   border: 1px solid #4e3227;
 }
 
