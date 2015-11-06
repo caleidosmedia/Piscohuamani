@@ -6,7 +6,7 @@
         {embed="includes/overlay-menu"}
         <div id="blog-post" style="background-color:#f8f4e5;">
           <div class="container ph-21 pv-70 mt-70">
-            <h1 clas="text-uppercase">{exp:transcribe:replace name="titulo_blog"}</h1>
+            <h1 class="text-uppercase">{exp:transcribe:replace name="titulo_blog"}</h1>
             <div class="separador"></div>
             {exp:channel:entries channel="blog"}
               <div class="breadcrumb">
@@ -29,7 +29,7 @@
                 <p class="hidden-xs">{texto_blog}</p>
                 <div class="gorro clearfix ">
                     <div class="col-sm-1"><img src="{site_url}frontend/app/assets/img/iconos-logos/quote4.png" alt=""></div>
-                    <p class="col-sm-11">{resumen}</p>
+                    <div class="col-sm-11">{resumen}</div>
                 </div>
                 <div class="texto-izquierdo">
                   {imagen_derecha}
