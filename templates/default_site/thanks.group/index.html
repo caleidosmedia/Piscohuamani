@@ -3,12 +3,14 @@
     <div class="site-wrapper"> <!-- Body -->
       {embed="includes/header" huamani="{path='home'}" about="{path='home'#about-us}" goods="{path='home'}#the-goods" make="{path='home'}#make-drink" events="{path='home'}#events"} 
       <main class="site-content">
-        {embed="includes/overlay-menu"} 
+        {embed="includes/overlay-menu"}
         <section id="thanks-contact" class="minhp-100">
           <div class="thanks-box ph-70 pv-42 text-center thin">
+          {exp:channel:entries channel="thanks" dynamic="off"} 
             <h3 class="mt-0 text-uppercase">{titulo}</h3>
             <p class="pt-28">{mensaje}</p>
             <button class="btn btn-default text-white mt-42 ph-35 pv-7"><a href="{path='home'}" class="text-uppercase">{nombre_boton}</a></button>
+          {/exp:channel:entries}
           </div>
         </section>
         {embed="includes/follow"}
