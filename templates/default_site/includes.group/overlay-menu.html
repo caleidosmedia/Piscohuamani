@@ -2,7 +2,9 @@
           <ul class="text-white text-center p-0">
             <li><a href="{path='home'}" class="text-uppercase">{exp:transcribe:replace name="nav_home"}</a><div class="separador"></div>
             </li>
-            <li><a href="{path='blog-en'}" class="text-uppercase">BLOG</a><div class="separador"></div></li>
+            {exp:channel:categories channel="blog" category_group="6" show="23" limit="1" style="off" dynamic="off"}
+              <li><a href="{site_url}{exp:transcribe:language_abbreviation}/blog/{category_url_title}" class="text-uppercase">BLOG</a><div class="separador"></div></li>
+            {/exp:channel:categories}
             <li><a href="{path='faqs'}" class="text-uppercase">{exp:transcribe:replace name="nav_faq"}</a><div class="separador"></div></li>
             <li><a href="{path='media-kit-en'}" class="text-uppercase">{exp:transcribe:replace name="nav_media"}</a><div class="separador"></div></li>
             <li><a href="{path='terms-use'}" class="text-uppercase">{exp:transcribe:replace name="nav_term"}</a><div class="separador"></div></li>
