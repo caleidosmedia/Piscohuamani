@@ -25,7 +25,7 @@
                 {/imagen_blog} 
               </div>
               <div class="imagen-movil hidden-lg hidden-md hidden-sm" style="background:url({site_url}frontend/app/assets/img/fotos/foto-eventos.png)"></div><!--movil-->
-              <div id="{category_url_title}" class="texto">
+              <div class="texto">
                   <p class="fecha mb-28">{fecha}</p>
                   <h2 class="text-uppercase">{titulo_blog}</h2>
                   {exp:word_limit total="65"}
@@ -107,7 +107,6 @@
               </div>  
             {/paginate}
           {/exp:channel:entries}
-        {/exp:channel:categories}
         </div>
         {embed="includes/follow"}
       </main> 
