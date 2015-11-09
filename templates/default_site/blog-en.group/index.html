@@ -9,12 +9,9 @@
           <div class="separador"></div>
           <div id="menu-blog" class="pv-42">
               <nav class="hidden-xs fz-18 p-ch-7">
-                  <a href="" class="btn-select fz-18 text-uppercase active-select">ALL</a>
-                  <a href="" class="btn-select fz-18 text-uppercase">the scoop</a>
-                  <a href="" class="btn-select fz-18 text-uppercase">Events</a>
-                  <a href="" class="btn-select fz-18 text-uppercase">RoadTrip</a>
-                  <a href="" class="btn-select fz-18 text-uppercase">Huamaní Locales</a>
-                  <a href="" class="btn-select fz-18 text-uppercase">Profiles</a>
+                {exp:channel:categories channel="blog" style="off" dynamic="off" category_group="6"}
+                  <a href="" class="btn-select fz-18 text-uppercase {if '{count}'== 1}active-select {else:if}{/if}">ALL</a>
+                {/exp:channel:categories}
               </nav>
               <nav class="hidden-lg hidden-md hidden-sm"><!--movil-->
                   <a href="" class="btn-select fz-18 active-select">ALL</a></br>
