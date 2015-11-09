@@ -4,13 +4,13 @@
       {embed="includes/header" huamani="{path='home'}" about="{path='home'#about-us}" goods="{path='home'}#the-goods" make="{path='home'}#make-drink" events="{path='home'}#events"} 
       <main class="site-content">
         {embed="includes/overlay-menu"}
-        <section>
-          <div id="container-contact" class="minhp-100">
+        <section id="contact">
+          <div id="container-contact">
             <h1 class="text-white text-uppercase">{exp:transcribe:replace name="titulo_contact"}</h1>
             <div class="formulario relative pt-28">
-                <div class="error-nombre absolute"></div>
-                <div class="error-correo absolute"></div>
-                <div class="error-comentario absolute"></div>
+                <div class="error-nombre absolute hidden-xs hidden-sm"></div>
+                <div class="error-correo absolute hidden-xs hidden-sm"></div>
+                <div class="error-comentario absolute hidden-xs hidden-sm"></div>
                 {exp:channel:entries channel="contact" dynamic="off"}
                   {exp:freeform:form
                     form_id="2"

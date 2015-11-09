@@ -8791,6 +8791,10 @@ footer .col-md-3 p a:hover {
   }
 
   /*CONTACT*/
+  #contact {
+    padding-bottom: 0px !important;
+  }
+
   #container-contact {
     padding: 15% 15% 15%;
     display: block;
@@ -8826,6 +8830,15 @@ footer .col-md-3 p a:hover {
     position: relative !important;
   }
 }
+/*THANKS RESPONSIVE*/
+#thanks-contact {
+  width: 100%;
+}
+#thanks-contact h3 {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
 /*
 	UTILITIES
 */
