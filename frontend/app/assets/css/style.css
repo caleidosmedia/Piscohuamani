@@ -8191,7 +8191,7 @@ footer .col-md-3 p a:hover {
     background-position-y: 10%;
   }
   .img-principal div.texto h1 {
-    font-size: 42px;
+    font-size: 35px;
     line-height: 1.2;
   }
   .img-principal div.texto p {
@@ -8368,7 +8368,7 @@ footer .col-md-3 p a:hover {
     background-position: left;
     background-size: cover;
   }
-  #events .event-movil h2, #slider-events .event-movil h2 {
+  #events .event-movil h1, #slider-events .event-movil h1 {
     font-size: 25px;
     line-height: 1.3;
     position: relative;

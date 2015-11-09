@@ -98,9 +98,9 @@
           <section id="events" class="p-0 relative minh-700" style="overflow:hidden">
             <div class="overlay-fondo w-100 minhp-100 absolute"></div>
             <div class="container ph-21">  
-              <h1 class="pt-70 mt-42 hidden-xs hidden-sm" style="font-family:'Across'">{events_titulo}</h1>
+              <h1 class="pt-70 mt-42" style="font-family:'Across'">{events_titulo}</h1>
             </div>
-            <div class="gallery-wrapper row p-0 hidden-xs hidden-sm">
+            <div class="gallery-wrapper row p-0">
               <div class="gallery-child">
                 {embed="events/img_events"}
               </div>
@@ -114,7 +114,7 @@
               </div>
             </div>
             <!--Slider-text-->
-            <div class="row pb-70 mb-70 absolute hidden-xs hidden-sm" style="padding-top: 180px; width:100%">
+            <div class="row pb-70 mb-70 absolute" style="padding-top: 180px; width:100%">
               {embed="events/slider_events"}
               <div class="container ph-7 clearfix ph-42">
                 <div id="slider-text-experience" class="slider-text-oficial relative pl-0 pr-70 pt-21 text-white col-md-6" style="z-index: 1;">
@@ -122,19 +122,19 @@
               </div>
             </div>
             <!--Slider.text-->
-            <div class="event-movil minhp-100 hidden-lg hidden-md text-white" style="background-image: url({site_url}frontend/app/assets/img/fotos/fondo2.jpg)"><!--movil-->
-              <h2 class="text-white p-0 fz-45" style="font-family:'Across'">The Huamani Experience</h2>
+           <!--  <div class="event-movil minhp-100 hidden-lg hidden-md text-white" style="background-image: url({site_url}frontend/app/assets/img/fotos/fondo2.jpg)"> --><!--movil-->
+              <!-- <h2 class="text-white p-0 fz-45" style="font-family:'Across'">The Huamani Experience</h2>
               <div class="contenido pb-14-xs pt-42-xs">
                 <h2 class="m-0">{titulo_events}</h2>
                 <div class="separador"></div>
-                <p>{fecha_events}</p><!-- <sup>th</sup> -->
-                <h3 class="p-0 m-0">{lugar_events}</h3>
+                <p>{fecha_events}</p> --><!-- <sup>th</sup> -->
+                <!-- <h3 class="p-0 m-0">{lugar_events}</h3>
                 <p class="line-height parrafo">{introduccion_events}</p>
                 <button class="see-more mt-70-xs">
                   <a href="events.html">SEE MORE PHOTOS</a>
                 </button>
               </div>
-            </div>
+            </div> -->
           </section>
           {/exp:channel:entries}
           {embed="includes/follow"}
