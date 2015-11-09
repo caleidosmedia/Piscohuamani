@@ -10,110 +10,107 @@
           <div id="menu-blog" class="pv-42">
               <nav class="hidden-xs fz-18 m-ch-7 pv-ch-7 ph-ch-14">
                 {exp:channel:categories channel="blog" style="off" dynamic="off" category_group="6"}
-                  <a href="{site_url}blog/{category_url_title}" class="btn-select fz-18 text-uppercase {if '{count}'== 1}active-select {else:if}{/if}">{category_name}</a>
+                  <a href="{site_url}{exp:transcribe:language_abbreviation}/blog/{category_url_title}" class="btn-select fz-18 text-uppercase {if '{count}'== 1}active-select {else:if}{/if}">{category_name}</a>
                 {/exp:channel:categories}
               </nav>
               <nav class="hidden-lg hidden-md hidden-sm"><!--movil-->
                   <a href="" class="btn-select fz-18 active-select">ALL</a></br>
               </nav>
           </div>
-
           {exp:channel:categories channel="blog" style="off" dynamic="off" category_group="6"}
             {if category_url_title == segment_2}
- {exp:channel:entries channel="blog" dynamic="off" orderby="date" limit="2" sort="desc" paginate= "bottom" category="{category_id}"}
-
-            <div class="post pb-42">
-              <div class="imagen hidden-xs">
-                {imagen_blog}  
-                  <img src="{image:url}" alt="">
-                {/imagen_blog} 
-              </div>
-              <div class="imagen-movil hidden-lg hidden-md hidden-sm" style="background:url({site_url}frontend/app/assets/img/fotos/foto-eventos.png)"></div><!--movil-->
-              <div class="texto">
-                  <p class="fecha mb-28">{fecha}</p>
-                  <h2 class="text-uppercase">{titulo_blog}</h2>
-                  {exp:word_limit total="65"}
-                    <span class="parrafo fz-18 mb-28">{texto_blog}</span>
-                  {/exp:word_limit}
-              </div>
-              <p class="tags hidden-lg hidden-md hidden-sm"><span class="text-bold">Tags:</span> Leishure, Profiles.</p>
-              <div class="botons clearfix">
-                <button class="relative">
-                    <a href="{site_url}blog/blog-interno/{url_title}" class="text-white fz-21 relative text-uppercase" style="z-index:1">{exp:transcribe:replace name="button_blog"}</a>
-                    <div class="overlay absolute minhp-100"></div>
-                </button>
-                <div class="social clearfix pl-0-xs">
-                  <p class="fecha share text-uppercase">{exp:transcribe:replace name="share_blog"}:</p>
-                  <li class="mv-0 mh-7 text-center">
-                    <a href="http://www.facebook.com/sharer.php?u=https://www.facebook.com/piscohuamani" target="_blank"><span class="icon-facebook">&#xea8c;</span></a>
-                  </li>
-                  <li class="mv-0 mh-7 text-center">
-                    <a  href = " https://twitter.com/share?url=https://twitter.com/piscohuamani & text=Simple%20Share%20Buttons & hashtags=simplesharebuttons "  target = " _blank "><span class="icon-twitter2">&#xe602;</span></a>
-                  </li>
-                  <li class="mv-0 mh-7 text-center">
-                  <a href = "https://plus.google.com/share?url=https://plus.google.com/107812576428175904914/about" target = "_blank"><span class="icon-google-plus">&#xea88;</span></a>
-                  </li>
+              {exp:channel:entries channel="blog" dynamic="off" orderby="date" limit="2" sort="desc" paginate= "bottom" category="{category_id}"}
+                <div class="post pb-42">
+                  <div class="imagen hidden-xs">
+                    {imagen_blog}  
+                      <img src="{image:url}" alt="">
+                    {/imagen_blog} 
+                  </div>
+                  <div class="imagen-movil hidden-lg hidden-md hidden-sm" style="background:url({site_url}frontend/app/assets/img/fotos/foto-eventos.png)"></div><!--movil-->
+                  <div class="texto">
+                      <p class="fecha mb-28">{fecha}</p>
+                      <h2 class="text-uppercase">{titulo_blog}</h2>
+                      {exp:word_limit total="65"}
+                        <span class="parrafo fz-18 mb-28">{texto_blog}</span>
+                      {/exp:word_limit}
+                  </div>
+                  <p class="tags hidden-lg hidden-md hidden-sm"><span class="text-bold">Tags:</span> Leishure, Profiles.</p>
+                  <div class="botons clearfix">
+                    <button class="relative">
+                        <a href="{site_url}blog/blog-interno/{url_title}" class="text-white fz-21 relative text-uppercase" style="z-index:1">{exp:transcribe:replace name="button_blog"}</a>
+                        <div class="overlay absolute minhp-100"></div>
+                    </button>
+                    <div class="social clearfix pl-0-xs">
+                      <p class="fecha share text-uppercase">{exp:transcribe:replace name="share_blog"}:</p>
+                      <li class="mv-0 mh-7 text-center">
+                        <a href="http://www.facebook.com/sharer.php?u=https://www.facebook.com/piscohuamani" target="_blank"><span class="icon-facebook">&#xea8c;</span></a>
+                      </li>
+                      <li class="mv-0 mh-7 text-center">
+                        <a  href = " https://twitter.com/share?url=https://twitter.com/piscohuamani & text=Simple%20Share%20Buttons & hashtags=simplesharebuttons "  target = " _blank "><span class="icon-twitter2">&#xe602;</span></a>
+                      </li>
+                      <li class="mv-0 mh-7 text-center">
+                      <a href = "https://plus.google.com/share?url=https://plus.google.com/107812576428175904914/about" target = "_blank"><span class="icon-google-plus">&#xea88;</span></a>
+                      </li>
+                    </div>
+                  </div> 
+                  <p class="tags hidden-xs fz-18 pt-35 pb-14">
+                    <span class="text-bold">Tags:</span>
+                    <a href="">{tags}</a>
+                  </p>
                 </div>
-              </div> 
-              <p class="tags hidden-xs fz-18 pt-35 pb-14">
-                <span class="text-bold">Tags:</span>
-                <a href="">{tags}</a>
-              </p>
-            </div>
-            {paginate}
-              <div id="pagination">
-                <nav>
-                  {pagination_links page_padding="2" always_show_first_last = "yes"}
-                    <ul class="list-unstyled pagination hidden-xs pt-42 mt-0">
-                      {first_page}
-                        <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-first">First</a></li>
-                      {/first_page}
+              {paginate}
+                <div id="pagination">
+                  <nav>
+                    {pagination_links page_padding="2" always_show_first_last = "yes"}
+                      <ul class="list-unstyled pagination hidden-xs pt-42 mt-0">
+                        {first_page}
+                          <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-first">First</a></li>
+                        {/first_page}
 
-                      {previous_page}
-                        <li class="ph-7" style="display:inline-block">
-                          <a href="{pagination_url}" class="page-previous previous" aria-label="Previous">
-                            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-                          </a>
-                        </li>
-                      {/previous_page}
+                        {previous_page}
+                          <li class="ph-7" style="display:inline-block">
+                            <a href="{pagination_url}" class="page-previous previous" aria-label="Previous">
+                              <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                            </a>
+                          </li>
+                        {/previous_page}
 
-                      {page}
-                        <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-{pagination_page_number} {if current_page}active{/if}">{pagination_page_number}</a></li>
-                      {/page}
+                        {page}
+                          <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-{pagination_page_number} {if current_page}active{/if}">{pagination_page_number}</a></li>
+                        {/page}
 
-                      {next_page}
-                        <li class="ph-7" style="display:inline-block">
-                          <a href="{pagination_url}" class="page-next next" aria-label="Next">
-                            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                          </a>
-                        </li>
-                      {/next_page}
+                        {next_page}
+                          <li class="ph-7" style="display:inline-block">
+                            <a href="{pagination_url}" class="page-next next" aria-label="Next">
+                              <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                            </a>
+                          </li>
+                        {/next_page}
 
-                      {last_page}
-                        <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-last">Last</a></li>
-                      {/last_page}
-                    </ul>
-                  {/pagination_links}
-                <!-- <ul class="pagination hidden-lg hideen-md hidden-sm"> --><!--movil-->
-                  <!-- <li>
-                    <a class="previous" href="#" aria-label="Previous">
-                      <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-                    </a>
-                  </li>
-                  <li class="active"><a href="#">2<span class="sr-only">(current)</span></a></li>                            
-                  <li>
-                    <a class="next" href="#" aria-label="Next">
-                      <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                    </a>
-                  </li>
-                </ul> -->
-                </nav>
-              </div>  
-            {/paginate}
-          {/exp:channel:entries}
+                        {last_page}
+                          <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-last">Last</a></li>
+                        {/last_page}
+                      </ul>
+                    {/pagination_links}
+                  <!-- <ul class="pagination hidden-lg hideen-md hidden-sm"> --><!--movil-->
+                    <!-- <li>
+                      <a class="previous" href="#" aria-label="Previous">
+                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                      </a>
+                    </li>
+                    <li class="active"><a href="#">2<span class="sr-only">(current)</span></a></li>                            
+                    <li>
+                      <a class="next" href="#" aria-label="Next">
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                      </a>
+                    </li>
+                  </ul> -->
+                  </nav>
+                </div>  
+              {/paginate}
+              {/exp:channel:entries}
             {/if}
-                {/exp:channel:categories}
-         
+          {/exp:channel:categories} 
         </div>
         {embed="includes/follow"}
       </main> 
