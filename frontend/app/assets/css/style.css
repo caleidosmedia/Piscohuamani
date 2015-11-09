@@ -8831,6 +8831,9 @@ footer .col-md-3 p a:hover {
   }
 }
 /*THANKS RESPONSIVE*/
+#thanks-contact {
+  padding-bottom: 70px;
+}
 #thanks-contact h3 {
   font-size: 20px;
   line-height: 1.5;
