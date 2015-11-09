@@ -8369,7 +8369,7 @@ footer .col-md-3 p a:hover {
     background-size: cover;
   }
   #events .event-movil h1, #slider-events .event-movil h1 {
-    font-size: 25px;
+    font-size: 45px !important;
     line-height: 1.3;
     position: relative;
   }
@@ -8380,7 +8380,7 @@ footer .col-md-3 p a:hover {
     padding-top: 60px;
   }
   #events .event-movil .contenido h2, #slider-events .event-movil .contenido h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
   #events .event-movil .contenido .separador, #slider-events .event-movil .contenido .separador {
     border-bottom: 1px solid #fff !important;
@@ -8409,6 +8409,18 @@ footer .col-md-3 p a:hover {
     text-decoration: none;
     position: relative;
     z-index: 1;
+  }
+
+  #slider-text-experience {
+    padding-right: 0px !important;
+  }
+  #slider-text-experience h2 {
+    font-size: 22px !important;
+  }
+  #slider-text-experience .see-more {
+    width: 100%;
+    height: 50px;
+    margin-top: 60px;
   }
 
   /*FOllow us*/
