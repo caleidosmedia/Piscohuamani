@@ -17,13 +17,11 @@
                   <a href="" class="btn-select fz-18 active-select">ALL</a></br>
               </nav>
           </div>
-          {exp:channel:entries channel="blog" dynamic="off" orderby="date" limit="2" sort="desc" paginate= "bottom"}
-          {categories}
-           {category_name} /// {segment_2}
+
+          {exp:channel:categories channel="blog" style="off" dynamic="off" category_group="6"}
             {if category_url_title == segment_2}
-              hola
-            {/if}
-          {/categories}
+ {exp:channel:entries channel="blog" dynamic="off" orderby="date" limit="2" sort="desc" paginate= "bottom" category="{category_id}"}
+
             <div class="post pb-42">
               <div class="imagen hidden-xs">
                 {imagen_blog}  
@@ -113,6 +111,9 @@
               </div>  
             {/paginate}
           {/exp:channel:entries}
+            {/if}
+                {/exp:channel:categories}
+         
         </div>
         {embed="includes/follow"}
       </main> 
