@@ -7280,7 +7280,7 @@ footer .col-md-3 p a:hover {
   font-weight: lighter;
 }
 .site-content .content-blog #menu-blog nav a:hover {
-  border-color: #8d744a;
+  border: 1px solid #8d744a;
 }
 .site-content .content-blog .post {
   border-bottom: 1px solid #3B2E29;

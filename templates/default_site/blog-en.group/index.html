@@ -8,7 +8,7 @@
           <h1 class="text-uppercase">{exp:transcribe:replace name="titulo_blog"}</h1>
           <div class="separador"></div>
           <div id="menu-blog" class="pv-42">
-              <nav class="hidden-xs fz-18 p-ch-7">
+              <nav class="hidden-xs fz-18 m-ch-7 p-ch-7">
                 {exp:channel:categories channel="blog" style="off" dynamic="off" category_group="6"}
                   <a href="" class="btn-select fz-18 text-uppercase {if '{count}'== 1}active-select {else:if}{/if}">{category_name}</a>
                 {/exp:channel:categories}
@@ -114,7 +114,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="{site_url}frontend/app/assets/js/menu-movil-control.js"></script>
-    <script src="{site_url}frontend/app/assets/js/ingreso-control.js"></script>
+    <!-- <script src="{site_url}frontend/app/assets/js/ingreso-control.js"></script> -->
     <script src="{site_url}frontend/app/assets/js/smooth-scroll-active.js"></script>
   </body>
 </html>
