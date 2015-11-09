@@ -8579,7 +8579,6 @@ footer .col-md-3 p a:hover {
     padding-left: 9%;
     padding-left: 10%;
     line-height: 1.3;
-    display: block;
   }
   #faqs .container .section .panel-body {
     padding: 0% 6% 5% 10%;
@@ -8630,6 +8629,7 @@ footer .col-md-3 p a:hover {
   #media-kit .container .panel-group .panel-default .panel-title a p {
     font-size: 18px;
     padding-left: 12%;
+    display: block;
   }
 
   /*BLOG POST*/
