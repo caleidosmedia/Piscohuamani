@@ -18,6 +18,11 @@
               </nav>
           </div>
           {exp:channel:entries channel="blog" dynamic="off" orderby="date" limit="2" sort="desc" paginate= "bottom"}
+          {categories}
+            {if category_name == segment_2}
+              hola
+            {/if}
+          {/categories}
             <div class="post pb-42">
               <div class="imagen hidden-xs">
                 {imagen_blog}  
