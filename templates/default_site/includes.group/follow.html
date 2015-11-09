@@ -6,7 +6,9 @@
       <div class="container-social clearfix text-left">
         <a href="{enlace_1}" target="_blank" class="">
           <div class="overlay"> </div>
+          {exp:transcribe:language_links}
           <h1 class="m-0 text-uppercase {if_no_en} bold {if:else} light{/if}">{subtitulo_1}</h1>
+          {/exp:transcribe:language_links}
           <p class="fz-18 thin">{frase_1}</p>
           <div class="icon">
             {imagen_follow_1}
