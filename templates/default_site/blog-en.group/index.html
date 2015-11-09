@@ -9,7 +9,7 @@
           <div class="separador"></div>
           <div id="menu-blog" class="pv-42">
               <nav class="hidden-xs fz-18 m-ch-7 pv-ch-7 ph-ch-14">
-                {exp:channel:categories channel="blog" style="off" dynamic="off" category_group="6" show='{cat_id}'}
+                {exp:channel:categories channel="blog" style="off" dynamic="off" category_group="6"}
                   <a href="{category_url_title}" class="btn-select fz-18 text-uppercase {if '{count}'== 1}active-select {else:if}{/if}">{category_name}</a>
                 {/exp:channel:categories}
               </nav>
@@ -25,7 +25,7 @@
                 {/imagen_blog} 
               </div>
               <div class="imagen-movil hidden-lg hidden-md hidden-sm" style="background:url({site_url}frontend/app/assets/img/fotos/foto-eventos.png)"></div><!--movil-->
-              <div class="texto">
+              <div id="{category_url_title}" class="texto">
                   <p class="fecha mb-28">{fecha}</p>
                   <h2 class="text-uppercase">{titulo_blog}</h2>
                   {exp:word_limit total="65"}
@@ -56,6 +56,7 @@
                 <a href="">{tags}</a>
               </p>
             </div>
+            {/exp:channel:categories}
             {paginate}
               <div id="pagination">
                 <nav>
