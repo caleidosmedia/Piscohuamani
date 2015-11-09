@@ -7,7 +7,8 @@
         <a href="{enlace_1}" target="_blank" class="">
           <div class="overlay"> </div>
           <h1 class="m-0 text-uppercase light {if '{url_title}' == 'give_us_a_shout'} fz-26 {if:else} fz-36 {/if}">{subtitulo_1}</h1>
-          {if no_en} espaniol {if:else} english {/if}
+          {exp:transcribe:language_abbreviation}
+          {if "{exp:transcribe:language_abbreviation}" == "es"} espaniol {if:else} english {/if}
           <p class="fz-18 thin">{frase_1}</p>
           <div class="icon">
             {imagen_follow_1}
