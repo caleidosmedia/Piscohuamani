@@ -8,7 +8,7 @@
           <h1 class="text-uppercase">{exp:transcribe:replace name="titulo_blog"}</h1>
           <div class="separador"></div>
           <div id="menu-blog" class="pv-42">
-              <nav class="hidden-xs fz-18 m-ch-7 p-ch-7">
+              <nav class="hidden-xs fz-18 m-ch-7 pv-ch-7 ph-ch-14">
                 {exp:channel:categories channel="blog" style="off" dynamic="off" category_group="6"}
                   <a href="" class="btn-select fz-18 text-uppercase {if '{count}'== 1}active-select {else:if}{/if}">{category_name}</a>
                 {/exp:channel:categories}
