@@ -1881,6 +1881,12 @@ footer {
 				padding: 7%;
 				@include transition(none);
 			}
+			h1 {
+				font-size: 30px!important;
+			}
+			p {
+				font-size: 16px !important;
+			}
 		}
 	}
 	/*FOOTER*/
