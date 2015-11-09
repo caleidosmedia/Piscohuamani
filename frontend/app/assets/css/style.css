@@ -8831,12 +8831,12 @@ footer .col-md-3 p a:hover {
   }
 }
 /*THANKS RESPONSIVE*/
-#thanks-contact {
-  width: 100%;
-}
 #thanks-contact h3 {
   font-size: 20px;
   line-height: 1.5;
+}
+#thanks-contact .thanks-box {
+  width: 100%;
 }
 
 /*
