@@ -4,6 +4,7 @@
       <h3 class="text-left fz-45" style="font-family:'Across'">{leyenda_follow}</h3>
       <h2 class="text-left text-uppercase pl-42-md ml-7-md pl-0-xs ml-0-xs text-uppercase fz-40">{title}</h2>
       <div class="container-social clearfix text-left">
+        {exp:transcribe:language_abbreviation}
         <a href="{enlace_1}" target="_blank" class="">
           <div class="overlay"> </div>
           <h1 class="m-0 text-uppercase {if '{lang}'=='es'}bold {if:else} light{/if}">{subtitulo_1}</h1>
@@ -44,6 +45,7 @@
             {/imagen_follow_4}
           </div>
         </a>
+        {/exp:transcribe:language_abbreviation}
       </div>
     {/exp:channel:entries}
     </div>
