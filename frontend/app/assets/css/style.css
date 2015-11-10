@@ -8367,11 +8367,11 @@ footer .col-md-3 p a:hover {
     font-size: 45px;
   }
   #events .row .gallery-button-left, #slider-events .row .gallery-button-left {
-    left: 10px;
+    left: 20px;
     top: 280px;
   }
   #events .row .gallery-button-right, #slider-events .row .gallery-button-right {
-    right: 10px;
+    right: 20px;
   }
   #events .row .gallery-button-left, #slider-events .row .gallery-button-left,
   #events .row .gallery-button-right,
