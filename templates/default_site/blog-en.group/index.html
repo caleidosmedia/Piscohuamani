@@ -27,9 +27,9 @@
                     <div class="imagen hidden-xs"> 
                       <img src="{image:url}" alt="">
                     </div>
-                    <div class="imagen-movil hidden-lg hidden-md hidden-sm" style="background:url({image:url})"></div><!--movil-->
+                    <div class="imagen-movil bg-img-block hidden-lg hidden-md hidden-sm" style="background-image:url({image:url})"></div><!--movil-->
                   {/imagen_blog}
-                  <div class="texto">
+                  <div class="texto pt-28-xs pt-28-sm">
                       <p class="fecha mb-28">{current_time format="%M %j"}</p>
                       <h2 class="text-uppercase">{titulo_blog}</h2>
                       {exp:word_limit total="65"}

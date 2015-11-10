@@ -8461,8 +8461,6 @@ footer .col-md-3 p a:hover {
   .site-content .content-blog .post .imagen-movil {
     width: 100%;
     height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
   }
   .site-content .content-blog .post .texto {
     padding-top: 15%;
@@ -8481,16 +8479,13 @@ footer .col-md-3 p a:hover {
   }
   .site-content .content-blog .post .botons button {
     width: 100%;
-    background-color: #A05324;
     -webkit-transition: none;
     -moz-transition: none;
     transition: none;
-    border-color: #A05324;
     height: 50px;
   }
   .site-content .content-blog .post .botons button a {
-    color: #fff;
-    font-size: 22px;
+    font-size: 22px !important;
   }
   .site-content .content-blog .post .botons .social {
     padding-top: 25px;

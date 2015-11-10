@@ -1926,8 +1926,6 @@ footer {
 				.imagen-movil {
 					width: 100%;
 					height: 500px;
-					background-position: center;
-  				background-repeat: no-repeat;
 				}
 				.texto {
 					padding-top: 15%;
@@ -1947,13 +1945,10 @@ footer {
 				.botons {
 					button {
 						width: 100%;
-						background-color: #A05324;
 						@include transition(none);
-						border-color: #A05324;
 						height: 50px;
 						a {
-							color: #fff;
-							font-size: 22px;
+							font-size: 22px!important;
 						}
 					}
 					.social {
