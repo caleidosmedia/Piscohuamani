@@ -8619,8 +8619,6 @@ footer .col-md-3 p a:hover {
   }
   #blog-post .container h1 {
     color: #8d744a;
-    font-family: "trajan-pro-3";
-    font-size: 21px;
   }
   #blog-post .container .separador {
     border-bottom: 1px solid #8d744a;
@@ -8647,9 +8645,6 @@ footer .col-md-3 p a:hover {
   }
   #blog-post .container .texto .fecha {
     font-size: 14px;
-  }
-  #blog-post .container .texto p {
-    line-height: 1.9;
   }
   #blog-post .container .texto .gorro {
     margin: 10% 0;

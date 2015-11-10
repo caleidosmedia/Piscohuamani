@@ -15,7 +15,7 @@
               </nav>
               <nav class="hidden-lg hidden-md hidden-sm"><!--movil-->
                 {exp:channel:categories channel="blog" category_group="6" show="23" limit="1" style="off" dynamic="off"}
-                  <a href="{site_url}{exp:transcribe:language_abbreviation}/blog/{category_url_title}" class="btn-select fz-18 active-select">{category_url_title}</a></br>
+                  <a href="{site_url}{exp:transcribe:language_abbreviation}/blog/{category_url_title}" class="btn-select fz-18 active-select">{category_name}</a></br>
                 {/exp:channel:categories}
               </nav>
           </div>
@@ -36,13 +36,13 @@
                         <span class="parrafo fz-18 mb-28">{texto_blog}</span>
                       {/exp:word_limit}
                   </div>
-                  <div class="botons clearfix">
+                  <div class="botons clearfix mt-28-xs mt-28-sm">
                     <button class="relative">
                         <a href="{site_url}blog/blog-interno/{url_title}" class="text-white fz-21 relative text-uppercase" style="z-index:1">{exp:transcribe:replace name="button_blog"}</a>
                         <div class="overlay absolute minhp-100"></div>
                     </button>
                     <div class="social clearfix pl-0-xs">
-                      <p class="fecha share text-uppercase">{exp:transcribe:replace name="share_blog"}:</p>
+                      <p class="fecha share text-uppercase ml-0-xs ml-0-sm">{exp:transcribe:replace name="share_blog"}:</p>
                       <li class="mv-0 mh-7 text-center">
                         <a href="http://www.facebook.com/sharer.php?u={facebook_blog}" target="_blank"><span class="icon-facebook">&#xea8c;</span></a>
                       </li>
