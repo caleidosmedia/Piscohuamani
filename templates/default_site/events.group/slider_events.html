@@ -1,13 +1,28 @@
 {exp:channel:entries channel="events" dinamyc="off" sort="asc"}
-  <div id="#{count}" class="text-opacity hidden events-slide" data-index="{count}" data-current="0">
+  <div id="#{count}" class="text-opacity hidden events-slide" data-index="{count}"
+  {if "{entry_id}" == "{embed:selected_id}"}
+  data-current="1"
+  {if:else}
+  data-current="0"
+  {/if}
+  >
     <h2 class="text-uppercase mt-0-xs mt-0-sm">{titulo_events}</h2>
     <div class="separador mt-14 mb-28"></div>
     <p class="fz-20 thin">{fecha_events}</p><!-- <sup>th</sup> -->
     <h3 class="p-0 m-0 text-uppercase">{lugar_events}</h3>
     <p class="fz-19 pt-21 thin">{introduccion_events}</p>
+    <form action="/events" method="post">
+      <input type="hidden" name="XID" value="{XID_HASH}" />
+      <input type="hidden" value="{entry_id}" name="selected">
     <button class="see-more relative">
-      <a href="{path='events'}" class="text-uppercase relative fz-20">{exp:transcribe:replace name="button_event"}</a>
+
+      <!-- <a href="{exp:transcribe:language_abbreviation}/events" class="text-uppercase relative fz-20">{exp:transcribe:replace name="button_event"}</a> -->
+     <input type="submit" value="enviar" class="text-uppercase relative fz-20">
       <div class="overlay absolute minhp-100 btn-block"></div>
-    </button>
+    </button> 
+
+    </form>
   </div>
+
 {/exp:channel:entries}
+
