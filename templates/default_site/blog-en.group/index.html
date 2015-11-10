@@ -23,13 +23,11 @@
             {if category_url_title == segment_2}
               {exp:channel:entries channel="blog" dynamic="off" orderby="date" limit="2" sort="desc" paginate= "bottom" category="{category_id}"}
                 <div class="post pb-42">
-                  <div class="imagen hidden-xs">
-                    {imagen_blog}  
+                  {imagen_blog} 
+                    <div class="imagen hidden-xs"> 
                       <img src="{image:url}" alt="">
-                    {/imagen_blog} 
-                  </div>
-                  {imagen_blog}
-                  <div class="imagen-movil hidden-lg hidden-md hidden-sm" style="background:url({image:url})"></div><!--movil-->
+                    </div>
+                    <div class="imagen-movil hidden-lg hidden-md hidden-sm" style="background:url({image:url})"></div><!--movil-->
                   {imagen_blog}
                   <div class="texto">
                       <p class="fecha mb-28">{current_time format="%M %j"}</p>
