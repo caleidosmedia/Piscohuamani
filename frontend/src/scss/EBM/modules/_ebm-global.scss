@@ -2200,8 +2200,8 @@ footer {
 				font-weight: lighter;
 			}
 		}
-		.gallery-child .container .gallery-button-right,
-		.gallery-child .container .gallery-button-left {
+		.gallery-wrapper.row .container .gallery-button-right,
+		.gallery-wrapper.row .container .gallery-button-left {
 			top: 90px!important;
 		}
 		.gallery-child .container .gallery-button-right {
@@ -2216,7 +2216,7 @@ footer {
     	margin-top: 0px!important;
 			.container-text-opacity {
 				bottom: 40px;
-				width: auto;
+				width: auto!important;
 			}
 			.gallery_button_left,
 			.gallery_button_right {

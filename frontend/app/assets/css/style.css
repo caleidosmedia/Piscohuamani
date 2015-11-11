@@ -8716,8 +8716,8 @@ footer .col-md-3 p a:hover {
     font-size: 20px;
     font-weight: lighter;
   }
-  #slider-events .gallery-child .container .gallery-button-right,
-  #slider-events .gallery-child .container .gallery-button-left {
+  #slider-events .gallery-wrapper.row .container .gallery-button-right,
+  #slider-events .gallery-wrapper.row .container .gallery-button-left {
     top: 90px !important;
   }
   #slider-events .gallery-child .container .gallery-button-right {
@@ -8733,7 +8733,7 @@ footer .col-md-3 p a:hover {
   }
   #slider-events .container .container-text-opacity {
     bottom: 40px;
-    width: auto;
+    width: auto !important;
   }
   #slider-events .container .gallery_button_left {
     left: 0% !important;
