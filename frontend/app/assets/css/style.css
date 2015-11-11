@@ -8687,7 +8687,8 @@ footer .col-md-3 p a:hover {
     background-position: left;
     background-size: cover;
   }
-  #slider-events .gallery-child .flickity-viewport {
+  #slider-events .gallery-child .flickity-viewport,
+  #slider-events .gallery-child .gallery-cell {
     min-height: 100% !important;
     min-height: 100vh !important;
   }
@@ -8718,27 +8719,30 @@ footer .col-md-3 p a:hover {
   #slider-events .container {
     min-height: 100% !important;
     min-height: 100vh !important;
+    margin-top: 0px !important;
   }
   #slider-events .container .container-text-opacity {
-    bottom: 90px;
+    bottom: 40px;
   }
-  #slider-events .container .slider_back_experience,
-  #slider-events .container .slider_next_experience {
+  #slider-events .container .gallery_button_left,
+  #slider-events .container .gallery_button_right {
     top: 90px !important;
   }
-  #slider-events .container .slider_back_experience {
-    left: 0%;
+  #slider-events .container .gallery_button_left {
+    left: 0% !important;
   }
-  #slider-events .container .slider_next_experience {
-    right: 0%;
+  #slider-events .container .gallery_button_right {
+    right: 0% !important;
   }
 
   #galeria {
     padding: 0;
   }
+  #galeria #container-ronda ul li {
+    height: 170px;
+  }
   #galeria .container {
     padding: 0;
-    margin-top: 75px;
   }
   #galeria .container .texto-evento {
     padding: 0 16%;

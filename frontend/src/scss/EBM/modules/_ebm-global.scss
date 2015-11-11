@@ -2171,7 +2171,8 @@ footer {
 		position: relative;
 		background-position: left;
   	background-size: cover;
-  	.gallery-child .flickity-viewport {
+  	.gallery-child .flickity-viewport,
+  	.gallery-child .gallery-cell {
   	  min-height: 100% !important;
     	min-height: 100vh !important;
     }
@@ -2202,26 +2203,29 @@ footer {
 		.container {
 			min-height: 100% !important;
     	min-height: 100vh !important;
+    	margin-top: 0px!important;
 			.container-text-opacity {
-				bottom: 90px;
+				bottom: 40px;
 			}
-			.slider_back_experience,
-			.slider_next_experience {
+			.gallery_button_left,
+			.gallery_button_right {
 				top: 90px!important;
 			}
-			.slider_back_experience {
-				left: 0%;
+			.gallery_button_left {
+				left: 0%!important;
 			}
-			.slider_next_experience {
-				right: 0%;
+			.gallery_button_right {
+				right: 0%!important;
 			}
 		}
 	}
 	#galeria {
 		padding: 0;
+		#container-ronda ul li {
+			height: 170px;
+		}
 		.container {
 			padding: 0;
-			margin-top: 75px;
 			.texto-evento {
 				padding: 0 16%;
 				p {
