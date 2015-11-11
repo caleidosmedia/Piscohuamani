@@ -30,7 +30,7 @@
         <section id="galeria">
           <div class="container pv-21-md pv-0-xs">
             <div class="grid">
-              {exp:channel:entries channel="events" dinamyc="off"}
+              {exp:channel:entries channel="events" dinamyc="off" sort="asc"}
               <div class="ronda-1 hidden" data-A="{entry_id}" data-B="" data-C="{url_title}" data-D="{group_id}" data-index="{absolute_count}" {if "{entry_id}" == "{member_id}"} data-current="1"{if:else}data-current="0"{/if}>
                 <ul class="row mg-0 pd-0">
                   {exp:channel_images:images channel="events" field="{galeria_de_imagenes}" image_id="{entry_id}" selected_id="{post:selected}}
