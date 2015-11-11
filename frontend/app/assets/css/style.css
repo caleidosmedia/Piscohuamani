@@ -8718,12 +8718,12 @@ footer .col-md-3 p a:hover {
   }
   #slider-events .gallery-wrapper.row .container .gallery-button-right,
   #slider-events .gallery-wrapper.row .container .gallery-button-left {
-    top: 90px !important;
+    top: 40px !important;
   }
-  #slider-events .gallery-child .container .gallery-button-right {
+  #slider-events .gallery-wrapper.row .container .gallery-button-right {
     right: 0% !important;
   }
-  #slider-events .gallery-child .container .gallery-button-left {
+  #slider-events .gallery-wrapper.row .container .gallery-button-left {
     left: 0% !important;
   }
   #slider-events .container {

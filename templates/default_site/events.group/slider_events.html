@@ -11,7 +11,7 @@
     <p class="fz-20 thin">{fecha_events}</p><!-- <sup>th</sup> -->
     <h3 class="p-0 m-0 text-uppercase">{lugar_events}</h3>
     <p class="fz-19 pt-21 thin">{introduccion_events}</p>
-    <form action="/events" method="post">
+    <form action="{site_url}{exp:transcribe:language_abbreviation}/{exp:transcribe:replace name='nav_event'}" method="post">
       <input type="hidden" name="XID" value="{XID_HASH}" />
       <input type="hidden" value="{entry_id}" name="selected">
     <button class="see-more relative">
