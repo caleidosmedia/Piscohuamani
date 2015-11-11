@@ -1,5 +1,5 @@
 {exp:channel:entries channel="events" dinamyc="off" sort="asc"}
 	{image_events}
-		<div class="gallery-cell {if '{entry_id}' == '{post:selected}'} is-selected {if:else}{/if}" style="background-image:url({image:url}); background-position-y: 30%;" data-entry="{entry_id}"><div class="overlay-events"></div></div>
+		<div {if '{entry_id}' == '{post:selected}'} class="gallery-cell is-selected" {if:else}class="gallery-cell"{/if} style="background-image:url({image:url}); background-position-y: 30%;" data-entry="{entry_id}"><div class="overlay-events"></div></div>
 	{/image_events}
 {/exp:channel:entries}
