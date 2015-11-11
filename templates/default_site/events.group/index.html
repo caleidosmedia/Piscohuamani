@@ -31,11 +31,11 @@
           <div class="container pv-21-md pv-0-xs">
             <div class="grid">
               {exp:channel:entries channel="events" dinamyc="off"}
-              <div class="ronda-1 hidden" data-A="{entry_id}" data-B="{member_id}" data-C="" data-index="{absolute_count}" {if "{entry_id}" == "{member_id}"} data-current="1"{if:else}data-current="0"{/if}>
+              <div class="ronda-1 hidden" data-A="{entry_id}" data-B="" data-C="{url_title}" data-index="{absolute_count}" {if "{entry_id}" == "{member_id}"} data-current="1"{if:else}data-current="0"{/if}>
                 <ul class="row mg-0 pd-0">
                   {exp:channel_images:images channel="events" field="{galeria_de_imagenes}" selected_id="{post:selected}}
                     {galeria_de_imagenes}
-                    <li class="col-md-4 col-xs-6" data-A="{entry_id}" data-B="{member_id}"><a href="{image:url}" class="grid-image"><img src="{image:url}" alt=""></a></li>
+                    <li class="col-md-4 col-xs-6" data-A="{image:url}" data-B="{imagen:url_title}" data-B="{imagen: entrada_id}"><a href="{image:url}" class="grid-image"><img src="{image:url}" alt=""></a></li>
                     {/galeria_de_imagenes}
                   {/exp:channel_images:images}
                 </ul>
