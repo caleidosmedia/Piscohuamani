@@ -35,7 +35,7 @@
                 <ul class="row mg-0 pd-0">
                   {exp:channel_images:images channel="events" field="{galeria_de_imagenes}" image_id="{entry_id}" selected_id="{post:selected}}
                     {galeria_de_imagenes}
-                    <li class="col-md-4 col-xs-6" data-A="{image_url_title}" data-B="{channel_id}" data-C="{field}" data-D="{cover_only}" data-E="{force_cover}"><a href="{image:url}" class="grid-image"><img src="{image:url}" alt=""></a></li>
+                    <li class="col-md-4 col-xs-6" data-A="{entry_id}" data-B="{image_id}"><a href="{image:url}" class="grid-image"><img src="{image:url}" alt=""></a></li>
                     {/galeria_de_imagenes}
                   {/exp:channel_images:images}
                 </ul>
