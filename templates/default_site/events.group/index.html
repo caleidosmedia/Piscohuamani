@@ -31,11 +31,11 @@
           <div class="container pv-21-md pv-0-xs">
             <div class="grid">
               {exp:channel:entries channel="events" dinamyc="off"}
-              <div class="ronda-1 hidden" data-A="{entry_id}" data-B="" data-C="{url_title}" data-D="{imagen: id}" data-index="{absolute_count}" {if "{entry_id}" == "{member_id}"} data-current="1"{if:else}data-current="0"{/if}>
+              <div class="ronda-1 hidden" data-A="{entry_id}" data-B="" data-C="{url_title}" data-D="{group_id}" data-index="{absolute_count}" {if "{entry_id}" == "{member_id}"} data-current="1"{if:else}data-current="0"{/if}>
                 <ul class="row mg-0 pd-0">
                   {exp:channel_images:images channel="events" field="{galeria_de_imagenes}" image_id="{entry_id}" selected_id="{post:selected}}
                     {galeria_de_imagenes}
-                    <li class="col-md-4 col-xs-6" data-A="{image:url}" data-B="{imagen:url_title}" data-C="{imagen: entrada_id}" data-D="{imagen: id}" data-E="{image_id}" data-F="{image_id}"><a href="{image:url}" class="grid-image"><img src="{image:url}" alt=""></a></li>
+                    <li class="col-md-4 col-xs-6" data-A="{image_url_title}" data-B="{channel_id}" data-C="{field}" data-D="{cover_only}" data-E="{force_cover}"><a href="{image:url}" class="grid-image"><img src="{image:url}" alt=""></a></li>
                     {/galeria_de_imagenes}
                   {/exp:channel_images:images}
                 </ul>
