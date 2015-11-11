@@ -32,14 +32,9 @@
             <div class="grid">
               {exp:channel:entries channel="events" dinamyc="off" orderby="url_title"}
               <div class="ronda-1 hidden" data-index="{absolute_count}">
-                <ul class="row mg-0 pd-0
-                  {if "{entry_id}" == "{embed:selected_id}"}
-                  data-current="1"
-                  {if:else}
-                  data-current="0"
-                  {/if}
-                ">
-                  {exp:channel_images:images channel="events" field="{galeria_de_imagenes}" image_id="{entry_id}"}
+                <ul class="row mg-0 pd-0">
+                  {exp:channel_images:images channel="events" field="{galeria_de_imagenes}" {if "{image_id}" == "{embed:selected_id}"} data-current="1"{if:else} data-current="0"{/if}
+                "}
                     {galeria_de_imagenes}
                     <li class="col-md-4 col-xs-6"><a href="{image:url}" class="grid-image"><img src="{image:url}" alt=""></a></li>
                     {/galeria_de_imagenes}
