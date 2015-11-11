@@ -8687,6 +8687,10 @@ footer .col-md-3 p a:hover {
     background-position: left;
     background-size: cover;
   }
+  #slider-events .gallery-child .flickity-viewport {
+    min-height: 100% !important;
+    min-height: 100vh !important;
+  }
   #slider-events .event-movil {
     padding: 42px 16% 50px;
     position: absolute;
@@ -8711,12 +8715,30 @@ footer .col-md-3 p a:hover {
     font-size: 20px;
     font-weight: lighter;
   }
+  #slider-events .container {
+    min-height: 100% !important;
+    min-height: 100vh !important;
+  }
+  #slider-events .container .container-text-opacity {
+    bottom: 90px;
+  }
+  #slider-events .container .slider_back_experience,
+  #slider-events .container .slider_next_experience {
+    top: 90px !important;
+  }
+  #slider-events .container .slider_back_experience {
+    left: 0%;
+  }
+  #slider-events .container .slider_next_experience {
+    right: 0%;
+  }
 
   #galeria {
     padding: 0;
   }
   #galeria .container {
     padding: 0;
+    margin-top: 75px;
   }
   #galeria .container .texto-evento {
     padding: 0 16%;

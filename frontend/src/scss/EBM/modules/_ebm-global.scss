@@ -2171,6 +2171,10 @@ footer {
 		position: relative;
 		background-position: left;
   	background-size: cover;
+  	.gallery-child .flickity-viewport {
+  	  min-height: 100% !important;
+    	min-height: 100vh !important;
+    }
 		.event-movil {
 			padding: 42px 16% 50px;
   		position: absolute;
@@ -2195,11 +2199,29 @@ footer {
 				font-weight: lighter;
 			}
 		}
+		.container {
+			min-height: 100% !important;
+    	min-height: 100vh !important;
+			.container-text-opacity {
+				bottom: 90px;
+			}
+			.slider_back_experience,
+			.slider_next_experience {
+				top: 90px!important;
+			}
+			.slider_back_experience {
+				left: 0%;
+			}
+			.slider_next_experience {
+				right: 0%;
+			}
+		}
 	}
 	#galeria {
 		padding: 0;
 		.container {
 			padding: 0;
+			margin-top: 75px;
 			.texto-evento {
 				padding: 0 16%;
 				p {
