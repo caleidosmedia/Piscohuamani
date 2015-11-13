@@ -35,14 +35,14 @@ $(".btn-select:first-child").addClass("active-select");
 				$(".close").removeClass("show");
 			}
 		});
-		function remember(variable, inputId) {
-			var variable = localStorage.getItem("inputId");
-			$("#inputId").val(variable);
+		function remember(inputId) {
+			var variableName = localStorage.getItem("inputId");
+			$("#inputId").val(variableName);
 		}
-		remember(storedValueDay, day);
-		remember(storedValueMonth, month);
-		remember(storedValueYear, year);
-		remember(storedValueCountry, country);
+		remember(day);
+		remember(month);
+		remember(year);
+		remember(country);
 	});
 
 /*COOKIES*/
