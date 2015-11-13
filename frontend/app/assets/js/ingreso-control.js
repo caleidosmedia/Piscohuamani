@@ -24,7 +24,7 @@ $(".btn-select:first-child").addClass("active-select");
 
 
 
-	if (".close-checkbox").is(":checked") {
+	if ($(".close-checkbox").is(":checked")) {
 		var inputDay= document.getElementById("day");
 		localStorage.setItem("day", inputDay.value);
 		var storedValue = localStorage.getItem("day");
