@@ -1029,12 +1029,13 @@ footer {
  	.gallery-button-left {
  		bottom: -100px!important;
  		top: 0!important;
+ 		top:245px!important; 
  	}
  	.gallery-button-left {
- 		left: 4%!important;
+ 		left:-7%!important;
  	}
  	.gallery-button-right {
- 		right: 4%!important;
+ 		right: 7%!important;
  	}
  	.see-more {
  		display: none;
@@ -1075,6 +1076,7 @@ footer {
 			margin:0 -9px;
 			li{
 				padding:9px;
+				height: 240px;
 				div {
 					height: 100%;
 				}

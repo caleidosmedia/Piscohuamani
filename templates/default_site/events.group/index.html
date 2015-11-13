@@ -11,10 +11,10 @@
               {embed="events/img_events" selected_id="{post:selected}"}
             </div>
             <div class="container relative clearfix pt-42 mt-70 pl-42" style="z-index:3">
-              <div id="slider_back_experience" class="gallery-button-left" style="top:245px!important; left:-7%!important">
+              <div id="slider_back_experience" class="gallery-button-left">
                 <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-previo-blanco.png" alt="">
               </div>
-              <div id="slider_next_experience" class="gallery-button-right" style="top:245px!important; right:-7%!important">
+              <div id="slider_next_experience" class="gallery-button-right">
                 <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-blanco.png" alt=""> 
               </div> 
               <div class="container-text-opacity row pb-70 mb-70 pl-42 pr-70 absolute" style="padding-top: 30px; width:100%">
@@ -68,56 +68,6 @@
     <!-- <script src="{site_url}frontend/app/assets/js/smooth-scroll-active.js"></script> -->
     <script src="{site_url}frontend/app/assets/js/overlay-control.js"></script>
     <script>
-    // $(document).ready(function(){
-    //   // $(".gallery-cell").removeClass("is-selected");
-    //   // var dataNumberEntry = $(".gallery-cell").data("entry");
-    //   // if( dataNumberEntry == {post:selected}) {
-    //   //   $(this).addClass("is-selected");
-    //   // }
-    // });
     </script>
-    <!--<script>
-      $(document).ready(function(){
-        paginacion(".numeracion1", ".group-1");
-        paginacion(".numeracion2", ".group-2");
-        paginacion(".numeracion3", ".group-3");
-        function paginacion(hola, groupNumber){
-          $(hola).click(function(e){
-            e.preventDefault();
-            $(".numeracion").removeClass("active");
-            $(this).addClass("active");
-            $(".group").addClass("hidden");
-            $(groupNumber).removeClass("hidden");
-          });
-        }
-        callBtn(".first", ".numeracion1", ".group-1");
-        callBtn(".last", ".numeracion3", ".group-3");
-        function callBtn(btn, hola, groupNumber){
-          $(btn).click(function(e){
-            e.preventDefault();
-            $(".numeracion").removeClass("active");
-            $(hola).addClass("active");
-            $(".group").addClass("hidden");
-            $(groupNumber).removeClass("hidden");
-          });
-        }
-         
-        $(".li-next").click(function(e){
-          e.preventDefault();
-          // $item = $item.focus(); 
-          var n = $(".numeracion").data("id"); 
-          $(".numeracion")[n+1].click();
-          var $(".numeracion") = $(".numeracion")[n+1];
-        });
-        $(".li-previous").click(function(e){
-          e.preventDefault();
-          // $item = $item.prev();
-          var n = $(".numeracion").data("id") 
-          $(".numeracion")[n-1].click();
-          var $(".numeracion") = $(".numeracion")[n-1];
-        });
-
-      });
-    </script>-->
   </body>
 </html> 

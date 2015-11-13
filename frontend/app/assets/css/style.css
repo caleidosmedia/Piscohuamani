@@ -7521,12 +7521,13 @@ footer .col-md-3 p a:hover {
 #slider-events .gallery-button-left {
   bottom: -100px !important;
   top: 0 !important;
+  top: 245px !important;
 }
 #slider-events .gallery-button-left {
-  left: 4% !important;
+  left: -7% !important;
 }
 #slider-events .gallery-button-right {
-  right: 4% !important;
+  right: 7% !important;
 }
 #slider-events .see-more {
   display: none;
@@ -7567,6 +7568,7 @@ footer .col-md-3 p a:hover {
 }
 #galeria #container-ronda ul li {
   padding: 9px;
+  height: 240px;
 }
 #galeria #container-ronda ul li div {
   height: 100%;
