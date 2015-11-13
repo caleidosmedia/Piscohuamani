@@ -1320,6 +1320,14 @@ footer {
 						}
 					}
 				}
+				.grid ul {
+					li {
+						height: 280px;
+						.contenedor-imagen {
+							height: 100%;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -1966,7 +1974,7 @@ footer {
 					li {
 						display: inline-block;
 						a {
-							font-size: 27px;
+							font-size: 20px;
 						}
 						&.active a {
 							border: none;
