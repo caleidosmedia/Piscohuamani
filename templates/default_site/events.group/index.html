@@ -34,7 +34,11 @@
               <div class="ronda-1 hidden" data-index="{absolute_count}" {if "{entry_id}" == "{post:selected}"} data-current="1"{if:else}data-current="0"{/if}>
                 <ul class="row mg-0 pd-0">
                     {galeria_de_imagenes}
-                    <li class="col-md-4 col-xs-6"><a href="{image:url}" class="grid-image"></a><div class="btn-block bg-img-block" style="background-image:url({image:url})"></div></li>
+                    <li class="col-md-4 col-xs-6">
+                      <a href="{image:url}" class="grid-image">
+                        <div class="btn-block bg-img-block" style="background-image:url({image:url})"></div>
+                      </a>
+                    </li>
                     {/galeria_de_imagenes} 
                 </ul>
               </div>
