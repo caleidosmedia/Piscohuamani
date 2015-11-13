@@ -35,14 +35,14 @@ $(".btn-select:first-child").addClass("active-select");
 				$(".close").removeClass("show");
 			}
 		});
-		function remember(inputId) {
-			var variableName = localStorage.getItem("inputId");
-			$("#inputId").val(variableName);
-		}
-		remember(day);
-		remember(month);
-		remember(year);
-		remember(country);
+		var storedDay = localStorage.getItem("day");
+		var storedMonth = localStorage.getItem("month");
+		var storedYear = localStorage.getItem("year");
+		var storedCountry = localStorage.getItem("country");
+		$("#day").val(storedDay);
+		$("#month").val(storedMonth);
+		$("#year").val(storedYear);
+		$("#country").val(storedCountry);
 	});
 
 /*COOKIES*/
