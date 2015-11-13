@@ -7567,10 +7567,8 @@ footer .col-md-3 p a:hover {
 }
 #galeria #container-ronda ul li {
   padding: 9px;
-  height: 240px;
 }
-#galeria #container-ronda ul li img {
-  width: 100%;
+#galeria #container-ronda ul li div {
   height: 100%;
 }
 #galeria .grid #overlay {
