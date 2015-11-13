@@ -21,16 +21,28 @@ $(".btn-select:first-child").addClass("active-select");
 
 	$(document).ready(function(){
 		var inputDay= document.getElementById("day");
+		var inputMonth= document.getElementById("month");
+		var inputYear= document.getElementById("year");
+		var inputCountry= document.getElementById("country");
 		$(".close-checkbox").click(function(){
 			if ($(this).is(":checked")) {
 				$(".close").addClass("show");
 				localStorage.setItem("day", inputDay.value);
+				localStorage.setItem("month", inputMonth.value);
+				localStorage.setItem("year", inputYear.value);
+				localStorage.setItem("country", inputYear.value);
 			}else {
 				$(".close").removeClass("show");
 			}
 		});
-		var storedValue = localStorage.getItem("day");
-		$("#day").val(storedValue);
+		function remember(variable, inputId) {
+			var variable = localStorage.getItem("inputId");
+			$("#inputId").val(variable);
+		}
+		remember(storedValueDay, day);
+		remember(storedValueMonth, month);
+		remember(storedValueYear, year);
+		remember(storedValueCountry, country);
 	});
 
 /*COOKIES*/
