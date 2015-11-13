@@ -20,14 +20,16 @@ $(".btn-select").click(function(event) {
 $(".btn-select:first-child").addClass("active-select");
 
 	$(document).ready(function(){
+		var inputDay= document.getElementById("day");
 		$(".close-checkbox").click(function(){
 			if ($(this).is(":checked")) {
-				$(".close").toggleClass("show");
-				var inputDay= document.getElementById("day");
+				$(".close").addClass("show");
 				localStorage.setItem("day", inputDay.value);
-				var storedValue = localStorage.getItem("day");
+			}else {
+				$(".close").removeClass("show");
 			}
 		});
+		var storedValue = localStorage.getItem("day");
 		$("#day").val(storedValue);
 	});
 
