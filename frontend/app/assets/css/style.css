@@ -7785,7 +7785,7 @@ footer .col-md-3 p a:hover {
   padding-right: 2%;
 }
 #media-kit .panel-group .panel-default .panel-body {
-  padding-top: 7%;
+  padding-top: 35px;
 }
 #media-kit .panel-group .panel-default .panel-body .grid .descarga {
   padding: 7% 4% 18%;
@@ -8019,10 +8019,10 @@ footer .col-md-3 p a:hover {
     margin-left: 0;
     width: 50% !important;
   }
-  #formulario .action .btn-group button {
-    padding: 0 7px !important;
-    float: right;
-    width: 35px !important;
+  #formulario .action .btn-group .btn-default {
+    width: 50px;
+    height: 35px;
+    padding: 6px 0;
   }
   #formulario .action select,
   #formulario .action .btn-group button {
