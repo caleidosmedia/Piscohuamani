@@ -1,6 +1,10 @@
 /*INGRESO*/
 $(document).ready(function(){
 	$(".btn-language.active").addClass("active-btn");
+		/*CHECKBOX*/
+	$(".box").click(function(){
+		$(".close").toggleClass("show");
+	});
 });
 
 $(".btn-language").click(function() {
@@ -15,17 +19,12 @@ $(".btn-select").click(function(event) {
   $(this).toggleClass("active-select");
 });
 
-/*CHECKBOX*/
-$(".box").click(function(){
-	$(".close").toggleClass("show");
-});
-
 /*media kit*/
 $(".btn-select:first-child").addClass("active-select");
 
 
 
-	$(".close-checkbox").is(":checked") {
+	if (".close-checkbox").is(":checked") {
 		var inputDay= document.getElementById("day");
 		localStorage.setItem("day", inputDay.value);
 		var storedValue = localStorage.getItem("day");
