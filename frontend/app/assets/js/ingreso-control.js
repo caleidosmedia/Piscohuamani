@@ -23,6 +23,17 @@ $(".box").click(function(){
 /*media kit*/
 $(".btn-select:first-child").addClass("active-select");
 
+
+
+	$(".close-checkbox").is(":checked") {
+		var inputDay= document.getElementById("day");
+		localStorage.setItem("day", inputDay.value);
+		var storedValue = localStorage.getItem("day");
+	}
+	$(document).ready(function(){
+		$("#day").val(storedValue);
+	});
+
 /*COOKIES*/
 
 // var close = $(".close-checkbox");
