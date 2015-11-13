@@ -19,15 +19,15 @@ $(".btn-select").click(function(event) {
 /*media kit*/
 $(".btn-select:first-child").addClass("active-select");
 
-
-
-	if ($(".close-checkbox").is(":checked")) {
-		$(".close").toggleClass("show");
-		var inputDay= document.getElementById("day");
-		localStorage.setItem("day", inputDay.value);
-		var storedValue = localStorage.getItem("day");
-	}
 	$(document).ready(function(){
+		$(".close-checkbox").click(function(){
+			if ($(this).is(":checked")) {
+				$(".close").toggleClass("show");
+				var inputDay= document.getElementById("day");
+				localStorage.setItem("day", inputDay.value);
+				var storedValue = localStorage.getItem("day");
+			}
+		});
 		$("#day").val(storedValue);
 	});
 
