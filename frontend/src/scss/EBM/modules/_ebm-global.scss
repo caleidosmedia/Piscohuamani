@@ -514,6 +514,7 @@ $separator-height-control: 1px;
 		width: 50%;
 		height: auto;
 		top: -150px;
+		left: -50%!important;
 	}
 	.gallery-wrapper{
 		position: relative;
@@ -1035,7 +1036,7 @@ footer {
  		left:-7%!important;
  	}
  	.gallery-button-right {
- 		right: 7%!important;
+ 		right: -7%!important;
  	}
  	.see-more {
  		display: none;
@@ -2205,10 +2206,10 @@ footer {
 			top: 40px!important;
 		}
 		.gallery-wrapper.row .container .gallery-button-right {
-			right: 0%!important;
+			right: 7%!important;
 		}
 		.gallery-wrapper.row .container .gallery-button-left {
-			left: 0%!important;
+			left: 7%!important;
 		}
 		.container {
 			min-height: 100% !important;

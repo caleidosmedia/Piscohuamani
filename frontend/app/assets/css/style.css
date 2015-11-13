@@ -6979,6 +6979,7 @@ body .slider-text-oficial2 {
   width: 50%;
   height: auto;
   top: -150px;
+  left: -50% !important;
 }
 #the-goods .gallery-wrapper, #events .gallery-wrapper, #slider-events .gallery-wrapper {
   position: relative;
@@ -7527,7 +7528,7 @@ footer .col-md-3 p a:hover {
   left: -7% !important;
 }
 #slider-events .gallery-button-right {
-  right: 7% !important;
+  right: -7% !important;
 }
 #slider-events .see-more {
   display: none;
@@ -8721,10 +8722,10 @@ footer .col-md-3 p a:hover {
     top: 40px !important;
   }
   #slider-events .gallery-wrapper.row .container .gallery-button-right {
-    right: 0% !important;
+    right: 7% !important;
   }
   #slider-events .gallery-wrapper.row .container .gallery-button-left {
-    left: 0% !important;
+    left: 7% !important;
   }
   #slider-events .container {
     min-height: 100% !important;
