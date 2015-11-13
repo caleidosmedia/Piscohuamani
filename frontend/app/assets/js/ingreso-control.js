@@ -2,9 +2,9 @@
 $(document).ready(function(){
 	$(".btn-language.active").addClass("active-btn");
 		/*CHECKBOX*/
-	$(".box").click(function(){
+	if($(".box").click()){
 		$(".close").toggleClass("show");
-	});
+	};
 });
 
 $(".btn-language").click(function() {
