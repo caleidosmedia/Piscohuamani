@@ -511,10 +511,9 @@ $separator-height-control: 1px;
 	.slider-content {
 		position: relative;
 		// padding-right: 9%;
-		width: 50%!important;
+		width: 50%;
 		height: auto;
 		top: -150px;
-		left: -50%;
 	}
 	.gallery-wrapper{
 		position: relative;
@@ -1744,9 +1743,6 @@ footer {
 			position: relative;
 			top: 0px!important;
 		}
-	}
-	.slider-content {
-		left: none!important;
 	}
 	#the-goods .flickity-viewport img {
     padding-top: 180px!important;
