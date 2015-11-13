@@ -6976,7 +6976,7 @@ body .slider-text-oficial2 {
 }
 #the-goods .slider-content, #events .slider-content, #slider-events .slider-content {
   position: relative;
-  width: 50%;
+  width: 50% !important;
   height: auto;
   top: -150px;
   left: -50%;
