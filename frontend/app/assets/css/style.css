@@ -6676,7 +6676,7 @@ body .slider-text-oficial2 {
   width: 100%;
   height: 100%;
   margin: 0;
-  visibility: hidden;
+  opacity: 0;
 }
 #formulario label {
   float: left;
@@ -6692,7 +6692,7 @@ body .slider-text-oficial2 {
 
 /*Active checkout*/
 .show {
-  display: block;
+  opacity: 1;
 }
 
 /*
