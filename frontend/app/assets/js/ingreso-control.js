@@ -2,9 +2,6 @@
 $(document).ready(function(){
 	$(".btn-language.active").addClass("active-btn");
 		/*CHECKBOX*/
-	if($(".box").click()){
-		$(".close").toggleClass("show");
-	};
 });
 
 $(".btn-language").click(function() {
@@ -25,6 +22,7 @@ $(".btn-select:first-child").addClass("active-select");
 
 
 	if ($(".close-checkbox").is(":checked")) {
+		$(".close").toggleClass("show");
 		var inputDay= document.getElementById("day");
 		localStorage.setItem("day", inputDay.value);
 		var storedValue = localStorage.getItem("day");
