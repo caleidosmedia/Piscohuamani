@@ -6979,7 +6979,7 @@ body .slider-text-oficial2 {
   width: 50%;
   height: auto;
   top: -150px;
-  left: -50% !important;
+  left: -50%;
 }
 #the-goods .gallery-wrapper, #events .gallery-wrapper, #slider-events .gallery-wrapper {
   position: relative;
@@ -8272,6 +8272,10 @@ footer .col-md-3 p a:hover {
     width: auto !important;
     position: relative;
     top: 0px !important;
+  }
+
+  .slider-content {
+    left: none !important;
   }
 
   #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
