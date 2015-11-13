@@ -30,7 +30,7 @@ $(".btn-select:first-child").addClass("active-select");
 				localStorage.setItem("day", inputDay.value);
 				localStorage.setItem("month", inputMonth.value);
 				localStorage.setItem("year", inputYear.value);
-				localStorage.setItem("country", inputYear.value);
+				localStorage.setItem("country", inputCountry.value);
 			}else {
 				$(".close").removeClass("show");
 			}
