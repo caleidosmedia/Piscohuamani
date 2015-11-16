@@ -6677,6 +6677,7 @@ body .slider-text-oficial2 {
   height: 100%;
   margin: 0;
   opacity: 0;
+  cursor: pointer;
 }
 #formulario label {
   float: left;
