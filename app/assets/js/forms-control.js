@@ -58,21 +58,3 @@ $(document).ready(function(){
     $(".close").toggleClass("show");
   });
 });
-
-//Contact
-function enableordisable(){
-if($(".name").val() !== ""){
-  if($(".e-mail").val() !== ""){
-    if($(".message").val() !== ""){
-      $(".send").removeAttr("disabled");
-      } else{
-        $(".send").attr("disabled", "disabled");
-      }
-    }
-  }
-}
-$(".name").keypress(enableordisable);
-$(".e-mail").keypress(enableordisable);
-$(".message").keypress(enableordisable);
-
-//Ingresar
