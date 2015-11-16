@@ -43,6 +43,9 @@ $(".btn-select:first-child").addClass("active-select");
 		$("#month").val(storedMonth);
 		$("#year").val(storedYear);
 		$("#country").val(storedCountry);
+
+		// var logeado = $(".enter").click();
+		// localStorage.logeado = $(".enter").click();
 	});
 
 /*COOKIES*/
