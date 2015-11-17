@@ -289,7 +289,7 @@
 		if (logeoHome == "hola") {
 		  console.log ("Redireccionar")
 		}
-		$("#logear").submit(function(){
+		$("#logear").on("click", function(){
 			if($(".close-checkbox").is(":checked")) {
 				localStorage.setItem ("answer", "hola");
 			}
