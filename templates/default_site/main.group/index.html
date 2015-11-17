@@ -1,8 +1,3 @@
-{if logeoHome == "hola"}
-	alert("Logeado")
-{if:else}
-	alert("La información no ha sido guardada")
-{/if}
 {embed="includes/head"}
   <body>
 		<div class="site-wrapper"> <!-- Body -->
@@ -287,7 +282,12 @@
 	<script src="{site_url}frontend/app/assets/js/forms-control.js"></script>
 	<script src="{site_url}frontend/app/assets/js/ingreso-control.js"></script>
 	<script>
-	$(document).ready(function(){
+	{if logeoHome == "hola"}
+		alert("Logeado")
+	{if:else}
+		alert("La información no ha sido guardada")
+	{/if}
+	$(document).ready(function(){		
 		var logeoHome = localStorage.getItem("answer");
 		console.log(logeoHome);
 		$("#logear").on("click", function(){
