@@ -284,8 +284,14 @@
 	<script src="{site_url}frontend/app/assets/js/ingreso-control.js"></script>
 	<script>
 		var logeoHome = localStorage.getItem("answer");
-		if (logeoHome == "yes") {
+		console.log(logeoHome);
+		if (logeoHome == "hola") {
 		  console.log ("Redireccionar")
 		}
+		if($(".close-checkbox").is(":checked")) {
+			if($("#logear").click()) {
+				localStorage.setItem ("answer", "hola");
+			}
+    }
 	</script>
 </html>
