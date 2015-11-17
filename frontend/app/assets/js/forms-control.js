@@ -89,7 +89,7 @@ function validarEdad() {
     } else if ((current_year - parseInt(year) > min_age)) {
       $(".enter").removeAttr("disabled");
       $(".enter").addClass("active-enter");
-      localStorage.setItem ("answer", "yes");
+      // localStorage.setItem ("answer", "yes");
     }
     else {
       $(".enter").attr("disabled");
