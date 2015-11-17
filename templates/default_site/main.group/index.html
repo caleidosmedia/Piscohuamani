@@ -288,9 +288,9 @@
 				localStorage.setItem ("answer", "listo");
 			}
 		});
-		var logeoHome = localStorage.getItem("answer");
+		// var logeoHome = localStorage.getItem("answer");
 		console.log(logeoHome);
-		{if $(logeoHome) == "listo"}
+		{if localStorage.getItem("answer") == "listo"}
 		alert("Logeado")
 		{if:else}
 			alert("La información no ha sido guardada")
