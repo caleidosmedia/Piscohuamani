@@ -282,19 +282,19 @@
 	<script src="{site_url}frontend/app/assets/js/forms-control.js"></script>
 	<script src="{site_url}frontend/app/assets/js/ingreso-control.js"></script>
 	<script>
-	$(document).ready(function(){
-		{if logeoHome == "hola"}
+	$(document).ready(function(){		
+		$("#logear").on("click", function(){
+			if($(".close-checkbox").is(":checked")) {
+				localStorage.setItem ("answer", "listo");
+			}
+		});
+		var logeoHome = localStorage.getItem("answer");
+		console.log(logeoHome);
+		{if logeoHome == "listo"}
 		alert("Logeado")
 		{if:else}
 			alert("La información no ha sido guardada")
-		{/if}		
-		var logeoHome = localStorage.getItem("answer");
-		console.log(logeoHome);
-		$("#logear").on("click", function(){
-			if($(".close-checkbox").is(":checked")) {
-				localStorage.setItem ("answer", "hola");
-			}
-		});
+		{/if}
 	});
 	</script>
 </html>
