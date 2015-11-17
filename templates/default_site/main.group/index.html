@@ -1,3 +1,8 @@
+{if sessionStorage.getItem("answer") == "logeado"}
+	{redirect="home"}
+{if:else}
+	hola
+{/if}
 {embed="includes/head"}
   <body>
 		<div class="site-wrapper"> <!-- Body -->
@@ -283,12 +288,12 @@
 	<script src="{site_url}frontend/app/assets/js/ingreso-control.js"></script>
 	<script>
 	$(document).ready(function(){
-		if (sessionStorage.getItem("answer") == "ultimo") {
-			window.location="{path='home'}"
-		}		
+		// if (sessionStorage.getItem("answer") == "logeado") {
+		// 	window.location="{path='home'}"
+		// }		
 		$("#logear").on("click", function(){
 			if($(".close-checkbox").is(":checked")) {
-				sessionStorage.setItem ("answer", "ultimo");
+				sessionStorage.setItem ("answer", "logeado");
 			}
 		});
 		sessionStorage.getItem("answer");
