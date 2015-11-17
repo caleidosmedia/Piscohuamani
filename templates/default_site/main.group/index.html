@@ -283,15 +283,17 @@
 	<script src="{site_url}frontend/app/assets/js/forms-control.js"></script>
 	<script src="{site_url}frontend/app/assets/js/ingreso-control.js"></script>
 	<script>
+	$(document).ready(function(){
 		var logeoHome = localStorage.getItem("answer");
 		console.log(logeoHome);
 		if (logeoHome == "hola") {
 		  console.log ("Redireccionar")
 		}
-		if($(".close-checkbox").is(":checked")) {
-			if($("#logear").click()) {
+		$("#logear").submit(function(){
+			if($(".close-checkbox").is(":checked")) {
 				localStorage.setItem ("answer", "hola");
 			}
-    }
+		});
+	});
 	</script>
 </html>
