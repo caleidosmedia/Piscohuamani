@@ -1,4 +1,7 @@
 {embed="includes/head"}
+<script>		if (sessionStorage.getItem("answer") == "ultimo") {
+			window.location="{path='home'}"
+		}		</script>
   <body>
 		<div class="site-wrapper"> <!-- Body -->
 			{exp:channel:entries channel="ingreso" dinamyc="off"}
@@ -282,14 +285,14 @@
 	<script src="{site_url}frontend/app/assets/js/forms-control.js"></script>
 	<script src="{site_url}frontend/app/assets/js/ingreso-control.js"></script>
 	<script>
-		if (sessionStorage.getItem("answer") == "ultimo") {
-			window.location="{path='home'}"
-		}		
+	$(document).ready(function(){
+
 		$("#logear").on("click", function(){
 			if($(".close-checkbox").is(":checked")) {
 				sessionStorage.setItem ("answer", "ultimo");
 			}
 		});
 		sessionStorage.getItem("answer");
+	});
 	</script>
 </html>
