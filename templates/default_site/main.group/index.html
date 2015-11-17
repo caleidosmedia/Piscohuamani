@@ -283,18 +283,15 @@
 	<script src="{site_url}frontend/app/assets/js/ingreso-control.js"></script>
 	<script>
 	$(document).ready(function(){
-		if (logeoHome == "porfin") {
-			redirect();
+		if (logeoHome == "ultimo") {
+			window.location="{path='home'}"
 		}
 		else {
 			alert("La información no ha sido guardada")
-		}
-		function redirect() {
-      window.location="{path='home'}";
-    }		
+		}		
 		$("#logear").on("click", function(){
 			if($(".close-checkbox").is(":checked")) {
-				localStorage.setItem ("answer", "porfin");
+				localStorage.setItem ("answer", "ultimo");
 			}
 		});
 		var logeoHome = localStorage.getItem("answer");
