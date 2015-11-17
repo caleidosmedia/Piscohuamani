@@ -1,7 +1,6 @@
 /*INGRESO*/
 $(document).ready(function(){
 	$(".btn-language.active").addClass("active-btn");
-		/*CHECKBOX*/
 });
 
 $(".btn-language").click(function() {
@@ -15,6 +14,16 @@ $(".btn-select").click(function(event) {
   $(".btn-select").removeClass("active-select");
   $(this).toggleClass("active-select");
 });
+
+/*checkbox*/
+$(".close-checkbox").click(function(){
+	if($(this).is(":checked")) {
+		$(".close").addClass("show");
+	} else {
+		$(".close").removeClass("show");
+	}
+});
+
 
 /*remenber data*/
 // $(".btn-select:first-child").addClass("active-select");

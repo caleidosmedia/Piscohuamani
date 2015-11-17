@@ -288,10 +288,7 @@
 		}		
 		$("#logear").on("click", function(){
 			if($(".close-checkbox").is(":checked")) {
-				$(".close").addClass("show");
 				sessionStorage.setItem ("answer", "ultimo");
-			}else {
-				$(".close").removeClass("show");
 			}
 		});
 		sessionStorage.getItem("answer");
