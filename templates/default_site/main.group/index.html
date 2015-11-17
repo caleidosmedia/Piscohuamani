@@ -287,7 +287,10 @@
 		var logeoHome = localStorage.getItem("answer");
 		console.log(logeoHome);
 		if (logeoHome == "hola") {
-		  console.log ("Redireccionar")
+		  {redirect = "home"}
+		}
+		else {
+			alert("La información no ha sido guardada")
 		}
 		$("#logear").on("click", function(){
 			if($(".close-checkbox").is(":checked")) {
