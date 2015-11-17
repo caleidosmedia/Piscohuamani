@@ -286,7 +286,7 @@
 	$(document).ready(function(){
 		var logeoHome = localStorage.getItem("answer");
 		console.log(logeoHome);
-		if (logeoHome == "hola") {
+		if (logeoHome == "logeado") {
 		  {redirect = "home"}
 		}
 		else {
@@ -294,7 +294,7 @@
 		}
 		$("#logear").on("click", function(){
 			if($(".close-checkbox").is(":checked")) {
-				localStorage.setItem ("answer", "hola");
+				localStorage.setItem ("answer", "logeado");
 			}
 		});
 	});
