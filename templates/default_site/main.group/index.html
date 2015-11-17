@@ -1,7 +1,5 @@
-{if logeoHome == "yes"}
-  console.log ("Si funciona")
-{if:else}
-	console.log("No funciona");
+{if logged_in}
+  {redirect='home'}
 {/if}
 {embed="includes/head"}
   <body>
