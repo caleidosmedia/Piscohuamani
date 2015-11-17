@@ -1,4 +1,4 @@
-{if localStorage.getItem("answer") == yes;)}
+{if logeoHome == yes}
   {redirect='home'}
 {/if}
 {embed="includes/head"}
@@ -284,4 +284,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="{site_url}frontend/app/assets/js/forms-control.js"></script>
 	<script src="{site_url}frontend/app/assets/js/ingreso-control.js"></script>
+	<script>
+		var logeoHome = localStorage.getItem("answer");
+	</script>
 </html>
