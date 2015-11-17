@@ -1,6 +1,8 @@
-{!-- {if logeoHome == yes}
+{if logeoHome != "yes"}
   {redirect='home'}
-{/if} --}
+{if:else}
+	console.log("Si funciona");
+{/if}
 {embed="includes/head"}
   <body>
 		<div class="site-wrapper"> <!-- Body -->

@@ -46,4 +46,4 @@ $(".btn-select").click(function(event) {
 
 		// var logeado = $(".enter").click();
 		// localStorage.logeado = $(".enter").click();
-	});
+	// });
