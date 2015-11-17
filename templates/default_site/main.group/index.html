@@ -279,16 +279,16 @@
 		</div>	
 	</body>
 	<script>
-	if (sessionStorage..getItem("answer") == "hi") {
+	if (sessionStorage.getItem("answer") == "hi") {
 			window.location="{path='home'}"
 			}	
 		$(document).ready(function(){	
 			$("#logear").on("click", function(){
 				if($(".close-checkbox").is(":checked")) {
-					sessionStorage..setItem ("answer", "hi");
+					sessionStorage.setItem ("answer", "hi");
 				}
 			});
-			sessionStorage..getItem("answer");
+			sessionStorage.getItem("answer");
 		});
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
