@@ -1,6 +1,4 @@
-{if logged_in}
-  {redirect='home'}
-{/if}
+
 {embed="includes/head"}
   <body>
 		<div class="site-wrapper"> <!-- Body -->
@@ -286,5 +284,10 @@
 	<script src="{site_url}frontend/app/assets/js/ingreso-control.js"></script>
 	<script>
 		var logeoHome = localStorage.getItem("answer");
+		{if logeoHome == "yes"}
+		  console.log ("Si funciona")
+		{if:else}
+			console.log("No funciona");
+		{/if}
 	</script>
 </html>
