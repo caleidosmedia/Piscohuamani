@@ -283,7 +283,7 @@
 	<script src="{site_url}frontend/app/assets/js/ingreso-control.js"></script>
 	<script>
 	$(document).ready(function(){
-		if (logeoHome == "ultimo") {
+		if (localStorage.getItem("answer") == "ultimo") {
 			window.location="{path='home'}"
 		}
 		else {
@@ -294,8 +294,7 @@
 				localStorage.setItem ("answer", "ultimo");
 			}
 		});
-		var logeoHome = localStorage.getItem("answer");
-		console.log(logeoHome);
+		localStorage.getItem("answer");
 	});
 	</script>
 </html>
