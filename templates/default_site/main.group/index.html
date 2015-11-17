@@ -286,12 +286,12 @@
 	$(document).ready(function(){
 		var logeoHome = localStorage.getItem("answer");
 		console.log(logeoHome);
-		if (logeoHome == "logeado") {
-		  alert("logeado")
-		}
-		else {
-			alert("La información no ha sido guardada")
-		}
+		{if logeoHome == "logeado"}
+			alert("Logeado")
+		{else:if}
+		alert("La información no ha sido guardada")
+		{/if}
+
 		$("#logear").on("click", function(){
 			if($(".close-checkbox").is(":checked")) {
 				localStorage.setItem ("answer", "logeado");
