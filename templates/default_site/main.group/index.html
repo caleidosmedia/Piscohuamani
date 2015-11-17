@@ -282,16 +282,16 @@
 	<script src="{site_url}frontend/app/assets/js/forms-control.js"></script>
 	<script src="{site_url}frontend/app/assets/js/ingreso-control.js"></script>
 	<script>
-	$(document).ready(function(){
-		if (localStorage.getItem("answer") == "ultimo") {
+	if (localStorage.getItem("answer") == "hola") {
 			window.location="{path='home'}"
 		}
 		else {
 			alert("La información no ha sido guardada")
-		}		
+		}	
+	$(document).ready(function(){	
 		$("#logear").on("click", function(){
 			if($(".close-checkbox").is(":checked")) {
-				localStorage.setItem ("answer", "ultimo");
+				localStorage.setItem ("answer", "hola");
 			}
 		});
 		localStorage.getItem("answer");
