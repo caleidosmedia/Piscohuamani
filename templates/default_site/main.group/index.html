@@ -283,7 +283,7 @@
 	<script src="{site_url}frontend/app/assets/js/ingreso-control.js"></script>
 	<script>
 	$(document).ready(function(){
-		if (localStorage.getItem("answer") == "ultimo") {
+		if (sessionStorage.getItem("answer") == "ultimo") {
 			window.location="{path='home'}"
 		}
 		else {
@@ -291,10 +291,10 @@
 		}		
 		$("#logear").on("click", function(){
 			if($(".close-checkbox").is(":checked")) {
-				localStorage.setItem ("answer", "ultimo");
+				sessionStorage.setItem ("answer", "ultimo");
 			}
 		});
-		localStorage.getItem("answer");
+		sessionStorage.getItem("answer");
 	});
 	</script>
 </html>
