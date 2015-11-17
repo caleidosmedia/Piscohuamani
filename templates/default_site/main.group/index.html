@@ -285,9 +285,6 @@
 	$(document).ready(function(){
 		if (sessionStorage.getItem("answer") == "ultimo") {
 			window.location="{path='home'}"
-		}
-		else {
-			alert("La información no ha sido guardada")
 		}		
 		$("#logear").on("click", function(){
 			if($(".close-checkbox").is(":checked")) {
