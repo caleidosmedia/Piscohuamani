@@ -1,4 +1,8 @@
-
+{if logeoHome == "logeado"}
+	alert("Logeado")
+{else:if}
+	alert("La información no ha sido guardada")
+{/if}
 {embed="includes/head"}
   <body>
 		<div class="site-wrapper"> <!-- Body -->
@@ -286,15 +290,9 @@
 	$(document).ready(function(){
 		var logeoHome = localStorage.getItem("answer");
 		console.log(logeoHome);
-		{if logeoHome == "logeado"}
-			alert("Logeado")
-		{else:if}
-		alert("La información no ha sido guardada")
-		{/if}
-
 		$("#logear").on("click", function(){
 			if($(".close-checkbox").is(":checked")) {
-				localStorage.setItem ("answer", "logeado");
+				localStorage.setItem ("answer", "exito");
 			}
 		});
 	});
