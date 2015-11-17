@@ -1,6 +1,6 @@
-{if logeoHome == "exito"}
+{if logeoHome == "hola"}
 	alert("Logeado")
-{else:if}
+{if:else}
 	alert("La información no ha sido guardada")
 {/if}
 {embed="includes/head"}
@@ -292,7 +292,7 @@
 		console.log(logeoHome);
 		$("#logear").on("click", function(){
 			if($(".close-checkbox").is(":checked")) {
-				localStorage.setItem ("answer", "exito");
+				localStorage.setItem ("answer", "hola");
 			}
 		});
 	});
