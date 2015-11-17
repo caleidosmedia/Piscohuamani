@@ -278,24 +278,23 @@
 	    {/exp:channel:entries}
 		</div>	
 	</body>
-	<script>
-		$(document).ready(function(){	
-			$("#logear").on("click", function(){
-				if($(".close-checkbox").is(":checked")) {
-					sessionStorage.setItem ("answer", "hi");
-				}
-			});
-			sessionStorage.getItem("answer");
-
-			if (sessionStorage.getItem("answer") == "hi") {
-				window.location="{path='home'}"
-			}
-			else {
-				alert("La información no ha sido guardada")
-			}	
-		});
-	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="{site_url}frontend/app/assets/js/forms-control.js"></script>
 	<script src="{site_url}frontend/app/assets/js/ingreso-control.js"></script>
+	<script>
+	$(document).ready(function(){
+		if (localStorage.getItem("answer") == "ultimo") {
+			window.location="{path='home'}"
+		}
+		else {
+			alert("La información no ha sido guardada")
+		}		
+		$("#logear").on("click", function(){
+			if($(".close-checkbox").is(":checked")) {
+				localStorage.setItem ("answer", "ultimo");
+			}
+		});
+		localStorage.getItem("answer");
+	});
+	</script>
 </html>
