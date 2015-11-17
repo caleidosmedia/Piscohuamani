@@ -23,7 +23,16 @@ $(".close-checkbox").click(function(){
 		$(".close").removeClass("show");
 	}
 });
+/*Remember data*/
+$(document).ready(function(){
 
+	$("#logear").on("click", function(){
+		if($(".close-checkbox").is(":checked")) {
+			sessionStorage.setItem ("answer", "ultimo");
+		}
+	});
+	sessionStorage.getItem("answer");
+});
 
 /*remenber data*/
 // $(".btn-select:first-child").addClass("active-select");
