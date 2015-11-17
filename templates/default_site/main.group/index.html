@@ -279,15 +279,15 @@
 		</div>	
 	</body>
 	<script>
-		if (sessionStorage.getItem("answer") == "hi") {
+		if (localStorage.getItem("answer") == "hi") {
 			window.location="{path='home'}"
 			}	
 			$("#logear").on("click", function(){
 				if($(".close-checkbox").is(":checked")) {
-					sessionStorage.setItem ("answer", "hi");
+					localStorage.setItem ("answer", "hi");
 				}
 			});
-			sessionStorage.getItem("answer");
+			localStorage.getItem("answer");
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="{site_url}frontend/app/assets/js/forms-control.js"></script>
