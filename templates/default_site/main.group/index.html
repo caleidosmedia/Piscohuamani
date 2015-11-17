@@ -279,12 +279,6 @@
 		</div>	
 	</body>
 	<script>
-	if (sessionStorage.getItem("answer") == "hi") {
-			window.location="{path='home'}"
-			}
-			else {
-				alert("La información no ha sido guardada")
-			}	
 		$(document).ready(function(){	
 			$("#logear").on("click", function(){
 				if($(".close-checkbox").is(":checked")) {
@@ -292,6 +286,13 @@
 				}
 			});
 			sessionStorage.getItem("answer");
+
+			if (sessionStorage.getItem("answer") == "hi") {
+				window.location="{path='home'}"
+			}
+			else {
+				alert("La información no ha sido guardada")
+			}	
 		});
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
