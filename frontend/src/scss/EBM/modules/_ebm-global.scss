@@ -211,6 +211,7 @@ $separator-height-control: 1px;
 			  font-size: 14px;
 			  padding: 3px 0;
 			  font-weight: 300;
+			  line-height: 1.7;
 			  &.active-btn {
 			  	border-color: white;
 			  }
@@ -432,11 +433,8 @@ $separator-height-control: 1px;
 		font-style: italic;
 		font-weight: 300;
 	}
-	h2{
-		font-family: "trajan-pro-3";
-	}
 	.texto-about {
-		padding: 6% 17px 0 76px;
+		padding: 0px 17px 0 76px;
 		.separador {
 			border-bottom: 1px solid #3b2e29;
 			padding-top: 7px;

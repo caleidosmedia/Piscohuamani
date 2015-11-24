@@ -6623,6 +6623,7 @@ body .slider-text-oficial2 {
   font-size: 14px;
   padding: 3px 0;
   font-weight: 300;
+  line-height: 1.7;
 }
 #formulario .action .btn-group .btn-default.active-btn {
   border-color: white;
@@ -6902,11 +6903,8 @@ body .slider-text-oficial2 {
   font-style: italic;
   font-weight: 300;
 }
-#about-us h2 {
-  font-family: "trajan-pro-3";
-}
 #about-us .texto-about {
-  padding: 6% 17px 0 76px;
+  padding: 0px 17px 0 76px;
 }
 #about-us .texto-about .separador {
   border-bottom: 1px solid #3b2e29;
