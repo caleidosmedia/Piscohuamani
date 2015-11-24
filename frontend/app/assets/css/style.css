@@ -7858,6 +7858,10 @@ footer .col-md-3 p a:hover {
   align-content: flex-start;
   align-items: center;
 }
+#container-contact h2,
+#thanks-contact h2 {
+  line-height: 1.3;
+}
 
 #container-contact h1 {
   font-family: "Verdana";
