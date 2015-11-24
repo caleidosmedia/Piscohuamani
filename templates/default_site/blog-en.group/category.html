@@ -1,3 +1,3 @@
-	{exp:channel:categories channel="blog" style="off" dynamic="off" category_group="6"}
-		<span>{category_id}</span>
+	{exp:channel:categories channel="blog" style="off" dynamic="off" category_group="6" category="{category_id}"}
+		<span><a href="{site_url}{exp:transcribe:language_abbreviation}/blog/{category_url_title}">{category_name}</a></span>
   {/exp:channel:categories}
