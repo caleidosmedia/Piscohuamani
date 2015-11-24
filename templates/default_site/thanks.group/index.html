@@ -6,8 +6,8 @@
         {embed="includes/overlay-menu"}
         <section id="thanks-contact" class="container-sm minhp-100 ph-21-sm mt-42-sm pt-70-sm ph-21-xs mt-70-xs pt-70-xs">
           <div class="thanks-box ph-70-md ph-70-lg ph-28-xs ph-28-sm pv-42 text-center thin">
-          {exp:channel:entries channel="thanks" dynamic="off"} 
-            <h2 class="mt-0 text-uppercase">{titulo}</h2>
+          {exp:channel:entries channel="thanks" dynamic="off" data_number="{current_time format='%T'}" } 
+            <h2 class="mt-0 text-uppercase" data="{current_time format='%T'}" >{titulo}</h2>
             <p class="pt-28">{mensaje}</p>
             <button class="btn btn-default text-white mt-42 ph-35 pv-7"><a href="{path='home'}" class="text-uppercase">{nombre_boton}</a></button>
           {/exp:channel:entries}
@@ -20,9 +20,7 @@
     {embed="includes/script_general"}
     {embed="includes/script_3"}
     <script>
-      $(document).ready(function(){
-        setTimeout("{{redirect='home'};", 7000);
-      });
+     
     </script>
   </body>
 </html> 
