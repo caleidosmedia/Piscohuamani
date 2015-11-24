@@ -1705,6 +1705,9 @@ footer {
 	}
 	/*THE GOODS*/
 	#the-goods {
+		h1 {
+			text-align: center;
+		}
 		.container .gallery-wrapper {
 			.gallery-button-left,
 			.gallery-button-right{
@@ -1784,6 +1787,9 @@ footer {
 
 	/*MAKE DRINK*/
 	#make-drink {
+		.section-title h2 {
+			text-align: center;
+		}
 		.gallery-wrapper {
 			min-height: auto;
 			.gallery-button-left,
@@ -1841,6 +1847,7 @@ footer {
 	#events {
 		h1 {
 			font-size: 45px;
+			text-align: center;
 		}
 		.row .gallery-button-left {
 			left: 20px;
@@ -1866,6 +1873,10 @@ footer {
     	margin-top: 50px!important;
 		}
 	}
+	.container-slider-text {
+		padding-top: 160px!important;
+	}
+
 	/*FOllow us*/
 	#follow-us {
 		.container-social {

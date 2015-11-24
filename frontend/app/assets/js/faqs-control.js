@@ -7,7 +7,3 @@ $('.change-arrow').click(function(event){
 	var target = $( event.target );
 	// $(target).parent(".panel-default").find(".panel-collapse").toggleClass("in");
 });
-
-$(document).ready(function(){
-	
-});
