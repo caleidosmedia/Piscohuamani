@@ -1,5 +1,5 @@
-	{exp:channel:entries channel="blog" dynamic="off" entry_id="{embed:je}"}
+	{exp:channel:entries channel="blog" dynamic="off" entry_id="{embed:data}"}
 		{categories}
-			<span><a href="{site_url}{exp:transcribe:language_abbreviation}/blog/{category_url_title}">{category_name}</a></span>
+			<span><a href="{site_url}{exp:transcribe:language_abbreviation}/blog/{category_url_title}">{category_name},</a></span>
 	  {/categories}
   {/exp:channel:entries}
