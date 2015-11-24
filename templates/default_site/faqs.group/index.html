@@ -8,14 +8,6 @@
           <div class="container ph-21 ph-42-xs mt-28">
             <h1 class="text-uppercase">{exp:transcribe:replace name="nav_faq"}</h1>
             <div class="separador"></div> 
-              <div id="menu-blog">
-                <nav class="">
-                {exp:channel:categories channel="faqs_ingles" style="off" dinamyc="off" category_group="3"}
-                  <a href="#section{count}" class="smooth hidden-xs hidden-sm btn-select">{category_name}</a>
-                  <a href="#section{count}" class="smooth hidden-lg hidden-md btn-select">{category_name}</a></br>
-                {/exp:channel:categories}
-                </nav>
-              </div>
             {embed="includes/panel_group"}
           </div>
         </div>

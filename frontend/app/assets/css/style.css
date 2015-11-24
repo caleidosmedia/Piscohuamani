@@ -7844,9 +7844,9 @@ footer .col-md-3 p a:hover {
 }
 #terms .sub-title {
   text-transform: uppercase;
-  color: #8d744a;
   font-weight: 400;
   padding-top: 1%;
+  font-size: 28px;
 }
 
 /*
@@ -8688,7 +8688,7 @@ footer .col-md-3 p a:hover {
   }
   #terms .contenedor .sub-title {
     padding: 10% 0 7%;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   /*EVENTS*/
