@@ -1462,7 +1462,6 @@ footer {
 }
 .thanks-box {
 	width: 750px;
-	border: 1px solid #f8f4e5;
 	color: #f8f4e5;
 	font-size: 20px;
 	h3 {
@@ -1478,6 +1477,9 @@ footer {
 				color: #fff!important;
 			}  
 		}
+	}
+	.text-redirect {
+		font-size: 20px;
 	}
 }
 // #thanks {

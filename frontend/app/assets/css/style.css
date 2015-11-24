@@ -7952,7 +7952,6 @@ footer .col-md-3 p a:hover {
 
 .thanks-box {
   width: 750px;
-  border: 1px solid #f8f4e5;
   color: #f8f4e5;
   font-size: 20px;
 }
@@ -7969,6 +7968,9 @@ footer .col-md-3 p a:hover {
 }
 .thanks-box button:hover a {
   color: #fff !important;
+}
+.thanks-box .text-redirect {
+  font-size: 20px;
 }
 
 .overlay-contact {
