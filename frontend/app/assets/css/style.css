@@ -7111,6 +7111,34 @@ body .slider-text-oficial2 {
   background-size: cover;
   background-position-y: 30%;
 }
+#events .see-more, #slider-events .see-more {
+  background-color: transparent;
+  padding: 2% 14%;
+  margin-top: 8%;
+  border: 2px solid #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+#events .see-more a, #slider-events .see-more a {
+  font-weight: 300;
+  text-decoration: none;
+  z-index: 1;
+}
+#events .see-more .overlay, #slider-events .see-more .overlay {
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+#events .see-more:hover a, #slider-events .see-more:hover a {
+  color: #fff;
+}
+#events .see-more:hover .overlay, #slider-events .see-more:hover .overlay {
+  background-color: rgba(250, 250, 250, 0.2);
+}
 #events .row h3, #slider-events .row h3 {
   font-style: normal;
   font-weight: 300;
@@ -8382,6 +8410,7 @@ footer .col-md-3 p a:hover {
   /*EXPERIENCE*/
   #events h1, #slider-events h1 {
     font-size: 45px;
+    text-align: center;
   }
   #events .row .gallery-button-left, #slider-events .row .gallery-button-left {
     left: 20px;

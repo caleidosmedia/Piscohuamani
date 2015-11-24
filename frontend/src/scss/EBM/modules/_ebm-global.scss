@@ -633,6 +633,32 @@ $make-drink-gallery-height-control: 560px;
 			background-position-y: 30%;
 		}
 	}
+	.see-more {
+			background-color: transparent;
+			padding: 2% 14%;
+			margin-top: 8%;
+			border: 2px solid #fff;
+			@include transition(all .5s ease-in-out);
+			overflow: hidden;
+			a {
+				font-weight: 300;
+				text-decoration: none;
+				z-index: 1;
+			}
+			.overlay {
+				top: 0;
+				left: 0; 
+				@include transition(all .2s ease-in);
+			}
+			&:hover {
+				a {
+					color: #fff;
+				}
+				.overlay {  
+					background-color: rgba(250, 250, 250, 0.2);
+				} 
+			}
+		}
 	.row {
 		h3 {
 			font-style: normal;
