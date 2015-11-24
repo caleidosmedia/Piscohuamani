@@ -7306,7 +7306,8 @@ footer .col-md-3 p a:hover {
   padding-top: 3%;
 }
 .site-content .content-blog .post .botons button {
-  background-color: transparent;
+  background: #3b2e29;
+  opacity: 0.9;
   padding: 0.7% 5.5%;
   border: 1px solid #4e3227;
   float: left;
@@ -7317,7 +7318,7 @@ footer .col-md-3 p a:hover {
 }
 .site-content .content-blog .post .botons button a {
   text-decoration: none;
-  color: #4e3227;
+  color: #f8f4e5;
 }
 .site-content .content-blog .post .botons button .overlay {
   top: 0;
@@ -7389,6 +7390,9 @@ footer .col-md-3 p a:hover {
 }
 .site-content .content-blog #pagination ul, .site-content .content-blog .pagination ul {
   width: 100%;
+}
+.site-content .content-blog #pagination ul li, .site-content .content-blog .pagination ul li {
+  display: inline-block;
 }
 .site-content .content-blog #pagination ul li a, .site-content .content-blog .pagination ul li a {
   border: 1px solid transparent;

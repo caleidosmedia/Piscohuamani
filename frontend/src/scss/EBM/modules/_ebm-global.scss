@@ -828,7 +828,8 @@ footer {
 			.botons {
 				padding-top: 3%;
 				button {
-					background-color: transparent;
+					background: rgb(59, 46, 41);
+    			opacity: 0.9;
 					padding: 0.7% 5.5%;
 					border: 1px solid #4e3227;
 					float: left;
@@ -836,7 +837,7 @@ footer {
 					@include transition(all .2s ease-in);
 					a {
 						text-decoration: none;
-						color: #4e3227;
+						color: #f8f4e5;
 					}
 					.overlay {
 						top: 0;
@@ -886,6 +887,7 @@ footer {
 			ul {
 				width: 100%;
 				li {
+					display: inline-block;
 					a {
 						border: 1px solid transparent;
 						font-size: 21px;

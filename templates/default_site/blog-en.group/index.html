@@ -65,11 +65,11 @@
                     {pagination_links page_padding="2" always_show_first_last = "yes"}
                       <ul class="list-unstyled pagination pt-42 mt-0">
                         {first_page}
-                          <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-first">First</a></li>
+                          <li class="ph-0"><a href="{pagination_url}" class="page-first ph-0">First</a></li>
                         {/first_page}
 
                         {previous_page}
-                          <li class="ph-7" style="display:inline-block">
+                          <li class="ph-7">
                             <a href="{pagination_url}" class="page-previous previous" aria-label="Previous">
                               <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
                             </a>
@@ -77,11 +77,11 @@
                         {/previous_page}
 
                         {page}
-                          <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-{pagination_page_number} {if current_page}active{/if}">{pagination_page_number}</a></li>
+                          <li class="ph-7"><a href="{pagination_url}" class="page-{pagination_page_number} {if current_page}active{/if}">{pagination_page_number}</a></li>
                         {/page}
 
                         {next_page}
-                          <li class="ph-7" style="display:inline-block">
+                          <li class="ph-7">
                             <a href="{pagination_url}" class="page-next next" aria-label="Next">
                               <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
                             </a>
@@ -89,7 +89,7 @@
                         {/next_page}
 
                         {last_page}
-                          <li class="ph-7" style="display:inline-block"><a href="{pagination_url}" class="page-last">Last</a></li>
+                          <li class="ph-7"><a href="{pagination_url}" class="page-last">Last</a></li>
                         {/last_page}
                       </ul>
                     {/pagination_links}
