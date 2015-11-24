@@ -1903,16 +1903,19 @@ footer {
 			li {
 				padding: 0!important;
 				.texto {
+					padding-left: 12px;
 					p {
 	  				font-family: "museo-sans";
+	  				font-size: 10px;
   				}
 				}
 			}
 			.col-md-3 {
 				padding-top: 30px!important;
 				p {
-					font-size: 15px!important;
+					font-size: 10px!important;
 					font-family: "Museo-sans";
+					display: inline;
 				}
 			}
 		}
@@ -1949,7 +1952,7 @@ footer {
 				}
 				.imagen-movil {
 					width: 100%;
-					height: 500px;
+					height: 230px;
 				}
 				.texto {
 					padding-top: 15%;
@@ -1961,6 +1964,9 @@ footer {
 					.fecha {
 						font-size: 14px!important;
 						margin-bottom: 18px;
+					}
+					h2 {
+						text-align: center;
 					}
 				}
 				.tags {

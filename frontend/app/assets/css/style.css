@@ -8441,15 +8441,20 @@ footer .col-md-3 p a:hover {
   footer ul li {
     padding: 0 !important;
   }
+  footer ul li .texto {
+    padding-left: 12px;
+  }
   footer ul li .texto p {
     font-family: "museo-sans";
+    font-size: 10px;
   }
   footer ul .col-md-3 {
     padding-top: 30px !important;
   }
   footer ul .col-md-3 p {
-    font-size: 15px !important;
+    font-size: 10px !important;
     font-family: "Museo-sans";
+    display: inline;
   }
 
   /*BLOG*/
@@ -8483,7 +8488,7 @@ footer .col-md-3 p a:hover {
   }
   .site-content .content-blog .post .imagen-movil {
     width: 100%;
-    height: 500px;
+    height: 230px;
   }
   .site-content .content-blog .post .texto {
     padding-top: 15%;
@@ -8496,6 +8501,9 @@ footer .col-md-3 p a:hover {
   .site-content .content-blog .post .texto .fecha {
     font-size: 14px !important;
     margin-bottom: 18px;
+  }
+  .site-content .content-blog .post .texto h2 {
+    text-align: center;
   }
   .site-content .content-blog .post .tags {
     padding-bottom: 7%;
