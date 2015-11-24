@@ -7577,7 +7577,7 @@ footer .col-md-3 p a:hover {
   height: 100%;
 }
 #galeria .grid #overlay {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(59, 46, 41, 0.9);
   width: 100%;
   height: 100%;
   position: fixed;
@@ -8078,10 +8078,10 @@ footer .col-md-3 p a:hover {
     text-align: left;
     position: relative;
     float: left;
-    width: 100px;
+    width: 125px;
   }
   .site-menu .nav-movil a img {
-    width: 100px;
+    width: 125px;
   }
   .site-menu .nav-movil p {
     position: absolute;
@@ -8094,6 +8094,7 @@ footer .col-md-3 p a:hover {
     height: 17px;
     position: absolute;
     right: 7%;
+    top: 37px;
     margin: -15px 0px 0px -15px;
     cursor: pointer;
   }
