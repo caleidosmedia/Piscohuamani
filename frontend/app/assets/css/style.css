@@ -7120,6 +7120,7 @@ body .slider-text-oficial2 {
   -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   overflow: hidden;
+  background-color: rgba(250, 250, 250, 0.2);
 }
 #events .see-more a, #slider-events .see-more a {
   font-weight: 300;
@@ -7142,34 +7143,6 @@ body .slider-text-oficial2 {
 #events .row h3, #slider-events .row h3 {
   font-style: normal;
   font-weight: 300;
-}
-#events .row .see-more, #slider-events .row .see-more {
-  background-color: transparent;
-  padding: 2% 14%;
-  margin-top: 8%;
-  border: 2px solid #fff;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  overflow: hidden;
-}
-#events .row .see-more a, #slider-events .row .see-more a {
-  font-weight: 300;
-  text-decoration: none;
-  z-index: 1;
-}
-#events .row .see-more .overlay, #slider-events .row .see-more .overlay {
-  top: 0;
-  left: 0;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-#events .row .see-more:hover a, #slider-events .row .see-more:hover a {
-  color: #fff;
-}
-#events .row .see-more:hover .overlay, #slider-events .row .see-more:hover .overlay {
-  background-color: rgba(250, 250, 250, 0.2);
 }
 #events .row .gallery-button-right, #slider-events .row .gallery-button-right {
   position: absolute;
