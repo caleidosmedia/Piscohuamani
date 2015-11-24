@@ -56,7 +56,9 @@
                   </div> 
                   <p class="tags fz-18 pt-35 pb-14">
                     <span class="text-bold">Tags:</span>
+                    {exp:channel:categories channel="blog" style="off" dynamic="off" category_group="6"}
                     <span>{category_name}</span>
+                    {/exp:channel:categories}
                   </p>
                 </div>
               {paginate}
