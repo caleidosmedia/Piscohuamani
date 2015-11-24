@@ -3,7 +3,7 @@
     <div class="site-wrapper"> <!-- Body -->
       {embed="includes/header" huamani="{path='home'}" about="{path='home'#about-us}" goods="{path='home'}#the-goods" make="{path='home'}#make-drink" events="{path='home'}#events"} 
       <main class="site-content" style="background-color: #3B2E29;">
-        {embed="includes/overlay-menu"}
+        {embed="includes/overlay-menu" about="{path='home'#about-us}" goods="{path='home'}#the-goods" make="{path='home'}#make-drink" events="{path='home'}#events"}
         <section id="thanks-contact" class="container-sm minhp-100 ph-21-sm mt-42-sm pt-70-sm ph-21-xs mt-70-xs pt-70-xs">
           <div class="thanks-box ph-70-md ph-70-lg ph-28-xs ph-28-sm pv-42 text-center thin">
           {exp:channel:entries channel="thanks" dynamic="off"} 
