@@ -6601,6 +6601,9 @@ body .slider-text-oficial2 {
   font-size: 14px;
   font-size: 1rem;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
   background: transparent;
   outline: none;
   border: 1px solid white;
