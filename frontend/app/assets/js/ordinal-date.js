@@ -15,11 +15,11 @@ function ordinalDate(date) {
     }
 }
 var dateNumber = $(".fecha-evento").html().substr(4);
-$(".fecha-evento").each(function(){
+// $(".fecha-evento").each(function(){
     if (dateNumber < 32) {
       $(".fecha-evento").append("<sup>"+ ordinalDate(dateNumber) +"</sup>");
     }
-});
+// });
 
 // var dateNumber = $(".fecha-evento").html().substr(4);
 // $(".fecha-evento").each(function(){
