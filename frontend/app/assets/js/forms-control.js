@@ -7,7 +7,7 @@ var paises = "";
 function loadJson(callback) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
-  xobj.open('GET', 'assets/json/drinkingage.json', true);
+  xobj.open('GET', 'http://piscohuamani.laboratoria.la/frontend/app/assets/json/drinkingage.json', true);
   xobj.onreadystatechange = function () {
     if (xobj.readyState == 4 && xobj.status == "200") {
       callback(xobj.responseText);

@@ -9,8 +9,12 @@
   	<link rel="shortcut icon" href="assets/img/favicon.png">
   	<link href="assets/css/style.css" rel="stylesheet"> <!-- App styles -->
   	<link href="assets/css/ebm.css" rel="stylesheet">
+  	<link rel="stylesheet" href="assets/css/bootstrap-select.css">
   	<script src="//use.typekit.net/wml8szi.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="dist/js/bootstrap-select.js"></script>
     <body>
 			<div class="site-wrapper"> <!-- Body -->
 		    <div class="fondo minhp-100 text-center" style="background-image: url(assets/img/fotos/IMG_0230.png)">
@@ -26,7 +30,7 @@
 		    			<input id="month" class="number text-center month" type="text" pattern="[0-9]*" min="1" max="12" maxlength="2" placeholder="MONTH" name="month" required>
 		    			<input id="year" class="number text-center" type="text" pattern="[0-9]*" min="4" maxlength="4" class="year" placeholder="YEAR" name="year" required> 
 		    			<div class="action row col-md-8 pl-21 pr-0 ph-0-xs mb-42-xs">
-								<select name="LOCATION" id="country" class="col-md-4 col-xs-6 thin text-white ml-0" style="background-image: url(assets/img/iconos-logos/flecha-crema.png); background-position-y: center!important;" required>
+								<select name="LOCATION" id="country" class="selectpicker col-md-4 col-xs-6 thin text-white ml-0" style="background-image: url(assets/img/iconos-logos/flecha-crema.png); background-position-y: center!important;" required>
 									<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
 									<option value="">LOCATION</option>
 									<option value="PE">Peru</option>
@@ -284,7 +288,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="assets/js/forms-control.js"></script>
 	<script src="assets/js/ingreso-control.js"></script>
+	<script src="assets/js/bootstrap-select.js"></script>
 	<script type="text/javascript">
-		
+		$('.selectpicker').selectpicker({
+			style:'btn-info',
+			size:4
+		});
 	</script>
 </html>
