@@ -6603,6 +6603,7 @@ body .slider-text-oficial2 {
 #formulario .action .btn-group {
   width: 162px;
   height: 30px;
+  z-index: 2;
 }
 #formulario .action .btn-group .btn.dropdown-toggle {
   width: 162px;
@@ -6629,6 +6630,9 @@ body .slider-text-oficial2 {
   border: 0px !important;
   margin: 0px;
   border-radius: 0px;
+}
+#formulario .action .btn-group .dropdown-menu.open .dropdown-menu.inner .glyphicon {
+  display: none !important;
 }
 #formulario .action .btn-group .dropdown-menu.open .dropdown-menu.inner li > a:hover {
   background-color: #8d744a;
@@ -8051,10 +8055,16 @@ footer .col-md-3 p a:hover {
     margin-left: 0;
     width: 50% !important;
   }
+  #formulario .action .btn-group {
+    width: 108px;
+  }
   #formulario .action .btn-group .btn-default {
     width: 35px;
     height: 35px;
     padding: 6px 0;
+  }
+  #formulario .action .btn-group .btn.dropdown-toggle {
+    width: 108px;
   }
   #formulario .action select,
   #formulario .action .btn-group button {
