@@ -6613,13 +6613,18 @@ body .slider-text-oficial2 {
   background: transparent;
   outline: none;
   border: 1px solid white;
+  padding-left: 15px;
 }
 #formulario .action .btn-group .dropdown-menu.open {
   border-radius: 0px;
+  min-width: 162px;
 }
 #formulario .action .btn-group .dropdown-menu.open .dropdown-menu.inner {
   top: 0px;
   background-color: #3b2e29;
+  border: 0px !important;
+  margin: 0px;
+  border-radius: 0px;
 }
 #formulario .action .btn-group .dropdown-menu.open .dropdown-menu.inner li > a:hover {
   background-color: #8d744a;

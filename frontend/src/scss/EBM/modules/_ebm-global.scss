@@ -214,12 +214,17 @@ $separator-height-control: 1px;
 				background: transparent;
 	  		outline: none;
 	  		border: 1px solid white;
+	  		padding-left: 15px;
   		}
   		.dropdown-menu.open {
   			border-radius: 0px;
+  			min-width: 162px;
   			.dropdown-menu.inner {
   			  top: 0px;
   			  background-color: #3b2e29;
+  			  border: 0px!important;
+  			  margin: 0px;
+  			  border-radius: 0px;
   			  li > a:hover {
   			  	background-color: #8d744a;
   			  	color: white!important;
