@@ -215,17 +215,23 @@ $separator-height-control: 1px;
 	  		outline: none;
 	  		border: 1px solid white;
 	  		padding-left: 15px;
+	  		.bs-caret {
+	  			display: none;
+	  		}
   		}
   		.dropdown-menu.open {
   			border-radius: 0px;
   			min-width: 180px;
-  			min-height: 135px;
+  			min-height: 135px!important;
   			.dropdown-menu.inner {
   			  top: 0px;
   			  background-color: #3b2e29;
   			  border: 0px!important;
   			  margin: 0px;
   			  border-radius: 0px;
+  			  .glyphicon.glyphicon-ok {
+  			  	display: none!important;
+  			  }
   			  li > a:hover {
   			  	background-color: #8d744a;
   			  	color: white!important;
