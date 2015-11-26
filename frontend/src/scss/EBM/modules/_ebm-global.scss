@@ -205,19 +205,25 @@ $separator-height-control: 1px;
 		.btn-group {
 			width: 162px;
 			height: 30px;
-			border-radius: 0px;
-			font-size: 14px;
-			font-size: rem(14px);
-			background: transparent;
-  		outline: none;
-  		border: 1px solid white;
   		.btn.dropdown-toggle {
-  			background-color: transparent;
+  			width: 162px;
+				height: 30px;
+				border-radius: 0px;
+				font-size: 14px;
+				font-size: rem(14px);
+				background: transparent;
+	  		outline: none;
+	  		border: 1px solid white;
   		}
   		.dropdown-menu.open {
   			border-radius: 0px;
   			.dropdown-menu.inner {
-  			  top: 60px;
+  			  top: 0px;
+  			  background-color: #3b2e29;
+  			  li > a:hover {
+  			  	background-color: #8d744a;
+  			  	color: white!important;
+  			  }
   			}
   		}
 			.btn-default {

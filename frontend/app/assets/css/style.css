@@ -6603,6 +6603,10 @@ body .slider-text-oficial2 {
 #formulario .action .btn-group {
   width: 162px;
   height: 30px;
+}
+#formulario .action .btn-group .btn.dropdown-toggle {
+  width: 162px;
+  height: 30px;
   border-radius: 0px;
   font-size: 14px;
   font-size: 1rem;
@@ -6610,14 +6614,16 @@ body .slider-text-oficial2 {
   outline: none;
   border: 1px solid white;
 }
-#formulario .action .btn-group .btn.dropdown-toggle {
-  background-color: transparent;
-}
 #formulario .action .btn-group .dropdown-menu.open {
   border-radius: 0px;
 }
 #formulario .action .btn-group .dropdown-menu.open .dropdown-menu.inner {
-  top: 60px;
+  top: 0px;
+  background-color: #3b2e29;
+}
+#formulario .action .btn-group .dropdown-menu.open .dropdown-menu.inner li > a:hover {
+  background-color: #8d744a;
+  color: white !important;
 }
 #formulario .action .btn-group .btn-default {
   background-color: transparent;
