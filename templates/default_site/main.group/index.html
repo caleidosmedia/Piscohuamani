@@ -264,7 +264,9 @@
 	<script type="text/javascript">
 		$('.selectpicker').selectpicker({
 			size: auto;
-			title: LOCATION
+			{exp:channel:entries channel='ingreso' dinamyc='off'}
+				title: {select}
+			{/exp:channel:entries}
 		});
 	</script>
 </html>

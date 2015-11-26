@@ -6617,7 +6617,7 @@ body .slider-text-oficial2 {
 }
 #formulario .action .btn-group .dropdown-menu.open {
   border-radius: 0px;
-  min-width: 162px;
+  min-width: 180px;
 }
 #formulario .action .btn-group .dropdown-menu.open .dropdown-menu.inner {
   top: 0px;
