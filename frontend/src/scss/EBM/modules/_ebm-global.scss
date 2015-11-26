@@ -215,13 +215,16 @@ $separator-height-control: 1px;
   		.dropdown-menu.open {
   			border-radius: 0px;
   			min-width: 180px;
-  			min-height: 180px!important;
+  			min-height: 210px!important;
+  			overflow: hidden;
   			.dropdown-menu.inner {
   			  top: 0px;
   			  background-color: #3b2e29;
   			  border: 0px!important;
   			  margin: 0px;
   			  border-radius: 0px;
+  			  min-height:210px;
+  			  overflow: hidden;
   			  .glyphicon {
   			  	display: none!important;
   			  }
