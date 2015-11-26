@@ -211,6 +211,9 @@ $separator-height-control: 1px;
 			background: transparent;
   		outline: none;
   		border: 1px solid white;
+  		.btn.dropdown-toggle {
+  			background-color: transparent;
+  		}
   		.dropdown-menu.open {
   			border-radius: 0px;
   			.dropdown-menu.inner {
