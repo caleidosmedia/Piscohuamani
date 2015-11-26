@@ -6595,25 +6595,26 @@ body .slider-text-oficial2 {
   margin-left: 6px;
 }
 #formulario .action select {
-  width: 162px;
-  height: 30px;
-  border-radius: 0px;
-  font-size: 14px;
-  font-size: 1rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-  -ms-appearance: none;
-  background: transparent;
-  outline: none;
-  border: 1px solid white;
-  margin-left: 6px;
+  display: none;
 }
 #formulario .action select option {
   background-color: #3b2e29;
 }
 #formulario .action .btn-group {
-  margin-left: 23px;
+  width: 162px;
+  height: 30px;
+  border-radius: 0px;
+  font-size: 14px;
+  font-size: 1rem;
+  background: transparent;
+  outline: none;
+  border: 1px solid white;
+}
+#formulario .action .btn-group .dropdown-menu.open {
+  border-radius: 0px;
+}
+#formulario .action .btn-group .dropdown-menu.open .dropdown-menu.inner {
+  top: 60px;
 }
 #formulario .action .btn-group .btn-default {
   background-color: transparent;

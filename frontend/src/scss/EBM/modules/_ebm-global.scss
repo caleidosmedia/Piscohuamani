@@ -184,25 +184,39 @@ $separator-height-control: 1px;
 		padding-top: 26px;
 		margin-left: 6px;
 		select{
-			width: 162px;
-    	height: 30px;
-			border-radius: 0px;
-			font-size: 14px;
-			font-size: rem(14px);
-			-webkit-appearance: none;
-			-moz-appearance: none;
-			-o-appearance: none;
-			-ms-appearance: none;
-  		background: transparent;
-  		outline: none;
-  		border: 1px solid white;
-  		margin-left: 6px;
+			display: none;
+			// width: 162px;
+   //  	height: 30px;
+			// border-radius: 0px;
+			// font-size: 14px;
+			// font-size: rem(14px);
+			// -webkit-appearance: none;
+			// -moz-appearance: none;
+			// -o-appearance: none;
+			// -ms-appearance: none;
+  	// 	background: transparent;
+  	// 	outline: none;
+  	// 	border: 1px solid white;
+  	// 	margin-left: 6px;
 			option{
 				background-color: #3b2e29;
 			}
 		}
 		.btn-group {
-			margin-left: 23px;
+			width: 162px;
+			height: 30px;
+			border-radius: 0px;
+			font-size: 14px;
+			font-size: rem(14px);
+			background: transparent;
+  		outline: none;
+  		border: 1px solid white;
+  		.dropdown-menu.open {
+  			border-radius: 0px;
+  			.dropdown-menu.inner {
+  			  top: 60px;
+  			}
+  		}
 			.btn-default {
 				background-color: transparent;
 				width: 80px;
