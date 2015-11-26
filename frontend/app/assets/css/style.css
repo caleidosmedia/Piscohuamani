@@ -6601,9 +6601,9 @@ body .slider-text-oficial2 {
   background-color: #3b2e29;
 }
 #formulario .action .btn-group {
-  width: 162px;
+  width: 164px;
   height: 30px;
-  z-index: 2;
+  z-index: 10;
 }
 #formulario .action .btn-group .btn.dropdown-toggle {
   width: 162px;
@@ -6615,6 +6615,10 @@ body .slider-text-oficial2 {
   outline: none;
   border: 1px solid white;
   padding-left: 15px;
+  background-image: url(http://piscohuamani.laboratoria.la/frontend/app/assets/img/iconos-logos/flecha-crema.png);
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-size: 15px;
 }
 #formulario .action .btn-group .btn.dropdown-toggle .bs-caret {
   display: none;
