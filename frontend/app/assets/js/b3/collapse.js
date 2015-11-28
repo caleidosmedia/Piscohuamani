@@ -43,7 +43,7 @@
     if (actives && actives.length) {
       var hasData = actives.data('bs.collapse')
       if (hasData && hasData.transitioning) return
-      actives.collapse('hide')
+      // actives.collapse('hide')
       hasData || actives.data('bs.collapse', null)
     }
 
