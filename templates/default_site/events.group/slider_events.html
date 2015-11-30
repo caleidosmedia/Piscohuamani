@@ -9,10 +9,10 @@
     <h2 class="text-uppercase mt-0-xs mt-0-sm">{titulo_events}</h2>
     <div class="separador mt-14 mb-28"></div>
     <p class="fecha-evento fz-20 thin">
-      {if "{lang}" == "en"}
+      {if {languague} == en}
         {entry_date format="%F %d <sup>%S</sup>"}
       {if:else}
-        {entry_date format="%F %d <sup>%S</sup>"}
+        {entry_date format="%F %d"}
       {/if}
       }
     </p>
