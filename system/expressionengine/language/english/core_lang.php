@@ -443,9 +443,8 @@ and email %s to report the link that generated this message.',
 'October' =>
 'Octubre',
 
-'November' =>
-'Noviembre',
-'November'
+'Noviembre' =>
+'November',
 
 'December' =>
 'Diciembre',
