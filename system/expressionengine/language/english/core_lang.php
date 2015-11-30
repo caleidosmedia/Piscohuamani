@@ -414,40 +414,40 @@ and email %s to report the link that generated this message.',
 'Dec',
 
 'January' =>
-'January',
+'Enero',
 
 'February' =>
-'February',
+'Febrero',
 
 'March' =>
-'March',
+'Marzo',
 
 'April' =>
-'April',
+'Abril',
 
 'May_l' =>
-'May',
+'Mayo',
 
 'June' =>
-'June',
+'Junio',
 
 'July' =>
-'July',
+'Julio',
 
 'August' =>
-'August',
+'Agosto',
 
 'September' =>
-'September',
+'Setiembre',
 
 'October' =>
-'October',
+'Octubre',
 
 'November' =>
-'November',
+'Noviembre',
 
 'December' =>
-'December',
+'Diciembre',
 
 
 'UM12'		=>	'(UTC -12:00) Baker/Howland Island',
