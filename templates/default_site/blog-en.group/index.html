@@ -30,7 +30,7 @@
                     <div class="imagen-movil bg-img-block hidden-lg hidden-md hidden-sm" style="background-image:url({image:url})"></div><!--movil-->
                   {/imagen_blog}
                   <div class="texto pt-28-xs pt-28-sm">
-                      <p class="fecha mb-28">{entry_date format="%F %d <sup>%S</sup>"}</p>
+                      <p class="fecha mb-28">{exp:transcribe:translate}Hello{entry_date format="%F %d <sup>%S</sup>"}{/exp:transcribe:translate}</p>
                       <h2 class="text-uppercase">{titulo_blog}</h2>
                       {exp:word_limit total="65"}
                         <span class="parrafo fz-18 mb-28">{texto_blog}</span>
