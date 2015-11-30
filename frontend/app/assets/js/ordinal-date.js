@@ -14,7 +14,7 @@ function ordinalDate(date) {
         return 'th';
     }
 }
-var dateNumber = $(".fecha-evento").html().substr(4);
+var dateNumber = $(".fecha-evento").text().split(" ").pop();
 // $(".fecha-evento").each(function(){
     if (dateNumber < 32) {
       $(".fecha-evento").append("<sup>"+ ordinalDate(dateNumber) +"</sup>");
