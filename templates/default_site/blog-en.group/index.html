@@ -30,15 +30,17 @@
                     <div class="imagen-movil bg-img-block hidden-lg hidden-md hidden-sm" style="background-image:url({image:url})"></div><!--movil-->
                   {/imagen_blog}
                   <div class="texto pt-28-xs pt-28-sm">
-                    {if '{exp:transcribe:language_abbreviation}' == 'en'}
-                      <p class="fecha mb-28">{entry_date format="%F %d <sup>%S</sup>"}</p>
-                    {if:else}
-                      <p class="fecha mb-28">{entry_date format="%F %d"}</p>
-                    {/if}
-                      <h2 class="text-uppercase">{titulo_blog}</h2>
-                      {exp:word_limit total="65"}
-                        <span class="parrafo fz-18 mb-28">{texto_blog}</span>
-                      {/exp:word_limit}
+                    <p class="fecha mb-28">
+                      {if '{exp:transcribe:language_abbreviation}' == 'en'}
+                        {entry_date format="%F %d <sup>%S</sup>"}</p>
+                      {if:else}
+                        {entry_date format="%F %d"}
+                      {/if}
+                    </p>
+                    <h2 class="text-uppercase">{titulo_blog}</h2>
+                    {exp:word_limit total="65"}
+                      <span class="parrafo fz-18 mb-28">{texto_blog}</span>
+                    {/exp:word_limit}
                   </div>
                   <div class="botons clearfix mt-28-xs mt-28-sm">
                     <button class="relative">

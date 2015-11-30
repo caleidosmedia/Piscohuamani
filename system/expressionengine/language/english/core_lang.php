@@ -445,6 +445,7 @@ and email %s to report the link that generated this message.',
 
 'November' =>
 'Noviembre',
+'November'
 
 'December' =>
 'Diciembre',
