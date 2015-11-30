@@ -6627,7 +6627,8 @@ body .slider-text-oficial2 {
 #formulario .action .btn-group .dropdown-menu.open {
   border-radius: 0px;
   min-width: 180px;
-  min-height: 180px !important;
+  min-height: 210px !important;
+  overflow: hidden;
 }
 #formulario .action .btn-group .dropdown-menu.open .dropdown-menu.inner {
   top: 0px;
@@ -6635,6 +6636,8 @@ body .slider-text-oficial2 {
   border: 0px !important;
   margin: 0px;
   border-radius: 0px;
+  min-height: 180px !important;
+  overflow: hidden;
 }
 #formulario .action .btn-group .dropdown-menu.open .dropdown-menu.inner .glyphicon {
   display: none !important;
