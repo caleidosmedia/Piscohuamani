@@ -30,8 +30,10 @@
                     <div class="imagen-movil bg-img-block hidden-lg hidden-md hidden-sm" style="background-image:url({image:url})"></div><!--movil-->
                   {/imagen_blog}
                   <div class="texto pt-28-xs pt-28-sm">
+                    <span>'{exp:transcribe:language_abbreviation}'</span>
+                    <span>'{transcribe:segment_1}'</span>
+                    <span>'{transcribe:segment_2}'</span>
                     <p class="fecha mb-28">
-                      {exp:transcribe:language_abbreviation}
                       {if '{exp:transcribe:language_abbreviation}' == 'en'}
                         {entry_date format="%F %d<sup>%S</sup>"}
                       {if:else} 
