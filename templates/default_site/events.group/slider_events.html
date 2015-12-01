@@ -10,7 +10,7 @@
     <div class="separador mt-14 mb-28"></div>
     <p class="fecha-evento fz-20 thin">
       {if '{exp:transcribe:language_abbreviation}' == 'en'}
-        {entry_date format="%F %d <sup>%S</sup>"}
+        {entry_date format="%F %d<sup>%S</sup>"}
       {if:else} 
         {exp:datetime_convert language="es_ES" format="%d de %B" convert_entities="yes|no"}
           {entry_date format="%F %d"}
