@@ -1,7 +1,9 @@
-{if '{exp:transcribe:language_abbreviation}' == 'en'}
-  {entry_date format="%F %d<sup>%S</sup>"}
-{if:else} 
-  {exp:datetime_convert language="es_ES" format="%d de %B" convert_entities="yes|no"}
-    {entry_date format="%F %d"}
-  {/exp:datetime_convert}
-{/if}
+{exp:channel:entries channel="blog" dynamic="off" orderby="date" limit="2" sort="desc" paginate= "bottom" category="{category_id}"}
+	{if '{exp:transcribe:language_abbreviation}' == 'en'}
+	  {entry_date format="%F %d<sup>%S</sup>"}
+	{if:else} 
+	  {exp:datetime_convert language="es_ES" format="%d de %B" convert_entities="yes|no"}
+	    {entry_date format="%F %d"}
+	  {/exp:datetime_convert}
+	{/if}
+{/exp:channel:entries}
