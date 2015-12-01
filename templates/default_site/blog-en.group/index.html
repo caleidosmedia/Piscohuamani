@@ -31,6 +31,7 @@
                   {/imagen_blog}
                   <div class="texto pt-28-xs pt-28-sm">
                     <p class="fecha mb-28">
+                      {exp:transcribe:language_abbreviation}
                       {if '{exp:transcribe:language_abbreviation}' == 'en'}
                         {entry_date format="%F %d<sup>%S</sup>"}
                       {if:else} 
