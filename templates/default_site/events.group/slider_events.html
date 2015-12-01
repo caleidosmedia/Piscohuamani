@@ -12,7 +12,7 @@
       {if '{exp:transcribe:language_abbreviation}' == 'en'}
         {entry_date format="%F %d <sup>%S</sup>"}
       {if:else} 
-        {exp:datetime_convert language="es_ES" format="%F %d" convert_entities="yes|no"}{entry_date format="%F %d"}{/exp:datetime_convert}
+        {exp:datetime_convert language="es_ES" format="%d %A" convert_entities="yes|no"}{entry_date format="%F %d"}{/exp:datetime_convert}
       {/if}
     </p>
     <h3 class="p-0 m-0 text-uppercase">{lugar_events}</h3>
