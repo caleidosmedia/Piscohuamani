@@ -1,0 +1,7 @@
+{if '{exp:transcribe:language_abbreviation}' == 'en'}
+  {entry_date format="%F %d<sup>%S</sup>"}
+{if:else} 
+  {exp:datetime_convert language="es_ES" format="%d de %B" convert_entities="yes|no"}
+    {entry_date format="%F %d"}
+  {/exp:datetime_convert}
+{/if}
