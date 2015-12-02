@@ -1,0 +1,14 @@
+{exp:channel:entries channel="blog" dinamyc="off" sort="desc" orderby="date" category="{embed:category_id}"}
+<span>{exp:transcribe:language_abbreviation}</span>
+  <p class="fecha mb-28">
+    {if '{exp:transcribe:language_abbreviation}' == 'en'}
+    {exp:transcribe:language_abbreviation}
+      {entry_date format="%F %d<sup>%S</sup>"}
+    {if:else} 
+    {exp:transcribe:language_abbreviation}
+      {exp:datetime_convert language="es_ES" format="%d de %B" convert_entities="yes|no"}
+        {entry_date format="%F %d"}
+      {/exp:datetime_convert}
+    {/if}
+  </p>
+{/exp:channel:entries}

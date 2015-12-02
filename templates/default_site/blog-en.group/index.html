@@ -31,18 +31,7 @@
                     <div class="imagen-movil bg-img-block hidden-lg hidden-md hidden-sm" style="background-image:url({image:url})"></div><!--movil-->
                   {/imagen_blog}
                   <div class="texto pt-28-xs pt-28-sm">
-                    <span>{exp:transcribe:language_abbreviation}</span>
-                    <p class="fecha mb-28">
-                      {if '{exp:transcribe:language_abbreviation}' == 'en'}
-                      {exp:transcribe:language_abbreviation}
-                        {entry_date format="%F %d<sup>%S</sup>"}
-                      {if:else} 
-                      {exp:transcribe:language_abbreviation}
-                        {exp:datetime_convert language="es_ES" format="%d de %B" convert_entities="yes|no"}
-                          {entry_date format="%F %d"}
-                        {/exp:datetime_convert}
-                      {/if}
-                    </p>
+                    {embed="blog-en/date" category_id="{category_id}}
                     <h2 class="text-uppercase">{titulo_blog}</h2>
                     {exp:word_limit total="65"}
                       <span class="parrafo fz-18 mb-28">{texto_blog}</span>
