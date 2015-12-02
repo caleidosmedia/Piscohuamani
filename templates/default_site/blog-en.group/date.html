@@ -1,5 +1,4 @@
-{exp:channel:entries channel="blog" dinamyc="off" sort="desc" orderby="date" category="{embed:category_id}"}
-<span>{exp:transcribe:language_abbreviation}</span>
+{exp:channel:entries channel="blog" dinamyc="off" sort="desc" orderby="date" category="{embed:category_id} entry_id={embed:data_entry}" limit="1"}
   <p class="fecha mb-28">
     {if '{exp:transcribe:language_abbreviation}' == 'en'}
     {exp:transcribe:language_abbreviation}
