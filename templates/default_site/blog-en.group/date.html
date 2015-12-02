@@ -1,7 +1,6 @@
-{exp:channel:entries channel="blog" dinamyc="off" sort="desc" orderby="date" category="{embed:category_id} entry_id={embed:data_entry}" limit="1"}
+{exp:channel:entries channel="blog" dinamyc="off" sort="desc" orderby="date" category="{embed:category_id} entry_id={embed:data-entry}" limit="1"}
   <p class="fecha mb-28">
     {if '{exp:transcribe:language_abbreviation}' == 'en'}
-    {exp:transcribe:language_abbreviation}
       {entry_date format="%F %d<sup>%S</sup>"}
     {if:else} 
     {exp:transcribe:language_abbreviation}

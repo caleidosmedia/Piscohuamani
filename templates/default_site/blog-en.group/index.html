@@ -31,8 +31,8 @@
                     <div class="imagen-movil bg-img-block hidden-lg hidden-md hidden-sm" style="background-image:url({image:url})"></div><!--movil-->
                   {/imagen_blog}
                   <div class="texto pt-28-xs pt-28-sm">
-                    {embed="blog-en/date" category_id="{category_id} data_entry="{entry_id}"}
-                    <h2 class="text-uppercase">{titulo_blog}</h2>
+                    {embed="blog-en/date" category_id="{category_id} data-entry="{entry_id}"}
+                    <h2 class="text-uppercase" data-entry="{entry_id}">{titulo_blog}</h2>
                     {exp:word_limit total="65"}
                       <span class="parrafo fz-18 mb-28">{texto_blog}</span>
                     {/exp:word_limit}
