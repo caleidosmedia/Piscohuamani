@@ -1,4 +1,5 @@
 {exp:channel:entries channel="blog" dinamyc="off" sort="desc" orderby="date" entry_id={embed:data-entry}"}
+  {if "{entry_id}" == "{embed:data-entry}"}
   <p class="fecha mb-28" data-entry="{entry_id}">
     {if '{exp:transcribe:language_abbreviation}' == 'en'}
       {entry_date format="%F %d<sup>%S</sup>"}
@@ -8,4 +9,6 @@
       {/exp:datetime_convert}
     {/if}
   </p>
+  {if:else}
+  {/if}
 {/exp:channel:entries}
