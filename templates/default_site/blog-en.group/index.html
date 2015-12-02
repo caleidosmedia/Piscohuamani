@@ -33,7 +33,7 @@
                   <div class="texto pt-28-xs pt-28-sm">
                     <span>{exp:transcribe:language_abbreviation}</span>
                     <p class="fecha mb-28">
-                      {if '{exp:transcribe:language_abbreviation}' === 'en'}
+                      {if '{exp:transcribe:language_abbreviation}' = 'en'}
                       {exp:transcribe:language_abbreviation}
                         {entry_date format="%F %d<sup>%S</sup>"}
                       {if:else} 
