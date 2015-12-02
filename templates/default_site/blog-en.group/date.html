@@ -1,4 +1,4 @@
-{exp:channel:entries channel="blog" dinamyc="off" sort="desc" orderby="date" category="{embed:category_id} entry_id={embed:data-entry}" limit="1"}
+{exp:channel:entries channel="blog" dinamyc="off" sort="desc" orderby="date" entry_id={embed:data-entry}"}
   <p class="fecha mb-28" data-entry="{entry_id}">
     {if '{exp:transcribe:language_abbreviation}' == 'en'}
       {entry_date format="%F %d<sup>%S</sup>"}
