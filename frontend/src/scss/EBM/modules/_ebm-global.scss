@@ -487,6 +487,14 @@ $separator-height-control: 1px;
     	max-height: 1110px;
 		}
 	}
+	.etiqueta {
+		@include transform (translate(-50%, -33%));
+    left: 50%;
+    top: 50%;
+    width: 350px;
+    height: 60%;
+
+	}
 } 
 
 /*
