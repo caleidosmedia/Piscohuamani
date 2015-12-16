@@ -880,7 +880,7 @@ footer {
 					@include transition(all .2s ease-in);
 					a {
 						text-decoration: none;
-						color: #f8f4e5;
+						color: #3b2e29;
 					}
 					.overlay {
 						top: 0;
@@ -1338,8 +1338,7 @@ footer {
 			.panel-title a {
 			  font-size: 32px;
 			  font-size: rem(32px);
-				font-weight: 300;
-				font-family: "trajan-pro-3";
+				font-weight: 400;
 				text-decoration: none;
 				img {
 					padding-right: 2%;

@@ -7364,7 +7364,7 @@ footer .col-md-3 p a:hover {
 }
 .site-content .content-blog .post .botons button a {
   text-decoration: none;
-  color: #f8f4e5;
+  color: #3b2e29;
 }
 .site-content .content-blog .post .botons button .overlay {
   top: 0;
@@ -7829,8 +7829,7 @@ footer .col-md-3 p a:hover {
 #media-kit .panel-group .panel-default .panel-title a {
   font-size: 32px;
   font-size: 2.28571rem;
-  font-weight: 300;
-  font-family: "trajan-pro-3";
+  font-weight: 400;
   text-decoration: none;
 }
 #media-kit .panel-group .panel-default .panel-title a img {
