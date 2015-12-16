@@ -8405,7 +8405,7 @@ footer .col-md-3 p a:hover {
   #make-drink .gallery-wrapper .gallery-child {
     position: relative;
     top: 40px;
-    min-height: auto;
+    min-height: 150px;
   }
   #make-drink .gallery-wrapper .gallery-child .flickity-viewport {
     min-height: 260px !important;
