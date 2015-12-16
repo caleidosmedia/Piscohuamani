@@ -8383,7 +8383,7 @@ footer .col-md-3 p a:hover {
     text-align: center;
   }
   #make-drink .gallery-wrapper {
-    min-height: auto;
+    min-height: auto !important;
   }
   #make-drink .gallery-wrapper .gallery-button-left,
   #make-drink .gallery-wrapper .gallery-button-right {
