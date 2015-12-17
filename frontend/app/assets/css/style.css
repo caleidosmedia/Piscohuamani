@@ -9153,7 +9153,7 @@ footer .col-md-3 p a:hover {
 }
 
 .text-brown {
-  color: #3B2E29;
+  color: #4e3227;
 }
 
 .text-brown-light {
@@ -9221,6 +9221,10 @@ footer .col-md-3 p a:hover {
 
 .share {
   margin: 10px 17px;
+}
+
+#acordion a {
+  color: #4e3227;
 }
 
 a.btn.form-control,
