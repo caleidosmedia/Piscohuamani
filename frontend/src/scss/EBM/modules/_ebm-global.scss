@@ -1226,7 +1226,7 @@ footer {
   		border-bottom:transparent; 
   	}
 		h2 {
-			color: #3B2E29; 
+			color: #4e3227; 
 			padding-bottom: 5%;
 		}
 		.panel-title {
@@ -1250,7 +1250,7 @@ footer {
 			font-size: rem(18.2px);
   		font-weight: 300;
   		line-height: 1.5;
-  		color: #3B2E29;
+  		color: #4e3227;
 		}
 	}	
 }
@@ -2495,6 +2495,6 @@ $prefijo: fz !default;
 .share {
   margin: 10px 17px;
 }
-#acordion a {
+.change-arrow p {
 	color: #4e3227;
 }

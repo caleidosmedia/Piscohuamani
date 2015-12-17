@@ -7723,7 +7723,7 @@ footer .col-md-3 p a:hover {
   border-bottom: transparent;
 }
 #faqs .section h2 {
-  color: #3B2E29;
+  color: #4e3227;
   padding-bottom: 5%;
 }
 #faqs .section .panel-title {
@@ -7747,7 +7747,7 @@ footer .col-md-3 p a:hover {
   font-size: 1.3rem;
   font-weight: 300;
   line-height: 1.5;
-  color: #3B2E29;
+  color: #4e3227;
 }
 
 /*
@@ -9223,7 +9223,7 @@ footer .col-md-3 p a:hover {
   margin: 10px 17px;
 }
 
-#acordion a {
+.change-arrow p {
   color: #4e3227;
 }
 
