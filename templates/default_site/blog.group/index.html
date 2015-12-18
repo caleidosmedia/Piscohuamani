@@ -30,7 +30,7 @@
                     <div class="imagen-movil bg-img-block hidden-lg hidden-md hidden-sm" style="background-image:url({image:url})"></div><!--movil-->
                   {/imagen_blog}
                   <div class="texto pt-28-xs pt-28-sm">
-                    {embed="blog-en/date" data-entry="{entry_id}"}
+                    {embed="blog/date" data-entry="{entry_id}"}
                     <h2 class="text-uppercase" data-entry="{entry_id}">{titulo_blog}</h2>
                     {exp:word_limit total="65"}
                       <span class="parrafo fz-18 mb-28">{texto_blog}</span>
@@ -56,7 +56,7 @@
                   </div> 
                   <p class="tags fz-18 pt-35 pb-14">
                     <span class="text-bold">Tags:</span>
-                    {embed="blog-en/category" data="{entry_id}"}
+                    {embed="blog/category" data="{entry_id}"}
                   </p>
                 </div>
               {paginate}
