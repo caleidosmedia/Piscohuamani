@@ -964,6 +964,7 @@ footer {
 	Blog posts
 */
 #blog-post {
+	background-color:#f8f4e5;
 	.container{
 		h1 {
 			color: #8d744a;
@@ -1001,6 +1002,10 @@ footer {
 		img {
 			width: 100%; 
 		}
+	}
+	.img-right {
+		width: 295px; 
+		height: 295px;
 	}
 	.texto {
 		padding-top: 45px;
@@ -1547,7 +1552,7 @@ footer {
 }
 
 /*RESPONSIVE MENÚ E IMG-PRINCIPAL*/
-@media screen and (max-width: #{$screen-phone}) {
+@media #{$md-down} {
 	/*RESPONSIVE FORMULARIO*/
 	.fondo {
 		padding: 25px 10%;

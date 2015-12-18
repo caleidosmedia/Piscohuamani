@@ -7465,6 +7465,9 @@ footer .col-md-3 p a:hover {
 /*
 	Blog posts
 */
+#blog-post {
+  background-color: #f8f4e5;
+}
 #blog-post .container h1 {
   color: #8d744a;
   font-family: Verdana;
@@ -7500,6 +7503,10 @@ footer .col-md-3 p a:hover {
 }
 #blog-post .imagen img {
   width: 100%;
+}
+#blog-post .img-right {
+  width: 295px;
+  height: 295px;
 }
 #blog-post .texto {
   padding-top: 45px;
@@ -8037,7 +8044,7 @@ footer .col-md-3 p a:hover {
 }
 
 /*RESPONSIVE MEN├Ü E IMG-PRINCIPAL*/
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 992px) {
   /*RESPONSIVE FORMULARIO*/
   .fondo {
     padding: 25px 10%;
