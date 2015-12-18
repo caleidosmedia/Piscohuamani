@@ -7570,6 +7570,9 @@ footer .col-md-3 p a:hover {
 #slider-events .gallery {
   height: auto;
 }
+#slider-events .gallery-child .gallery-cell {
+  background-position-y: 30%;
+}
 #slider-events .flickity-viewport {
   height: 300px !important;
   min-height: 300px;
@@ -7592,6 +7595,14 @@ footer .col-md-3 p a:hover {
 #slider-events .see-more {
   display: none;
   visibility: hidden;
+}
+#slider-events .slider-selected {
+  padding-top: 30px;
+  width: 100%;
+}
+#slider-events button input {
+  background: transparent;
+  border: 0px;
 }
 
 /*

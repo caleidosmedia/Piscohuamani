@@ -1071,6 +1071,9 @@ footer {
   .gallery {
   	height: auto;
   }
+  .gallery-child .gallery-cell {
+  	background-position-y: 30%;
+  }
   .flickity-viewport {
 		height: 300px!important;
 		min-height: 300px;
@@ -1093,6 +1096,14 @@ footer {
  	.see-more {
  		display: none;
  		visibility: hidden;
+ 	}
+ 	.slider-selected {
+ 		padding-top: 30px; 
+ 		width:100%;
+ 	}
+ 	button input {
+ 		background: transparent; 
+ 		border: 0px;
  	}
 }
 
