@@ -6928,11 +6928,15 @@ body .slider-text-oficial2 {
 */
 #about-us {
   background-size: 30%;
+  z-index: 101;
 }
 #about-us h1 {
   font-size: 35px;
   font-size: 2.5rem;
   font-family: Verdana;
+}
+#about-us h2 {
+  font-size: 60px;
 }
 #about-us h3 {
   font-style: italic;
@@ -7003,21 +7007,29 @@ body .slider-text-oficial2 {
 #the-goods h3, #events h3, #slider-events h3 {
   font-style: italic;
   font-weight: 300;
+  margin-bottom: 5%;
 }
-#the-goods #slider-text-goods, #events #slider-text-goods, #slider-events #slider-text-goods {
+#the-goods .make-text, #events .make-text, #slider-events .make-text {
+  top: 200px;
+}
+#the-goods .make-text #slider-text-goods, #events .make-text #slider-text-goods, #slider-events .make-text #slider-text-goods {
   padding-top: 9%;
+  z-index: 1;
 }
-#the-goods #slider-text-goods .separador, #events #slider-text-goods .separador, #slider-events #slider-text-goods .separador {
+#the-goods .make-text #slider-text-goods .separador, #events .make-text #slider-text-goods .separador, #slider-events .make-text #slider-text-goods .separador {
   border-bottom: 1px solid #3b2e29;
 }
-#the-goods #slider-text-goods h4, #events #slider-text-goods h4, #slider-events #slider-text-goods h4 {
+#the-goods .make-text #slider-text-goods h4, #events .make-text #slider-text-goods h4, #slider-events .make-text #slider-text-goods h4 {
   padding-top: 6%;
 }
-#the-goods #slider-text-goods p, #events #slider-text-goods p, #slider-events #slider-text-goods p {
+#the-goods .make-text #slider-text-goods p, #events .make-text #slider-text-goods p, #slider-events .make-text #slider-text-goods p {
   font-size: 18.2px;
   font-size: 1.3rem;
   font-weight: 300;
   padding-right: 20px;
+}
+#the-goods #slider_back_goods, #events #slider_back_goods, #slider-events #slider_back_goods {
+  z-index: 2;
 }
 #the-goods .slider-content, #events .slider-content, #slider-events .slider-content {
   position: relative;
@@ -7083,8 +7095,15 @@ body .slider-text-oficial2 {
   right: 220px;
   bottom: 0;
 }
+#make-drink #slider_back_make, #make-drink #slider_next_make {
+  z-index: 3;
+}
+#make-drink .make-text {
+  top: 0px;
+}
 #make-drink .make-text #slider-text-make {
   padding-top: 30px;
+  z-index: 1;
 }
 #make-drink .make-text #slider-text-make .subtitle {
   font-style: italic;
@@ -7112,6 +7131,7 @@ body .slider-text-oficial2 {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 2;
 }
 
 /*
@@ -7119,6 +7139,7 @@ body .slider-text-oficial2 {
 */
 #events, #slider-events {
   background-size: cover;
+  overflow: hidden;
 }
 #events .overlay-events, #slider-events .overlay-events {
   width: 100%;
@@ -7140,6 +7161,12 @@ body .slider-text-oficial2 {
 }
 #events .flickity-viewport, #slider-events .flickity-viewport {
   min-height: 835px;
+}
+#events .container-slider-text, #slider-events .container-slider-text {
+  padding-top: 180px;
+}
+#events .container-slider-text #slider-text-experience, #slider-events .container-slider-text #slider-text-experience {
+  z-index: 1;
 }
 #events .gallery-wrapper, #slider-events .gallery-wrapper {
   position: relative;
@@ -9201,6 +9228,14 @@ footer .col-md-3 p a:hover {
 
 .family-museosans {
   font-family: "MuseoSans";
+}
+
+.family-verdana {
+  font-family: Verdana !important;
+}
+
+.family-across {
+  font-family: 'Across';
 }
 
 .float-left {

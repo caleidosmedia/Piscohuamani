@@ -459,10 +459,14 @@ $separator-height-control: 1px;
 */
 #about-us {
 	background-size: 30%;
+	z-index:101;
 	h1 {
 		font-size: 35px;
 		font-size: rem(35px);
 		font-family: Verdana;
+	}
+	h2 {
+		font-size: 60px;
 	}
 	h3 {
 		font-style: italic;
@@ -503,7 +507,6 @@ $separator-height-control: 1px;
 */
 #the-goods {
 	background-color:rgb(248, 244, 229);
-	// padding: 8% 17%;
 	.gallery {
 		height: 630px;
 		padding-top: 115px;
@@ -531,24 +534,29 @@ $separator-height-control: 1px;
 	h3 {
 		font-style: italic;
 		font-weight: 300;
+		margin-bottom:5%;
 	}
-	// h2{ 
-	// 	font-family: "trajan-pro-3"; 
-	// }
-	#slider-text-goods {
-		padding-top: 9%;;
-		.separador {
-			border-bottom: 1px solid #3b2e29;
+	.make-text {
+		top: 200px;
+		#slider-text-goods {
+			padding-top: 9%;
+			z-index: 1;
+			.separador {
+				border-bottom: 1px solid #3b2e29;
+			}
+			h4{
+				padding-top: 6%;
+			}
+			p {
+				font-size: 18.2px;
+				font-size: rem(18.2px);
+				font-weight: 300;
+				padding-right: 20px;
+			}
 		}
-		h4{
-			padding-top: 6%;
-		}
-		p {
-			font-size: 18.2px;
-			font-size: rem(18.2px);
-			font-weight: 300;
-			padding-right: 20px;
-		}
+	}	
+	#slider_back_goods {
+		z-index: 2;
 	}
 	.slider-content {
 		position: relative;
@@ -576,7 +584,7 @@ $separator-height-control: 1px;
 	  -webkit-box-shadow: 22px -19px 30px 0px rgba(248, 244, 229, 1);
 	  box-shadow:         22px -19px 30px 0px rgba(248, 244, 229, 1);
 		z-index: 100;
-	}	
+	}
 }
 .active-hidden {
 	opacity: 0;
@@ -603,9 +611,14 @@ $make-drink-gallery-height-control: 560px;
 	.gallery-button-right {
 		@include position(absolute, -60px 220px 0 null);
 	}
+	#slider_back_make, #slider_next_make {
+		z-index: 3;
+	}
 	.make-text {
+		top: 0px;
 		#slider-text-make {
 			padding-top: 30px;
+			z-index: 1;
 			.subtitle {
 				font-style: italic;
 				font-size: 24px;
@@ -630,6 +643,7 @@ $make-drink-gallery-height-control: 560px;
 	}
 	.gallery-child {
 		@include position(absolute, -60px 0 0 0);
+		z-index: 2;
 	}
 }
 
@@ -639,6 +653,7 @@ $make-drink-gallery-height-control: 560px;
 #events {
 	@extend #the-goods; 
 	background-size: cover;
+	overflow: hidden;
 	.overlay-events {
 		width: 100%;
 		left: 0;
@@ -659,6 +674,12 @@ $make-drink-gallery-height-control: 560px;
 	}
 	.flickity-viewport {
 		min-height: 835px;
+	}
+	.container-slider-text {
+		padding-top: 180px;
+		#slider-text-experience {
+			z-index: 1;
+		}
 	}
 	.gallery-wrapper {
 		position: relative;
@@ -2481,6 +2502,12 @@ $prefijo: fz !default;
 }
 .family-museosans {
 	font-family: "MuseoSans";
+}
+.family-verdana {
+	font-family: Verdana!important;
+}
+.family-across {
+	font-family:'Across';
 }
 .float-left {
 	float: left; 
