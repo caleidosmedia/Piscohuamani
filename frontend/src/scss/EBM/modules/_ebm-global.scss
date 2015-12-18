@@ -452,6 +452,9 @@ $separator-height-control: 1px;
 #about-us {
 	background-size: 30%;
 	z-index:101;
+	.leyenda-about {
+		font-size: 60px;
+	}
 	h1 {
 		font-size: 35px;
 		font-size: rem(35px);

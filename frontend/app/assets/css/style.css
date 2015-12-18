@@ -6918,6 +6918,9 @@ body .slider-text-oficial2 {
   background-size: 30%;
   z-index: 101;
 }
+#about-us .leyenda-about {
+  font-size: 60px;
+}
 #about-us h1 {
   font-size: 35px;
   font-size: 2.5rem;
