@@ -6433,20 +6433,8 @@ body .slider-text-oficial2 {
   background-color: #f8f4e5;
 }
 
-.site-content {
-  /* > section {
-  // 		padding: 82px 210px;
-  // 		padding: rem(82px) rem(210px);
-  // 		.container-sm {
-  // 			margin-left: 100px;
-  // 			margin-right: 20px;
-  // 		}
-  // }*/
-}
 .site-content .section-title h2 {
-  font-family: "trajan-pro-3", "Times New Roman", Times, serif !important;
-  font-weight: 300;
-  font-style: normal;
+  font-family: "trajan-pro-3";
   font-size: 40px;
   font-size: 2.85714rem;
 }
@@ -6934,9 +6922,6 @@ body .slider-text-oficial2 {
   font-size: 35px;
   font-size: 2.5rem;
   font-family: Verdana;
-}
-#about-us h2 {
-  font-size: 60px;
 }
 #about-us h3 {
   font-style: italic;
@@ -9227,7 +9212,7 @@ footer .col-md-3 p a:hover {
 }
 
 .family-museosans {
-  font-family: "MuseoSans";
+  font-family: "MuseoSans" !important;
 }
 
 .family-verdana {
@@ -9235,7 +9220,7 @@ footer .col-md-3 p a:hover {
 }
 
 .family-across {
-  font-family: 'Across';
+  font-family: "Across" !important;
 }
 
 .float-left {

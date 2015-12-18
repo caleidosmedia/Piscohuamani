@@ -67,17 +67,9 @@ body {
 }
 
 .site-content {
-	/* > section {
-	// 		padding: 82px 210px;
-	// 		padding: rem(82px) rem(210px);
-	// 		.container-sm {
-	// 			margin-left: 100px;
-	// 			margin-right: 20px;
-	// 		}
-	// }*/
 	.section-title {
 		h2 {
-			@include serif-light;
+			font-family: "trajan-pro-3";
 			font-size: 40px;
 			font-size: rem(40px);
 		}
@@ -464,9 +456,6 @@ $separator-height-control: 1px;
 		font-size: 35px;
 		font-size: rem(35px);
 		font-family: Verdana;
-	}
-	h2 {
-		font-size: 60px;
 	}
 	h3 {
 		font-style: italic;
@@ -2501,13 +2490,13 @@ $prefijo: fz !default;
 	list-style: none;
 }
 .family-museosans {
-	font-family: "MuseoSans";
+	font-family: "MuseoSans"!important;
 }
 .family-verdana {
 	font-family: Verdana!important;
 }
 .family-across {
-	font-family:'Across';
+	font-family:'Across'!important;
 }
 .float-left {
 	float: left; 
