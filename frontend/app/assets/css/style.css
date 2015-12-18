@@ -7596,13 +7596,13 @@ footer .col-md-3 p a:hover {
   display: none;
   visibility: hidden;
 }
+#slider-events .see-more input {
+  background: transparent;
+  border: 0px;
+}
 #slider-events .slider-selected {
   padding-top: 30px;
   width: 100%;
-}
-#slider-events #slider-text-experience .see-more input {
-  background: transparent;
-  border: 0px;
 }
 
 /*

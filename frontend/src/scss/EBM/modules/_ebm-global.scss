@@ -1096,16 +1096,14 @@ footer {
  	.see-more {
  		display: none;
  		visibility: hidden;
+ 		input {
+	 		background: transparent; 
+	 		border: 0px;
+	 	}
  	}
  	.slider-selected {
  		padding-top: 30px; 
  		width:100%;
- 	}
- 	#slider-text-experience {
-	 	.see-more input {
-	 		background: transparent; 
-	 		border: 0px;
-	 	}
  	}
 }
 
