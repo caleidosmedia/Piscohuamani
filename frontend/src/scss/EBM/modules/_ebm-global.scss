@@ -677,32 +677,36 @@ $make-drink-gallery-height-control: 560px;
 		}
 	}
 	.see-more {
-			background-color: transparent!important;
-			padding: 2% 14%;
-			margin-top: 8%;
-			border: 2px solid #fff;
-			@include transition(all .5s ease-in-out);
-			overflow: hidden;
-			background-color: rgba(250, 250, 250, 0.2);
-			a {
-				font-weight: 300;
-				text-decoration: none;
-				z-index: 1;
-			}
-			.overlay {
-				top: 0;
-				left: 0; 
-				@include transition(all .2s ease-in);
-			}
-			&:hover {
-				a {
-					color: #fff;
-				}
-				.overlay {  
-					background-color: rgba(250, 250, 250, 0.2);
-				} 
-			}
+		background-color: transparent!important;
+		padding: 2% 14%;
+		margin-top: 8%;
+		border: 2px solid #fff;
+		@include transition(all .5s ease-in-out);
+		overflow: hidden;
+		background-color: rgba(250, 250, 250, 0.2);
+		a {
+			font-weight: 300;
+			text-decoration: none;
+			z-index: 1;
 		}
+		.overlay {
+			top: 0;
+			left: 0; 
+			@include transition(all .2s ease-in);
+		}
+		&:hover {
+			a {
+				color: #fff;
+			}
+			.overlay {  
+				background-color: rgba(250, 250, 250, 0.2);
+			} 
+		}
+		input {
+	 		background: transparent; 
+	 		border: 0px;
+	 	}
+	}
 	.row {
 		h3 {
 			font-style: normal;
@@ -1096,10 +1100,6 @@ footer {
  	.see-more {
  		display: none;
  		visibility: hidden;
- 		input {
-	 		background: transparent; 
-	 		border: 0px;
-	 	}
  	}
  	.slider-selected {
  		padding-top: 30px; 

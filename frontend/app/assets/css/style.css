@@ -7186,6 +7186,10 @@ body .slider-text-oficial2 {
 #events .see-more:hover .overlay, #slider-events .see-more:hover .overlay {
   background-color: rgba(250, 250, 250, 0.2);
 }
+#events .see-more input, #slider-events .see-more input {
+  background: transparent;
+  border: 0px;
+}
 #events .row h3, #slider-events .row h3 {
   font-style: normal;
   font-weight: 300;
@@ -7595,10 +7599,6 @@ footer .col-md-3 p a:hover {
 #slider-events .see-more {
   display: none;
   visibility: hidden;
-}
-#slider-events .see-more input {
-  background: transparent;
-  border: 0px;
 }
 #slider-events .slider-selected {
   padding-top: 30px;
