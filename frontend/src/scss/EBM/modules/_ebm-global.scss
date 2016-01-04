@@ -1638,6 +1638,9 @@ footer {
 		}
 	}
 	/*RESPONSIVE MENÚ*/
+	#overlay-menu {
+		padding-top: 14%!important;
+	}
 	.site-menu {
 		.contenedor-menu {
 			height: 70px;
@@ -1925,6 +1928,7 @@ footer {
 			}
 		}
 	}
+	
 	/*EXPERIENCE*/
 	#events {
 		h1 {
@@ -2429,6 +2433,33 @@ footer {
   			position: relative!important;
 			}
 		}
+	}
+}
+
+@media #{$md-only} {
+	/*THE GOODS*/
+	#slider-text-goods {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+	#slider-text-make {
+		padding-left: 20%!important;
+		padding-right: 20%!important;
+	}
+}
+@media #{$sm-only} {
+	/*THE GOODS*/
+	#slider-text-goods {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+	#slider-text-make {
+		padding-left: 20%!important;
+		padding-right: 20%!important;
+	}
+	#follow-us {
+		padding-left: 20%!important;
+		padding-right: 20%!important;
 	}
 }
 
