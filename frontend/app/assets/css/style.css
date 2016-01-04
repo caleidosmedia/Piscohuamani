@@ -8132,10 +8132,6 @@ footer .col-md-3 p a:hover {
   }
 
   /*RESPONSIVE MEN├Ü*/
-  #overlay-menu {
-    padding-top: 14% !important;
-  }
-
   .site-menu .contenedor-menu {
     height: 70px;
   }
@@ -8963,31 +8959,24 @@ footer .col-md-3 p a:hover {
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   /*THE GOODS*/
-  #slider-text-goods {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-
-  #slider-text-make {
+  #slider-text-goods, #slider-text-make {
     padding-left: 20% !important;
     padding-right: 20% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   /*THE GOODS*/
-  #slider-text-goods {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-
-  #slider-text-make {
+  #slider-text-goods, #slider-text-make, #follow-us, .container-slider-text {
     padding-left: 20% !important;
     padding-right: 20% !important;
   }
 
-  #follow-us {
+  #events h1, #slider-events h1 {
     padding-left: 20% !important;
-    padding-right: 20% !important;
+  }
+
+  #overlay-menu {
+    padding-top: 14% !important;
   }
 }
 /*THANKS RESPONSIVE*/
