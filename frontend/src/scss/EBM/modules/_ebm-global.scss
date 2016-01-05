@@ -1024,6 +1024,7 @@ footer {
 	.img-right {
 		width: 295px; 
 		height: 295px;
+		float: none!important;
 	}
 	.texto {
 		padding-top: 45px;
@@ -2260,6 +2261,12 @@ footer {
 			}
 		}
 	}
+
+	/*BLOG INTERNO*/
+	.img-right {
+		float: none!important;
+	}
+	
 	/*TERMS*/
 	#terms {
 		.contenedor {
@@ -2453,6 +2460,10 @@ footer {
 	}
 	#overlay-menu {
 		padding-top: 14%!important;
+	}
+	/*BLOG INTERNO*/
+	.img-right {
+		float: none!important;
 	}
 }
 

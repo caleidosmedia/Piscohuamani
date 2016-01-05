@@ -7527,6 +7527,7 @@ footer .col-md-3 p a:hover {
 #blog-post .img-right {
   width: 295px;
   height: 295px;
+  float: none !important;
 }
 #blog-post .texto {
   padding-top: 45px;
@@ -8785,6 +8786,11 @@ footer .col-md-3 p a:hover {
     font-size: 20px;
   }
 
+  /*BLOG INTERNO*/
+  .img-right {
+    float: none !important;
+  }
+
   /*TERMS*/
   #terms .contenedor {
     padding: 25% 12% 15%;
@@ -8977,6 +8983,11 @@ footer .col-md-3 p a:hover {
 
   #overlay-menu {
     padding-top: 14% !important;
+  }
+
+  /*BLOG INTERNO*/
+  .img-right {
+    float: none !important;
   }
 }
 /*THANKS RESPONSIVE*/
