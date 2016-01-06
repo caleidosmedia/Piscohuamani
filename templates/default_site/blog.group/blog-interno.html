@@ -3,11 +3,12 @@
     {imagen_blog}
       {embed="includes/head" 
         titulo="{title}"
-        descripcion="{texto_introductorio}"
+        descripcion="{texto_introductorio} {titulo_blog}"
         imagen="{image:url}"
         url="{site_url}blog/{url_title}" 
       }
     {/imagen_blog}
+  {if:else}
   {/if}
 {/exp:channel:entries}
   <body>
@@ -39,6 +40,7 @@
               <div class="texto">
                 <p class="fecha">{current_time format="%M %j"}</p>
                 <h2 class="serif-light">{titulo_blog}</h2>
+                <p class="hidden-xs">{texto_introductorio}</p>
                 <p class="hidden-xs">{texto_blog}</p>
                 <div class="gorro clearfix ">
                     <div class="col-sm-1"><img src="{site_url}frontend/app/assets/img/iconos-logos/quote4.png" alt=""></div>
