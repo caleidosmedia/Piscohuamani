@@ -55,13 +55,13 @@
                   <p>{exp:transcribe:replace name="share_blog"}</p>
                   {exp:channel:categories channel="blog" category_group="6" show="23" limit="1" style="off" dynamic="off"}
                     <li>
-                      <a href="http://www.facebook.com/sharer.php?u={site_url}{exp:transcribe:language_abbreviation}/blog/{category_url_title}" target="_blank"><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-share-facebook.png"></a>
+                      <a href="http://www.facebook.com/sharer.php?u={site_url}blog/blog-interno/{url_title}" target="_blank"><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-share-facebook.png"></a>
                     </li>
                     <li>
-                      <a  href = " https://twitter.com/share?url={site_url}{exp:transcribe:language_abbreviation}/blog/{category_url_title} & text=Simple%20Share%20Buttons & hashtags=simplesharebuttons "  target = " _blank "><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-share-twitter.png" alt=""></a>
+                      <a  href = " https://twitter.com/share?url={site_url}blog/blog-interno/{url_title} & text=Simple%20Share%20Buttons & hashtags=simplesharebuttons "  target = " _blank "><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-share-twitter.png" alt=""></a>
                     </li>
                     <li>
-                     <a href = "https://plus.google.com/share?url={site_url}{exp:transcribe:language_abbreviation}/blog/{category_url_title}" target = "_blank"><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-share-google+.png" alt=""></a>
+                     <a href = "https://plus.google.com/share?url={site_url}blog/blog-interno/{url_title}" target = "_blank"><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-share-google+.png" alt=""></a>
                     </li>
                   {/exp:channel:categories}
                 </div>
