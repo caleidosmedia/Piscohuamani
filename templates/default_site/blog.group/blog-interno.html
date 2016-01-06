@@ -1,4 +1,15 @@
-{embed="includes/head"}
+{exp:channel:entries channel="blog" limit="1"}
+  {if imagen_blog!=''}
+    {imagen_blog}
+      {embed="includes/head" 
+        titulo="{title}" 
+        descripcion="{texto_introductorio_blog}" 
+        imagen="{image:url}"
+        url="{site_url}blog/{url_title}" 
+      }
+    {/imagen_blog}
+  {/if}
+{/exp:channel:entries}
   <body>
     <div class="site-wrapper"> <!-- Body -->
       {embed="includes/header" huamani="{path='home'}" about="{path='home'#about-us}" goods="{path='home'}#the-goods" make="{path='home'}#make-drink" events="{path='home'}#events"}
