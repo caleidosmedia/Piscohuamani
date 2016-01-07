@@ -52,8 +52,8 @@ function validarEdad() {
   var month = $("#month").val();
   var day = $("#day").val();
   var country = $("#country").val();
-  if (year.length == 4 && month.length >= 1 && day.length >= 1 && country.length != 0) {
-    var min_age = 1;
+  if (year.length == 4 && month.length >= 1 && day.length >= 1 && country.length != 0 && month != 00 && day != 00) {
+    var min_age = 0;
     var selected_country = $("#country option:selected").text();
     console.log(selected_country);
     for (var i = 0; i < paises.length; i++) {
