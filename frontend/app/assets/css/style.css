@@ -6529,7 +6529,7 @@ body .slider-text-oficial2 {
 
 .fondo {
   width: 100%;
-  display: flex !important;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
@@ -9303,6 +9303,10 @@ footer .col-md-3 p a:hover {
 
 .change-arrow p {
   color: #4e3227;
+}
+
+.display-flex {
+  display: flex !important;
 }
 
 a.btn.form-control,

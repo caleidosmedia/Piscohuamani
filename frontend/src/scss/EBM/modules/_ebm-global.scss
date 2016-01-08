@@ -122,7 +122,7 @@ $separator-height-control: 1px;
 }
 .fondo {
 	width: 100%;
-	display: flex!important;
+	display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
@@ -2571,4 +2571,7 @@ $prefijo: fz !default;
 }
 .change-arrow p {
 	color: #4e3227;
+}
+.display-flex {
+	display: flex!important;
 }
