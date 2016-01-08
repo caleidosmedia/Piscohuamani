@@ -130,6 +130,10 @@ $separator-height-control: 1px;
   align-items: center;
   background-size: cover;
   background-position-Y: 30%;
+  .contenedor-fondo {
+  	display: table-cell; 
+  	vertical-align: middle;
+  }
 	h3 {
 		line-height: 1.5;
 		padding-top: 18px;
