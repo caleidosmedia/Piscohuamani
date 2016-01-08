@@ -8,7 +8,8 @@
   	{exp:channel:entries channel="ingreso" dinamyc="off"}
 			{imagen_de_fondo}
 			<div class="fondo minhp-100 site-wrapper" style="background-image: url({image:url})"> <!-- Body -->
-		    <div class="fondo contenedor-fondo minhp-100 text-center">
+			{/imagen_de_fondo}
+		    <div class="contenedor-fondo minhp-100 text-center">
 		    	<div class="overlay-fondo w-100 minhp-100 absolute"></div>
 		    	<div class="logo-title relative" style="z-index:2">
 		    		{logo_ingreso}
@@ -252,7 +253,6 @@
 		    	</div>
 		    </div>
 			</div>
-			{/imagen_de_fondo}
 		{/exp:channel:entries}	
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
