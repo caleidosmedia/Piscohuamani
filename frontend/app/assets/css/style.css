@@ -6529,7 +6529,7 @@ body .slider-text-oficial2 {
 
 .fondo {
   width: 100%;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
@@ -6541,6 +6541,12 @@ body .slider-text-oficial2 {
 .fondo .contenedor-fondo {
   display: table-cell;
   vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
 }
 .fondo h3 {
   line-height: 1.5;
