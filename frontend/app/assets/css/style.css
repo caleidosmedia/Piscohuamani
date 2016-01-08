@@ -6529,7 +6529,7 @@ body .slider-text-oficial2 {
 
 .fondo {
   width: 100%;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
