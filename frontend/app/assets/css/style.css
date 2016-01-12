@@ -6540,6 +6540,14 @@ body .slider-text-oficial2 {
   background-position-Y: 30%;
 }
 .fondo .contenedor-fondo {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
   vertical-align: middle;
   display: flex;
   display: table-cell;
