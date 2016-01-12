@@ -907,7 +907,7 @@ footer {
 			}
 			.botons {
 				padding-top: 3%;
-				button {
+				.div-button {
 					background: transparent;
     			opacity: 0.9;
 					padding: 0.7% 5.5%;
@@ -2079,7 +2079,7 @@ footer {
 					padding-bottom: 7%;
 				}
 				.botons {
-					button {
+					.div-button {
 						width: 100%;
 						@include transition(none);
 						height: 50px;

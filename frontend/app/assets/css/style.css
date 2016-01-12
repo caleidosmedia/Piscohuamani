@@ -7398,7 +7398,7 @@ footer .col-md-3 p a:hover {
 .site-content .content-blog .post .botons {
   padding-top: 3%;
 }
-.site-content .content-blog .post .botons button {
+.site-content .content-blog .post .botons .div-button {
   background: transparent;
   opacity: 0.9;
   padding: 0.7% 5.5%;
@@ -7409,11 +7409,11 @@ footer .col-md-3 p a:hover {
   -moz-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-.site-content .content-blog .post .botons button a {
+.site-content .content-blog .post .botons .div-button a {
   text-decoration: none;
   color: #3b2e29;
 }
-.site-content .content-blog .post .botons button .overlay {
+.site-content .content-blog .post .botons .div-button .overlay {
   top: 0;
   left: 0;
   width: 100%;
@@ -7422,10 +7422,10 @@ footer .col-md-3 p a:hover {
   transition: all 0.2s ease-in;
   height: 100%;
 }
-.site-content .content-blog .post .botons button:hover .overlay {
+.site-content .content-blog .post .botons .div-button:hover .overlay {
   background-color: #3b2e29;
 }
-.site-content .content-blog .post .botons button:hover a {
+.site-content .content-blog .post .botons .div-button:hover a {
   color: #f8f4e5;
 }
 .site-content .content-blog .post .botons .social {
@@ -8632,14 +8632,14 @@ footer .col-md-3 p a:hover {
   .site-content .content-blog .post .tags {
     padding-bottom: 7%;
   }
-  .site-content .content-blog .post .botons button {
+  .site-content .content-blog .post .botons .div-button {
     width: 100%;
     -webkit-transition: none;
     -moz-transition: none;
     transition: none;
     height: 50px;
   }
-  .site-content .content-blog .post .botons button a {
+  .site-content .content-blog .post .botons .div-button a {
     font-size: 18px !important;
   }
   .site-content .content-blog .post .botons .social {
