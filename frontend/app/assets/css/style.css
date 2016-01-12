@@ -8322,6 +8322,9 @@ footer .col-md-3 p a:hover {
   .img-principal {
     background-position-y: 10%;
   }
+  .img-principal div.texto {
+    width: 80%;
+  }
   .img-principal div.texto h1 {
     font-size: 35px;
     line-height: 1.2;
