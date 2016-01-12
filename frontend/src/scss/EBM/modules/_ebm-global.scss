@@ -434,6 +434,10 @@ $separator-height-control: 1px;
 	padding-top: 60px;
 		div.texto {
 			font-family: times;
+			position: absolute;
+			@include transform(translate(-50%, -50%));
+			top: 50%;
+			left: 50%;
 			h1 {
 				font-size: 60px;
 				font-size: rem(60px);
@@ -454,7 +458,7 @@ $separator-height-control: 1px;
 		.scroll-down {
 			width: 90px;
 			margin: 0 auto;
-			padding-top: 3%;
+			padding-top: 7%;
 			img {
 				width: 100%;
 			}
@@ -1598,6 +1602,9 @@ footer {
 		padding: 25px 10%;
 		display: block;
 		height: 100%;
+		.contenedor-fondo {
+			width: 80%; 
+		}
 		.logo-title {
 			width: 61%;
   		width: 195px;

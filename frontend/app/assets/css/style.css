@@ -6904,6 +6904,14 @@ body .slider-text-oficial2 {
 }
 .img-principal div.texto {
   font-family: times;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 .img-principal div.texto h1 {
   font-size: 60px;
@@ -6924,7 +6932,7 @@ body .slider-text-oficial2 {
 .img-principal .scroll-down {
   width: 90px;
   margin: 0 auto;
-  padding-top: 3%;
+  padding-top: 7%;
 }
 .img-principal .scroll-down img {
   width: 100%;
@@ -8096,6 +8104,9 @@ footer .col-md-3 p a:hover {
     padding: 25px 10%;
     display: block;
     height: 100%;
+  }
+  .fondo .contenedor-fondo {
+    width: 80%;
   }
   .fondo .logo-title {
     width: 61%;
