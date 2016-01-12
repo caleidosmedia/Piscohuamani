@@ -6525,6 +6525,7 @@ body .slider-text-oficial2 {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.35);
+  background-color: red\9;
 }
 
 .fondo {
@@ -6539,9 +6540,9 @@ body .slider-text-oficial2 {
   background-position-Y: 30%;
 }
 .fondo .contenedor-fondo {
-  display: table-cell;
   vertical-align: middle;
   display: flex;
+  display: table-cell;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;

@@ -119,6 +119,7 @@ $separator-height-control: 1px;
   bottom: 0;
   left: 0;
   background-color: rgba(0,0,0,0.35);
+  background-color: red\9
 }
 .fondo {
 	width: 100%;
@@ -131,9 +132,13 @@ $separator-height-control: 1px;
   background-size: cover;
   background-position-Y: 30%;
   .contenedor-fondo {
-  	display: table-cell; 
+  	@include transform(translate(-50%, -50%));
+  	top: 50%;
+  	left: 50%;
+  	position: absolute;
   	vertical-align: middle;
   	display: flex;
+  	display: table-cell;
   	flex-direction: column;
  	 	flex-wrap: wrap;
 	  justify-content: center;
