@@ -7,7 +7,7 @@ $(document).ready(function() {
 	$(".ronda-1 li").each(function(index, element){ 
 		order= $(this).index();  
 		$(this).find("a").attr("data-image-index", order + 1);
-		$(this).find("a").addClass("grid-image-" + (order +1));
+		$(this).find("a").addClass("grid-image-" + (order + 1));
 	});
 	/**/
 
