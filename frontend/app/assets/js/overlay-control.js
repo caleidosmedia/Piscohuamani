@@ -35,7 +35,7 @@ function setGalleryURLS($index){
 
 	 if ($index>0 &&  $index<($images+1)) {
 	  $previous.attr("data-image-index", parseInt($index)-1);
-		$previous.attr("href", $(".grid-image-"+($index-1)).attr("href"));
+		$previous.attr("href", $("#container-ronda .grid-image-"+($index-1)).attr("href"));
 	
 	  $next.attr("href", $(".grid-image-"+($index+1)).attr("href"));
 	  $next.attr("data-image-index", parseInt($index)+1);
