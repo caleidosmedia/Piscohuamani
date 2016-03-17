@@ -6977,17 +6977,6 @@ body .slider-text-oficial2 {
   width: 350px;
   max-height: 1110px;
 }
-#about-us .etiqueta {
-  -webkit-transform: translate(-50%, -33%);
-  -moz-transform: translate(-50%, -33%);
-  -ms-transform: translate(-50%, -33%);
-  -o-transform: translate(-50%, -33%);
-  transform: translate(-50%, -33%);
-  left: 50%;
-  top: 50%;
-  width: 350px;
-  height: 60%;
-}
 
 /*
 	The goods
