@@ -2,13 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    {if {transcribe:language_abbreviation} == en}
-        {exp:seo_lite default_title='{embed:titulo}' default_description='Desde que Don Ismael de la Quintana fundó la Hacienda Huamaní en 1890, nuestra familia ha producido un pisco de clase mundial. Cuatro generaciones después, seguimos esa misma tradición en el valle de Pisco, Perú.'}
-    {if:else}
-        {if {transcribe:language_abbreviation} == es}
-            {exp:seo_lite default_title='{embed:titulo}' default_description='Hola'}
+      {exp:seo_lite default_title='{embed:titulo}' 
+        {if {transcribe:language_abbreviation} == es} default_description='Desde que Don Ismael de la Quintana fundó la Hacienda Huamaní en 1890, nuestra familia ha producido un pisco de clase mundial. Cuatro generaciones después, seguimos esa misma tradición en el valle de Pisco, Perú.'
+        {if:else}
+            default_description='Hola'
         {/if}
-    {/if}
+      }
     {if '{embed:imagen}'!=''}
         <meta property="og:image" content="{embed:imagen}" />
     {if:else}
