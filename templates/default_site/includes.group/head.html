@@ -4,9 +4,12 @@
     <meta charset="utf-8">
       {exp:seo_lite default_title='{embed:titulo}' 
         {if {exp:transcribe:language_abbreviation} == en} 
+          <h1>Inglés</h1>
           default_description='Desde que Don Ismael de la Quintana fundó la Hacienda Huamaní en 1890, nuestra familia ha producido un pisco de clase mundial. Cuatro generaciones después, seguimos esa misma tradición en el valle de Pisco, Perú.'
+          }
         {if:else}
             default_description='Hola'
+            <h1>Español</h1>
         {/if}
       }
     {if '{embed:imagen}'!=''}
