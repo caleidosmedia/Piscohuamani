@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    {if segment_2 == en}
+    {if {transcribe:language_abbreviation} == en}
         {exp:seo_lite default_title='{embed:titulo}' default_description='{embed:descripcion}'}
     {if:else}
         {exp:seo_lite default_title='{embed:titulo}' default_description='Desde que Don Ismael de la Quintana fundó la Hacienda Huamaní en 1890, nuestra familia ha producido un pisco de clase mundial. Cuatro generaciones después, seguimos esa misma tradición en el valle de Pisco, Perú.'}
@@ -12,7 +12,7 @@
     {if:else}
        <meta property="og:image" content="{site_url}frontend/app/assets/img/foto-eventos.png" />
     {/if}
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" data="{segment_2}" data-2="{segment_3}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" data="{transcribe:language_abbreviation}" data-2="{exp:transcribe:language_abbreviation}">
     <link rel="shortcut icon" href="{site_url}frontend/app/assets/img/iconos-logos/favicon.png">
     <link href="{site_url}frontend/app/assets/css/style.css" rel="stylesheet"> <!-- App styles -->
     <link href="{site_url}frontend/app/assets/css/ebm.css" rel="stylesheet">
