@@ -29,7 +29,7 @@
         <section id="galeria">
           <div class="container pv-7-md pv-0-xs">
             <div class="grid">
-              {exp:channel:entries channel="events" dinamyc="off" sort="asc"}
+              {exp:channel:entries channel="events" dinamyc="off"}
               <div class="ronda-1 hidden" data-title="{url_title}" data-index="{absolute_count}" {if "{entry_id}" == "{post:selected}"} data-current="1"{if:else}data-current="0"{/if}>
                 <ul class="row mg-0 pd-0">
                     {galeria_de_imagenes}
