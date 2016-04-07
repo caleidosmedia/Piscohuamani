@@ -18,14 +18,14 @@ var ready = function(){
 		$next.click(function(event){
 			event.preventDefault();
 			$index = $(this).attr('data-image-index');
-			$image.attr("src", $("#container-ronda .grid-image-"+($index)).attr("href"))
+			$image.attr("src", $(".grid-image-"+($index)).attr("href"))
 		  setGalleryURLS($index);
 		});
 
 		$previous.click(function(event){
 			event.preventDefault();
 			$index = $(this).attr('data-image-index');
-			$image.attr("src", $("#container-ronda .grid-image-"+($index)).attr("href"))
+			$image.attr("src", $(".grid-image-"+($index)).attr("href"))
 		  setGalleryURLS($index);
 		});
 	// }
@@ -35,9 +35,9 @@ function setGalleryURLS($index){
 
 	 if ($index>0 &&  $index<($images+1)) {
 	  $previous.attr("data-image-index", parseInt($index)-1);
-		$previous.attr("href", $("#container-ronda .grid-image-"+($index-1)).attr("href"));
+		$previous.attr("href", $(".grid-image-"+($index-1)).attr("href"));
 	
-	  $next.attr("href", $("#container-ronda .grid-image-"+($index+1)).attr("href"));
+	  $next.attr("href", $(".grid-image-"+($index+1)).attr("href"));
 	  $next.attr("data-image-index", parseInt($index)+1);
 	}
 }
