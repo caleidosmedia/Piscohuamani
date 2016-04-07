@@ -1,9 +1,9 @@
 $(document).ready(function() {
 	$(".text-opacity1:first-child, .text-opacity2:first-child").attr("data-current","1");
 	/*EVENTS*/
-	// if($('.events-slide[data-current="1"]').size() == 0){
-	// 	$(".text-opacity:first-child").attr("data-current","1");
-	// }
+	if($('.events-slide[data-current="1"]').size() == 0){
+		$(".text-opacity:first-child").attr("data-current","1");
+	}
 	$(".ronda-1 li").each(function(index, element){ 
 		order= $(this).index();  
 		$(this).find("a").attr("data-image-index", order + 1);
