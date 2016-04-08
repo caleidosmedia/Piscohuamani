@@ -7675,6 +7675,7 @@ footer .col-md-3 p a:hover {
 }
 #galeria #container-ronda ul li div {
   height: 100%;
+  background-size: contain !important;
 }
 #galeria .grid #overlay {
   background: rgba(59, 46, 41, 0.9);
