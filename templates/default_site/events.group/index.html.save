@@ -1,0 +1,67 @@
+{embed="includes/head"}
+  <body>
+    <div class="site-wrapper"> <!-- Body -->
+      {embed="includes/header" huamani="{path='home'}" about="{path='home'#about-us}" goods="{path='home'}#the-goods" make="{path='home'}#make-drink" events="{path='home'}#events" scroll-event="scroll-event"}
+      <main class="site-content">
+        {embed="includes/overlay-menu" about="{path='home'#about-us}" goods="{path='home'}#the-goods" make="{path='home'}#make-drink" events="{path='home'}#events"}
+        <section id="slider-events" class="relative">
+          <div class="gallery-wrapper row p-0">
+            <div class="gallery-child relative">
+		<?php echo "<p class=">"$_POST["selected"]; ?>
+              {embed="events/img_events" selected_id="{post:selected}"}
+            </div>
+            <div class="container relative clearfix pt-42 mt-70 pl-42" style="z-index:3">
+              <div id="slider_back_experience" class="gallery-button-left">
+                <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-previo-blanco.png" alt="">
+              </div>
+              <div id="slider_next_experience" class="gallery-button-right">
+                <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-blanco.png" alt=""> 
+              </div> 
+              <div class="slider-selected container-text-opacity row pb-70 mb-70 pl-42 pr-70 absolute">
+                {embed="events/slider_events" selected_id="{post:selected}"}
+                <div class="clearfix ">
+                  <div id="slider-text-experience" data-selected="{embed:selected_id}" class="slider-text-oficial relative pl-0 pr-42 pt-21 text-white col-md-5" style="z-index: 1;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </section>
+        <section id="galeria">
+          <div class="container pv-7-md pv-0-xs">
+            <div class="grid">
+              {exp:channel:entries channel="events" dinamyc="off"}
+              <div class="ronda-1 hidden" data-title="{url_title}" data-index="{absolute_count}" {if "{count}" == "1"} data-current="1"{if:else}data-current="0"{/if}>
+                <ul class="row mg-0 pd-0">
+                    {galeria_de_imagenes}
+                    <li class="col-md-4 col-xs-6" data-title="{url_title}">
+                      <a href="{image:url}" class="grid-image">
+                        <div class="btn-block bg-img-block" style="background-image:url({image:url})"></div>
+                      </a>
+                    </li>
+                    {/galeria_de_imagenes} 
+                </ul>
+              </div>
+              {/exp:channel:entries}
+              <div id="container-ronda"></div>
+              <div id="overlay">
+                <a class="close text-white pv-7 ph-14 thin" data-dismiss="modal">&times;</a>
+                <a class="previous-overlay controls" data-image-index="" href="">
+                  <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-previo-blanco.png" alt="">
+                </a>
+                <img src="" class="img-overlay">
+                <a class="next-overlay controls" data-image-index="" href="">
+                  <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-blanco.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        {embed="includes/follow"}
+      </main>
+      {embed="includes/footer"}
+    {embed="includes/script_general"}
+    {embed="includes/script_4"}
+    <script src="{site_url}frontend/app/assets/js/overlay-control.js"></script>
+  </body>
+</html> 

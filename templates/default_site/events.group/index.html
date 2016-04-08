@@ -7,7 +7,7 @@
         <section id="slider-events" class="relative">
           <div class="gallery-wrapper row p-0">
             <div class="gallery-child relative">
-              {embed="events/img_events" selected_id="{post:selected}"}
+              {embed="events/img_events"}
             </div>
             <div class="container relative clearfix pt-42 mt-70 pl-42" style="z-index:3">
               <div id="slider_back_experience" class="gallery-button-left">
@@ -17,7 +17,7 @@
                 <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-blanco.png" alt=""> 
               </div> 
               <div class="slider-selected container-text-opacity row pb-70 mb-70 pl-42 pr-70 absolute">
-                {embed="events/slider_events" selected_id="{post:selected}"}
+                {embed="events/slider_events"}
                 <div class="clearfix ">
                   <div id="slider-text-experience" data-selected="{embed:selected_id}" class="slider-text-oficial relative pl-0 pr-42 pt-21 text-white col-md-5" style="z-index: 1;">
                   </div>
@@ -62,5 +62,6 @@
     {embed="includes/script_general"}
     {embed="includes/script_4"}
     <script src="{site_url}frontend/app/assets/js/overlay-control.js"></script>
+    <script src="{site_url}frontend/app/assets/js/slide-events.js"></script>
   </body>
 </html> 
