@@ -14,20 +14,18 @@ var ready = function(){
 			$overlay.hide();
 			$overlay.removeClass("flex");
 		});
-		$(document).keyup(function(event){
+		$(document).keydown(function(event){
 	    if(event.which==27) {
         $overlay.hide();
 				$overlay.removeClass("flex");   
       } else if (event.which==39) {
-      		event.preventDefault();
 					$index = $(this).attr('data-image-index');
 					$image.attr("src", $("#container-ronda .grid-image-"+($index)).attr("href"))
 				  setGalleryURLS($index);
       }	else if (event.which==37) {
-      	event.preventDefault();
-				$index = $(this).attr('data-image-index');
-				$image.attr("src", $("#container-ronda .grid-image-"+($index)).attr("href"))
-			  setGalleryURLS($index);
+					$index = $(this).attr('data-image-index');
+					$image.attr("src", $("#container-ronda .grid-image-"+($index)).attr("href"))
+				  setGalleryURLS($index);
       }
     });
 		$next.click(function(event){
