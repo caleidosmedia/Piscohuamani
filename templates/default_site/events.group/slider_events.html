@@ -13,7 +13,7 @@
       {/if}
     </p>
     <h3 class="p-0 m-0 text-uppercase">{lugar_events}</h3>
-    <p class="fz-19 pt-21 thin">{introduccion_events}</p>
+    <p class="fz-19 pt-21 thin mb-42">{introduccion_events}</p>
     <!--<form action="/{exp:transcribe:language_abbreviation}/events" method="post">
       <input type="hidden" name="XID" value="{XID_HASH}" />
       <input type="hidden" value="{entry_id}" name="selected">
@@ -22,7 +22,7 @@
         <div class="overlay absolute minhp-100 btn-block"></div>
       </button> 
     </form>-->
-    <a href="/{exp:transcribe:language_abbreviation}/events" class="event-show btn btn-default" data-entry-id="{entry_id}" onclick="return eventRedirect(this);">{exp:transcribe:replace name='button_event'}</a>
+    <a href="/{exp:transcribe:language_abbreviation}/events" class="event-show mt-21 btn-default see-more text-uppercase text-white fz-20" data-entry-id="{entry_id}" onclick="return eventRedirect(this);">{exp:transcribe:replace name='button_event'}</a>
   </div>
 
 {/exp:channel:entries}
