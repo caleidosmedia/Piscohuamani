@@ -7189,7 +7189,7 @@ body .slider-text-oficial2 {
   background-position-y: 30%;
 }
 #events .see-more, #slider-events .see-more {
-  background-color: transparent !important;
+  background: rgba(250, 250, 250, 0.3) !important;
   padding: 2% 14%;
   margin-top: 8%;
   border: 2px solid #fff;
