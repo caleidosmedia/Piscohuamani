@@ -1,11 +1,6 @@
 {exp:channel:entries channel="events" dinamyc="off" sort="desc" orderby="date"}
   <div id="#{count}" class="text-opacity hidden events-slide" data-index="{count}"
-  {if "{entry_id}" == "{embed:selected_id}"}
-  data-current="1"
-  {if:else}
-  data-current="0"
-  {/if}
-  data-selected="{embed:selected_id}">
+  data-current="0" data-selected="{embed:selected_id}" data-slide-id="{entry_id}">
     <h2 class="text-uppercase mt-0-xs mt-0-sm">{titulo_events}</h2>
     <div class="separador mt-14 mb-28"></div>
     <p class="fecha-evento fz-20 thin">

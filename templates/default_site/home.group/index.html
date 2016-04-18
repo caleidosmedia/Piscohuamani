@@ -123,14 +123,12 @@
     <script src="{site_url}frontend/app/assets/js/goods-control.js"></script>
     <script src="{site_url}frontend/app/assets/js/scroll-control.js"></script>
     <script src="{site_url}frontend/app/assets/js/faqs-control.js"></script>
-    <script src="{site_url}frontend/app/assets/js/slide-events.js"></script>
     <script>
       var backgrounds = [
         {embed="home/img_header"}
       ]
       function eventRedirect(element) {
           var entry_id = $(element).attr("data-entry-id");
-          console.log(entry_id);
           var bExists = localStorage.getItem("slide_id") != null;
           if (bExists) localStorage.removeItem("slide_id");
           localStorage.setItem("slide_id", entry_id);
