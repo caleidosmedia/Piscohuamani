@@ -14,7 +14,12 @@ var ready = function(){
 			$overlay.hide();
 			$overlay.removeClass("flex");
 		});
-
+		$(document).keyup(function(event){
+	    if(event.which==27) {
+        $overlay.hide();
+				$overlay.removeClass("flex");   
+      }
+    });
 		$next.click(function(event){
 			event.preventDefault();
 			$index = $(this).attr('data-image-index');
