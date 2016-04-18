@@ -18,15 +18,7 @@ var ready = function(){
 	    if(event.which==27) {
         $overlay.hide();
 				$overlay.removeClass("flex");   
-      } else if (event.which==39) {
-					$index = $(this).attr('data-image-index');
-					$image.attr("src", $("#container-ronda .grid-image-"+($index)).attr("href"))
-				  setGalleryURLS($index);
-      }	else if (event.which==37) {
-					$index = $(this).attr('data-image-index');
-					$image.attr("src", $("#container-ronda .grid-image-"+($index)).attr("href"))
-				  setGalleryURLS($index);
-      }
+      } 
     });
 		$next.click(function(event){
 			event.preventDefault();
