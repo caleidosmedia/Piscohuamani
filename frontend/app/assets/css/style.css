@@ -7182,11 +7182,11 @@ body .slider-text-oficial2 {
 #events .gallery-child, #slider-events .gallery-child {
   position: absolute;
   width: 100%;
+  background-color: black;
 }
 #events .gallery-child .gallery-cell, #slider-events .gallery-child .gallery-cell {
   height: 835px;
   background-size: cover;
-  background-position-y: 30%;
 }
 #events .see-more, #slider-events .see-more {
   background: rgba(250, 250, 250, 0.3) !important;
@@ -7607,7 +7607,7 @@ footer .col-md-3 p a:hover {
   height: auto;
 }
 #slider-events .gallery-child .gallery-cell {
-  background-position-y: 30%;
+  /*background-position-y: 30%;*/
 }
 #slider-events .flickity-viewport {
   height: 300px !important;
