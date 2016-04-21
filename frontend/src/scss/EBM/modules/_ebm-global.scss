@@ -695,7 +695,7 @@ $make-drink-gallery-height-control: 560px;
 		position: absolute;
 		width: 100%;
 		.gallery-cell {
-			height: 835px;
+			height: 835px;    
 			background-size: cover;
 		}
 	}
@@ -1458,7 +1458,6 @@ footer {
 /*
 	Contact
 */
-#container-contact,
 #thanks-contact {
 	background-color: #3B2E29;
 	display: flex;
@@ -1472,6 +1471,11 @@ footer {
   }
 }
 #container-contact{
+	> div {    
+		@include transform (translate(-50%, -50%));
+	  top: 25%;
+	  left: 50%;
+	}
   h1{
   	font-family: "Verdana";
   	color: #f8f4e5;
@@ -1479,7 +1483,7 @@ footer {
   .formulario{
   	input{
   		width: 280px;
-  		height: 45px;
+  		height: 45px;     
 		}
 		textarea{
 			width: 578px;
