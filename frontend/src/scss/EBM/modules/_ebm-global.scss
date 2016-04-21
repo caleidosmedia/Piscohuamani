@@ -2508,6 +2508,10 @@ footer {
 		  left: auto;
 		}
 	}
+	#events {
+		min-height: 80% !important;
+    min-height: 80vh !important;
+	}
 }
 /*THANKS RESPONSIVE*/
 #thanks-contact {
