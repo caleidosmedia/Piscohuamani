@@ -95,9 +95,13 @@ body {
 		cursor: pointer;
 		@extend .hover-arrow-controls;
 	}
-	height: 100px;
 }
-
+#events {
+	.gallery-button-left,
+	.gallery-button-right {
+		height: 100px;
+	}
+}
 /*
 	Separadores
 */
@@ -584,10 +588,10 @@ $separator-height-control: 1px;
 	}
 	.gallery-button-right {
 		@include position(absolute, -210px 42% 0 null);
-		-moz-box-shadow:    22px -19px 30px 0px rgba(248, 244, 229, 1);
+		/*-moz-box-shadow:    22px -19px 30px 0px rgba(248, 244, 229, 1);
 	  -webkit-box-shadow: 22px -19px 30px 0px rgba(248, 244, 229, 1);
 	  box-shadow:         22px -19px 30px 0px rgba(248, 244, 229, 1);
-		z-index: 100;
+		z-index: 100;*/
 	}
 }
 .active-hidden {
