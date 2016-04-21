@@ -9005,17 +9005,6 @@ footer .col-md-3 p a:hover {
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
-  #container-contact > div {
-    position: relative !important;
-    -webkit-transform: none !important;
-    -moz-transform: none !important;
-    -ms-transform: none !important;
-    -o-transform: none !important;
-    transform: none !important;
-    top: auto;
-    left: auto;
-  }
-
   /*THE GOODS*/
   #slider-text-goods, #slider-text-make, #follow-us, .container-slider-text {
     padding-left: 20% !important;
@@ -9033,6 +9022,18 @@ footer .col-md-3 p a:hover {
   /*BLOG INTERNO*/
   .img-right {
     float: none !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #container-contact > div {
+    position: relative !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+    transform: none !important;
+    top: auto;
+    left: auto;
   }
 }
 /*THANKS RESPONSIVE*/

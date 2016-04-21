@@ -2470,14 +2470,6 @@ footer {
 	}
 }
 @media #{$sm-only} {
-	#container-contact{
-		> div {  
-			position: relative !important;  
-			@include transform (none !important);
-		  top: auto;
-		  left: auto;
-		}
-	}
 	/*THE GOODS*/
 	#slider-text-goods, #slider-text-make, #follow-us, .container-slider-text {
 		padding-left: 20%!important;
@@ -2496,7 +2488,16 @@ footer {
 		float: none!important;
 	}
 }
-
+@media #{$xs-only} {
+	#container-contact{
+		> div {  
+			position: relative !important;  
+			@include transform (none !important);
+		  top: auto;
+		  left: auto;
+		}
+	}
+}
 /*THANKS RESPONSIVE*/
 #thanks-contact {
 	padding-bottom: 70px;
