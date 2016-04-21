@@ -6486,6 +6486,7 @@ body .slider-text-oficial2 {
   -o-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center;
+  height: 100px;
 }
 .gallery-button-left img,
 .gallery-button-right img {
