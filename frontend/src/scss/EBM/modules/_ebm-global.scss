@@ -588,10 +588,10 @@ $separator-height-control: 1px;
 	}
 	.gallery-button-right {
 		@include position(absolute, -210px 42% 0 null);
-		/*-moz-box-shadow:    22px -19px 30px 0px rgba(248, 244, 229, 1);
+		-moz-box-shadow:    22px -19px 30px 0px rgba(248, 244, 229, 1);
 	  -webkit-box-shadow: 22px -19px 30px 0px rgba(248, 244, 229, 1);
 	  box-shadow:         22px -19px 30px 0px rgba(248, 244, 229, 1);
-		z-index: 100;*/
+		z-index: 100;
 	}
 }
 .active-hidden {
@@ -662,7 +662,13 @@ $make-drink-gallery-height-control: 560px;
 	@extend #the-goods; 
 	background-size: cover;
 	overflow: hidden;
-	.overlay-events {
+	.gallery-button-right {
+		@include position(absolute, -210px 42% 0 null);
+		-moz-box-shadow:    none !important;
+	  -webkit-box-shadow: none !important;
+	  box-shadow:         none !important;
+	}
+	.overlay-events {    
 		width: 100%;
 		left: 0;
 		top: 0;
