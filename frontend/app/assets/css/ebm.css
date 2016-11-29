@@ -13809,10 +13809,12 @@
   min-height: 10% !important;
   min-height: 10vh !important;
 }
-
+@media only screen and (max-width: 1280px){
+  .minhp-10 {
+  min-height: 147vh !important;
+}
 @media only screen and (max-width: 480px) {
   .minhp-10-xs {
-    min-height: 10% !important;
     min-height: 10vh !important;
   }
   .minhp-10-xs > div, .minhp-10-xs > section, .minhp-10-xs > header, .minhp-10-xs > footer, .minhp-10-xs > main, .minhp-10-xs > aside, .minhp-10-xs > article,
