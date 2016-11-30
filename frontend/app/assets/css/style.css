@@ -7270,6 +7270,12 @@ body .slider-text-oficial2 {
   z-index: 1;
   left: 140px;
 }
+@media only screen and (max-width: 1366px) {
+  #events .row .gallery-button-left, #slider-events .row .gallery-button-left {
+    left: 192px;
+  }
+}
+
 #events .row .gallery-button-right, #slider-events .row .gallery-button-right,
 #events .row .gallery-button-left,
 #slider-events .row .gallery-button-left {
