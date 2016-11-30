@@ -1303,7 +1303,7 @@
     padding-left: 2rem !important;
   }
 }
-@media only screen and (min-width: 992px) {
+/*@media only screen and (min-width: 992px) {
   .pl-28-md {
     padding-left: 28px !important;
     padding-left: 2rem !important;
@@ -1314,7 +1314,7 @@
     padding-left: 28px !important;
     padding-left: 2rem !important;
   }
-}
+}*/
 .m-28 {
   margin: 28px !important;
   margin: 2rem !important;
@@ -16848,7 +16848,7 @@ a.bg-hover-linkedin:not(.btn):hover,
   }
 
   .container-sm {
-    width: 748px;
+    width: 823px;
     padding-left: 14px;
     padding-right: 14px;
     margin: 0 auto;
