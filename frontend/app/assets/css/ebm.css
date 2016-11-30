@@ -10953,6 +10953,11 @@
     padding-right: 70% !important;
   }
 }
+@media only screen and (max-width: 1366px) {
+  .php-70-sm {
+    padding-left: 8rem !important;
+  }
+}
 @media only screen and (min-width: 992px) {
   .ph-70-md {
     padding-left: 70px !important;
@@ -10973,6 +10978,7 @@
     padding-right: 70% !important;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .ph-70-lg {
     padding-left: 70px !important;
@@ -10993,6 +10999,7 @@
     padding-right: 70% !important;
   }
 }
+
 .mv-0 {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
