@@ -1596,7 +1596,7 @@
 @media only screen and (min-width: 992px) {
   .pl-35-md {
     padding-left: 35px !important;
-    padding-left: 2.5rem !important;
+    padding-left: 5rem !important;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -10244,7 +10244,7 @@
 .ph-21 {
   padding-left: 21px !important;
   padding-right: 21px !important;
-  padding-left: 1.5rem !important;
+  padding-left: 6.8rem !important;
   padding-right: 1.5rem !important;
 }
 
