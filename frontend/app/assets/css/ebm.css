@@ -10953,7 +10953,7 @@
     padding-right: 70% !important;
   }
 }
-@media only screen and (max-width: 1366px) {
+@media only screen and (min-width: 1366px) {
   .ph-70-sm {
     padding-left: 8rem !important;
   }
