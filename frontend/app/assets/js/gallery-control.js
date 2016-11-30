@@ -14,11 +14,12 @@ $(document).ready(function(){
 	});
 
 	$goodsGallery.flickity({
-		cellAlign: 'right',
+		cellAlign: 'center',
 		asNavFor: '#the-goods .gallery',
 		prevNextButtons: false,
 		pageDots: false,
 		draggable: false,
+		friction: 0.4,
 		wrapAround: true
 	});
 
