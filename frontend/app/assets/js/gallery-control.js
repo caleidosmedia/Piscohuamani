@@ -19,7 +19,6 @@ $(document).ready(function(){
 		prevNextButtons: false,
 		pageDots: false,
 		draggable: false,
-		friction: 0.4,
 		wrapAround: true
 	});
 
