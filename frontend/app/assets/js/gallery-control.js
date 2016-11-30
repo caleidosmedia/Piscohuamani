@@ -13,7 +13,7 @@ $(document).ready(function(){
 		wrapAround: true
 	});
 
-	$goodsGallery.flickity({
+	/*$goodsGallery.flickity({
 		cellAlign: 'center',
 		asNavFor: '#the-goods .gallery',
 		prevNextButtons: false,
@@ -21,7 +21,7 @@ $(document).ready(function(){
 		draggable: false,
 		friction: 0.4,
 		wrapAround: true
-	});
+	});*/
 
 	$('#the-goods .gallery-button-left img').on( 'click', function(e) {
 		e.preventDefault();
