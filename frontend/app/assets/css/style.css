@@ -7063,6 +7063,11 @@ body .slider-text-oficial2 {
   bottom: 0;
   left: 220px;
 }
+@media only screen and (max-width: 1280px) {
+  #the-goods .gallery-button-left, #events .gallery-button-left, #slider-events .gallery-button-left {
+    left: 129px;
+  }
+}
 #the-goods .gallery-button-right, #events .gallery-button-right, #slider-events .gallery-button-right {
   position: absolute;
   top: -210px;
