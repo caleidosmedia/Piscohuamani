@@ -6766,7 +6766,7 @@ body .slider-text-oficial2 {
   z-index: 110;
 }
 .site-menu .contenedor-menu .nav-desktop {
-  display: inline-block;
+  display: inline;
 }
 .site-menu .contenedor-menu .nav-desktop a {
   height: 80px;
