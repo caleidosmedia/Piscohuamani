@@ -6988,7 +6988,7 @@ body .slider-text-oficial2 {
 	The goods
 */
 #the-goods, #events, #slider-events {
-  background-color: #f8f4e5;
+  background-color: #3b2e29;
 }
 #the-goods .gallery, #events .gallery, #slider-events .gallery {
   height: 630px;
@@ -7007,7 +7007,7 @@ body .slider-text-oficial2 {
 #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
   padding-top: 150px;
   width: 150px;
-  height: 780px;
+  height: auto;
 }
 #the-goods h1, #events h1, #slider-events h1 {
   font-size: 35px;
