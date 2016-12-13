@@ -5349,13 +5349,11 @@ tbody.collapse.in {
 .light-italic {
   font-family: "Avenir" !important;
   font-weight: 300;
-  font-style: italic;
 }
 
 .medium-italic {
   font-family: "Avenir" !important;
   font-weight: 500;
-  font-style: italic;
 }
 
 .bold {
@@ -5373,7 +5371,6 @@ tbody.collapse.in {
 .serif-light-italic {
   font-family: "trajan-pro-3", "Times New Roman", Times, serif !important;
   font-weight: 300;
-  font-style: italic;
 }
 
 .serif-book {
@@ -6441,7 +6438,6 @@ body .slider-text-oficial2 {
 .site-content .section-title h3 {
   font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
   font-weight: 300;
-  font-style: italic;
 }
 
 .hover-arrow-controls, .gallery-button-left img,
@@ -6923,15 +6919,12 @@ body .slider-text-oficial2 {
   font-size: 60px;
   font-size: 4.28571rem;
 }
-.img-principal div.texto h3 {
-  font-style: italic;
-}
+
 .img-principal div.texto p {
   font-size: 23.8px;
   font-size: 1.7rem;
   font-family: "museo-sans";
   font-weight: lighter;
-  font-style: italic;
   margin-top: 18px;
   letter-spacing: 0;
 }
@@ -6961,7 +6954,6 @@ body .slider-text-oficial2 {
   font-family: Verdana;
 }
 #about-us h3 {
-  font-style: italic;
   font-weight: 300;
 }
 #about-us .texto-about {
@@ -7017,7 +7009,6 @@ body .slider-text-oficial2 {
   font-family: Verdana;
 }
 #the-goods h3, #events h3, #slider-events h3 {
-  font-style: italic;
   font-weight: 300;
   margin-bottom: 5%;
 }
@@ -7128,7 +7119,6 @@ body .slider-text-oficial2 {
   z-index: 1;
 }
 #make-drink .make-text #slider-text-make .subtitle {
-  font-style: italic;
   font-size: 24px;
   font-size: 1.71429rem;
   margin-bottom: 20px;
@@ -7501,7 +7491,6 @@ footer .col-md-3 p a:hover {
 .site-content .content-blog .post .tags, .site-content .content-blog .post .tags a {
   color: #8d744a;
   font-weight: 100;
-  font-style: italic;
 }
 .site-content .content-blog #pagination, .site-content .content-blog .pagination {
   padding-top: 5%;
@@ -9336,7 +9325,7 @@ footer .col-md-3 p a:hover {
 }
 
 .family-verdana {
-  font-family: "Verdana" !important;
+  font-family: "Avenir" !important;
 }
 
 .family-across {
