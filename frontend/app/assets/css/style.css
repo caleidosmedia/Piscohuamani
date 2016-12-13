@@ -5329,37 +5329,37 @@ tbody.collapse.in {
 */
 /* PROJECT ESPECIFIC FONTS */
 .thin {
-  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-family: "Avenir"!important;
   font-weight: 100;
   font-style: normal;
 }
 
 .extra-light {
-  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-family: "Avenir"!important;
   font-weight: 200;
   font-style: normal;
 }
 
 .light {
-  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-family: "Avenir" !important;
   font-weight: 300;
   font-style: normal;
 }
 
 .light-italic {
-  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-family: "Avenir" !important;
   font-weight: 300;
   font-style: italic;
 }
 
 .medium-italic {
-  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-family: "Avenir" !important;
   font-weight: 500;
   font-style: italic;
 }
 
 .bold {
-  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-family: "Avenir" !important;
   font-weight: 700;
   font-style: normal;
 }
@@ -6950,6 +6950,7 @@ body .slider-text-oficial2 {
 #about-us {
   background-size: 30%;
   z-index: 101;
+  font-family: "Avenir";
 }
 #about-us .leyenda-about {
   font-size: 60px;
@@ -6989,6 +6990,7 @@ body .slider-text-oficial2 {
 */
 #the-goods, #events, #slider-events {
   background-color: #3b2e29;
+  font-family: "Avenir";
 }
 #the-goods .gallery, #events .gallery, #slider-events .gallery {
   height: 630px;
