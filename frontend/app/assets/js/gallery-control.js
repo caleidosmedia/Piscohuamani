@@ -14,7 +14,7 @@ $(document).ready(function(){
 	});
 
 	$goodsGallery.flickity({
-		cellAlign: 'center',
+		cellAlign: 'left',
 		asNavFor: '#the-goods .gallery',
 		prevNextButtons: false,
 		pageDots: false,
