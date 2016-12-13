@@ -17995,7 +17995,7 @@ input[type="submit"].btn.btn-white.btn-icon-custom.btn-lg i,
 
 @font-face {
   font-family: "Avenir";
-  src:  url(../fonts/data:application/x-font-woff;charset=utf-8;base64,) format('woff'), url('../fonts/Avenir-Book.ttf')  format('truetype'), url('Avenir-Book.svg#Avenir-Book') format('svg');
+  src:  url(../fonts/data:application/x-font-woff;charset=utf-8;base64,) format('woff'), url('../fonts/Avenir-Book.ttf')  format('truetype'), url('../fonts/Avenir-Book.svg#Avenir-Book') format('svg');
   font-weight: normal;
   font-style: normal;
 }
