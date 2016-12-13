@@ -12,7 +12,7 @@
 ========================================*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
-  font-family: sans-serif;
+  font-family: 'Avenir';
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -9338,7 +9338,7 @@ footer .col-md-3 p a:hover {
 }
 
 .family-across {
-  font-family: "Across" !important;
+  font-family: "Yaquote" !important;
 }
 
 .float-left {
@@ -17976,6 +17976,28 @@ input[type="submit"].btn.btn-white.btn-icon-custom.btn-lg i,
 .btn.btn-white.btn-icon-custom.btn-lg i,
 .btn-group-lg > .btn.btn-white.btn-icon-custom i {
   width: 52px;
+}
+@font-face {
+  font-family: 'Yaquote';
+    src: url('../fonts/original_YaquoteScript_PersonalUse.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/original_YaquoteScript_PersonalUse.woff') format('woff'),
+         url('../fonts/original_YaquoteScript_PersonalUse.ttf') format('truetype'),
+         url('../fonts/original_YaquoteScript_PersonalUse.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir-Book.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src:  url(data:application/x-font-woff;charset=utf-8;base64,) format('woff'), url('Avenir-Book.ttf')  format('truetype'), url('Avenir-Book.svg#Avenir-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
