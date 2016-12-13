@@ -7044,7 +7044,7 @@ body .slider-text-oficial2 {
   position: relative;
 }
 #the-goods .gallery-cell, #events .gallery-cell, #slider-events .gallery-cell {
-  width: 78%;
+  width: 100%;
   left: 120%;
 }
 #the-goods .gallery-nav .gallery-cell.is-nav-selected, #events .gallery-nav .gallery-cell.is-nav-selected, #slider-events .gallery-nav .gallery-cell.is-nav-selected {
