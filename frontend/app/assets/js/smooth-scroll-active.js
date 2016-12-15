@@ -3,13 +3,14 @@
 */
 $(document).ready(function () {
   $(document).on("scroll", onScroll);
-  $('.active-hover').on('click', function (e) {
+  /*$('.active-hover').on('click', function (e) {
     e.preventDefault();
     $(document).off("scroll");
     
     $('a').each(function () {
         $(this).removeClass('active');
     })
+
     $(this).addClass('active');
   
     var target = this.hash,
@@ -21,7 +22,7 @@ $(document).ready(function () {
         window.location.hash = target;
         $(document).on("scroll", onScroll);
     });
-  });
+  });*/
 });
 function onScroll(event){
   var scrollPos = $(document).scrollTop();
@@ -31,6 +32,7 @@ function onScroll(event){
     if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
       $('.contenedor-menu nav a').removeClass("active");
       currLink.addClass("active");
+      //console.log("dsada");
     }
     else{
       currLink.removeClass("active");
