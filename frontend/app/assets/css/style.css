@@ -6770,6 +6770,7 @@ body .slider-text-oficial2 {
   height: 80px;
   background: #3b2e29;
   z-index: 110;
+  font-family: Avenir;
 }
 .site-menu .contenedor-menu .nav-desktop {
   display: inline-block;
@@ -7016,7 +7017,7 @@ body .slider-text-oficial2 {
 #the-goods h1, #events h1, #slider-events h1 {
   font-size: 35px;
   font-size: 2.5rem;
-  font-family: Verdana;
+  font-family: Avenir;
 }
 #the-goods h3, #events h3, #slider-events h3 {
   font-weight: 300;
