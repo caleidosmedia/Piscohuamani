@@ -8601,7 +8601,7 @@ footer .col-md-3 p a:hover {
     padding-left: 12px;
   }
   footer ul li .texto p {
-    font-family: "museo-sans";
+    font-family: "Avenir";
     font-size: 10px;
   }
   footer ul .col-md-3 {
@@ -8609,7 +8609,7 @@ footer .col-md-3 p a:hover {
   }
   footer ul .col-md-3 p {
     font-size: 10px !important;
-    font-family: "Museo-sans";
+    font-family: "Avenir";
     display: inline;
   }
 
@@ -9331,7 +9331,7 @@ footer .col-md-3 p a:hover {
 }
 
 .family-museosans {
-  font-family: "MuseoSans" !important;
+  font-family: "Avenir" !important;
 }
 
 .family-verdana {
