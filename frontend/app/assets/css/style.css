@@ -412,7 +412,17 @@ hr {
   border: 0;
   border-top: 1px solid #F0F0F0;
 }
-
+.idiomaH{
+  position: relative;
+  float: left;
+}
+.idiomaH a{
+  padding: 4px 16px;
+}
+.idiomaH :hover{
+  padding: 5px 12px;
+  border: solid 1px #F8F4E5 ;
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -6765,11 +6775,11 @@ body .slider-text-oficial2 {
   display: inline-block;
 }
 .site-menu .contenedor-menu .nav-desktop a {
-  height: 80px;
   text-align: center;
   text-decoration: none;
   position: relative;
   float: left;
+  color: #F8F4E5;
 }
 .site-menu .contenedor-menu .nav-desktop a div {
   font-size: 15px;
