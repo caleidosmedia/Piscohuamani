@@ -1,15 +1,16 @@
 /*
   SMOOTH SCROLL ACTIVE
 */
+var flag = true;
+
 $(document).ready(function () {
   $(document).on("scroll", onScroll);
   $('.active-hover').on('click', function (e) {
     e.preventDefault();
-    $(document).off("scroll");
+    flag = false;
     
-    $('a').each(function () {
-        $(this).removeClass('active');
-    })
+    $('a').removeClass('active');
+
     $(this).addClass('active');
   
     var target = this.hash,
@@ -17,23 +18,29 @@ $(document).ready(function () {
     $target = $(target);
     $('html, body').stop().animate({
         'scrollTop': $target.offset().top+2
-    }, 500, 'swing', function () {
-        window.location.hash = target;
-        $(document).on("scroll", onScroll);
+    }, 500, function () {
+        //window.location.hash = target;
+        flag = true;
     });
   });
 });
 function onScroll(event){
   var scrollPos = $(document).scrollTop();
-  $('.contenedor-menu a.active-hover[href^="#"]').each(function () {
-    var currLink = $(this);
-    var refElement = $(currLink.attr("href").toString());
-    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-      $('.contenedor-menu nav a').removeClass("active");
-      currLink.addClass("active");
-    }
-    else{
-      currLink.removeClass("active");
-    }
-  });
+  if (flag) {
+    $('.contenedor-menu a.active-hover[href^="#"]').each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href").toString());
+
+      if (
+        refElement.position().top-300 <= scrollPos &&
+        refElement.position().top-300 + refElement.height() > scrollPos
+        ) {
+        $('.contenedor-menu nav a').removeClass("active");
+        currLink.addClass("active");
+      }
+      else{
+        currLink.removeClass("active");
+      }
+    });
+  }
 }
