@@ -416,6 +416,13 @@ hr {
   position: relative;
   float: left;
 }
+.idiomaH a{
+  padding: 5px 12px;
+}
+.idiomaH :hover{
+  padding: 5px 12px;
+  border: solid 1px #F8F4E5 ;
+}
 .sr-only {
   position: absolute;
   width: 1px;
