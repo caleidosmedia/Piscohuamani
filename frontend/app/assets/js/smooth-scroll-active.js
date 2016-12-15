@@ -31,8 +31,7 @@ function onScroll(event){
       var currLink = $(this);
       var refElement = $(currLink.attr("href").toString());
 
-      console.log(refElement.position().top <= scrollPos &&
-        refElement.position().top + refElement.height() > scrollPos);
+      console.log(refElement.position().top);
       console.log(scrollPos);
       if (
         refElement.position().top <= scrollPos &&
