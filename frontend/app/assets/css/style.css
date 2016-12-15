@@ -412,7 +412,10 @@ hr {
   border: 0;
   border-top: 1px solid #F0F0F0;
 }
-
+.idiomaH{
+  position: relative;
+  float: left;
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -6770,6 +6773,7 @@ body .slider-text-oficial2 {
   text-decoration: none;
   position: relative;
   float: left;
+  color: #F8F4E5;
 }
 .site-menu .contenedor-menu .nav-desktop a div {
   font-size: 15px;
