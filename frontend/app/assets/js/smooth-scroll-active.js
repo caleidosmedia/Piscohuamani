@@ -9,9 +9,8 @@ $(document).ready(function () {
     e.preventDefault();
     flag = false;
     
-    $('a').each(function () {
-        $(this).removeClass('active');
-    })
+    $('a').removeClass('active');
+    
     $(this).addClass('active');
   
     var target = this.hash,
