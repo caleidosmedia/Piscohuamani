@@ -14,7 +14,8 @@
     </p>
     <h3 class="p-0 m-0 text-uppercase">{lugar_events}</h3>
     <p class="fz-19 pt-21 thin mb-42">{introduccion_events}</p>
-    <a href="/{exp:transcribe:language_abbreviation}/events" class="event-show mt-21 btn-default see-more text-uppercase text-white fz-20" data-entry-id="{entry_id}" onclick="return eventRedirect(this);">{exp:transcribe:replace name='button_event'}</a>
+
+    <a href="{site_url}{exp:transcribe:language_abbreviation}/events" class="event-show mt-21 btn-default see-more text-uppercase text-white fz-20" data-entry-id="{entry_id}" onclick="return eventRedirect(this);">{exp:transcribe:replace name='button_event'}</a>
   </div>
 
 {/exp:channel:entries}
