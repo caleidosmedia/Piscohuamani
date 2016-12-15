@@ -3,6 +3,16 @@
 */
 $(document).ready(function () {
   $(document).on("scroll", onScroll);
+  $("nav.smooth a, a.smooth").click(function(e){
+    $(document).off("scroll");
+    $(this).addClass("active");
+    $("html, body").stop().animate({
+      scrollTop: $($(this).attr("href")).offset().top - 80
+    }, 1000, function () {
+      $(document).on("scroll", onScroll);
+    });
+    e.preventDefault();
+  });
   /*$('.active-hover').on('click', function (e) {
     e.preventDefault();
     $(document).off("scroll");
