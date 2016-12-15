@@ -415,12 +415,13 @@ hr {
 .idiomaH{
   position: relative;
   float: left;
+  margin-top: 23px;
 }
 .idiomaH a{
-  padding: 4px 16px;
+  padding: 3px 27px;
 }
 .idiomaH :hover{
-  padding: 5px 12px;
+  padding: 3px 27px;
   border: solid 1px #F8F4E5 ;
 }
 .sr-only {
