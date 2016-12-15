@@ -5,7 +5,7 @@ $(document).ready(function () {
   $(document).on("scroll", onScroll);
   $('.active-hover').on('click', function (e) {
     e.preventDefault();
-    $(document).off("scroll");
+    //$(document).off("scroll");
     
     $('a').each(function () {
         $(this).removeClass('active');
