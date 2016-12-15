@@ -417,7 +417,7 @@ hr {
   float: left;
 }
 .idiomaH a{
-  padding: 5px 12px;
+  padding: 4px 16px;
 }
 .idiomaH :hover{
   padding: 5px 12px;
@@ -6775,7 +6775,6 @@ body .slider-text-oficial2 {
   display: inline-block;
 }
 .site-menu .contenedor-menu .nav-desktop a {
-  height: 80px;
   text-align: center;
   text-decoration: none;
   position: relative;
