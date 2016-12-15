@@ -31,8 +31,8 @@ function onScroll(event){
       var currLink = $(this);
       var refElement = $(currLink.attr("href").toString());
       if (
-        refElement.position().top <= scrollPos //&&
-        //refElement.position().top + refElement.height() > scrollPos
+        refElement.position().top-100 <= scrollPos &&
+        refElement.position().top-100 + refElement.height() > scrollPos
         ) {
         $('.contenedor-menu nav a').removeClass("active");
         currLink.addClass("active");
