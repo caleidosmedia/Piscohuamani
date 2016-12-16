@@ -24,13 +24,17 @@ $(".close-checkbox").click(function(){
 	}
 });
 
-$("#day, #month, #year, #country").on("change", function(){
-	var this_id = $(this).attr("id");
-	var this_val = $(this).val();
-	sessionStorage.setItem(this_id, this_val);
-});
+$(document).ready(function(){
+	$("#day, #month, #year, #country").on("change", function(){
+		var this_id = $(this).attr("id");
+		var this_val = $(this).val();
+		sessionStorage.setItem(this_id, this_val);
+	});
 
-$("#country").selectpicker("val", sessionStorage.getItem("country"));
-$("#day").val(sessionStorage.getItem("day"));
-$("#month").val(sessionStorage.getItem("month"));
-$("#year").val(sessionStorage.getItem("year"));
+	$(window).load( function () {
+		$("#country").selectpicker("val", sessionStorage.country);
+		$("#day").val(sessionStorage.day);
+		$("#month").val(sessionStorage.month);
+		$("#year").val(sessionStorage.year);
+	});
+});
