@@ -109,14 +109,14 @@ function hola() {
 
 function validar(e, number,names) {
   var inputVal = String.fromCharCode(e.keyCode);
-  if(!numericReg.test(inputVal)) {
-    //$(names).val(number);
+  /*if(!numericReg.test(inputVal)) {
+    $(names).val(number);
       e.preventDefault();
     }
   else {
     $(names).innerText = "";
     return;
-  }
+  }*/
 }
 
 function input(names, number) {
