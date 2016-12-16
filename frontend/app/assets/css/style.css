@@ -351,7 +351,7 @@ input,
 button,
 select,
 textarea {
-  font-family: inherit;
+  font-family: "Avenir";
   font-size: inherit;
   line-height: inherit;
 }
@@ -426,6 +426,16 @@ hr {
   padding: 3px 27px;
   border: solid 1px #F8F4E5 ;
 }
+@media (min-width: 350px) {
+  .site-content > section {
+    padding: 82px 0;
+  }
+}
+@media (min-width: 789px) {
+  .site-content > section {
+    padding: 42px 0;
+  }
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -448,7 +458,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: inherit;
+  font-family: "Avenir";
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -4318,6 +4328,7 @@ tbody.collapse.in {
 .visible-print {
   display: none !important;
 }
+@media 
 
 @media print {
   .visible-print {
@@ -6773,7 +6784,7 @@ body .slider-text-oficial2 {
   height: 80px;
   background: #3b2e29;
   z-index: 110;
-  font-family: Avenir;
+  font-family: "Avenir";
 }
 .site-menu .contenedor-menu .nav-desktop {
   display: inline-block;
@@ -6937,7 +6948,7 @@ body .slider-text-oficial2 {
 .img-principal div.texto p {
   font-size: 23.8px;
   font-size: 1.7rem;
-  font-family: "museo-sans";
+  font-family: "Avenir";
   font-weight: lighter;
   margin-top: 18px;
   letter-spacing: 0;
@@ -6965,7 +6976,7 @@ body .slider-text-oficial2 {
 #about-us h1 {
   font-size: 35px;
   font-size: 2.5rem;
-  font-family: Verdana;
+  font-family: "Avenir";
 }
 #about-us h3 {
   font-weight: 300;
@@ -7020,7 +7031,7 @@ body .slider-text-oficial2 {
 #the-goods h1, #events h1, #slider-events h1 {
   font-size: 35px;
   font-size: 2.5rem;
-  font-family: Avenir;
+  font-family: "Avenir";
 }
 #the-goods h3, #events h3, #slider-events h3 {
   font-weight: 300;
@@ -7300,7 +7311,7 @@ body .slider-text-oficial2 {
 #follow-us .container-social {
   display: inline-block;
   padding-top: 4%;
-  font-family: "MuseoSans";
+  font-family: "Avenir";
 }
 #follow-us .container-social a {
   display: block;
@@ -7338,7 +7349,7 @@ body .slider-text-oficial2 {
   width: 48px;
 }
 #follow-us .container-social a h1, #follow-us .container-social a p {
-  font-family: Verdana;
+  font-family: "Avenir";
   position: relative;
   z-index: 1;
 }
@@ -7359,8 +7370,6 @@ footer {
   color: #3b2e29;
 }
 footer .footer-logo {
-  width: 70px;
-  margin-bottom: 14px;
   width: 136px;
 }
 footer .texto {
@@ -8616,7 +8625,7 @@ footer .col-md-3 p a:hover {
     padding: 0 !important;
   }
   footer ul li .texto {
-    padding-left: 0;
+    padding-left: 12px;
   }
   footer ul li .texto p {
     font-family: "Avenir";
