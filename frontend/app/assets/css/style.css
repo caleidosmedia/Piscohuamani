@@ -427,13 +427,13 @@ hr {
   border: solid 1px #F8F4E5 ;
 }
 @media (min-width: 350px) {
-  .site-content > section {
-    padding: 82px 0;
+  #the-goods, #events, #slider-events {
+    padding-top: 80px;
   }
 }
 @media (min-width: 789px) {
-  .site-content > section {
-    padding: 42px 0;
+  #the-goods, #events, #slider-events {
+    padding-top: 0;
   }
 }
 .sr-only {
@@ -7008,6 +7008,7 @@ body .slider-text-oficial2 {
 #the-goods, #events, #slider-events {
   background-color: #3b2e29;
   font-family: "Avenir";
+  padding-top: 42px;
 }
 #the-goods .gallery, #events .gallery, #slider-events .gallery {
   height: 630px;
