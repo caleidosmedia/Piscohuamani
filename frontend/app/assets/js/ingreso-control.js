@@ -23,3 +23,14 @@ $(".close-checkbox").click(function(){
 		$(".close").removeClass("show");
 	}
 });
+
+$("#day, #month, #year, #country").on("change", function(){
+	var this_id = $(this).attr("id");
+	var this_val = $(this).val();
+	sessionStorage.setItem(this_id, this_val);
+});
+
+$("#country").selectpicker("val", sessionStorage.getItem("country"));
+$("#day").val(sessionStorage.getItem("day"));
+$("#month").val(sessionStorage.getItem("month"));
+$("#year").val(sessionStorage.getItem("year"));
