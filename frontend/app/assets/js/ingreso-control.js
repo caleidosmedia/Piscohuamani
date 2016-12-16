@@ -31,8 +31,10 @@ $(document).ready(function(){
 		sessionStorage.setItem(this_id, this_val);
 	});
 
-	$("#country").selectpicker("val", sessionStorage.country);
-	$("#day").val(sessionStorage.day);
-	$("#month").val(sessionStorage.month);
-	$("#year").val(sessionStorage.year);
+	$(window).load( function () {
+		$("#country").selectpicker("val", sessionStorage.country);
+		$("#day").val(sessionStorage.day);
+		$("#month").val(sessionStorage.month);
+		$("#year").val(sessionStorage.year);
+	});
 });
