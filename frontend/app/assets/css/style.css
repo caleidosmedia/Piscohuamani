@@ -433,7 +433,7 @@ hr {
 }
 @media (min-width: 789px) {
   #the-goods, #events, #slider-events {
-    padding-top: 42px;
+    padding: 42px 0;
   }
 }
 .sr-only {
@@ -7008,6 +7008,7 @@ body .slider-text-oficial2 {
 #the-goods, #events, #slider-events {
   background-color: #3b2e29;
   font-family: "Avenir";
+  padding-top: 42px;
 }
 #the-goods .gallery, #events .gallery, #slider-events .gallery {
   height: 630px;
@@ -7388,7 +7389,7 @@ footer .col-md-3 p {
 
 @media(min-width: 768px){
   footer .col-md-3 p {
-    margin-left: 21px;
+    padding-left: 14px;
   }
 }
 
