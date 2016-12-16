@@ -8927,17 +8927,17 @@
 }
 @media only screen and (min-width: 350px){
   .pv-70 {
-  padding-top: 70px !important;
-  padding-bottom: 70px !important;
-  padding-bottom: 5rem !important;
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+    padding-bottom: 5rem !important;
   }
 }
 @media only screen and (min-width: 798px){
   .pv-70 {
-  padding-top: 70px !important;
-  padding-bottom: 70px !important;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
   }
 }
 /*.pv-70 {
