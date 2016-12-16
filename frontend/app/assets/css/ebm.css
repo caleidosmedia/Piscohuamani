@@ -8925,12 +8925,29 @@
     padding-bottom: 63.0% !important;
   }
 }
+
 .pv-70 {
   padding-top: 70px !important;
   padding-bottom: 70px !important;
-  padding-top: 5rem !important;
   padding-bottom: 5rem !important;
 }
+@media only screen and (min-width: 350px){
+  .pv-70 {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+    padding-bottom: 5rem !important;
+  }
+}
+@media only screen and (min-width: 798px){
+  .pv-70 {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+}
+
+
 
 .pv-ch-70 > div, .pv-ch-70 > section, .pv-ch-70 > header, .pv-ch-70 > footer, .pv-ch-70 > main, .pv-ch-70 > aside, .pv-ch-70 > article, .pv-ch-70 > a, .pv-ch-70 > span, .pv-ch-70 > li, .pv-ch-70 > p, .pv-ch-70 > i, .pv-ch-70 > em, .pv-ch-70 > small, .pv-ch-70 > blockquote, .pv-ch-70 > pre, .pv-ch-70 > code > h1, .pv-ch-70 > h2, .pv-ch-70 > h3, .pv-ch-70 > h4, .pv-ch-70 > h5, .pv-ch-70 > h6, .pv-ch-70 > .h1, .pv-ch-70 > .h2, .pv-ch-70 > .h3, .pv-ch-70 > .h4, .pv-ch-70 > .h5, .pv-ch-70 > .h6, .pv-ch-70 > .p, .pv-ch-70 > ul, .pv-ch-70 > ol, .pv-ch-70 > button {
   padding-top: 70px !important;
