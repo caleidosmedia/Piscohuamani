@@ -415,7 +415,7 @@ hr {
 .idiomaH{
   position: relative;
   float: left;
-  margin-top: 23px;
+  margin-top: 26px;
 }
 .idiomaH a{
   padding: 3px 27px;
@@ -7125,6 +7125,7 @@ body .slider-text-oficial2 {
 }
 #make-drink .make-text {
   top: 0px;
+  font-family: "Avenir";
 }
 #make-drink .make-text #slider-text-make {
   padding-top: 30px;
