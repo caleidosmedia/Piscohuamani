@@ -7354,6 +7354,7 @@ footer {
 }
 footer .footer-logo {
   width: 70px;
+  margin-bottom: 14px;
 }
 footer .texto {
   padding-left: 10%;
