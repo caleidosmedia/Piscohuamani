@@ -6128,6 +6128,16 @@ h6.lead {
     padding: 42px 0px;
   }
 }
+@media only screen and (min-width: 350px) {
+  .h3-sm {
+    font-size: 24px;
+    font-size: 1.71429rem;
+  }
+  .site-content > section{
+    padding: 82px 0px;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   .h3-md {
     font-size: 24px;
