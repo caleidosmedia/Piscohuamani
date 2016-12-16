@@ -10,7 +10,7 @@ $(document).ready( function () {
 	$(".idiomaH .es").attr("href", new_url.es);
 	$(".idiomaH .en").attr("href", new_url.en);
 	$(".idiomaH ."+lang).addClass("activei");
-});
+
 
 $("#day, #month, #year, #country").on("change", function(){
 	var this_id = $(this).attr("id");
@@ -22,3 +22,5 @@ $("#country").selectpicker("val", sessionStorage.getItem("country"));
 $("#day").val(sessionStorage.getItem("day"));
 $("#month").val(sessionStorage.getItem("month"));
 $("#year").val(sessionStorage.getItem("year"));
+
+});
