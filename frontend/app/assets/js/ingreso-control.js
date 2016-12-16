@@ -31,8 +31,8 @@ $(document).ready(function(){
 		sessionStorage.setItem(this_id, this_val);
 	});
 
-	$("#country").selectpicker("val", sessionStorage.getItem("country"));
-	$("#day").val(sessionStorage.getItem("day"));
-	$("#month").val(sessionStorage.getItem("month"));
-	$("#year").val(sessionStorage.getItem("year"));
+	$("#country").selectpicker("val", sessionStorage.country);
+	$("#day").val(sessionStorage.day);
+	$("#month").val(sessionStorage.month);
+	$("#year").val(sessionStorage.year);
 });
