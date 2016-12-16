@@ -415,12 +415,14 @@ hr {
 .idiomaH{
   position: relative;
   float: left;
+  margin-top: 26px;
 }
 .idiomaH a{
-  padding: 4px 16px;
+  padding: 3px 27px;
+  border: solid 1px transparent  ;
 }
-.idiomaH :hover{
-  padding: 5px 12px;
+.idiomaH a:hover, .idiomaH a:active, .idiomaH a.activei{
+  padding: 3px 27px;
   border: solid 1px #F8F4E5 ;
 }
 .sr-only {
@@ -7124,6 +7126,7 @@ body .slider-text-oficial2 {
 }
 #make-drink .make-text {
   top: 0px;
+  font-family: "Avenir";
 }
 #make-drink .make-text #slider-text-make {
   padding-top: 30px;
