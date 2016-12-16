@@ -5376,18 +5376,18 @@ tbody.collapse.in {
 }
 
 .serif-light {
-  font-family: "trajan-pro-3", "Avenir" !important;
+  font-family: "Avenir" !important;
   font-weight: 300;
   font-style: normal;
 }
 
 .serif-light-italic {
-  font-family: "trajan-pro-3", "Avenir" !important;
+  font-family: "Avenir" !important;
   font-weight: 300;
 }
 
 .serif-book {
-  font-family: "trajan-pro-3", "Avenir" !important;
+  font-family: "Avenir" !important;
   font-weight: 400;
   font-style: normal;
 }
@@ -6444,12 +6444,12 @@ body .slider-text-oficial2 {
 }
 
 .site-content .section-title h2 {
-  font-family: "trajan-pro-3";
+  font-family: "Avenir";
   font-size: 40px;
   font-size: 2.85714rem;
 }
 .site-content .section-title h3 {
-  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-family: "Avenir" !important;
   font-weight: 300;
 }
 
@@ -7609,7 +7609,7 @@ footer .col-md-3 p a:hover {
   text-transform: uppercase;
   color: #8d744a;
   font-weight: 400;
-  font-family: "trajan-pro-3";
+  font-family: "Avenir";
 }
 #blog-post .botons {
   padding-top: 8%;
@@ -7683,7 +7683,7 @@ footer .col-md-3 p a:hover {
   background-color: #f8f4e5;
 }
 #galeria h1 {
-  font-family: "trajan-pro-3";
+  font-family: "Avenir";
   color: #8d744a;
   padding-bottom: 23px;
 }
@@ -8103,7 +8103,7 @@ footer .col-md-3 p a:hover {
   font-size: 20px;
 }
 .thanks-box h3 {
-  font-family: "trajan-pro-3";
+  font-family: "Avenir";
 }
 .thanks-box button {
   background-color: transparent;
@@ -8325,7 +8325,7 @@ footer .col-md-3 p a:hover {
     height: 70px;
     font-size: 18px;
     font-size: 1.28571rem;
-    font-family: "trajan-pro-3";
+    font-family: "Avenir";
     text-transform: uppercase;
   }
   #overlay-menu ul li .separador {
