@@ -8397,9 +8397,7 @@ footer .col-md-3 p a:hover {
   #about-us .container .row .col-md-6 {
     padding: 0;
   }
-  #about-us .container .row .col-md-6 .texto-about {
-    padding: 33px 0 9px !important;
-  }
+
   #about-us .container .row .col-md-6 .texto-about h2 {
     font-size: 21px;
   }
@@ -8409,6 +8407,19 @@ footer .col-md-3 p a:hover {
   #about-us .gallery-cell {
     text-align: center;
   }
+  @media only screen and (min-width: 350px){
+    #about-us .container .row .col-md-6 .texto-about {
+      padding: 70px 0 9px !important;
+    }
+  }
+   @media only screen and (min-width: 798px){
+    #about-us .container .row .col-md-6 .texto-about {
+      padding: 33px 0 9px !important;
+    }
+  }
+
+
+
 
   /*THE GOODS*/
   #the-goods h1, #events h1, #slider-events h1 {
