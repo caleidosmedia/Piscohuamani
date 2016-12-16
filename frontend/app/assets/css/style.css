@@ -7388,7 +7388,7 @@ footer .col-md-3 p {
 
 @media(min-width: 768px){
   footer .col-md-3 p {
-    padding-left: 14px;
+    margin-left: 21px;
   }
 }
 
