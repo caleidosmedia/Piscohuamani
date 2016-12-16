@@ -7,7 +7,7 @@ var paises = "";
 function loadJson(callback) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
-  xobj.open('GET', 'http://piscohuamani.laboratoria.la/frontend/app/assets/json/drinkingage.json', true);
+  xobj.open('GET', '../json/drinkingage.json', true);
   xobj.onreadystatechange = function () {
     if (xobj.readyState == 4 && xobj.status == "200") {
       callback(xobj.responseText);
@@ -110,7 +110,7 @@ function hola() {
 function validar(e, number,names) {
   var inputVal = String.fromCharCode(e.keyCode);
   if(!numericReg.test(inputVal)) {
-    $(names).val(number);
+    //$(names).val(number);
       e.preventDefault();
     }
   else {
