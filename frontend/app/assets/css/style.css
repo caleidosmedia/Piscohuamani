@@ -8363,9 +8363,6 @@ footer .col-md-3 p a:hover {
     transform: translateX(0) !important;
   }
 
-  .site-content > section {
-    padding: 42px 0;
-  }
   .site-content > section .container {
     padding: 0 16%;
   }
