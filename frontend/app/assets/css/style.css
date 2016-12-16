@@ -5376,18 +5376,18 @@ tbody.collapse.in {
 }
 
 .serif-light {
-  font-family: "trajan-pro-3", "Times New Roman", Times, serif !important;
+  font-family: "trajan-pro-3", "Avenir" !important;
   font-weight: 300;
   font-style: normal;
 }
 
 .serif-light-italic {
-  font-family: "trajan-pro-3", "Times New Roman", Times, serif !important;
+  font-family: "trajan-pro-3", "Avenir" !important;
   font-weight: 300;
 }
 
 .serif-book {
-  font-family: "trajan-pro-3", "Times New Roman", Times, serif !important;
+  font-family: "trajan-pro-3", "Avenir" !important;
   font-weight: 400;
   font-style: normal;
 }
