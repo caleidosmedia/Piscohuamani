@@ -7079,7 +7079,10 @@ body .slider-text-oficial2 {
   top: -210px;
   right: 42%;
   bottom: 0;
-  z-index: 100;
+    -moz-box-shadow: 22px -19px 30px 0px #3b2e29;
+    -webkit-box-shadow: 22px -19px 30px 0px #3b2e29;
+    box-shadow: 22px -19px 30px 0px #3b2e29;
+    z-index: 100;
 }
 
 .active-hidden {
