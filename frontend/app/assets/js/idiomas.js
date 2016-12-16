@@ -7,6 +7,6 @@ $(document).ready( function () {
 		"en": curr_path.replace(lang, "en")
 	}
 
-	$(".idiomaH .es").text(new_url.es);
-	$(".idiomaH .en").text(new_url.en);
+	$(".idiomaH .es").attr("href", new_url.es);
+	$(".idiomaH .en").attr("href", new_url.en);
 });
