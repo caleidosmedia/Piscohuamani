@@ -111,7 +111,7 @@ $(document).ready(function(){
 		wrapAround: true
 	});
 
-	$('#events .gallery-button-left img').on( 'click', function(e) {
+	$('#events .gallery-button-left').on( 'click', function(e) {
 		e.preventDefault();
 		$('#events .gallery .gallery-cell').fadeIn();
 		setTimeout(function(){
@@ -119,7 +119,7 @@ $(document).ready(function(){
 		$('#events .gallery .gallery-cell.is-selected').fadeOut();
 	  $eventsGallery.flickity('previous');
 	});
-	$('#events .gallery-button-right img').on( 'click', function(e) {
+	$('#events .gallery-button-right').on( 'click', function(e) {
 		e.preventDefault();
 		$('#events .gallery .gallery-cell').fadeIn();
 		setTimeout(function(){
