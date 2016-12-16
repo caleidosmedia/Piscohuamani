@@ -12,7 +12,7 @@
 ========================================*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
-  font-family: sans-serif;
+  font-family: "Avenir";
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -340,7 +340,7 @@ html {
 }
 
 body {
-  font-family: "museo-sans", Helvetica, Arial, sans-serif;
+  font-family: "Avenir";
   font-size: 14px;
   line-height: 1.42857;
   color: #707274;
@@ -412,7 +412,20 @@ hr {
   border: 0;
   border-top: 1px solid #F0F0F0;
 }
-
+.idiomaH{
+  position: relative;
+  float: left;
+  margin-top: 26px;
+  margin-left:30px; 
+}
+.idiomaH a{
+  padding: 3px 27px;
+  border: solid 1px transparent  ;
+}
+.idiomaH a:hover, .idiomaH a:active, .idiomaH a.activei{
+  padding: 3px 27px;
+  border: solid 1px #F8F4E5 ;
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -5329,55 +5342,52 @@ tbody.collapse.in {
 */
 /* PROJECT ESPECIFIC FONTS */
 .thin {
-  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-family: "Avenir"!important;
   font-weight: 100;
   font-style: normal;
 }
 
 .extra-light {
-  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-family: "Avenir"!important;
   font-weight: 200;
   font-style: normal;
 }
 
 .light {
-  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-family: "Avenir" !important;
   font-weight: 300;
   font-style: normal;
 }
 
 .light-italic {
-  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-family: "Avenir" !important;
   font-weight: 300;
-  font-style: italic;
 }
 
 .medium-italic {
-  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-family: "Avenir" !important;
   font-weight: 500;
-  font-style: italic;
 }
 
 .bold {
-  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-family: "Avenir" !important;
   font-weight: 700;
   font-style: normal;
 }
 
 .serif-light {
-  font-family: "trajan-pro-3", "Times New Roman", Times, serif !important;
+  font-family: "trajan-pro-3", "Avenir" !important;
   font-weight: 300;
   font-style: normal;
 }
 
 .serif-light-italic {
-  font-family: "trajan-pro-3", "Times New Roman", Times, serif !important;
+  font-family: "trajan-pro-3", "Avenir" !important;
   font-weight: 300;
-  font-style: italic;
 }
 
 .serif-book {
-  font-family: "trajan-pro-3", "Times New Roman", Times, serif !important;
+  font-family: "trajan-pro-3", "Avenir" !important;
   font-weight: 400;
   font-style: normal;
 }
@@ -6365,7 +6375,7 @@ body h2 {
 }
 html h3,
 body h3 {
-  font-family: "museo-sans";
+  font-family: "Avenir";
 }
 html #content-blog,
 html #faqs,
@@ -6441,7 +6451,6 @@ body .slider-text-oficial2 {
 .site-content .section-title h3 {
   font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
   font-weight: 300;
-  font-style: italic;
 }
 
 .hover-arrow-controls, .gallery-button-left img,
@@ -6764,16 +6773,17 @@ body .slider-text-oficial2 {
   height: 80px;
   background: #3b2e29;
   z-index: 110;
+  font-family: Avenir;
 }
 .site-menu .contenedor-menu .nav-desktop {
   display: inline-block;
 }
 .site-menu .contenedor-menu .nav-desktop a {
-  height: 80px;
   text-align: center;
   text-decoration: none;
   position: relative;
   float: left;
+  color: #F8F4E5;
 }
 .site-menu .contenedor-menu .nav-desktop a div {
   font-size: 15px;
@@ -6923,15 +6933,12 @@ body .slider-text-oficial2 {
   font-size: 60px;
   font-size: 4.28571rem;
 }
-.img-principal div.texto h3 {
-  font-style: italic;
-}
+
 .img-principal div.texto p {
   font-size: 23.8px;
   font-size: 1.7rem;
   font-family: "museo-sans";
   font-weight: lighter;
-  font-style: italic;
   margin-top: 18px;
   letter-spacing: 0;
 }
@@ -6950,6 +6957,7 @@ body .slider-text-oficial2 {
 #about-us {
   background-size: 30%;
   z-index: 101;
+  font-family: "Avenir";
 }
 #about-us .leyenda-about {
   font-size: 60px;
@@ -6960,7 +6968,6 @@ body .slider-text-oficial2 {
   font-family: Verdana;
 }
 #about-us h3 {
-  font-style: italic;
   font-weight: 300;
 }
 #about-us .texto-about {
@@ -6988,7 +6995,8 @@ body .slider-text-oficial2 {
 	The goods
 */
 #the-goods, #events, #slider-events {
-  background-color: #f8f4e5;
+  background-color: #3b2e29;
+  font-family: "Avenir";
 }
 #the-goods .gallery, #events .gallery, #slider-events .gallery {
   height: 630px;
@@ -7007,15 +7015,14 @@ body .slider-text-oficial2 {
 #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
   padding-top: 150px;
   width: 150px;
-  height: 780px;
+  height: auto;
 }
 #the-goods h1, #events h1, #slider-events h1 {
   font-size: 35px;
   font-size: 2.5rem;
-  font-family: Verdana;
+  font-family: Avenir;
 }
 #the-goods h3, #events h3, #slider-events h3 {
-  font-style: italic;
   font-weight: 300;
   margin-bottom: 5%;
 }
@@ -7027,7 +7034,7 @@ body .slider-text-oficial2 {
   z-index: 1;
 }
 #the-goods .make-text #slider-text-goods .separador, #events .make-text #slider-text-goods .separador, #slider-events .make-text #slider-text-goods .separador {
-  border-bottom: 1px solid #3b2e29;
+  border-bottom: 1px solid #ffffff;
 }
 #the-goods .make-text #slider-text-goods h4, #events .make-text #slider-text-goods h4, #slider-events .make-text #slider-text-goods h4 {
   padding-top: 6%;
@@ -7051,7 +7058,7 @@ body .slider-text-oficial2 {
   position: relative;
 }
 #the-goods .gallery-cell, #events .gallery-cell, #slider-events .gallery-cell {
-  width: 100%;
+  width: 99%;
   left: 120%;
 }
 #the-goods .gallery-nav .gallery-cell.is-nav-selected, #events .gallery-nav .gallery-cell.is-nav-selected, #slider-events .gallery-nav .gallery-cell.is-nav-selected {
@@ -7073,10 +7080,10 @@ body .slider-text-oficial2 {
   top: -210px;
   right: 42%;
   bottom: 0;
-  -moz-box-shadow: 22px -19px 30px 0px #f8f4e5;
-  -webkit-box-shadow: 22px -19px 30px 0px #f8f4e5;
-  box-shadow: 22px -19px 30px 0px #f8f4e5;
-  z-index: 100;
+    -moz-box-shadow: 22px -19px 30px 0px #3b2e29;
+    -webkit-box-shadow: 22px -19px 30px 0px #3b2e29;
+    box-shadow: 22px -19px 30px 0px #3b2e29;
+    z-index: 100;
 }
 
 .active-hidden {
@@ -7123,13 +7130,13 @@ body .slider-text-oficial2 {
 }
 #make-drink .make-text {
   top: 0px;
+  font-family: "Avenir";
 }
 #make-drink .make-text #slider-text-make {
   padding-top: 30px;
   z-index: 1;
 }
 #make-drink .make-text #slider-text-make .subtitle {
-  font-style: italic;
   font-size: 24px;
   font-size: 1.71429rem;
   margin-bottom: 20px;
@@ -7288,7 +7295,7 @@ body .slider-text-oficial2 {
 	Follow us
 */
 #follow-us {
-  background-color: #8d744a;
+  background-color: #3b2e29;
 }
 #follow-us .container-social {
   display: inline-block;
@@ -7328,7 +7335,7 @@ body .slider-text-oficial2 {
   background-color: rgba(250, 250, 250, 0.2);
 }
 #follow-us .container-social a:nth-child(3) img {
-  width: 45px;
+  width: 48px;
 }
 #follow-us .container-social a h1, #follow-us .container-social a p {
   font-family: Verdana;
@@ -7350,11 +7357,11 @@ body .slider-text-oficial2 {
 */
 footer {
   color: #3b2e29;
-  background-color: #f8f4e5;
 }
 footer .footer-logo {
   width: 70px;
   margin-bottom: 14px;
+  width: 136px;
 }
 footer .texto {
   padding-left: 10%;
@@ -7504,7 +7511,6 @@ footer .col-md-3 p a:hover {
 .site-content .content-blog .post .tags, .site-content .content-blog .post .tags a {
   color: #8d744a;
   font-weight: 100;
-  font-style: italic;
 }
 .site-content .content-blog #pagination, .site-content .content-blog .pagination {
   padding-top: 5%;
@@ -7720,7 +7726,7 @@ footer .col-md-3 p a:hover {
   top: 0;
   left: 0;
   text-align: center;
-  z-index: 100;
+  z-index: 120;
   display: none;
 }
 #galeria .grid #overlay img {
@@ -8605,7 +8611,7 @@ footer .col-md-3 p a:hover {
     padding-left: 12px;
   }
   footer ul li .texto p {
-    font-family: "museo-sans";
+    font-family: "Avenir";
     font-size: 10px;
   }
   footer ul .col-md-3 {
@@ -8613,7 +8619,7 @@ footer .col-md-3 p a:hover {
   }
   footer ul .col-md-3 p {
     font-size: 10px !important;
-    font-family: "Museo-sans";
+    font-family: "Avenir";
     display: inline;
   }
 
@@ -9335,15 +9341,15 @@ footer .col-md-3 p a:hover {
 }
 
 .family-museosans {
-  font-family: "MuseoSans" !important;
+  font-family: "Avenir" !important;
 }
 
 .family-verdana {
-  font-family: Verdana !important;
+  font-family: "Avenir" !important;
 }
 
 .family-across {
-  font-family: "Across" !important;
+  font-family: "Yaquote" !important;
 }
 
 .float-left {
@@ -17981,6 +17987,24 @@ input[type="submit"].btn.btn-white.btn-icon-custom.btn-lg i,
 .btn.btn-white.btn-icon-custom.btn-lg i,
 .btn-group-lg > .btn.btn-white.btn-icon-custom i {
   width: 52px;
+}
+@font-face {
+  font-family: "Yaquote";
+    src: url('../fonts/original_YaquoteScript_PersonalUse.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/original_YaquoteScript_PersonalUse.woff') format('woff'),
+         url('../fonts/original_YaquoteScript_PersonalUse.ttf') format('truetype'),
+         url('../fonts/original_YaquoteScript_PersonalUse.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir";
+    src: url('../fonts/original_Avenir-Light.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/original_Avenir-Light.woff') format('woff'),
+         url('../fonts/original_Avenir-Light.ttf') format('truetype'),
+         url('../fonts/original_Avenir-Light.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
