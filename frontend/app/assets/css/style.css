@@ -7723,7 +7723,7 @@ footer .col-md-3 p a:hover {
   top: 0;
   left: 0;
   text-align: center;
-  z-index: 100;
+  z-index: 120;
   display: none;
 }
 #galeria .grid #overlay img {
