@@ -7359,6 +7359,8 @@ footer {
   color: #3b2e29;
 }
 footer .footer-logo {
+  width: 70px;
+  margin-bottom: 14px;
   width: 136px;
 }
 footer .texto {

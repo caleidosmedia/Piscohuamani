@@ -58,3 +58,19 @@ $(document).ready(function(){
     $(".close").toggleClass("show");
   });
 });
+
+
+$("#day").keyup(function(e){
+  $;
+});
+
+
+/////
+
+
+
+$(".logo-link").on("click", function () {
+  $("img", this).attr("src", "pato.jpg");
+  
+  $(this).find("img").attr("src", "pato.jpg");
+});
