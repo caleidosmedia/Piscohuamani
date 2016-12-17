@@ -7746,9 +7746,24 @@ footer .col-md-3 p a:hover {
   z-index: 120;
   display: none;
 }
+
 #galeria .grid #overlay img {
   height: 60%;
 }
+
+@media only screen and (min-width: 350px){
+  #galeria .grid #overlay img {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 798px){
+  #galeria .grid #overlay img {
+    height: 60%;
+  }
+}
+
+
 #galeria .grid #overlay a {
   right: 25%;
   top: 10%;
