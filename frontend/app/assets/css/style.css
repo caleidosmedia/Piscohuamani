@@ -8171,6 +8171,16 @@ footer .col-md-3 p a:hover {
   opacity: 1 !important;
   z-index: 10000 !important;
 }
+@media only screen and (max-width: 355px) {
+  /*RESPONSIVE FORMULARIO*/
+  .idiomaH {
+    position: relative;
+    float: none;
+    margin-top: 26px;
+    margin-left: 0px;
+  }
+}
+
 
 /*RESPONSIVE MEN├Ü E IMG-PRINCIPAL*/
 @media only screen and (max-width: 992px) {
