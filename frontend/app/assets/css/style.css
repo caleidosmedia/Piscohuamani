@@ -230,15 +230,6 @@ td,
 th {
   padding: 0;
 }
-footer .texto {
-  padding-left: 12px;
-}
-  
-@media (min-width: 350px) {
-  footer .texto {
-    padding-left: 0px;
-  }
-}
 
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
@@ -8674,7 +8665,7 @@ footer .col-md-3 p a:hover {
     padding: 0 !important;
   }
   footer ul li .texto {
-    padding-left: 12px;
+    padding-left: 0px;
   }
   footer ul li .texto p {
     font-family: "Avenir";
@@ -8687,6 +8678,12 @@ footer .col-md-3 p a:hover {
     font-size: 10px !important;
     font-family: "Avenir";
     display: inline;
+  }
+  
+  @media (min-width: 480px) {
+    footer ul li .texto {
+      padding-left: 12px;
+    }
   }
 
   /*BLOG*/
