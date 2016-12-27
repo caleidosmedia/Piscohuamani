@@ -431,10 +431,16 @@ hr {
   #the-goods{
     padding: 80px 0px 42px;
   }
+  .pd-l-0{
+    padding-left: 0px;
+  }
 }
 @media (min-width: 789px) {
   #the-goods, #events, #slider-events {
     padding: 42px 0;
+  }
+  .pd-l-0{
+    padding-left: 14px;
   }
 }
 .sr-only {
