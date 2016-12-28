@@ -8994,6 +8994,14 @@ footer .col-md-3 p a:hover {
     #slider-events .gallery-wrapper.row .container .gallery-button-left {
     top: 242px !important;
     }
+    #galeria .container .grid {
+    padding: 0% 7% 10%;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    #galeria .container .grid {
+    padding: 10% 7% 10%;
+    }
   }
   #slider-events .gallery-wrapper.row .container .gallery-button-right,
   #slider-events .gallery-wrapper.row .container .gallery-button-left {
@@ -9044,7 +9052,7 @@ footer .col-md-3 p a:hover {
     font-weight: 300;
   }
   #galeria .container .grid {
-    padding: 10% 7% 10%;
+    margin-top: 70px;
   }
   #galeria .container .grid ul li {
     padding: 3px 3px 3px;
