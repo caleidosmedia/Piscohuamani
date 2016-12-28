@@ -9051,7 +9051,7 @@ footer .col-md-3 p a:hover {
   }
   @media only screen and (min-width: 480px){
     #galeria .container .grid{
-      margin-top: 70px;
+      margin-top: 0px;
       padding: 10% 7% 10%;
     }
   }
