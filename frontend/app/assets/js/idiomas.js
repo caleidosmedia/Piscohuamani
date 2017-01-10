@@ -1,7 +1,7 @@
 /* IDIOMAS */
 $(document).ready( function () {
 	var curr_url = window.location.href;
-	var lang = curr_url.substr(curr_url.indexOf("/home")-2, 2);
+	var lang = (curr_url.indexOf("/en/") !== -1) ? "en" : "es";
 	var new_url = {
 		"es": curr_url.replace("/"+lang+"/", "/es/"),
 		"en": curr_url.replace("/"+lang+"/", "/en/")

@@ -5,7 +5,7 @@ var $overlay = $('#overlay');
 var $image = $('#overlay .img-overlay');
 var $next = $('#overlay .next-overlay');
 var $previous = $('#overlay .previous-overlay');
-var $images = $('.grid-image').length;
+var $images = $('#container-ronda .grid-image').length;
 var $close = $('.close');
 
 var ready = function(){
@@ -40,7 +40,7 @@ function setGalleryURLS($index){
 
 	 if ($index>0 &&  $index<($images+1)) {
 	  $previous.attr("data-image-index", parseInt($index)-1);
-		$previous.attr("href", $("#container-ronda .grid-image-"+($index-1)).attr("href"));
+	  $previous.attr("href", $("#container-ronda .grid-image-"+($index-1)).attr("href"));
 	
 	  $next.attr("href", $("#container-ronda .grid-image-"+($index+1)).attr("href"));
 	  $next.attr("data-image-index", parseInt($index)+1);
