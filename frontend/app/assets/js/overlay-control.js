@@ -25,7 +25,7 @@ var ready = function(){
 			$index = $(this).attr('data-image-index');
 			console.log($index);
 			$image.attr("src", $("#container-ronda .grid-image-"+($index)).attr("href"))
-		  setGalleryURLS($index);
+		  	setGalleryURLS($index);
 		});
 
 		$previous.click(function(event){
@@ -33,7 +33,7 @@ var ready = function(){
 			$index = $(this).attr('data-image-index');
 			console.log($index);
 			$image.attr("src", $("#container-ronda .grid-image-"+($index)).attr("href"))
-		  setGalleryURLS($index);
+		  	setGalleryURLS($index);
 		});
 	// }
 };
@@ -46,6 +46,10 @@ function setGalleryURLS($index){
 	
 	  $next.attr("href", $("#container-ronda .grid-image-"+($index+1)).attr("href"));
 	  $next.attr("data-image-index", parseInt($index)+1);
+	} else if ($index === 0) {
+		$previous.hide();
+	} else if ($index === ($images+1)) {
+		$show.hide();
 	}
 }
 
