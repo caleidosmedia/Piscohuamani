@@ -46,9 +46,9 @@ function setGalleryURLS($index){
 	
 	  $next.attr("href", $("#container-ronda .grid-image-"+($index+1)).attr("href"));
 	  $next.attr("data-image-index", parseInt($index)+1);
-	} else if ($index === 0) {
+	} else if ($index === 1) {
 		$previous.hide();
-	} else if ($index === ($images+1)) {
+	} else if ($index === $images) {
 		$show.hide();
 	}
 }
