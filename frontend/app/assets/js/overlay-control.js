@@ -23,6 +23,7 @@ var ready = function(){
 		$next.click(function(event){
 			event.preventDefault();
 			$index = $(this).attr('data-image-index');
+			console.log($index);
 			$image.attr("src", $("#container-ronda .grid-image-"+($index)).attr("href"))
 		  setGalleryURLS($index);
 		});
@@ -30,6 +31,7 @@ var ready = function(){
 		$previous.click(function(event){
 			event.preventDefault();
 			$index = $(this).attr('data-image-index');
+			console.log($index);
 			$image.attr("src", $("#container-ronda .grid-image-"+($index)).attr("href"))
 		  setGalleryURLS($index);
 		});
