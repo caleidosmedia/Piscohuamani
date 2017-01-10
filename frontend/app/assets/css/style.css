@@ -8190,8 +8190,8 @@ footer .col-md-3 p a:hover {
 }
 
 .icono-logo{
-    width: 212px;
-    margin-left: 14px;
+    width: 235px;
+    margin-left: 16px;
   }
 @media only screen and (min-width: 350px){
   #about-us .container .row .col-md-6 .texto-about {
@@ -9389,7 +9389,7 @@ footer .col-md-3 p a:hover {
 }
 
 .text-white {
-  color: #fff;
+  color: #f8f4e5;
 }
 
 .relative {
