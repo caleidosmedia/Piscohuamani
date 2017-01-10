@@ -8197,9 +8197,6 @@ footer .col-md-3 p a:hover {
   #about-us .container .row .col-md-6 .texto-about {
     padding: 70px 0 9px !important;
   }
-  .site-content > section .container {
-    padding: 0 9%;
-  }
 }
 
 
@@ -8215,7 +8212,7 @@ footer .col-md-3 p a:hover {
 
 @media only screen and (min-width: 992px){
   #make-drink .container h2 {
-    font-size: 28px;
+    font-size: 3rem !important;
     font-weight: 600;
   }
 }
