@@ -5,7 +5,7 @@ var $overlay = $('#overlay');
 var $image = $('#overlay .img-overlay');
 var $next = $('#overlay .next-overlay');
 var $previous = $('#overlay .previous-overlay');
-var $images = $('#container-ronda .grid-image').length;
+var $images = $('.grid-image').length;
 var $close = $('.close');
 
 var ready = function(){
