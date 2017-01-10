@@ -8203,7 +8203,7 @@ footer .col-md-3 p a:hover {
 }
 
 
- @media only screen and (min-width: 798px){
+@media only screen and (min-width: 798px){
   #about-us .container .row .col-md-6 .texto-about {
     padding: 33px 0 9px !important;
   }
@@ -8213,8 +8213,8 @@ footer .col-md-3 p a:hover {
   }
 }
 
- @media only screen and (min-width: 1000px){
-  .site-content > section .container h2 {
+@media only screen and (min-width: 992px){
+  #make-drink .container h2 {
     font-size: 28px;
     font-weight: 600;
   }
@@ -8438,7 +8438,6 @@ footer .col-md-3 p a:hover {
   }
   .site-content > section .container h2 {
     font-size: 28px;
-    font-weight: 600;
   }
   .site-content > section .container h3 {
     font-size: 20px;
