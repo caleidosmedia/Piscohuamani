@@ -41,11 +41,6 @@ var ready = function(){
 function setGalleryURLS($index){
 	var $images = $('#container-ronda .grid-image').length;
 	 if ($index>0 &&  $index<($images+1)) {
-  	  if (parseInt($index) === 1) {
-  	  	$index = $images-1;
-  	  } else if (parseInt($index) === $images) {
-
-  	  }
 
   	  if (parseInt($index) === 1) {
   	  	$previous.attr("data-image-index", $images-1);
