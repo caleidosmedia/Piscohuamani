@@ -8197,6 +8197,9 @@ footer .col-md-3 p a:hover {
   #about-us .container .row .col-md-6 .texto-about {
     padding: 70px 0 9px !important;
   }
+  .site-content > section .container {
+    padding: 0 9%;
+  }
 }
 
 
@@ -8428,7 +8431,7 @@ footer .col-md-3 p a:hover {
   }
   .site-content > section .container h2 {
     font-size: 28px;
-    font-weight: 600px
+    font-weight: 600;
   }
   .site-content > section .container h3 {
     font-size: 20px;
