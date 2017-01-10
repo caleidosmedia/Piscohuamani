@@ -14,11 +14,22 @@
   padding: 0px !important;
   padding: 0rem !important;
 }
+@media only screen and (min-width: 350px){
+  .ph-21 {
+    padding-left: 4.5rem !important;
 
+  }
+}
 @media only screen and (max-width: 480px) {
   .p-0-xs {
     padding: 0px !important;
     padding: 0rem !important;
+  }
+  .ph-21 {
+    padding-left: 21px !important;
+    padding-right: 21px !important;
+    padding-left: 6.8rem !important;
+    padding-right: 1.5rem !important;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1874,7 +1885,7 @@
 @media only screen and (max-width: 480px) {
   .pl-42-xs {
     padding-left: 42px !important;
-    padding-left: 3rem !important;
+    padding-left: 6rem !important;
   }
 }
 @media only screen and (min-width: 768px) {
