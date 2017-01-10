@@ -43,8 +43,8 @@ function setGalleryURLS($index){
 	 if ($index>0 &&  $index<($images+1)) {
 
   	  if (parseInt($index) === 1) {
-  	  	$previous.attr("data-image-index", $images-1);
-	  	$previous.attr("href", $("#container-ronda .grid-image-"+$images-1).attr("href"));
+  	  	$previous.attr("data-image-index", $images);
+	  	$previous.attr("href", $("#container-ronda .grid-image-"+$images).attr("href"));
   	  } else {
   	  	$previous.attr("data-image-index", parseInt($index)-1);
 	  	$previous.attr("href", $("#container-ronda .grid-image-"+($index-1)).attr("href"));
