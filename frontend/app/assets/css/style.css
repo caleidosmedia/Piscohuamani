@@ -437,7 +437,7 @@ hr {
 }
 @media (min-width: 789px) {
   #the-goods, #events, #slider-events {
-    padding: 42px 0;
+    padding: 0;
   }
   .make-drink .make-text .col-md-7{
     padding-left: 14px;
