@@ -7115,6 +7115,13 @@ body .slider-text-oficial2 {
 /*
 	Make drink
 */
+
+#make-drink .gallery-cell img {
+  padding-top: 40px;
+  max-width: 240px;
+  height: auto;
+}
+
 #make-drink .gallery-wrapper {
   min-height: 560px;
   position: relative;
