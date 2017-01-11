@@ -7120,7 +7120,7 @@ body .slider-text-oficial2 {
   height: auto;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
   #make-drink .gallery-cell img {
     padding-top: 100px;
   }
