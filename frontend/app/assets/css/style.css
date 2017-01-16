@@ -437,7 +437,7 @@ hr {
 }
 @media (min-width: 789px) {
   #the-goods, #events, #slider-events {
-    padding: 42px 0;
+    padding: 0;
   }
   .make-drink .make-text .col-md-7{
     padding-left: 14px;
@@ -7033,7 +7033,7 @@ body .slider-text-oficial2 {
 }
 #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
   padding-top: 150px;
-  width: 150px;
+  width: 180px;
   height: auto;
 }
 #the-goods h1, #events h1, #slider-events h1 {
@@ -7115,6 +7115,17 @@ body .slider-text-oficial2 {
 /*
 	Make drink
 */
+#make-drink .gallery-cell img {
+  max-width: 240px;
+  height: auto;
+}
+
+@media only screen and (min-width: 992px) {
+  #make-drink .gallery-cell img {
+    padding-top: 100px;
+  }
+}
+
 #make-drink .gallery-wrapper {
   min-height: 560px;
   position: relative;
@@ -8060,7 +8071,7 @@ footer .col-md-3 p a:hover {
   left: 50%;
 }
 #container-contact h1 {
-  font-family: "Verdana";
+  font-family: "Avenir";
   color: #f8f4e5;
 }
 #container-contact .formulario input {
