@@ -6634,6 +6634,7 @@ body .slider-text-oficial2 {
 #formulario .action {
   padding-top: 26px;
   margin-left: 6px;
+  padding-bottom: 30px;
 }
 #formulario .action select {
   display: none;
