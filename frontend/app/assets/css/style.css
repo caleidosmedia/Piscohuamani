@@ -8218,7 +8218,6 @@ footer .col-md-3 p a:hover {
   }
   .logo-title{
     width: 273px;
-    margin-left: 13px;
   }
   #follow-us{
     padding-top: 0px
@@ -8250,11 +8249,6 @@ footer .col-md-3 p a:hover {
   }
   .fondo .contenedor-fondo {
     width: 80%;
-  }
-  .fondo .logo-title {
-    width: 61%;
-    width: 195px;
-    padding-top: 10px;
   }
   .fondo h3 {
     font-size: 13px;
