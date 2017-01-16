@@ -8013,13 +8013,14 @@ footer .col-md-3 p a:hover {
 */
 #terms .contenedor {
   padding: 10% 17%;
+  font-family: Avenir;
 }
 #terms h1 {
-  color: #8d744a;
-  font-family: Verdana;
+  color: #4e3227;
+
 }
 #terms .separador {
-  border-bottom: 1px solid #8d744a;
+  border-bottom: 1px solid #4e3227;
   margin-top: 3%;
   margin-bottom: -2%;
   width: 29%;
