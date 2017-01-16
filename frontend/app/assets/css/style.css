@@ -7827,13 +7827,13 @@ footer .col-md-3 p a:hover {
 #faqs .container {
   padding: 110px 33px;
   padding: 7.85714rem 2.35714rem;
+  font-family: Avenir;
 }
 #faqs h1 {
-  color: #8d744a;
-  font-family: Verdana;
+  color: #4e3227;
 }
 #faqs .separador {
-  border-bottom: 1px solid #8d744a;
+  border-bottom: 1px solid #4e3227;
   padding-top: 2%;
   padding-left: 2%;
   width: 10%;
