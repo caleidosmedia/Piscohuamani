@@ -14,11 +14,22 @@
   padding: 0px !important;
   padding: 0rem !important;
 }
+@media only screen and (min-width: 350px){
+  .ph-21 {
+    padding-left: 4.5rem !important;
 
+  }
+}
 @media only screen and (max-width: 480px) {
   .p-0-xs {
     padding: 0px !important;
     padding: 0rem !important;
+  }
+  .ph-21 {
+    padding-left: 21px !important;
+    padding-right: 21px !important;
+    padding-left: 6.8rem !important;
+    padding-right: 1.5rem !important;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1874,7 +1885,7 @@
 @media only screen and (max-width: 480px) {
   .pl-42-xs {
     padding-left: 42px !important;
-    padding-left: 3rem !important;
+    padding-left: 6rem !important;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1929,10 +1940,17 @@
   margin-top: 3rem !important;
 }
 
+@media only screen and (max-width: 360px) {
+  .mt-42-xs {
+    margin-top: 42px !important;
+    margin-top: 7rem !important;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .mt-42-xs {
     margin-top: 42px !important;
-    margin-top: 3rem !important;
+    margin-top: 7rem !important;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -8925,12 +8943,29 @@
     padding-bottom: 63.0% !important;
   }
 }
+
 .pv-70 {
   padding-top: 70px !important;
   padding-bottom: 70px !important;
-  padding-top: 5rem !important;
   padding-bottom: 5rem !important;
 }
+@media only screen and (min-width: 350px){
+  .pv-70 {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+    padding-bottom: 5rem !important;
+  }
+}
+@media only screen and (min-width: 798px){
+  .pv-70 {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+}
+
+
 
 .pv-ch-70 > div, .pv-ch-70 > section, .pv-ch-70 > header, .pv-ch-70 > footer, .pv-ch-70 > main, .pv-ch-70 > aside, .pv-ch-70 > article, .pv-ch-70 > a, .pv-ch-70 > span, .pv-ch-70 > li, .pv-ch-70 > p, .pv-ch-70 > i, .pv-ch-70 > em, .pv-ch-70 > small, .pv-ch-70 > blockquote, .pv-ch-70 > pre, .pv-ch-70 > code > h1, .pv-ch-70 > h2, .pv-ch-70 > h3, .pv-ch-70 > h4, .pv-ch-70 > h5, .pv-ch-70 > h6, .pv-ch-70 > .h1, .pv-ch-70 > .h2, .pv-ch-70 > .h3, .pv-ch-70 > .h4, .pv-ch-70 > .h5, .pv-ch-70 > .h6, .pv-ch-70 > .p, .pv-ch-70 > ul, .pv-ch-70 > ol, .pv-ch-70 > button {
   padding-top: 70px !important;
@@ -10244,7 +10279,7 @@
 .ph-21 {
   padding-left: 21px !important;
   padding-right: 21px !important;
-  padding-left: 6.8rem !important;
+  padding-left: 4.5rem !important;
   padding-right: 1.5rem !important;
 }
 
@@ -14767,7 +14802,7 @@
 
 .minhp-100 {
   min-height: 100% !important;
-  min-height: 100vh !important;
+  min-height: 108vh !important;
 }
 
 @media only screen and (max-width: 480px) {
@@ -15369,7 +15404,7 @@ a.text-gray-lighter:not(.btn):hover {
 }
 
 .text-white {
-  color: #fff;
+  color: #f8f4e5;
 }
 .text-white a:not(.btn) {
   color: #fff;
