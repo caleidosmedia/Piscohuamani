@@ -7424,25 +7424,25 @@ footer .col-md-3 p a:hover {
 	Blog
 */
 .site-content .content-blog h1 {
-  color: #4E3224;
+  color: #4e3227;
   font-family: Verdana;
 }
 .site-content .content-blog .separador {
-  border-bottom: 1px solid #4E3224;
+  border-bottom: 1px solid #4e3227;
   padding-top: 2%;
   width: 36%;
 }
 .site-content .content-blog #menu-blog nav a {
   padding: 0 7px;
-  color: #4E3224;
+  color: #4e3227;
   text-decoration: none;
   font-weight: lighter;
 }
 .site-content .content-blog #menu-blog nav a:hover {
-  outline: 1px solid #4E3224 !important;
+  outline: 1px solid #4e3227 !important;
 }
 .site-content .content-blog .post {
-  border-bottom: 1px solid #3B2E29;
+  border-bottom: 1px solid #4e3227;
 }
 .site-content .content-blog .post .imagen {
   width: 100%;
@@ -7478,7 +7478,7 @@ footer .col-md-3 p a:hover {
 }
 .site-content .content-blog .post .botons .div-button a {
   text-decoration: none;
-  color: #3b2e29;
+  color: #4e3227;
 }
 .site-content .content-blog .post .botons .div-button .overlay {
   top: 0;
@@ -7545,7 +7545,7 @@ footer .col-md-3 p a:hover {
   font-size: 18px;
 }
 .site-content .content-blog .post .tags, .site-content .content-blog .post .tags a {
-  color: #8d744a;
+  color: #4e3227;
   font-weight: 100;
 }
 .site-content .content-blog #pagination, .site-content .content-blog .pagination {
@@ -7898,7 +7898,7 @@ footer .col-md-3 p a:hover {
 	Media kit
 */
 #media-kit h1:first-child {
-  color: #8d744a;
+  color: #4e3227;
   font-family: Verdana;
 }
 #media-kit .separador {
