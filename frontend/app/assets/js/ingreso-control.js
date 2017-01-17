@@ -36,5 +36,6 @@ $(document).ready(function(){
 		$("#day").val(sessionStorage.day);
 		$("#month").val(sessionStorage.month);
 		$("#year").val(sessionStorage.year);
+		validarEdad();
 	});
 });
