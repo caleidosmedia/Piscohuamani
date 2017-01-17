@@ -25,10 +25,12 @@ $(".close-checkbox").click(function(){
 });
 
 $(document).ready(function(){
-	$("#day, #month, #year, #country").keydown(function(){
-		var this_id = $(this).attr("id");
-		var this_val = $(this).val();
-		sessionStorage.setItem(this_id, this_val);
+	$("#day, #month, #year, #country").on("change", function(){
+		$("#day, #month, #year, #country").each(function() {
+			var this_id = $(this).attr("id");
+			var this_val = $(this).val();
+			sessionStorage.setItem(this_id, this_val);
+		});
 	});
 
 	$(window).load( function () {
