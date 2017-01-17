@@ -22345,4 +22345,13 @@ http://flickity.metafizzy.co
 		text-align: center;
 	}
 
+	#events > .container > h1 {
+		font-size: 35.5px;
+		padding-top: 0 !important;
+		margin-top:  60px !important;
+	}
+	
+	#events > .container-slider-text {
+		padding-top: 125px !important;
+	}
 }
