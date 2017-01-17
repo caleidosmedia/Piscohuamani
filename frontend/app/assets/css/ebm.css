@@ -14801,9 +14801,9 @@
 }
 
 @media only screen and (max-width: 350px) {
-  .minhp-100-xs {
+  .minhp-100 {
     min-height: 100% !important;
-    min-height: 128vh !important;
+    min-height: 130vh !important;
   }
 }
 
@@ -14811,8 +14811,13 @@
 @media only screen and (max-width: 480px) {
   .minhp-100 {
     min-height: 100% !important;
+    min-height: 112vh !important;
+  }
+  .minhp-100-xs {
+    min-height: 100% !important;
     min-height: 100vh !important;
   }
+  
   .minhp-100-xs > div, .minhp-100-xs > section, .minhp-100-xs > header, .minhp-100-xs > footer, .minhp-100-xs > main, .minhp-100-xs > aside, .minhp-100-xs > article,
   .minhp-100-xs > a, .minhp-100-xs > span, .minhp-100-xs > li, .minhp-100-xs > p, .minhp-100-xs > i, .minhp-100-xs > em, .minhp-100-xs > small, .minhp-100-xs > blockquote, .minhp-100-xs > pre, .minhp-100-xs > code
   > h1, .minhp-100-xs > h2, .minhp-100-xs > h3, .minhp-100-xs > h4, .minhp-100-xs > h5, .minhp-100-xs > h6,
