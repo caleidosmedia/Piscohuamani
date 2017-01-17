@@ -8209,8 +8209,7 @@ footer .col-md-3 p a:hover {
     float: none;
     margin-top: 26px;
     margin-left: 0px;
-  }
-
+  } 
 }
 
 @media only screen and (min-width: 350px){
@@ -8221,14 +8220,15 @@ footer .col-md-3 p a:hover {
     padding-top: 40px
   }
 }
-
+@media only screen and (max-width: 480px) {
+ .fondo .logo-title{
+    width: 316px;
+  }
+}
 
 @media only screen and (min-width: 798px){
   #about-us .container .row .col-md-6 .texto-about {
     padding: 33px 0 9px !important;
-  }
-  .fondo .logo-title{
-    width: 316px;
   }
   #follow-us{
     padding-top: 0px
