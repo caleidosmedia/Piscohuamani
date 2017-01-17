@@ -6628,23 +6628,6 @@ body .slider-text-oficial2 {
   color: #F8F4E5;
   font-weight: lighter;
 }
-#formulario .action {
-  padding-top: 26px;
-  margin-left: 6px;
-  padding-bottom: 30px;
-}
-@media only screen and (min-width: 350px) {
-  #formulario .action {
-    padding-top: 26px;
-    margin-left: 6px;
-  }
-}
-@media only screen and (min-width: 480px) {
-  #formulario .action {
-    padding-bottom: 30px;
-  }
-}
-
 
 
 #formulario .action select {
@@ -8203,6 +8186,22 @@ footer .col-md-3 p a:hover {
   opacity: 1 !important;
   z-index: 10000 !important;
 }
+@media only screen and (min-width: 320px) {
+  /*RESPONSIVE FORMULARIO*/
+  .fondo .logo-title{
+    width: initial;
+    margin: 0 auto;
+  }
+  #formulario {
+    padding: 15px 2%;
+    text-align: right;
+  }
+  #formulario .action {
+    padding-top: 26px;
+    margin-left: 6px;
+  }
+}
+
 @media only screen and (max-width: 355px) {
   /*RESPONSIVE FORMULARIO*/
   .idiomaH {
@@ -8211,8 +8210,8 @@ footer .col-md-3 p a:hover {
     margin-top: 26px;
     margin-left: 0px;
   }
-}
 
+}
 
 @media only screen and (min-width: 350px){
   #about-us .container .row .col-md-6 .texto-about {
@@ -8220,14 +8219,6 @@ footer .col-md-3 p a:hover {
   }
   #follow-us{
     padding-top: 40px
-  }
-  .fondo .logo-title{
-    width: 282px;
-    margin: 0 auto;
-  }
-  #formulario {
-    padding: 15px 2%;
-    text-align: right;
   }
 }
 
@@ -8244,6 +8235,11 @@ footer .col-md-3 p a:hover {
   }
   #formulario {
     padding: 15px 10%;
+  }
+  #formulario .action {
+    padding-top: 26px;
+    margin-left: 6px;
+    padding-bottom: 30px;
   }
 }
 
