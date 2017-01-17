@@ -22339,12 +22339,12 @@ http://flickity.metafizzy.co
 
 /* ARREGLANDO SECTION TRAGO CALEIDOS */
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
 	#make-drink > .container {
 		padding: 0 15px !important;
 	}
 
-	#make-drink > .container . > .text-white {
+	#make-drink > .container > .text-white {
 		padding-left:  0 !important;
 		text-align: center;
 	}
