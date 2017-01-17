@@ -6597,10 +6597,7 @@ body .slider-text-oficial2 {
   font-size: 1.57143rem;
   letter-spacing: 2px;
 }
-.fondo .logo-title {
-  width: 316px;
-  margin: 0 auto;
-}
+
 .fondo .logo-title img {
   width: 100%;
 }
@@ -8212,6 +8209,7 @@ footer .col-md-3 p a:hover {
   }
   .fondo .logo-title{
     width: 282px;
+    margin: 0 auto;
   }
 }
 
@@ -8221,7 +8219,7 @@ footer .col-md-3 p a:hover {
     padding: 33px 0 9px !important;
   }
   .fondo .logo-title{
-    width: 273px;
+    width: 316px;
   }
   #follow-us{
     padding-top: 0px
