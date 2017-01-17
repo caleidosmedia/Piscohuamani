@@ -22336,3 +22336,17 @@ http://flickity.metafizzy.co
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* ARREGLANDO SECTION TRAGO CALEIDOS */
+
+@media screen and (max-width: 480px) {
+	#make-drink > .container {
+		padding: 0 15px !important;
+	}
+
+	#make-drink > .container > .text-white {
+		padding-left:  0 !important;
+		text-align: center;
+	}
+
+}
