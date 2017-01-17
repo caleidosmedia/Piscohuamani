@@ -8186,25 +8186,10 @@ footer .col-md-3 p a:hover {
   opacity: 1 !important;
   z-index: 10000 !important;
 }
-@media only screen and (max-width: 355px) {
+@media only screen and (min-width: 320px) {
   /*RESPONSIVE FORMULARIO*/
-  .idiomaH {
-    position: relative;
-    float: none;
-    margin-top: 26px;
-    margin-left: 0px;
-  }
-}
-
-@media only screen and (min-width: 350px){
-  #about-us .container .row .col-md-6 .texto-about {
-    padding: 70px 0 9px !important;
-  }
-  #follow-us{
-    padding-top: 40px
-  }
   .fondo .logo-title{
-    width: 282px;
+    width: initial;
     margin: 0 auto;
   }
   #formulario {
@@ -8214,6 +8199,26 @@ footer .col-md-3 p a:hover {
   #formulario .action {
     padding-top: 26px;
     margin-left: 6px;
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  /*RESPONSIVE FORMULARIO*/
+  .idiomaH {
+    position: relative;
+    float: none;
+    margin-top: 26px;
+    margin-left: 0px;
+  }
+
+}
+
+@media only screen and (min-width: 350px){
+  #about-us .container .row .col-md-6 .texto-about {
+    padding: 70px 0 9px !important;
+  }
+  #follow-us{
+    padding-top: 40px
   }
 }
 
