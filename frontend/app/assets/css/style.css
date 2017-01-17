@@ -8220,7 +8220,7 @@ footer .col-md-3 p a:hover {
     padding-top: 40px
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 480px) {
  .fondo .logo-title{
     width: 316px;
   }
