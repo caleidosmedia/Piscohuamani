@@ -14800,13 +14800,16 @@
   min-height: 90vh !important;
 }
 
-.minhp-100 {
-  min-height: 100% !important;
-  min-height: 108vh !important;
+@media only screen and (max-width: 350px) {
+  .minhp-100-xs {
+    min-height: 100% !important;
+    min-height: 128vh !important;
+  }
 }
 
+
 @media only screen and (max-width: 480px) {
-  .minhp-100-xs {
+  .minhp-100 {
     min-height: 100% !important;
     min-height: 100vh !important;
   }
@@ -14829,6 +14832,10 @@
   }
 }
 @media only screen and (min-width: 768px) {
+  .minhp-100 {
+    min-height: 100% !important;
+    min-height: 108vh !important;
+  }
   .minhp-100-sm {
     min-height: 100% !important;
     min-height: 100vh !important;
