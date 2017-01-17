@@ -6628,23 +6628,6 @@ body .slider-text-oficial2 {
   color: #F8F4E5;
   font-weight: lighter;
 }
-#formulario .action {
-  padding-top: 26px;
-  margin-left: 6px;
-  padding-bottom: 30px;
-}
-@media only screen and (min-width: 350px) {
-  #formulario .action {
-    padding-top: 26px;
-    margin-left: 6px;
-  }
-}
-@media only screen and (min-width: 480px) {
-  #formulario .action {
-    padding-bottom: 30px;
-  }
-}
-
 
 
 #formulario .action select {
@@ -8213,7 +8196,6 @@ footer .col-md-3 p a:hover {
   }
 }
 
-
 @media only screen and (min-width: 350px){
   #about-us .container .row .col-md-6 .texto-about {
     padding: 70px 0 9px !important;
@@ -8228,6 +8210,10 @@ footer .col-md-3 p a:hover {
   #formulario {
     padding: 15px 2%;
     text-align: right;
+  }
+  #formulario .action {
+    padding-top: 26px;
+    margin-left: 6px;
   }
 }
 
@@ -8244,6 +8230,11 @@ footer .col-md-3 p a:hover {
   }
   #formulario {
     padding: 15px 10%;
+  }
+  #formulario .action {
+    padding-top: 26px;
+    margin-left: 6px;
+    padding-bottom: 30px;
   }
 }
 
