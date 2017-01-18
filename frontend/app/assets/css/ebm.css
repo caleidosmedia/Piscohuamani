@@ -78,11 +78,11 @@
     padding-top: 0px !important;
     padding-top: 0rem !important;
   }
-}
-.pr-0 {
-  padding-right: 0px !important;
-  padding-right: 0rem !important;
-}
+  }
+  .pr-0 {
+    padding-right: 0px !important;
+    padding-right: 0rem !important;
+  }
 
 @media only screen and (max-width: 480px) {
   .pr-0-xs {
@@ -10279,7 +10279,7 @@
 .ph-21 {
   padding-left: 21px !important;
   padding-right: 21px !important;
-  padding-left: 4.5rem !important;
+  padding-left: 7.4rem !important;
   padding-right: 1.5rem !important;
 }
 
