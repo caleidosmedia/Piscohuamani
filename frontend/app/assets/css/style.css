@@ -7110,7 +7110,10 @@ body .slider-text-oficial2 {
 /*
 	Make drink
 */
-
+#make-drink .row-0 .row {
+  margin-left: -14px;
+  margin-right: -14px;
+}
 #make-drink .gallery-cell img {
   max-width: 240px;
   height: auto;
