@@ -7420,7 +7420,7 @@ footer .col-md-3 p a:hover {
 */
 .site-content .content-blog h1 {
   color: #4e3227;
-  font-family: Verdana;
+  font-family: Avenir;
 }
 .site-content .content-blog .separador {
   border-bottom: 1px solid #4e3227;
@@ -7579,7 +7579,7 @@ footer .col-md-3 p a:hover {
 }
 #blog-post .container h1 {
   color: #8d744a;
-  font-family: Verdana;
+  font-family: Avenir;
 }
 #blog-post .breadcrumb {
   padding-bottom: 3%;
@@ -7894,7 +7894,7 @@ footer .col-md-3 p a:hover {
 */
 #media-kit h1:first-child {
   color: #4e3227;
-  font-family: Verdana;
+  font-family: Avenir;
 }
 #media-kit .separador {
   border-bottom: 1px solid #8d744a;
@@ -22343,6 +22343,8 @@ http://flickity.metafizzy.co
 		text-align: center;
 	}
 
+
+
 	#events > .container > h1 {
 		font-size: 35.5px;
 		padding-top: 0 !important;
@@ -22352,4 +22354,8 @@ http://flickity.metafizzy.co
 	#events > .container-slider-text {
 		padding-top: 125px !important;
 	}
+}
+
+#events > .gallery-child > .flickity-viewport > .flickity-slider > .gallery-cell > .overlay-events {
+	background-color: rgba(23, 10, 3, 0.7) !important;
 }
