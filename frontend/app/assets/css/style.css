@@ -22345,6 +22345,8 @@ http://flickity.metafizzy.co
 		text-align: center;
 	}
 
+
+
 	#events > .container > h1 {
 		font-size: 35.5px;
 		padding-top: 0 !important;
@@ -22354,4 +22356,8 @@ http://flickity.metafizzy.co
 	#events > .container-slider-text {
 		padding-top: 125px !important;
 	}
+}
+
+#events > .gallery-child > .flickity-viewport > .flickity-slider > .gallery-cell > .overlay-events {
+	background-color: rgba(23, 10, 3, 0.7) !important;
 }
