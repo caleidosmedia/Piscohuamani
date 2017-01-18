@@ -15050,7 +15050,7 @@
 }
 
 .bg-white {
-  background-color: #fff;
+  background-color: #f8f4e5;
 }
 
 .bg-white-shade {
@@ -15424,7 +15424,7 @@ a.text-gray-lighter:not(.btn):hover {
   color: #f8f4e5;
 }
 .text-white a:not(.btn) {
-  color: #fff;
+  color: #f8f4e5;
 }
 .text-white a:not(.btn):hover {
   color: #c9c9c9;
@@ -16607,7 +16607,7 @@ a.bg-hover-linkedin:not(.btn):hover,
 }
 
 .h1-ch-white h1 {
-  color: #fff;
+  color: #f8f4e5;
 }
 
 .h2-ch-gray-darker h2 {
@@ -16631,7 +16631,7 @@ a.bg-hover-linkedin:not(.btn):hover,
 }
 
 .h2-ch-white h2 {
-  color: #fff;
+  color: #f8f4e5;
 }
 
 .h3-ch-gray-darker h3 {
@@ -16655,7 +16655,7 @@ a.bg-hover-linkedin:not(.btn):hover,
 }
 
 .h3-ch-white h3 {
-  color: #fff;
+  color: #f8f4e5;
 }
 
 .h4-ch-gray-darker h4 {
@@ -16679,7 +16679,7 @@ a.bg-hover-linkedin:not(.btn):hover,
 }
 
 .h4-ch-white h4 {
-  color: #fff;
+  color: #f8f4e5;
 }
 
 .h5-ch-gray-darker h5 {
@@ -16703,7 +16703,7 @@ a.bg-hover-linkedin:not(.btn):hover,
 }
 
 .h5-ch-white h5 {
-  color: #fff;
+  color: #f8f4e5;
 }
 
 .h6-ch-gray-darker h6 {
@@ -16727,7 +16727,7 @@ a.bg-hover-linkedin:not(.btn):hover,
 }
 
 .h6-ch-white h6 {
-  color: #fff;
+  color: #f8f4e5;
 }
 
 .p-ch-gray-darker p {
@@ -16751,7 +16751,7 @@ a.bg-hover-linkedin:not(.btn):hover,
 }
 
 .p-ch-white p {
-  color: #fff;
+  color: #f8f4e5;
 }
 
 .span-ch-gray-darker span {
@@ -16775,7 +16775,7 @@ a.bg-hover-linkedin:not(.btn):hover,
 }
 
 .span-ch-white span {
-  color: #fff;
+  color: #f8f4e5;
 }
 
 .a-ch-gray-darker a {
@@ -16799,7 +16799,7 @@ a.bg-hover-linkedin:not(.btn):hover,
 }
 
 .a-ch-white a {
-  color: #fff;
+  color: #f8f4e5;
 }
 
 .em-ch-gray-darker em {
@@ -16823,7 +16823,7 @@ a.bg-hover-linkedin:not(.btn):hover,
 }
 
 .em-ch-white em {
-  color: #fff;
+  color: #f8f4e5;
 }
 
 .i-ch-gray-darker i {
@@ -16847,7 +16847,7 @@ a.bg-hover-linkedin:not(.btn):hover,
 }
 
 .i-ch-white i {
-  color: #fff;
+  color: #f8f4e5;
 }
 
 .strong-ch-gray-darker strong {
@@ -16871,7 +16871,7 @@ a.bg-hover-linkedin:not(.btn):hover,
 }
 
 .strong-ch-white strong {
-  color: #fff;
+  color: #f8f4e5;
 }
 
 .li-ch-gray-darker li {
@@ -16895,7 +16895,7 @@ a.bg-hover-linkedin:not(.btn):hover,
 }
 
 .li-ch-white li {
-  color: #fff;
+  color: #f8f4e5;
 }
 
 @media only screen and (min-width: 768px) {
