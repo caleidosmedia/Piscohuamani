@@ -7156,6 +7156,7 @@ body .slider-text-oficial2 {
 #make-drink .make-text {
   top: 0px;
   font-family: "Avenir";
+  padding-left: 10px;
 }
 #make-drink .make-text #slider-text-make {
   padding-top: 30px;
@@ -7254,7 +7255,7 @@ body .slider-text-oficial2 {
   min-height: 100vh !important;
 }
 #events .see-more, #slider-events .see-more {
-  background: rgba(250, 250, 250, 0.3) !important;
+  background: rgba(248, 244, 229, 0.22) !important
   padding: 2% 14%;
   margin-top: 8%;
   border: 2px solid #f8f4e5;
