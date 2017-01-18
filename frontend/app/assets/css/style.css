@@ -7110,6 +7110,7 @@ body .slider-text-oficial2 {
 /*
 	Make drink
 */
+#make-drink . 
 #make-drink .gallery-cell img {
   max-width: 240px;
   height: auto;
@@ -7255,7 +7256,7 @@ body .slider-text-oficial2 {
   min-height: 100vh !important;
 }
 #events .see-more, #slider-events .see-more {
-  background: rgba(248, 244, 229, 0.22) !important
+  background: rgba(248, 244, 229, 0.22) !important;
   padding: 2% 14%;
   margin-top: 8%;
   border: 2px solid #f8f4e5;
@@ -8247,8 +8248,9 @@ footer .col-md-3 p a:hover {
 @media only screen and (min-width: 992px){
   #make-drink .container h2 {
     font-size: 2.5rem !important;
-    font-weight: 600;
+    font-weight: 500;
   }
+
 }
 
 
