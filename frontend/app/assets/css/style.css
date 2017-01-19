@@ -6972,7 +6972,7 @@ body .slider-text-oficial2 {
   z-index: 101;
   font-family: "Avenir";
 }
-#about-us .leyenda-about {
+#about-us .leyenda-about, #the-goods h3, #follow-us h3 {
   font-size: 60px;
 }
 #about-us h1 {
@@ -7325,6 +7325,9 @@ body .slider-text-oficial2 {
 */
 #follow-us {
   background-color: #3b2e29;
+}
+#follow-us .container h2 {
+  padding-left: 6.1rem !important;
 }
 #follow-us .container-social {
   display: inline-block;
