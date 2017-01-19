@@ -6967,18 +6967,22 @@ body .slider-text-oficial2 {
 /*
 	About us
 */
-#about-us {
-  background-size: 30%;
-  z-index: 101;
-  font-family: "Avenir";
-}
 
 @media only screen and (min-width: 320px) {
+  #about-us {
+    background-size: 30%;
+    z-index: 101;
+    font-family: "Avenir";
+    padding-top: 63px
+  }
   #about-us .leyenda-about, #the-goods h3, #follow-us h3 {
     font-size: 35.5px;
   }
 }
 @media only screen and (min-width: 480px) {
+  #about-us {
+    padding-top: 0px
+  }
   #about-us .leyenda-about, #the-goods h3, #follow-us h3 {
     font-size: 40px;
   }
