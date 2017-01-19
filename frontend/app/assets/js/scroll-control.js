@@ -13,10 +13,8 @@ $(document).ready(function(){
 
 	$("#overlay-menu li a").click(function(e){
 		$("html, body").stop().animate({
-			scrollTop: $($(this).attr("href")).offset().top - 78
-		}, 1000, function () {
-			flag = true;
-		});
+			scrollTop: $($(this).attr("href")).offset().top - 68
+		}, 1000);
 		e.preventDefault();
 	});
 	/*$("a.smooth").click(function(e){
