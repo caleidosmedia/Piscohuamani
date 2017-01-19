@@ -6972,9 +6972,23 @@ body .slider-text-oficial2 {
   z-index: 101;
   font-family: "Avenir";
 }
-#about-us .leyenda-about, #the-goods h3, #follow-us h3 {
-  font-size: 60px;
+
+@media only screen and (min-width: 320px) {
+  #about-us .leyenda-about, #the-goods h3, #follow-us h3 {
+    font-size: 35.5px;
+  }
 }
+@media only screen and (min-width: 480px) {
+  #about-us .leyenda-about, #the-goods h3, #follow-us h3 {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 798px) {
+  #about-us .leyenda-about, #the-goods h3, #follow-us h3 {
+    font-size: 60px;
+  }
+}
+
 #about-us h1 {
   font-size: 35px;
   font-size: 2.5rem;
@@ -7341,8 +7355,16 @@ body .slider-text-oficial2 {
 #follow-us {
   background-color: #3b2e29;
 }
-#follow-us .container h2 {
-  padding-left: 6.1rem !important;
+
+@media only screen and (min-width: 320px) {
+   #follow-us .container h2 {
+    padding-left: 2rem !important;
+  } 
+}
+@media only screen and (min-width: 768px) {
+  #follow-us .container h2 {
+    padding-left: 6.1rem !important;
+  }
 }
 #follow-us .container-social {
   display: inline-block;
