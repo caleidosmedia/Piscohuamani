@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 	$("#overlay-menu li a").click(function(e){
 		$("html, body").stop().animate({
-			scrollTop: $($(this).attr("href")).offset().top - 70
+			scrollTop: $($(this).attr("href")).offset().top - 68
 		}, 1000);
 		e.preventDefault();
 	});
