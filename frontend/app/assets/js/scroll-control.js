@@ -4,7 +4,7 @@
 $(document).ready(function(){
 	$("nav.smooth a, a.smooth, a.smooth").click(function(e){
 		$("html, body").stop().animate({
-			scrollTop: $($(this).attr("href")).offset().top - 78
+			scrollTop: $($(this).attr("href")).offset().top
 		}, 1000, function () {
 			flag = true;
 		});
