@@ -7551,39 +7551,48 @@ footer .col-md-3 p a:hover {
   font-weight: 300;
   margin-right: 17px;
 }
-.site-content .content-blog .post .botons .social li {
-  float: left;
-  list-style: none;
-  border: 1.5px solid;
-  padding: 4px;
-  width: 38px;
-  height: 40px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  box-direction: normal;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
+
+@media only screen and (min-width: 320px) {
+  .site-content .content-blog .post .botons .social li {
+    float: left;
+    list-style: none;
+    border: 1.5px solid;
+    padding: 4px;
+    width: 30px;
+    height: 33px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .site-content .content-blog .post .botons .social li {
+    width: 38px;
+    height: 40px;
+  }
 }
 .site-content .content-blog .post .botons .social li span {
   font-size: 18px;
@@ -9561,9 +9570,17 @@ footer .col-md-3 p a:hover {
   font-weight: 400;
 }
 
-.share {
-  margin: 10px 17px;
+@media only screen and (min-width: 320px) {
+  .share {
+    margin: 0px;
+  }
 }
+@media only screen and (min-width: 375px) {
+  .share {
+    margin: 10px 17px;
+  }
+}
+
 
 .change-arrow p {
   color: #4e3227;
