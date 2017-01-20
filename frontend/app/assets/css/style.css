@@ -7294,7 +7294,7 @@ body .slider-text-oficial2 {
 @media only screen and (min-width: 320px) {
   #events .see-more, #slider-events .see-more {
     background: rgba(248, 244, 229, 0.22) !important;
-    padding: 2% 7 %;
+    padding: 2% 7%;
     margin-top: 8%;
     border: 2px solid #f8f4e5;
     -webkit-transition: all 0.5s ease-in-out;
@@ -9271,7 +9271,7 @@ footer .col-md-3 p a:hover {
 @media only screen and (min-width: 320px) {
   #events, #slider-events {
     min-height: 80% !important;
-    min-height: 94vh !important;
+    min-height: 88vh !important;
   }
 }
 @media only screen and (min-width: 480px) {
