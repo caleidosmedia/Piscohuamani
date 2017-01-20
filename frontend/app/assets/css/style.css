@@ -7372,18 +7372,27 @@ body .slider-text-oficial2 {
    #follow-us .container h2 {
     padding-left: 2rem !important;
   } 
+  #follow-us .container-social {
+    display: inline-block;
+    padding-top: 4%;
+    font-family: "Avenir";
+    padding-left: 4.5%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  #follow-us .container-social {
+    padding-left: 7.7%;
+  } 
 }
 @media only screen and (min-width: 768px) {
   #follow-us .container h2 {
     padding-left: 6.1rem !important;
   }
+  #follow-us .container-social {
+    padding-left: 4.5%;
+  } 
 }
-#follow-us .container-social {
-  display: inline-block;
-  padding-top: 4%;
-  font-family: "Avenir";
-  padding-left: 4.5%;
-}
+
 #follow-us .container-social a {
   display: block;
   width: 180px;
@@ -8295,6 +8304,12 @@ footer .col-md-3 p a:hover {
   }
   #follow-us{
     padding-top: 40px
+  }
+  #galeria .container .grid #overlay img {
+    width: 67%;
+  }
+  #galeria .grid #overlay img {
+    height: 33%;
   }
 }
 @media only screen and (min-width: 480px) {

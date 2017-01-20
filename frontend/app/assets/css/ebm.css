@@ -14,7 +14,7 @@
   padding: 0px !important;
   padding: 0rem !important;
 }
-@media only screen and (min-width: 350px){
+@media only screen and (min-width: 320px){
   .ph-21 {
     padding-left: 4.5rem !important;
 
@@ -10007,7 +10007,14 @@
   padding-left: 0rem !important;
   padding-right: 0rem !important;
 }
-
+@media only screen and (max-width: 360px) {
+  .ph-7 {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+    padding-left: 2rem !important;
+    padding-right: 0.5rem !important;
+}
+}
 @media only screen and (max-width: 480px) {
   .ph-0-xs {
     padding-left: 0px !important;
@@ -10028,6 +10035,7 @@
     padding-right: 0% !important;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .ph-0-sm {
     padding-left: 0px !important;
