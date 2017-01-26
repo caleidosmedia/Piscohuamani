@@ -8333,6 +8333,7 @@ footer .col-md-3 p a:hover {
   }
   #galeria .container .grid #overlay img {
     height: 60%;
+    width: initial;
   }
 }
 
