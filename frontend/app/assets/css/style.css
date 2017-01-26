@@ -7839,9 +7839,6 @@ footer .col-md-3 p a:hover {
   display: none;
 }
 
-#galeria .grid #overlay img {
-  height: 60%;
-}
 
 @media only screen and (min-width: 350px){
   #galeria .grid #overlay img {
@@ -8332,6 +8329,9 @@ footer .col-md-3 p a:hover {
     padding-top: 26px;
     margin-left: 6px;
     padding-bottom: 30px;
+  }
+  #galeria .container .grid #overlay img {
+    height: 60%;
   }
 }
 
