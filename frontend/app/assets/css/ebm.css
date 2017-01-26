@@ -10011,9 +10011,9 @@
   .ph-7 {
     padding-left: 7px !important;
     padding-right: 7px !important;
-    padding-left: 2rem !important;
+    padding-left: 1.8rem !important;
     padding-right: 0.5rem !important;
-}
+  }
 }
 @media only screen and (max-width: 480px) {
   .ph-0-xs {
@@ -10035,8 +10035,22 @@
     padding-right: 0% !important;
   }
 }
+@media only screen and (min-width: 480px) {
+  .ph-7 {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+}
 
 @media only screen and (min-width: 768px) {
+  .ph-7 {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
   .ph-0-sm {
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -10096,12 +10110,7 @@
     padding-right: 0% !important;
   }
 }
-.ph-7 {
-  padding-left: 7px !important;
-  padding-right: 7px !important;
-  padding-left: 0.5rem !important;
-  padding-right: 0.5rem !important;
-}
+
 
 .ph-ch-7 > div, .ph-ch-7 > section, .ph-ch-7 > header, .ph-ch-7 > footer, .ph-ch-7 > main, .ph-ch-7 > aside, .ph-ch-7 > article, .ph-ch-7 > a, .ph-ch-7 > span, .ph-ch-7 > li, .ph-ch-7 > p, .ph-ch-7 > i, .ph-ch-7 > em, .ph-ch-7 > small, .ph-ch-7 > blockquote, .ph-ch-7 > pre, .ph-ch-7 > code > h1, .ph-ch-7 > h2, .ph-ch-7 > h3, .ph-ch-7 > h4, .ph-ch-7 > h5, .ph-ch-7 > h6, .ph-ch-7 > .h1, .ph-ch-7 > .h2, .ph-ch-7 > .h3, .ph-ch-7 > .h4, .ph-ch-7 > .h5, .ph-ch-7 > .h6, .ph-ch-7 > .p, .ph-ch-7 > ul, .ph-ch-7 > ol, .ph-ch-7 > button {
   padding-left: 7px !important;
