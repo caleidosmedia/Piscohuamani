@@ -9195,7 +9195,9 @@ footer .col-md-3 p a:hover {
     padding: 3px 3px 3px;
   }
   #galeria .container .grid #overlay img {
-    width: 85%;
+  /*width: 85%;*/
+    height: 60%;
+    width: initial;
   }
   #galeria .container .grid #overlay a {
     top: 20%;
