@@ -7280,11 +7280,17 @@ body .slider-text-oficial2 {
   position: absolute;
   width: 100%;
 }
+
 #events .gallery-child .gallery-cell, #slider-events .gallery-child .gallery-cell {
-  height: 835px;
   background-size: cover;
   min-height: 100% !important;
   min-height: 100vh !important;
+}
+
+@media only screen and (min-width: 480px){
+  #events .gallery-child .gallery-cell, #slider-events .gallery-child .gallery-cell {
+  height: 835px;
+      }
 }
 #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
   min-height: 100% !important;
