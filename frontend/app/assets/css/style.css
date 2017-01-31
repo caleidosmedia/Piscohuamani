@@ -7859,7 +7859,6 @@ footer .col-md-3 p a:hover {
   }
 }
 
-
 #galeria .grid #overlay a {
   right: 25%;
   top: 10%;
@@ -7871,6 +7870,12 @@ footer .col-md-3 p a:hover {
 #galeria .grid #overlay a:hover {
   color: #8d744a;
 }
+@media only screen and (min-width: 350px){
+  #galeria .grid #overlay .controls {
+  top: 81%;
+  height: 100px
+  }
+}
 #galeria .grid #overlay .controls {
   top: 50%;
   width: 100px;
@@ -7878,6 +7883,7 @@ footer .col-md-3 p a:hover {
   -moz-transition: opacity 0.1s ease-in-out;
   transition: opacity 0.1s ease-in-out;
 }
+
 #galeria .grid #overlay .controls:hover {
   opacity: 0.2;
 }
@@ -8285,7 +8291,8 @@ footer .col-md-3 p a:hover {
 }
 @media only screen and (min-width: 320px){
   #galeria .container .grid #overlay img {
-    width: 67%;
+    height: 38%;
+    width: initial;
   }
   #galeria .grid #overlay img {
     height: 31%;
@@ -8310,7 +8317,8 @@ footer .col-md-3 p a:hover {
     padding-top: 40px
   }
   #galeria .container .grid #overlay img {
-    width: 67%;
+    width: 38%;
+    width: initial;
   }
   #galeria .grid #overlay img {
     height: 33%;
@@ -9209,6 +9217,13 @@ footer .col-md-3 p a:hover {
     top: 20%;
     right: 5%;
     font-size: 30px;
+  }
+  @media only screen and (min-width: 480px){
+  #galeria .container .grid #overlay a {
+    top: 10%;
+    right: 2%;
+    font-size: 39px;
+    }
   }
   #galeria .container .grid #overlay .controls {
     top: 75%;
