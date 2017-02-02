@@ -7879,7 +7879,7 @@ footer .col-md-3 p a:hover {
 @media only screen and (min-width: 480px){
   #galeria .container .grid #overlay a {
     top: 10%;
-    right: 2%;
+    right: 20%;
     font-size: 39px;
   }
   #galeria .container .grid #overlay .controls {
@@ -7892,9 +7892,20 @@ footer .col-md-3 p a:hover {
 }
 
 @media only screen and (min-width: 798px){
-  #galeria .grid #overlay img {
+  #galeria  .grid #overlay img {
     height: 60%;
     width: initial;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  #galeria .container .grid #overlay .controls{
+    top: 50%;
+    width: 100px;
+  }
+  #galeria .container .grid #overlay a {
+    right: 20%;
+
   }
 }
 
@@ -8388,15 +8399,20 @@ footer .col-md-3 p a:hover {
     width: initial;
   }
 }
-
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px) {
+  #galeria .container .grid {
+    padding: 10% 7% 10%;
+  }
+  #galeria .container .grid #overlay img {
+  /*width: 85%;*/
+    height: 60%;
+    width: initial;
+  }
   #make-drink .container h2 {
     font-size: 2.5rem !important;
     font-weight: 500;
   }
-
 }
-
 
 
 /*RESPONSIVE MEN├Ü E IMG-PRINCIPAL*/
@@ -9177,16 +9193,6 @@ footer .col-md-3 p a:hover {
   #slider-events .event-movil .fecha-movil {
     font-size: 20px;
     font-weight: lighter;
-  }
-  @media only screen and (min-width: 992px) {
-    #galeria .container .grid {
-    padding: 10% 7% 10%;
-    }
-    #galeria .container .grid #overlay img {
-    /*width: 85%;*/
-      height: 60%;
-      width: initial;
-    }
   }
   #slider-events .gallery-wrapper.row .container .gallery-button-right,
   #slider-events .gallery-wrapper.row .container .gallery-button-left {
