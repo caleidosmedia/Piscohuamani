@@ -7844,6 +7844,20 @@ footer .col-md-3 p a:hover {
   #galeria .grid #overlay img {
     height: auto;
   }
+  #slider-events .gallery-wrapper.row .container .gallery-button-right,
+  #slider-events .gallery-wrapper.row .container .gallery-button-left {
+    top: 242px !important;
+  }
+  #galeria .container .grid {
+    padding: 0% 7% 10%;
+  }
+  #galeria .container .grid #overlay .controls {
+    top: 80%;
+    width: 25px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+  }
 }
 
 @media only screen and (min-width: 798px){
@@ -7852,7 +7866,6 @@ footer .col-md-3 p a:hover {
     width: initial;
   }
 }
-
 
 #galeria .grid #overlay a {
   right: 25%;
@@ -8305,6 +8318,7 @@ footer .col-md-3 p a:hover {
   }
   #galeria .container .grid #overlay img {
     width: 67%;
+    height: 40%;
   }
   #galeria .grid #overlay img {
     height: 33%;
@@ -8313,6 +8327,10 @@ footer .col-md-3 p a:hover {
 @media only screen and (min-width: 480px) {
  .fondo .logo-title{
     width: 316px;
+  }
+  #galeria .container .grid #overlay img {
+    width: initial;
+    height: 55%;
   }
 }
 
@@ -9126,15 +9144,6 @@ footer .col-md-3 p a:hover {
     font-size: 20px;
     font-weight: lighter;
   }
-  @media only screen and (min-width: 350px) {
-    #slider-events .gallery-wrapper.row .container .gallery-button-right,
-    #slider-events .gallery-wrapper.row .container .gallery-button-left {
-    top: 242px !important;
-    }
-    #galeria .container .grid {
-    padding: 0% 7% 10%;
-    }
-  }
   @media only screen and (min-width: 992px) {
     #galeria .container .grid {
     padding: 10% 7% 10%;
@@ -9191,8 +9200,19 @@ footer .col-md-3 p a:hover {
   #galeria .container .grid {
     margin-top: 70px;
   }
-  #galeria .container .grid ul li {
-    padding: 3px 3px 3px;
+  #galeria .container .grid ul li #slider-events .gallery-wrapper.row .container .gallery-button-right,
+  #slider-events .gallery-wrapper.row .container .gallery-button-left {
+    top: 242px !important;
+  }
+  #galeria .container .grid {
+    padding: 0% 7% 10%;
+  }
+  #galeria .container .grid #overlay .controls {
+    top: 81%;
+    width: 25px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none    padding: 3px 3px 3px;
   }
   #galeria .container .grid #overlay img {
     width: 85%;
