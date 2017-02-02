@@ -7846,8 +7846,9 @@ footer .col-md-3 p a:hover {
 }
 @media only screen and (min-width: 320px){
   #galeria .container .grid #overlay .controls {
-    top: 80%;
+    top: 65%;
     width: 25px;
+    height: 138px;
     -webkit-transition: none;
     -moz-transition: none;
     transition: none;
