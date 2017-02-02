@@ -8344,7 +8344,7 @@ footer .col-md-3 p a:hover {
   }
   #galeria .container .grid #overlay img {
     width: initial;
-    height: 55%;
+    height: 48%;
   }
 }
 
@@ -8364,7 +8364,7 @@ footer .col-md-3 p a:hover {
     padding-bottom: 30px;
   }
   #galeria .container .grid #overlay img {
-    height: 60%;
+    height: 52%;
     width: initial;
   }
 }
@@ -9162,6 +9162,11 @@ footer .col-md-3 p a:hover {
     #galeria .container .grid {
     padding: 10% 7% 10%;
     }
+    #galeria .container .grid #overlay img {
+    /*width: 85%;*/
+      height: 60%;
+      width: initial;
+    }
   }
   #slider-events .gallery-wrapper.row .container .gallery-button-right,
   #slider-events .gallery-wrapper.row .container .gallery-button-left {
@@ -9227,11 +9232,6 @@ footer .col-md-3 p a:hover {
     -webkit-transition: none;
     -moz-transition: none;
     transition: none    padding: 3px 3px 3px;
-  }
-  #galeria .container .grid #overlay img {
-  /*width: 85%;*/
-    height: 60%;
-    width: initial;
   }
   #galeria .container .grid #overlay a {
     top: 20%;
