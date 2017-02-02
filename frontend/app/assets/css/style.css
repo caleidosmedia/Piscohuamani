@@ -4455,8 +4455,8 @@ tbody.collapse.in {
 }
 
 /*
-	EBM:Ref
-	Flexbox
+  EBM:Ref
+  Flexbox
 */
 .flex-row {
   display: -webkit-box;
@@ -5356,7 +5356,7 @@ tbody.collapse.in {
 }
 
 /*
-	App custom
+  App custom
 */
 /* PROJECT ESPECIFIC FONTS */
 .thin {
@@ -6483,7 +6483,7 @@ body .slider-text-oficial2 {
 }
 
 /*
-	Gallery buttons
+  Gallery buttons
 */
 .gallery-button-left,
 .gallery-button-right {
@@ -6526,7 +6526,7 @@ body .slider-text-oficial2 {
 }
 
 /*
-	Separadores
+  Separadores
 */
 .separator {
   height: 1px;
@@ -6551,7 +6551,7 @@ body .slider-text-oficial2 {
 }
 
 /*
-	Ingreso Fondo
+  Ingreso Fondo
 */
 .overlay-fondo {
   top: 0;
@@ -6768,7 +6768,7 @@ body .slider-text-oficial2 {
 }
 
 /*
-	Home
+  Home
 */
 .site-menu {
   position: absolute;
@@ -6965,7 +6965,7 @@ body .slider-text-oficial2 {
 }
 
 /*
-	About us
+  About us
 */
 
 @media only screen and (min-width: 320px) {
@@ -7023,7 +7023,7 @@ body .slider-text-oficial2 {
 }
 
 /*
-	The goods
+  The goods
 */
 #the-goods, #events, #slider-events {
   background-color: #3b2e29;
@@ -7126,7 +7126,7 @@ body .slider-text-oficial2 {
 }
 
 /*
-	Make drink
+  Make drink
 */
 #make-drink .row-0  {
   padding:0px;
@@ -7212,7 +7212,7 @@ body .slider-text-oficial2 {
 }
 
 /*
-	Events
+  Events
 */
 #events, #slider-events {
   background-size: cover;
@@ -7280,11 +7280,17 @@ body .slider-text-oficial2 {
   position: absolute;
   width: 100%;
 }
+
 #events .gallery-child .gallery-cell, #slider-events .gallery-child .gallery-cell {
-  height: 835px;
   background-size: cover;
   min-height: 100% !important;
   min-height: 100vh !important;
+}
+
+@media only screen and (min-width: 480px){
+  #events .gallery-child .gallery-cell, #slider-events .gallery-child .gallery-cell {
+  height: 835px;
+      }
 }
 #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
   min-height: 100% !important;
@@ -7362,7 +7368,7 @@ body .slider-text-oficial2 {
 }
 
 /*
-	Follow us
+  Follow us
 */
 #follow-us {
   background-color: #3b2e29;
@@ -7444,7 +7450,7 @@ body .slider-text-oficial2 {
 }
 
 /*
-	Footer
+  Footer
 */
 footer {
   color: #3b2e29;
@@ -7482,7 +7488,7 @@ footer .col-md-3 p a:hover {
 }
 
 /*
-	Blog
+  Blog
 */
 .site-content .content-blog h1 {
   color: #4e3227;
@@ -7650,7 +7656,7 @@ footer .col-md-3 p a:hover {
 }
 
 /*
-	Blog posts
+  Blog posts
 */
 #blog-post {
   background-color: #f8f4e5;
@@ -7746,7 +7752,7 @@ footer .col-md-3 p a:hover {
 }
 
 /*
-	Events
+  Events
 */
 #slider-events {
   height: 550px;
@@ -7788,7 +7794,7 @@ footer .col-md-3 p a:hover {
 }
 
 /*
-	Geler├¡a eventos
+  Geler├¡a eventos
 */
 #galeria {
   background-color: #f8f4e5;
@@ -7878,6 +7884,12 @@ footer .col-md-3 p a:hover {
 #galeria .grid #overlay a:hover {
   color: #8d744a;
 }
+@media only screen and (min-width: 350px){
+  #galeria .grid #overlay .controls {
+  top: 81%;
+  height: 100px
+  }
+}
 #galeria .grid #overlay .controls {
   top: 50%;
   width: 100px;
@@ -7885,6 +7897,7 @@ footer .col-md-3 p a:hover {
   -moz-transition: opacity 0.1s ease-in-out;
   transition: opacity 0.1s ease-in-out;
 }
+
 #galeria .grid #overlay .controls:hover {
   opacity: 0.2;
 }
@@ -7906,7 +7919,7 @@ footer .col-md-3 p a:hover {
 }
 
 /*
-	Menu blog
+  Menu blog
 */
 #faqs .container {
   padding: 110px 33px;
@@ -7979,7 +7992,7 @@ footer .col-md-3 p a:hover {
 }
 
 /*
-	Media kit
+  Media kit
 */
 #media-kit h1:first-child {
   color: #4e3227;
@@ -8093,7 +8106,7 @@ footer .col-md-3 p a:hover {
 }
 
 /*
-	Terms
+  Terms
 */
 #terms .contenedor {
   padding: 10% 17%;
@@ -8127,7 +8140,7 @@ footer .col-md-3 p a:hover {
 }
 
 /*
-	Contact
+  Contact
 */
 #thanks-contact {
   background-color: #3B2E29;
@@ -8292,7 +8305,8 @@ footer .col-md-3 p a:hover {
 }
 @media only screen and (min-width: 320px){
   #galeria .container .grid #overlay img {
-    width: 67%;
+    height: 38%;
+    width: initial;
   }
   #galeria .grid #overlay img {
     height: 31%;
@@ -8317,8 +8331,8 @@ footer .col-md-3 p a:hover {
     padding-top: 40px
   }
   #galeria .container .grid #overlay img {
-    width: 67%;
     height: 40%;
+    width: initial;
   }
   #galeria .grid #overlay img {
     height: 33%;
@@ -9215,12 +9229,21 @@ footer .col-md-3 p a:hover {
     transition: none    padding: 3px 3px 3px;
   }
   #galeria .container .grid #overlay img {
-    width: 85%;
+  /*width: 85%;*/
+    height: 60%;
+    width: initial;
   }
   #galeria .container .grid #overlay a {
     top: 20%;
     right: 5%;
     font-size: 30px;
+  }
+  @media only screen and (min-width: 480px){
+  #galeria .container .grid #overlay a {
+    top: 10%;
+    right: 2%;
+    font-size: 39px;
+    }
   }
   #galeria .container .grid #overlay .controls {
     top: 75%;
@@ -9344,7 +9367,7 @@ footer .col-md-3 p a:hover {
 }
 
 /*
-	UTILITIES
+  UTILITIES
 */
 .fz-8 {
   font-size: 8px !important;
@@ -22486,24 +22509,24 @@ http://flickity.metafizzy.co
   }
 }
 @media screen and (max-width: 480px) {
-	#make-drink > .container {
-		padding: 0 15px !important;
-	}
+  #make-drink > .container {
+    padding: 0 15px !important;
+  }
 
-	#make-drink > .container > .text-white {
-		padding-left:  0 !important;
-		text-align: center;
-	}
+  #make-drink > .container > .text-white {
+    padding-left:  0 !important;
+    text-align: center;
+  }
 
-	#events > .container > h1 {
-		margin-top:  60px !important;
-	}
-	
-	#events > .container-slider-text {
-		padding-top: 125px !important;
-	}
+  #events > .container > h1 {
+    margin-top:  60px !important;
+  }
+  
+  #events > .container-slider-text {
+    padding-top: 125px !important;
+  }
 }
 
 #events > .gallery-child > .flickity-viewport > .flickity-slider > .gallery-cell > .overlay-events {
-	background-color: rgba(23, 10, 3, 0.7) !important;
+  background-color: rgba(23, 10, 3, 0.7) !important;
 }
