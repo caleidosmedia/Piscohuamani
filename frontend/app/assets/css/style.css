@@ -7844,9 +7844,22 @@ footer .col-md-3 p a:hover {
   z-index: 120;
   display: none;
 }
+@media only screen and (min-width: 320px){
+  #galeria .container .grid #overlay .controls {
+    top: 80%;
+    width: 25px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+  }
+}
+
 
 
 @media only screen and (min-width: 350px){
+  #galeria .container .grid #overlay .controls {
+    top: 70%;
+  }
   #galeria .grid #overlay img {
     height: auto;
   }
@@ -7857,12 +7870,10 @@ footer .col-md-3 p a:hover {
   #galeria .container .grid {
     padding: 0% 7% 10%;
   }
+}
+@media only screen and (min-width: 480px){
   #galeria .container .grid #overlay .controls {
-    top: 80%;
-    width: 25px;
-    -webkit-transition: none;
-    -moz-transition: none;
-    transition: none;
+    top: 75%;
   }
 }
 
@@ -9225,13 +9236,6 @@ footer .col-md-3 p a:hover {
   }
   #galeria .container .grid {
     padding: 0% 7% 10%;
-  }
-  #galeria .container .grid #overlay .controls {
-    top: 81%;
-    width: 25px;
-    -webkit-transition: none;
-    -moz-transition: none;
-    transition: none    padding: 3px 3px 3px;
   }
   #galeria .container .grid #overlay a {
     top: 20%;
