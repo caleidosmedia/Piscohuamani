@@ -7854,7 +7854,12 @@ footer .col-md-3 p a:hover {
   }
 }
 
-
+@media only screen and (min-width: 350px){
+  #galeria .grid #overlay .controls {
+  top: 81%;
+  height: 100px
+  }
+}
 
 @media only screen and (min-width: 350px){
   #galeria .container .grid #overlay .controls {
@@ -7872,8 +7877,17 @@ footer .col-md-3 p a:hover {
   }
 }
 @media only screen and (min-width: 480px){
+  #galeria .container .grid #overlay a {
+    top: 10%;
+    right: 2%;
+    font-size: 39px;
+  }
   #galeria .container .grid #overlay .controls {
     top: 75%;
+    width: 25px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
   }
 }
 
@@ -7895,12 +7909,7 @@ footer .col-md-3 p a:hover {
 #galeria .grid #overlay a:hover {
   color: #8d744a;
 }
-@media only screen and (min-width: 350px){
-  #galeria .grid #overlay .controls {
-  top: 81%;
-  height: 100px
-  }
-}
+
 #galeria .grid #overlay .controls {
   top: 50%;
   width: 100px;
@@ -9242,20 +9251,8 @@ footer .col-md-3 p a:hover {
     right: 5%;
     font-size: 30px;
   }
-  @media only screen and (min-width: 480px){
-  #galeria .container .grid #overlay a {
-    top: 10%;
-    right: 2%;
-    font-size: 39px;
-    }
-  }
-  #galeria .container .grid #overlay .controls {
-    top: 75%;
-    width: 25px;
-    -webkit-transition: none;
-    -moz-transition: none;
-    transition: none;
-  }
+
+  
   #galeria .container .grid #overlay .controls:hover {
     opacity: 1;
   }
