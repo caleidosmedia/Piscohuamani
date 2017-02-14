@@ -7844,18 +7844,69 @@ footer .col-md-3 p a:hover {
   z-index: 120;
   display: none;
 }
-
+@media only screen and (min-width: 320px){
+  #galeria .container .grid #overlay .controls {
+    top: 65%;
+    width: 25px;
+    height: 138px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+  }
+}
 
 @media only screen and (min-width: 350px){
+  #galeria .grid #overlay .controls {
+  top: 81%;
+  height: 100px
+  }
+}
+
+@media only screen and (min-width: 350px){
+  #galeria .container .grid #overlay .controls {
+    top: 70%;
+  }
   #galeria .grid #overlay img {
     height: auto;
+  }
+  #slider-events .gallery-wrapper.row .container .gallery-button-right,
+  #slider-events .gallery-wrapper.row .container .gallery-button-left {
+    top: 242px !important;
+  }
+  #galeria .container .grid {
+    padding: 0% 7% 10%;
+  }
+}
+@media only screen and (min-width: 480px){
+  #galeria .container .grid #overlay a {
+    top: 10%;
+    right: 20%;
+    font-size: 39px;
+  }
+  #galeria .container .grid #overlay .controls {
+    top: 75%;
+    width: 25px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
   }
 }
 
 @media only screen and (min-width: 798px){
-  #galeria .grid #overlay img {
+  #galeria  .grid #overlay img {
     height: 60%;
     width: initial;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  #galeria .container .grid #overlay .controls{
+    top: 50%;
+    width: 100px;
+  }
+  #galeria .container .grid #overlay a {
+    right: 20%;
+
   }
 }
 
@@ -7870,12 +7921,7 @@ footer .col-md-3 p a:hover {
 #galeria .grid #overlay a:hover {
   color: #8d744a;
 }
-@media only screen and (min-width: 350px){
-  #galeria .grid #overlay .controls {
-  top: 81%;
-  height: 100px
-  }
-}
+
 #galeria .grid #overlay .controls {
   top: 50%;
   width: 100px;
@@ -8317,7 +8363,7 @@ footer .col-md-3 p a:hover {
     padding-top: 40px
   }
   #galeria .container .grid #overlay img {
-    width: 38%;
+    height: 40%;
     width: initial;
   }
   #galeria .grid #overlay img {
@@ -8327,6 +8373,10 @@ footer .col-md-3 p a:hover {
 @media only screen and (min-width: 480px) {
  .fondo .logo-title{
     width: 316px;
+  }
+  #galeria .container .grid #overlay img {
+    width: initial;
+    height: 48%;
   }
 }
 
@@ -8346,19 +8396,24 @@ footer .col-md-3 p a:hover {
     padding-bottom: 30px;
   }
   #galeria .container .grid #overlay img {
-    height: 60%;
+    height: 52%;
     width: initial;
   }
 }
-
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px) {
+  #galeria .container .grid {
+    padding: 10% 7% 10%;
+  }
+  #galeria .container .grid #overlay img {
+  /*width: 85%;*/
+    height: 60%;
+    width: initial;
+  }
   #make-drink .container h2 {
     font-size: 2.5rem !important;
     font-weight: 500;
   }
-
 }
-
 
 
 /*RESPONSIVE MEN├Ü E IMG-PRINCIPAL*/
@@ -9140,20 +9195,6 @@ footer .col-md-3 p a:hover {
     font-size: 20px;
     font-weight: lighter;
   }
-  @media only screen and (min-width: 350px) {
-    #slider-events .gallery-wrapper.row .container .gallery-button-right,
-    #slider-events .gallery-wrapper.row .container .gallery-button-left {
-    top: 242px !important;
-    }
-    #galeria .container .grid {
-    padding: 0% 7% 10%;
-    }
-  }
-  @media only screen and (min-width: 992px) {
-    #galeria .container .grid {
-    padding: 10% 7% 10%;
-    }
-  }
   #slider-events .gallery-wrapper.row .container .gallery-button-right,
   #slider-events .gallery-wrapper.row .container .gallery-button-left {
     top: 245px !important;
@@ -9205,33 +9246,20 @@ footer .col-md-3 p a:hover {
   #galeria .container .grid {
     margin-top: 70px;
   }
-  #galeria .container .grid ul li {
-    padding: 3px 3px 3px;
+  #galeria .container .grid ul li #slider-events .gallery-wrapper.row .container .gallery-button-right,
+  #slider-events .gallery-wrapper.row .container .gallery-button-left {
+    top: 242px !important;
   }
-  #galeria .container .grid #overlay img {
-  /*width: 85%;*/
-    height: 60%;
-    width: initial;
+  #galeria .container .grid {
+    padding: 0% 7% 10%;
   }
   #galeria .container .grid #overlay a {
     top: 20%;
     right: 5%;
     font-size: 30px;
   }
-  @media only screen and (min-width: 480px){
-  #galeria .container .grid #overlay a {
-    top: 10%;
-    right: 2%;
-    font-size: 39px;
-    }
-  }
-  #galeria .container .grid #overlay .controls {
-    top: 75%;
-    width: 25px;
-    -webkit-transition: none;
-    -moz-transition: none;
-    transition: none;
-  }
+
+  
   #galeria .container .grid #overlay .controls:hover {
     opacity: 1;
   }
