@@ -7434,6 +7434,10 @@ body .slider-text-oficial2 {
 #follow-us .container-social a:nth-child(3) img {
   width: 48px;
 }
+#follow-us .container-social a h1{
+    padding-bottom: 0.5rem !important;
+    font-size: 1.85714rem !important;
+}
 #follow-us .container-social a h1, #follow-us .container-social a p {
   font-family: "Avenir";
   position: relative;
