@@ -417,7 +417,7 @@ hr {
   position: relative;
   float: left;
   margin-top: 26px;
-  margin-left:30px; 
+  margin-left:30px;
 }
 .idiomaH a{
   padding: 3px 27px;
@@ -4335,7 +4335,7 @@ tbody.collapse.in {
 .visible-print {
   display: none !important;
 }
-@media 
+@media
 
 @media print {
   .visible-print {
@@ -7018,8 +7018,8 @@ body .slider-text-oficial2 {
   text-align: center;
 }
 #about-us .imagen img {
-  width: 350px;
-  max-height: 980px;
+  width: 264px;
+  max-height: 789px;
 }
 
 /*
@@ -7027,7 +7027,7 @@ body .slider-text-oficial2 {
 */
 #the-goods, #events, #slider-events {
   background-color: #3b2e29;
-  font-family: "Avenir"; 
+  font-family: "Avenir";
 }
 
 #the-goods .gallery, #events .gallery, #slider-events .gallery {
@@ -7243,7 +7243,7 @@ body .slider-text-oficial2 {
     margin-top: 100px;
     font-size: 60px;
     color: #f8f4e5;
-    margin-left: 0px 
+    margin-left: 0px
   }
 }
 @media only screen and (min-width: 480px) {
@@ -7377,7 +7377,7 @@ body .slider-text-oficial2 {
 @media only screen and (min-width: 320px) {
    #follow-us .container h2 {
     padding-left: 2rem !important;
-  } 
+  }
   #follow-us .container-social {
     display: inline-block;
     padding-top: 4%;
@@ -7388,7 +7388,7 @@ body .slider-text-oficial2 {
 @media only screen and (max-width: 360px) {
   #follow-us .container-social {
     padding-left: 7.7%;
-  } 
+  }
 }
 @media only screen and (min-width: 768px) {
   #follow-us .container h2 {
@@ -7396,7 +7396,7 @@ body .slider-text-oficial2 {
   }
   #follow-us .container-social {
     padding-left: 4.5%;
-  } 
+  }
 }
 
 #follow-us .container-social a {
@@ -7473,7 +7473,7 @@ footer p {
 }
 footer .col-md-3 p {
   margin-bottom: 10px;
-  
+
 }
 
 @media(min-width: 768px){
@@ -8356,7 +8356,7 @@ footer .col-md-3 p a:hover {
     float: none;
     margin-top: 26px;
     margin-left: 0px;
-  } 
+  }
 }
 
 @media only screen and (min-width: 350px){
@@ -8897,7 +8897,7 @@ footer .col-md-3 p a:hover {
     font-family: "Avenir";
     display: inline;
   }
-  
+
   @media (min-width: 480px) {
     footer ul li .texto {
       padding-left: 12px;
@@ -8950,7 +8950,7 @@ footer .col-md-3 p a:hover {
     font-size: 14px !important;
     margin-bottom: 18px;
   }
- 
+
   .site-content .content-blog .post .tags {
     padding-bottom: 7%;
   }
@@ -9263,7 +9263,7 @@ footer .col-md-3 p a:hover {
     font-size: 30px;
   }
 
-  
+
   #galeria .container .grid #overlay .controls:hover {
     opacity: 1;
   }
@@ -18281,7 +18281,7 @@ input[type="submit"].btn.btn-white.btn-icon-custom.btn-lg i,
 }
 @font-face {
   font-family: "Yaquote";
-    src: url('../fonts/original_YaquoteScript_PersonalUse.eot?#iefix') format('embedded-opentype'), 
+    src: url('../fonts/original_YaquoteScript_PersonalUse.eot?#iefix') format('embedded-opentype'),
          url('../fonts/original_YaquoteScript_PersonalUse.woff') format('woff'),
          url('../fonts/original_YaquoteScript_PersonalUse.ttf') format('truetype'),
          url('../fonts/original_YaquoteScript_PersonalUse.svg') format('svg');
@@ -18290,7 +18290,7 @@ input[type="submit"].btn.btn-white.btn-icon-custom.btn-lg i,
 }
 @font-face {
   font-family: "Avenir";
-    src: url('../fonts/original_Avenir-Light.eot?#iefix') format('embedded-opentype'), 
+    src: url('../fonts/original_Avenir-Light.eot?#iefix') format('embedded-opentype'),
          url('../fonts/original_Avenir-Light.woff') format('woff'),
          url('../fonts/original_Avenir-Light.ttf') format('truetype'),
          url('../fonts/original_Avenir-Light.svg') format('svg');
@@ -22533,7 +22533,7 @@ http://flickity.metafizzy.co
   #events > .container > h1 {
     margin-top:  60px !important;
   }
-  
+
   #events > .container-slider-text {
     padding-top: 125px !important;
   }
