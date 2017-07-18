@@ -417,7 +417,7 @@ hr {
   position: relative;
   float: left;
   margin-top: 26px;
-  margin-left:30px; 
+  margin-left:30px;
 }
 .idiomaH a{
   padding: 3px 27px;
@@ -4335,7 +4335,7 @@ tbody.collapse.in {
 .visible-print {
   display: none !important;
 }
-@media 
+@media
 
 @media print {
   .visible-print {
@@ -7018,8 +7018,8 @@ body .slider-text-oficial2 {
   text-align: center;
 }
 #about-us .imagen img {
-  width: 350px;
-  max-height: 980px;
+  width: 264px;
+  max-height: 789px;
 }
 
 /*
@@ -7027,7 +7027,7 @@ body .slider-text-oficial2 {
 */
 #the-goods, #events, #slider-events {
   background-color: #3b2e29;
-  font-family: "Avenir"; 
+  font-family: "Avenir";
 }
 
 #the-goods .gallery, #events .gallery, #slider-events .gallery {
@@ -7243,7 +7243,7 @@ body .slider-text-oficial2 {
     margin-top: 100px;
     font-size: 60px;
     color: #f8f4e5;
-    margin-left: 0px 
+    margin-left: 0px
   }
 }
 @media only screen and (min-width: 480px) {
@@ -7377,7 +7377,7 @@ body .slider-text-oficial2 {
 @media only screen and (min-width: 320px) {
    #follow-us .container h2 {
     padding-left: 2rem !important;
-  } 
+  }
   #follow-us .container-social {
     display: inline-block;
     padding-top: 4%;
@@ -7388,7 +7388,7 @@ body .slider-text-oficial2 {
 @media only screen and (max-width: 360px) {
   #follow-us .container-social {
     padding-left: 7.7%;
-  } 
+  }
 }
 @media only screen and (min-width: 768px) {
   #follow-us .container h2 {
@@ -7396,7 +7396,7 @@ body .slider-text-oficial2 {
   }
   #follow-us .container-social {
     padding-left: 4.5%;
-  } 
+  }
 }
 
 #follow-us .container-social a {
@@ -7434,6 +7434,10 @@ body .slider-text-oficial2 {
 #follow-us .container-social a:nth-child(3) img {
   width: 48px;
 }
+#follow-us .container-social a h1{
+    padding-bottom: 0.5rem !important;
+    font-size: 1.85714rem !important;
+}
 #follow-us .container-social a h1, #follow-us .container-social a p {
   font-family: "Avenir";
   position: relative;
@@ -7469,7 +7473,7 @@ footer p {
 }
 footer .col-md-3 p {
   margin-bottom: 10px;
-  
+
 }
 
 @media(min-width: 768px){
@@ -7844,18 +7848,69 @@ footer .col-md-3 p a:hover {
   z-index: 120;
   display: none;
 }
-
+@media only screen and (min-width: 320px){
+  #galeria .container .grid #overlay .controls {
+    top: 65%;
+    width: 25px;
+    height: 138px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+  }
+}
 
 @media only screen and (min-width: 350px){
+  #galeria .grid #overlay .controls {
+  top: 81%;
+  height: 100px
+  }
+}
+
+@media only screen and (min-width: 350px){
+  #galeria .container .grid #overlay .controls {
+    top: 70%;
+  }
   #galeria .grid #overlay img {
     height: auto;
+  }
+  #slider-events .gallery-wrapper.row .container .gallery-button-right,
+  #slider-events .gallery-wrapper.row .container .gallery-button-left {
+    top: 242px !important;
+  }
+  #galeria .container .grid {
+    padding: 0% 7% 10%;
+  }
+}
+@media only screen and (min-width: 480px){
+  #galeria .container .grid #overlay a {
+    top: 10%;
+    right: 20%;
+    font-size: 39px;
+  }
+  #galeria .container .grid #overlay .controls {
+    top: 75%;
+    width: 25px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
   }
 }
 
 @media only screen and (min-width: 798px){
-  #galeria .grid #overlay img {
+  #galeria  .grid #overlay img {
     height: 60%;
     width: initial;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  #galeria .container .grid #overlay .controls{
+    top: 50%;
+    width: 100px;
+  }
+  #galeria .container .grid #overlay a {
+    right: 20%;
+
   }
 }
 
@@ -7870,12 +7925,7 @@ footer .col-md-3 p a:hover {
 #galeria .grid #overlay a:hover {
   color: #8d744a;
 }
-@media only screen and (min-width: 350px){
-  #galeria .grid #overlay .controls {
-  top: 81%;
-  height: 100px
-  }
-}
+
 #galeria .grid #overlay .controls {
   top: 50%;
   width: 100px;
@@ -8306,7 +8356,7 @@ footer .col-md-3 p a:hover {
     float: none;
     margin-top: 26px;
     margin-left: 0px;
-  } 
+  }
 }
 
 @media only screen and (min-width: 350px){
@@ -8317,7 +8367,7 @@ footer .col-md-3 p a:hover {
     padding-top: 40px
   }
   #galeria .container .grid #overlay img {
-    width: 38%;
+    height: 40%;
     width: initial;
   }
   #galeria .grid #overlay img {
@@ -8327,6 +8377,10 @@ footer .col-md-3 p a:hover {
 @media only screen and (min-width: 480px) {
  .fondo .logo-title{
     width: 316px;
+  }
+  #galeria .container .grid #overlay img {
+    width: initial;
+    height: 48%;
   }
 }
 
@@ -8346,19 +8400,24 @@ footer .col-md-3 p a:hover {
     padding-bottom: 30px;
   }
   #galeria .container .grid #overlay img {
-    height: 60%;
+    height: 52%;
     width: initial;
   }
 }
-
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px) {
+  #galeria .container .grid {
+    padding: 10% 7% 10%;
+  }
+  #galeria .container .grid #overlay img {
+  /*width: 85%;*/
+    height: 60%;
+    width: initial;
+  }
   #make-drink .container h2 {
     font-size: 2.5rem !important;
     font-weight: 500;
   }
-
 }
-
 
 
 /*RESPONSIVE MEN├Ü E IMG-PRINCIPAL*/
@@ -8838,7 +8897,7 @@ footer .col-md-3 p a:hover {
     font-family: "Avenir";
     display: inline;
   }
-  
+
   @media (min-width: 480px) {
     footer ul li .texto {
       padding-left: 12px;
@@ -8891,7 +8950,7 @@ footer .col-md-3 p a:hover {
     font-size: 14px !important;
     margin-bottom: 18px;
   }
- 
+
   .site-content .content-blog .post .tags {
     padding-bottom: 7%;
   }
@@ -9140,20 +9199,6 @@ footer .col-md-3 p a:hover {
     font-size: 20px;
     font-weight: lighter;
   }
-  @media only screen and (min-width: 350px) {
-    #slider-events .gallery-wrapper.row .container .gallery-button-right,
-    #slider-events .gallery-wrapper.row .container .gallery-button-left {
-    top: 242px !important;
-    }
-    #galeria .container .grid {
-    padding: 0% 7% 10%;
-    }
-  }
-  @media only screen and (min-width: 992px) {
-    #galeria .container .grid {
-    padding: 10% 7% 10%;
-    }
-  }
   #slider-events .gallery-wrapper.row .container .gallery-button-right,
   #slider-events .gallery-wrapper.row .container .gallery-button-left {
     top: 245px !important;
@@ -9205,33 +9250,20 @@ footer .col-md-3 p a:hover {
   #galeria .container .grid {
     margin-top: 70px;
   }
-  #galeria .container .grid ul li {
-    padding: 3px 3px 3px;
+  #galeria .container .grid ul li #slider-events .gallery-wrapper.row .container .gallery-button-right,
+  #slider-events .gallery-wrapper.row .container .gallery-button-left {
+    top: 242px !important;
   }
-  #galeria .container .grid #overlay img {
-  /*width: 85%;*/
-    height: 60%;
-    width: initial;
+  #galeria .container .grid {
+    padding: 0% 7% 10%;
   }
   #galeria .container .grid #overlay a {
     top: 20%;
     right: 5%;
     font-size: 30px;
   }
-  @media only screen and (min-width: 480px){
-  #galeria .container .grid #overlay a {
-    top: 10%;
-    right: 2%;
-    font-size: 39px;
-    }
-  }
-  #galeria .container .grid #overlay .controls {
-    top: 75%;
-    width: 25px;
-    -webkit-transition: none;
-    -moz-transition: none;
-    transition: none;
-  }
+
+
   #galeria .container .grid #overlay .controls:hover {
     opacity: 1;
   }
@@ -18249,7 +18281,7 @@ input[type="submit"].btn.btn-white.btn-icon-custom.btn-lg i,
 }
 @font-face {
   font-family: "Yaquote";
-    src: url('../fonts/original_YaquoteScript_PersonalUse.eot?#iefix') format('embedded-opentype'), 
+    src: url('../fonts/original_YaquoteScript_PersonalUse.eot?#iefix') format('embedded-opentype'),
          url('../fonts/original_YaquoteScript_PersonalUse.woff') format('woff'),
          url('../fonts/original_YaquoteScript_PersonalUse.ttf') format('truetype'),
          url('../fonts/original_YaquoteScript_PersonalUse.svg') format('svg');
@@ -18258,7 +18290,7 @@ input[type="submit"].btn.btn-white.btn-icon-custom.btn-lg i,
 }
 @font-face {
   font-family: "Avenir";
-    src: url('../fonts/original_Avenir-Light.eot?#iefix') format('embedded-opentype'), 
+    src: url('../fonts/original_Avenir-Light.eot?#iefix') format('embedded-opentype'),
          url('../fonts/original_Avenir-Light.woff') format('woff'),
          url('../fonts/original_Avenir-Light.ttf') format('truetype'),
          url('../fonts/original_Avenir-Light.svg') format('svg');
@@ -22501,7 +22533,7 @@ http://flickity.metafizzy.co
   #events > .container > h1 {
     margin-top:  60px !important;
   }
-  
+
   #events > .container-slider-text {
     padding-top: 125px !important;
   }
