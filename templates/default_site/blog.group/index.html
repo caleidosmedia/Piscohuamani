@@ -4,104 +4,106 @@
       {embed="includes/header" huamani="{path='home'}" about="{path='home'#about-us}" goods="{path='home'}#the-goods" make="{path='home'}#make-drink" events="{path='home'}#events"}
       <main class="site-content">
         {embed="includes/overlay-menu" about="{path='home'#about-us}" goods="{path='home'}#the-goods" make="{path='home'}#make-drink" events="{path='home'}#events"}
-        <div class="content-blog container mt-70 pv-70 ph-14-sm"> 
+        <div class="content-blog container mt-70 pv-70 ph-14-sm">
           <h1 class="text-uppercase">{exp:transcribe:replace name="titulo_blog"}</h1>
-          <div class="separador"></div>
-          <div id="menu-blog" class="pv-42">
-              <nav class="hidden-xs fz-18 m-ch-7 pv-ch-7 ph-ch-14">
-                {exp:channel:categories channel="blog" style="off" dynamic="off" category_group="6"}
-                  <a href="{site_url}{exp:transcribe:language_abbreviation}/blog/{category_url_title}" class="btn-select fz-18 text-uppercase {if category_url_title == segment_2}active-select {else:if}{/if}">{category_name}</a>
-                {/exp:channel:categories}
-              </nav>
-              <nav class="hidden-lg hidden-md hidden-sm"><!--movil-->
-                {exp:channel:categories channel="blog" category_group="6" show="23" limit="1" style="off" dynamic="off"}
-                  <a href="{site_url}{exp:transcribe:language_abbreviation}/blog/{category_url_title}" class="btn-select fz-18 active-select">{category_name}</a></br>
-                {/exp:channel:categories}
-              </nav>
-          </div>
-          {exp:channel:categories channel="blog" style="off" dynamic="off" category_group="6" show_empty = "no"}
-            {if category_url_title == segment_2}
-              {exp:channel:entries channel="blog" dynamic="off" orderby="date" limit="2" sort="desc" paginate= "bottom" category="{category_id}"}
-                <div class="post pb-42">
-                  {imagen_blog} 
-                    <div class="imagen hidden-xs"> 
-                      <img src="{image:url}" alt="">
+          <div class="extremos-blog">
+            <div class="separador"></div>
+            <div id="menu-blog" class="pv-42">
+                <nav class="hidden-xs fz-18 m-ch-7 pv-ch-7 ph-ch-14">
+                  {exp:channel:categories channel="blog" style="off" dynamic="off" category_group="6"}
+                    <a href="{site_url}{exp:transcribe:language_abbreviation}/blog/{category_url_title}" class="btn-select fz-18 text-uppercase {if category_url_title == segment_2}active-select {else:if}{/if}">{category_name}</a>
+                  {/exp:channel:categories}
+                </nav>
+                <nav class="hidden-lg hidden-md hidden-sm"><!--movil-->
+                  {exp:channel:categories channel="blog" category_group="6" show="23" limit="1" style="off" dynamic="off"}
+                    <a href="{site_url}{exp:transcribe:language_abbreviation}/blog/{category_url_title}" class="btn-select fz-18 active-select">{category_name}</a></br>
+                  {/exp:channel:categories}
+                </nav>
+            </div>
+            {exp:channel:categories channel="blog" style="off" dynamic="off" category_group="6" show_empty = "no"}
+              {if category_url_title == segment_2}
+                {exp:channel:entries channel="blog" dynamic="off" orderby="date" limit="2" sort="desc" paginate= "bottom" category="{category_id}"}
+                  <div class="post pb-42">
+                    {imagen_blog}
+                      <div class="imagen hidden-xs">
+                        <img src="{image:url}" alt="">
+                      </div>
+                      <div class="imagen-movil bg-img-block hidden-lg hidden-md hidden-sm" style="background-image:url({image:url})"></div><!--movil-->
+                    {/imagen_blog}
+                    <div class="texto pt-28-xs pt-28-sm">
+                      {embed="blog/date" data-entry="{entry_id}"}
+                      <h2 class="text-uppercase" data-entry="{entry_id}">{titulo_blog}</h2>
+                      {exp:word_limit total="65"}
+                        <span class="parrafo fz-18 mb-28">{texto_introductorio}</span>
+                      {/exp:word_limit}
                     </div>
-                    <div class="imagen-movil bg-img-block hidden-lg hidden-md hidden-sm" style="background-image:url({image:url})"></div><!--movil-->
-                  {/imagen_blog}
-                  <div class="texto pt-28-xs pt-28-sm">
-                    {embed="blog/date" data-entry="{entry_id}"}
-                    <h2 class="text-uppercase" data-entry="{entry_id}">{titulo_blog}</h2>
-                    {exp:word_limit total="65"}
-                      <span class="parrafo fz-18 mb-28">{texto_introductorio}</span>
-                    {/exp:word_limit}
+                    <div class="botons clearfix mt-28-xs mt-28-sm">
+                      <div class="div-button relative text-center">
+                          <a href="{site_url}blog/blog-interno/{url_title}" class="text-white fz-21 relative text-uppercase" style="z-index:1">{exp:transcribe:replace name="button_blog"}</a>
+                          <div class="overlay absolute minhp-100"></div>
+                      </div>
+                      <div class="social clearfix pl-0-xs">
+                        <p class="fecha share text-uppercase ml-0-xs ml-0-sm">{exp:transcribe:replace name="share_blog"}:</p>
+                        <li class="mv-0 mh-7 text-center">
+                          <a href="http://www.facebook.com/sharer.php?u={site_url}blog/blog-interno/{url_title}" target="_blank"><span class="icon-facebook">&#xea8c;</span></a>
+                        </li>
+                        <li class="mv-0 mh-7 text-center">
+                          <a  href = " https://twitter.com/share?url={site_url}blog/blog-interno/{url_title} & text=Simple%20Share%20Buttons & hashtags=simplesharebuttons "  target = " _blank "><span class="icon-twitter2">&#xe602;</span></a>
+                        </li>
+                        <li class="mv-0 mh-7 text-center">
+                        <a href = "https://plus.google.com/share?url={site_url}blog/blog-interno/{url_title}" target = "_blank"><span class="icon-google-plus">&#xea88;</span></a>
+                        </li>
+                      </div>
+                    </div>
+                    <p class="tags fz-18 pt-35 pb-14">
+                      <span class="text-bold">Tags:</span>
+                      {embed="blog/category" data="{entry_id}"}
+                    </p>
                   </div>
-                  <div class="botons clearfix mt-28-xs mt-28-sm">
-                    <div class="div-button relative text-center">
-                        <a href="{site_url}blog/blog-interno/{url_title}" class="text-white fz-21 relative text-uppercase" style="z-index:1">{exp:transcribe:replace name="button_blog"}</a>
-                        <div class="overlay absolute minhp-100"></div>
-                    </div>
-                    <div class="social clearfix pl-0-xs">
-                      <p class="fecha share text-uppercase ml-0-xs ml-0-sm">{exp:transcribe:replace name="share_blog"}:</p>
-                      <li class="mv-0 mh-7 text-center">
-                        <a href="http://www.facebook.com/sharer.php?u={site_url}blog/blog-interno/{url_title}" target="_blank"><span class="icon-facebook">&#xea8c;</span></a>
-                      </li>
-                      <li class="mv-0 mh-7 text-center">
-                        <a  href = " https://twitter.com/share?url={site_url}blog/blog-interno/{url_title} & text=Simple%20Share%20Buttons & hashtags=simplesharebuttons "  target = " _blank "><span class="icon-twitter2">&#xe602;</span></a>
-                      </li>
-                      <li class="mv-0 mh-7 text-center">
-                      <a href = "https://plus.google.com/share?url={site_url}blog/blog-interno/{url_title}" target = "_blank"><span class="icon-google-plus">&#xea88;</span></a>
-                      </li>
-                    </div>
-                  </div> 
-                  <p class="tags fz-18 pt-35 pb-14">
-                    <span class="text-bold">Tags:</span>
-                    {embed="blog/category" data="{entry_id}"}
-                  </p>
-                </div>
-              {paginate}
-                <div id="pagination">
-                  <nav>
-                    {pagination_links page_padding="2" always_show_first_last = "yes"}
-                      <ul class="list-unstyled pagination pt-42 mt-0">
-                        {first_page}
-                          <li class="ph-0"><a href="{pagination_url}" class="page-first ph-0">First</a></li>
-                        {/first_page}
+                {paginate}
+                  <div id="pagination">
+                    <nav>
+                      {pagination_links page_padding="2" always_show_first_last = "yes"}
+                        <ul class="list-unstyled pagination pt-42 mt-0">
+                          {first_page}
+                            <li class="ph-0"><a href="{pagination_url}" class="page-first ph-0">First</a></li>
+                          {/first_page}
 
-                        {previous_page}
-                          <li class="ph-7">
-                            <a href="{pagination_url}" class="page-previous previous" aria-label="Previous">
-                              <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-                            </a>
-                          </li>
-                        {/previous_page}
+                          {previous_page}
+                            <li class="ph-7">
+                              <a href="{pagination_url}" class="page-previous previous" aria-label="Previous">
+                                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                              </a>
+                            </li>
+                          {/previous_page}
 
-                        {page}
-                          <li class="ph-7"><a href="{pagination_url}" class="page-{pagination_page_number} {if current_page}active{/if}">{pagination_page_number}</a></li>
-                        {/page}
+                          {page}
+                            <li class="ph-7"><a href="{pagination_url}" class="page-{pagination_page_number} {if current_page}active{/if}">{pagination_page_number}</a></li>
+                          {/page}
 
-                        {next_page}
-                          <li class="ph-7">
-                            <a href="{pagination_url}" class="page-next next" aria-label="Next">
-                              <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                            </a>
-                          </li>
-                        {/next_page}
+                          {next_page}
+                            <li class="ph-7">
+                              <a href="{pagination_url}" class="page-next next" aria-label="Next">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                              </a>
+                            </li>
+                          {/next_page}
 
-                        {last_page}
-                          <li class="ph-7"><a href="{pagination_url}" class="page-last">Last</a></li>
-                        {/last_page}
-                      </ul>
-                    {/pagination_links}
-                  </nav>
-                </div>  
-              {/paginate}
-              {/exp:channel:entries}
-            {/if}
-          {/exp:channel:categories} 
+                          {last_page}
+                            <li class="ph-7"><a href="{pagination_url}" class="page-last">Last</a></li>
+                          {/last_page}
+                        </ul>
+                      {/pagination_links}
+                    </nav>
+                  </div>
+                {/paginate}
+                {/exp:channel:entries}
+              {/if}
+            {/exp:channel:categories}
+          </div>
         </div>
         {embed="includes/follow"}
-      </main> 
+      </main>
       {embed="includes/footer"}
     </div>
     {embed="includes/script_general"}
