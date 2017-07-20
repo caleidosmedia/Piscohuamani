@@ -15,7 +15,7 @@
 #Options +FollowSymlinks
 
 # EE 404 page for missing pages
-ErrorDocument 404 /piscohuamani/index.php/
+ErrorDocument 404 /index.php/
 
 # Simple 404 for missing files
 <FilesMatch "(\.jpe?g|gif|png|bmp|css|js|flv)$">
@@ -55,7 +55,52 @@ RewriteCond %{QUERY_STRING} !^(ACT=.*)$ [NC]
 RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5})$
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} ^/piscohuamani/(includes|home|blog|terms-use|events|faqs|media-kit|contact|main|thanks|members|P[0-9]{2,8}) [NC]
-RewriteRule (.*) /piscohuamani/index.php/$1 [L]
+RewriteCond %{REQUEST_URI} ^/(includes|home|blog|terms-use|events|faqs|media-kit|contact|main|thanks|members|P[0-9]{2,8}) [NC]
+RewriteRule (.*) /index.php/$1 [L]
+
+<ifModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/xml text/css text/plain
+  AddOutputFilterByType DEFLATE image/svg+xml application/xhtml+xml application/xml
+  AddOutputFilterByType DEFLATE application/rdf+xml application/rss+xml application/atom+xml
+  AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript application/json
+  AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-otf
+  AddOutputFilterByType DEFLATE font/truetype font/opentype
+</ifModule>
+
+<IfModule mod_expires.c>
+ ExpiresActive On
+ ExpiresByType image/jpg "access plus 60 days"
+ ExpiresByType image/png "access plus 60 days"
+ ExpiresByType image/gif "access plus 60 days"
+ ExpiresByType image/jpeg "access plus 60 days"
+ ExpiresByType text/css "access plus 1 month"
+ ExpiresByType image/x-icon "access plus 1 month"
+ ExpiresByType application/pdf "access plus 1 month"
+ ExpiresByType audio/x-wav "access plus 1 month"
+ ExpiresByType audio/mpeg "access plus 1 month"
+ ExpiresByType video/mpeg "access plus 1 month"
+ ExpiresByType video/mp4 "access plus 1 month"
+ ExpiresByType video/quicktime "access plus 1 month"
+ ExpiresByType video/x-ms-wmv "access plus 1 month"
+ ExpiresByType application/x-shockwave-flash "access 1 month"
+ ExpiresByType text/javascript "access plus 1 week"
+ ExpiresByType application/x-javascript "access plus 1 week"
+ ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
+
+<ifModule mod_headers.c>
+  <filesMatch "\.(ico|jpe?g|png|gif|swf)$">
+    Header set Cache-Control "public"
+  </filesMatch>
+  <filesMatch "\.(css)$">
+    Header set Cache-Control "public"
+  </filesMatch>
+  <filesMatch "\.(js)$">
+    Header set Cache-Control "private"
+  </filesMatch>
+  <filesMatch "\.(x?html?|php)$">
+    Header set Cache-Control "private, must-revalidate"
+  </filesMatch>
+</ifModule>
 
 # -- NSM .htaccess Generator End --

@@ -6,11 +6,11 @@
 	</script>
   <body>
   	{exp:channel:entries channel="ingreso" dinamyc="off"}
-			{imagen_de_fondo}
-			<div class="fondo minhp-100 site-wrapper" style="background-image: url({image:url})"> <!-- Body -->
-			{/imagen_de_fondo}
-				<div class="overlay-fondo w-100 minhp-100 absolute"></div>
-		    <div class="contenedor-fondo text-center">
+		{imagen_de_fondo}
+		<div class="fondo minhp-100 site-wrapper" style="background-image: url({image:url})"> <!-- Body -->
+		{/imagen_de_fondo}
+			<div class="overlay-fondo w-100 minhp-100 absolute"></div>
+		    	<div class="contenedor-fondo text-center">
 		    	<div class="logo-title relative" style="z-index:2">
 		    		{logo_ingreso}
 		    		<img src="{image:url}" alt="">
@@ -255,6 +255,18 @@
 			</div>
 		{/exp:channel:entries}
 	</body>
+	<script src="//use.typekit.net/wml8szi.js"></script>
+    <script>try{Typekit.load({async:true});}catch(e){}</script>
+    <script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  		ga('create', 'UA-91347771-1', 'auto');
+  		ga('send', 'pageview');
+
+	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="{site_url}frontend/app/assets/js/forms-control.js"></script>
 	<script src="{site_url}frontend/app/assets/js/ingreso-control.js"></script>
@@ -263,8 +275,8 @@
 	<script src="{site_url}frontend/app/assets/js/bootstrap-select.js"></script>
 	<script type="text/javascript">
 		$('.selectpicker').selectpicker({
-			size: auto;
-			showIcon: false;
+			size: 4,
+			showIcon: false
 		});
 	</script>
 </html>
