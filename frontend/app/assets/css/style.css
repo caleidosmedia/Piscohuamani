@@ -428,6 +428,9 @@ hr {
   color: #f8f4e5;
   padding: 3px;
 }
+.idiomaH select:focus {
+    outline: none;
+}
 .idiomaH a{
   padding: 3px 27px;
   border: solid 1px transparent  ;
@@ -22554,4 +22557,9 @@ http://flickity.metafizzy.co
 
 .extremos-blog{
   padding: 0px 55px;
+}
+
+.container-galeria{
+  width: 1090px;
+  margin: 0 auto;
 }

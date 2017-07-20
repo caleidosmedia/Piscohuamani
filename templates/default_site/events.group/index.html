@@ -14,8 +14,8 @@
                 <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-previo-blanco.png" alt="">
               </div>
               <div id="slider_next_experience" class="gallery-button-right">
-                <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-blanco.png" alt=""> 
-              </div> 
+                <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-blanco.png" alt="">
+              </div>
               <div class="slider-selected container-text-opacity row pb-70 mb-70 pl-42 pr-70 absolute">
                 {embed="events/slider_events"}
                 <div class="clearfix ">
@@ -24,10 +24,10 @@
                 </div>
               </div>
             </div>
-          </div> 
+          </div>
         </section>
         <section id="galeria">
-          <div class="container pv-7-md pv-0-xs">
+          <div class="container-galeria pv-7-md pv-0-xs">
             <div class="grid">
               {exp:channel:entries channel="events" dinamyc="off"}
               <div class="ronda-1 hidden" data-title="{url_title}" data-index="{absolute_count}" data-current="0" data-slide-id="{entry_id}">
@@ -38,7 +38,7 @@
                         <div class="btn-block bg-img-block" style="background-image:url({image:url})"></div>
                       </a>
                     </li>
-                    {/galeria_de_imagenes} 
+                    {/galeria_de_imagenes}
                 </ul>
               </div>
               {/exp:channel:entries}
@@ -64,4 +64,4 @@
     <script src="{site_url}frontend/app/assets/js/overlay-control.js"></script>
     <script src="{site_url}frontend/app/assets/js/slide-events.js"></script>
   </body>
-</html> 
+</html>
