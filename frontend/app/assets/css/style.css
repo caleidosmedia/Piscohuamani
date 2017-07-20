@@ -419,6 +419,15 @@ hr {
   margin-top: 26px;
   margin-left:30px;
 }
+.idiomaH select{
+  font-family: "Avenir";
+  font-size: inherit;
+  line-height: inherit;
+  background: #3b2e29;
+  border: 1px solid #f8f4e5;
+  color: #f8f4e5;
+  padding: 3px;
+}
 .idiomaH a{
   padding: 3px 27px;
   border: solid 1px transparent  ;
