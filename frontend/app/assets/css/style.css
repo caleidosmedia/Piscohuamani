@@ -6603,7 +6603,7 @@ body .slider-text-oficial2 {
 }
 
 #formulario .date {
-  width: 560px;
+  width: 710px;
 }
 #formulario .date input {
   background-color: transparent;
@@ -6643,7 +6643,7 @@ body .slider-text-oficial2 {
 }
 #formulario .action .btn-group .btn.dropdown-toggle {
   width: 162px;
-  height: 30px;
+  height: 39px;
   border-radius: 0px;
   font-size: 14px;
   font-size: 1rem;
@@ -6651,7 +6651,7 @@ body .slider-text-oficial2 {
   outline: none;
   border: 1px solid white;
   padding-left: 15px;
-  background-image: url(http://piscohuamani.laboratoria.la/frontend/app/assets/img/iconos-logos/flecha-crema.png);
+  background-image: url(frontend/app/assets/img/iconos-logos/flecha-crema.png);
   background-repeat: no-repeat;
   background-position-x: 95%;
   background-size: 15px;
@@ -7020,6 +7020,7 @@ body .slider-text-oficial2 {
 #about-us .imagen img {
   width: 264px;
   max-height: 789px;
+  margin-top: 6rem !important;
 }
 
 /*
@@ -7100,7 +7101,7 @@ body .slider-text-oficial2 {
   position: absolute;
   top: -210px;
   bottom: 0;
-  left: 220px;
+  left: 170px;
 }
 @media only screen and (max-width: 1366px) {
   #the-goods .gallery-button-left, #events .gallery-button-left, #slider-events .gallery-button-left {
@@ -7110,7 +7111,7 @@ body .slider-text-oficial2 {
 #the-goods .gallery-button-right, #events .gallery-button-right, #slider-events .gallery-button-right {
   position: absolute;
   top: -210px;
-  right: 42%;
+  right: 11%;
   bottom: 0;
     -moz-box-shadow: 22px -19px 30px 0px #3b2e29;
     -webkit-box-shadow: 22px -19px 30px 0px #3b2e29;
@@ -7501,7 +7502,7 @@ footer .col-md-3 p a:hover {
 .site-content .content-blog .separador {
   border-bottom: 1px solid #4e3227;
   padding-top: 2%;
-  width: 36%;
+  width: 26%;
 }
 .site-content .content-blog #menu-blog nav a {
   padding: 0 7px;
@@ -7575,7 +7576,6 @@ footer .col-md-3 p a:hover {
   .site-content .content-blog .post .botons .social li {
     float: left;
     list-style: none;
-    border: 1.5px solid;
     padding: 4px;
     width: 30px;
     height: 33px;
@@ -22541,4 +22541,8 @@ http://flickity.metafizzy.co
 
 #events > .gallery-child > .flickity-viewport > .flickity-slider > .gallery-cell > .overlay-events {
   background-color: rgba(23, 10, 3, 0.7) !important;
+}
+
+.extremos-blog{
+  padding: 0px 55px;
 }

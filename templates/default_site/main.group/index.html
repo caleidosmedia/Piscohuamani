@@ -1,8 +1,8 @@
 {embed="includes/head"}
-	<script>		
+	<script>
 		if (sessionStorage.getItem("answer") == "ultimo") {
 			window.location="{path='home'}"
-		}		
+		}
 	</script>
   <body>
   	{exp:channel:entries channel="ingreso" dinamyc="off"}
@@ -22,21 +22,21 @@
 		    		<form class="date clearfix text-center relative" action="{path='home'}">
 		    			<input id="day" class="number text-center text-white day" type="text" min="1" max="30" maxlength="2" placeholder="{campo_dia}" name="day" required>
 		    			<input id="month" class="number text-center month" type="text" pattern="[0-9]*" min="1" max="12" maxlength="2" placeholder="{campo_mes}" name="month" required>
-		    			<input id="year" class="number text-center" type="text" pattern="[0-9]*" min="4" maxlength="4" class="year" placeholder="{campo_anio}" name="year" required> 
-		    			<div class="action row col-md-8 pl-21 pr-0 ph-0-xs mb-42-xs">
-								<select name="LOCATION" id="country" class="selectpicker col-md-4 col-xs-6 thin text-white ml-0 ph-0" style="background-image: url({site_url}frontend/app/assets/img/iconos-logos/flecha-crema.png); background-position-y: center!important;" required>
-									<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+		    			<input id="year" class="number text-center" type="text" pattern="[0-9]*" min="4" maxlength="4" class="year" placeholder="{campo_anio}" name="year" required>
+		    			<div class="action" style="float: right;padding: 7px 0px 0px;">
+								<select name="LOCATION" id="country" class="selectpicker col-md-4 col-xs-6 thin text-white ml-0 ph-0" style="background-image: url(assets/img/iconos-logos/flecha-crema.png); background-position-y: center!important;" required>
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
 									<option value="">{select}</option>
 									<option value="PE">Peru</option>
 									<option value="AL">Albania</option>
-									<option value="DZ">Algeria</option> 
+									<option value="DZ">Algeria</option>
 									<option value="AS">American Samoa</option>
 									<option value="AD">Andorra</option>
 									<option value="AO">Angola</option>
 									<option value="AI">Anguilla</option>
 									<option value="AQ">Antarctica</option>
 									<option value="AG">Antigua and Barbuda</option>
-									<option value="AR">Argentina</option> 
+									<option value="AR">Argentina</option>
 									<option value="AM">Armenia</option>
 									<option value="AW">Aruba</option>
 									<option value="AU">Australia</option>
@@ -140,7 +140,7 @@
 									<option value="MK">Macedonia</option>
 									<option value="MG">Madagascar</option>
 									<option value="MW">Malawi</option>
-									<option value="MY">Malaysia</option>									
+									<option value="MY">Malaysia</option>
 									<option value="MV">Maldives</option>
 									<option value="ML">Mali</option>
 									<option value="MT">Malta</option>
@@ -233,7 +233,7 @@
 									<option value="ZM">Zambia</option>
 									<option value="ZW">Zimbabwe</option>
 								</select>
-								<div class="pr-0 ph-xs ph-sm col-xs-5">
+								<!--div class="pr-0 ph-xs ph-sm col-xs-5">
 									<div class="btn-group p-0 col-xs-12 ml-0 col-md-12 pr-0-xs" role="group" aria-label="...">
 									  {exp:transcribe:language_links}
 							        {languages}
@@ -241,19 +241,19 @@
 							        {/languages}
 									{/exp:transcribe:language_links}
 									</div>
-								</div>
+								</div-->
 		    			</div>
-		    			<div class="box ml-7-md mr-14 mv-14-xs mv-35-md ml-0-xs">
+		    			<!--div class="box ml-7-md mr-14 mv-14-xs mv-35-md ml-0-xs">
 						  	<span class="close text-white" data-dismiss="modal">&times;</span>
 						  	<input type="checkbox" value="" class="close-checkbox">
-						  </div>
-						  <label for="ejemplo-1" class="text-white p-0 mv-14-xs mv-35-md thin">{titulo_recordatorio}</label>
+						  </div-->
+						  <!--label for="ejemplo-1" class="text-white p-0 mv-14-xs mv-35-md thin">{titulo_recordatorio}</label-->
 						  <button id="logear" class="enter mt-14 mt-28-xs mt-28-sm btn btn-default ml-0-xs text-white relative" type="submit" disabled="disabled">{nombre_de_boton}<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
 		    		</form>
 		    	</div>
 		    </div>
 			</div>
-		{/exp:channel:entries}	
+		{/exp:channel:entries}
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="{site_url}frontend/app/assets/js/forms-control.js"></script>
