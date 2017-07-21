@@ -22,7 +22,9 @@ $(document).ready(function() {
         n.preventDefault();
         $("#the-goods .gallery .gallery-cell").fadeIn();
         setTimeout(function() {
-            t.flickity("previous")
+            t.flickity("previous");
+            var color_bg = $("·slider-text-goods .color").text();
+            $('#the-goods').css("background", color_bg);
         }, 500);
         $("#the-goods .gallery .gallery-cell.is-selected").fadeOut();
         e.flickity("previous");
@@ -32,7 +34,9 @@ $(document).ready(function() {
         n.preventDefault();
         $("#the-goods .gallery .gallery-cell").fadeIn();
         setTimeout(function() {
-            t.flickity("next")
+            t.flickity("next");
+            var color_bg = $("·slider-text-goods .color").text();
+            $('#the-goods').css("background", color_bg);
         }, 500);
         $("#the-goods .gallery .gallery-cell.is-selected").fadeOut();
         e.flickity("next");
