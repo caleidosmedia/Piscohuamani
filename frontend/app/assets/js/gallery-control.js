@@ -23,7 +23,7 @@ $(document).ready(function() {
         $("#the-goods .gallery .gallery-cell").fadeIn();
         setTimeout(function() {
             t.flickity("previous");
-            var color_bg = $("·slider-text-goods .color").text();
+            var color_bg = $("#slider-text-goods .color").text();
             $('#the-goods').css("background", color_bg);
         }, 500);
         $("#the-goods .gallery .gallery-cell.is-selected").fadeOut();
@@ -35,7 +35,7 @@ $(document).ready(function() {
         $("#the-goods .gallery .gallery-cell").fadeIn();
         setTimeout(function() {
             t.flickity("next");
-            var color_bg = $("·slider-text-goods .color").text();
+            var color_bg = $("#slider-text-goods .color").text();
             $('#the-goods').css("background", color_bg);
         }, 500);
         $("#the-goods .gallery .gallery-cell.is-selected").fadeOut();
