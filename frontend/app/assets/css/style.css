@@ -7042,6 +7042,7 @@ body .slider-text-oficial2 {
 #the-goods, #events, #slider-events {
   background-color: #3b2e29;
   font-family: "Avenir";
+  transition: all .5s;
 
 }
 
@@ -7125,6 +7126,7 @@ body .slider-text-oficial2 {
 }
 #the-goods .gallery-button-right, #events .gallery-button-right, #slider-events .gallery-button-right {
   position: absolute;
+  transition: all .5s;
   top: -210px;
   right: 11%;
   bottom: 0;
