@@ -25,6 +25,11 @@ $(document).ready(function() {
             t.flickity("previous");
             var color_bg = $("#slider-text-goods .color").text();
             $('#the-goods').css("background", color_bg);
+            $('#slider_next_goods').css({
+                "-moz-box-shadow": "22px -19px 30px 0px "+color_bg,
+                "-webkit-box-shadow": "22px -19px 30px 0px "+color_bg,
+                "box-shadow": "22px -19px 30px 0px "+color_bg
+            });
         }, 500);
         $("#the-goods .gallery .gallery-cell.is-selected").fadeOut();
         e.flickity("previous");
@@ -37,6 +42,11 @@ $(document).ready(function() {
             t.flickity("next");
             var color_bg = $("#slider-text-goods .color").text();
             $('#the-goods').css("background", color_bg);
+            $('#slider_next_goods').css({
+                "-moz-box-shadow": "22px -19px 30px 0px "+color_bg,
+                "-webkit-box-shadow": "22px -19px 30px 0px "+color_bg,
+                "box-shadow": "22px -19px 30px 0px "+color_bg
+            });
         }, 500);
         $("#the-goods .gallery .gallery-cell.is-selected").fadeOut();
         e.flickity("next");
