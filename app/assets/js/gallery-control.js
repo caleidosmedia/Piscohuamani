@@ -29,7 +29,10 @@ $(document).ready(function(){
 		e.preventDefault();
 		$('#the-goods .gallery .gallery-cell').fadeIn();
 		setTimeout(function(){
-	  	$goodsGalleryNav.flickity('previous');}, 500);
+	  	$goodsGalleryNav.flickity('previous');
+      var color_bg = $("·slider-text-goods .color").text();
+      $('#the-goods').css("background", color_bg);
+    }, 500);
 		$('#the-goods .gallery .gallery-cell.is-selected').fadeOut();
 		$goodsGallery.flickity('previous');
     console.log("anterior");
@@ -38,7 +41,10 @@ $(document).ready(function(){
 		e.preventDefault();
 		$('#the-goods .gallery .gallery-cell').fadeIn();
 	  setTimeout(function(){
-	  	$goodsGalleryNav.flickity('next');}, 500);
+	  	$goodsGalleryNav.flickity('next');
+      var color_bg = $("·slider-text-goods .color").text();
+      $('#the-goods').css("background", color_bg);
+    }, 500);
 	  $('#the-goods .gallery .gallery-cell.is-selected').fadeOut();
 		$goodsGallery.flickity('next');
     console.log("siguente");
