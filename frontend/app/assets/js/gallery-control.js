@@ -25,7 +25,8 @@ $(document).ready(function() {
             t.flickity("previous")
         }, 500);
         $("#the-goods .gallery .gallery-cell.is-selected").fadeOut();
-        e.flickity("previous")
+        e.flickity("previous");
+        console.log("anterior");
     });
     $("#the-goods .gallery-button-right").on("click", function(n) {
         n.preventDefault();
@@ -34,7 +35,8 @@ $(document).ready(function() {
             t.flickity("next")
         }, 500);
         $("#the-goods .gallery .gallery-cell.is-selected").fadeOut();
-        e.flickity("next")
+        e.flickity("next");
+        console.log("siguente");
     });
     var n = $("#make-drink .gallery-child");
     var r = $("#make-drink .gallery");
@@ -146,8 +148,7 @@ $(document).ready(function() {
             u.flickity("previous")
         }, 200);
         $("#slider-events .gallery .gallery-cell.is-selected").fadeOut();
-        o.flickity("previous");
-        console.log("anterior");
+        o.flickity("previous")
     });
     $("#slider-events .gallery-button-right").on("click", function(e) {
         e.preventDefault();
@@ -156,7 +157,6 @@ $(document).ready(function() {
             u.flickity("next")
         }, 200);
         $("#slider-events .gallery .gallery-cell.is-selected").fadeOut();
-        o.flickity("next");
-        console.log("siguiente");
+        o.flickity("next")
     })
 })
