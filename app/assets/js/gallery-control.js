@@ -32,6 +32,7 @@ $(document).ready(function(){
 	  	$goodsGalleryNav.flickity('previous');}, 500);
 		$('#the-goods .gallery .gallery-cell.is-selected').fadeOut();
 		$goodsGallery.flickity('previous');
+    console.log("anterior");
 	});
 	$('#the-goods .gallery-button-right img').on( 'click', function(e) {
 		e.preventDefault();
@@ -40,6 +41,7 @@ $(document).ready(function(){
 	  	$goodsGalleryNav.flickity('next');}, 500);
 	  $('#the-goods .gallery .gallery-cell.is-selected').fadeOut();
 		$goodsGallery.flickity('next');
+    console.log("siguente");
 	});
 
 	// Gallery Make Drink Control
