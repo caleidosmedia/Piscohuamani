@@ -1,6 +1,15 @@
 $(document).ready(function() {
     var e = $("#the-goods  .gallery-child");
     var t = $("#the-goods .gallery");
+    var cambio_color = function() {
+        var color_bg = $("#slider-text-goods .color").text();
+        $('#the-goods').css("background", color_bg);
+        $('#slider_next_goods').css({
+            "-moz-box-shadow": "22px -19px 30px 0px "+color_bg,
+            "-webkit-box-shadow": "22px -19px 30px 0px "+color_bg,
+            "box-shadow": "22px -19px 30px 0px "+color_bg
+        });
+    };
     t.flickity({
         cellAlign: "center",
         prevNextButtons: false,
@@ -18,39 +27,28 @@ $(document).ready(function() {
         friction: .4,
         wrapAround: true
     });
+
+    cambio_color();
+
     $("#the-goods .gallery-button-left").on("click", function(n) {
         n.preventDefault();
         $("#the-goods .gallery .gallery-cell").fadeIn();
         setTimeout(function() {
             t.flickity("previous");
-            var color_bg = $("#slider-text-goods .color").text();
-            $('#the-goods').css("background", color_bg);
-            $('#slider_next_goods').css({
-                "-moz-box-shadow": "22px -19px 30px 0px "+color_bg,
-                "-webkit-box-shadow": "22px -19px 30px 0px "+color_bg,
-                "box-shadow": "22px -19px 30px 0px "+color_bg
-            });
+            cambio_color();
         }, 500);
         $("#the-goods .gallery .gallery-cell.is-selected").fadeOut();
         e.flickity("previous");
-        console.log("anterior");
     });
     $("#the-goods .gallery-button-right").on("click", function(n) {
         n.preventDefault();
         $("#the-goods .gallery .gallery-cell").fadeIn();
         setTimeout(function() {
             t.flickity("next");
-            var color_bg = $("#slider-text-goods .color").text();
-            $('#the-goods').css("background", color_bg);
-            $('#slider_next_goods').css({
-                "-moz-box-shadow": "22px -19px 30px 0px "+color_bg,
-                "-webkit-box-shadow": "22px -19px 30px 0px "+color_bg,
-                "box-shadow": "22px -19px 30px 0px "+color_bg
-            });
+            cambio_color();
         }, 500);
         $("#the-goods .gallery .gallery-cell.is-selected").fadeOut();
         e.flickity("next");
-        console.log("siguente");
     });
     var n = $("#make-drink .gallery-child");
     var r = $("#make-drink .gallery");
