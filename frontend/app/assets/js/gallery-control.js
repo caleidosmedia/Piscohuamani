@@ -28,7 +28,11 @@ $(document).ready(function() {
         wrapAround: true
     });
 
-    cambio_color();
+    setTimeout(function() {
+      cambio_color();
+    }, 200);
+
+
 
     $("#the-goods .gallery-button-left").on("click", function(n) {
         n.preventDefault();
