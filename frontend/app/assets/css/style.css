@@ -7077,6 +7077,7 @@ body .slider-text-oficial2 {
 #the-goods .make-text #slider-text-goods, #events .make-text #slider-text-goods, #slider-events .make-text #slider-text-goods {
   padding-top: 9%;
   z-index: 1;
+  float: right;
 }
 #the-goods .make-text #slider-text-goods .separador, #events .make-text #slider-text-goods .separador, #slider-events .make-text #slider-text-goods .separador {
   border-bottom: 1px solid #f8f4e5;
