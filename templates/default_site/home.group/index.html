@@ -1,7 +1,7 @@
 {embed="includes/head"}
 	<body>
     <div class="site-wrapper"> <!-- Body -->
-      {embed="includes/header" huamani="#background" about="#about-us" goods="#the-goods" make="#make-drink" events="#events"}      
+      {embed="includes/header" huamani="#background" about="#about-us" goods="#the-goods" make="#make-drink" events="#events"}
         <main class="site-content">
         {exp:channel:entries channel="home" dynamic="off" limit="1" sort="asc"}
           {embed="includes/overlay-menu" about="#about-us" goods="#the-goods" make="#make-drink" events="#events"}
@@ -41,7 +41,7 @@
               </div>
             </div>
           </section>
-          
+
           <section id="the-goods">
             <div class="container-lg relative pt-56-md ph-7-xs">
               <div class="container pl-14-md pl-42-xs relative" style="z-index:1">
@@ -54,11 +54,11 @@
                 </div>
                 <div id="slider_next_goods" class="gallery-button-right">
                   <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-blanco.png" alt="">
-                </div> 
+                </div>
                 <div class="col-xs-12 pl-0-md ph-0-xs slider-img gallery-child hidden-lg hidden-md"> <!--movil-->
                   {embed="home/img-goods-responsive"}
                 </div>
-                <div class="col-md-5 col-md-offset-7 ph-0 slider-img gallery-child hidden-xs hidden-sm" style="top:-120px; width:29%;"> 
+                <div class="col-md-5  ph-0 slider-img gallery-child hidden-xs hidden-sm" style="top:-120px; width:29%;">
                   {embed="includes/img-goods"}
                 </div>
               </div>
@@ -69,7 +69,7 @@
                 </div>
               </div>
             </div>
-          </section> 
+          </section>
           <section id="make-drink" class="pv-70" style="background-image:url({site_url}frontend/app/assets/img/texturas/debut_light/textura2-crema.png); background-size: 30%; z-index: 101;">
             <div class="container ph-21">
               <div class="text-white pl-35-xs">
@@ -98,7 +98,7 @@
           </section>
           <section id="events" class="p-0 relative minhp-100">
             <div class="overlay-fondo minhp-100 absolute"></div>
-            <div class="container ph-21 ph-42-xs ph-42-sm">  
+            <div class="container ph-21 ph-42-xs ph-42-sm">
               <h1 class="pt-70-lg mt-42-lg pt-70-md mt-42-md pt-28-xs mt-42-xs pt-28-sm mt-42-sm family-across">{events_titulo}</h1>
             </div>
             <div class="gallery-wrapper row p-0">
@@ -110,8 +110,8 @@
                   <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-previo-blanco.png" alt="">
                 </div>
                 <div id="slider_next_experience" class="gallery-button-right">
-                  <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-blanco.png" alt=""> 
-                </div> 
+                  <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-blanco.png" alt="">
+                </div>
               </div>
             </div>
             <!--Slider-text-->
@@ -126,7 +126,7 @@
           {/exp:channel:entries}
           {embed="includes/follow"}
         </main>
-        
+
       {embed="includes/footer"}
     </div>
     {embed="includes/script_general"}
