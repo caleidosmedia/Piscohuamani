@@ -442,6 +442,7 @@ hr {
 @media only screen and (min-width: 355px) {
   #the-goods{
     padding: 80px 0px 42px;
+    overflow: hidden;
   }
   .make-drink .make-text .col-md-7{
     padding-left: 0px;
