@@ -6618,6 +6618,7 @@ body .slider-text-oficial2 {
 #formulario .date {
   width: 710px;
   display: inline;
+  float: left
 }
 #formulario .date input {
   background-color: transparent;
@@ -6717,7 +6718,7 @@ body .slider-text-oficial2 {
   color: #8d744a;
 }
 .enter {
-  background-color: transparent;
+  background-color: #BDBCBB;
   border: 1px solid white;
   border-radius: 0;
   font-size: 18px;
@@ -6725,14 +6726,11 @@ body .slider-text-oficial2 {
   width: 162px;
   height: 39px;
   outline: none;
+  padding-top: 5px;
   z-index: 3;
-  margin-right: 26px;
-}
-#formulario .enter span {
-  top: 2px;
-  right: -4px;
-  position: relative;
-}
+
+  }
+
 .enter.active-enter {
   border-color: white;
   color: white;
@@ -7010,6 +7008,10 @@ body .slider-text-oficial2 {
 @media only screen and (min-width: 798px) {
   #about-us .leyenda-about, #the-goods h3, #follow-us h3, #events .h1 {
     font-size: 60px;
+  }
+  .enter{
+    margin-right: 26px;
+
   }
 }
 
