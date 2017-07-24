@@ -7010,7 +7010,7 @@ body .slider-text-oficial2 {
   #about-us .leyenda-about, #the-goods h3, #follow-us h3, #events .h1 {
     font-size: 60px;
   }
-  .enter{
+  .enter:first-child{
     margin-right: 26px;
 
   }
