@@ -6720,6 +6720,7 @@ body .slider-text-oficial2 {
 .enter {
   background-color: #BDBCBB;
   border: 1px solid white;
+  color: white;
   border-radius: 0;
   font-size: 18px;
   font-weight: lighter;
@@ -7010,7 +7011,7 @@ body .slider-text-oficial2 {
   #about-us .leyenda-about, #the-goods h3, #follow-us h3, #events .h1 {
     font-size: 60px;
   }
-  .enter:first-child{
+  .date a:first-child{
     margin-right: 26px;
 
   }
