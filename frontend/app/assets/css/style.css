@@ -2379,8 +2379,8 @@ select[multiple].input-lg {
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
   color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+  background-color: transparent;
+  border: 1px solid white;
 }
 .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
   background-image: none;
@@ -22598,13 +22598,3 @@ http://flickity.metafizzy.co
 
 }
 
-.idio a:active{
-  border:1px solid white;
-  background:transparent;
-
-}
-.idio a:focus{
-  border:1px solid white;
-  background:transparent !important;
-
-}
