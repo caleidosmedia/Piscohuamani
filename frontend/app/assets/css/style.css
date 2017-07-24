@@ -22591,5 +22591,11 @@ http://flickity.metafizzy.co
   width: 80px;
   color: white !important;
   background: transparent;
+  border-radius: 0px;
+
+}
+
+.idio a:active{
+  border:1px solid white;
 
 }
