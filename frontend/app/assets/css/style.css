@@ -6710,7 +6710,7 @@ body .slider-text-oficial2 {
   font-weight: 300;
   line-height: 1.7;
 }
-#formulario .action .btn-group .btn-default.active-btn {
+#formulario .btn-group  {
   border-color: white;
 }
 #formulario .action .active {
