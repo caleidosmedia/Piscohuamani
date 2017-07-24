@@ -6727,6 +6727,7 @@ body .slider-text-oficial2 {
   height: 39px;
   outline: none;
   padding-top: 5px;
+  display: inline-block;
   z-index: 3;
 
   }
