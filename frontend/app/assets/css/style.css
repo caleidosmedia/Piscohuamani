@@ -22592,10 +22592,12 @@ http://flickity.metafizzy.co
   color: white !important;
   background: transparent;
   border-radius: 0px;
+  border: 0px;
 
 }
 
 .idio a:active{
   border:1px solid white;
+  background:transparent;
 
 }
