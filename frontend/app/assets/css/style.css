@@ -6617,6 +6617,7 @@ body .slider-text-oficial2 {
 
 #formulario .date {
   width: 710px;
+  display: inline;
 }
 #formulario .date input {
   background-color: transparent;
@@ -6725,6 +6726,7 @@ body .slider-text-oficial2 {
   height: 39px;
   outline: none;
   z-index: 3;
+  margin-right: 26px;
 }
 #formulario .enter span {
   top: 2px;
@@ -6988,6 +6990,11 @@ body .slider-text-oficial2 {
     font-family: "Avenir";
     padding-top: 63px
   }
+  .enter {
+    margin: 10px 0px 10px;
+
+  }
+
   #about-us .leyenda-about, #the-goods h3, #follow-us h3 {
     font-size: 35.5px;
   }
