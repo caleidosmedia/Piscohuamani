@@ -22586,6 +22586,8 @@ http://flickity.metafizzy.co
 }
 .idio{
   float: right;
+  margin-top: 15px;
+  padding-left: 40px;
 }
 .idio a{
   width: 80px;
@@ -22597,6 +22599,11 @@ http://flickity.metafizzy.co
 }
 
 .idio a:active{
+  border:1px solid white;
+  background:transparent;
+
+}
+.idio a:focus{
   border:1px solid white;
   background:transparent;
 
