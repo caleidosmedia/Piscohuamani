@@ -22605,6 +22605,6 @@ http://flickity.metafizzy.co
 }
 .idio a:focus{
   border:1px solid white;
-  background:transparent;
+  background:transparent !important;
 
 }
