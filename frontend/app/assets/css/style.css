@@ -22584,3 +22584,10 @@ http://flickity.metafizzy.co
 .title-goods{
   text-align: right;
 }
+.idio{
+  float: left;
+}
+.idio a{
+  width: 80px;
+
+}
