@@ -22585,9 +22585,11 @@ http://flickity.metafizzy.co
   text-align: right;
 }
 .idio{
-  float: left;
+  float: right;
 }
 .idio a{
   width: 80px;
+  color: white !important;
+  background: transparent;
 
 }
