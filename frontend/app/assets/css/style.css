@@ -6715,7 +6715,7 @@ body .slider-text-oficial2 {
   border-color: #8d744a;
   color: #8d744a;
 }
-#formulario .enter {
+.enter {
   background-color: transparent;
   border: 1px solid white;
   border-radius: 0;
@@ -6731,7 +6731,7 @@ body .slider-text-oficial2 {
   right: -4px;
   position: relative;
 }
-#formulario .enter.active-enter {
+.enter.active-enter {
   border-color: white;
   color: white;
   background-color: rgba(250, 250, 250, 0.3);
