@@ -26,16 +26,17 @@
               <a href="#">
                 <div class="enter">NO </div>
               </a>
-              <div class="pr-0 ph-xs ph-sm col-xs-5">
-                <div class="btn-group p-0 col-xs-12 ml-0 col-md-12 pr-0-xs" role="group" aria-label="...">
-                  {exp:transcribe:language_links}
-                    {languages}
-                        <a href="{link}" class="btn btn-default btn-language text-white {if current}active{/if}">{name}</a>
-                    {/languages}
-                {/exp:transcribe:language_links}
-                </div>
-              </div>
+
             </form>
+            <div class="pr-0 ph-xs ph-sm col-xs-5">
+              <div class="btn-group p-0 col-xs-12 ml-0 col-md-12 pr-0-xs" role="group" aria-label="...">
+                {exp:transcribe:language_links}
+                  {languages}
+                      <a href="{link}" class="btn btn-default btn-language text-white {if current}active{/if}">{name}</a>
+                  {/languages}
+              {/exp:transcribe:language_links}
+              </div>
+            </div>
           </div>
         </div>
       </div>
