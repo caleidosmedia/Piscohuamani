@@ -7,7 +7,17 @@ $(document).ready( function () {
 		"en": curr_url.replace("/"+lang+"/", "/en/")
 	};
 
-	$(".idiomaH .es").attr("href", new_url.es);
+  $(".idiomaH select").val(lang);
+
+  $(".idiomaH select").on("change", function () {
+      var this_val = $(this).val();
+
+      location.href = new_url[this_val];
+  });
+
+
+
+	/*$(".idiomaH .es").attr("href", new_url.es);
 	$(".idiomaH .en").attr("href", new_url.en);
-	$(".idiomaH ."+lang).addClass("activei");
+	$(".idiomaH ."+lang).addClass("activei");*/
 });

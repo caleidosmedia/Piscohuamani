@@ -33,12 +33,37 @@
               <div class="ronda-1 hidden" data-title="{url_title}" data-index="{absolute_count}" data-current="0" data-slide-id="{entry_id}">
                 <ul class="row mg-0 pd-0">
                     {galeria_de_imagenes}
-                    <li class="col-md-4 col-xs-6" data-title="{url_title}">
+                    <li class="col-md-4 col-xs-12" data-title="{url_title}">
                       <a href="{image:url}" class="grid-image">
                         <div class="btn-block bg-img-block" style="background-image:url('{image:url}')"></div>
                       </a>
                     </li>
                     {/galeria_de_imagenes}
+
+
+
+                    <li class="col-md-6 col-xs-12" data-title="{url_title}">
+                      <ul class="row">
+                          <li class="col-md-3 col-xs-6" >
+                            <a href="{image:url}" class="grid-image">
+                              <div class="btn-block bg-img-block" style="background-image:url('{image:url}')"></div>
+                            </a>
+                          </li>
+
+                          <li class="col-md-3 col-xs-6" >
+                            <a href="{image:url}" class="grid-image">
+                              <div class="btn-block bg-img-block" style="background-image:url('{image:url}')"></div>
+                            </a>
+                          </li>
+                      </ul>
+                    </li>
+
+
+
+
+
+
+
                 </ul>
               </div>
               {/exp:channel:entries}
