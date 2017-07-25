@@ -22597,6 +22597,8 @@ http://flickity.metafizzy.co
 }
 .idio a:hover{
   border: 0px;
+  display: inline-block;
+  float: none;
 
 }
 
