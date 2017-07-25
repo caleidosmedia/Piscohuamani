@@ -6616,9 +6616,8 @@ body .slider-text-oficial2 {
 }
 
 #formulario .date {
-  width: 710px;
-  display: inline;
-  float: left
+  width: 565px;
+  margin: 0 auto;
 }
 #formulario .date input {
   background-color: transparent;
@@ -22587,7 +22586,6 @@ http://flickity.metafizzy.co
 .idio{
   float: right;
   margin-top: 15px;
-  padding-left: 40px;
 }
 .idio a{
   width: 80px;
