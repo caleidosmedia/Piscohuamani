@@ -22593,12 +22593,13 @@ http://flickity.metafizzy.co
   background: transparent;
   border-radius: 0px;
   border: 0px;
+  display: inline-block;
+  float: none;
 
 }
 .idio a:hover{
   border: 0px;
-  display: inline-block;
-  float: none;
+
 
 }
 
