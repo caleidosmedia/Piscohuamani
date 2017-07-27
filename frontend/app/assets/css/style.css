@@ -8420,6 +8420,15 @@ footer .col-md-3 p a:hover {
   }
 }
 
+@media only screen and (max-width: 990px) {
+  /*RESPONSIVE FORMULARIO*/
+  #galeria .container .grid #overlay img {
+    height: 60% !important;
+    width: initial;
+  }
+}
+
+
 @media only screen and (min-width: 350px){
   #about-us .container .row .col-md-6 .texto-about {
     padding: 70px 0 9px !important;
@@ -8469,11 +8478,7 @@ footer .col-md-3 p a:hover {
   #galeria .container .grid {
     padding: 10% 7% 10%;
   }
-  #galeria .container .grid #overlay img {
-  /*width: 85%;*/
-    height: 60% !important;
-    width: initial;
-  }
+
   #make-drink .container h2 {
     font-size: 2.5rem !important;
     font-weight: 500;
