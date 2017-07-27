@@ -7210,7 +7210,7 @@ body .slider-text-oficial2 {
 }
 @media only screen and (max-width: 1366px) {
   #make-drink .gallery-button-left {
-    left: 192px;
+    left: 220px;
   }
 }
 
@@ -7456,9 +7456,10 @@ body .slider-text-oficial2 {
 }
 @media only screen and (min-width: 1195px) {
   #events .row .gallery-button-left, #slider-events .row .gallery-button-left {
-    left: 120px;
+    left: 220px;
   }
 }
+
 
 #follow-us .container-social a {
   display: block;
