@@ -6710,7 +6710,7 @@ body .slider-text-oficial2 {
   line-height: 1.7;
 }
 #formulario .btn-group  {
-  border-color: white;
+  border-color: #f8f4e5;
 }
 #formulario .action .active {
   border-color: #8d744a;
@@ -6718,8 +6718,8 @@ body .slider-text-oficial2 {
 }
 .enter {
   background-color: #BDBCBB;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid #f8f4e5;
+  color: #f8f4e5;
   border-radius: 0;
   font-size: 18px;
   font-weight: lighter;
@@ -6959,6 +6959,7 @@ body .slider-text-oficial2 {
 .img-principal div.texto h1 {
   font-size: 60px;
   font-size: 4.28571rem;
+  line-height: 75px;
 }
 
 .img-principal div.texto p {
@@ -6993,6 +6994,12 @@ body .slider-text-oficial2 {
     margin: 10px 0px 10px;
 
   }
+  #the-goods h1, #events h1, #slider-events h1 {
+    margin-right: 0px;
+  }
+  #the-goods h3, #events h3, #slider-events h3{
+    margin-right: 0px;
+  }
 
   #about-us .leyenda-about, #the-goods h3, #follow-us h3 {
     font-size: 35.5px;
@@ -7014,6 +7021,16 @@ body .slider-text-oficial2 {
     margin-right: 26px;
 
   }
+}
+
+@media only screen and (min-width: 1200px) {
+  #the-goods h1, #events h1, #slider-events h1 {
+    margin-right: 227px;
+  }
+  #the-goods h3, #events h3, #slider-events h3{
+    margin-right: 23px;
+  }
+
 }
 
 #about-us h1 {
@@ -7079,7 +7096,6 @@ body .slider-text-oficial2 {
   font-size: 35px;
   font-size: 2.5rem;
   font-family: "Avenir";
-  margin-right: 227px;
 }
 #the-goods h3, #events h3, #slider-events h3 {
   font-weight: 300;
