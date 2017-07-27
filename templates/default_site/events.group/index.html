@@ -39,9 +39,34 @@
                       </a>
                     </li>
                     {/galeria_de_imagenes}
-
-
-
+                </ul>
+              </div>
+              {/exp:channel:entries}
+              <div id="container-ronda"></div>
+              <div id="overlay">
+                <a class="close text-white pv-7 ph-14 thin" data-dismiss="modal">&times;</a>
+                <a class="previous-overlay controls" data-image-index="" href="">
+                  <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-previo-blanco.png" alt="">
+                </a>
+                <img src="" class="img-overlay">
+                <a class="next-overlay controls" data-image-index="" href="">
+                  <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-blanco.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="galeria">
+          <div class="container-galeria pv-7-md pv-0-xs">
+            <div class="grid">
+              {exp:channel:entries channel="events" dinamyc="off"}
+              <div class="ronda-1 hidden" data-title="{url_title}" data-index="{absolute_count}" data-current="0" data-slide-id="{entry_id}">
+                <ul class="row mg-0 pd-0">
+                    <li class="col-md-6 col-xs-12" data-title="{url_title}">
+                      <a href="{image:url}" class="grid-image">
+                        <div class="btn-block bg-img-block" style="background-image:url(assets/img/galeria/galeria.jpg)"></div>
+                      </a>
+                    </li>
                     <li class="col-md-6 col-xs-12" data-title="{url_title}">
                       <ul class="row">
                           <li class="col-md-3 col-xs-6" >
@@ -57,13 +82,6 @@
                           </li>
                       </ul>
                     </li>
-
-
-
-
-
-
-
                 </ul>
               </div>
               {/exp:channel:entries}
