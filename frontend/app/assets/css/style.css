@@ -8420,7 +8420,7 @@ footer .col-md-3 p a:hover {
   }
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (min-width: 990px) {
   /*RESPONSIVE FORMULARIO*/
   #galeria .container .grid #overlay img {
     height: 60% !important;
