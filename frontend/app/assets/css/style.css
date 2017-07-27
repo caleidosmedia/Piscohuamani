@@ -8471,7 +8471,7 @@ footer .col-md-3 p a:hover {
   }
   #galeria .container .grid #overlay img {
   /*width: 85%;*/
-    height: 60%;
+    height: 60% !important;
     width: initial;
   }
   #make-drink .container h2 {
