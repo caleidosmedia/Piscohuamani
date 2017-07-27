@@ -7203,6 +7203,11 @@ body .slider-text-oficial2 {
   bottom: 0;
   left: 220px;
 }
+@media only screen and (max-width: 1195px) {
+  #make-drink .gallery-button-left {
+    left: 120px;
+  }
+}
 @media only screen and (max-width: 1366px) {
   #make-drink .gallery-button-left {
     left: 192px;
@@ -7442,6 +7447,16 @@ body .slider-text-oficial2 {
   }
   #follow-us .container-social {
     padding-left: 4.5%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #events .row .gallery-button-left, #slider-events .row .gallery-button-left {
+    left: 111px;
+  }
+}
+@media only screen and (min-width: 1195px) {
+  #events .row .gallery-button-left, #slider-events .row .gallery-button-left {
+    left: 120px;
   }
 }
 
