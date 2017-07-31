@@ -7892,9 +7892,9 @@ footer .col-md-3 p a:hover {
 }
 #galeria #container-ronda ul li {
   padding: 9px;
-  height: 240px;
+  height: 372px;
 }
-#galeria #container-ronda ul li div {
+#galeria #container-ronda ul li  div {
   height: 100%;
   background-size: cover;
 }
