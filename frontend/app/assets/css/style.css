@@ -4330,7 +4330,7 @@ tbody.collapse.in {
     display: none !important;
   }
 }
-@media (max-width: 767px) and (max-width: 800px) {
+@media (max-width: 800px) {
   .hidden-smm {
     display: none !important;
   }
