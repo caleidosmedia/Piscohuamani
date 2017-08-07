@@ -22627,8 +22627,7 @@ http://flickity.metafizzy.co
     margin-right: 0%;
   }
 }
-
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1119px){
 
   #the-goods h3 {
      margin-right: 0px !important;
@@ -22639,6 +22638,12 @@ http://flickity.metafizzy.co
   }
   .title-goods{
     margin-right: 4.5%;
+  }
+}
+@media only screen and (min-width: 1200px){
+
+  .title-goods{
+    margin-right: 10%;
   }
 }
 .idio{
