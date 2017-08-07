@@ -22618,8 +22618,8 @@ http://flickity.metafizzy.co
   margin: 0 auto;
 }
 .title-goods{
-  text-align: right;
-  margin-right: 10%;
+  float: right;
+  width: 50%;
 }
 @media only screen and (max-width: 1000px){
 
