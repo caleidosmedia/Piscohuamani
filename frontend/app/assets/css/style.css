@@ -22621,9 +22621,13 @@ http://flickity.metafizzy.co
   float: right;
   width: 50%;
 }
-
+@media only screen and (max-width: 1000px){
+  .title-goods{
+    float: right;
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 1019px){
-
   #the-goods h3 {
      margin-right: 0px !important;
      font-size: 52px;
