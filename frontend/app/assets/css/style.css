@@ -22621,12 +22621,8 @@ http://flickity.metafizzy.co
   float: right;
   width: 50%;
 }
-@media only screen and (max-width: 1000px){
 
-  .title-goods{
-    margin-right: 10% !important;
-  }
-}@media only screen and (max-width: 1019px){
+@media only screen and (max-width: 1019px){
 
   #the-goods h3 {
      margin-right: 0px !important;
@@ -22638,18 +22634,10 @@ http://flickity.metafizzy.co
   #the-goods h3 {
      font-size: 52px;
   }
-  #the-goods h1{
-    margin-right: 17%;
-  }
-  .title-goods{
-    margin-right: 4.5%;
-  }
+
 }
 @media only screen and (min-width: 1200px){
 
-  .title-goods{
-    margin-right: 1.5%;
-  }
   #the-goods h3 {
      font-size: 60px;
   }
