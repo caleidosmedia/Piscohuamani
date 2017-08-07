@@ -7020,7 +7020,7 @@ body .slider-text-oficial2 {
 }
 @media only screen and (min-width: 798px) {
   #about-us .leyenda-about, #the-goods h3, #follow-us h3, #events .h1 {
-    font-size: 60px;
+    font-size: 58px;
   }
   .date a:first-child{
     margin-right: 26px;
@@ -22619,6 +22619,17 @@ http://flickity.metafizzy.co
 }
 .title-goods{
   text-align: right;
+  margin-right: 10%;
+}
+@media only screen and (min-width: 1200px){
+
+  #the-goods h3 {
+     margin-right: 0px !important;
+     font-size: 52px;
+  }
+  #the-goods h1{
+    margin-right: 17%;
+  }
 }
 .idio{
   float: right;
