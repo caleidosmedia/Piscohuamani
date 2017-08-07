@@ -22624,13 +22624,10 @@ http://flickity.metafizzy.co
 @media only screen and (max-width: 1000px){
 
   .title-goods{
-    margin-right: 10%;
+    margin-right: 10% !important;
   }
 }@media only screen and (max-width: 1019px){
 
-  .title-goods{
-    margin-right: 10%;
-  }
   #the-goods h3 {
      margin-right: 0px !important;
      font-size: 52px;
