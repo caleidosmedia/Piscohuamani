@@ -7205,7 +7205,7 @@ body .slider-text-oficial2 {
 }
 @media only screen and (max-width: 1195px) {
   #make-drink .gallery-button-left {
-    left: 120px;
+    left: 13% !important;
   }
 }
 @media only screen and (max-width: 1366px) {
