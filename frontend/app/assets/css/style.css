@@ -7210,7 +7210,7 @@ body .slider-text-oficial2 {
 }
 @media only screen and (max-width: 1366px) {
   #make-drink .gallery-button-left {
-    left: 220px;
+    left: 3%;
   }
 }
 
@@ -8843,7 +8843,7 @@ footer .col-md-3 p a:hover {
     width: 100%;
   }
   #make-drink .gallery-wrapper .gallery-button-left {
-    left: 35px;
+    left: 9%;
   }
   #make-drink .gallery-wrapper .gallery-button-right {
     right: 35px;
