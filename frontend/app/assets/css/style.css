@@ -22621,6 +22621,13 @@ http://flickity.metafizzy.co
   text-align: right;
   margin-right: 10%;
 }
+@media only screen and (max-width: 1000px){
+
+  .title-goods{
+    margin-right: 0%;
+  }
+}
+
 @media only screen and (min-width: 1200px){
 
   #the-goods h3 {
@@ -22629,6 +22636,9 @@ http://flickity.metafizzy.co
   }
   #the-goods h1{
     margin-right: 17%;
+  }
+  .title-goods{
+    margin-right: 4.5%;
   }
 }
 .idio{
