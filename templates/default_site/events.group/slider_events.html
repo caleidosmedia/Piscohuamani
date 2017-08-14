@@ -1,12 +1,19 @@
 {exp:channel:entries channel="events" dinamyc="off" sort="desc" orderby="date"}
   <div id="#{count}" class="text-opacity hidden events-slide" data-index="{count}"
   data-current="0" data-selected="{embed:selected_id}" data-slide-id="{entry_id}">
+   {if "{transcribe:language_abbreviation}" == "es"}
+      <a class="regreso" href="http://piscohuamani.caleidosmedia.com/es/home"><img src="{site_url}frontend/app/assets/img/iconos-logos/flecha-regresar.png" alt="">
+   Regresar</a>
+    {if:else}
+      <a class="regreso" href="http://piscohuamani.caleidosmedia.com/en/home"><img src="{site_url}frontend/app/assets/img/iconos-logos/flecha-regresar.png" alt="">
+   Regresar</a>
+    {/if}
     <h2 class="text-uppercase mt-0-xs mt-0-sm">{titulo_events}</h2>
     <div class="separador mt-14 mb-28"></div>
     <p class="fecha-evento fz-20 thin">
       {if '{exp:transcribe:language_abbreviation}' == 'en'}
         {entry_date format="%F %d<sup>%S</sup>"}
-      {if:else} 
+      {if:else}
         {exp:datetime_convert language="es_ES" format="%d de %B" convert_entities="yes|no"}
           {entry_date format="%F %d"}
         {/exp:datetime_convert}
