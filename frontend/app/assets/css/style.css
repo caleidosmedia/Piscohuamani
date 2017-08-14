@@ -6729,11 +6729,10 @@ body .slider-text-oficial2 {
   font-size: 18px;
   font-weight: lighter;
   width: 162px;
-  height: 39px;
   outline: none;
-  line-height: 34px;
   display: inline-block;
   z-index: 3;
+  padding: 6px;
 
   }
 
@@ -7075,6 +7074,7 @@ body .slider-text-oficial2 {
   background-color: #3b2e29;
   font-family: "Avenir";
   transition: all .5s;
+  overflow: hidden;
 
 }
 
@@ -22657,7 +22657,7 @@ http://flickity.metafizzy.co
   background: transparent;
   border-radius: 0px;
   border: 0px;
-  display: inline-block;
+  display: inline-table;
   float: none !important;
 
 }
