@@ -16,10 +16,10 @@ $(document).ready(function() {
 
 	if (bShow) {
 		var entry_id = localStorage.getItem("slide_id");
-		var $gallery = $(".gallery-child").flickity();
+		/*var $gallery = $(".gallery-child").flickity();
 		var $gallery_items = $gallery.find(".gallery-cell");
-		var gallery_index = getGalleryIndex($gallery_items, entry_id);
-		$gallery.flickity( 'select', gallery_index, false, true ); 
+		var gallery_index = getGalleryIndex($gallery_items, entry_id);*/
+		$gallery.flickity( 'select', gallery_index, false, true );
 
 	}
 
