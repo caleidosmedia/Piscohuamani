@@ -22684,5 +22684,11 @@ http://flickity.metafizzy.co
 }
 .f-l{
     float: left;
+    margin-left: 0px;
+}
+
+@media only screen and (max-width: 1000px){
+  .f-l{
     margin-left: 6px;
+  }
 }
