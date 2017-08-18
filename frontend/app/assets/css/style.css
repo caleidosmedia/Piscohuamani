@@ -426,7 +426,10 @@ hr {
   background: #3b2e29;
   border: 1px solid #f8f4e5;
   color: #f8f4e5;
-  padding: 3px;
+  padding: 4px 8px;
+}
+.idiomaH select {
+  -webkit-appearance: none;
 }
 .idiomaH select:focus {
     outline: none;
