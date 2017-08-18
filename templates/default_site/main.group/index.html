@@ -47,6 +47,64 @@
               </div>
             </div>
           </div>
+
+
+          <div id="formulario" class="relative" style="z-index:2">
+            <form class="date clearfix text-center relative" action="{path='home'}">
+              <div class="row">
+                <div class="col-md-6">
+                  {if "{transcribe:language_abbreviation}" == "es"}
+                    <a href="http://piscohuamani.caleidosmedia.com/es/home">
+                      <div class="enter">SI</div>
+                    </a>
+                  {if:else}
+                    <a href="http://piscohuamani.caleidosmedia.com/en/home">
+                      <div class="enter"> YES</div>
+                    </a>
+                  {/if}
+                </div>
+                <div class="col-md-6">
+                  {if "{transcribe:language_abbreviation}" == "es"}
+                    <a href="#">
+                      <div class="enter">NO </div>
+                    </a>
+                  {if:else}
+                    <a href="#">
+                      <div class="enter"> NO </div>
+                    </a>
+                  {/if}
+                </div>
+              </div>
+
+              <div class="row idio">
+                <div class="col-md-6">
+                  <div style="text-align: center;" class="btn-group p-0 col-xs-12 ml-0 col-md-12 pr-0-xs" role="group" aria-label="...">
+                    {exp:transcribe:language_links}
+                      {languages}
+                          <a href="{link}" class="btn btn-default btn-language text-white {if current}active{/if}">{name}</a>
+                      {/languages}
+                  {/exp:transcribe:language_links}
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div style="text-align: center;" class="btn-group p-0 col-xs-12 ml-0 col-md-12 pr-0-xs" role="group" aria-label="...">
+                    {exp:transcribe:language_links}
+                      {languages}
+                          <a href="{link}" class="btn btn-default btn-language text-white {if current}active{/if}">{name}</a>
+                      {/languages}
+                  {/exp:transcribe:language_links}
+                  </div>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+
+
+
+
+
         </div>
       </div>
     {/exp:channel:entries}
