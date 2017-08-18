@@ -22647,7 +22647,6 @@ http://flickity.metafizzy.co
   }
 }
 .idio{
-  float: right;
   margin-top: 15px;
 }
 .idio a{
@@ -22675,4 +22674,11 @@ http://flickity.metafizzy.co
 }
 .regreso img{
   margin-right: 5px;
+}
+
+.f-r{
+    float: right;
+}
+.f-l{
+    float: left;
 }
