@@ -426,7 +426,7 @@ hr {
   background: #3b2e29;
   border: 1px solid #f8f4e5;
   color: #f8f4e5;
-  padding: 4px 8px;
+  padding: 4px 7px 4px 8px;
 }
 .idiomaH select {
   -webkit-appearance: none;
