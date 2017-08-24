@@ -426,7 +426,7 @@ hr {
   background: #3b2e29;
   border: 1px solid #f8f4e5;
   color: #f8f4e5;
-  padding: 4px 8px;
+  padding: 4px 4px 4px 8px !important;
 }
 .idiomaH select {
   -webkit-appearance: none;
@@ -7065,8 +7065,8 @@ body .slider-text-oficial2 {
   text-align: center;
 }
 #about-us .imagen img {
-  width: 264px;
-  max-height: 789px;
+  width: 350px;
+  max-height: 980px;
   margin-top: 6rem !important;
 }
 
@@ -8428,7 +8428,7 @@ footer .col-md-3 p a:hover {
 
 @media only screen and (min-width: 350px){
   #about-us .container .row .col-md-6 .texto-about {
-    padding: 70px 0 9px !important;
+    padding: 30px 0 9px !important;
   }
   #follow-us{
     padding-top: 40px

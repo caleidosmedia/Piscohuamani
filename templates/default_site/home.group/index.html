@@ -7,9 +7,9 @@
           {embed="includes/overlay-menu" about="#about-us" goods="#the-goods" make="#make-drink" events="#events"}
           <div class="img-principal text-center minhp-100 relative" id="background">
             <div class="overlay-fondo w-100 minhp-100 absolute"></div>
-            <div class="texto pt-42 text-white letter-spacing relative">
+            <div class="texto pt-42 text-white relative">
               <h1 class="mb-7 text-uppercase family-verdana" style="color:#f8f4e5;">{titulo_home}</h1>
-              <h3 class="pt-21 fz-45 family-across">{leyenda_home}</h3>
+              <h3 class="fz-45 family-across">{leyenda_home}</h3>
               <div class="scroll-down relative">
                 <a href="#about-us" class="active-hover active" data-scroll=""><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-scrolldown.png" alt=""></a>
               </div>
@@ -29,11 +29,11 @@
           <section id="about-us" class="pb-42 relative" style="background-image:url({site_url}frontend/app/assets/img/texturas/debut_light/textura2-crema.png);">
             <div class="container ph-14-sm pv-70-md pv-0-xs ph-42-xs mh-14-xs">
               <div class="row">
+                <h2 class="leyenda-about text-brown family-across">{leyenda_about_us}</h2>
                 <div class="col-md-6">
-                  <h2 class="leyenda-about text-brown hidden-xs family-across">{leyenda_about_us}</h2>
                   {embed=home/about_us}
                 </div>
-                <div class="col-md-6 imagen pt-70-md mt-70-md hidden-xs hidden-sm">
+                <div class="col-md-6 imagen hidden-xs hidden-sm">
                   {botella_principal}
                     <img src="{image:url}" alt="">
                   {/botella_principal}
@@ -46,8 +46,8 @@
             <div class="container-lg relative pt-56-md ph-7-xs">
               <div class="container pl-14-md pl-42-xs relative" style="z-index:1">
                 <div class="title-goods">
-                  <h3 class="text-white  mb-21 hidden-smm family-across">{leyenda_the_goods}</h3>
-                  <h1 class="text-white fz-42 text-uppercase mt-0">{the_goods_titulo}</h1>
+                  <h3 class="text-white  mb-21 family-across">{leyenda_the_goods}</h3>
+                  <h1 class="text-white m-0 fz-42 text-uppercase">{the_goods_titulo}</h1>
                 </div>
               </div>
               <div class="gallery-wrapper row">
