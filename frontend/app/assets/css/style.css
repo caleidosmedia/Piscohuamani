@@ -9414,7 +9414,7 @@ footer .col-md-3 p a:hover {
 
 #events, #slider-events {
   min-height: 80% !important;
-  min-height: 1000vh !important;
+  min-height: 100vh !important;
 }
 
 @media (min-width: 992px) {
