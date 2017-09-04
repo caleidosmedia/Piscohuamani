@@ -7075,14 +7075,22 @@ body .slider-text-oficial2 {
 /*
   The goods
 */
-#the-goods, #events, #slider-events {
+#the-goods, #events {
   background-color: #3b2e29;
   font-family: "Avenir";
   transition: all .5s;
   overflow: hidden;
 
 }
-
+#slider-events{
+  background: #f8f4e5;
+  font-family: "Avenir";
+  transition: all .5s;
+  overflow: hidden;
+}
+#text-eventos{
+  color: #3b2e29 !important;
+}
 #the-goods .gallery, #events .gallery, #slider-events .gallery {
   height: 630px;
   padding-top: 115px;
