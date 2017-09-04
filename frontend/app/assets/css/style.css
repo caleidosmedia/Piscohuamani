@@ -7088,7 +7088,7 @@ body .slider-text-oficial2 {
   transition: all .5s;
   overflow: hidden;
 }
-#text-eventos{
+#text-eventos #slider-text-experience{
   color: #3b2e29 !important;
 }
 #the-goods .gallery, #events .gallery, #slider-events .gallery {
