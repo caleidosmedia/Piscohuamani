@@ -6948,9 +6948,11 @@ body .slider-text-oficial2 {
   justify-content: center;
   -ms-flex-pack: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: 60px;
-  padding-top: 60px;
+  background-size: 100% 100%;
+  transition: all 500ms;
+}
+.img-principal:hover {
+  background-size: 105% 105%;
 }
 .img-principal div.texto {
   font-family: times;
