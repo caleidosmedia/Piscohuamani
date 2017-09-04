@@ -6734,6 +6734,11 @@ body::-webkit-scrollbar {
   background-size: cover;
   background-position-y: 60px;
   padding-top: 60px;
+  background-size: 100% 100%;
+  transition: all 500ms;
+}
+.img-principal:hover {
+  background-size: 150% 150%;
 }
 .img-principal div.texto {
   font-family: times;
@@ -21529,7 +21534,7 @@ http://flickity.metafizzy.co
 
 @font-face {
   font-family: "Yaquote";
-    src: url('../fonts/original_YaquoteScript_PersonalUse.eot?#iefix') format('embedded-opentype'), 
+    src: url('../fonts/original_YaquoteScript_PersonalUse.eot?#iefix') format('embedded-opentype'),
          url('../fonts/original_YaquoteScript_PersonalUse.woff') format('woff'),
          url('../fonts/original_YaquoteScript_PersonalUse.ttf') format('truetype'),
          url('../fonts/original_YaquoteScript_PersonalUse.svg') format('svg');
