@@ -7095,7 +7095,7 @@ body .slider-text-oficial2 {
   line-height: 32px;
 }
 #alt-events #slider-events{
-  min-width: auto !important;
+  min-height: auto !important;
 }
 #the-goods .gallery, #events .gallery, #slider-events .gallery {
   height: 630px;
