@@ -4,25 +4,27 @@
       {embed="includes/header" huamani="{path='home'}" about="{path='home'#about-us}" goods="{path='home'}#the-goods" make="{path='home'}#make-drink" events="{path='home'}#events" scroll-event="scroll-event"}
       <main class="site-content">
         {embed="includes/overlay-menu" about="{path='home'#about-us}" goods="{path='home'}#the-goods" make="{path='home'}#make-drink" events="{path='home'}#events"}
-        <section id="slider-events" class="relative">
-          <div class="gallery-wrapper row p-0" id="text-eventos">
-            <div class="container relative clearfix pt-42 mt-70 pl-42" style="z-index:3">
-              <div id="slider_back_experience" class="gallery-button-left">
-                <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-previo-gris.png" alt="">
-              </div>
-              <div id="slider_next_experience" class="gallery-button-right">
-                <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-gris.png" alt="">
-              </div>
-              <div class="slider-selected container-text-opacity row pb-70 mb-70 pl-42 pr-70 absolute">
-                {embed="events/slider_events"}
-                <div class="clearfix ">
-                  <div id="slider-text-experience" data-selected="{embed:selected_id}" class="slider-text-oficial relative pl-0 pr-42 pt-21 text-white col-md-5" style="z-index: 1;">
+        <div id="alt-events">
+          <div id="slider-events" class="relative">
+            <div class="gallery-wrapper row p-0" id="text-eventos">
+              <div class="container relative clearfix pt-42 mt-70 pl-42" style="z-index:3">
+                <div id="slider_back_experience" class="gallery-button-left">
+                  <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-previo-gris.png" alt="">
+                </div>
+                <div id="slider_next_experience" class="gallery-button-right">
+                  <img src="{site_url}frontend/app/assets/img/iconos-logos/icono-siguiente-gris.png" alt="">
+                </div>
+                <div class="slider-selected container-text-opacity row pb-70 mb-70 pl-42 pr-70 absolute">
+                  {embed="events/slider_events"}
+                  <div class="clearfix ">
+                    <div id="slider-text-experience" data-selected="{embed:selected_id}" class="slider-text-oficial relative pl-0 pr-42 pt-21 text-white col-md-5" style="z-index: 1;">
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
         <section id="galeria">
           <div class="container-galeria pv-70-md pv-0-xs">
             <div class="grid">

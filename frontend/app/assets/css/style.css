@@ -7091,6 +7091,12 @@ body .slider-text-oficial2 {
 #text-eventos #slider-text-experience{
   color: #3b2e29 !important;
 }
+#text-eventos #slider-text-experience p{
+  line-height: 32px;
+}
+#alt-events #slider-events{
+  min-width: auto !important;
+}
 #the-goods .gallery, #events .gallery, #slider-events .gallery {
   height: 630px;
   padding-top: 115px;
