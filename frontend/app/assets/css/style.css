@@ -6949,7 +6949,7 @@ body .slider-text-oficial2 {
   -ms-flex-pack: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  transition: all 500ms;
+  transition: all 0.5s;
 }
 .img-principal:hover {
   background-size: 105% 105%;

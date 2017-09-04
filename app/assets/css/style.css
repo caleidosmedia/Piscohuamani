@@ -6734,7 +6734,7 @@ body::-webkit-scrollbar {
   background-position-y: 60px;
   padding-top: 60px;
   background-size: 100% 100%;
-  transition: all 500ms;
+  transition: all 0.5s;
 }
 .img-principal:hover {
   background-size: 105% 105%;
