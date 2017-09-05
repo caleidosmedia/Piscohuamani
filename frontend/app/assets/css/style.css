@@ -6949,12 +6949,17 @@ body .slider-text-oficial2 {
   -ms-flex-pack: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: zoom 30s infinite;
+  animation: imagebulger 2s infinite;
 }
-@keyframes zoom {
-    0% { transform:scale(1,1); }
-    50% { transform:scale(1.2,1.2); }
-    100% { transform:scale(1,1); }
+@keyframes imagebulger {
+  0%, 100% {
+    background-size: 100% auto;
+    -webkit-background-size: 100%;
+  }
+  50% {
+    background-size: 50% auto;
+    -webkit-background-size: 50%;
+  }
 }
 
 .img-principal div.texto {
