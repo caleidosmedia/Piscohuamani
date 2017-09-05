@@ -17,8 +17,8 @@ $(document).ready(function(){
 		}, 1000);
 		e.preventDefault();
 	});
-	/*$("a.smooth").click(function(e){
+	$("a.smooth").click(function(e){
 		e.preventDefault();
 		$("html, body").stop().animate({scrollTop: $($(this).attr("href")).offset().top - 80}, 1000);
-	});*/
+	});
 });
