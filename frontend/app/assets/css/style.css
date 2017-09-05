@@ -6948,12 +6948,15 @@ body .slider-text-oficial2 {
   justify-content: center;
   -ms-flex-pack: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  transition: all 0.5s;
+  background-size: cover;
+  animation: breath 4s linear infinite;
 }
-.img-principal:hover {
-  background-size: 105% 105%;
+@keyframes breath {
+  0%   { background-size: 100% auto; }
+  50% { background-size: 140% auto; }
+  100% { background-size: 100% auto; }
 }
+
 .img-principal div.texto {
   font-family: times;
   position: absolute;
