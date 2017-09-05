@@ -22714,3 +22714,14 @@ http://flickity.metafizzy.co
     margin-left: 6px;
   }
 }
+.moneda{
+  background: red;
+  height: 140px;
+  width: 140px;
+  position: absolute;
+  bottom: 0px;
+  right: -140px;
+}
+#slider-text-goods {
+  position: relative;
+}
