@@ -7101,6 +7101,13 @@ body .slider-text-oficial2 {
 #text-eventos #slider-text-experience p{
   line-height: 32px;
 }
+
+@media only screen and (min-width: 700px) {
+  #text-eventos .mb-70{
+    margin-bottom: 0rem !important;
+  }
+}
+
 #alt-events #slider-events{
   min-height: auto !important;
 }
