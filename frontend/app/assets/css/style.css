@@ -6949,16 +6949,11 @@ body .slider-text-oficial2 {
   -ms-flex-pack: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: scale 40s linear infinite;
+  animation: animatedBackground 40s linear infinite;
 }
-@keyframes scale {
-  50% {
-    -webkit-transform:scale(1.2);
-    -moz-transform:scale(1.2);
-    -ms-transform:scale(1.2);
-    -o-transform:scale(1.2);
-    transform:scale(1.2);
-  }
+@keyframes animatedBackground {
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
 }
 
 .img-principal div.texto {
@@ -22728,11 +22723,7 @@ http://flickity.metafizzy.co
     margin-left: 6px;
   }
 }
-.moneda{
-  position: absolute;
-  bottom: 0px;
-  right: -140px;
-}
+
 #slider-text-goods {
   position: relative;
 }
