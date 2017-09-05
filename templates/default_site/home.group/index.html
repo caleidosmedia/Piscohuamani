@@ -14,17 +14,6 @@
                 <a href="#about-us" class="active-hover active" data-scroll=""><img src="{site_url}frontend/app/assets/img/iconos-logos/icono-scrolldown.png" alt=""></a>
               </div>
             </div>
-            <script>
-              var backgrounds = [
-                {embed="home/img_header"}
-              ]
-                var i = Math.floor(Math.random()*4);
-
-                var bg_id = document.getElementById('background');
-
-                bg_id.style.backgroundImage = 'url('+backgrounds[i]+')';
-                bg_id.style.backgroundPosition =  'auto 30%';
-            </script>
           </div>
           <section id="about-us" class="pb-42 relative" style="background-image:url({site_url}frontend/app/assets/img/texturas/debut_light/textura2-crema.png);">
             <div class="container ph-14-sm pv-70-md pv-0-xs ph-42-xs mh-14-xs">
@@ -137,13 +126,19 @@
     <script src="{site_url}frontend/app/assets/js/scroll-control.js"></script>
     <script src="{site_url}frontend/app/assets/js/faqs-control.js"></script>
     <script>
+      var backgrounds = [
+        {embed="home/img_header"}
+      ]
       function eventRedirect(element) {
           var entry_id = $(element).attr("data-entry-id");
           var bExists = localStorage.getItem("slide_id") != null;
           if (bExists) localStorage.removeItem("slide_id");
           localStorage.setItem("slide_id", entry_id);
-	  return true;
+    return true;
       }
-
+      $(document).ready(function () {
+        var i = Math.floor(Math.random()*4)
+        $("#background").attr("style", "background-image: url("+backgrounds[i]+"); background-position-y:30%");
+      });
     </script>
   </body>
