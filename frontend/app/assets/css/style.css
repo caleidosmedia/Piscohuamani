@@ -6949,16 +6949,15 @@ body .slider-text-oficial2 {
   -ms-flex-pack: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: imagebulger 2s infinite;
+  animation: scale 40s linear infinite;
 }
-@keyframes imagebulger {
-  0%, 100% {
-    background-size: 100% auto;
-    -webkit-background-size: 100%;
-  }
+@keyframes scale {
   50% {
-    background-size: 50% auto;
-    -webkit-background-size: 50%;
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
   }
 }
 
