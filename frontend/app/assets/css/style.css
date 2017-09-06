@@ -6949,7 +6949,15 @@ body .slider-text-oficial2 {
   -ms-flex-pack: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: scale 40s linear infinite;
+  animation: animatedBackground 40s linear infinite;
+}
+@keyframes animatedBackground {
+  from {
+    background-position: 0px 0px; }
+
+  to {
+    background-position: 100% 0px; }
+  }
 }
 @keyframes scale {
   50% {
@@ -6959,8 +6967,6 @@ body .slider-text-oficial2 {
     -o-transform:scale(1.2);
     transform:scale(1.2);
   }
-}
-
 .img-principal div.texto {
   font-family: times;
   position: absolute;
@@ -7074,9 +7080,9 @@ body .slider-text-oficial2 {
   text-align: center;
 }
 #about-us .imagen img {
-  width: 350px;
-  max-height: 980px;
-  margin-top: 6rem !important;
+  width: 324px;
+  max-height: 935px;
+  margin-top: 3.8rem !important;
 }
 
 /*
