@@ -6949,16 +6949,9 @@ body .slider-text-oficial2 {
   -ms-flex-pack: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: animatedBackground 40s linear infinite;
+  animation: scale 40s linear infinite;
 }
-@keyframes animatedBackground {
-  from {
-    background-position: 0px 0px; }
 
-  to {
-    background-position: 100% 0px; }
-  }
-}
 @keyframes scale {
   50% {
     -webkit-transform:scale(1.2);
