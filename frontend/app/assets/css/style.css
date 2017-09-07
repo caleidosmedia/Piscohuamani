@@ -22736,7 +22736,7 @@ http://flickity.metafizzy.co
 #container-ronda{
   padding-bottom: 80px;
 }
-@media only screen and (min-width: 700px){
+@media only screen and (max-width: 700px){
   #container-ronda{
     padding-bottom: 30px;
   }
