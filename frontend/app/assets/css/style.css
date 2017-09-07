@@ -7125,11 +7125,18 @@ body .slider-text-oficial2 {
 #the-goods .flickity-viewport, #events .flickity-viewport, #slider-events .flickity-viewport {
   height: 500px !important;
 }
-#the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
+#events .flickity-viewport img, #slider-events .flickity-viewport img {
   padding-top: 150px;
   width: 180px;
   height: auto;
 }
+
+#the-goods .flickity-viewport img{
+  padding-top: 150px;
+  width: auto;
+  height: 790px;
+}
+
 #the-goods h1, #events h1, #slider-events h1 {
   font-size: 35px;
   font-size: 2.5rem;
