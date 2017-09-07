@@ -7102,7 +7102,7 @@ body .slider-text-oficial2 {
   line-height: 32px;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 350px) {
   #text-eventos .mb-70{
     margin-bottom: 0rem !important;
   }
@@ -9316,12 +9316,6 @@ footer .col-md-3 p a:hover {
   #slider-events .container .container-text-opacity {
     bottom: 40px;
     width: auto !important;
-  }
-  @media (max-width: 480px) {
-    #slider-events .container .container-text-opacity {
-      bottom: 10px;
-      width: auto !important;
-    }
   }
 
   #slider-events .container .gallery_button_left {
