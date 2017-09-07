@@ -22733,6 +22733,11 @@ http://flickity.metafizzy.co
   position: relative;
 }
 
-.container-ronda{
+#container-ronda{
   padding-bottom: 80px;
+}
+@media only screen and (min-width: 700px){
+  #container-ronda{
+    padding-bottom: 30px;
+  }
 }
