@@ -9317,6 +9317,13 @@ footer .col-md-3 p a:hover {
     bottom: 40px;
     width: auto !important;
   }
+  @media (max-width: 480px) {
+    #slider-events .container .container-text-opacity {
+      bottom: 10px;
+      width: auto !important;
+    }
+  }
+
   #slider-events .container .gallery_button_left {
     left: 0% !important;
   }
