@@ -7058,7 +7058,7 @@ body .slider-text-oficial2 {
   font-weight: 300;
 }
 #about-us .texto-about {
-  padding: 0px;
+  padding: 12px 2px; /*Cambios responsive 11/09 */
 }
 #about-us .texto-about .separador {
   border-bottom: 1px solid #4e3227;
@@ -7276,7 +7276,7 @@ body .slider-text-oficial2 {
   padding-left: 10px;
 }
 #make-drink .make-text #slider-text-make {
-  padding-top: 30px;
+  /*padding-top: 30px;*/
   z-index: 1;
 }
 #make-drink .make-text #slider-text-make .subtitle {
@@ -7482,6 +7482,9 @@ body .slider-text-oficial2 {
   }
 }
 @media only screen and (max-width: 360px) {
+  #events .row .gallery-button-left{
+    left: 3%;
+  }
   #follow-us .container-social {
     padding-left: 7.7%;
   }
@@ -8770,7 +8773,7 @@ footer .col-md-3 p a:hover {
     font-size: 21px;
   }
   #about-us .container .row .col-md-6 .texto-about p {
-    padding-top: 30px;
+    padding-top: 9px;
   }
   #about-us .gallery-cell {
     text-align: center;
