@@ -7021,6 +7021,18 @@ body .slider-text-oficial2 {
     font-size: 35.5px;
   }
 }
+
+
+@media only screen and (max-width: 450px) {
+  #about-us .texto-about {
+    margin: 35px 0;
+    padding: 0px;
+  }
+  #events .row .gallery-button-left{
+    left: 3%;
+  }
+}
+
 @media only screen and (min-width: 480px) {
   #about-us {
     padding-top: 0px
@@ -7048,6 +7060,7 @@ body .slider-text-oficial2 {
   }
 
 }
+
 
 #about-us h1 {
   font-size: 35px;
