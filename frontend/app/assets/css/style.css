@@ -8469,6 +8469,21 @@ footer .col-md-3 p a:hover {
   }
 }
 
+@media only screen and (max-width: 700px){/*responsive desde 0 hasta 320*/
+  #galeria .container .grid #overlay img {
+    height: 38%;
+    width: initial;
+  }
+  #galeria .grid #overlay img {
+    height: 31%;
+  }
+    #galeria .container .grid {
+    margin-top: 70px !important;
+    display: inline-block !important;
+    width: 100%  !important;
+  }
+}
+
 @media only screen and (max-width: 355px) {
   /*RESPONSIVE FORMULARIO*/
   .idiomaH {
@@ -22669,7 +22684,7 @@ http://flickity.metafizzy.co
 }
 
 .container-galeria{
-  width: 1060px;
+  width: 100%;
   margin: 0 auto;
 }
 .title-goods{
