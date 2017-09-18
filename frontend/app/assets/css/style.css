@@ -21,6 +21,11 @@ body {
   margin: 0;
 }
 
+.family-across {
+    font-family: "Yaquote" !important;
+    display: none;
+}
+
 article,
 aside,
 details,
