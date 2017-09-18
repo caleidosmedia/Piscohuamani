@@ -21,9 +21,8 @@ body {
   margin: 0;
 }
 
-.family-across {
-    font-family: "Yaquote" !important;
-    display: none;
+.t-none{
+  display: none;
 }
 
 article,
@@ -6732,7 +6731,7 @@ body .slider-text-oficial2 {
 .enter {
   background-color: #BDBCBB;
   border: 1px solid #f8f4e5;
-  color: #f8f4e5;
+  color: #3e302b;
   border-radius: 0;
   font-size: 18px;
   font-weight: lighter;
