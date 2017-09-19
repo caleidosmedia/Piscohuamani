@@ -6953,7 +6953,7 @@ body .slider-text-oficial2 {
   -ms-flex-pack: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: scale 40s linear infinite;
+  /*animation: scale 40s linear infinite;*/
 }
 
 @keyframes scale {
