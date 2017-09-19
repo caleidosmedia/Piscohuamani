@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    {if "{transcribe:language_abbreviation}" == "es"}
+      <title>{title} PISCO HUAMANÍ - Descubre la tradición</title>
+    {if:else}
+      <title>{title} PISCO HUAMANÍ - Discover the tradition</title>
+    {/if}
     <meta charset="utf-8">
       {exp:seo_lite default_title='{embed:titulo}'
         {if "{transcribe:language_abbreviation}" == "es"}
