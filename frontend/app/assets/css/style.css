@@ -22694,7 +22694,7 @@ http://flickity.metafizzy.co
 }
 .title-goods{
   float: right;
-  width: 50%;
+  /*width: 50%;*/
 }
 @media only screen and (max-width: 1000px){
   .title-goods{
