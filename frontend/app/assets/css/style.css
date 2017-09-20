@@ -5436,6 +5436,14 @@ tbody.collapse.in {
 }
 
 /* EBM:RESPONSIVE FONT RESIZE */
+
+.control-izquierdo1,
+.control-derecho2{
+    top: 164px !important;
+    width: 28px !important;
+    border: 1px solid white !important;
+    padding: 5px !important;
+  }
 html {
   font-size: 14px;
 }
@@ -8038,16 +8046,32 @@ footer .col-md-3 p a:hover {
   }
 }
 
-#galeria .grid #overlay a {
-  right: 25%;
-  top: 10%;
-  position: absolute;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 40px;
+@media only screen and (max-width: 500px){
+  #galeria .grid #overlay a {
+      right: 2%;
+      top: -1%;
+      position: absolute;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 74px;
+    }
+  #galeria .grid #overlay a:hover {
+    color: #8d744a;
+    }
 }
-#galeria .grid #overlay a:hover {
-  color: #8d744a;
+
+@media only screen and (min-width: 501px){
+  #galeria .grid #overlay a {
+    right: 25%;
+    top: 10%;
+    position: absolute;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 40px;
+  }
+  #galeria .grid #overlay a:hover {
+    color: #8d744a;
+  }
 }
 
 #galeria .grid #overlay .controls {
@@ -8463,23 +8487,23 @@ footer .col-md-3 p a:hover {
     margin-left: 6px;
   }
 }
-@media only screen and (min-width: 320px){
+/*@media only screen and (min-width: 320px){
   #galeria .container .grid #overlay img {
     height: 38%;
     width: initial;
   }
   #galeria .grid #overlay img {
-    height: 31%;
+    height: 55%;
   }
-}
+}*/
 
-@media only screen and (max-width: 700px){/*responsive desde 0 hasta 320*/
+@media only screen and (max-width: 700px){/*responsive desde 0 hasta 700*/
   #galeria .container .grid #overlay img {
-    height: 38%;
+    height: 55%;
     width: initial;
   }
   #galeria .grid #overlay img {
-    height: 47%;
+    height: 55%;
   }
     #galeria .container .grid {
     margin-top: 70px !important;
@@ -9353,7 +9377,7 @@ footer .col-md-3 p a:hover {
   #slider-events .container {
     min-height: 100% !important;
     min-height: 100vh !important;
-    margin-top: 0px !important;
+    margin-top: 38px !important;
   }
   #slider-events .container .container-text-opacity {
     /*bottom: 40px;*/
