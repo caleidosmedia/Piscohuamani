@@ -5441,7 +5441,6 @@ tbody.collapse.in {
 .control-derecho2{
     top: 164px !important;
     width: 28px !important;
-    border: 1px solid white !important;
     padding: 5px !important;
   }
 html {
@@ -8900,7 +8899,7 @@ footer .col-md-3 p a:hover {
   }
 
   #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
-    height: 325px !important;
+    height: 249px !important;
   }
 
   #the-goods .gallery-button-right, #events .gallery-button-right, #slider-events .gallery-button-right,
@@ -9377,7 +9376,6 @@ footer .col-md-3 p a:hover {
   #slider-events .container {
     min-height: 100% !important;
     min-height: 100vh !important;
-    margin-top: 38px !important;
   }
   #slider-events .container .container-text-opacity {
     /*bottom: 40px;*/
@@ -22737,6 +22735,12 @@ http://flickity.metafizzy.co
 .title-goods{
   float: right;
   /*width: 50%;*/
+}
+@media only screen and (min-width: 800px){
+  .title-goods{
+    float: right;
+    padding-right: 41px;
+  }
 }
 @media only screen and (max-width: 1000px){
   .title-goods{
