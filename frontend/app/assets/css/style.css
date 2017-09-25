@@ -9510,8 +9510,8 @@ footer .col-md-3 p a:hover {
 @media only screen and (min-width: 1px) and (max-width: 479px) {
   /*THE GOODS*/
   #follow-us{
-    /*padding-left: 9% !important;
-    padding-right: 0% !important;*/
+    padding-left: 9% !important;
+    padding-right: 0% !important;
   }
 }
 
