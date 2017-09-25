@@ -22829,3 +22829,11 @@ http://flickity.metafizzy.co
     padding-bottom: 30px;
   }
 }
+
+#alt-events #slider-events {
+    height: 450px!important;
+}
+
+.img-principal#background {
+    background-position: center center !important;
+}
