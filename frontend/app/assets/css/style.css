@@ -5467,6 +5467,24 @@ html {
     margin-bottom: 0.71429rem;
   }
 }
+
+@media only screen and (min-width: 670px){
+  .control-izquierdo1,
+  .control-derecho2{
+    top: 211px !important;
+    width: 28px !important;
+    padding: 5px !important;
+  }
+}
+@media only screen and (min-width: 684px) and (max-width: 1250px) {
+  .control-izquierdo1,
+  .control-derecho2{
+    top: -16px !important;
+    width: 37px !important;
+    padding: 0px !important;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 11px;
@@ -7471,7 +7489,7 @@ body .slider-text-oficial2 {
 }
 #events .row .gallery-button-left, #slider-events .row .gallery-button-left {
   z-index: 1;
-  left: 192px;
+  left: 6px;
 }
 
 #events .row .gallery-button-right, #slider-events .row .gallery-button-right,
@@ -7592,10 +7610,10 @@ footer {
   color: #3b2e29;
 }
 footer .footer-logo {
-  width: 136px;
+  /*width: 50%;*/
 }
 footer .texto {
-  padding-left: 10%;
+  /*padding-left: 10%;*/
 }
 footer p {
   font-size: 14px;
@@ -7610,16 +7628,16 @@ footer .col-md-3 p {
 
 @media(min-width: 768px){
   footer .col-md-3 p {
-    padding-left: 14px;
+    padding-right: 39px;
   }
 }
 
-footer .col-md-3 p a {
+footer .light p a {
   border-bottom: 1px solid #3b2e29;
   text-decoration: none;
   color: #3b2e29;
 }
-footer .col-md-3 p a:hover {
+footer .light p a:hover {
   color: #4e3227;
 }
 
@@ -8002,7 +8020,7 @@ footer .col-md-3 p a:hover {
     top: 70%;
   }
   #galeria .grid #overlay img {
-    height: auto;
+    height: 55%;
   }
   #slider-events .gallery-wrapper.row .container .gallery-button-right,
   #slider-events .gallery-wrapper.row .container .gallery-button-left {
@@ -8028,7 +8046,7 @@ footer .col-md-3 p a:hover {
   }
 }
 
-@media only screen and (min-width: 798px){
+@media only screen and (min-width: 680px){
   #galeria  .grid #overlay img {
     height: 60% !important;
     width: initial;
@@ -8046,7 +8064,7 @@ footer .col-md-3 p a:hover {
   }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 800px){
   #galeria .grid #overlay a {
       right: 2%;
       top: -1%;
@@ -8060,7 +8078,7 @@ footer .col-md-3 p a:hover {
     }
 }
 
-@media only screen and (min-width: 501px){
+@media only screen and (min-width: 700px){
   #galeria .grid #overlay a {
     right: 25%;
     top: 10%;
@@ -8522,9 +8540,9 @@ footer .col-md-3 p a:hover {
   }
 }
 
-@media only screen and (min-width: 350px){
+@media only screen and (min-width: 350px) and (max-width: 420px){
   #about-us .container .row .col-md-6 .texto-about {
-    padding: 30px 0 9px !important;
+    padding: 0px 0 0px !important;
   }
   #follow-us{
     padding-top: 40px
@@ -8549,7 +8567,7 @@ footer .col-md-3 p a:hover {
 
 @media only screen and (min-width: 798px){
   #about-us .container .row .col-md-6 .texto-about {
-    padding: 33px 0 9px !important;
+    padding: 32px 0 9px !important;
   }
   #follow-us{
     padding-top: 0px
@@ -9052,20 +9070,20 @@ footer .col-md-3 p a:hover {
   }
   footer ul li .texto p {
     font-family: "Avenir";
-    font-size: 10px;
+    font-size: 13px;
   }
   footer ul .col-md-3 {
     padding-top: 30px !important;
   }
   footer ul .col-md-3 p {
-    font-size: 10px !important;
+    font-size: 13px !important;
     font-family: "Avenir";
     display: inline;
   }
 
   @media (min-width: 480px) {
     footer ul li .texto {
-      padding-left: 12px;
+      padding-left: 0px;
     }
   }
 
@@ -9460,8 +9478,11 @@ footer .col-md-3 p a:hover {
   #container-contact .formulario input {
     width: 100%;
   }
+  #container-contact .formulario input {
+    margin: 10px !important;
+  }
   #container-contact .formulario textarea {
-    margin-top: 0;
+    /*margin-top: 0;*/
     font-size: 20px;
     padding-top: 8px;
     height: 250px;
@@ -9494,11 +9515,11 @@ footer .col-md-3 p a:hover {
   }
 
   #events h1, #slider-events h1 {
-    padding-left: 20% !important;
+    padding-left: 13% !important;
   }
 
   #overlay-menu {
-    padding-top: 14% !important;
+    padding-top: 23% !important;
   }
 
   /*BLOG INTERNO*/
@@ -9518,7 +9539,7 @@ footer .col-md-3 p a:hover {
 @media only screen and (min-width: 480px) and (max-width: 500px) {
   /*THE GOODS*/
   #follow-us{
-    padding-left: 11% !important;
+    /*padding-left: 11% !important;*/
     padding-right: 0% !important;
   }
 }
@@ -22753,7 +22774,7 @@ http://flickity.metafizzy.co
   #the-goods h3 {
      margin-right: 0px !important;
      font-size: 35.5px;
-     padding-left: 13px;
+     text-align: center;
   }
 }
 @media only screen and (min-width: 1019px){

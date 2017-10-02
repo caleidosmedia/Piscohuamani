@@ -1,13 +1,13 @@
       <footer>
         <ul class="clearfix container type-style-none family-museosans pv-70 ph-42-xs mb-0">
-          <li class="col-md-6 col-xs-12">
+          <li class="col-lg-6 col-md-6 col-xs-12">
           {exp:channel:entries channel="footer" dynamic="off"}
-            <div class="col-xs-6 p-0 footer-logo">
+            <div class="col-lg-5 col-md-4 col-xs-12 p-0 footer-logo">
               {logo}
-                <img src="{image:url}" class="w-100" alt="" style="margin-bottom:20px;">
+                <img src="{image:url}" alt="" style="margin-bottom:20px;">
               {/logo}
             </div>
-            <div class="col-xs-8 pr-0 texto light">
+            <div class="col-lg-7 col-md-6 col-xs-12 pr-0 texto light">
               <p>{e_mail}</p>
               <p>{nmero_de_contacto}</p>
               <p>{direccin}</p>
@@ -15,14 +15,14 @@
             </div>
           {/exp:channel:entries}
           </li>
-          <li class="col-md-3 col-xs-8 light">
+          <li class="col-lg-4 col-md-3 col-xs-12 light">
             {exp:channel:categories channel="blog" category_group="6" show="23" limit="1" style="off" dynamic="off"}
               <!--p><a href="{site_url}{exp:transcribe:language_abbreviation}/blog/{category_url_title}" class="text-uppercase">BLOG</a></p-->
             {/exp:channel:categories}
             <p><a href="{path='faqs'}" class="text-uppercase">{exp:transcribe:replace name="nav_faq"}</a></p>
             <p><a href="{path='terms-use'}" class="text-uppercase">{exp:transcribe:replace name="nav_term"}</a></p>
           </li>
-          <li class="col-md-3 col-xs-4 light">
+          <li class="col-lg-2 col-md-3 col-xs-12 light">
             <p><a href="{path='media-kit'}" class="text-uppercase">{exp:transcribe:replace name="nav_media"}</a></p>
             <p><a href="{path='contact'}" class="text-uppercase">{exp:transcribe:replace name="nav_contact"}</a></p>
           </li>

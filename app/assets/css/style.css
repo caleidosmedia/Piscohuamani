@@ -7043,7 +7043,7 @@ body::-webkit-scrollbar {
 }
 #events .row .gallery-button-left, #slider-events .row .gallery-button-left {
   z-index: 1;
-  left: 225px;
+  left: 6px;
   top: 140px;
 }
 
