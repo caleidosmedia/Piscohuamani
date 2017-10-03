@@ -9083,6 +9083,7 @@ footer .light p a:hover {
 
   footer .footer-logo img{
     width: 100%;
+    /*este cambio no se encuentra en piscohuamani.com agregar :(*/
   }
 
   @media (min-width: 480px) {
