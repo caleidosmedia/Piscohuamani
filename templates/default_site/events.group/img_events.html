@@ -1,13 +1,13 @@
 {exp:channel:entries channel="events" dinamyc="off" orderby="date" sort="desc" entry_id="{embed:selected_id}"}
 	{image_events}
-		<div class="gallery-cell bg-img-block" data-test="{embed:selected_id}" style="background-image:url({image:url});" data="{entry_id}"><div class="overlay-events"></div></div>
+		<div class="gallery-cell bg-img-block" data-test="{embed:selected_id}" style="background-image:url('{image:url}');" data="{entry_id}"><div class="overlay-events"></div></div>
 	{/image_events}
 {/exp:channel:entries}
 
 {exp:channel:entries channel="events" dinamyc="off" sort="desc" orderby="date"}
 	{if entry_id != embed:selected_id}
 		{image_events}
-			<div class="gallery-cell" data-test="{embed:selected_id}" style="background-image:url({image:url});" data="{entry_id}"><div class="overlay-events"></div></div>
+			<div class="gallery-cell" data-test="{embed:selected_id}" style="background-image:url('{image:url}');" data="{entry_id}"><div class="overlay-events"></div></div>
 		{/image_events}
 	{/if}
 {/exp:channel:entries}
