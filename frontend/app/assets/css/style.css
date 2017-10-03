@@ -8602,6 +8602,11 @@ footer .light p a:hover {
   }
 }
 
+footer .footer-logo img{
+    max-width: 150%;
+    height: auto;
+    /*este cambio no se encuentra en piscohuamani.com agregar :(*/
+}
 
 /*RESPONSIVE MEN├Ü E IMG-PRINCIPAL*/
 @media only screen and (max-width: 992px) {
@@ -9081,11 +9086,6 @@ footer .light p a:hover {
     display: inline;
   }
 
-  footer .footer-logo img{
-    width: 100%;
-    /*este cambio no se encuentra en piscohuamani.com agregar :(*/
-  }
-
   @media (min-width: 480px) {
     footer ul li .texto {
       padding-left: 0px;
@@ -9108,6 +9108,7 @@ footer .light p a:hover {
   }
   .site-content .content-blog #menu-blog nav {
     padding: 10px 0 15px;
+  
     padding-left: 2%;
   }
   .site-content .content-blog #menu-blog nav a {
