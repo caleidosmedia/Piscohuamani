@@ -9081,6 +9081,10 @@ footer .light p a:hover {
     display: inline;
   }
 
+  footer .footer-logo img{
+    width: 100%;
+  }
+
   @media (min-width: 480px) {
     footer ul li .texto {
       padding-left: 0px;
