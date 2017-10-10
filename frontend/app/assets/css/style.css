@@ -6887,6 +6887,7 @@ body .slider-text-oficial2 {
   padding: 0 33px;
   padding: 0 2.35714rem;
 }
+
 .site-menu .contenedor-menu .nav-desktop a div:first-child {
   -webkit-transform: rotateX(0deg);
   -moz-transform: rotateX(0deg);
@@ -6947,6 +6948,46 @@ body .slider-text-oficial2 {
 }
 .site-menu .contenedor-menu .nav-desktop a.logo-link div img {
   width: 100%;
+}
+
+@media only screen and (min-width: 760px) and (max-width: 860px){
+      .site-menu .contenedor-menu .nav-desktop a div{
+        padding: 0 6px !important;
+        font-size: 13px;
+      }
+      .site-menu .contenedor-menu .nav-desktop a.logo-link div img {
+    width: 83%;
+  }
+}
+
+@media only screen and (min-width: 859px) and (max-width: 921px){
+      .site-menu .contenedor-menu .nav-desktop a div{
+        padding: 0 9px !important;
+      }
+      .site-menu .contenedor-menu .nav-desktop a.logo-link div img {
+    width: 93%;
+  }
+}
+
+@media only screen and (min-width: 921px) and (max-width: 956px){
+      .site-menu .contenedor-menu .nav-desktop a div{
+        padding: 0 16px !important;
+      }
+}
+
+@media only screen and (min-width: 954px) and (max-width: 1200px){
+      .site-menu .contenedor-menu .nav-desktop a div{
+        padding: 0 20px !important;
+      }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1124px){
+      /*.site-menu .contenedor-menu .nav-desktop a div{
+        padding: 0 0px !important;
+      }*/
+      .site-menu .contenedor-menu .nav-desktop {
+        display: inline;
+  }
 }
 
 .img-principal {
@@ -8671,7 +8712,7 @@ footer .footer-logo img{
 
   /*RESPONSIVE MEN├Ü*/
   .site-menu .contenedor-menu {
-    height: 70px;
+    height: 80px;
   }
   .site-menu .nav-movil {
     height: 55px;
