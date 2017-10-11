@@ -6950,13 +6950,32 @@ body .slider-text-oficial2 {
   width: 100%;
 }
 
+/*@medias para responsive-tabletas*/
+
 @media only screen and (min-width: 760px) and (max-width: 860px){
-      .site-menu .contenedor-menu .nav-desktop a div{
-        padding: 0 6px !important;
-        font-size: 13px;
-      }
-      .site-menu .contenedor-menu .nav-desktop a.logo-link div img {
-    width: 83%;
+  .site-menu .contenedor-menu .nav-desktop a div{
+    padding: 0 6px !important;
+    font-size: 13px;
+  }
+  .site-menu .contenedor-menu .nav-desktop a.logo-link div img {
+  width: 83%;
+  }
+  #follow-us .container-social a {
+  width: 143px !important;
+  height: 144px !important;
+  padding: 3% !important;
+  margin-right: 12px !important;
+  margin-bottom: 17px !important;
+
+  }
+  .site-content > section .container {
+    padding: 0 !important;
+  }
+  #follow-us h3 {
+    font-size: 40px !important;
+  }
+  .site-content > section .container {
+    padding: 0 8% !important;
   }
 }
 
@@ -6987,6 +7006,9 @@ body .slider-text-oficial2 {
       }*/
       .site-menu .contenedor-menu .nav-desktop {
         display: inline;
+  }
+      #container-ronda{
+        padding-bottom: 10px !important;
   }
 }
 
@@ -7111,13 +7133,17 @@ body .slider-text-oficial2 {
     font-size: 40px;
   }
 }
-@media only screen and (min-width: 798px) {
-  #about-us .leyenda-about, #the-goods h3, #follow-us h3, #events .h1 {
-    font-size: 58px;
-  }
+
+@media only screen and (min-width: 321px) {
   .date a:first-child{
     margin-right: 38px;
 
+  }
+}
+
+@media only screen and (min-width: 798px) {
+  #about-us .leyenda-about, #the-goods h3, #follow-us h3, #events .h1 {
+    font-size: 58px;
   }
 }
 
@@ -7553,7 +7579,7 @@ body .slider-text-oficial2 {
   background-color: #3b2e29;
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 360px) {
    #follow-us .container h2 {
     padding-left: 2rem !important;
   }
@@ -7564,7 +7590,7 @@ body .slider-text-oficial2 {
     padding-left: 4.5%;
   }
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 768px) and (min-width: 359px) {
   #events .row .gallery-button-left{
     left: 3%;
   }
@@ -7577,7 +7603,8 @@ body .slider-text-oficial2 {
     padding-left: 6.1rem !important;
   }
   #follow-us .container-social {
-    padding-left: 9.5%;
+    /*padding-left: 9.5%;se modifico responsive tableta*/
+    padding-left: 0;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -7591,6 +7618,23 @@ body .slider-text-oficial2 {
   }
 }
 
+/*Tamaño principal de los cubos en compartir*/
+/*@media only screen and (min-width: 900px) and (max-width: 768px){
+  #follow-us .container-social a {
+    width: 148px !important;
+    height: 148px !important;
+    padding: 3% !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 899px){
+  #follow-us .container-social a {
+    width: 170px !important;
+    height: 170px !important;
+    padding: 5% !important;
+
+  }
+}*/
 
 #follow-us .container-social a {
   display: block;
@@ -7608,6 +7652,7 @@ body .slider-text-oficial2 {
   transition: all 0.2s ease-in-out;
   padding: 18px 21px;
 }
+
 #follow-us .container-social a .overlay {
   position: absolute;
   top: 0;
@@ -8650,7 +8695,8 @@ footer .footer-logo img{
     /*este cambio no se encuentra en piscohuamani.com agregar :(*/
 }
 
-/*RESPONSIVE MEN├Ü E IMG-PRINCIPAL*/
+/*DESDE 8678 @MEDIA MAX-WIDHT DESDE 992px A + , TERMINA EN 9576 :); */
+
 @media only screen and (max-width: 992px) {
   /*RESPONSIVE FORMULARIO*/
   .idiomaH {
@@ -9090,14 +9136,14 @@ footer .footer-logo img{
   #follow-us .container-social {
     padding-top: 30px;
   }
-  #follow-us .container-social a {
+  /*#follow-us .container-social a {
     width: 183px;
     height: 183px;
     padding: 7%;
     -webkit-transition: none;
     -moz-transition: none;
     transition: none;
-  }
+  }*/
   #follow-us .container-social h1 {
     font-size: 30px !important;
   }
@@ -9548,14 +9594,17 @@ footer .footer-logo img{
     position: relative !important;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  /*THE GOODS*/
+
+
+/*RENDUDA SU ORDEN ? - @media only screen and (min-width: 759px) and (max-width: 992px) {
+  /*THE GOODS
   #slider-text-goods, #slider-text-make {
     padding-left: 20% !important;
     padding-right: 20% !important;
   }
-}
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+}*/
+/* @MEDIAS DE MOBILE */
+@media only screen and (min-width: 480px) and (max-width: 760px) {
   /*THE GOODS*/
   #slider-text-goods, #slider-text-make, #follow-us, .container-slider-text {
     padding-left: 20% !important;
