@@ -6953,6 +6953,12 @@ body .slider-text-oficial2 {
 /*@medias para responsive-tabletas*/
 
 @media only screen and (min-width: 760px) and (max-width: 860px){
+  .site-content > section .container {
+    padding: 0 16% !important;
+  }
+  .site-content > section .container-sm {
+    padding: 0!important;
+  }
   .site-menu .contenedor-menu .nav-desktop a div{
     padding: 0 6px !important;
     font-size: 13px;
@@ -6960,6 +6966,10 @@ body .slider-text-oficial2 {
   .site-menu .contenedor-menu .nav-desktop a.logo-link div img {
   width: 83%;
   }
+
+  /*#slider-text-goods {
+    right: 62px !important;
+  }*/
   #follow-us .container-social a {
   width: 143px !important;
   height: 144px !important;
@@ -6968,14 +6978,18 @@ body .slider-text-oficial2 {
   margin-bottom: 17px !important;
 
   }
-  .site-content > section .container {
-    padding: 0 !important;
-  }
   #follow-us h3 {
     font-size: 40px !important;
   }
-  .site-content > section .container {
-    padding: 0 8% !important;
+
+
+  #events > .container > h1 {
+    font-size: 46px !important;
+    padding-left: 135px !important;
+  }
+  #follow-us{
+    padding-left: 0% !important;
+    padding-right: 0% !important;
   }
 }
 
@@ -6984,8 +6998,14 @@ body .slider-text-oficial2 {
         padding: 0 9px !important;
       }
       .site-menu .contenedor-menu .nav-desktop a.logo-link div img {
-    width: 93%;
-  }
+        width: 93%;
+      }
+      #slider-text-goods {
+        top: -36px !important;
+      }
+      .site-content > section .container {
+        padding: 0 !important;
+      }
 }
 
 @media only screen and (min-width: 921px) and (max-width: 956px){
@@ -7129,9 +7149,13 @@ body .slider-text-oficial2 {
   #about-us {
     padding-top: 0px
   }
-  #about-us .leyenda-about, #the-goods h3, #follow-us h3 {
+  #follow-us h3 {
     font-size: 40px;
   }
+  #about-us .leyenda-about, #the-goods h3{
+    font-size: 4em;
+  }
+
 }
 
 @media only screen and (min-width: 321px) {
@@ -7262,7 +7286,7 @@ body .slider-text-oficial2 {
   padding-top: 9%;
   z-index: 1;
   float: right;
-  padding: 0px;
+  /*padding: 0px;*/
 }
 #the-goods .make-text #slider-text-goods .separador, #events .make-text #slider-text-goods .separador, #slider-events .make-text #slider-text-goods .separador {
   border-bottom: 1px solid #f8f4e5;
@@ -9604,7 +9628,7 @@ footer .footer-logo img{
   }
 }*/
 /* @MEDIAS DE MOBILE */
-@media only screen and (min-width: 480px) and (max-width: 760px) {
+@media only screen and (min-width: 480px) and (max-width: 759px) {
   /*THE GOODS*/
   #slider-text-goods, #slider-text-make, #follow-us, .container-slider-text {
     padding-left: 20% !important;
@@ -22939,6 +22963,7 @@ http://flickity.metafizzy.co
 
 #slider-text-goods {
   position: relative;
+  left: 9px;
 }
 
 #container-ronda{
