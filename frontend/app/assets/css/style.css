@@ -6949,15 +6949,12 @@ body .slider-text-oficial2 {
 .site-menu .contenedor-menu .nav-desktop a.logo-link div img {
   width: 100%;
 }
-
-/*@medias para responsive-tabletas*/
-
-@media only screen and (min-width: 760px) and (max-width: 860px){
+@media only screen and (min-width: 511px) and (max-width: 759px){
   .site-content > section .container {
-    padding: 0 16% !important;
+    padding: 0 10% !important;
   }
   .site-content > section .container-sm {
-    padding: 0!important;
+    padding: 0 !important;
   }
   .site-menu .contenedor-menu .nav-desktop a div{
     padding: 0 6px !important;
@@ -6967,12 +6964,50 @@ body .slider-text-oficial2 {
   width: 83%;
   }
 
+  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
+    padding-top: 180px !important;
+    width: 127px !important;
+    height: auto !important;
+  }
+
+  #the-goods .gallery-child .flickity-viewport{
+    height: 448px !important;
+  }
+
+  #slider-text-goods {
+    position: relative;
+    left: -21px !important;
+  }
+
+  #make-drink .gallery-wrapper .gallery-child .flickity-viewport .gallery-cell img {
+    width: 33% !important;
+  }
+
+  #make-drink .gallery-cell img {
+    max-height: 326px !important;
+    width: auto;
+  }
+
+  #events .container-slider-text #slider-text-experience, #slider-events .container-slider-text #slider-text-experience {
+    z-index: 1;
+    bottom: 42px !important;
+  }
+
+  #events .row .gallery-button-left{
+    z-index: 1;
+    left: 35px !important;
+  }
+
+  #events .row .gallery-button-right{
+    right: 36px !important;
+  }
+
   /*#slider-text-goods {
     right: 62px !important;
   }*/
   #follow-us .container-social a {
-  width: 143px !important;
-  height: 144px !important;
+  width: 139px !important;
+  height: 138px !important;
   padding: 3% !important;
   margin-right: 12px !important;
   margin-bottom: 17px !important;
@@ -6982,10 +7017,167 @@ body .slider-text-oficial2 {
     font-size: 40px !important;
   }
 
+  #events > .container > h1 {
+    font-size: 46px !important;
+    padding-left: 16% !important;
+  }
+  #follow-us{
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+}
+
+
+/*@medias para responsive-tabletas*/
+@media only screen and (min-width: 760px) and (max-width: 800px){
+  .site-content > section .container {
+    padding: 0 10% !important;
+  }
+  .site-content > section .container-sm {
+    padding: 0 !important;
+  }
+  .site-menu .contenedor-menu .nav-desktop a div{
+    padding: 0 6px !important;
+    font-size: 13px;
+  }
+  .site-menu .contenedor-menu .nav-desktop a.logo-link div img {
+  width: 83%;
+  }
+
+  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
+    padding-top: 180px !important;
+    width: 127px !important;
+    height: auto !important;
+  }
+
+  #the-goods .gallery-child .flickity-viewport{
+    height: 448px !important;
+  }
+
+  #slider-text-goods {
+    position: relative;
+    left: -21px !important;
+  }
+
+  #make-drink .gallery-wrapper .gallery-child .flickity-viewport .gallery-cell img {
+    width: 33% !important;
+  }
+
+  #make-drink .gallery-cell img {
+    max-height: 326px !important;
+    width: auto;
+  }
+
+  #events .container-slider-text #slider-text-experience, #slider-events .container-slider-text #slider-text-experience {
+    z-index: 1;
+    bottom: 42px !important;
+  }
+
+  #events .row .gallery-button-left{
+    z-index: 1;
+    left: 35px !important;
+  }
+
+  #events .row .gallery-button-right{
+    right: 36px !important;
+  }
+
+  /*#slider-text-goods {
+    right: 62px !important;
+  }*/
+  #follow-us .container-social a {
+  width: 139px !important;
+  height: 138px !important;
+  padding: 3% !important;
+  margin-right: 12px !important;
+  margin-bottom: 17px !important;
+
+  }
+  #follow-us h3 {
+    font-size: 40px !important;
+  }
 
   #events > .container > h1 {
     font-size: 46px !important;
-    padding-left: 135px !important;
+    padding-left: 16% !important;
+  }
+  #follow-us{
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 859px){
+  .site-content > section .container {
+    padding: 0 1% !important;
+  }
+  .site-content > section .container-sm {
+    padding: 0 !important;
+  }
+  .site-menu .contenedor-menu .nav-desktop a div{
+    padding: 0 6px !important;
+    font-size: 13px;
+  }
+  .site-menu .contenedor-menu .nav-desktop a.logo-link div img {
+  width: 83%;
+  }
+
+  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
+    padding-top: 180px !important;
+    width: 127px !important;
+    height: auto !important;
+  }
+
+  #the-goods .gallery-child .flickity-viewport{
+    height: 448px !important;
+  }
+
+  #slider-text-goods {
+    position: relative;
+    left: -21px !important;
+  }
+
+  #make-drink .gallery-wrapper .gallery-child .flickity-viewport .gallery-cell img {
+    width: 33% !important;
+  }
+
+  #make-drink .gallery-cell img {
+    max-height: 326px !important;
+    width: auto;
+  }
+
+  #events .container-slider-text #slider-text-experience, #slider-events .container-slider-text #slider-text-experience {
+    z-index: 1;
+    bottom: 42px !important;
+  }
+
+  #events .row .gallery-button-left{
+    z-index: 1;
+    left: 35px !important;
+  }
+
+  #events .row .gallery-button-right{
+    right: 36px !important;
+  }
+
+  /*#slider-text-goods {
+    right: 62px !important;
+  }*/
+  #follow-us .container-social a {
+  width: 139px !important;
+  height: 138px !important;
+  padding: 3% !important;
+  margin-right: 12px !important;
+  margin-bottom: 17px !important;
+
+  }
+  #follow-us h3 {
+    font-size: 40px !important;
+  }
+
+  #events > .container > h1 {
+    font-size: 46px !important;
+    padding-left: 3% !important;
   }
   #follow-us{
     padding-left: 0% !important;
@@ -7253,10 +7445,10 @@ body .slider-text-oficial2 {
   z-index: 1;
 }
 #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
-  height: 630px !important;
+  height: 630px;
 }
 #the-goods .flickity-viewport, #events .flickity-viewport, #slider-events .flickity-viewport {
-  height: 500px !important;
+  height: 280px !important;
 }
 #events .flickity-viewport img, #slider-events .flickity-viewport img {
   padding-top: 150px;
@@ -7614,7 +7806,7 @@ body .slider-text-oficial2 {
     padding-left: 4.5%;
   }
 }
-@media only screen and (max-width: 768px) and (min-width: 359px) {
+@media only screen and (max-width: 759px) and (min-width: 359px) {
   #events .row .gallery-button-left{
     left: 3%;
   }
@@ -9029,13 +9221,13 @@ footer .footer-logo img{
   }
 
   #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
-    padding-top: 180px !important;
-    width: 70px !important;
-    height: auto !important;
+    padding-top: 180px;
+    width: 70px;
+    height: auto;
   }
 
   #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
-    height: 249px !important;
+    height: 249px;
   }
 
   #the-goods .gallery-button-right, #events .gallery-button-right, #slider-events .gallery-button-right,
