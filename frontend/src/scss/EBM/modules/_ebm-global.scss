@@ -584,7 +584,7 @@ $separator-height-control: 1px;
 		background: #ED2; 
 	}
 	.gallery-button-left {
-		@include position(absolute, -210px null 0 220px);
+		@include position(absolute, -210px null 0 10%);
 	}
 	.gallery-button-right {
 		@include position(absolute, -210px 42% 0 null);
@@ -614,7 +614,7 @@ $make-drink-gallery-height-control: 560px;
 		min-height: $make-drink-gallery-height-control; 
 	}
 	.gallery-button-left {
-		@include position(absolute, -60px null 0 220px);
+		@include position(absolute, -60px null 0 10%);
 	}
 	.gallery-button-right {
 		@include position(absolute, -60px 220px 0 null);
