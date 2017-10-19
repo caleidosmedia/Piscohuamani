@@ -2388,7 +2388,7 @@ select[multiple].input-lg {
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
   color: #333;
   background-color: transparent;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
   background-image: none;
