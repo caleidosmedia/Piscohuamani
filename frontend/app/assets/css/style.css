@@ -8351,7 +8351,7 @@ footer .light p a:hover {
 
 @media only screen and (min-width: 680px){
   #galeria  .grid #overlay img {
-    height: 60% !important;
+    height: 63% !important;
     width: initial;
   }
 }
@@ -8855,7 +8855,7 @@ footer .light p a:hover {
     width: initial;
   }
   #galeria .grid #overlay img {
-    height: 55%
+    height: 38%
   }
 }
 @media only screen and (min-width: 480px) {
