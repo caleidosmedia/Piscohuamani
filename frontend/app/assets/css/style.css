@@ -2387,7 +2387,7 @@ select[multiple].input-lg {
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
   color: #333;
   background-color: transparent;
-  border: 1px solid white;
+  border: 2px solid #f8f4e5;
 }
 .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
   background-image: none;
@@ -6755,7 +6755,7 @@ body .slider-text-oficial2 {
 }
 .enter {
   background-color: #BDBCBB;
-  border: 1px solid #f8f4e5;
+  border: 2px solid #f8f4e5;
   color: #3e302b;
   border-radius: 0;
   font-size: 18px;
@@ -7820,7 +7820,7 @@ body .slider-text-oficial2 {
   }
   #follow-us .container-social {
     /*padding-left: 9.5%;se modifico responsive tableta*/
-    padding-left: 0;
+    padding-left: 93px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -8350,7 +8350,7 @@ footer .light p a:hover {
 
 @media only screen and (min-width: 680px){
   #galeria  .grid #overlay img {
-    height: 60% !important;
+    height: 63% !important;
     width: initial;
   }
 }
@@ -9412,7 +9412,7 @@ footer .footer-logo img{
   }
   .site-content .content-blog #menu-blog nav {
     padding: 10px 0 15px;
-  
+
     padding-left: 2%;
   }
   .site-content .content-blog #menu-blog nav a {
