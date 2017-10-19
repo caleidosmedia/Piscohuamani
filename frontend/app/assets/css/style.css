@@ -32001,7 +32001,7 @@ footer .light p a:hover {
     width: initial;
   }
   #galeria .grid #overlay img {
-    height: 55%;
+    height: 34%;
   }
     #galeria .container .grid {
     margin-top: 70px !important;
@@ -32032,7 +32032,7 @@ footer .light p a:hover {
     width: initial;
   }
   #galeria .grid #overlay img {
-    height: 38%
+    height: 55%
   }
 }
 @media only screen and (min-width: 480px) {
