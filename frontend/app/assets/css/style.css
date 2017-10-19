@@ -8854,7 +8854,7 @@ footer .light p a:hover {
     width: initial;
   }
   #galeria .grid #overlay img {
-    height: 55%
+    height: 38%
   }
 }
 @media only screen and (min-width: 480px) {
@@ -9222,7 +9222,7 @@ footer .footer-logo img{
 
   #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
     padding-top: 180px;
-    width: 70px;
+    width: 78px;
     height: auto;
   }
 
