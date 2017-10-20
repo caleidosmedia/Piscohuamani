@@ -6964,11 +6964,6 @@ body .slider-text-oficial2 {
   width: 83%;
   }
 
-  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
-    padding-top: 180px !important;
-    width: 127px !important;
-    height: auto !important;
-  }
 
   #the-goods .gallery-child .flickity-viewport{
     height: 448px !important;
@@ -7044,12 +7039,6 @@ body .slider-text-oficial2 {
   width: 83%;
   }
 
-  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
-    padding-top: 180px !important;
-    width: 127px !important;
-    height: auto !important;
-  }
-
   #the-goods .gallery-child .flickity-viewport{
     height: 448px !important;
   }
@@ -7122,11 +7111,6 @@ body .slider-text-oficial2 {
   width: 83%;
   }
 
-  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
-    padding-top: 180px !important;
-    width: 127px !important;
-    height: auto !important;
-  }
 
   #the-goods .gallery-child .flickity-viewport{
     height: 448px !important;
@@ -9219,11 +9203,7 @@ footer .footer-logo img{
     top: 0px !important;
   }
 
-  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
-    padding-top: 180px;
-    width: 70px;
-    height: auto;
-  }
+
 
 
   #the-goods .gallery-button-right, #events .gallery-button-right, #slider-events .gallery-button-right,
@@ -30136,11 +30116,7 @@ body .slider-text-oficial2 {
   width: 83%;
   }
 
-  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
-    padding-top: 180px !important;
-    width: 127px !important;
-    height: auto !important;
-  }
+
 
   #the-goods .gallery-child .flickity-viewport{
     height: 448px !important;
@@ -30216,11 +30192,6 @@ body .slider-text-oficial2 {
   width: 83%;
   }
 
-  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
-    padding-top: 180px !important;
-    width: 127px !important;
-    height: auto !important;
-  }
 
   #the-goods .gallery-child .flickity-viewport{
     height: 448px !important;
@@ -30294,11 +30265,7 @@ body .slider-text-oficial2 {
   width: 83%;
   }
 
-  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
-    padding-top: 180px !important;
-    width: 127px !important;
-    height: auto !important;
-  }
+
 
   #the-goods .gallery-child .flickity-viewport{
     height: 448px !important;
@@ -31525,6 +31492,9 @@ footer .light p a:hover {
     -moz-transition: none;
     transition: none;
   }
+  #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
+    height: 440px;
+  }
 }
 
 @media only screen and (min-width: 680px){
@@ -32402,11 +32372,6 @@ footer .footer-logo img{
     top: 0px !important;
   }
 
-  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
-    padding-top: 180px;
-    width: 78px;
-    height: auto;
-  }
 
 
   #the-goods .gallery-button-right, #events .gallery-button-right, #slider-events .gallery-button-right,
@@ -46203,6 +46168,11 @@ http://flickity.metafizzy.co
     padding-top: 0 !important;
     margin-top:  25px !important;
   }
+  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
+    padding-top: 180px;
+    width: 122px;
+    height: auto;
+  }
 }
 @media screen and (min-width: 480px) {
   #events > .container-slider-text {
@@ -46213,6 +46183,11 @@ http://flickity.metafizzy.co
   }
   #events > .container > h1 {
     font-size: 60px;
+  }
+  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
+    padding-top: 180px;
+    width: 127px;
+    height: auto;
   }
 }
 @media screen and (max-width: 480px) {
@@ -46254,6 +46229,11 @@ http://flickity.metafizzy.co
   .title-goods{
     float: right;
     padding-right: 33px;
+  }
+  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
+    padding-top: 150px;
+    width: auto;
+    height: 731px;
   }
 }
 @media only screen and (max-width: 1000px){
