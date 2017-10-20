@@ -8304,9 +8304,7 @@ footer .light p a:hover {
   #galeria .container .grid #overlay .controls {
     top: 70%;
   }
-  #galeria .grid #overlay img {
-    height: 55%;
-  }
+
   #slider-events .gallery-wrapper.row .container .gallery-button-right,
   #slider-events .gallery-wrapper.row .container .gallery-button-left {
     top: 160px !important;
@@ -31962,15 +31960,17 @@ footer .light p a:hover {
     margin-left: 6px;
   }
 }
-/*@media only screen and (min-width: 320px){
-  #galeria .container .grid #overlay img {
-    height: 38%;
-    width: initial;
+@media only screen and (min-width: 320px){
+  #galeria .grid #overlay img {
+    height: 34%;
   }
+}
+
+@media only screen and (min-width: 560px){
   #galeria .grid #overlay img {
     height: 55%;
   }
-}*/
+}
 
 @media only screen and (max-width: 700px){/*responsive desde 0 hasta 700*/
   #galeria .container .grid #overlay img {
@@ -32007,9 +32007,6 @@ footer .light p a:hover {
   #galeria .container .grid #overlay img {
     height: 40%;
     width: initial;
-  }
-  #galeria .grid #overlay img {
-    height: 55%
   }
 }
 @media only screen and (min-width: 480px) {
