@@ -31502,11 +31502,14 @@ footer .light p a:hover {
     height: 63% !important;
     width: initial;
   }
+
+}
+@media only screen and (min-width: 768px){
+
   #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
     height: 630px !important;
   }
 }
-
 @media only screen and (min-width: 1200px){
   #galeria .container .grid #overlay .controls{
     top: 50%;
