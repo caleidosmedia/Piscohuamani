@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-}@charset "UTF-8";
+@charset "UTF-8";
 /*
   Easy Box Model Import
   Last update: 14.05.15
@@ -7356,18 +7355,13 @@ body .slider-text-oficial2 {
     margin-right: 38px;
 
   }
-  #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
-    height: 300px !important;
-  }
 }
 
 @media only screen and (min-width: 798px) {
   #about-us .leyenda-about, #the-goods h3, #follow-us h3, #events .h1 {
     font-size: 58px;
   }
-  #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
-    height: 630px !important;
-  }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -30628,6 +30622,7 @@ body .slider-text-oficial2 {
 #the-goods .gallery-child, #events .gallery-child, #slider-events .gallery-child {
   z-index: 1;
 }
+
 #the-goods .flickity-viewport, #events .flickity-viewport, #slider-events .flickity-viewport {
   height: 280px ;
 }
@@ -31489,6 +31484,9 @@ footer .light p a:hover {
     -moz-transition: none;
     transition: none;
   }
+  #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
+    height: 300px;
+  }
 }
 
 @media only screen and (min-width: 350px){
@@ -31533,6 +31531,9 @@ footer .light p a:hover {
   #galeria  .grid #overlay img {
     height: 63% !important;
     width: initial;
+  }
+  #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
+    height: 630px;
   }
 }
 
@@ -32406,7 +32407,6 @@ footer .footer-logo img{
     width: 78px;
     height: auto;
   }
-
 
 
   #the-goods .gallery-button-right, #events .gallery-button-right, #slider-events .gallery-button-right,
@@ -46352,4 +46352,3 @@ http://flickity.metafizzy.co
 .img-principal#background {
     background-position: center center !important;
 }
->>>>>>> d1e19ea234b86deba13587a7aeb25fb1cc2be670
