@@ -31452,7 +31452,7 @@ footer .light p a:hover {
     transition: none;
   }
   #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
-    height: 300px;
+    height: 300px !important;
   }
 }
 
@@ -31493,7 +31493,7 @@ footer .light p a:hover {
     transition: none;
   }
   #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
-    height: 440px;
+    height: 440px !important;;
   }
 }
 
@@ -31503,7 +31503,7 @@ footer .light p a:hover {
     width: initial;
   }
   #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
-    height: 630px;
+    height: 630px !important;
   }
 }
 
