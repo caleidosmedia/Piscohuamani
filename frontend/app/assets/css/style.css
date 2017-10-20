@@ -7424,7 +7424,7 @@ body .slider-text-oficial2 {
 #text-eventos #slider-text-experience{
   color: #3b2e29 !important;
 }
-#text-eventos #slider-text-experience p{
+#text-eventos #slider-te
   line-height: 32px;
 }
 
@@ -30502,6 +30502,10 @@ body .slider-text-oficial2 {
   #about-us .leyenda-about, #the-goods h3, #follow-us h3 {
     font-size: 35.5px;
   }
+  #text-eventos #slider-text-experience p{
+    line-height: 24px;
+  }
+
 }
 
 
@@ -30539,7 +30543,11 @@ body .slider-text-oficial2 {
   #about-us .leyenda-about, #the-goods h3, #follow-us h3, #events .h1 {
     font-size: 58px;
   }
+  #text-eventos #slider-text-experience p{
+    line-height: 32px;
+  }
 }
+
 
 @media only screen and (min-width: 1200px) {
   #the-goods h1, #events h1, #slider-events h1 {
@@ -30601,9 +30609,7 @@ body .slider-text-oficial2 {
 #text-eventos #slider-text-experience{
   color: #3b2e29 !important;
 }
-#text-eventos #slider-text-experience p{
-  line-height: 32px;
-}
+
 
 @media only screen and (min-width: 350px) {
   #text-eventos .mb-70{
