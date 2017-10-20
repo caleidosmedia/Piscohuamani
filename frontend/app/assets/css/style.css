@@ -7449,7 +7449,7 @@ body .slider-text-oficial2 {
   height: 630px;
 }
 #the-goods .flickity-viewport, #events .flickity-viewport, #slider-events .flickity-viewport {
-  height: 280px !important;
+  height: 280px ;
 }
 #events .flickity-viewport img, #slider-events .flickity-viewport img {
   padding-top: 150px;
@@ -30632,7 +30632,7 @@ body .slider-text-oficial2 {
   height: 630px;
 }
 #the-goods .flickity-viewport, #events .flickity-viewport, #slider-events .flickity-viewport {
-  height: 280px !important;
+  height: 280px ;
 }
 #events .flickity-viewport img, #slider-events .flickity-viewport img {
   padding-top: 150px;
