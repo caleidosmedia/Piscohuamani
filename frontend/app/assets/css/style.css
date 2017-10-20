@@ -7357,7 +7357,7 @@ body .slider-text-oficial2 {
 
   }
   #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
-    height: 249px;
+    height: 300px !important;
   }
 }
 
@@ -7366,7 +7366,7 @@ body .slider-text-oficial2 {
     font-size: 58px;
   }
   #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
-    height: 630px;
+    height: 630px !important;
   }
 }
 
