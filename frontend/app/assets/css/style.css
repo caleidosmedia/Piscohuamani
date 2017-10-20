@@ -7446,7 +7446,7 @@ body .slider-text-oficial2 {
   z-index: 1;
 }
 #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
-  height: 630px;
+  height: 630px !important;
 }
 #the-goods .flickity-viewport, #events .flickity-viewport, #slider-events .flickity-viewport {
   height: 280px ;
