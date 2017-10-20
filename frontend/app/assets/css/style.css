@@ -7362,6 +7362,9 @@ body .slider-text-oficial2 {
   #about-us .leyenda-about, #the-goods h3, #follow-us h3, #events .h1 {
     font-size: 58px;
   }
+  #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
+    height: 630px ;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -7445,9 +7448,7 @@ body .slider-text-oficial2 {
 #the-goods .gallery-child, #events .gallery-child, #slider-events .gallery-child {
   z-index: 1;
 }
-#the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
-  height: 630px !important;
-}
+
 #the-goods .flickity-viewport, #events .flickity-viewport, #slider-events .flickity-viewport {
   height: 280px ;
 }
