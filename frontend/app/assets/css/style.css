@@ -30933,7 +30933,7 @@ body .slider-text-oficial2 {
     display: inline-block;
     padding-top: 4%;
     font-family: "Avenir";
-    padding-left: 4.5%;
+    padding-left: 7.5%;
   }
 }
 @media only screen and (max-width: 759px) and (min-width: 359px) {
@@ -30982,22 +30982,40 @@ body .slider-text-oficial2 {
   }
 }*/
 
-#follow-us .container-social a {
-  display: block;
-  width: 183px;
-  height: 183px;
-  border: 1.5px solid #F8F4E5;
-  float: left;
-  margin-right: 24px;
-  margin-bottom: 26px;
-  position: relative;
-  text-decoration: none;
-  overflow: hidden;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  padding: 18px 21px;
+
+@media only screen and (min-width: 320px) {
+  #follow-us .container-social a {
+    display: block;
+    width: 160px;
+    height: 160px;
+    border: 1.5px solid #F8F4E5;
+    float: left;
+    margin-right: 24px;
+    margin-bottom: 26px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    padding: 18px 21px;
+  }
+
 }
+
+
+@media only screen and (min-width: 480px) {
+  #follow-us .container-social a {
+    display: block;
+    width: 183px;
+    height: 183px;
+  }
+}
+
+
+
+
+
 
 #follow-us .container-social a .overlay {
   position: absolute;
