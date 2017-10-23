@@ -46332,3 +46332,8 @@ http://flickity.metafizzy.co
 .img-principal#background {
     background-position: center center !important;
 }
+
+.aliniacion a {
+  display: block;
+  overflow: hidden;
+}
