@@ -46237,11 +46237,6 @@ http://flickity.metafizzy.co
     float: right;
     padding-right: 33px;
   }
-  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
-    padding-top: 150px;
-    width: auto;
-    height: 731px;
-  }
 }
 @media only screen and (max-width: 1000px){
   .title-goods{
@@ -46260,6 +46255,11 @@ http://flickity.metafizzy.co
   #the-goods h3 {
      margin-right: 0px !important;
      font-size: 52px;
+  }
+  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
+    padding-top: 150px;
+    width: auto;
+    height: 731px;
   }
 }
 @media only screen and (min-width: 1119px){
