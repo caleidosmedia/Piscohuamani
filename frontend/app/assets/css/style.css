@@ -46259,7 +46259,7 @@ http://flickity.metafizzy.co
   #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
     padding-top: 150px;
     width: auto;
-    height: 731px;
+    height: 617px;
   }
 }
 @media only screen and (min-width: 1119px){
@@ -46273,6 +46273,9 @@ http://flickity.metafizzy.co
 
   #the-goods h3 {
      font-size: 60px;
+  }
+  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
+    height: 731px;
   }
 }
 .idio{
