@@ -7334,12 +7334,6 @@ body .slider-text-oficial2 {
 
 }
 
-@media only screen and (min-width: 321px) {
-  .date a:first-child{
-    margin-right: 38px;
-
-  }
-}
 
 @media only screen and (min-width: 798px) {
   #about-us .leyenda-about, #the-goods h3, #follow-us h3, #events .h1 {
@@ -30491,12 +30485,7 @@ body .slider-text-oficial2 {
 
 }
 
-@media only screen and (min-width: 321px) {
-  .date a:first-child{
-    margin-right: 38px;
 
-  }
-}
 
 @media only screen and (min-width: 798px) {
   #about-us .leyenda-about, #the-goods h3, #follow-us h3, #events .h1 {
