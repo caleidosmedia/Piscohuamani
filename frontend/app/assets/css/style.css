@@ -31509,7 +31509,7 @@ footer .light p a:hover {
   }
 
 }
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 1200px){
 
   #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
     height: 630px !important;
