@@ -31498,7 +31498,7 @@ footer .light p a:hover {
     transition: none;
   }
   #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
-    height: 440px !important;;
+    height: 420px !important;;
   }
 }
 
