@@ -30456,7 +30456,7 @@ body .slider-text-oficial2 {
     font-size: 35.5px;
   }
   #text-eventos #slider-text-experience p{
-    line-height: 24px;
+    line-height: 21px;
   }
 
 }
@@ -30933,7 +30933,7 @@ body .slider-text-oficial2 {
     display: inline-block;
     padding-top: 4%;
     font-family: "Avenir";
-    padding-left: 4.5%;
+    padding-left: 7.5%;
   }
 }
 @media only screen and (max-width: 759px) and (min-width: 359px) {
@@ -30982,22 +30982,40 @@ body .slider-text-oficial2 {
   }
 }*/
 
-#follow-us .container-social a {
-  display: block;
-  width: 183px;
-  height: 183px;
-  border: 1.5px solid #F8F4E5;
-  float: left;
-  margin-right: 24px;
-  margin-bottom: 26px;
-  position: relative;
-  text-decoration: none;
-  overflow: hidden;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  padding: 18px 21px;
+
+@media only screen and (min-width: 320px) {
+  #follow-us .container-social a {
+    display: block;
+    width: 160px;
+    height: 160px;
+    border: 1.5px solid #F8F4E5;
+    float: left;
+    margin-right: 24px;
+    margin-bottom: 26px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    padding: 18px 21px;
+  }
+
 }
+
+
+@media only screen and (min-width: 480px) {
+  #follow-us .container-social a {
+    display: block;
+    width: 183px;
+    height: 183px;
+  }
+}
+
+
+
+
+
 
 #follow-us .container-social a .overlay {
   position: absolute;
@@ -31480,7 +31498,7 @@ footer .light p a:hover {
     transition: none;
   }
   #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
-    height: 440px !important;;
+    height: 420px !important;;
   }
 }
 
@@ -31491,7 +31509,7 @@ footer .light p a:hover {
   }
 
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1200px){
 
   #the-goods .gallery-child .flickity-viewport, #events .gallery-child .flickity-viewport, #slider-events .gallery-child .flickity-viewport {
     height: 630px !important;
@@ -46219,11 +46237,6 @@ http://flickity.metafizzy.co
     float: right;
     padding-right: 33px;
   }
-  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
-    padding-top: 150px;
-    width: auto;
-    height: 731px;
-  }
 }
 @media only screen and (max-width: 1000px){
   .title-goods{
@@ -46243,6 +46256,11 @@ http://flickity.metafizzy.co
      margin-right: 0px !important;
      font-size: 52px;
   }
+  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
+    padding-top: 150px;
+    width: auto;
+    height: 617px;
+  }
 }
 @media only screen and (min-width: 1119px){
 
@@ -46255,6 +46273,9 @@ http://flickity.metafizzy.co
 
   #the-goods h3 {
      font-size: 60px;
+  }
+  #the-goods .flickity-viewport img, #events .flickity-viewport img, #slider-events .flickity-viewport img {
+    height: 731px;
   }
 }
 .idio{
