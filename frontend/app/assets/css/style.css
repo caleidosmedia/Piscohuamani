@@ -29900,7 +29900,7 @@ body .slider-text-oficial2 {
 .enter {
   background-color: #BDBCBB;
   border: 2px solid #f8f4e5;
-  color: #3e302b;
+  color: rgba(121, 93, 83, 0.95);
   border-radius: 0;
   font-size: 18px;
   font-weight: lighter;
